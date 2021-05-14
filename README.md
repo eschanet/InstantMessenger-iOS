@@ -84,18 +84,18 @@ As already mentioned, this project uses Firebase to store the actual messages an
 ```json
 {
     "rules": {
-        ".read": true,
-        ".write": true,
-        "Recent": {
-            ".indexOn": ["groupId", "userId"]
-        },
-        "users": {
-            "$uid": {
-                ".write": "auth !== null && auth.uid === $uid",
-                ".read": "auth !== null && auth.provider === 'password'"
-            }
-        }
-    }
+        ".read": true,
+        ".write": true,
+        "Recent": {
+            ".indexOn": ["groupId", "userId"]
+        },
+        "users": {
+            "$uid": {
+                ".write": "auth !== null && auth.uid === $uid",
+                ".read": "auth !== null && auth.provider === 'password'"
+            }
+        }
+    }
 }
 ```
 
