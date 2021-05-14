@@ -1,0 +1,112 @@
+\hypertarget{protocol_j_s_q_messages_collection_view_cell_delegate-p}{}\section{$<$J\+S\+Q\+Messages\+Collection\+View\+Cell\+Delegate$>$ Protocol Reference}
+\label{protocol_j_s_q_messages_collection_view_cell_delegate-p}\index{$<$\+J\+S\+Q\+Messages\+Collection\+View\+Cell\+Delegate$>$@{$<$\+J\+S\+Q\+Messages\+Collection\+View\+Cell\+Delegate$>$}}
+
+
+{\ttfamily \#import $<$J\+S\+Q\+Messages\+Collection\+View\+Cell.\+h$>$}
+
+Inheritance diagram for $<$J\+S\+Q\+Messages\+Collection\+View\+Cell\+Delegate$>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{protocol_j_s_q_messages_collection_view_cell_delegate-p}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{protocol_j_s_q_messages_collection_view_cell_delegate-p_a54dcedb0f479ac45dd31aeb1fd3c8661}{messages\+Collection\+View\+Cell\+Did\+Tap\+Avatar\+:}
+\item 
+(void) -\/ \hyperlink{protocol_j_s_q_messages_collection_view_cell_delegate-p_aff82621da6c6ab5227b78b74c801d841}{messages\+Collection\+View\+Cell\+Did\+Tap\+Message\+Bubble\+:}
+\item 
+\hypertarget{protocol_j_s_q_messages_collection_view_cell_delegate-p_a9c3a1399d7b1ac4f7d85c7fe7abc1c94}{}(void) -\/ {\bfseries messages\+Collection\+View\+Cell\+Did\+Long\+Tap\+Message\+Bubble\+:}\label{protocol_j_s_q_messages_collection_view_cell_delegate-p_a9c3a1399d7b1ac4f7d85c7fe7abc1c94}
+
+\item 
+(void) -\/ \hyperlink{protocol_j_s_q_messages_collection_view_cell_delegate-p_abebf370fdbb10bd6a7b3b0cad1258c48}{messages\+Collection\+View\+Cell\+Did\+Tap\+Cell\+:at\+Position\+:}
+\item 
+(void) -\/ \hyperlink{protocol_j_s_q_messages_collection_view_cell_delegate-p_a383c9dc3be621e5fae1dcdae8d7d165d}{messages\+Collection\+View\+Cell\+:did\+Perform\+Action\+:with\+Sender\+:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \hyperlink{protocol_j_s_q_messages_collection_view_cell_delegate-p}{J\+S\+Q\+Messages\+Collection\+View\+Cell\+Delegate}} protocol defines methods that allow you to manage additional interactions within the collection view cell. 
+
+\subsection{Method Documentation}
+\hypertarget{protocol_j_s_q_messages_collection_view_cell_delegate-p_a383c9dc3be621e5fae1dcdae8d7d165d}{}\index{J\+S\+Q\+Messages\+Collection\+View\+Cell\+Delegate-\/p@{J\+S\+Q\+Messages\+Collection\+View\+Cell\+Delegate-\/p}!messages\+Collection\+View\+Cell\+:did\+Perform\+Action\+:with\+Sender\+:@{messages\+Collection\+View\+Cell\+:did\+Perform\+Action\+:with\+Sender\+:}}
+\index{messages\+Collection\+View\+Cell\+:did\+Perform\+Action\+:with\+Sender\+:@{messages\+Collection\+View\+Cell\+:did\+Perform\+Action\+:with\+Sender\+:}!J\+S\+Q\+Messages\+Collection\+View\+Cell\+Delegate-\/p@{J\+S\+Q\+Messages\+Collection\+View\+Cell\+Delegate-\/p}}
+\subsubsection[{messages\+Collection\+View\+Cell\+:did\+Perform\+Action\+:with\+Sender\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) messages\+Collection\+View\+Cell\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf J\+S\+Q\+Messages\+Collection\+View\+Cell} $\ast$)}]{cell}
+\item[{didPerformAction:(S\+E\+L)}]{action}
+\item[{withSender:(id)}]{sender}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [required]}}\label{protocol_j_s_q_messages_collection_view_cell_delegate-p_a383c9dc3be621e5fae1dcdae8d7d165d}
+Tells the delegate that an actions has been selected from the menu of this cell. This method is automatically called for any registered actions.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cell} & The cell that displayed the menu. \\
+\hline
+{\em action} & The action that has been performed. \\
+\hline
+{\em sender} & The object that initiated the action.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+{\ttfamily \hyperlink{interface_j_s_q_messages_collection_view_cell}{J\+S\+Q\+Messages\+Collection\+View\+Cell}} 
+\end{DoxySeeAlso}
+\hypertarget{protocol_j_s_q_messages_collection_view_cell_delegate-p_a54dcedb0f479ac45dd31aeb1fd3c8661}{}\index{J\+S\+Q\+Messages\+Collection\+View\+Cell\+Delegate-\/p@{J\+S\+Q\+Messages\+Collection\+View\+Cell\+Delegate-\/p}!messages\+Collection\+View\+Cell\+Did\+Tap\+Avatar\+:@{messages\+Collection\+View\+Cell\+Did\+Tap\+Avatar\+:}}
+\index{messages\+Collection\+View\+Cell\+Did\+Tap\+Avatar\+:@{messages\+Collection\+View\+Cell\+Did\+Tap\+Avatar\+:}!J\+S\+Q\+Messages\+Collection\+View\+Cell\+Delegate-\/p@{J\+S\+Q\+Messages\+Collection\+View\+Cell\+Delegate-\/p}}
+\subsubsection[{messages\+Collection\+View\+Cell\+Did\+Tap\+Avatar\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) messages\+Collection\+View\+Cell\+Did\+Tap\+Avatar\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf J\+S\+Q\+Messages\+Collection\+View\+Cell} $\ast$)}]{cell}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [required]}}\label{protocol_j_s_q_messages_collection_view_cell_delegate-p_a54dcedb0f479ac45dd31aeb1fd3c8661}
+Tells the delegate that the avatar\+Image\+View of the cell has been tapped.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cell} & The cell that received the tap touch event. \\
+\hline
+\end{DoxyParams}
+\hypertarget{protocol_j_s_q_messages_collection_view_cell_delegate-p_abebf370fdbb10bd6a7b3b0cad1258c48}{}\index{J\+S\+Q\+Messages\+Collection\+View\+Cell\+Delegate-\/p@{J\+S\+Q\+Messages\+Collection\+View\+Cell\+Delegate-\/p}!messages\+Collection\+View\+Cell\+Did\+Tap\+Cell\+:at\+Position\+:@{messages\+Collection\+View\+Cell\+Did\+Tap\+Cell\+:at\+Position\+:}}
+\index{messages\+Collection\+View\+Cell\+Did\+Tap\+Cell\+:at\+Position\+:@{messages\+Collection\+View\+Cell\+Did\+Tap\+Cell\+:at\+Position\+:}!J\+S\+Q\+Messages\+Collection\+View\+Cell\+Delegate-\/p@{J\+S\+Q\+Messages\+Collection\+View\+Cell\+Delegate-\/p}}
+\subsubsection[{messages\+Collection\+View\+Cell\+Did\+Tap\+Cell\+:at\+Position\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) messages\+Collection\+View\+Cell\+Did\+Tap\+Cell\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf J\+S\+Q\+Messages\+Collection\+View\+Cell} $\ast$)}]{cell}
+\item[{atPosition:(C\+G\+Point)}]{position}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [required]}}\label{protocol_j_s_q_messages_collection_view_cell_delegate-p_abebf370fdbb10bd6a7b3b0cad1258c48}
+Tells the delegate that the cell has been tapped at the point specified by position.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cell} & The cell that received the tap touch event. \\
+\hline
+{\em position} & The location of the received touch in the cell\textquotesingle{}s coordinate system.\\
+\hline
+\end{DoxyParams}
+This method is {\itshape only} called if position is {\itshape not} within the bounds of the cell\textquotesingle{}s avatar image view or message bubble image view. In other words, this method is {\itshape not} called when the cell\textquotesingle{}s avatar or message bubble are tapped.
+
+\begin{DoxySeeAlso}{See also}
+{\ttfamily \hyperlink{protocol_j_s_q_messages_collection_view_cell_delegate-p_a54dcedb0f479ac45dd31aeb1fd3c8661}{-\/ messages\+Collection\+View\+Cell\+Did\+Tap\+Avatar\+:}} 
+
+{\ttfamily \hyperlink{protocol_j_s_q_messages_collection_view_cell_delegate-p_aff82621da6c6ab5227b78b74c801d841}{-\/ messages\+Collection\+View\+Cell\+Did\+Tap\+Message\+Bubble\+:}} 
+\end{DoxySeeAlso}
+\hypertarget{protocol_j_s_q_messages_collection_view_cell_delegate-p_aff82621da6c6ab5227b78b74c801d841}{}\index{J\+S\+Q\+Messages\+Collection\+View\+Cell\+Delegate-\/p@{J\+S\+Q\+Messages\+Collection\+View\+Cell\+Delegate-\/p}!messages\+Collection\+View\+Cell\+Did\+Tap\+Message\+Bubble\+:@{messages\+Collection\+View\+Cell\+Did\+Tap\+Message\+Bubble\+:}}
+\index{messages\+Collection\+View\+Cell\+Did\+Tap\+Message\+Bubble\+:@{messages\+Collection\+View\+Cell\+Did\+Tap\+Message\+Bubble\+:}!J\+S\+Q\+Messages\+Collection\+View\+Cell\+Delegate-\/p@{J\+S\+Q\+Messages\+Collection\+View\+Cell\+Delegate-\/p}}
+\subsubsection[{messages\+Collection\+View\+Cell\+Did\+Tap\+Message\+Bubble\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) messages\+Collection\+View\+Cell\+Did\+Tap\+Message\+Bubble\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf J\+S\+Q\+Messages\+Collection\+View\+Cell} $\ast$)}]{cell}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [required]}}\label{protocol_j_s_q_messages_collection_view_cell_delegate-p_aff82621da6c6ab5227b78b74c801d841}
+Tells the delegate that the message bubble of the cell has been tapped.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cell} & The cell that received the tap touch event. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Vendors/\+J\+S\+Q\+Messages\+View\+Controller/\+Views/J\+S\+Q\+Messages\+Collection\+View\+Cell.\+h\end{DoxyCompactItemize}

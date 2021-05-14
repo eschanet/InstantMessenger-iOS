@@ -1,0 +1,378 @@
+\hypertarget{interface_a_f_h_t_t_p_request_serializer}{}\section{A\+F\+H\+T\+T\+P\+Request\+Serializer Class Reference}
+\label{interface_a_f_h_t_t_p_request_serializer}\index{A\+F\+H\+T\+T\+P\+Request\+Serializer@{A\+F\+H\+T\+T\+P\+Request\+Serializer}}
+
+
+{\ttfamily \#import $<$A\+F\+U\+R\+L\+Request\+Serialization.\+h$>$}
+
+Inheritance diagram for A\+F\+H\+T\+T\+P\+Request\+Serializer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.678161cm]{interface_a_f_h_t_t_p_request_serializer}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{Indent}{\bf Creating Request Objects}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(N\+S\+Mutable\+U\+R\+L\+Request $\ast$) -\/ \hyperlink{interface_a_f_h_t_t_p_request_serializer_a66e4fd3cd5ed1b9abf48b3f4109efeaa}{request\+With\+Method\+:\+U\+R\+L\+String\+:parameters\+:}
+\item 
+(N\+S\+Mutable\+U\+R\+L\+Request $\ast$) -\/ \hyperlink{interface_a_f_h_t_t_p_request_serializer_a83fa25b722b0d0b43f7890d2aa9f1a44}{request\+With\+Method\+:\+U\+R\+L\+String\+:parameters\+:error\+:}
+\item 
+(N\+S\+Mutable\+U\+R\+L\+Request $\ast$) -\/ \hyperlink{interface_a_f_h_t_t_p_request_serializer_a7f44ebde3474a05699c9322f400e91ae}{multipart\+Form\+Request\+With\+Method\+:\+U\+R\+L\+String\+:parameters\+:constructing\+Body\+With\+Block\+:}
+\item 
+(N\+S\+Mutable\+U\+R\+L\+Request $\ast$) -\/ \hyperlink{interface_a_f_h_t_t_p_request_serializer_a42fc2a7975d21a2f85908465560b250a}{multipart\+Form\+Request\+With\+Method\+:\+U\+R\+L\+String\+:parameters\+:constructing\+Body\+With\+Block\+:error\+:}
+\item 
+(N\+S\+Mutable\+U\+R\+L\+Request $\ast$) -\/ \hyperlink{interface_a_f_h_t_t_p_request_serializer_ae0e6b764bb36c0e9501730c82e402187}{request\+With\+Multipart\+Form\+Request\+:writing\+Stream\+Contents\+To\+File\+:completion\+Handler\+:}
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+N\+S\+String\+Encoding \hyperlink{interface_a_f_h_t_t_p_request_serializer_adbc30f08c984b2ca0922d871bf625d8f}{string\+Encoding}
+\item 
+B\+O\+O\+L \hyperlink{interface_a_f_h_t_t_p_request_serializer_ad1e2a4f25d1f250c8a702c3b0d9e6a8b}{allows\+Cellular\+Access}
+\item 
+N\+S\+U\+R\+L\+Request\+Cache\+Policy \hyperlink{interface_a_f_h_t_t_p_request_serializer_ace509f9a4a7798cee965d6d0939196a7}{cache\+Policy}
+\item 
+B\+O\+O\+L \hyperlink{interface_a_f_h_t_t_p_request_serializer_a87ed9e46c52d429016869a7d2bc46b97}{H\+T\+T\+P\+Should\+Handle\+Cookies}
+\item 
+B\+O\+O\+L \hyperlink{interface_a_f_h_t_t_p_request_serializer_aff714e6d87d3063daa6ba8c5e504ec4e}{H\+T\+T\+P\+Should\+Use\+Pipelining}
+\item 
+N\+S\+U\+R\+L\+Request\+Network\+Service\+Type \hyperlink{interface_a_f_h_t_t_p_request_serializer_a5606b2650ff3860a4ae94ea06f2b1d9c}{network\+Service\+Type}
+\item 
+N\+S\+Time\+Interval \hyperlink{interface_a_f_h_t_t_p_request_serializer_aaf4bf60cd1896ade2788764892496812}{timeout\+Interval}
+\end{DoxyCompactItemize}
+\subsection*{Configuring H\+T\+T\+P Request Headers}
+\label{_amgrpffb4931d6fbb854a997b29c058459123}%
+
+
+ 
+
+ \begin{DoxyCompactItemize}
+\item 
+N\+S\+Dictionary $\ast$ \hyperlink{interface_a_f_h_t_t_p_request_serializer_a8ea98a933795e97a771f4b5a82a637c2}{H\+T\+T\+P\+Request\+Headers}
+\item 
+(instancetype) + \hyperlink{interface_a_f_h_t_t_p_request_serializer_acfa41b7617090479b4ad92edcf8451d7}{serializer}
+\item 
+(void) -\/ \hyperlink{interface_a_f_h_t_t_p_request_serializer_a53e67d498dbe4df0fb7e28f84d76fa8f}{set\+Value\+:for\+H\+T\+T\+P\+Header\+Field\+:}
+\item 
+(N\+S\+String $\ast$) -\/ \hyperlink{interface_a_f_h_t_t_p_request_serializer_ad3772ba3e52f7d71a2a08f2b3c113721}{value\+For\+H\+T\+T\+P\+Header\+Field\+:}
+\item 
+(void) -\/ \hyperlink{interface_a_f_h_t_t_p_request_serializer_a3fe6f46d9d9590803d63a083da2147d6}{set\+Authorization\+Header\+Field\+With\+Username\+:password\+:}
+\item 
+(void) -\/ \hyperlink{interface_a_f_h_t_t_p_request_serializer_aa7426bb8422c203a0aeb17f8c04ff8e6}{set\+Authorization\+Header\+Field\+With\+Token\+:}
+\item 
+(void) -\/ \hyperlink{interface_a_f_h_t_t_p_request_serializer_a211e5d5ca44cd3f2fe0e1f1deeb9ef17}{clear\+Authorization\+Header}
+\end{DoxyCompactItemize}
+\subsection*{Configuring Query String Parameter Serialization}
+\label{_amgrp405aa0e72fa6384e81d0024aa952f05d}%
+
+
+ 
+
+ \begin{DoxyCompactItemize}
+\item 
+N\+S\+Set $\ast$ \hyperlink{interface_a_f_h_t_t_p_request_serializer_abc3b1a3688cdc0006389b04c83fa11c2}{H\+T\+T\+P\+Methods\+Encoding\+Parameters\+In\+U\+R\+I}
+\item 
+(void) -\/ \hyperlink{interface_a_f_h_t_t_p_request_serializer_af86bfabe2989e5730b187fe5f2f2a9e7}{set\+Query\+String\+Serialization\+With\+Style\+:}
+\item 
+(void) -\/ \hyperlink{interface_a_f_h_t_t_p_request_serializer_a09ab4c6d1c2052702e8264ab2f62b24e}{set\+Query\+String\+Serialization\+With\+Block\+:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+{\ttfamily \hyperlink{interface_a_f_h_t_t_p_request_serializer}{A\+F\+H\+T\+T\+P\+Request\+Serializer}} conforms to the {\ttfamily \hyperlink{protocol_a_f_u_r_l_request_serialization-p}{A\+F\+U\+R\+L\+Request\+Serialization}} \& {\ttfamily \hyperlink{protocol_a_f_u_r_l_response_serialization-p}{A\+F\+U\+R\+L\+Response\+Serialization}} protocols, offering a concrete base implementation of query string / U\+R\+L form-\/encoded parameter serialization and default request headers, as well as response status code and content type validation.
+
+Any request or response serializer dealing with H\+T\+T\+P is encouraged to subclass {\ttfamily \hyperlink{interface_a_f_h_t_t_p_request_serializer}{A\+F\+H\+T\+T\+P\+Request\+Serializer}} in order to ensure consistent default behavior. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_a_f_h_t_t_p_request_serializer_a211e5d5ca44cd3f2fe0e1f1deeb9ef17}{}\index{A\+F\+H\+T\+T\+P\+Request\+Serializer@{A\+F\+H\+T\+T\+P\+Request\+Serializer}!clear\+Authorization\+Header@{clear\+Authorization\+Header}}
+\index{clear\+Authorization\+Header@{clear\+Authorization\+Header}!A\+F\+H\+T\+T\+P\+Request\+Serializer@{A\+F\+H\+T\+T\+P\+Request\+Serializer}}
+\subsubsection[{clear\+Authorization\+Header}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) clear\+Authorization\+Header 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_a_f_h_t_t_p_request_serializer_a211e5d5ca44cd3f2fe0e1f1deeb9ef17}
+Clears any existing value for the \char`\"{}\+Authorization\char`\"{} H\+T\+T\+P header. \hypertarget{interface_a_f_h_t_t_p_request_serializer_a7f44ebde3474a05699c9322f400e91ae}{}\index{A\+F\+H\+T\+T\+P\+Request\+Serializer@{A\+F\+H\+T\+T\+P\+Request\+Serializer}!multipart\+Form\+Request\+With\+Method\+:\+U\+R\+L\+String\+:parameters\+:constructing\+Body\+With\+Block\+:@{multipart\+Form\+Request\+With\+Method\+:\+U\+R\+L\+String\+:parameters\+:constructing\+Body\+With\+Block\+:}}
+\index{multipart\+Form\+Request\+With\+Method\+:\+U\+R\+L\+String\+:parameters\+:constructing\+Body\+With\+Block\+:@{multipart\+Form\+Request\+With\+Method\+:\+U\+R\+L\+String\+:parameters\+:constructing\+Body\+With\+Block\+:}!A\+F\+H\+T\+T\+P\+Request\+Serializer@{A\+F\+H\+T\+T\+P\+Request\+Serializer}}
+\subsubsection[{multipart\+Form\+Request\+With\+Method\+:\+U\+R\+L\+String\+:parameters\+:constructing\+Body\+With\+Block\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Mutable\+U\+R\+L\+Request $\ast$) multipart\+Form\+Request\+With\+Method\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{method}
+\item[{URLString:(N\+S\+String $\ast$)}]{U\+R\+L\+String}
+\item[{parameters:(N\+S\+Dictionary $\ast$)}]{parameters}
+\item[{constructingBodyWithBlock:(void($^\wedge$)(id $<${\bf A\+F\+Multipart\+Form\+Data}$>$ form\+Data))}]{D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E}
+\end{DoxyParamCaption}
+}\label{interface_a_f_h_t_t_p_request_serializer_a7f44ebde3474a05699c9322f400e91ae}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000047}{Deprecated}]This method has been deprecated. Use -\/multipart\+Form\+Request\+With\+Method\+:U\+R\+L\+String\+:parameters\+:constructing\+Body\+With\+Block\+:error\+: instead. \end{DoxyRefDesc}
+\hypertarget{interface_a_f_h_t_t_p_request_serializer_a42fc2a7975d21a2f85908465560b250a}{}\index{A\+F\+H\+T\+T\+P\+Request\+Serializer@{A\+F\+H\+T\+T\+P\+Request\+Serializer}!multipart\+Form\+Request\+With\+Method\+:\+U\+R\+L\+String\+:parameters\+:constructing\+Body\+With\+Block\+:error\+:@{multipart\+Form\+Request\+With\+Method\+:\+U\+R\+L\+String\+:parameters\+:constructing\+Body\+With\+Block\+:error\+:}}
+\index{multipart\+Form\+Request\+With\+Method\+:\+U\+R\+L\+String\+:parameters\+:constructing\+Body\+With\+Block\+:error\+:@{multipart\+Form\+Request\+With\+Method\+:\+U\+R\+L\+String\+:parameters\+:constructing\+Body\+With\+Block\+:error\+:}!A\+F\+H\+T\+T\+P\+Request\+Serializer@{A\+F\+H\+T\+T\+P\+Request\+Serializer}}
+\subsubsection[{multipart\+Form\+Request\+With\+Method\+:\+U\+R\+L\+String\+:parameters\+:constructing\+Body\+With\+Block\+:error\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Mutable\+U\+R\+L\+Request $\ast$) multipart\+Form\+Request\+With\+Method\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{method}
+\item[{URLString:(N\+S\+String $\ast$)}]{U\+R\+L\+String}
+\item[{parameters:(N\+S\+Dictionary $\ast$)}]{parameters}
+\item[{constructingBodyWithBlock:(void($^\wedge$)(id $<${\bf A\+F\+Multipart\+Form\+Data}$>$ form\+Data))}]{block}
+\item[{error:(N\+S\+Error $\ast$ \+\_\+\+\_\+autoreleasing $\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{interface_a_f_h_t_t_p_request_serializer_a42fc2a7975d21a2f85908465560b250a}
+Creates an {\ttfamily N\+S\+Mutable\+U\+R\+L\+Request} object with the specified H\+T\+T\+P method and U\+R\+L\+String, and constructs a {\ttfamily multipart/form-\/data} H\+T\+T\+P body, using the specified parameters and multipart form data block. See \href{http://www.w3.org/TR/html4/interact/forms.html#h-17.13.4.2}{\tt http\+://www.\+w3.\+org/\+T\+R/html4/interact/forms.\+html\#h-\/17.\+13.\+4.\+2}
+
+Multipart form requests are automatically streamed, reading files directly from disk along with in-\/memory data in a single H\+T\+T\+P body. The resulting {\ttfamily N\+S\+Mutable\+U\+R\+L\+Request} object has an {\ttfamily H\+T\+T\+P\+Body\+Stream} property, so refrain from setting {\ttfamily H\+T\+T\+P\+Body\+Stream} or {\ttfamily H\+T\+T\+P\+Body} on this request object, as it will clear out the multipart form body stream.
+
+
+\begin{DoxyParams}{Parameters}
+{\em method} & The H\+T\+T\+P method for the request. This parameter must not be {\ttfamily G\+E\+T} or {\ttfamily H\+E\+A\+D}, or {\ttfamily nil}. \\
+\hline
+{\em U\+R\+L\+String} & The U\+R\+L string used to create the request U\+R\+L. \\
+\hline
+{\em parameters} & The parameters to be encoded and set in the request H\+T\+T\+P body. \\
+\hline
+{\em block} & A block that takes a single argument and appends data to the H\+T\+T\+P body. The block argument is an object adopting the {\ttfamily \hyperlink{protocol_a_f_multipart_form_data-p}{A\+F\+Multipart\+Form\+Data}} protocol. \\
+\hline
+{\em error} & The error that occured while constructing the request.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An {\ttfamily N\+S\+Mutable\+U\+R\+L\+Request} object 
+\end{DoxyReturn}
+\hypertarget{interface_a_f_h_t_t_p_request_serializer_a66e4fd3cd5ed1b9abf48b3f4109efeaa}{}\index{A\+F\+H\+T\+T\+P\+Request\+Serializer@{A\+F\+H\+T\+T\+P\+Request\+Serializer}!request\+With\+Method\+:\+U\+R\+L\+String\+:parameters\+:@{request\+With\+Method\+:\+U\+R\+L\+String\+:parameters\+:}}
+\index{request\+With\+Method\+:\+U\+R\+L\+String\+:parameters\+:@{request\+With\+Method\+:\+U\+R\+L\+String\+:parameters\+:}!A\+F\+H\+T\+T\+P\+Request\+Serializer@{A\+F\+H\+T\+T\+P\+Request\+Serializer}}
+\subsubsection[{request\+With\+Method\+:\+U\+R\+L\+String\+:parameters\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Mutable\+U\+R\+L\+Request $\ast$) request\+With\+Method\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{method}
+\item[{URLString:(N\+S\+String $\ast$)}]{U\+R\+L\+String}
+\item[{parameters:(id)}]{D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E}
+\end{DoxyParamCaption}
+}\label{interface_a_f_h_t_t_p_request_serializer_a66e4fd3cd5ed1b9abf48b3f4109efeaa}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000046}{Deprecated}]This method has been deprecated. Use -\/request\+With\+Method\+:U\+R\+L\+String\+:parameters\+:error\+: instead. \end{DoxyRefDesc}
+\hypertarget{interface_a_f_h_t_t_p_request_serializer_a83fa25b722b0d0b43f7890d2aa9f1a44}{}\index{A\+F\+H\+T\+T\+P\+Request\+Serializer@{A\+F\+H\+T\+T\+P\+Request\+Serializer}!request\+With\+Method\+:\+U\+R\+L\+String\+:parameters\+:error\+:@{request\+With\+Method\+:\+U\+R\+L\+String\+:parameters\+:error\+:}}
+\index{request\+With\+Method\+:\+U\+R\+L\+String\+:parameters\+:error\+:@{request\+With\+Method\+:\+U\+R\+L\+String\+:parameters\+:error\+:}!A\+F\+H\+T\+T\+P\+Request\+Serializer@{A\+F\+H\+T\+T\+P\+Request\+Serializer}}
+\subsubsection[{request\+With\+Method\+:\+U\+R\+L\+String\+:parameters\+:error\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Mutable\+U\+R\+L\+Request $\ast$) request\+With\+Method\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{method}
+\item[{URLString:(N\+S\+String $\ast$)}]{U\+R\+L\+String}
+\item[{parameters:(id)}]{parameters}
+\item[{error:(N\+S\+Error $\ast$ \+\_\+\+\_\+autoreleasing $\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{interface_a_f_h_t_t_p_request_serializer_a83fa25b722b0d0b43f7890d2aa9f1a44}
+Creates an {\ttfamily N\+S\+Mutable\+U\+R\+L\+Request} object with the specified H\+T\+T\+P method and U\+R\+L string.
+
+If the H\+T\+T\+P method is {\ttfamily G\+E\+T}, {\ttfamily H\+E\+A\+D}, or {\ttfamily D\+E\+L\+E\+T\+E}, the parameters will be used to construct a url-\/encoded query string that is appended to the request\textquotesingle{}s U\+R\+L. Otherwise, the parameters will be encoded according to the value of the {\ttfamily parameter\+Encoding} property, and set as the request body.
+
+
+\begin{DoxyParams}{Parameters}
+{\em method} & The H\+T\+T\+P method for the request, such as {\ttfamily G\+E\+T}, {\ttfamily P\+O\+S\+T}, {\ttfamily P\+U\+T}, or {\ttfamily D\+E\+L\+E\+T\+E}. This parameter must not be {\ttfamily nil}. \\
+\hline
+{\em U\+R\+L\+String} & The U\+R\+L string used to create the request U\+R\+L. \\
+\hline
+{\em parameters} & The parameters to be either set as a query string for {\ttfamily G\+E\+T} requests, or the request H\+T\+T\+P body. \\
+\hline
+{\em error} & The error that occured while constructing the request.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An {\ttfamily N\+S\+Mutable\+U\+R\+L\+Request} object. 
+\end{DoxyReturn}
+\hypertarget{interface_a_f_h_t_t_p_request_serializer_ae0e6b764bb36c0e9501730c82e402187}{}\index{A\+F\+H\+T\+T\+P\+Request\+Serializer@{A\+F\+H\+T\+T\+P\+Request\+Serializer}!request\+With\+Multipart\+Form\+Request\+:writing\+Stream\+Contents\+To\+File\+:completion\+Handler\+:@{request\+With\+Multipart\+Form\+Request\+:writing\+Stream\+Contents\+To\+File\+:completion\+Handler\+:}}
+\index{request\+With\+Multipart\+Form\+Request\+:writing\+Stream\+Contents\+To\+File\+:completion\+Handler\+:@{request\+With\+Multipart\+Form\+Request\+:writing\+Stream\+Contents\+To\+File\+:completion\+Handler\+:}!A\+F\+H\+T\+T\+P\+Request\+Serializer@{A\+F\+H\+T\+T\+P\+Request\+Serializer}}
+\subsubsection[{request\+With\+Multipart\+Form\+Request\+:writing\+Stream\+Contents\+To\+File\+:completion\+Handler\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Mutable\+U\+R\+L\+Request $\ast$) request\+With\+Multipart\+Form\+Request\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+U\+R\+L\+Request $\ast$)}]{request}
+\item[{writingStreamContentsToFile:(N\+S\+U\+R\+L $\ast$)}]{file\+U\+R\+L}
+\item[{completionHandler:(void($^\wedge$)(N\+S\+Error $\ast$error))}]{handler}
+\end{DoxyParamCaption}
+}\label{interface_a_f_h_t_t_p_request_serializer_ae0e6b764bb36c0e9501730c82e402187}
+Creates an {\ttfamily N\+S\+Mutable\+U\+R\+L\+Request} by removing the {\ttfamily H\+T\+T\+P\+Body\+Stream} from a request, and asynchronously writing its contents into the specified file, invoking the completion handler when finished.
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & The multipart form request. The {\ttfamily H\+T\+T\+P\+Body\+Stream} property of {\ttfamily request} must not be {\ttfamily nil}. \\
+\hline
+{\em file\+U\+R\+L} & The file U\+R\+L to write multipart form contents to. \\
+\hline
+{\em handler} & A handler block to execute.\\
+\hline
+\end{DoxyParams}
+There is a bug in {\ttfamily N\+S\+U\+R\+L\+Session\+Task} that causes requests to not send a {\ttfamily Content-\/\+Length} header when streaming contents from an H\+T\+T\+P body, which is notably problematic when interacting with the Amazon S3 webservice. As a workaround, this method takes a request constructed with {\ttfamily multipart\+Form\+Request\+With\+Method\+:\+U\+R\+L\+String\+:parameters\+:constructing\+Body\+With\+Block\+:error\+:}, or any other request with an {\ttfamily H\+T\+T\+P\+Body\+Stream}, writes the contents to the specified file and returns a copy of the original request with the {\ttfamily H\+T\+T\+P\+Body\+Stream} property set to {\ttfamily nil}. From here, the file can either be passed to {\ttfamily A\+F\+U\+R\+L\+Session\+Manager -\/upload\+Task\+With\+Request\+:from\+File\+:progress\+:completion\+Handler\+:}, or have its contents read into an {\ttfamily N\+S\+Data} that\textquotesingle{}s assigned to the {\ttfamily H\+T\+T\+P\+Body} property of the request.
+
+\begin{DoxySeeAlso}{See also}
+\href{https://github.com/AFNetworking/AFNetworking/issues/1398}{\tt https\+://github.\+com/\+A\+F\+Networking/\+A\+F\+Networking/issues/1398} 
+\end{DoxySeeAlso}
+\hypertarget{interface_a_f_h_t_t_p_request_serializer_acfa41b7617090479b4ad92edcf8451d7}{}\index{A\+F\+H\+T\+T\+P\+Request\+Serializer@{A\+F\+H\+T\+T\+P\+Request\+Serializer}!serializer@{serializer}}
+\index{serializer@{serializer}!A\+F\+H\+T\+T\+P\+Request\+Serializer@{A\+F\+H\+T\+T\+P\+Request\+Serializer}}
+\subsubsection[{serializer}]{\setlength{\rightskip}{0pt plus 5cm}+ (instancetype) serializer 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_a_f_h_t_t_p_request_serializer_acfa41b7617090479b4ad92edcf8451d7}
+Creates and returns a serializer with default configuration. \hypertarget{interface_a_f_h_t_t_p_request_serializer_aa7426bb8422c203a0aeb17f8c04ff8e6}{}\index{A\+F\+H\+T\+T\+P\+Request\+Serializer@{A\+F\+H\+T\+T\+P\+Request\+Serializer}!set\+Authorization\+Header\+Field\+With\+Token\+:@{set\+Authorization\+Header\+Field\+With\+Token\+:}}
+\index{set\+Authorization\+Header\+Field\+With\+Token\+:@{set\+Authorization\+Header\+Field\+With\+Token\+:}!A\+F\+H\+T\+T\+P\+Request\+Serializer@{A\+F\+H\+T\+T\+P\+Request\+Serializer}}
+\subsubsection[{set\+Authorization\+Header\+Field\+With\+Token\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\+Authorization\+Header\+Field\+With\+Token\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E}
+\end{DoxyParamCaption}
+}\label{interface_a_f_h_t_t_p_request_serializer_aa7426bb8422c203a0aeb17f8c04ff8e6}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000045}{Deprecated}]This method has been deprecated. Use -\/set\+Value\+:for\+H\+T\+T\+P\+Header\+Field\+: instead. \end{DoxyRefDesc}
+\hypertarget{interface_a_f_h_t_t_p_request_serializer_a3fe6f46d9d9590803d63a083da2147d6}{}\index{A\+F\+H\+T\+T\+P\+Request\+Serializer@{A\+F\+H\+T\+T\+P\+Request\+Serializer}!set\+Authorization\+Header\+Field\+With\+Username\+:password\+:@{set\+Authorization\+Header\+Field\+With\+Username\+:password\+:}}
+\index{set\+Authorization\+Header\+Field\+With\+Username\+:password\+:@{set\+Authorization\+Header\+Field\+With\+Username\+:password\+:}!A\+F\+H\+T\+T\+P\+Request\+Serializer@{A\+F\+H\+T\+T\+P\+Request\+Serializer}}
+\subsubsection[{set\+Authorization\+Header\+Field\+With\+Username\+:password\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\+Authorization\+Header\+Field\+With\+Username\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{username}
+\item[{password:(N\+S\+String $\ast$)}]{password}
+\end{DoxyParamCaption}
+}\label{interface_a_f_h_t_t_p_request_serializer_a3fe6f46d9d9590803d63a083da2147d6}
+Sets the \char`\"{}\+Authorization\char`\"{} H\+T\+T\+P header set in request objects made by the H\+T\+T\+P client to a basic authentication value with Base64-\/encoded username and password. This overwrites any existing value for this header.
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & The H\+T\+T\+P basic auth username \\
+\hline
+{\em password} & The H\+T\+T\+P basic auth password \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_a_f_h_t_t_p_request_serializer_a09ab4c6d1c2052702e8264ab2f62b24e}{}\index{A\+F\+H\+T\+T\+P\+Request\+Serializer@{A\+F\+H\+T\+T\+P\+Request\+Serializer}!set\+Query\+String\+Serialization\+With\+Block\+:@{set\+Query\+String\+Serialization\+With\+Block\+:}}
+\index{set\+Query\+String\+Serialization\+With\+Block\+:@{set\+Query\+String\+Serialization\+With\+Block\+:}!A\+F\+H\+T\+T\+P\+Request\+Serializer@{A\+F\+H\+T\+T\+P\+Request\+Serializer}}
+\subsubsection[{set\+Query\+String\+Serialization\+With\+Block\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\+Query\+String\+Serialization\+With\+Block\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$($^\wedge$)(N\+S\+U\+R\+L\+Request $\ast$request, id parameters, N\+S\+Error $\ast$\+\_\+\+\_\+autoreleasing $\ast$error))}]{block}
+\end{DoxyParamCaption}
+}\label{interface_a_f_h_t_t_p_request_serializer_a09ab4c6d1c2052702e8264ab2f62b24e}
+Set the a custom method of query string serialization according to the specified block.
+
+
+\begin{DoxyParams}{Parameters}
+{\em block} & A block that defines a process of encoding parameters into a query string. This block returns the query string and takes three arguments\+: the request, the parameters to encode, and the error that occurred when attempting to encode parameters for the given request. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_a_f_h_t_t_p_request_serializer_af86bfabe2989e5730b187fe5f2f2a9e7}{}\index{A\+F\+H\+T\+T\+P\+Request\+Serializer@{A\+F\+H\+T\+T\+P\+Request\+Serializer}!set\+Query\+String\+Serialization\+With\+Style\+:@{set\+Query\+String\+Serialization\+With\+Style\+:}}
+\index{set\+Query\+String\+Serialization\+With\+Style\+:@{set\+Query\+String\+Serialization\+With\+Style\+:}!A\+F\+H\+T\+T\+P\+Request\+Serializer@{A\+F\+H\+T\+T\+P\+Request\+Serializer}}
+\subsubsection[{set\+Query\+String\+Serialization\+With\+Style\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\+Query\+String\+Serialization\+With\+Style\+: 
+\begin{DoxyParamCaption}
+\item[{(A\+F\+H\+T\+T\+P\+Request\+Query\+String\+Serialization\+Style)}]{style}
+\end{DoxyParamCaption}
+}\label{interface_a_f_h_t_t_p_request_serializer_af86bfabe2989e5730b187fe5f2f2a9e7}
+Set the method of query string serialization according to one of the pre-\/defined styles.
+
+
+\begin{DoxyParams}{Parameters}
+{\em style} & The serialization style.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+A\+F\+H\+T\+T\+P\+Request\+Query\+String\+Serialization\+Style 
+\end{DoxySeeAlso}
+\hypertarget{interface_a_f_h_t_t_p_request_serializer_a53e67d498dbe4df0fb7e28f84d76fa8f}{}\index{A\+F\+H\+T\+T\+P\+Request\+Serializer@{A\+F\+H\+T\+T\+P\+Request\+Serializer}!set\+Value\+:for\+H\+T\+T\+P\+Header\+Field\+:@{set\+Value\+:for\+H\+T\+T\+P\+Header\+Field\+:}}
+\index{set\+Value\+:for\+H\+T\+T\+P\+Header\+Field\+:@{set\+Value\+:for\+H\+T\+T\+P\+Header\+Field\+:}!A\+F\+H\+T\+T\+P\+Request\+Serializer@{A\+F\+H\+T\+T\+P\+Request\+Serializer}}
+\subsubsection[{set\+Value\+:for\+H\+T\+T\+P\+Header\+Field\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\+Value\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{value}
+\item[{forHTTPHeaderField:(N\+S\+String $\ast$)}]{field}
+\end{DoxyParamCaption}
+}\label{interface_a_f_h_t_t_p_request_serializer_a53e67d498dbe4df0fb7e28f84d76fa8f}
+Sets the value for the H\+T\+T\+P headers set in request objects made by the H\+T\+T\+P client. If {\ttfamily nil}, removes the existing value for that header.
+
+
+\begin{DoxyParams}{Parameters}
+{\em field} & The H\+T\+T\+P header to set a default value for \\
+\hline
+{\em value} & The value set as default for the specified header, or {\ttfamily nil} \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_a_f_h_t_t_p_request_serializer_ad3772ba3e52f7d71a2a08f2b3c113721}{}\index{A\+F\+H\+T\+T\+P\+Request\+Serializer@{A\+F\+H\+T\+T\+P\+Request\+Serializer}!value\+For\+H\+T\+T\+P\+Header\+Field\+:@{value\+For\+H\+T\+T\+P\+Header\+Field\+:}}
+\index{value\+For\+H\+T\+T\+P\+Header\+Field\+:@{value\+For\+H\+T\+T\+P\+Header\+Field\+:}!A\+F\+H\+T\+T\+P\+Request\+Serializer@{A\+F\+H\+T\+T\+P\+Request\+Serializer}}
+\subsubsection[{value\+For\+H\+T\+T\+P\+Header\+Field\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String $\ast$) value\+For\+H\+T\+T\+P\+Header\+Field\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{field}
+\end{DoxyParamCaption}
+}\label{interface_a_f_h_t_t_p_request_serializer_ad3772ba3e52f7d71a2a08f2b3c113721}
+Returns the value for the H\+T\+T\+P headers set in the request serializer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em field} & The H\+T\+T\+P header to retrieve the default value for\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value set as default for the specified header, or {\ttfamily nil} 
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_a_f_h_t_t_p_request_serializer_ad1e2a4f25d1f250c8a702c3b0d9e6a8b}{}\index{A\+F\+H\+T\+T\+P\+Request\+Serializer@{A\+F\+H\+T\+T\+P\+Request\+Serializer}!allows\+Cellular\+Access@{allows\+Cellular\+Access}}
+\index{allows\+Cellular\+Access@{allows\+Cellular\+Access}!A\+F\+H\+T\+T\+P\+Request\+Serializer@{A\+F\+H\+T\+T\+P\+Request\+Serializer}}
+\subsubsection[{allows\+Cellular\+Access}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) allows\+Cellular\+Access\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_a_f_h_t_t_p_request_serializer_ad1e2a4f25d1f250c8a702c3b0d9e6a8b}
+Whether created requests can use the device’s cellular radio (if present). {\ttfamily Y\+E\+S} by default.
+
+\begin{DoxySeeAlso}{See also}
+N\+S\+Mutable\+U\+R\+L\+Request -\/set\+Allows\+Cellular\+Access\+: 
+\end{DoxySeeAlso}
+\hypertarget{interface_a_f_h_t_t_p_request_serializer_ace509f9a4a7798cee965d6d0939196a7}{}\index{A\+F\+H\+T\+T\+P\+Request\+Serializer@{A\+F\+H\+T\+T\+P\+Request\+Serializer}!cache\+Policy@{cache\+Policy}}
+\index{cache\+Policy@{cache\+Policy}!A\+F\+H\+T\+T\+P\+Request\+Serializer@{A\+F\+H\+T\+T\+P\+Request\+Serializer}}
+\subsubsection[{cache\+Policy}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+U\+R\+L\+Request\+Cache\+Policy) cache\+Policy\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_a_f_h_t_t_p_request_serializer_ace509f9a4a7798cee965d6d0939196a7}
+The cache policy of created requests. {\ttfamily N\+S\+U\+R\+L\+Request\+Use\+Protocol\+Cache\+Policy} by default.
+
+\begin{DoxySeeAlso}{See also}
+N\+S\+Mutable\+U\+R\+L\+Request -\/set\+Cache\+Policy\+: 
+\end{DoxySeeAlso}
+\hypertarget{interface_a_f_h_t_t_p_request_serializer_abc3b1a3688cdc0006389b04c83fa11c2}{}\index{A\+F\+H\+T\+T\+P\+Request\+Serializer@{A\+F\+H\+T\+T\+P\+Request\+Serializer}!H\+T\+T\+P\+Methods\+Encoding\+Parameters\+In\+U\+R\+I@{H\+T\+T\+P\+Methods\+Encoding\+Parameters\+In\+U\+R\+I}}
+\index{H\+T\+T\+P\+Methods\+Encoding\+Parameters\+In\+U\+R\+I@{H\+T\+T\+P\+Methods\+Encoding\+Parameters\+In\+U\+R\+I}!A\+F\+H\+T\+T\+P\+Request\+Serializer@{A\+F\+H\+T\+T\+P\+Request\+Serializer}}
+\subsubsection[{H\+T\+T\+P\+Methods\+Encoding\+Parameters\+In\+U\+R\+I}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Set$\ast$) H\+T\+T\+P\+Methods\+Encoding\+Parameters\+In\+U\+R\+I\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_a_f_h_t_t_p_request_serializer_abc3b1a3688cdc0006389b04c83fa11c2}
+H\+T\+T\+P methods for which serialized requests will encode parameters as a query string. {\ttfamily G\+E\+T}, {\ttfamily H\+E\+A\+D}, and {\ttfamily D\+E\+L\+E\+T\+E} by default. \hypertarget{interface_a_f_h_t_t_p_request_serializer_a8ea98a933795e97a771f4b5a82a637c2}{}\index{A\+F\+H\+T\+T\+P\+Request\+Serializer@{A\+F\+H\+T\+T\+P\+Request\+Serializer}!H\+T\+T\+P\+Request\+Headers@{H\+T\+T\+P\+Request\+Headers}}
+\index{H\+T\+T\+P\+Request\+Headers@{H\+T\+T\+P\+Request\+Headers}!A\+F\+H\+T\+T\+P\+Request\+Serializer@{A\+F\+H\+T\+T\+P\+Request\+Serializer}}
+\subsubsection[{H\+T\+T\+P\+Request\+Headers}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Dictionary $\ast$) H\+T\+T\+P\+Request\+Headers\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_a_f_h_t_t_p_request_serializer_a8ea98a933795e97a771f4b5a82a637c2}
+Default H\+T\+T\+P header field values to be applied to serialized requests. By default, these include the following\+:
+
+
+\begin{DoxyItemize}
+\item {\ttfamily Accept-\/\+Language} with the contents of {\ttfamily N\+S\+Locale +preferred\+Languages}
+\item {\ttfamily User-\/\+Agent} with the contents of various bundle identifiers and O\+S designations
+\end{DoxyItemize}
+
+To add or remove default request headers, use {\ttfamily set\+Value\+:for\+H\+T\+T\+P\+Header\+Field\+:}. \hypertarget{interface_a_f_h_t_t_p_request_serializer_a87ed9e46c52d429016869a7d2bc46b97}{}\index{A\+F\+H\+T\+T\+P\+Request\+Serializer@{A\+F\+H\+T\+T\+P\+Request\+Serializer}!H\+T\+T\+P\+Should\+Handle\+Cookies@{H\+T\+T\+P\+Should\+Handle\+Cookies}}
+\index{H\+T\+T\+P\+Should\+Handle\+Cookies@{H\+T\+T\+P\+Should\+Handle\+Cookies}!A\+F\+H\+T\+T\+P\+Request\+Serializer@{A\+F\+H\+T\+T\+P\+Request\+Serializer}}
+\subsubsection[{H\+T\+T\+P\+Should\+Handle\+Cookies}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) H\+T\+T\+P\+Should\+Handle\+Cookies\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_a_f_h_t_t_p_request_serializer_a87ed9e46c52d429016869a7d2bc46b97}
+Whether created requests should use the default cookie handling. {\ttfamily Y\+E\+S} by default.
+
+\begin{DoxySeeAlso}{See also}
+N\+S\+Mutable\+U\+R\+L\+Request -\/set\+H\+T\+T\+P\+Should\+Handle\+Cookies\+: 
+\end{DoxySeeAlso}
+\hypertarget{interface_a_f_h_t_t_p_request_serializer_aff714e6d87d3063daa6ba8c5e504ec4e}{}\index{A\+F\+H\+T\+T\+P\+Request\+Serializer@{A\+F\+H\+T\+T\+P\+Request\+Serializer}!H\+T\+T\+P\+Should\+Use\+Pipelining@{H\+T\+T\+P\+Should\+Use\+Pipelining}}
+\index{H\+T\+T\+P\+Should\+Use\+Pipelining@{H\+T\+T\+P\+Should\+Use\+Pipelining}!A\+F\+H\+T\+T\+P\+Request\+Serializer@{A\+F\+H\+T\+T\+P\+Request\+Serializer}}
+\subsubsection[{H\+T\+T\+P\+Should\+Use\+Pipelining}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) H\+T\+T\+P\+Should\+Use\+Pipelining\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_a_f_h_t_t_p_request_serializer_aff714e6d87d3063daa6ba8c5e504ec4e}
+Whether created requests can continue transmitting data before receiving a response from an earlier transmission. {\ttfamily N\+O} by default
+
+\begin{DoxySeeAlso}{See also}
+N\+S\+Mutable\+U\+R\+L\+Request -\/set\+H\+T\+T\+P\+Should\+Use\+Pipelining\+: 
+\end{DoxySeeAlso}
+\hypertarget{interface_a_f_h_t_t_p_request_serializer_a5606b2650ff3860a4ae94ea06f2b1d9c}{}\index{A\+F\+H\+T\+T\+P\+Request\+Serializer@{A\+F\+H\+T\+T\+P\+Request\+Serializer}!network\+Service\+Type@{network\+Service\+Type}}
+\index{network\+Service\+Type@{network\+Service\+Type}!A\+F\+H\+T\+T\+P\+Request\+Serializer@{A\+F\+H\+T\+T\+P\+Request\+Serializer}}
+\subsubsection[{network\+Service\+Type}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+U\+R\+L\+Request\+Network\+Service\+Type) network\+Service\+Type\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_a_f_h_t_t_p_request_serializer_a5606b2650ff3860a4ae94ea06f2b1d9c}
+The network service type for created requests. {\ttfamily N\+S\+U\+R\+L\+Network\+Service\+Type\+Default} by default.
+
+\begin{DoxySeeAlso}{See also}
+N\+S\+Mutable\+U\+R\+L\+Request -\/set\+Network\+Service\+Type\+: 
+\end{DoxySeeAlso}
+\hypertarget{interface_a_f_h_t_t_p_request_serializer_adbc30f08c984b2ca0922d871bf625d8f}{}\index{A\+F\+H\+T\+T\+P\+Request\+Serializer@{A\+F\+H\+T\+T\+P\+Request\+Serializer}!string\+Encoding@{string\+Encoding}}
+\index{string\+Encoding@{string\+Encoding}!A\+F\+H\+T\+T\+P\+Request\+Serializer@{A\+F\+H\+T\+T\+P\+Request\+Serializer}}
+\subsubsection[{string\+Encoding}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String\+Encoding) string\+Encoding\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_a_f_h_t_t_p_request_serializer_adbc30f08c984b2ca0922d871bf625d8f}
+The string encoding used to serialize parameters. {\ttfamily N\+S\+U\+T\+F8\+String\+Encoding} by default. \hypertarget{interface_a_f_h_t_t_p_request_serializer_aaf4bf60cd1896ade2788764892496812}{}\index{A\+F\+H\+T\+T\+P\+Request\+Serializer@{A\+F\+H\+T\+T\+P\+Request\+Serializer}!timeout\+Interval@{timeout\+Interval}}
+\index{timeout\+Interval@{timeout\+Interval}!A\+F\+H\+T\+T\+P\+Request\+Serializer@{A\+F\+H\+T\+T\+P\+Request\+Serializer}}
+\subsubsection[{timeout\+Interval}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Time\+Interval) timeout\+Interval\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_a_f_h_t_t_p_request_serializer_aaf4bf60cd1896ade2788764892496812}
+The timeout interval, in seconds, for created requests. The default timeout interval is 60 seconds.
+
+\begin{DoxySeeAlso}{See also}
+N\+S\+Mutable\+U\+R\+L\+Request -\/set\+Timeout\+Interval\+: 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Vendors/\+A\+F\+Networking/\+A\+F\+Networking/A\+F\+U\+R\+L\+Request\+Serialization.\+h\item 
+Vendors/\+A\+F\+Networking/\+A\+F\+Networking/A\+F\+U\+R\+L\+Request\+Serialization.\+m\end{DoxyCompactItemize}

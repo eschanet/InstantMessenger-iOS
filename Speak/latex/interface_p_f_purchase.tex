@@ -1,0 +1,145 @@
+\hypertarget{interface_p_f_purchase}{}\section{P\+F\+Purchase Class Reference}
+\label{interface_p_f_purchase}\index{P\+F\+Purchase@{P\+F\+Purchase}}
+
+
+{\ttfamily \#import $<$P\+F\+Purchase.\+h$>$}
+
+Inheritance diagram for P\+F\+Purchase\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_p_f_purchase}
+\end{center}
+\end{figure}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) + \hyperlink{interface_p_f_purchase_a2cb3522db618e847d2f923e3a8329e9d}{add\+Observer\+For\+Product\+:block\+:}
+\item 
+(void) + \hyperlink{interface_p_f_purchase_a71aa51fdfc6d35d074d27c68462a9018}{buy\+Product\+:block\+:}
+\item 
+(void) + \hyperlink{interface_p_f_purchase_aa15d930ab2ec4febd370a3a82d608836}{download\+Asset\+For\+Transaction\+:completion\+:}
+\item 
+(void) + \hyperlink{interface_p_f_purchase_af91a909a3e08d699f9a7ce67de23259a}{download\+Asset\+For\+Transaction\+:completion\+:progress\+:}
+\item 
+(void) + \hyperlink{interface_p_f_purchase_a0fed56fd4a6d42ef9dd0e922a2c8a64f}{restore}
+\item 
+(nullable N\+S\+String $\ast$) + \hyperlink{interface_p_f_purchase_af6370ba8f84b4141f9ff7fa9f24f2fb1}{asset\+Content\+Path\+For\+Product\+:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+{\ttfamily \hyperlink{interface_p_f_purchase}{P\+F\+Purchase}} provides a set of A\+P\+Is for working with in-\/app purchases.
+
+This class is currently for i\+O\+S only. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_p_f_purchase_a2cb3522db618e847d2f923e3a8329e9d}{}\index{P\+F\+Purchase@{P\+F\+Purchase}!add\+Observer\+For\+Product\+:block\+:@{add\+Observer\+For\+Product\+:block\+:}}
+\index{add\+Observer\+For\+Product\+:block\+:@{add\+Observer\+For\+Product\+:block\+:}!P\+F\+Purchase@{P\+F\+Purchase}}
+\subsubsection[{add\+Observer\+For\+Product\+:block\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) add\+Observer\+For\+Product\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{product\+Identifier}
+\item[{block:(P\+F\+Purchase\+Product\+Observation\+Block)}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_purchase_a2cb3522db618e847d2f923e3a8329e9d}
+Add application logic block which is run when buying a product.
+
+This method should be called once for each product, and should be called before calling {\ttfamily +buy\+Product\+:block\+:}. All invocations to {\ttfamily +add\+Observer\+For\+Product\+:block\+:} should happen within the same method, and on the main thread. It is recommended to place all invocations of this method in {\ttfamily application\+:did\+Finish\+Launching\+With\+Options\+:}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em product\+Identifier} & the product identifier \\
+\hline
+{\em block} & The block to be run when buying a product. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_purchase_af6370ba8f84b4141f9ff7fa9f24f2fb1}{}\index{P\+F\+Purchase@{P\+F\+Purchase}!asset\+Content\+Path\+For\+Product\+:@{asset\+Content\+Path\+For\+Product\+:}}
+\index{asset\+Content\+Path\+For\+Product\+:@{asset\+Content\+Path\+For\+Product\+:}!P\+F\+Purchase@{P\+F\+Purchase}}
+\subsubsection[{asset\+Content\+Path\+For\+Product\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (nullable N\+S\+String $\ast$) asset\+Content\+Path\+For\+Product\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+Product} $\ast$)}]{product}
+\end{DoxyParamCaption}
+}\label{interface_p_f_purchase_af6370ba8f84b4141f9ff7fa9f24f2fb1}
+Returns a content path of the asset of a product, if it was purchased and downloaded.
+
+To download and verify purchases use {\ttfamily +download\+Asset\+For\+Transaction\+:completion\+:}.
+
+\begin{DoxyWarning}{Warning}
+This method will return {\ttfamily nil}, if the purchase wasn\textquotesingle{}t verified or if the asset was not downloaded. 
+\end{DoxyWarning}
+\hypertarget{interface_p_f_purchase_a71aa51fdfc6d35d074d27c68462a9018}{}\index{P\+F\+Purchase@{P\+F\+Purchase}!buy\+Product\+:block\+:@{buy\+Product\+:block\+:}}
+\index{buy\+Product\+:block\+:@{buy\+Product\+:block\+:}!P\+F\+Purchase@{P\+F\+Purchase}}
+\subsubsection[{buy\+Product\+:block\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) buy\+Product\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{product\+Identifier}
+\item[{block:(nullable P\+F\+Purchase\+Buy\+Product\+Result\+Block)}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_purchase_a71aa51fdfc6d35d074d27c68462a9018}
+Asynchronously$\ast$ initiates the purchase for the product.
+
+
+\begin{DoxyParams}{Parameters}
+{\em product\+Identifier} & the product identifier \\
+\hline
+{\em block} & the completion block. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_purchase_aa15d930ab2ec4febd370a3a82d608836}{}\index{P\+F\+Purchase@{P\+F\+Purchase}!download\+Asset\+For\+Transaction\+:completion\+:@{download\+Asset\+For\+Transaction\+:completion\+:}}
+\index{download\+Asset\+For\+Transaction\+:completion\+:@{download\+Asset\+For\+Transaction\+:completion\+:}!P\+F\+Purchase@{P\+F\+Purchase}}
+\subsubsection[{download\+Asset\+For\+Transaction\+:completion\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) download\+Asset\+For\+Transaction\+: 
+\begin{DoxyParamCaption}
+\item[{(S\+K\+Payment\+Transaction $\ast$)}]{transaction}
+\item[{completion:(P\+F\+Purchase\+Download\+Asset\+Result\+Block)}]{completion}
+\end{DoxyParamCaption}
+}\label{interface_p_f_purchase_aa15d930ab2ec4febd370a3a82d608836}
+Asynchronously$\ast$ download the purchased asset, which is stored on \hyperlink{interface_parse}{Parse}\textquotesingle{}s server.
+
+\hyperlink{interface_parse}{Parse} verifies the receipt with Apple and delivers the content only if the receipt is valid.
+
+
+\begin{DoxyParams}{Parameters}
+{\em transaction} & the transaction, which contains the receipt. \\
+\hline
+{\em completion} & the completion block. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_purchase_af91a909a3e08d699f9a7ce67de23259a}{}\index{P\+F\+Purchase@{P\+F\+Purchase}!download\+Asset\+For\+Transaction\+:completion\+:progress\+:@{download\+Asset\+For\+Transaction\+:completion\+:progress\+:}}
+\index{download\+Asset\+For\+Transaction\+:completion\+:progress\+:@{download\+Asset\+For\+Transaction\+:completion\+:progress\+:}!P\+F\+Purchase@{P\+F\+Purchase}}
+\subsubsection[{download\+Asset\+For\+Transaction\+:completion\+:progress\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) download\+Asset\+For\+Transaction\+: 
+\begin{DoxyParamCaption}
+\item[{(S\+K\+Payment\+Transaction $\ast$)}]{transaction}
+\item[{completion:(P\+F\+Purchase\+Download\+Asset\+Result\+Block)}]{completion}
+\item[{progress:(nullable P\+F\+Progress\+Block)}]{progress}
+\end{DoxyParamCaption}
+}\label{interface_p_f_purchase_af91a909a3e08d699f9a7ce67de23259a}
+Asynchronously$\ast$ download the purchased asset, which is stored on \hyperlink{interface_parse}{Parse}\textquotesingle{}s server.
+
+\hyperlink{interface_parse}{Parse} verifies the receipt with Apple and delivers the content only if the receipt is valid.
+
+
+\begin{DoxyParams}{Parameters}
+{\em transaction} & the transaction, which contains the receipt. \\
+\hline
+{\em completion} & the completion block. \\
+\hline
+{\em progress} & the progress block, which is called multiple times to reveal progress of the download. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_purchase_a0fed56fd4a6d42ef9dd0e922a2c8a64f}{}\index{P\+F\+Purchase@{P\+F\+Purchase}!restore@{restore}}
+\index{restore@{restore}!P\+F\+Purchase@{P\+F\+Purchase}}
+\subsubsection[{restore}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) restore 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_purchase_a0fed56fd4a6d42ef9dd0e922a2c8a64f}
+Asynchronously$\ast$ restore completed transactions for the current user.
+
+Only nonconsumable purchases are restored. If observers for the products have been added before calling this method, invoking the method reruns the application logic associated with the purchase.
+
+\begin{DoxyWarning}{Warning}
+This method is only important to developers who want to preserve purchase states across different installations of the same app. 
+\end{DoxyWarning}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Frameworks/\+Parse.\+framework/\+Headers/P\+F\+Purchase.\+h\end{DoxyCompactItemize}

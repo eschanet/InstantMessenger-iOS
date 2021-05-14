@@ -1,0 +1,137 @@
+\hypertarget{interface_p_f_sign_up_view}{}\section{P\+F\+Sign\+Up\+View Class Reference}
+\label{interface_p_f_sign_up_view}\index{P\+F\+Sign\+Up\+View@{P\+F\+Sign\+Up\+View}}
+
+
+{\ttfamily \#import $<$P\+F\+Sign\+Up\+View.\+h$>$}
+
+Inheritance diagram for P\+F\+Sign\+Up\+View\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_p_f_sign_up_view}
+\end{center}
+\end{figure}
+\subsection*{Properties}
+\begin{Indent}{\bf Customizing the Logo}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+U\+I\+View $\ast$ \hyperlink{interface_p_f_sign_up_view_ad3eb048df63f20896124028eb911016a}{logo}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Configure Username Behaviour}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+B\+O\+O\+L \hyperlink{interface_p_f_sign_up_view_ad1e6db575f9bd76e4c952a4b9bf48347}{email\+As\+Username}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Sign Up Elements}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+P\+F\+Sign\+Up\+Fields \hyperlink{interface_p_f_sign_up_view_a63e26333d686db43da83c0213c3e5229}{fields}
+\item 
+\hyperlink{interface_p_f_text_field}{P\+F\+Text\+Field} $\ast$ \hyperlink{interface_p_f_sign_up_view_a87cd8eb60bc9201825a00f98630736f3}{username\+Field}
+\item 
+\hyperlink{interface_p_f_text_field}{P\+F\+Text\+Field} $\ast$ \hyperlink{interface_p_f_sign_up_view_a626e890c1c1039321b71dc774fc080bc}{password\+Field}
+\item 
+\hyperlink{interface_p_f_text_field}{P\+F\+Text\+Field} $\ast$ \hyperlink{interface_p_f_sign_up_view_a4f01a403ba349386d546669a320b81fb}{email\+Field}
+\item 
+\hyperlink{interface_p_f_text_field}{P\+F\+Text\+Field} $\ast$ \hyperlink{interface_p_f_sign_up_view_ad99c2db623f95565e79418076b0bc111}{additional\+Field}
+\item 
+U\+I\+Button $\ast$ \hyperlink{interface_p_f_sign_up_view_ae319a64a63e1cc268b3a09263783b6f7}{sign\+Up\+Button}
+\item 
+U\+I\+Button $\ast$ \hyperlink{interface_p_f_sign_up_view_a3fce84d1b1027eb046a887f2efe3e156}{dismiss\+Button}
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Creating Sign\+Up View}
+\label{_amgrpcbbdc996f4d9d8f039f7017c31db0417}%
+
+
+ 
+
+ \begin{DoxyCompactItemize}
+\item 
+U\+I\+View\+Controller $\ast$ \hyperlink{interface_p_f_sign_up_view_a48e4f5a10409de79d5a3e3bc18de0213}{presenting\+View\+Controller}
+\item 
+(instancetype) -\/ \hyperlink{interface_p_f_sign_up_view_ab18efe1f9c1f0be6a4b9bdd768c59f05}{init\+With\+Fields\+:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \hyperlink{interface_p_f_sign_up_view}{P\+F\+Sign\+Up\+View}} class provides a standard sign up interface for authenticating a {\ttfamily P\+F\+User}. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_p_f_sign_up_view_ab18efe1f9c1f0be6a4b9bdd768c59f05}{}\index{P\+F\+Sign\+Up\+View@{P\+F\+Sign\+Up\+View}!init\+With\+Fields\+:@{init\+With\+Fields\+:}}
+\index{init\+With\+Fields\+:@{init\+With\+Fields\+:}!P\+F\+Sign\+Up\+View@{P\+F\+Sign\+Up\+View}}
+\subsubsection[{init\+With\+Fields\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (instancetype) init\+With\+Fields\+: 
+\begin{DoxyParamCaption}
+\item[{(P\+F\+Sign\+Up\+Fields)}]{fields}
+\end{DoxyParamCaption}
+}\label{interface_p_f_sign_up_view_ab18efe1f9c1f0be6a4b9bdd768c59f05}
+Initializes the view with the specified sign up elements.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fields} & A bitmask specifying the sign up elements which are enabled in the view\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An initialized {\ttfamily \hyperlink{interface_p_f_sign_up_view}{P\+F\+Sign\+Up\+View}} object or {\ttfamily nil} if the object couldn\textquotesingle{}t be created.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+P\+F\+Sign\+Up\+Fields 
+\end{DoxySeeAlso}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_p_f_sign_up_view_ad99c2db623f95565e79418076b0bc111}{}\index{P\+F\+Sign\+Up\+View@{P\+F\+Sign\+Up\+View}!additional\+Field@{additional\+Field}}
+\index{additional\+Field@{additional\+Field}!P\+F\+Sign\+Up\+View@{P\+F\+Sign\+Up\+View}}
+\subsubsection[{additional\+Field}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf P\+F\+Text\+Field}$\ast$) additional\+Field\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_p_f_sign_up_view_ad99c2db623f95565e79418076b0bc111}
+The additional text field. It is {\ttfamily nil} if the element is not enabled.
+
+This field is intended to be customized. \hypertarget{interface_p_f_sign_up_view_a3fce84d1b1027eb046a887f2efe3e156}{}\index{P\+F\+Sign\+Up\+View@{P\+F\+Sign\+Up\+View}!dismiss\+Button@{dismiss\+Button}}
+\index{dismiss\+Button@{dismiss\+Button}!P\+F\+Sign\+Up\+View@{P\+F\+Sign\+Up\+View}}
+\subsubsection[{dismiss\+Button}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Button$\ast$) dismiss\+Button\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_p_f_sign_up_view_a3fce84d1b1027eb046a887f2efe3e156}
+The dismiss button. It is {\ttfamily nil} if the element is not enabled. \hypertarget{interface_p_f_sign_up_view_ad1e6db575f9bd76e4c952a4b9bf48347}{}\index{P\+F\+Sign\+Up\+View@{P\+F\+Sign\+Up\+View}!email\+As\+Username@{email\+As\+Username}}
+\index{email\+As\+Username@{email\+As\+Username}!P\+F\+Sign\+Up\+View@{P\+F\+Sign\+Up\+View}}
+\subsubsection[{email\+As\+Username}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) email\+As\+Username\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_p_f_sign_up_view_ad1e6db575f9bd76e4c952a4b9bf48347}
+If email should be used to log in, instead of username
+
+By default, this is set to {\ttfamily N\+O}. \hypertarget{interface_p_f_sign_up_view_a4f01a403ba349386d546669a320b81fb}{}\index{P\+F\+Sign\+Up\+View@{P\+F\+Sign\+Up\+View}!email\+Field@{email\+Field}}
+\index{email\+Field@{email\+Field}!P\+F\+Sign\+Up\+View@{P\+F\+Sign\+Up\+View}}
+\subsubsection[{email\+Field}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf P\+F\+Text\+Field}$\ast$) email\+Field\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_p_f_sign_up_view_a4f01a403ba349386d546669a320b81fb}
+The email text field. It is {\ttfamily nil} if the element is not enabled. \hypertarget{interface_p_f_sign_up_view_a63e26333d686db43da83c0213c3e5229}{}\index{P\+F\+Sign\+Up\+View@{P\+F\+Sign\+Up\+View}!fields@{fields}}
+\index{fields@{fields}!P\+F\+Sign\+Up\+View@{P\+F\+Sign\+Up\+View}}
+\subsubsection[{fields}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (P\+F\+Sign\+Up\+Fields) fields\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_p_f_sign_up_view_a63e26333d686db43da83c0213c3e5229}
+The bitmask which specifies the enabled sign up elements in the view \hypertarget{interface_p_f_sign_up_view_ad3eb048df63f20896124028eb911016a}{}\index{P\+F\+Sign\+Up\+View@{P\+F\+Sign\+Up\+View}!logo@{logo}}
+\index{logo@{logo}!P\+F\+Sign\+Up\+View@{P\+F\+Sign\+Up\+View}}
+\subsubsection[{logo}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+View$\ast$) logo\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_p_f_sign_up_view_ad3eb048df63f20896124028eb911016a}
+The logo. By default, it is the \hyperlink{interface_parse}{Parse} logo. \hypertarget{interface_p_f_sign_up_view_a626e890c1c1039321b71dc774fc080bc}{}\index{P\+F\+Sign\+Up\+View@{P\+F\+Sign\+Up\+View}!password\+Field@{password\+Field}}
+\index{password\+Field@{password\+Field}!P\+F\+Sign\+Up\+View@{P\+F\+Sign\+Up\+View}}
+\subsubsection[{password\+Field}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf P\+F\+Text\+Field}$\ast$) password\+Field\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_p_f_sign_up_view_a626e890c1c1039321b71dc774fc080bc}
+The password text field. \hypertarget{interface_p_f_sign_up_view_a48e4f5a10409de79d5a3e3bc18de0213}{}\index{P\+F\+Sign\+Up\+View@{P\+F\+Sign\+Up\+View}!presenting\+View\+Controller@{presenting\+View\+Controller}}
+\index{presenting\+View\+Controller@{presenting\+View\+Controller}!P\+F\+Sign\+Up\+View@{P\+F\+Sign\+Up\+View}}
+\subsubsection[{presenting\+View\+Controller}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+View\+Controller$\ast$) presenting\+View\+Controller\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}\label{interface_p_f_sign_up_view_a48e4f5a10409de79d5a3e3bc18de0213}
+The view controller that will present this view.
+
+Used to lay out elements correctly when the presenting view controller has translucent elements. \hypertarget{interface_p_f_sign_up_view_ae319a64a63e1cc268b3a09263783b6f7}{}\index{P\+F\+Sign\+Up\+View@{P\+F\+Sign\+Up\+View}!sign\+Up\+Button@{sign\+Up\+Button}}
+\index{sign\+Up\+Button@{sign\+Up\+Button}!P\+F\+Sign\+Up\+View@{P\+F\+Sign\+Up\+View}}
+\subsubsection[{sign\+Up\+Button}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Button$\ast$) sign\+Up\+Button\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_p_f_sign_up_view_ae319a64a63e1cc268b3a09263783b6f7}
+The sign up button. It is {\ttfamily nil} if the element is not enabled. \hypertarget{interface_p_f_sign_up_view_a87cd8eb60bc9201825a00f98630736f3}{}\index{P\+F\+Sign\+Up\+View@{P\+F\+Sign\+Up\+View}!username\+Field@{username\+Field}}
+\index{username\+Field@{username\+Field}!P\+F\+Sign\+Up\+View@{P\+F\+Sign\+Up\+View}}
+\subsubsection[{username\+Field}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf P\+F\+Text\+Field}$\ast$) username\+Field\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_p_f_sign_up_view_a87cd8eb60bc9201825a00f98630736f3}
+The username text field. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Frameworks/\+Parse\+U\+I.\+framework/\+Headers/P\+F\+Sign\+Up\+View.\+h\end{DoxyCompactItemize}

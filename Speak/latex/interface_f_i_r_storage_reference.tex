@@ -1,0 +1,332 @@
+\hypertarget{interface_f_i_r_storage_reference}{}\section{F\+I\+R\+Storage\+Reference Class Reference}
+\label{interface_f_i_r_storage_reference}\index{F\+I\+R\+Storage\+Reference@{F\+I\+R\+Storage\+Reference}}
+
+
+{\ttfamily \#import $<$F\+I\+R\+Storage\+Reference.\+h$>$}
+
+Inheritance diagram for F\+I\+R\+Storage\+Reference\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_f_i_r_storage_reference}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_f_i_r_storage_reference}{F\+I\+R\+Storage\+Reference} $\ast$) -\/ \hyperlink{interface_f_i_r_storage_reference_ab91e075c2fed2ddb7d2a89d687f47030}{root}
+\item 
+(nullable \hyperlink{interface_f_i_r_storage_reference}{F\+I\+R\+Storage\+Reference} $\ast$) -\/ \hyperlink{interface_f_i_r_storage_reference_ac7de04d6b32a64efd29d23806dd7483a}{parent}
+\item 
+(\hyperlink{interface_f_i_r_storage_reference}{F\+I\+R\+Storage\+Reference} $\ast$) -\/ \hyperlink{interface_f_i_r_storage_reference_a241599e06c2e0fa37d6fcfdfac61f4d8}{child\+:}
+\item 
+(\hyperlink{interface_f_i_r_storage_upload_task}{F\+I\+R\+Storage\+Upload\+Task} $\ast$) -\/ \hyperlink{interface_f_i_r_storage_reference_a88415944d46afc28a8734e8cbab86740}{put\+Data\+:}
+\item 
+(\hyperlink{interface_f_i_r_storage_upload_task}{F\+I\+R\+Storage\+Upload\+Task} $\ast$) -\/ \hyperlink{interface_f_i_r_storage_reference_ae837031a280e56ea1ba5d18f0b84c0a3}{put\+Data\+:metadata\+:}
+\item 
+(\hyperlink{interface_f_i_r_storage_upload_task}{F\+I\+R\+Storage\+Upload\+Task} $\ast$) -\/ \hyperlink{interface_f_i_r_storage_reference_a3051f828285982f425c6b9f72e8caa2c}{put\+Data\+:metadata\+:completion\+:}
+\item 
+(\hyperlink{interface_f_i_r_storage_upload_task}{F\+I\+R\+Storage\+Upload\+Task} $\ast$) -\/ \hyperlink{interface_f_i_r_storage_reference_aa24045fbea599fbbe7832a81761b1e8c}{put\+File\+:}
+\item 
+(\hyperlink{interface_f_i_r_storage_upload_task}{F\+I\+R\+Storage\+Upload\+Task} $\ast$) -\/ \hyperlink{interface_f_i_r_storage_reference_af27be33e866ddae25939b2c4acb28f3b}{put\+File\+:metadata\+:}
+\item 
+(\hyperlink{interface_f_i_r_storage_upload_task}{F\+I\+R\+Storage\+Upload\+Task} $\ast$) -\/ \hyperlink{interface_f_i_r_storage_reference_a488f02ce93fed03e4ceb53e2e4cbd499}{put\+File\+:metadata\+:completion\+:}
+\item 
+(\hyperlink{interface_f_i_r_storage_download_task}{F\+I\+R\+Storage\+Download\+Task} $\ast$) -\/ \hyperlink{interface_f_i_r_storage_reference_ac9515c9f1e1407727b700fc2462a555b}{data\+With\+Max\+Size\+:completion\+:}
+\item 
+(void) -\/ \hyperlink{interface_f_i_r_storage_reference_a535cb5c7d1437344a58e4154295a4b3e}{download\+U\+R\+L\+With\+Completion\+:}
+\item 
+(\hyperlink{interface_f_i_r_storage_download_task}{F\+I\+R\+Storage\+Download\+Task} $\ast$) -\/ \hyperlink{interface_f_i_r_storage_reference_a279d136ad125f375b5e2b03556a1cef3}{write\+To\+File\+:}
+\item 
+(\hyperlink{interface_f_i_r_storage_download_task}{F\+I\+R\+Storage\+Download\+Task} $\ast$) -\/ \hyperlink{interface_f_i_r_storage_reference_a52c091145b0c44c2475046d88455e43d}{write\+To\+File\+:completion\+:}
+\item 
+(void) -\/ \hyperlink{interface_f_i_r_storage_reference_a42458fbbef8c4525abd80ada33ede4de}{metadata\+With\+Completion\+:}
+\item 
+(void) -\/ \hyperlink{interface_f_i_r_storage_reference_ab994cb5cf0a171160378a0f0265c81f6}{update\+Metadata\+:completion\+:}
+\item 
+(void) -\/ \hyperlink{interface_f_i_r_storage_reference_afeca37f6983cf72c9e5546f1ac2f6578}{delete\+With\+Completion\+:}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interface_f_i_r_storage}{F\+I\+R\+Storage} $\ast$ \hyperlink{interface_f_i_r_storage_reference_a7441bb92a62af97dfdecbefbe9999180}{storage}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_f_i_r_storage_reference_a685333b75b9c800611cea278dcfe06b5}{bucket}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_f_i_r_storage_reference_a8af04c7ca02e65c37f50713efe697e49}{full\+Path}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_f_i_r_storage_reference_a46b7942007399f60156d1ba6cfd0b089}{name}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{interface_f_i_r_storage_reference}{F\+I\+R\+Storage\+Reference} represents a reference to a Google Cloud Storage object. Developers can upload and download objects, as well as get/set object metadata, and delete an object at the path. \begin{DoxySeeAlso}{See also}
+\href{https://cloud.google.com/storage/}{\tt https\+://cloud.\+google.\+com/storage/} 
+\end{DoxySeeAlso}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_f_i_r_storage_reference_a241599e06c2e0fa37d6fcfdfac61f4d8}{}\index{F\+I\+R\+Storage\+Reference@{F\+I\+R\+Storage\+Reference}!child\+:@{child\+:}}
+\index{child\+:@{child\+:}!F\+I\+R\+Storage\+Reference@{F\+I\+R\+Storage\+Reference}}
+\subsubsection[{child\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf F\+I\+R\+Storage\+Reference} $\ast$) child\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{path}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_storage_reference_a241599e06c2e0fa37d6fcfdfac61f4d8}
+Creates a new \hyperlink{interface_f_i_r_storage_reference}{F\+I\+R\+Storage\+Reference} pointing to a child object of the current reference. path = foo child = bar new\+Path = foo/bar path = foo/bar child = baz new\+Path = foo/bar/baz All leading and trailing slashes will be removed, and consecutive slashes will be compressed to single slashes. For example\+: child = /foo/bar new\+Path = foo/bar child = foo/bar/ new\+Path = foo/bar child = foo///bar new\+Path = foo/bar 
+\begin{DoxyParams}{Parameters}
+{\em path} & Path to append to the current path. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new \hyperlink{interface_f_i_r_storage_reference}{F\+I\+R\+Storage\+Reference} pointing to a child location of the current reference. 
+\end{DoxyReturn}
+\hypertarget{interface_f_i_r_storage_reference_ac9515c9f1e1407727b700fc2462a555b}{}\index{F\+I\+R\+Storage\+Reference@{F\+I\+R\+Storage\+Reference}!data\+With\+Max\+Size\+:completion\+:@{data\+With\+Max\+Size\+:completion\+:}}
+\index{data\+With\+Max\+Size\+:completion\+:@{data\+With\+Max\+Size\+:completion\+:}!F\+I\+R\+Storage\+Reference@{F\+I\+R\+Storage\+Reference}}
+\subsubsection[{data\+With\+Max\+Size\+:completion\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf F\+I\+R\+Storage\+Download\+Task} $\ast$) data\+With\+Max\+Size\+: 
+\begin{DoxyParamCaption}
+\item[{(int64\+\_\+t)}]{size}
+\item[{completion:(void($^\wedge$)(N\+S\+Data $\ast$\+\_\+\+Nullable data, N\+S\+Error $\ast$\+\_\+\+Nullable error))}]{completion}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_storage_reference_ac9515c9f1e1407727b700fc2462a555b}
+Asynchronously downloads the object at the \hyperlink{interface_f_i_r_storage_reference}{F\+I\+R\+Storage\+Reference} to an N\+S\+Data object in memory. An N\+S\+Data of the provided max size will be allocated, so ensure that the device has enough free memory to complete the download. For downloading large files, write\+To\+File may be a better option. 
+\begin{DoxyParams}{Parameters}
+{\em size} & The maximum size in bytes to download. If the download exceeds this size the task will be cancelled and an error will be returned. \\
+\hline
+{\em completion} & A completion block that either returns the object data on success, or an error on failure. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An \hyperlink{interface_f_i_r_storage_download_task}{F\+I\+R\+Storage\+Download\+Task} that can be used to monitor or manage the download. 
+\end{DoxyReturn}
+\hypertarget{interface_f_i_r_storage_reference_afeca37f6983cf72c9e5546f1ac2f6578}{}\index{F\+I\+R\+Storage\+Reference@{F\+I\+R\+Storage\+Reference}!delete\+With\+Completion\+:@{delete\+With\+Completion\+:}}
+\index{delete\+With\+Completion\+:@{delete\+With\+Completion\+:}!F\+I\+R\+Storage\+Reference@{F\+I\+R\+Storage\+Reference}}
+\subsubsection[{delete\+With\+Completion\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) delete\+With\+Completion\+: 
+\begin{DoxyParamCaption}
+\item[{(nullable void($^\wedge$)(N\+S\+Error $\ast$\+\_\+\+Nullable error))}]{completion}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_storage_reference_afeca37f6983cf72c9e5546f1ac2f6578}
+Deletes the object at the current path. 
+\begin{DoxyParams}{Parameters}
+{\em completion} & A completion block which returns nil on success, or an error on failure. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_f_i_r_storage_reference_a535cb5c7d1437344a58e4154295a4b3e}{}\index{F\+I\+R\+Storage\+Reference@{F\+I\+R\+Storage\+Reference}!download\+U\+R\+L\+With\+Completion\+:@{download\+U\+R\+L\+With\+Completion\+:}}
+\index{download\+U\+R\+L\+With\+Completion\+:@{download\+U\+R\+L\+With\+Completion\+:}!F\+I\+R\+Storage\+Reference@{F\+I\+R\+Storage\+Reference}}
+\subsubsection[{download\+U\+R\+L\+With\+Completion\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) download\+U\+R\+L\+With\+Completion\+: 
+\begin{DoxyParamCaption}
+\item[{(void($^\wedge$)(N\+S\+U\+R\+L $\ast$\+\_\+\+Nullable U\+R\+L, N\+S\+Error $\ast$\+\_\+\+Nullable error))}]{completion}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_storage_reference_a535cb5c7d1437344a58e4154295a4b3e}
+Asynchronously retrieves a long lived download U\+R\+L with a revokable token. This can be used to share the file with others, but can be revoked by a developer in the Firebase Console if desired. 
+\begin{DoxyParams}{Parameters}
+{\em completion} & A completion block that either returns the U\+R\+L on success, or an error on failure. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_f_i_r_storage_reference_a42458fbbef8c4525abd80ada33ede4de}{}\index{F\+I\+R\+Storage\+Reference@{F\+I\+R\+Storage\+Reference}!metadata\+With\+Completion\+:@{metadata\+With\+Completion\+:}}
+\index{metadata\+With\+Completion\+:@{metadata\+With\+Completion\+:}!F\+I\+R\+Storage\+Reference@{F\+I\+R\+Storage\+Reference}}
+\subsubsection[{metadata\+With\+Completion\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) metadata\+With\+Completion\+: 
+\begin{DoxyParamCaption}
+\item[{(void($^\wedge$)({\bf F\+I\+R\+Storage\+Metadata} $\ast$\+\_\+\+Nullable metadata, N\+S\+Error $\ast$\+\_\+\+Nullable error))}]{completion}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_storage_reference_a42458fbbef8c4525abd80ada33ede4de}
+Retrieves metadata associated with an object at the current path. 
+\begin{DoxyParams}{Parameters}
+{\em completion} & A completion block which returns the object metadata on success, or an error on failure. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_f_i_r_storage_reference_ac7de04d6b32a64efd29d23806dd7483a}{}\index{F\+I\+R\+Storage\+Reference@{F\+I\+R\+Storage\+Reference}!parent@{parent}}
+\index{parent@{parent}!F\+I\+R\+Storage\+Reference@{F\+I\+R\+Storage\+Reference}}
+\subsubsection[{parent}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (nullable {\bf F\+I\+R\+Storage\+Reference} $\ast$) parent 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_storage_reference_ac7de04d6b32a64efd29d23806dd7483a}
+Creates a new \hyperlink{interface_f_i_r_storage_reference}{F\+I\+R\+Storage\+Reference} pointing to the parent of the current reference or nil if this instance references the root location. For example\+: path = foo/bar/baz parent = foo/bar path = foo parent = (root) path = (root) parent = nil \begin{DoxyReturn}{Returns}
+A new \hyperlink{interface_f_i_r_storage_reference}{F\+I\+R\+Storage\+Reference} pointing to the parent of the current reference. 
+\end{DoxyReturn}
+\hypertarget{interface_f_i_r_storage_reference_a88415944d46afc28a8734e8cbab86740}{}\index{F\+I\+R\+Storage\+Reference@{F\+I\+R\+Storage\+Reference}!put\+Data\+:@{put\+Data\+:}}
+\index{put\+Data\+:@{put\+Data\+:}!F\+I\+R\+Storage\+Reference@{F\+I\+R\+Storage\+Reference}}
+\subsubsection[{put\+Data\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf F\+I\+R\+Storage\+Upload\+Task} $\ast$) put\+Data\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Data $\ast$)}]{upload\+Data}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_storage_reference_a88415944d46afc28a8734e8cbab86740}
+Asynchronously uploads data to the currently specified \hyperlink{interface_f_i_r_storage_reference}{F\+I\+R\+Storage\+Reference}, without additional metadata. This is not recommended for large files, and one should instead upload a file from disk. 
+\begin{DoxyParams}{Parameters}
+{\em upload\+Data} & The N\+S\+Data to upload. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An instance of \hyperlink{interface_f_i_r_storage_upload_task}{F\+I\+R\+Storage\+Upload\+Task}, which can be used to monitor or manage the upload. 
+\end{DoxyReturn}
+\hypertarget{interface_f_i_r_storage_reference_ae837031a280e56ea1ba5d18f0b84c0a3}{}\index{F\+I\+R\+Storage\+Reference@{F\+I\+R\+Storage\+Reference}!put\+Data\+:metadata\+:@{put\+Data\+:metadata\+:}}
+\index{put\+Data\+:metadata\+:@{put\+Data\+:metadata\+:}!F\+I\+R\+Storage\+Reference@{F\+I\+R\+Storage\+Reference}}
+\subsubsection[{put\+Data\+:metadata\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf F\+I\+R\+Storage\+Upload\+Task} $\ast$) {\bf put\+Data\+:} 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Data $\ast$)}]{upload\+Data}
+\item[{metadata:(nullable {\bf F\+I\+R\+Storage\+Metadata} $\ast$)}]{metadata}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_storage_reference_ae837031a280e56ea1ba5d18f0b84c0a3}
+Asynchronously uploads data to the currently specified \hyperlink{interface_f_i_r_storage_reference}{F\+I\+R\+Storage\+Reference}. This is not recommended for large files, and one should instead upload a file from disk. 
+\begin{DoxyParams}{Parameters}
+{\em upload\+Data} & The N\+S\+Data to upload. \\
+\hline
+{\em metadata} & \hyperlink{interface_f_i_r_storage_metadata}{F\+I\+R\+Storage\+Metadata} containing additional information (M\+I\+M\+E type, etc.) about the object being uploaded. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An instance of \hyperlink{interface_f_i_r_storage_upload_task}{F\+I\+R\+Storage\+Upload\+Task}, which can be used to monitor or manage the upload. 
+\end{DoxyReturn}
+\hypertarget{interface_f_i_r_storage_reference_a3051f828285982f425c6b9f72e8caa2c}{}\index{F\+I\+R\+Storage\+Reference@{F\+I\+R\+Storage\+Reference}!put\+Data\+:metadata\+:completion\+:@{put\+Data\+:metadata\+:completion\+:}}
+\index{put\+Data\+:metadata\+:completion\+:@{put\+Data\+:metadata\+:completion\+:}!F\+I\+R\+Storage\+Reference@{F\+I\+R\+Storage\+Reference}}
+\subsubsection[{put\+Data\+:metadata\+:completion\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf F\+I\+R\+Storage\+Upload\+Task} $\ast$) {\bf put\+Data\+:} 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Data $\ast$)}]{upload\+Data}
+\item[{metadata:(nullable {\bf F\+I\+R\+Storage\+Metadata} $\ast$)}]{metadata}
+\item[{completion:(nullable void($^\wedge$)({\bf F\+I\+R\+Storage\+Metadata} $\ast$\+\_\+\+Nullable metadata, N\+S\+Error $\ast$\+\_\+\+Nullable error))}]{completion}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_storage_reference_a3051f828285982f425c6b9f72e8caa2c}
+Asynchronously uploads data to the currently specified \hyperlink{interface_f_i_r_storage_reference}{F\+I\+R\+Storage\+Reference}. This is not recommended for large files, and one should instead upload a file from disk. 
+\begin{DoxyParams}{Parameters}
+{\em upload\+Data} & The N\+S\+Data to upload. \\
+\hline
+{\em metadata} & \hyperlink{interface_f_i_r_storage_metadata}{F\+I\+R\+Storage\+Metadata} containing additional information (M\+I\+M\+E type, etc.) about the object being uploaded. \\
+\hline
+{\em completion} & A completion block that either returns the object metadata on success, or an error on failure. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An instance of \hyperlink{interface_f_i_r_storage_upload_task}{F\+I\+R\+Storage\+Upload\+Task}, which can be used to monitor or manage the upload. 
+\end{DoxyReturn}
+\hypertarget{interface_f_i_r_storage_reference_aa24045fbea599fbbe7832a81761b1e8c}{}\index{F\+I\+R\+Storage\+Reference@{F\+I\+R\+Storage\+Reference}!put\+File\+:@{put\+File\+:}}
+\index{put\+File\+:@{put\+File\+:}!F\+I\+R\+Storage\+Reference@{F\+I\+R\+Storage\+Reference}}
+\subsubsection[{put\+File\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf F\+I\+R\+Storage\+Upload\+Task} $\ast$) put\+File\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+U\+R\+L $\ast$)}]{file\+U\+R\+L}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_storage_reference_aa24045fbea599fbbe7832a81761b1e8c}
+Asynchronously uploads a file to the currently specified \hyperlink{interface_f_i_r_storage_reference}{F\+I\+R\+Storage\+Reference}, without additional metadata. 
+\begin{DoxyParams}{Parameters}
+{\em file\+U\+R\+L} & A U\+R\+L representing the system file path of the object to be uploaded. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An instance of \hyperlink{interface_f_i_r_storage_upload_task}{F\+I\+R\+Storage\+Upload\+Task}, which can be used to monitor or manage the upload. 
+\end{DoxyReturn}
+\hypertarget{interface_f_i_r_storage_reference_af27be33e866ddae25939b2c4acb28f3b}{}\index{F\+I\+R\+Storage\+Reference@{F\+I\+R\+Storage\+Reference}!put\+File\+:metadata\+:@{put\+File\+:metadata\+:}}
+\index{put\+File\+:metadata\+:@{put\+File\+:metadata\+:}!F\+I\+R\+Storage\+Reference@{F\+I\+R\+Storage\+Reference}}
+\subsubsection[{put\+File\+:metadata\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf F\+I\+R\+Storage\+Upload\+Task} $\ast$) {\bf put\+File\+:} 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+U\+R\+L $\ast$)}]{file\+U\+R\+L}
+\item[{metadata:(nullable {\bf F\+I\+R\+Storage\+Metadata} $\ast$)}]{metadata}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_storage_reference_af27be33e866ddae25939b2c4acb28f3b}
+Asynchronously uploads a file to the currently specified \hyperlink{interface_f_i_r_storage_reference}{F\+I\+R\+Storage\+Reference}. 
+\begin{DoxyParams}{Parameters}
+{\em file\+U\+R\+L} & A U\+R\+L representing the system file path of the object to be uploaded. \\
+\hline
+{\em metadata} & \hyperlink{interface_f_i_r_storage_metadata}{F\+I\+R\+Storage\+Metadata} containing additional information (M\+I\+M\+E type, etc.) about the object being uploaded. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An instance of \hyperlink{interface_f_i_r_storage_upload_task}{F\+I\+R\+Storage\+Upload\+Task}, which can be used to monitor or manage the upload. 
+\end{DoxyReturn}
+\hypertarget{interface_f_i_r_storage_reference_a488f02ce93fed03e4ceb53e2e4cbd499}{}\index{F\+I\+R\+Storage\+Reference@{F\+I\+R\+Storage\+Reference}!put\+File\+:metadata\+:completion\+:@{put\+File\+:metadata\+:completion\+:}}
+\index{put\+File\+:metadata\+:completion\+:@{put\+File\+:metadata\+:completion\+:}!F\+I\+R\+Storage\+Reference@{F\+I\+R\+Storage\+Reference}}
+\subsubsection[{put\+File\+:metadata\+:completion\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf F\+I\+R\+Storage\+Upload\+Task} $\ast$) {\bf put\+File\+:} 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+U\+R\+L $\ast$)}]{file\+U\+R\+L}
+\item[{metadata:(nullable {\bf F\+I\+R\+Storage\+Metadata} $\ast$)}]{metadata}
+\item[{completion:(nullable void($^\wedge$)({\bf F\+I\+R\+Storage\+Metadata} $\ast$\+\_\+\+Nullable metadata, N\+S\+Error $\ast$\+\_\+\+Nullable error))}]{completion}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_storage_reference_a488f02ce93fed03e4ceb53e2e4cbd499}
+Asynchronously uploads a file to the currently specified \hyperlink{interface_f_i_r_storage_reference}{F\+I\+R\+Storage\+Reference}. 
+\begin{DoxyParams}{Parameters}
+{\em file\+U\+R\+L} & A U\+R\+L representing the system file path of the object to be uploaded. \\
+\hline
+{\em metadata} & \hyperlink{interface_f_i_r_storage_metadata}{F\+I\+R\+Storage\+Metadata} containing additional information (M\+I\+M\+E type, etc.) about the object being uploaded. \\
+\hline
+{\em completion} & A completion block that either returns the object metadata on success, or an error on failure. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An instance of \hyperlink{interface_f_i_r_storage_upload_task}{F\+I\+R\+Storage\+Upload\+Task}, which can be used to monitor or manage the upload. 
+\end{DoxyReturn}
+\hypertarget{interface_f_i_r_storage_reference_ab91e075c2fed2ddb7d2a89d687f47030}{}\index{F\+I\+R\+Storage\+Reference@{F\+I\+R\+Storage\+Reference}!root@{root}}
+\index{root@{root}!F\+I\+R\+Storage\+Reference@{F\+I\+R\+Storage\+Reference}}
+\subsubsection[{root}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf F\+I\+R\+Storage\+Reference} $\ast$) root 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_storage_reference_ab91e075c2fed2ddb7d2a89d687f47030}
+Creates a new \hyperlink{interface_f_i_r_storage_reference}{F\+I\+R\+Storage\+Reference} pointing to the root object. \begin{DoxyReturn}{Returns}
+A new \hyperlink{interface_f_i_r_storage_reference}{F\+I\+R\+Storage\+Reference} pointing to the root object. 
+\end{DoxyReturn}
+\hypertarget{interface_f_i_r_storage_reference_ab994cb5cf0a171160378a0f0265c81f6}{}\index{F\+I\+R\+Storage\+Reference@{F\+I\+R\+Storage\+Reference}!update\+Metadata\+:completion\+:@{update\+Metadata\+:completion\+:}}
+\index{update\+Metadata\+:completion\+:@{update\+Metadata\+:completion\+:}!F\+I\+R\+Storage\+Reference@{F\+I\+R\+Storage\+Reference}}
+\subsubsection[{update\+Metadata\+:completion\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) update\+Metadata\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf F\+I\+R\+Storage\+Metadata} $\ast$)}]{metadata}
+\item[{completion:(nullable void($^\wedge$)({\bf F\+I\+R\+Storage\+Metadata} $\ast$\+\_\+\+Nullable metadata, N\+S\+Error $\ast$\+\_\+\+Nullable error))}]{completion}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_storage_reference_ab994cb5cf0a171160378a0f0265c81f6}
+Updates the metadata associated with an object at the current path. 
+\begin{DoxyParams}{Parameters}
+{\em metadata} & An \hyperlink{interface_f_i_r_storage_metadata}{F\+I\+R\+Storage\+Metadata} object with the metadata to update. \\
+\hline
+{\em completion} & A completion block which returns the \hyperlink{interface_f_i_r_storage_metadata}{F\+I\+R\+Storage\+Metadata} on success, or an error on failure. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_f_i_r_storage_reference_a279d136ad125f375b5e2b03556a1cef3}{}\index{F\+I\+R\+Storage\+Reference@{F\+I\+R\+Storage\+Reference}!write\+To\+File\+:@{write\+To\+File\+:}}
+\index{write\+To\+File\+:@{write\+To\+File\+:}!F\+I\+R\+Storage\+Reference@{F\+I\+R\+Storage\+Reference}}
+\subsubsection[{write\+To\+File\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf F\+I\+R\+Storage\+Download\+Task} $\ast$) write\+To\+File\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+U\+R\+L $\ast$)}]{file\+U\+R\+L}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_storage_reference_a279d136ad125f375b5e2b03556a1cef3}
+Asynchronously downloads the object at the current path to a specified system filepath. 
+\begin{DoxyParams}{Parameters}
+{\em file\+U\+R\+L} & A file system U\+R\+L representing the path the object should be downloaded to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An \hyperlink{interface_f_i_r_storage_download_task}{F\+I\+R\+Storage\+Download\+Task} that can be used to monitor or manage the download. 
+\end{DoxyReturn}
+\hypertarget{interface_f_i_r_storage_reference_a52c091145b0c44c2475046d88455e43d}{}\index{F\+I\+R\+Storage\+Reference@{F\+I\+R\+Storage\+Reference}!write\+To\+File\+:completion\+:@{write\+To\+File\+:completion\+:}}
+\index{write\+To\+File\+:completion\+:@{write\+To\+File\+:completion\+:}!F\+I\+R\+Storage\+Reference@{F\+I\+R\+Storage\+Reference}}
+\subsubsection[{write\+To\+File\+:completion\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf F\+I\+R\+Storage\+Download\+Task} $\ast$) {\bf write\+To\+File\+:} 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+U\+R\+L $\ast$)}]{file\+U\+R\+L}
+\item[{completion:(nullable void($^\wedge$)(N\+S\+U\+R\+L $\ast$\+\_\+\+Nullable U\+R\+L, N\+S\+Error $\ast$\+\_\+\+Nullable error))}]{completion}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_storage_reference_a52c091145b0c44c2475046d88455e43d}
+Asynchronously downloads the object at the current path to a specified system filepath. 
+\begin{DoxyParams}{Parameters}
+{\em file\+U\+R\+L} & A file system U\+R\+L representing the path the object should be downloaded to. \\
+\hline
+{\em completion} & A completion block that fires when the file download completes. Returns an N\+S\+U\+R\+L pointing to the file path of the downloaded file on success, or an error on failure. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An \hyperlink{interface_f_i_r_storage_download_task}{F\+I\+R\+Storage\+Download\+Task} that can be used to monitor or manage the download. 
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_f_i_r_storage_reference_a685333b75b9c800611cea278dcfe06b5}{}\index{F\+I\+R\+Storage\+Reference@{F\+I\+R\+Storage\+Reference}!bucket@{bucket}}
+\index{bucket@{bucket}!F\+I\+R\+Storage\+Reference@{F\+I\+R\+Storage\+Reference}}
+\subsubsection[{bucket}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) bucket\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_f_i_r_storage_reference_a685333b75b9c800611cea278dcfe06b5}
+The name of the Google Cloud Storage bucket associated with this reference, in gs\+://bucket/path/to/object.txt, the bucket would be\+: \textquotesingle{}bucket\textquotesingle{} \hypertarget{interface_f_i_r_storage_reference_a8af04c7ca02e65c37f50713efe697e49}{}\index{F\+I\+R\+Storage\+Reference@{F\+I\+R\+Storage\+Reference}!full\+Path@{full\+Path}}
+\index{full\+Path@{full\+Path}!F\+I\+R\+Storage\+Reference@{F\+I\+R\+Storage\+Reference}}
+\subsubsection[{full\+Path}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) full\+Path\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_f_i_r_storage_reference_a8af04c7ca02e65c37f50713efe697e49}
+The full path to this object, not including the Google Cloud Storage bucket. In gs\+://bucket/path/to/object.txt, the full path would be\+: \textquotesingle{}path/to/object.\+txt\textquotesingle{} \hypertarget{interface_f_i_r_storage_reference_a46b7942007399f60156d1ba6cfd0b089}{}\index{F\+I\+R\+Storage\+Reference@{F\+I\+R\+Storage\+Reference}!name@{name}}
+\index{name@{name}!F\+I\+R\+Storage\+Reference@{F\+I\+R\+Storage\+Reference}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) name\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_f_i_r_storage_reference_a46b7942007399f60156d1ba6cfd0b089}
+The short name of the object associated with this reference, in gs\+://bucket/path/to/object.txt, the name of the object would be\+: \textquotesingle{}object.\+txt\textquotesingle{} \hypertarget{interface_f_i_r_storage_reference_a7441bb92a62af97dfdecbefbe9999180}{}\index{F\+I\+R\+Storage\+Reference@{F\+I\+R\+Storage\+Reference}!storage@{storage}}
+\index{storage@{storage}!F\+I\+R\+Storage\+Reference@{F\+I\+R\+Storage\+Reference}}
+\subsubsection[{storage}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf F\+I\+R\+Storage}$\ast$) storage\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_f_i_r_storage_reference_a7441bb92a62af97dfdecbefbe9999180}
+The \hyperlink{interface_f_i_r_storage}{F\+I\+R\+Storage} service object which created this reference. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Frameworks/\+Firebase\+Storage.\+framework/\+Headers/\hyperlink{_f_i_r_storage_reference_8h}{F\+I\+R\+Storage\+Reference.\+h}\end{DoxyCompactItemize}

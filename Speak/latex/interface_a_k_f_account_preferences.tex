@@ -1,0 +1,100 @@
+\hypertarget{interface_a_k_f_account_preferences}{}\section{A\+K\+F\+Account\+Preferences Class Reference}
+\label{interface_a_k_f_account_preferences}\index{A\+K\+F\+Account\+Preferences@{A\+K\+F\+Account\+Preferences}}
+
+
+{\ttfamily \#import $<$A\+K\+F\+Account\+Preferences.\+h$>$}
+
+Inheritance diagram for A\+K\+F\+Account\+Preferences\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_a_k_f_account_preferences}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_a_k_f_account_preferences_a4b659be4bf7aabdca5af94828b8e8d4c}{}(instancetype) -\/ {\bfseries N\+S\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}\label{interface_a_k_f_account_preferences_a4b659be4bf7aabdca5af94828b8e8d4c}
+
+\item 
+(void) -\/ \hyperlink{interface_a_k_f_account_preferences_ae6028184b6b212d654934ece63c16d47}{delete\+Preference\+For\+Key\+:}
+\item 
+(void) -\/ \hyperlink{interface_a_k_f_account_preferences_a5c108585c8501bd51947dd16ea5cb3b4}{load\+Preference\+For\+Key\+:}
+\item 
+(void) -\/ \hyperlink{interface_a_k_f_account_preferences_a610d4ad840085e3c46024f1c12a526da}{load\+Preferences}
+\item 
+(void) -\/ \hyperlink{interface_a_k_f_account_preferences_a3826328a9f2f848dcecc972aed7d1864}{set\+Preference\+For\+Key\+:value\+:}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_a_k_f_account_preferences_a4b659be4bf7aabdca5af94828b8e8d4c}{}(instancetype) + {\bfseries N\+S\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}\label{interface_a_k_f_account_preferences_a4b659be4bf7aabdca5af94828b8e8d4c}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+id$<$ \hyperlink{protocol_a_k_f_account_preferences_delegate-p}{A\+K\+F\+Account\+Preferences\+Delegate} $>$ \hyperlink{interface_a_k_f_account_preferences_a041d49de07e05e44c53be3937561d1e8}{delegate}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Accesses Account preferences that are stored on the Account Kit servers for the associated app and account.  Get an instance of this class through \hyperlink{interface_a_k_f_account_kit}{A\+K\+F\+Account\+Kit} {\ttfamily account\+Preferences} 
+
+\subsection{Method Documentation}
+\hypertarget{interface_a_k_f_account_preferences_ae6028184b6b212d654934ece63c16d47}{}\index{A\+K\+F\+Account\+Preferences@{A\+K\+F\+Account\+Preferences}!delete\+Preference\+For\+Key\+:@{delete\+Preference\+For\+Key\+:}}
+\index{delete\+Preference\+For\+Key\+:@{delete\+Preference\+For\+Key\+:}!A\+K\+F\+Account\+Preferences@{A\+K\+F\+Account\+Preferences}}
+\subsubsection[{delete\+Preference\+For\+Key\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) delete\+Preference\+For\+Key\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{key}
+\end{DoxyParamCaption}
+}\label{interface_a_k_f_account_preferences_ae6028184b6b212d654934ece63c16d47}
+Deletes a single preference. 
+\begin{DoxyParams}{Parameters}
+{\em key} & The key for the preference. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_a_k_f_account_preferences_a5c108585c8501bd51947dd16ea5cb3b4}{}\index{A\+K\+F\+Account\+Preferences@{A\+K\+F\+Account\+Preferences}!load\+Preference\+For\+Key\+:@{load\+Preference\+For\+Key\+:}}
+\index{load\+Preference\+For\+Key\+:@{load\+Preference\+For\+Key\+:}!A\+K\+F\+Account\+Preferences@{A\+K\+F\+Account\+Preferences}}
+\subsubsection[{load\+Preference\+For\+Key\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) load\+Preference\+For\+Key\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{key}
+\end{DoxyParamCaption}
+}\label{interface_a_k_f_account_preferences_a5c108585c8501bd51947dd16ea5cb3b4}
+Loads a single preference. 
+\begin{DoxyParams}{Parameters}
+{\em key} & The key for the preference.  The loaded preference is sent to the delegate after it has loaded. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_a_k_f_account_preferences_a610d4ad840085e3c46024f1c12a526da}{}\index{A\+K\+F\+Account\+Preferences@{A\+K\+F\+Account\+Preferences}!load\+Preferences@{load\+Preferences}}
+\index{load\+Preferences@{load\+Preferences}!A\+K\+F\+Account\+Preferences@{A\+K\+F\+Account\+Preferences}}
+\subsubsection[{load\+Preferences}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) load\+Preferences 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_a_k_f_account_preferences_a610d4ad840085e3c46024f1c12a526da}
+Loads all preferences.  The loaded preferences are sent to the delegate after they are loaded. \hypertarget{interface_a_k_f_account_preferences_a3826328a9f2f848dcecc972aed7d1864}{}\index{A\+K\+F\+Account\+Preferences@{A\+K\+F\+Account\+Preferences}!set\+Preference\+For\+Key\+:value\+:@{set\+Preference\+For\+Key\+:value\+:}}
+\index{set\+Preference\+For\+Key\+:value\+:@{set\+Preference\+For\+Key\+:value\+:}!A\+K\+F\+Account\+Preferences@{A\+K\+F\+Account\+Preferences}}
+\subsubsection[{set\+Preference\+For\+Key\+:value\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\+Preference\+For\+Key\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{key}
+\item[{value:(nullable N\+S\+String $\ast$)}]{value}
+\end{DoxyParamCaption}
+}\label{interface_a_k_f_account_preferences_a3826328a9f2f848dcecc972aed7d1864}
+Writes a single preference. 
+\begin{DoxyParams}{Parameters}
+{\em key} & The key for the preference. \\
+\hline
+{\em value} & The value for the preference.  Setting a value of null will instead invoke {\ttfamily delete\+Preference\+For\+Key\+:}. Any existing value will be overwritten. Keys must be A\+S\+C\+I\+I letters, digits or the underscore character and be 1-\/100 characters in length. Values must be 1-\/1000 characters in length. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_a_k_f_account_preferences_a041d49de07e05e44c53be3937561d1e8}{}\index{A\+K\+F\+Account\+Preferences@{A\+K\+F\+Account\+Preferences}!delegate@{delegate}}
+\index{delegate@{delegate}!A\+K\+F\+Account\+Preferences@{A\+K\+F\+Account\+Preferences}}
+\subsubsection[{delegate}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id$<${\bf A\+K\+F\+Account\+Preferences\+Delegate}$>$) delegate\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}\label{interface_a_k_f_account_preferences_a041d49de07e05e44c53be3937561d1e8}
+A delegate for the \hyperlink{interface_a_k_f_account_preferences}{A\+K\+F\+Account\+Preferences} object. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Frameworks/\+Account\+Kit.\+framework/\+Headers/A\+K\+F\+Account\+Preferences.\+h\end{DoxyCompactItemize}

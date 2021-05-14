@@ -1,0 +1,130 @@
+\hypertarget{interface_j_v_float_labeled_text_view}{}\section{J\+V\+Float\+Labeled\+Text\+View Class Reference}
+\label{interface_j_v_float_labeled_text_view}\index{J\+V\+Float\+Labeled\+Text\+View@{J\+V\+Float\+Labeled\+Text\+View}}
+
+
+{\ttfamily \#import $<$J\+V\+Float\+Labeled\+Text\+View.\+h$>$}
+
+Inheritance diagram for J\+V\+Float\+Labeled\+Text\+View\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_j_v_float_labeled_text_view}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_j_v_float_labeled_text_view_ae22503f5ff0d75be684f75ea13ea250a}{set\+Placeholder\+:floating\+Title\+:}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+I\+B\+Inspectable N\+S\+String $\ast$ \hyperlink{interface_j_v_float_labeled_text_view_a8abe506cc556e72fb0e77cc884f7192d}{placeholder}
+\item 
+U\+I\+Label $\ast$ \hyperlink{interface_j_v_float_labeled_text_view_ab90f8f526a28fcae4d4a1c264826cb4d}{placeholder\+Label}
+\item 
+U\+I\+Label $\ast$ \hyperlink{interface_j_v_float_labeled_text_view_a9267bda83c69a187acf332dd71bd6eb1}{floating\+Label}
+\item 
+I\+B\+Inspectable C\+G\+Float \hyperlink{interface_j_v_float_labeled_text_view_a407df8e8312fa50a95182e1b69360257}{floating\+Label\+Y\+Padding}
+\item 
+I\+B\+Inspectable C\+G\+Float \hyperlink{interface_j_v_float_labeled_text_view_a856de4f1de19833103a41b1f733f235b}{floating\+Label\+X\+Padding}
+\item 
+I\+B\+Inspectable C\+G\+Float \hyperlink{interface_j_v_float_labeled_text_view_afd73224d1c6564d0db5a36934fbd4909}{placeholder\+Y\+Padding}
+\item 
+U\+I\+Font $\ast$ \hyperlink{interface_j_v_float_labeled_text_view_a714359739c5a39e8bcd9dbc4cade6972}{floating\+Label\+Font}
+\item 
+I\+B\+Inspectable U\+I\+Color $\ast$ \hyperlink{interface_j_v_float_labeled_text_view_a037211938698f45a06a31d0c492e5632}{floating\+Label\+Text\+Color}
+\item 
+I\+B\+Inspectable U\+I\+Color $\ast$ \hyperlink{interface_j_v_float_labeled_text_view_aeafbd8422f4d37317d1dc65c5827d884}{floating\+Label\+Active\+Text\+Color}
+\item 
+I\+B\+Inspectable B\+O\+O\+L \hyperlink{interface_j_v_float_labeled_text_view_a62884c0e053aaf577df9c10b111d164e}{floating\+Label\+Should\+Lock\+To\+Top}
+\item 
+I\+B\+Inspectable U\+I\+Color $\ast$ \hyperlink{interface_j_v_float_labeled_text_view_ada674f4ce304734239a459d1d2c822f1}{placeholder\+Text\+Color}
+\item 
+I\+B\+Inspectable B\+O\+O\+L \hyperlink{interface_j_v_float_labeled_text_view_a2d654f540a5f9878e31f7583cc05f6f1}{animate\+Even\+If\+Not\+First\+Responder}
+\item 
+N\+S\+Time\+Interval floating\+Label\+Show\+Animation\+Duration \hyperlink{interface_j_v_float_labeled_text_view_ac4b09dae01394be968952a684e92adb4}{U\+I\+\_\+\+A\+P\+P\+E\+A\+R\+A\+N\+C\+E\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R}
+\item 
+N\+S\+Time\+Interval floating\+Label\+Hide\+Animation\+Duration \hyperlink{interface_j_v_float_labeled_text_view_ac0ed6f92806ad02cad8caa5d643620f4}{U\+I\+\_\+\+A\+P\+P\+E\+A\+R\+A\+N\+C\+E\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+{\ttfamily \hyperlink{interface_j_v_float_labeled_text_view}{J\+V\+Float\+Labeled\+Text\+View}} is a {\ttfamily U\+I\+Text\+View} subclass that implements the \char`\"{}\+Float Label Pattern\char`\"{}.
+
+Due to space constraints on mobile devices, it is common to rely solely on placeholders as a means to label fields. This presents a U\+X problem, in that, once the user begins to fill out a form, no labels are present.
+
+{\ttfamily \hyperlink{interface_j_v_float_labeled_text_view}{J\+V\+Float\+Labeled\+Text\+View}} aims to improve the user experience by having placeholders transition into \char`\"{}floating labels\char`\"{} that hover above the text view after it is populated with text.
+
+\hyperlink{interface_j_v_float_labeled_text_view}{J\+V\+Float\+Labeled\+Text\+View} supports i\+O\+S 7+.
+
+Credits for the concept to Matt D. Smith (), and his original design\+: \href{http://mattdsmith.com/float-label-pattern/}{\tt http\+://mattdsmith.\+com/float-\/label-\/pattern/} 
+
+\subsection{Method Documentation}
+\hypertarget{interface_j_v_float_labeled_text_view_ae22503f5ff0d75be684f75ea13ea250a}{}\index{J\+V\+Float\+Labeled\+Text\+View@{J\+V\+Float\+Labeled\+Text\+View}!set\+Placeholder\+:floating\+Title\+:@{set\+Placeholder\+:floating\+Title\+:}}
+\index{set\+Placeholder\+:floating\+Title\+:@{set\+Placeholder\+:floating\+Title\+:}!J\+V\+Float\+Labeled\+Text\+View@{J\+V\+Float\+Labeled\+Text\+View}}
+\subsubsection[{set\+Placeholder\+:floating\+Title\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\+Placeholder\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{placeholder}
+\item[{floatingTitle:(N\+S\+String $\ast$)}]{floating\+Title}
+\end{DoxyParamCaption}
+}\label{interface_j_v_float_labeled_text_view_ae22503f5ff0d75be684f75ea13ea250a}
+Sets the placeholder and the floating title
+
+
+\begin{DoxyParams}{Parameters}
+{\em placeholder} & The string that to be shown in the text view when no other text is present. \\
+\hline
+{\em floating\+Title} & The string to be shown above the text view once it has been populated with text by the user. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_j_v_float_labeled_text_view_a2d654f540a5f9878e31f7583cc05f6f1}{}\index{J\+V\+Float\+Labeled\+Text\+View@{J\+V\+Float\+Labeled\+Text\+View}!animate\+Even\+If\+Not\+First\+Responder@{animate\+Even\+If\+Not\+First\+Responder}}
+\index{animate\+Even\+If\+Not\+First\+Responder@{animate\+Even\+If\+Not\+First\+Responder}!J\+V\+Float\+Labeled\+Text\+View@{J\+V\+Float\+Labeled\+Text\+View}}
+\subsubsection[{animate\+Even\+If\+Not\+First\+Responder}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Inspectable B\+O\+O\+L) animate\+Even\+If\+Not\+First\+Responder\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_j_v_float_labeled_text_view_a2d654f540a5f9878e31f7583cc05f6f1}
+Indicates whether the floating label\textquotesingle{}s appearance should be animated regardless of first responder status. By default, animation only occurs if the text field is a first responder. \hypertarget{interface_j_v_float_labeled_text_view_a9267bda83c69a187acf332dd71bd6eb1}{}\index{J\+V\+Float\+Labeled\+Text\+View@{J\+V\+Float\+Labeled\+Text\+View}!floating\+Label@{floating\+Label}}
+\index{floating\+Label@{floating\+Label}!J\+V\+Float\+Labeled\+Text\+View@{J\+V\+Float\+Labeled\+Text\+View}}
+\subsubsection[{floating\+Label}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Label$\ast$) floating\+Label\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_j_v_float_labeled_text_view_a9267bda83c69a187acf332dd71bd6eb1}
+Read-\/only access to the floating label. \hypertarget{interface_j_v_float_labeled_text_view_aeafbd8422f4d37317d1dc65c5827d884}{}\index{J\+V\+Float\+Labeled\+Text\+View@{J\+V\+Float\+Labeled\+Text\+View}!floating\+Label\+Active\+Text\+Color@{floating\+Label\+Active\+Text\+Color}}
+\index{floating\+Label\+Active\+Text\+Color@{floating\+Label\+Active\+Text\+Color}!J\+V\+Float\+Labeled\+Text\+View@{J\+V\+Float\+Labeled\+Text\+View}}
+\subsubsection[{floating\+Label\+Active\+Text\+Color}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Inspectable U\+I\+Color$\ast$) floating\+Label\+Active\+Text\+Color\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_j_v_float_labeled_text_view_aeafbd8422f4d37317d1dc65c5827d884}
+Text color to be applied to the floating label while the text view is a first responder. Tint color is used by default if an {\ttfamily floating\+Label\+Active\+Text\+Color} is not provided. \hypertarget{interface_j_v_float_labeled_text_view_a714359739c5a39e8bcd9dbc4cade6972}{}\index{J\+V\+Float\+Labeled\+Text\+View@{J\+V\+Float\+Labeled\+Text\+View}!floating\+Label\+Font@{floating\+Label\+Font}}
+\index{floating\+Label\+Font@{floating\+Label\+Font}!J\+V\+Float\+Labeled\+Text\+View@{J\+V\+Float\+Labeled\+Text\+View}}
+\subsubsection[{floating\+Label\+Font}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Font$\ast$) floating\+Label\+Font\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_j_v_float_labeled_text_view_a714359739c5a39e8bcd9dbc4cade6972}
+Font to be applied to the floating label. Defaults to {\ttfamily \mbox{[}U\+I\+Font bold\+System\+Font\+Of\+Size\+:12.\+0f\mbox{]}}. Provided for the convenience of using as an appearance proxy. \hypertarget{interface_j_v_float_labeled_text_view_a62884c0e053aaf577df9c10b111d164e}{}\index{J\+V\+Float\+Labeled\+Text\+View@{J\+V\+Float\+Labeled\+Text\+View}!floating\+Label\+Should\+Lock\+To\+Top@{floating\+Label\+Should\+Lock\+To\+Top}}
+\index{floating\+Label\+Should\+Lock\+To\+Top@{floating\+Label\+Should\+Lock\+To\+Top}!J\+V\+Float\+Labeled\+Text\+View@{J\+V\+Float\+Labeled\+Text\+View}}
+\subsubsection[{floating\+Label\+Should\+Lock\+To\+Top}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Inspectable B\+O\+O\+L) floating\+Label\+Should\+Lock\+To\+Top\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_j_v_float_labeled_text_view_a62884c0e053aaf577df9c10b111d164e}
+Indicates whether the floating label should lock to the top of the text view, or scroll away with text when the text view is scrollable. By default, floating labels will lock to the top of the text view and their background color will be set to the text view\textquotesingle{}s background color Note that this works best when floating labels have a non-\/clear background color. \hypertarget{interface_j_v_float_labeled_text_view_a037211938698f45a06a31d0c492e5632}{}\index{J\+V\+Float\+Labeled\+Text\+View@{J\+V\+Float\+Labeled\+Text\+View}!floating\+Label\+Text\+Color@{floating\+Label\+Text\+Color}}
+\index{floating\+Label\+Text\+Color@{floating\+Label\+Text\+Color}!J\+V\+Float\+Labeled\+Text\+View@{J\+V\+Float\+Labeled\+Text\+View}}
+\subsubsection[{floating\+Label\+Text\+Color}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Inspectable U\+I\+Color$\ast$) floating\+Label\+Text\+Color\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_j_v_float_labeled_text_view_a037211938698f45a06a31d0c492e5632}
+Text color to be applied to the floating label while the text view is not a first responder. Defaults to {\ttfamily \mbox{[}U\+I\+Color gray\+Color\mbox{]}}. Provided for the convenience of using as an appearance proxy. \hypertarget{interface_j_v_float_labeled_text_view_a856de4f1de19833103a41b1f733f235b}{}\index{J\+V\+Float\+Labeled\+Text\+View@{J\+V\+Float\+Labeled\+Text\+View}!floating\+Label\+X\+Padding@{floating\+Label\+X\+Padding}}
+\index{floating\+Label\+X\+Padding@{floating\+Label\+X\+Padding}!J\+V\+Float\+Labeled\+Text\+View@{J\+V\+Float\+Labeled\+Text\+View}}
+\subsubsection[{floating\+Label\+X\+Padding}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Inspectable C\+G\+Float) floating\+Label\+X\+Padding\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_j_v_float_labeled_text_view_a856de4f1de19833103a41b1f733f235b}
+Padding to be applied to the x coordinate of the floating label upon presentation. \hypertarget{interface_j_v_float_labeled_text_view_a407df8e8312fa50a95182e1b69360257}{}\index{J\+V\+Float\+Labeled\+Text\+View@{J\+V\+Float\+Labeled\+Text\+View}!floating\+Label\+Y\+Padding@{floating\+Label\+Y\+Padding}}
+\index{floating\+Label\+Y\+Padding@{floating\+Label\+Y\+Padding}!J\+V\+Float\+Labeled\+Text\+View@{J\+V\+Float\+Labeled\+Text\+View}}
+\subsubsection[{floating\+Label\+Y\+Padding}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Inspectable C\+G\+Float) floating\+Label\+Y\+Padding\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_j_v_float_labeled_text_view_a407df8e8312fa50a95182e1b69360257}
+Padding to be applied to the y coordinate of the floating label upon presentation. \hypertarget{interface_j_v_float_labeled_text_view_a8abe506cc556e72fb0e77cc884f7192d}{}\index{J\+V\+Float\+Labeled\+Text\+View@{J\+V\+Float\+Labeled\+Text\+View}!placeholder@{placeholder}}
+\index{placeholder@{placeholder}!J\+V\+Float\+Labeled\+Text\+View@{J\+V\+Float\+Labeled\+Text\+View}}
+\subsubsection[{placeholder}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Inspectable N\+S\+String$\ast$) placeholder\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_j_v_float_labeled_text_view_a8abe506cc556e72fb0e77cc884f7192d}
+The placeholder string to be shown in the text view when no other text is present. \hypertarget{interface_j_v_float_labeled_text_view_ab90f8f526a28fcae4d4a1c264826cb4d}{}\index{J\+V\+Float\+Labeled\+Text\+View@{J\+V\+Float\+Labeled\+Text\+View}!placeholder\+Label@{placeholder\+Label}}
+\index{placeholder\+Label@{placeholder\+Label}!J\+V\+Float\+Labeled\+Text\+View@{J\+V\+Float\+Labeled\+Text\+View}}
+\subsubsection[{placeholder\+Label}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Label$\ast$) placeholder\+Label\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_j_v_float_labeled_text_view_ab90f8f526a28fcae4d4a1c264826cb4d}
+Read-\/only access to the placeholder label. \hypertarget{interface_j_v_float_labeled_text_view_ada674f4ce304734239a459d1d2c822f1}{}\index{J\+V\+Float\+Labeled\+Text\+View@{J\+V\+Float\+Labeled\+Text\+View}!placeholder\+Text\+Color@{placeholder\+Text\+Color}}
+\index{placeholder\+Text\+Color@{placeholder\+Text\+Color}!J\+V\+Float\+Labeled\+Text\+View@{J\+V\+Float\+Labeled\+Text\+View}}
+\subsubsection[{placeholder\+Text\+Color}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Inspectable U\+I\+Color$\ast$) placeholder\+Text\+Color\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_j_v_float_labeled_text_view_ada674f4ce304734239a459d1d2c822f1}
+Text color to be applied to the placeholder. Defaults to {\ttfamily \mbox{[}\mbox{[}U\+I\+Color light\+Gray\+Color\mbox{]} color\+With\+Alpha\+Component\+:0.\+65f\mbox{]}}. \hypertarget{interface_j_v_float_labeled_text_view_afd73224d1c6564d0db5a36934fbd4909}{}\index{J\+V\+Float\+Labeled\+Text\+View@{J\+V\+Float\+Labeled\+Text\+View}!placeholder\+Y\+Padding@{placeholder\+Y\+Padding}}
+\index{placeholder\+Y\+Padding@{placeholder\+Y\+Padding}!J\+V\+Float\+Labeled\+Text\+View@{J\+V\+Float\+Labeled\+Text\+View}}
+\subsubsection[{placeholder\+Y\+Padding}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Inspectable C\+G\+Float) placeholder\+Y\+Padding\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_j_v_float_labeled_text_view_afd73224d1c6564d0db5a36934fbd4909}
+Padding to be applied to the y coordinate of the placeholder. \hypertarget{interface_j_v_float_labeled_text_view_ac4b09dae01394be968952a684e92adb4}{}\index{J\+V\+Float\+Labeled\+Text\+View@{J\+V\+Float\+Labeled\+Text\+View}!U\+I\+\_\+\+A\+P\+P\+E\+A\+R\+A\+N\+C\+E\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R@{U\+I\+\_\+\+A\+P\+P\+E\+A\+R\+A\+N\+C\+E\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R}}
+\index{U\+I\+\_\+\+A\+P\+P\+E\+A\+R\+A\+N\+C\+E\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R@{U\+I\+\_\+\+A\+P\+P\+E\+A\+R\+A\+N\+C\+E\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R}!J\+V\+Float\+Labeled\+Text\+View@{J\+V\+Float\+Labeled\+Text\+View}}
+\subsubsection[{U\+I\+\_\+\+A\+P\+P\+E\+A\+R\+A\+N\+C\+E\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Time\+Interval floating\+Label\+Show\+Animation\+Duration) U\+I\+\_\+\+A\+P\+P\+E\+A\+R\+A\+N\+C\+E\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_j_v_float_labeled_text_view_ac4b09dae01394be968952a684e92adb4}
+Duration of the animation when showing the floating label. Defaults to 0.\+3 seconds. \hypertarget{interface_j_v_float_labeled_text_view_ac0ed6f92806ad02cad8caa5d643620f4}{}\index{J\+V\+Float\+Labeled\+Text\+View@{J\+V\+Float\+Labeled\+Text\+View}!U\+I\+\_\+\+A\+P\+P\+E\+A\+R\+A\+N\+C\+E\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R@{U\+I\+\_\+\+A\+P\+P\+E\+A\+R\+A\+N\+C\+E\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R}}
+\index{U\+I\+\_\+\+A\+P\+P\+E\+A\+R\+A\+N\+C\+E\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R@{U\+I\+\_\+\+A\+P\+P\+E\+A\+R\+A\+N\+C\+E\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R}!J\+V\+Float\+Labeled\+Text\+View@{J\+V\+Float\+Labeled\+Text\+View}}
+\subsubsection[{U\+I\+\_\+\+A\+P\+P\+E\+A\+R\+A\+N\+C\+E\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Time\+Interval floating\+Label\+Hide\+Animation\+Duration) U\+I\+\_\+\+A\+P\+P\+E\+A\+R\+A\+N\+C\+E\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_j_v_float_labeled_text_view_ac0ed6f92806ad02cad8caa5d643620f4}
+Duration of the animation when hiding the floating label. Defaults to 0.\+3 seconds. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Vendors/\+J\+V\+Float\+Labeled\+Text\+Field/J\+V\+Float\+Labeled\+Text\+View.\+h\item 
+Vendors/\+J\+V\+Float\+Labeled\+Text\+Field/J\+V\+Float\+Labeled\+Text\+View.\+m\end{DoxyCompactItemize}

@@ -1,0 +1,73 @@
+\hypertarget{interface_j_s_q_messages_bubble_image}{}\section{J\+S\+Q\+Messages\+Bubble\+Image Class Reference}
+\label{interface_j_s_q_messages_bubble_image}\index{J\+S\+Q\+Messages\+Bubble\+Image@{J\+S\+Q\+Messages\+Bubble\+Image}}
+
+
+{\ttfamily \#import $<$J\+S\+Q\+Messages\+Bubble\+Image.\+h$>$}
+
+Inheritance diagram for J\+S\+Q\+Messages\+Bubble\+Image\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.248996cm]{interface_j_s_q_messages_bubble_image}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) -\/ \hyperlink{interface_j_s_q_messages_bubble_image_a950b5a5ed124b584faecd17d352f94c9}{init\+With\+Message\+Bubble\+Image\+:highlighted\+Image\+:}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+U\+I\+Image $\ast$ \hyperlink{interface_j_s_q_messages_bubble_image_a6780a193bff2e635e1e224832bd7178a}{message\+Bubble\+Image}
+\item 
+U\+I\+Image $\ast$ \hyperlink{interface_j_s_q_messages_bubble_image_acf8df32f421b6e308e528f0bdab65617}{message\+Bubble\+Highlighted\+Image}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A {\ttfamily \hyperlink{interface_j_s_q_messages_bubble_image}{J\+S\+Q\+Messages\+Bubble\+Image}} model object represents a message bubble image, and is immutable. This is a concrete class that implements the {\ttfamily \hyperlink{protocol_j_s_q_message_bubble_image_data_source-p}{J\+S\+Q\+Message\+Bubble\+Image\+Data\+Source}} protocol. It contains a regular message bubble image and a highlighted message bubble image.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_j_s_q_messages_bubble_image_factory}{J\+S\+Q\+Messages\+Bubble\+Image\+Factory}. 
+\end{DoxySeeAlso}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_j_s_q_messages_bubble_image_a950b5a5ed124b584faecd17d352f94c9}{}\index{J\+S\+Q\+Messages\+Bubble\+Image@{J\+S\+Q\+Messages\+Bubble\+Image}!init\+With\+Message\+Bubble\+Image\+:highlighted\+Image\+:@{init\+With\+Message\+Bubble\+Image\+:highlighted\+Image\+:}}
+\index{init\+With\+Message\+Bubble\+Image\+:highlighted\+Image\+:@{init\+With\+Message\+Bubble\+Image\+:highlighted\+Image\+:}!J\+S\+Q\+Messages\+Bubble\+Image@{J\+S\+Q\+Messages\+Bubble\+Image}}
+\subsubsection[{init\+With\+Message\+Bubble\+Image\+:highlighted\+Image\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (instancetype) init\+With\+Message\+Bubble\+Image\+: 
+\begin{DoxyParamCaption}
+\item[{(U\+I\+Image $\ast$)}]{image}
+\item[{highlightedImage:(U\+I\+Image $\ast$)}]{highlighted\+Image}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_messages_bubble_image_a950b5a5ed124b584faecd17d352f94c9}
+Initializes and returns a message bubble image object having the specified regular image and highlighted image.
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & The regular message bubble image. This value must not be {\ttfamily nil}. \\
+\hline
+{\em highlighted\+Image} & The highlighted message bubble image. This value must not be {\ttfamily nil}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An initialized {\ttfamily \hyperlink{interface_j_s_q_messages_bubble_image}{J\+S\+Q\+Messages\+Bubble\+Image}} object if successful, {\ttfamily nil} otherwise.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_j_s_q_messages_bubble_image_factory}{J\+S\+Q\+Messages\+Bubble\+Image\+Factory}. 
+\end{DoxySeeAlso}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_j_s_q_messages_bubble_image_acf8df32f421b6e308e528f0bdab65617}{}\index{J\+S\+Q\+Messages\+Bubble\+Image@{J\+S\+Q\+Messages\+Bubble\+Image}!message\+Bubble\+Highlighted\+Image@{message\+Bubble\+Highlighted\+Image}}
+\index{message\+Bubble\+Highlighted\+Image@{message\+Bubble\+Highlighted\+Image}!J\+S\+Q\+Messages\+Bubble\+Image@{J\+S\+Q\+Messages\+Bubble\+Image}}
+\subsubsection[{message\+Bubble\+Highlighted\+Image}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Image$\ast$) message\+Bubble\+Highlighted\+Image\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_j_s_q_messages_bubble_image_acf8df32f421b6e308e528f0bdab65617}
+Returns the message bubble image for a highlighted display state. \hypertarget{interface_j_s_q_messages_bubble_image_a6780a193bff2e635e1e224832bd7178a}{}\index{J\+S\+Q\+Messages\+Bubble\+Image@{J\+S\+Q\+Messages\+Bubble\+Image}!message\+Bubble\+Image@{message\+Bubble\+Image}}
+\index{message\+Bubble\+Image@{message\+Bubble\+Image}!J\+S\+Q\+Messages\+Bubble\+Image@{J\+S\+Q\+Messages\+Bubble\+Image}}
+\subsubsection[{message\+Bubble\+Image}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Image$\ast$) message\+Bubble\+Image\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_j_s_q_messages_bubble_image_a6780a193bff2e635e1e224832bd7178a}
+Returns the message bubble image for a regular display state. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Vendors/\+J\+S\+Q\+Messages\+View\+Controller/\+Model/J\+S\+Q\+Messages\+Bubble\+Image.\+h\item 
+Vendors/\+J\+S\+Q\+Messages\+View\+Controller/\+Model/J\+S\+Q\+Messages\+Bubble\+Image.\+m\end{DoxyCompactItemize}

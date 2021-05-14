@@ -1,0 +1,223 @@
+\hypertarget{interface_p_f_config}{}\section{P\+F\+Config Class Reference}
+\label{interface_p_f_config}\index{P\+F\+Config@{P\+F\+Config}}
+
+
+{\ttfamily \#import $<$P\+F\+Config.\+h$>$}
+
+Inheritance diagram for P\+F\+Config\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_p_f_config}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(nullable id) -\/ \hyperlink{interface_p_f_config_af431f30589c00c2deb64890be7b9e85d}{object\+For\+Key\+:}
+\begin{DoxyCompactList}\small\item\em 
+
+ \end{DoxyCompactList}\item 
+(nullable id) -\/ \hyperlink{interface_p_f_config_a88078668ce7f8b1d6ecb729f4d0e68f5}{object\+For\+Keyed\+Subscript\+:}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_p_f_config}{P\+F\+Config} $\ast$) + \hyperlink{interface_p_f_config_ab9e3da933693acf660de9b8a47ad2458}{current\+Config}
+\begin{DoxyCompactList}\small\item\em 
+
+ \end{DoxyCompactList}\item 
+(\hyperlink{class_b_f_task}{B\+F\+Task}$<$ \hyperlink{interface_p_f_config}{P\+F\+Config} $\ast$ $>$ $\ast$) + \hyperlink{interface_p_f_config_aecb109218f987bcdcd03ec377ea93dcb}{get\+Current\+Config\+In\+Background}
+\item 
+(\hyperlink{class_b_f_task}{B\+F\+Task}$<$ \hyperlink{interface_p_f_config}{P\+F\+Config} $\ast$ $>$ $\ast$) + \hyperlink{interface_p_f_config_a7cc2dd258dc9af6ae2ed3e1739247580}{get\+Config\+In\+Background}
+\begin{DoxyCompactList}\small\item\em 
+
+ \end{DoxyCompactList}\item 
+(void) + \hyperlink{interface_p_f_config_a59863da001385117f37c1b6aefb908f6}{get\+Config\+In\+Background\+With\+Block\+:}
+\item 
+(nullable \hyperlink{interface_p_f_config}{P\+F\+Config} $\ast$) + \hyperlink{interface_p_f_config_a5428cf4c7686dd9c214a6fee6dcf28f6}{P\+F\+\_\+\+S\+W\+I\+F\+T\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}
+\begin{DoxyCompactList}\small\item\em 
+
+ \end{DoxyCompactList}\item 
+(nullable \hyperlink{interface_p_f_config}{P\+F\+Config} $\ast$) + \hyperlink{interface_p_f_config_a90f9c38de2621c7d624326f14b5ec558}{get\+Config\+:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+{\ttfamily \hyperlink{interface_p_f_config}{P\+F\+Config}} is a representation of the remote configuration object. It enables you to add things like feature gating, a/b testing or simple \char`\"{}\+Message of the day\char`\"{}. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_p_f_config_ab9e3da933693acf660de9b8a47ad2458}{}\index{P\+F\+Config@{P\+F\+Config}!current\+Config@{current\+Config}}
+\index{current\+Config@{current\+Config}!P\+F\+Config@{P\+F\+Config}}
+\subsubsection[{current\+Config}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf P\+F\+Config} $\ast$) current\+Config 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_config_ab9e3da933693acf660de9b8a47ad2458}
+
+
+
+
+ 
+
+
+
+
+
+Returns the most recently fetched config.
+
+If there was no config fetched -\/ this method will return an empty instance of {\ttfamily \hyperlink{interface_p_f_config}{P\+F\+Config}}.
+
+\begin{DoxyReturn}{Returns}
+Current, last fetched instance of \hyperlink{interface_p_f_config}{P\+F\+Config}. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_config_a90f9c38de2621c7d624326f14b5ec558}{}\index{P\+F\+Config@{P\+F\+Config}!get\+Config\+:@{get\+Config\+:}}
+\index{get\+Config\+:@{get\+Config\+:}!P\+F\+Config@{P\+F\+Config}}
+\subsubsection[{get\+Config\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (nullable {\bf P\+F\+Config} $\ast$) get\+Config\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Error $\ast$$\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{interface_p_f_config_a90f9c38de2621c7d624326f14b5ec558}
+Gets the {\ttfamily \hyperlink{interface_p_f_config}{P\+F\+Config}} object {\itshape synchronously} from the server and sets an error if it occurs.
+
+
+\begin{DoxyParams}{Parameters}
+{\em error} & Pointer to an {\ttfamily N\+S\+Error} that will be set if necessary.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Instance of \hyperlink{interface_p_f_config}{P\+F\+Config} if the operation succeeded, otherwise {\ttfamily nil}. 
+\end{DoxyReturn}
+
+
+Provided by category \hyperlink{category_p_f_config_07_synchronous_08_a90f9c38de2621c7d624326f14b5ec558}{P\+F\+Config(\+Synchronous)}.
+
+\hypertarget{interface_p_f_config_a7cc2dd258dc9af6ae2ed3e1739247580}{}\index{P\+F\+Config@{P\+F\+Config}!get\+Config\+In\+Background@{get\+Config\+In\+Background}}
+\index{get\+Config\+In\+Background@{get\+Config\+In\+Background}!P\+F\+Config@{P\+F\+Config}}
+\subsubsection[{get\+Config\+In\+Background}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf B\+F\+Task}$<${\bf P\+F\+Config} $\ast$$>$ $\ast$) get\+Config\+In\+Background 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_config_a7cc2dd258dc9af6ae2ed3e1739247580}
+
+
+
+
+ 
+
+
+
+
+
+Gets the {\ttfamily \hyperlink{interface_p_f_config}{P\+F\+Config}} {\itshape asynchronously} and sets it as a result of a task.
+
+\begin{DoxyReturn}{Returns}
+The task, that encapsulates the work being done. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_config_a59863da001385117f37c1b6aefb908f6}{}\index{P\+F\+Config@{P\+F\+Config}!get\+Config\+In\+Background\+With\+Block\+:@{get\+Config\+In\+Background\+With\+Block\+:}}
+\index{get\+Config\+In\+Background\+With\+Block\+:@{get\+Config\+In\+Background\+With\+Block\+:}!P\+F\+Config@{P\+F\+Config}}
+\subsubsection[{get\+Config\+In\+Background\+With\+Block\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) get\+Config\+In\+Background\+With\+Block\+: 
+\begin{DoxyParamCaption}
+\item[{(nullable P\+F\+Config\+Result\+Block)}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_config_a59863da001385117f37c1b6aefb908f6}
+Gets the {\ttfamily \hyperlink{interface_p_f_config}{P\+F\+Config}} {\itshape asynchronously} and executes the given callback block.
+
+
+\begin{DoxyParams}{Parameters}
+{\em block} & The block to execute. It should have the following argument signature\+: {\ttfamily $^\wedge$(\hyperlink{interface_p_f_config}{P\+F\+Config} $\ast$config, N\+S\+Error $\ast$error)}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_config_aecb109218f987bcdcd03ec377ea93dcb}{}\index{P\+F\+Config@{P\+F\+Config}!get\+Current\+Config\+In\+Background@{get\+Current\+Config\+In\+Background}}
+\index{get\+Current\+Config\+In\+Background@{get\+Current\+Config\+In\+Background}!P\+F\+Config@{P\+F\+Config}}
+\subsubsection[{get\+Current\+Config\+In\+Background}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf B\+F\+Task}$<${\bf P\+F\+Config} $\ast$$>$ $\ast$) get\+Current\+Config\+In\+Background 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_config_aecb109218f987bcdcd03ec377ea93dcb}
+Returns the task that encapsulates the most recently fetched config.
+
+If there was no config fetched -\/ this method will return an empty instance of {\ttfamily \hyperlink{interface_p_f_config}{P\+F\+Config}}.
+
+\begin{DoxyReturn}{Returns}
+Task that encapsulates current, last fetched instance of \hyperlink{interface_p_f_config}{P\+F\+Config}. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_config_af431f30589c00c2deb64890be7b9e85d}{}\index{P\+F\+Config@{P\+F\+Config}!object\+For\+Key\+:@{object\+For\+Key\+:}}
+\index{object\+For\+Key\+:@{object\+For\+Key\+:}!P\+F\+Config@{P\+F\+Config}}
+\subsubsection[{object\+For\+Key\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (nullable id) object\+For\+Key\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{key}
+\end{DoxyParamCaption}
+}\label{interface_p_f_config_af431f30589c00c2deb64890be7b9e85d}
+
+
+
+
+ 
+
+
+
+
+
+Returns the object associated with a given key.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key for which to return the corresponding configuration value.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value associated with {\ttfamily key}, or {\ttfamily nil} if there is no such value. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_config_a88078668ce7f8b1d6ecb729f4d0e68f5}{}\index{P\+F\+Config@{P\+F\+Config}!object\+For\+Keyed\+Subscript\+:@{object\+For\+Keyed\+Subscript\+:}}
+\index{object\+For\+Keyed\+Subscript\+:@{object\+For\+Keyed\+Subscript\+:}!P\+F\+Config@{P\+F\+Config}}
+\subsubsection[{object\+For\+Keyed\+Subscript\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (nullable id) object\+For\+Keyed\+Subscript\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{keyed\+Subscript}
+\end{DoxyParamCaption}
+}\label{interface_p_f_config_a88078668ce7f8b1d6ecb729f4d0e68f5}
+Returns the object associated with a given key.
+
+This method enables usage of literal syntax on {\ttfamily \hyperlink{interface_p_f_config}{P\+F\+Config}}. E.\+g. {\ttfamily N\+S\+String $\ast$value = config\mbox{[}@\char`\"{}key\char`\"{}\mbox{]};}
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_p_f_config_af431f30589c00c2deb64890be7b9e85d}{-\/ object\+For\+Key\+:}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em keyed\+Subscript} & The keyed subscript for which to return the corresponding configuration value.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value associated with {\ttfamily key}, or {\ttfamily nil} if there is no such value. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_config_a5428cf4c7686dd9c214a6fee6dcf28f6}{}\index{P\+F\+Config@{P\+F\+Config}!P\+F\+\_\+\+S\+W\+I\+F\+T\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E@{P\+F\+\_\+\+S\+W\+I\+F\+T\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}}
+\index{P\+F\+\_\+\+S\+W\+I\+F\+T\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E@{P\+F\+\_\+\+S\+W\+I\+F\+T\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}!P\+F\+Config@{P\+F\+Config}}
+\subsubsection[{P\+F\+\_\+\+S\+W\+I\+F\+T\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}]{\setlength{\rightskip}{0pt plus 5cm}+ (nullable {\bf P\+F\+Config} $\ast$) P\+F\+\_\+\+S\+W\+I\+F\+T\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_config_a5428cf4c7686dd9c214a6fee6dcf28f6}
+
+
+
+
+ 
+
+
+
+
+
+Gets the {\ttfamily \hyperlink{interface_p_f_config}{P\+F\+Config}} object {\itshape synchronously} from the server.
+
+\begin{DoxyReturn}{Returns}
+Instance of {\ttfamily \hyperlink{interface_p_f_config}{P\+F\+Config}} if the operation succeeded, otherwise {\ttfamily nil}. 
+\end{DoxyReturn}
+
+
+Provided by category \hyperlink{category_p_f_config_07_synchronous_08_a5428cf4c7686dd9c214a6fee6dcf28f6}{P\+F\+Config(\+Synchronous)}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Frameworks/\+Parse.\+framework/\+Headers/P\+F\+Config.\+h\end{DoxyCompactItemize}

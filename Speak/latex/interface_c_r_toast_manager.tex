@@ -1,0 +1,149 @@
+\hypertarget{interface_c_r_toast_manager}{}\section{C\+R\+Toast\+Manager Class Reference}
+\label{interface_c_r_toast_manager}\index{C\+R\+Toast\+Manager@{C\+R\+Toast\+Manager}}
+
+
+{\ttfamily \#import $<$C\+R\+Toast\+Manager.\+h$>$}
+
+Inheritance diagram for C\+R\+Toast\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_c_r_toast_manager}
+\end{center}
+\end{figure}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) + \hyperlink{interface_c_r_toast_manager_a4e9787d1b742548cc0142f8f49f6901a}{set\+Default\+Options\+:}
+\item 
+(void) + \hyperlink{interface_c_r_toast_manager_a8b396b8fdf401274b75ba7801c740437}{show\+Notification\+With\+Options\+:apperance\+Block\+:completion\+Block\+:}
+\item 
+(void) + \hyperlink{interface_c_r_toast_manager_af31ea2b0c5931a95de5dd66492c0a01f}{show\+Notification\+With\+Options\+:completion\+Block\+:}
+\item 
+(void) + \hyperlink{interface_c_r_toast_manager_ad62c45332d424fcb9e74d3b357ae2cb0}{show\+Notification\+With\+Message\+:completion\+Block\+:}
+\item 
+(void) + \hyperlink{interface_c_r_toast_manager_af6e7095ce5426c7f307e33c1a4afdad4}{dismiss\+Notification\+:}
+\item 
+(void) + \hyperlink{interface_c_r_toast_manager_ab38e43a4f61f422992bf86be606cef83}{dismiss\+All\+Notifications\+:}
+\item 
+(void) + \hyperlink{interface_c_r_toast_manager_a18de2c798ac3ac279d0994c84242242b}{dismiss\+All\+Notifications\+With\+Identifier\+:animated\+:}
+\item 
+(N\+S\+Array $\ast$) + \hyperlink{interface_c_r_toast_manager_ad1a635d69573f48e6e2499e59919ac28}{notification\+Identifiers\+In\+Queue}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A toast manager providing Class level A\+P\+I\textquotesingle{}s for the presentation of notifications with a variery of options 
+
+\subsection{Method Documentation}
+\hypertarget{interface_c_r_toast_manager_ab38e43a4f61f422992bf86be606cef83}{}\index{C\+R\+Toast\+Manager@{C\+R\+Toast\+Manager}!dismiss\+All\+Notifications\+:@{dismiss\+All\+Notifications\+:}}
+\index{dismiss\+All\+Notifications\+:@{dismiss\+All\+Notifications\+:}!C\+R\+Toast\+Manager@{C\+R\+Toast\+Manager}}
+\subsubsection[{dismiss\+All\+Notifications\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) dismiss\+All\+Notifications\+: 
+\begin{DoxyParamCaption}
+\item[{(B\+O\+O\+L)}]{animated}
+\end{DoxyParamCaption}
+}\label{interface_c_r_toast_manager_ab38e43a4f61f422992bf86be606cef83}
+Immidiately begins the (un)animated dismisal of a notification and canceling all others 
+\begin{DoxyParams}{Parameters}
+{\em animated} & If Y\+E\+S the notification will dismiss with its configure animation, otherwise it will immidiately disappear \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_c_r_toast_manager_a18de2c798ac3ac279d0994c84242242b}{}\index{C\+R\+Toast\+Manager@{C\+R\+Toast\+Manager}!dismiss\+All\+Notifications\+With\+Identifier\+:animated\+:@{dismiss\+All\+Notifications\+With\+Identifier\+:animated\+:}}
+\index{dismiss\+All\+Notifications\+With\+Identifier\+:animated\+:@{dismiss\+All\+Notifications\+With\+Identifier\+:animated\+:}!C\+R\+Toast\+Manager@{C\+R\+Toast\+Manager}}
+\subsubsection[{dismiss\+All\+Notifications\+With\+Identifier\+:animated\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) dismiss\+All\+Notifications\+With\+Identifier\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{identifer}
+\item[{animated:(B\+O\+O\+L)}]{animated}
+\end{DoxyParamCaption}
+}\label{interface_c_r_toast_manager_a18de2c798ac3ac279d0994c84242242b}
+Immidiately begins the (un)animated dismisal of a notification and removing of all notifications with specified identifier 
+\begin{DoxyParams}{Parameters}
+{\em identifier} & {\ttfamily k\+C\+R\+Toast\+Identifer\+Key} specified for the toasts in queue. If no toasts are found with that identifier, none will be removed. \\
+\hline
+{\em animated} & If Y\+E\+S the notification will dismiss with its configure animation, otherwise it will immidiately disappear \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_c_r_toast_manager_af6e7095ce5426c7f307e33c1a4afdad4}{}\index{C\+R\+Toast\+Manager@{C\+R\+Toast\+Manager}!dismiss\+Notification\+:@{dismiss\+Notification\+:}}
+\index{dismiss\+Notification\+:@{dismiss\+Notification\+:}!C\+R\+Toast\+Manager@{C\+R\+Toast\+Manager}}
+\subsubsection[{dismiss\+Notification\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) dismiss\+Notification\+: 
+\begin{DoxyParamCaption}
+\item[{(B\+O\+O\+L)}]{animated}
+\end{DoxyParamCaption}
+}\label{interface_c_r_toast_manager_af6e7095ce5426c7f307e33c1a4afdad4}
+Immidiately begins the (un)animated dismisal of a notification 
+\begin{DoxyParams}{Parameters}
+{\em animated} & If Y\+E\+S the notification will dismiss with its configure animation, otherwise it will immidiately disappear \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_c_r_toast_manager_ad1a635d69573f48e6e2499e59919ac28}{}\index{C\+R\+Toast\+Manager@{C\+R\+Toast\+Manager}!notification\+Identifiers\+In\+Queue@{notification\+Identifiers\+In\+Queue}}
+\index{notification\+Identifiers\+In\+Queue@{notification\+Identifiers\+In\+Queue}!C\+R\+Toast\+Manager@{C\+R\+Toast\+Manager}}
+\subsubsection[{notification\+Identifiers\+In\+Queue}]{\setlength{\rightskip}{0pt plus 5cm}+ (N\+S\+Array $\ast$) notification\+Identifiers\+In\+Queue 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_c_r_toast_manager_ad1a635d69573f48e6e2499e59919ac28}
+Gets the array of notification identifiers currently in the {\ttfamily \hyperlink{interface_c_r_toast_manager}{C\+R\+Toast\+Manager}} notifications queue. If no identifier is specified for the {\ttfamily k\+C\+R\+Toast\+Identifier} when created, it will be excluded from this collection. \hypertarget{interface_c_r_toast_manager_a4e9787d1b742548cc0142f8f49f6901a}{}\index{C\+R\+Toast\+Manager@{C\+R\+Toast\+Manager}!set\+Default\+Options\+:@{set\+Default\+Options\+:}}
+\index{set\+Default\+Options\+:@{set\+Default\+Options\+:}!C\+R\+Toast\+Manager@{C\+R\+Toast\+Manager}}
+\subsubsection[{set\+Default\+Options\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) set\+Default\+Options\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Dictionary$\ast$)}]{default\+Options}
+\end{DoxyParamCaption}
+}\label{interface_c_r_toast_manager_a4e9787d1b742548cc0142f8f49f6901a}
+Sets the default options that \hyperlink{interface_c_r_toast}{C\+R\+Toast} will use when displaying a notification 
+\begin{DoxyParams}{Parameters}
+{\em default\+Options} & A dictionary of the options that are to be used as defaults for all subsequent show\+Notification\+With\+Options\+:completion\+Block and show\+Notification\+With\+Message\+:completion\+Block\+: calls \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_c_r_toast_manager_ad62c45332d424fcb9e74d3b357ae2cb0}{}\index{C\+R\+Toast\+Manager@{C\+R\+Toast\+Manager}!show\+Notification\+With\+Message\+:completion\+Block\+:@{show\+Notification\+With\+Message\+:completion\+Block\+:}}
+\index{show\+Notification\+With\+Message\+:completion\+Block\+:@{show\+Notification\+With\+Message\+:completion\+Block\+:}!C\+R\+Toast\+Manager@{C\+R\+Toast\+Manager}}
+\subsubsection[{show\+Notification\+With\+Message\+:completion\+Block\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) show\+Notification\+With\+Message\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String$\ast$)}]{message}
+\item[{completionBlock:(void($^\wedge$)(void))}]{completion}
+\end{DoxyParamCaption}
+}\label{interface_c_r_toast_manager_ad62c45332d424fcb9e74d3b357ae2cb0}
+Queues a notification to be shown with a given message 
+\begin{DoxyParams}{Parameters}
+{\em options} & The notification message to be shown. Defaults will be used for all other notification properties \\
+\hline
+{\em completion} & A completion block to be fired at the completion of the dismisall of the notification \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_c_r_toast_manager_a8b396b8fdf401274b75ba7801c740437}{}\index{C\+R\+Toast\+Manager@{C\+R\+Toast\+Manager}!show\+Notification\+With\+Options\+:apperance\+Block\+:completion\+Block\+:@{show\+Notification\+With\+Options\+:apperance\+Block\+:completion\+Block\+:}}
+\index{show\+Notification\+With\+Options\+:apperance\+Block\+:completion\+Block\+:@{show\+Notification\+With\+Options\+:apperance\+Block\+:completion\+Block\+:}!C\+R\+Toast\+Manager@{C\+R\+Toast\+Manager}}
+\subsubsection[{show\+Notification\+With\+Options\+:apperance\+Block\+:completion\+Block\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) show\+Notification\+With\+Options\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Dictionary$\ast$)}]{options}
+\item[{apperanceBlock:(void($^\wedge$)(void))}]{appearance}
+\item[{completionBlock:(void($^\wedge$)(void))}]{completion}
+\end{DoxyParamCaption}
+}\label{interface_c_r_toast_manager_a8b396b8fdf401274b75ba7801c740437}
+Queues a notification to be shown with a collection of options. 
+\begin{DoxyParams}{Parameters}
+{\em options} & A dictionary of the options that are to be used when showing the notification, defaults will be used for all non present options. Options passed in will override defaults \\
+\hline
+{\em completion} & A completion block to be fired at the completion of the dismisall of the notification \\
+\hline
+{\em appearance} & A block to be fired when the notification is actually shown -- notifications can queue, and this block will only fire when the notification actually becomes visible to the user. Useful for synchronizing sound / vibration. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_c_r_toast_manager_af31ea2b0c5931a95de5dd66492c0a01f}{}\index{C\+R\+Toast\+Manager@{C\+R\+Toast\+Manager}!show\+Notification\+With\+Options\+:completion\+Block\+:@{show\+Notification\+With\+Options\+:completion\+Block\+:}}
+\index{show\+Notification\+With\+Options\+:completion\+Block\+:@{show\+Notification\+With\+Options\+:completion\+Block\+:}!C\+R\+Toast\+Manager@{C\+R\+Toast\+Manager}}
+\subsubsection[{show\+Notification\+With\+Options\+:completion\+Block\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) show\+Notification\+With\+Options\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Dictionary$\ast$)}]{options}
+\item[{completionBlock:(void($^\wedge$)(void))}]{completion}
+\end{DoxyParamCaption}
+}\label{interface_c_r_toast_manager_af31ea2b0c5931a95de5dd66492c0a01f}
+Queues a notification to be shown with a collection of options. 
+\begin{DoxyParams}{Parameters}
+{\em options} & A dictionary of the options that are to be used when showing the notification, defaults will be used for all non present options. Options passed in will override defaults \\
+\hline
+{\em completion} & A completion block to be fired at the completion of the dismisall of the notification \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Vendors/\+C\+R\+Toast/C\+R\+Toast\+Manager.\+h\item 
+Vendors/\+C\+R\+Toast/C\+R\+Toast\+Manager.\+m\end{DoxyCompactItemize}

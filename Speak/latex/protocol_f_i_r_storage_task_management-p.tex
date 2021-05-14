@@ -1,0 +1,62 @@
+\hypertarget{protocol_f_i_r_storage_task_management-p}{}\section{$<$F\+I\+R\+Storage\+Task\+Management$>$ Protocol Reference}
+\label{protocol_f_i_r_storage_task_management-p}\index{$<$\+F\+I\+R\+Storage\+Task\+Management$>$@{$<$\+F\+I\+R\+Storage\+Task\+Management$>$}}
+
+
+{\ttfamily \#import $<$F\+I\+R\+Storage\+Task.\+h$>$}
+
+Inheritance diagram for $<$F\+I\+R\+Storage\+Task\+Management$>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{protocol_f_i_r_storage_task_management-p}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{protocol_f_i_r_storage_task_management-p_a5880231d7772396d921a0a63947fd8ab}{enqueue}
+\item 
+(void) -\/ \hyperlink{protocol_f_i_r_storage_task_management-p_a10d343bfc205a310c715e603400711eb}{pause}
+\item 
+(void) -\/ \hyperlink{protocol_f_i_r_storage_task_management-p_a5cd4dce96e7d51ad060969b7b0732cda}{cancel}
+\item 
+(void) -\/ \hyperlink{protocol_f_i_r_storage_task_management-p_a0f47370079e4410065bde1578eb6247b}{resume}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Defines task operations such as pause, resume, cancel, and enqueue for all tasks. All tasks are required to implement enqueue, which begins the task, and may optionally implement pause, resume, and cancel, which operate on the task to pause, resume, and cancel operations. 
+
+\subsection{Method Documentation}
+\hypertarget{protocol_f_i_r_storage_task_management-p_a5cd4dce96e7d51ad060969b7b0732cda}{}\index{F\+I\+R\+Storage\+Task\+Management-\/p@{F\+I\+R\+Storage\+Task\+Management-\/p}!cancel@{cancel}}
+\index{cancel@{cancel}!F\+I\+R\+Storage\+Task\+Management-\/p@{F\+I\+R\+Storage\+Task\+Management-\/p}}
+\subsubsection[{cancel}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) cancel 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_f_i_r_storage_task_management-p_a5cd4dce96e7d51ad060969b7b0732cda}
+Cancels a task currently in progress. \hypertarget{protocol_f_i_r_storage_task_management-p_a5880231d7772396d921a0a63947fd8ab}{}\index{F\+I\+R\+Storage\+Task\+Management-\/p@{F\+I\+R\+Storage\+Task\+Management-\/p}!enqueue@{enqueue}}
+\index{enqueue@{enqueue}!F\+I\+R\+Storage\+Task\+Management-\/p@{F\+I\+R\+Storage\+Task\+Management-\/p}}
+\subsubsection[{enqueue}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) enqueue 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [required]}}\label{protocol_f_i_r_storage_task_management-p_a5880231d7772396d921a0a63947fd8ab}
+Prepares a task and begins execution. \hypertarget{protocol_f_i_r_storage_task_management-p_a10d343bfc205a310c715e603400711eb}{}\index{F\+I\+R\+Storage\+Task\+Management-\/p@{F\+I\+R\+Storage\+Task\+Management-\/p}!pause@{pause}}
+\index{pause@{pause}!F\+I\+R\+Storage\+Task\+Management-\/p@{F\+I\+R\+Storage\+Task\+Management-\/p}}
+\subsubsection[{pause}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) pause 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_f_i_r_storage_task_management-p_a10d343bfc205a310c715e603400711eb}
+Pauses a task currently in progress. \hypertarget{protocol_f_i_r_storage_task_management-p_a0f47370079e4410065bde1578eb6247b}{}\index{F\+I\+R\+Storage\+Task\+Management-\/p@{F\+I\+R\+Storage\+Task\+Management-\/p}!resume@{resume}}
+\index{resume@{resume}!F\+I\+R\+Storage\+Task\+Management-\/p@{F\+I\+R\+Storage\+Task\+Management-\/p}}
+\subsubsection[{resume}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) resume 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_f_i_r_storage_task_management-p_a0f47370079e4410065bde1578eb6247b}
+Resumes a task that is paused. 
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Frameworks/\+Firebase\+Storage.\+framework/\+Headers/\hyperlink{_f_i_r_storage_task_8h}{F\+I\+R\+Storage\+Task.\+h}\end{DoxyCompactItemize}

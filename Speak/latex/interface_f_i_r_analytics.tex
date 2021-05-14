@@ -1,0 +1,175 @@
+\hypertarget{interface_f_i_r_analytics}{}\section{F\+I\+R\+Analytics Class Reference}
+\label{interface_f_i_r_analytics}\index{F\+I\+R\+Analytics@{F\+I\+R\+Analytics}}
+
+
+{\ttfamily \#import $<$F\+I\+R\+Analytics.\+h$>$}
+
+Inheritance diagram for F\+I\+R\+Analytics\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_f_i_r_analytics}
+\end{center}
+\end{figure}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) + \hyperlink{interface_f_i_r_analytics_a9cba5ee095acbd3757e9d87438e97fa3}{log\+Event\+With\+Name\+:parameters\+:}
+\item 
+(void) + \hyperlink{interface_f_i_r_analytics_ad3e57ba172e2a9df45c91698d83c001f}{set\+User\+Property\+String\+:for\+Name\+:}
+\item 
+(void) + \hyperlink{interface_f_i_r_analytics_a9e70957b5c5f24a25e534e5def1ef432}{set\+User\+I\+D\+:}
+\item 
+(void) + \hyperlink{interface_f_i_r_analytics_a4d94b911e4b619ea2540942ed3b5c595}{handle\+Events\+For\+Background\+U\+R\+L\+Session\+:completion\+Handler\+:}
+\item 
+(void) + \hyperlink{interface_f_i_r_analytics_a2c64690b7c4aa50fc5ac5ae81c2de9bc}{handle\+Open\+U\+R\+L\+:}
+\item 
+(void) + \hyperlink{interface_f_i_r_analytics_a95b43780df1ead5681f612f3a93b5197}{handle\+User\+Activity\+:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The top level Firebase Analytics singleton that provides methods for logging events and setting user properties. See \href{http://goo.gl/gz8SLz}{\tt the developer guides} for general information on using Firebase Analytics in your apps. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_f_i_r_analytics_a4d94b911e4b619ea2540942ed3b5c595}{}\index{F\+I\+R\+Analytics@{F\+I\+R\+Analytics}!handle\+Events\+For\+Background\+U\+R\+L\+Session\+:completion\+Handler\+:@{handle\+Events\+For\+Background\+U\+R\+L\+Session\+:completion\+Handler\+:}}
+\index{handle\+Events\+For\+Background\+U\+R\+L\+Session\+:completion\+Handler\+:@{handle\+Events\+For\+Background\+U\+R\+L\+Session\+:completion\+Handler\+:}!F\+I\+R\+Analytics@{F\+I\+R\+Analytics}}
+\subsubsection[{handle\+Events\+For\+Background\+U\+R\+L\+Session\+:completion\+Handler\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) handle\+Events\+For\+Background\+U\+R\+L\+Session\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{identifier}
+\item[{completionHandler:(void($^\wedge$)(void))}]{completion\+Handler}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_analytics_a4d94b911e4b619ea2540942ed3b5c595}
+Handles events related to a U\+R\+L session that are waiting to be processed.
+
+For optimal use of Firebase Analytics, call this method from the \mbox{[}\hyperlink{class_u_i_application_delegate-p}{U\+I\+Application\+Delegate} application\+:handle\+Events\+For\+Background\+U\+R\+L\+Session\+:completion\+Handler\mbox{]} method of the app delegate in your app.
+
+
+\begin{DoxyParams}{Parameters}
+{\em identifier} & The identifier of the U\+R\+L session requiring attention. \\
+\hline
+{\em completion\+Handler} & The completion handler to call when you finish processing the events. Calling this completion handler lets the system know that your app\textquotesingle{}s user interface is updated and a new snapshot can be taken. \\
+\hline
+\end{DoxyParams}
+
+
+Provided by category \hyperlink{category_f_i_r_analytics_07_app_delegate_08_a4d94b911e4b619ea2540942ed3b5c595}{F\+I\+R\+Analytics(\+App\+Delegate)}.
+
+\hypertarget{interface_f_i_r_analytics_a2c64690b7c4aa50fc5ac5ae81c2de9bc}{}\index{F\+I\+R\+Analytics@{F\+I\+R\+Analytics}!handle\+Open\+U\+R\+L\+:@{handle\+Open\+U\+R\+L\+:}}
+\index{handle\+Open\+U\+R\+L\+:@{handle\+Open\+U\+R\+L\+:}!F\+I\+R\+Analytics@{F\+I\+R\+Analytics}}
+\subsubsection[{handle\+Open\+U\+R\+L\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) handle\+Open\+U\+R\+L\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+U\+R\+L $\ast$)}]{url}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_analytics_a2c64690b7c4aa50fc5ac5ae81c2de9bc}
+Handles the event when the app is launched by a U\+R\+L.
+
+Call this method from \href{on iOS 9.0 and
+above}{\tt U\+I\+Application\+Delegate application\+:open\+U\+R\+L\+:options\+:}, or \href{on iOS 8.x
+and below}{\tt U\+I\+Application\+Delegate application\+:open\+U\+R\+L\+:source\+Application\+:annotation\+:} in your app.
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & The U\+R\+L resource to open. This resource can be a network resource or a file. \\
+\hline
+\end{DoxyParams}
+
+
+Provided by category \hyperlink{category_f_i_r_analytics_07_app_delegate_08_a2c64690b7c4aa50fc5ac5ae81c2de9bc}{F\+I\+R\+Analytics(\+App\+Delegate)}.
+
+\hypertarget{interface_f_i_r_analytics_a95b43780df1ead5681f612f3a93b5197}{}\index{F\+I\+R\+Analytics@{F\+I\+R\+Analytics}!handle\+User\+Activity\+:@{handle\+User\+Activity\+:}}
+\index{handle\+User\+Activity\+:@{handle\+User\+Activity\+:}!F\+I\+R\+Analytics@{F\+I\+R\+Analytics}}
+\subsubsection[{handle\+User\+Activity\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) handle\+User\+Activity\+: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{user\+Activity}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_analytics_a95b43780df1ead5681f612f3a93b5197}
+Handles the event when the app receives data associated with user activity that includes a Universal Link (on i\+O\+S 9.\+0 and above).
+
+Call this method from \mbox{[}U\+I\+Application continue\+User\+Activity\+:restoration\+Handler\+:\mbox{]} in your app delegate (on i\+O\+S 9.\+0 and above).
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Activity} & The activity object containing the data associated with the task the user was performing. \\
+\hline
+\end{DoxyParams}
+
+
+Provided by category \hyperlink{category_f_i_r_analytics_07_app_delegate_08_a95b43780df1ead5681f612f3a93b5197}{F\+I\+R\+Analytics(\+App\+Delegate)}.
+
+\hypertarget{interface_f_i_r_analytics_a9cba5ee095acbd3757e9d87438e97fa3}{}\index{F\+I\+R\+Analytics@{F\+I\+R\+Analytics}!log\+Event\+With\+Name\+:parameters\+:@{log\+Event\+With\+Name\+:parameters\+:}}
+\index{log\+Event\+With\+Name\+:parameters\+:@{log\+Event\+With\+Name\+:parameters\+:}!F\+I\+R\+Analytics@{F\+I\+R\+Analytics}}
+\subsubsection[{log\+Event\+With\+Name\+:parameters\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) log\+Event\+With\+Name\+: 
+\begin{DoxyParamCaption}
+\item[{(nonnull N\+S\+String $\ast$)}]{name}
+\item[{parameters:(nullable N\+S\+Dictionary$<$ N\+S\+String $\ast$, N\+S\+Object $\ast$ $>$ $\ast$)}]{parameters}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_analytics_a9cba5ee095acbd3757e9d87438e97fa3}
+Logs an app event. The event can have up to 25 parameters. Events with the same name must have the same parameters. Up to 500 event names are supported. Using predefined events and/or parameters is recommended for optimal reporting.
+
+The following event names are reserved and cannot be used\+: 
+\begin{DoxyItemize}
+\item app\+\_\+clear\+\_\+data 
+\item app\+\_\+uninstall 
+\item app\+\_\+update 
+\item error 
+\item first\+\_\+open 
+\item in\+\_\+app\+\_\+purchase 
+\item notification\+\_\+dismiss 
+\item notification\+\_\+foreground 
+\item notification\+\_\+open 
+\item notification\+\_\+receive 
+\item os\+\_\+update 
+\item session\+\_\+start 
+\item user\+\_\+engagement 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the event. Should contain 1 to 32 alphanumeric characters or underscores. The name must start with an alphabetic character. Some event names are reserved. See \hyperlink{_f_i_r_event_names_8h}{F\+I\+R\+Event\+Names.\+h} for the list of reserved event names. The \char`\"{}firebase\+\_\+\char`\"{} prefix is reserved and should not be used. Note that event names are case-\/sensitive and that logging two events whose names differ only in case will result in two distinct events. \\
+\hline
+{\em parameters} & The dictionary of event parameters. Passing nil indicates that the event has no parameters. Parameter names can be up to 24 characters long and must start with an alphabetic character and contain only alphanumeric characters and underscores. Only N\+S\+String and N\+S\+Number (signed 64-\/bit integer and 64-\/bit floating-\/point number) parameter types are supported. N\+S\+String parameter values can be up to 36 characters long. The \char`\"{}firebase\+\_\+\char`\"{} prefix is reserved and should not be used for parameter names. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_f_i_r_analytics_a9e70957b5c5f24a25e534e5def1ef432}{}\index{F\+I\+R\+Analytics@{F\+I\+R\+Analytics}!set\+User\+I\+D\+:@{set\+User\+I\+D\+:}}
+\index{set\+User\+I\+D\+:@{set\+User\+I\+D\+:}!F\+I\+R\+Analytics@{F\+I\+R\+Analytics}}
+\subsubsection[{set\+User\+I\+D\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) set\+User\+I\+D\+: 
+\begin{DoxyParamCaption}
+\item[{(nullable N\+S\+String $\ast$)}]{user\+I\+D}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_analytics_a9e70957b5c5f24a25e534e5def1ef432}
+Sets the user I\+D property. This feature must be used in accordance with \href{https://www.google.com/policies/privacy}{\tt Google\textquotesingle{}s Privacy Policy}
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+I\+D} & The user I\+D to ascribe to the user of this app on this device, which must be non-\/empty and no more than 36 characters long. Setting user\+I\+D to nil removes the user I\+D. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_f_i_r_analytics_ad3e57ba172e2a9df45c91698d83c001f}{}\index{F\+I\+R\+Analytics@{F\+I\+R\+Analytics}!set\+User\+Property\+String\+:for\+Name\+:@{set\+User\+Property\+String\+:for\+Name\+:}}
+\index{set\+User\+Property\+String\+:for\+Name\+:@{set\+User\+Property\+String\+:for\+Name\+:}!F\+I\+R\+Analytics@{F\+I\+R\+Analytics}}
+\subsubsection[{set\+User\+Property\+String\+:for\+Name\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) set\+User\+Property\+String\+: 
+\begin{DoxyParamCaption}
+\item[{(nullable N\+S\+String $\ast$)}]{value}
+\item[{forName:(nonnull N\+S\+String $\ast$)}]{name}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_analytics_ad3e57ba172e2a9df45c91698d83c001f}
+Sets a user property to a given value. Up to 25 user property names are supported. Once set, user property values persist throughout the app lifecycle and across sessions.
+
+The following user property names are reserved and cannot be used\+: 
+\begin{DoxyItemize}
+\item first\+\_\+open\+\_\+time 
+\item last\+\_\+deep\+\_\+link\+\_\+referrer 
+\item user\+\_\+id 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value of the user property. Values can be up to 36 characters long. Setting the value to nil removes the user property. \\
+\hline
+{\em name} & The name of the user property to set. Should contain 1 to 24 alphanumeric characters or underscores and must start with an alphabetic character. The \char`\"{}firebase\+\_\+\char`\"{} prefix is reserved and should not be used for user property names. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Frameworks/\+Firebase\+Analytics.\+framework/\+Headers/F\+I\+R\+Analytics.\+h\end{DoxyCompactItemize}

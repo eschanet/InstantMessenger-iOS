@@ -1,0 +1,59 @@
+\hypertarget{interface_f_i_r_transaction_result}{}\section{F\+I\+R\+Transaction\+Result Class Reference}
+\label{interface_f_i_r_transaction_result}\index{F\+I\+R\+Transaction\+Result@{F\+I\+R\+Transaction\+Result}}
+
+
+{\ttfamily \#import $<$F\+I\+R\+Transaction\+Result.\+h$>$}
+
+Inheritance diagram for F\+I\+R\+Transaction\+Result\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_f_i_r_transaction_result}
+\end{center}
+\end{figure}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_f_i_r_transaction_result}{F\+I\+R\+Transaction\+Result} $\ast$) + \hyperlink{interface_f_i_r_transaction_result_a6d6ca50421a2667bbe06946d9b938e96}{success\+With\+Value\+:}
+\item 
+(\hyperlink{interface_f_i_r_transaction_result}{F\+I\+R\+Transaction\+Result} $\ast$) + \hyperlink{interface_f_i_r_transaction_result_a33a963611bbc28b7f14a3a49f74acd80}{abort}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Used for run\+Transaction\+Block\+:. An \hyperlink{interface_f_i_r_transaction_result}{F\+I\+R\+Transaction\+Result} instance is a container for the results of the transaction. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_f_i_r_transaction_result_a33a963611bbc28b7f14a3a49f74acd80}{}\index{F\+I\+R\+Transaction\+Result@{F\+I\+R\+Transaction\+Result}!abort@{abort}}
+\index{abort@{abort}!F\+I\+R\+Transaction\+Result@{F\+I\+R\+Transaction\+Result}}
+\subsubsection[{abort}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf F\+I\+R\+Transaction\+Result} $\ast$) abort 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_transaction_result_a33a963611bbc28b7f14a3a49f74acd80}
+Used for run\+Transaction\+Block\+:. Indicates that the current transaction should no longer proceed.
+
+\begin{DoxyReturn}{Returns}
+An \hyperlink{interface_f_i_r_transaction_result}{F\+I\+R\+Transaction\+Result} instance that can be used as a return value from the block given to run\+Transaction\+Block\+: 
+\end{DoxyReturn}
+\hypertarget{interface_f_i_r_transaction_result_a6d6ca50421a2667bbe06946d9b938e96}{}\index{F\+I\+R\+Transaction\+Result@{F\+I\+R\+Transaction\+Result}!success\+With\+Value\+:@{success\+With\+Value\+:}}
+\index{success\+With\+Value\+:@{success\+With\+Value\+:}!F\+I\+R\+Transaction\+Result@{F\+I\+R\+Transaction\+Result}}
+\subsubsection[{success\+With\+Value\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf F\+I\+R\+Transaction\+Result} $\ast$) success\+With\+Value\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf F\+I\+R\+Mutable\+Data} $\ast$)}]{value}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_transaction_result_a6d6ca50421a2667bbe06946d9b938e96}
+Used for run\+Transaction\+Block\+:. Indicates that the new value should be saved at this location
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & A \hyperlink{interface_f_i_r_mutable_data}{F\+I\+R\+Mutable\+Data} instance containing the new value to be set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An \hyperlink{interface_f_i_r_transaction_result}{F\+I\+R\+Transaction\+Result} instance that can be used as a return value from the block given to run\+Transaction\+Block\+: 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Frameworks/\+Firebase\+Database.\+framework/\+Headers/F\+I\+R\+Transaction\+Result.\+h\end{DoxyCompactItemize}

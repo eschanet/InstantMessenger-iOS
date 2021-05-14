@@ -1,0 +1,211 @@
+\hypertarget{interface_p_f_geo_point}{}\section{P\+F\+Geo\+Point Class Reference}
+\label{interface_p_f_geo_point}\index{P\+F\+Geo\+Point@{P\+F\+Geo\+Point}}
+
+
+{\ttfamily \#import $<$P\+F\+Geo\+Point.\+h$>$}
+
+Inheritance diagram for P\+F\+Geo\+Point\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_p_f_geo_point}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(double) -\/ \hyperlink{interface_p_f_geo_point_a9e84a15ad35d119bbe35f5c7ea245d8e}{distance\+In\+Radians\+To\+:}
+\begin{DoxyCompactList}\small\item\em 
+
+ \end{DoxyCompactList}\item 
+(double) -\/ \hyperlink{interface_p_f_geo_point_ac93b5ed940d57f1117b67038ca281c3e}{distance\+In\+Miles\+To\+:}
+\item 
+(double) -\/ \hyperlink{interface_p_f_geo_point_ab1417f34fe2b97f1a23de4b9751a8846}{distance\+In\+Kilometers\+To\+:}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) + \hyperlink{interface_p_f_geo_point_ab2e96481fa9fdcb081ae7dbe7db8865f}{geo\+Point}
+\begin{DoxyCompactList}\small\item\em 
+
+ \end{DoxyCompactList}\item 
+(instancetype) + \hyperlink{interface_p_f_geo_point_aafb7b4258d1a3730d425c4ab30478391}{geo\+Point\+With\+Location\+:}
+\item 
+(instancetype) + \hyperlink{interface_p_f_geo_point_a5340ac88e39a5a0149dce82ff206def4}{geo\+Point\+With\+Latitude\+:longitude\+:}
+\item 
+(void) + \hyperlink{interface_p_f_geo_point_aedd0b9e788cb44e49bcb213aa3baa173}{geo\+Point\+For\+Current\+Location\+In\+Background\+:}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{interface_p_f_geo_point_a22e8251519dbea12e2fd195b6726e025}{latitude}
+\begin{DoxyCompactList}\small\item\em 
+
+ \end{DoxyCompactList}\item 
+double \hyperlink{interface_p_f_geo_point_ae18b7781d731f421f3feeafd9c99be8b}{longitude}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+{\ttfamily \hyperlink{interface_p_f_geo_point}{P\+F\+Geo\+Point}} may be used to embed a latitude / longitude point as the value for a key in a {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}}. It could be used to perform queries in a geospatial manner using {\ttfamily \hyperlink{class_p_f_query}{P\+F\+Query}.-\/where\+Key\+:near\+Geo\+Point\+:}.
+
+Currently, instances of {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}} may only have one key associated with a {\ttfamily \hyperlink{interface_p_f_geo_point}{P\+F\+Geo\+Point}} type. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_p_f_geo_point_ab1417f34fe2b97f1a23de4b9751a8846}{}\index{P\+F\+Geo\+Point@{P\+F\+Geo\+Point}!distance\+In\+Kilometers\+To\+:@{distance\+In\+Kilometers\+To\+:}}
+\index{distance\+In\+Kilometers\+To\+:@{distance\+In\+Kilometers\+To\+:}!P\+F\+Geo\+Point@{P\+F\+Geo\+Point}}
+\subsubsection[{distance\+In\+Kilometers\+To\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (double) distance\+In\+Kilometers\+To\+: 
+\begin{DoxyParamCaption}
+\item[{(nullable {\bf P\+F\+Geo\+Point} $\ast$)}]{point}
+\end{DoxyParamCaption}
+}\label{interface_p_f_geo_point_ab1417f34fe2b97f1a23de4b9751a8846}
+Get distance in kilometers from this point to specified point.
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & {\ttfamily \hyperlink{interface_p_f_geo_point}{P\+F\+Geo\+Point}} that represents the location of other point.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Distance in kilometers between the receiver and {\ttfamily point}. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_geo_point_ac93b5ed940d57f1117b67038ca281c3e}{}\index{P\+F\+Geo\+Point@{P\+F\+Geo\+Point}!distance\+In\+Miles\+To\+:@{distance\+In\+Miles\+To\+:}}
+\index{distance\+In\+Miles\+To\+:@{distance\+In\+Miles\+To\+:}!P\+F\+Geo\+Point@{P\+F\+Geo\+Point}}
+\subsubsection[{distance\+In\+Miles\+To\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (double) distance\+In\+Miles\+To\+: 
+\begin{DoxyParamCaption}
+\item[{(nullable {\bf P\+F\+Geo\+Point} $\ast$)}]{point}
+\end{DoxyParamCaption}
+}\label{interface_p_f_geo_point_ac93b5ed940d57f1117b67038ca281c3e}
+Get distance in miles from this point to specified point.
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & {\ttfamily \hyperlink{interface_p_f_geo_point}{P\+F\+Geo\+Point}} that represents the location of other point.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Distance in miles between the receiver and {\ttfamily point}. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_geo_point_a9e84a15ad35d119bbe35f5c7ea245d8e}{}\index{P\+F\+Geo\+Point@{P\+F\+Geo\+Point}!distance\+In\+Radians\+To\+:@{distance\+In\+Radians\+To\+:}}
+\index{distance\+In\+Radians\+To\+:@{distance\+In\+Radians\+To\+:}!P\+F\+Geo\+Point@{P\+F\+Geo\+Point}}
+\subsubsection[{distance\+In\+Radians\+To\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (double) distance\+In\+Radians\+To\+: 
+\begin{DoxyParamCaption}
+\item[{(nullable {\bf P\+F\+Geo\+Point} $\ast$)}]{point}
+\end{DoxyParamCaption}
+}\label{interface_p_f_geo_point_a9e84a15ad35d119bbe35f5c7ea245d8e}
+
+
+
+
+ 
+
+
+
+
+
+Get distance in radians from this point to specified point.
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & {\ttfamily \hyperlink{interface_p_f_geo_point}{P\+F\+Geo\+Point}} that represents the location of other point.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Distance in radians between the receiver and {\ttfamily point}. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_geo_point_ab2e96481fa9fdcb081ae7dbe7db8865f}{}\index{P\+F\+Geo\+Point@{P\+F\+Geo\+Point}!geo\+Point@{geo\+Point}}
+\index{geo\+Point@{geo\+Point}!P\+F\+Geo\+Point@{P\+F\+Geo\+Point}}
+\subsubsection[{geo\+Point}]{\setlength{\rightskip}{0pt plus 5cm}+ (instancetype) geo\+Point 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_geo_point_ab2e96481fa9fdcb081ae7dbe7db8865f}
+
+
+
+
+ 
+
+
+
+
+
+Create a \hyperlink{interface_p_f_geo_point}{P\+F\+Geo\+Point} object. Latitude and longitude are set to {\ttfamily 0.\+0}.
+
+\begin{DoxyReturn}{Returns}
+Returns a new {\ttfamily \hyperlink{interface_p_f_geo_point}{P\+F\+Geo\+Point}}. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_geo_point_aedd0b9e788cb44e49bcb213aa3baa173}{}\index{P\+F\+Geo\+Point@{P\+F\+Geo\+Point}!geo\+Point\+For\+Current\+Location\+In\+Background\+:@{geo\+Point\+For\+Current\+Location\+In\+Background\+:}}
+\index{geo\+Point\+For\+Current\+Location\+In\+Background\+:@{geo\+Point\+For\+Current\+Location\+In\+Background\+:}!P\+F\+Geo\+Point@{P\+F\+Geo\+Point}}
+\subsubsection[{geo\+Point\+For\+Current\+Location\+In\+Background\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) geo\+Point\+For\+Current\+Location\+In\+Background\+: 
+\begin{DoxyParamCaption}
+\item[{(nullable P\+F\+Geo\+Point\+Result\+Block)}]{result\+Block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_geo_point_aedd0b9e788cb44e49bcb213aa3baa173}
+Fetches the current device location and executes a block with a new {\ttfamily \hyperlink{interface_p_f_geo_point}{P\+F\+Geo\+Point}} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em result\+Block} & A block which takes the newly created {\ttfamily \hyperlink{interface_p_f_geo_point}{P\+F\+Geo\+Point}} as an argument. It should have the following argument signature\+: {\ttfamily $^\wedge$(\hyperlink{interface_p_f_geo_point}{P\+F\+Geo\+Point} $\ast$geo\+Point, N\+S\+Error $\ast$error)} \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_geo_point_a5340ac88e39a5a0149dce82ff206def4}{}\index{P\+F\+Geo\+Point@{P\+F\+Geo\+Point}!geo\+Point\+With\+Latitude\+:longitude\+:@{geo\+Point\+With\+Latitude\+:longitude\+:}}
+\index{geo\+Point\+With\+Latitude\+:longitude\+:@{geo\+Point\+With\+Latitude\+:longitude\+:}!P\+F\+Geo\+Point@{P\+F\+Geo\+Point}}
+\subsubsection[{geo\+Point\+With\+Latitude\+:longitude\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (instancetype) geo\+Point\+With\+Latitude\+: 
+\begin{DoxyParamCaption}
+\item[{(double)}]{latitude}
+\item[{longitude:(double)}]{longitude}
+\end{DoxyParamCaption}
+}\label{interface_p_f_geo_point_a5340ac88e39a5a0149dce82ff206def4}
+Create a new {\ttfamily \hyperlink{interface_p_f_geo_point}{P\+F\+Geo\+Point}} object with the specified latitude and longitude.
+
+
+\begin{DoxyParams}{Parameters}
+{\em latitude} & Latitude of point in degrees. \\
+\hline
+{\em longitude} & Longitude of point in degrees.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+New point object with specified latitude and longitude. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_geo_point_aafb7b4258d1a3730d425c4ab30478391}{}\index{P\+F\+Geo\+Point@{P\+F\+Geo\+Point}!geo\+Point\+With\+Location\+:@{geo\+Point\+With\+Location\+:}}
+\index{geo\+Point\+With\+Location\+:@{geo\+Point\+With\+Location\+:}!P\+F\+Geo\+Point@{P\+F\+Geo\+Point}}
+\subsubsection[{geo\+Point\+With\+Location\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (instancetype) geo\+Point\+With\+Location\+: 
+\begin{DoxyParamCaption}
+\item[{(nullable C\+L\+Location $\ast$)}]{location}
+\end{DoxyParamCaption}
+}\label{interface_p_f_geo_point_aafb7b4258d1a3730d425c4ab30478391}
+Creates a new {\ttfamily \hyperlink{interface_p_f_geo_point}{P\+F\+Geo\+Point}} object for the given {\ttfamily C\+L\+Location}, set to the location\textquotesingle{}s coordinates.
+
+
+\begin{DoxyParams}{Parameters}
+{\em location} & Instace of {\ttfamily C\+L\+Location}, with set latitude and longitude.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a new \hyperlink{interface_p_f_geo_point}{P\+F\+Geo\+Point} at specified location. 
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_p_f_geo_point_a22e8251519dbea12e2fd195b6726e025}{}\index{P\+F\+Geo\+Point@{P\+F\+Geo\+Point}!latitude@{latitude}}
+\index{latitude@{latitude}!P\+F\+Geo\+Point@{P\+F\+Geo\+Point}}
+\subsubsection[{latitude}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (double) latitude\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_p_f_geo_point_a22e8251519dbea12e2fd195b6726e025}
+
+
+
+
+ 
+
+
+
+
+
+Latitude of point in degrees. Valid range is from {\ttfamily -\/90.\+0} to {\ttfamily 90.\+0}. \hypertarget{interface_p_f_geo_point_ae18b7781d731f421f3feeafd9c99be8b}{}\index{P\+F\+Geo\+Point@{P\+F\+Geo\+Point}!longitude@{longitude}}
+\index{longitude@{longitude}!P\+F\+Geo\+Point@{P\+F\+Geo\+Point}}
+\subsubsection[{longitude}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (double) longitude\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_p_f_geo_point_ae18b7781d731f421f3feeafd9c99be8b}
+Longitude of point in degrees. Valid range is from {\ttfamily -\/180.\+0} to {\ttfamily 180.\+0}. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Frameworks/\+Parse.\+framework/\+Headers/P\+F\+Geo\+Point.\+h\end{DoxyCompactItemize}

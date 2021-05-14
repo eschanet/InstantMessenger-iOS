@@ -1,0 +1,73 @@
+\hypertarget{interface_p_f_text_field}{}\section{P\+F\+Text\+Field Class Reference}
+\label{interface_p_f_text_field}\index{P\+F\+Text\+Field@{P\+F\+Text\+Field}}
+
+
+{\ttfamily \#import $<$P\+F\+Text\+Field.\+h$>$}
+
+Inheritance diagram for P\+F\+Text\+Field\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_p_f_text_field}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) -\/ \hyperlink{interface_p_f_text_field_a0f6fa8e4688219cd922809298cd69cb8}{init\+With\+Frame\+:separator\+Style\+:}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+P\+F\+Text\+Field\+Separator\+Style \hyperlink{interface_p_f_text_field_a3ec60a43e08c7bff328c62d7a9038a50}{separator\+Style}
+\item 
+U\+I\+Color $\ast$separator\+Color \hyperlink{interface_p_f_text_field_a5c0195a8802ca92af06f63762a1093c0}{U\+I\+\_\+\+A\+P\+P\+E\+A\+R\+A\+N\+C\+E\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+{\ttfamily \hyperlink{interface_p_f_text_field}{P\+F\+Text\+Field}} class serves as a stylable subclass of {\ttfamily U\+I\+Text\+Field}. It includes styles that are specific to {\ttfamily Parse\+U\+I} framework and allows advanced customization. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_p_f_text_field_a0f6fa8e4688219cd922809298cd69cb8}{}\index{P\+F\+Text\+Field@{P\+F\+Text\+Field}!init\+With\+Frame\+:separator\+Style\+:@{init\+With\+Frame\+:separator\+Style\+:}}
+\index{init\+With\+Frame\+:separator\+Style\+:@{init\+With\+Frame\+:separator\+Style\+:}!P\+F\+Text\+Field@{P\+F\+Text\+Field}}
+\subsubsection[{init\+With\+Frame\+:separator\+Style\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (instancetype) init\+With\+Frame\+: 
+\begin{DoxyParamCaption}
+\item[{(C\+G\+Rect)}]{frame}
+\item[{separatorStyle:(P\+F\+Text\+Field\+Separator\+Style)}]{separator\+Style}
+\end{DoxyParamCaption}
+}\label{interface_p_f_text_field_a0f6fa8e4688219cd922809298cd69cb8}
+This method is a convenience initializer that sets both {\ttfamily frame} and {\ttfamily separator\+Style} for an instance of {\ttfamily \hyperlink{interface_p_f_text_field}{P\+F\+Text\+Field}.}
+
+
+\begin{DoxyParams}{Parameters}
+{\em frame} & The frame rectangle for the view, measured in points. \\
+\hline
+{\em separator\+Style} & Initial separator style to use.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An initialized instance of {\ttfamily \hyperlink{interface_p_f_text_field}{P\+F\+Text\+Field}} or {\ttfamily nil} if it couldn\textquotesingle{}t be created. 
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_p_f_text_field_a3ec60a43e08c7bff328c62d7a9038a50}{}\index{P\+F\+Text\+Field@{P\+F\+Text\+Field}!separator\+Style@{separator\+Style}}
+\index{separator\+Style@{separator\+Style}!P\+F\+Text\+Field@{P\+F\+Text\+Field}}
+\subsubsection[{separator\+Style}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (P\+F\+Text\+Field\+Separator\+Style) separator\+Style\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_p_f_text_field_a3ec60a43e08c7bff328c62d7a9038a50}
+Separator style bitmask that should be applied to this textfield.
+
+Default\+: {\ttfamily P\+F\+Text\+Field\+Separator\+Style\+None}
+
+\begin{DoxySeeAlso}{See also}
+P\+F\+Text\+Field\+Separator\+Style 
+\end{DoxySeeAlso}
+\hypertarget{interface_p_f_text_field_a5c0195a8802ca92af06f63762a1093c0}{}\index{P\+F\+Text\+Field@{P\+F\+Text\+Field}!U\+I\+\_\+\+A\+P\+P\+E\+A\+R\+A\+N\+C\+E\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R@{U\+I\+\_\+\+A\+P\+P\+E\+A\+R\+A\+N\+C\+E\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R}}
+\index{U\+I\+\_\+\+A\+P\+P\+E\+A\+R\+A\+N\+C\+E\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R@{U\+I\+\_\+\+A\+P\+P\+E\+A\+R\+A\+N\+C\+E\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R}!P\+F\+Text\+Field@{P\+F\+Text\+Field}}
+\subsubsection[{U\+I\+\_\+\+A\+P\+P\+E\+A\+R\+A\+N\+C\+E\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Color$\ast$ separator\+Color) U\+I\+\_\+\+A\+P\+P\+E\+A\+R\+A\+N\+C\+E\+\_\+\+S\+E\+L\+E\+C\+T\+O\+R\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_p_f_text_field_a5c0195a8802ca92af06f63762a1093c0}
+Color that should be used for the separators, if they are visible.
+
+Default\+: {\ttfamily 227,227,227,1.\+0}. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Frameworks/\+Parse\+U\+I.\+framework/\+Headers/P\+F\+Text\+Field.\+h\end{DoxyCompactItemize}

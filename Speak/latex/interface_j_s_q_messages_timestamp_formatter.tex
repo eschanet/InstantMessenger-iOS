@@ -1,0 +1,148 @@
+\hypertarget{interface_j_s_q_messages_timestamp_formatter}{}\section{J\+S\+Q\+Messages\+Timestamp\+Formatter Class Reference}
+\label{interface_j_s_q_messages_timestamp_formatter}\index{J\+S\+Q\+Messages\+Timestamp\+Formatter@{J\+S\+Q\+Messages\+Timestamp\+Formatter}}
+
+
+{\ttfamily \#import $<$J\+S\+Q\+Messages\+Timestamp\+Formatter.\+h$>$}
+
+Inheritance diagram for J\+S\+Q\+Messages\+Timestamp\+Formatter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_j_s_q_messages_timestamp_formatter}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(N\+S\+String $\ast$) -\/ \hyperlink{interface_j_s_q_messages_timestamp_formatter_ac202e49151e497e7a64ab4116d0e5b33}{timestamp\+For\+Date\+:}
+\item 
+(N\+S\+Attributed\+String $\ast$) -\/ \hyperlink{interface_j_s_q_messages_timestamp_formatter_a7168c60a0b787fcfad4cfc04b5ec1de9}{attributed\+Timestamp\+For\+Date\+:}
+\item 
+(N\+S\+String $\ast$) -\/ \hyperlink{interface_j_s_q_messages_timestamp_formatter_a965e1a293a62c8e33b04a49cdc39a4ad}{time\+For\+Date\+:}
+\item 
+(N\+S\+String $\ast$) -\/ \hyperlink{interface_j_s_q_messages_timestamp_formatter_ac7049a745f291ad7b2cf35491b61fa2d}{relative\+Date\+For\+Date\+:}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_j_s_q_messages_timestamp_formatter}{J\+S\+Q\+Messages\+Timestamp\+Formatter} $\ast$) + \hyperlink{interface_j_s_q_messages_timestamp_formatter_ac577ee6fe2be3fb072eb55acac86dc50}{shared\+Formatter}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+N\+S\+Date\+Formatter $\ast$ \hyperlink{interface_j_s_q_messages_timestamp_formatter_a0e8c96339f9f97da28fbc70955e341c7}{date\+Formatter}
+\item 
+N\+S\+Dictionary $\ast$ \hyperlink{interface_j_s_q_messages_timestamp_formatter_aa46961577bcd6315f416672ce37e68b5}{date\+Text\+Attributes}
+\item 
+N\+S\+Dictionary $\ast$ \hyperlink{interface_j_s_q_messages_timestamp_formatter_ac2b998b66fc0eee9ed67a5efb835b0ee}{time\+Text\+Attributes}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An instance of {\ttfamily \hyperlink{interface_j_s_q_messages_timestamp_formatter}{J\+S\+Q\+Messages\+Timestamp\+Formatter}} is a singleton object that provides an efficient means for creating attributed and non-\/attributed string representations of {\ttfamily N\+S\+Date} objects. It is intended to be used as the method by which you display timestamps in a {\ttfamily \hyperlink{interface_j_s_q_messages_collection_view}{J\+S\+Q\+Messages\+Collection\+View}}. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_j_s_q_messages_timestamp_formatter_a7168c60a0b787fcfad4cfc04b5ec1de9}{}\index{J\+S\+Q\+Messages\+Timestamp\+Formatter@{J\+S\+Q\+Messages\+Timestamp\+Formatter}!attributed\+Timestamp\+For\+Date\+:@{attributed\+Timestamp\+For\+Date\+:}}
+\index{attributed\+Timestamp\+For\+Date\+:@{attributed\+Timestamp\+For\+Date\+:}!J\+S\+Q\+Messages\+Timestamp\+Formatter@{J\+S\+Q\+Messages\+Timestamp\+Formatter}}
+\subsubsection[{attributed\+Timestamp\+For\+Date\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Attributed\+String $\ast$) attributed\+Timestamp\+For\+Date\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Date $\ast$)}]{date}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_messages_timestamp_formatter_a7168c60a0b787fcfad4cfc04b5ec1de9}
+Returns an attributed string representation of the given date formatted as described in {\ttfamily timestamp\+For\+Date\+:}. It applies the attributes in {\ttfamily date\+Text\+Attributes} and {\ttfamily time\+Text\+Attributes}, respectively.
+
+
+\begin{DoxyParams}{Parameters}
+{\em date} & The date to format.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A formatted, attributed string representation of date.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+{\ttfamily \hyperlink{interface_j_s_q_messages_timestamp_formatter_ac202e49151e497e7a64ab4116d0e5b33}{-\/ timestamp\+For\+Date\+:}}. 
+
+{\ttfamily \hyperlink{interface_j_s_q_messages_timestamp_formatter_aa46961577bcd6315f416672ce37e68b5}{date\+Text\+Attributes}}. 
+
+{\ttfamily \hyperlink{interface_j_s_q_messages_timestamp_formatter_ac2b998b66fc0eee9ed67a5efb835b0ee}{time\+Text\+Attributes}}. 
+\end{DoxySeeAlso}
+\hypertarget{interface_j_s_q_messages_timestamp_formatter_ac7049a745f291ad7b2cf35491b61fa2d}{}\index{J\+S\+Q\+Messages\+Timestamp\+Formatter@{J\+S\+Q\+Messages\+Timestamp\+Formatter}!relative\+Date\+For\+Date\+:@{relative\+Date\+For\+Date\+:}}
+\index{relative\+Date\+For\+Date\+:@{relative\+Date\+For\+Date\+:}!J\+S\+Q\+Messages\+Timestamp\+Formatter@{J\+S\+Q\+Messages\+Timestamp\+Formatter}}
+\subsubsection[{relative\+Date\+For\+Date\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String $\ast$) relative\+Date\+For\+Date\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Date $\ast$)}]{date}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_messages_timestamp_formatter_ac7049a745f291ad7b2cf35491b61fa2d}
+Returns a string representation of {\itshape only} the day, month, and year components of the given date formatted in the current locale styled using {\ttfamily N\+S\+Date\+Formatter\+Medium\+Style}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em date} & The date to format.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A formatted string representation of the day, month, and year components of date. 
+\end{DoxyReturn}
+\hypertarget{interface_j_s_q_messages_timestamp_formatter_ac577ee6fe2be3fb072eb55acac86dc50}{}\index{J\+S\+Q\+Messages\+Timestamp\+Formatter@{J\+S\+Q\+Messages\+Timestamp\+Formatter}!shared\+Formatter@{shared\+Formatter}}
+\index{shared\+Formatter@{shared\+Formatter}!J\+S\+Q\+Messages\+Timestamp\+Formatter@{J\+S\+Q\+Messages\+Timestamp\+Formatter}}
+\subsubsection[{shared\+Formatter}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf J\+S\+Q\+Messages\+Timestamp\+Formatter} $\ast$) shared\+Formatter 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_messages_timestamp_formatter_ac577ee6fe2be3fb072eb55acac86dc50}
+Returns the shared timestamp formatter object.
+
+\begin{DoxyReturn}{Returns}
+The shared timestamp formatter object. 
+\end{DoxyReturn}
+\hypertarget{interface_j_s_q_messages_timestamp_formatter_a965e1a293a62c8e33b04a49cdc39a4ad}{}\index{J\+S\+Q\+Messages\+Timestamp\+Formatter@{J\+S\+Q\+Messages\+Timestamp\+Formatter}!time\+For\+Date\+:@{time\+For\+Date\+:}}
+\index{time\+For\+Date\+:@{time\+For\+Date\+:}!J\+S\+Q\+Messages\+Timestamp\+Formatter@{J\+S\+Q\+Messages\+Timestamp\+Formatter}}
+\subsubsection[{time\+For\+Date\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String $\ast$) time\+For\+Date\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Date $\ast$)}]{date}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_messages_timestamp_formatter_a965e1a293a62c8e33b04a49cdc39a4ad}
+Returns a string representation of {\itshape only} the minute and hour components of the given date formatted in the current locale styled using {\ttfamily N\+S\+Date\+Formatter\+Short\+Style}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em date} & The date to format.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A formatted string representation of the minute and hour components of date. 
+\end{DoxyReturn}
+\hypertarget{interface_j_s_q_messages_timestamp_formatter_ac202e49151e497e7a64ab4116d0e5b33}{}\index{J\+S\+Q\+Messages\+Timestamp\+Formatter@{J\+S\+Q\+Messages\+Timestamp\+Formatter}!timestamp\+For\+Date\+:@{timestamp\+For\+Date\+:}}
+\index{timestamp\+For\+Date\+:@{timestamp\+For\+Date\+:}!J\+S\+Q\+Messages\+Timestamp\+Formatter@{J\+S\+Q\+Messages\+Timestamp\+Formatter}}
+\subsubsection[{timestamp\+For\+Date\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String $\ast$) timestamp\+For\+Date\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Date $\ast$)}]{date}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_messages_timestamp_formatter_ac202e49151e497e7a64ab4116d0e5b33}
+Returns a string representation of the given date formatted in the current locale using {\ttfamily N\+S\+Date\+Formatter\+Medium\+Style} for the date style and {\ttfamily N\+S\+Date\+Formatter\+Short\+Style} for the time style. It uses relative date formatting where possible.
+
+
+\begin{DoxyParams}{Parameters}
+{\em date} & The date to format.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A formatted string representation of date. 
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_j_s_q_messages_timestamp_formatter_a0e8c96339f9f97da28fbc70955e341c7}{}\index{J\+S\+Q\+Messages\+Timestamp\+Formatter@{J\+S\+Q\+Messages\+Timestamp\+Formatter}!date\+Formatter@{date\+Formatter}}
+\index{date\+Formatter@{date\+Formatter}!J\+S\+Q\+Messages\+Timestamp\+Formatter@{J\+S\+Q\+Messages\+Timestamp\+Formatter}}
+\subsubsection[{date\+Formatter}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Date\+Formatter$\ast$) date\+Formatter\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_j_s_q_messages_timestamp_formatter_a0e8c96339f9f97da28fbc70955e341c7}
+Returns the cached date formatter object used by the {\ttfamily \hyperlink{interface_j_s_q_messages_timestamp_formatter}{J\+S\+Q\+Messages\+Timestamp\+Formatter}} shared instance. \hypertarget{interface_j_s_q_messages_timestamp_formatter_aa46961577bcd6315f416672ce37e68b5}{}\index{J\+S\+Q\+Messages\+Timestamp\+Formatter@{J\+S\+Q\+Messages\+Timestamp\+Formatter}!date\+Text\+Attributes@{date\+Text\+Attributes}}
+\index{date\+Text\+Attributes@{date\+Text\+Attributes}!J\+S\+Q\+Messages\+Timestamp\+Formatter@{J\+S\+Q\+Messages\+Timestamp\+Formatter}}
+\subsubsection[{date\+Text\+Attributes}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Dictionary$\ast$) date\+Text\+Attributes\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_j_s_q_messages_timestamp_formatter_aa46961577bcd6315f416672ce37e68b5}
+The text attributes to apply to the day, month, and year components of the string representation of a given date. The default value is a dictionary containing attributes that specify centered, light gray text and the bold system font at size {\ttfamily 12.\+0f}. \hypertarget{interface_j_s_q_messages_timestamp_formatter_ac2b998b66fc0eee9ed67a5efb835b0ee}{}\index{J\+S\+Q\+Messages\+Timestamp\+Formatter@{J\+S\+Q\+Messages\+Timestamp\+Formatter}!time\+Text\+Attributes@{time\+Text\+Attributes}}
+\index{time\+Text\+Attributes@{time\+Text\+Attributes}!J\+S\+Q\+Messages\+Timestamp\+Formatter@{J\+S\+Q\+Messages\+Timestamp\+Formatter}}
+\subsubsection[{time\+Text\+Attributes}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Dictionary$\ast$) time\+Text\+Attributes\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_j_s_q_messages_timestamp_formatter_ac2b998b66fc0eee9ed67a5efb835b0ee}
+The text attributes to apply to the minute and hour componenents of the string representation of a given date. The default value is a dictionary containing attributes that specify centered, light gray text and the system font at size {\ttfamily 12.\+0f}. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Vendors/\+J\+S\+Q\+Messages\+View\+Controller/\+Factories/J\+S\+Q\+Messages\+Timestamp\+Formatter.\+h\item 
+Vendors/\+J\+S\+Q\+Messages\+View\+Controller/\+Factories/J\+S\+Q\+Messages\+Timestamp\+Formatter.\+m\end{DoxyCompactItemize}

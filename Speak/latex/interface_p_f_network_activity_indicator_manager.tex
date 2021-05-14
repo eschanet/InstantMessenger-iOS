@@ -1,0 +1,90 @@
+\hypertarget{interface_p_f_network_activity_indicator_manager}{}\section{P\+F\+Network\+Activity\+Indicator\+Manager Class Reference}
+\label{interface_p_f_network_activity_indicator_manager}\index{P\+F\+Network\+Activity\+Indicator\+Manager@{P\+F\+Network\+Activity\+Indicator\+Manager}}
+
+
+{\ttfamily \#import $<$P\+F\+Network\+Activity\+Indicator\+Manager.\+h$>$}
+
+Inheritance diagram for P\+F\+Network\+Activity\+Indicator\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_p_f_network_activity_indicator_manager}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_p_f_network_activity_indicator_manager_ad68cb5b671a92d5484d141ed12a9112b}{increment\+Activity\+Count}
+\item 
+(void) -\/ \hyperlink{interface_p_f_network_activity_indicator_manager_a76f907d87c3a142f2620b6f3467e3dd7}{decrement\+Activity\+Count}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_p_f_network_activity_indicator_manager}{P\+F\+Network\+Activity\+Indicator\+Manager} $\ast$) + \hyperlink{interface_p_f_network_activity_indicator_manager_afc5291681cd7f23f55aa0244c81c22d4}{shared\+Manager}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+B\+O\+O\+L \hyperlink{interface_p_f_network_activity_indicator_manager_a8e06100fdf787d0dae5776108400d29e}{enabled}
+\item 
+B\+O\+O\+L \hyperlink{interface_p_f_network_activity_indicator_manager_a1e3d2adc9c714d59c15b63df0f9e8c9a}{network\+Activity\+Indicator\+Visible}
+\item 
+N\+S\+U\+Integer \hyperlink{interface_p_f_network_activity_indicator_manager_ab52923fab090824b0bb2609b91b1e39b}{network\+Activity\+Count}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Copyright (c) 2015-\/present, \hyperlink{interface_parse}{Parse}, L\+L\+C. All rights reserved.
+
+This source code is licensed under the B\+S\+D-\/style license found in the L\+I\+C\+E\+N\+S\+E file in the root directory of this source tree. An additional grant of patent rights can be found in the P\+A\+T\+E\+N\+T\+S file in the same directory. {\ttfamily \hyperlink{interface_p_f_network_activity_indicator_manager}{P\+F\+Network\+Activity\+Indicator\+Manager}} manages the state of the network activity indicator in the status bar. When enabled, it will start managing the network activity indicator in the status bar, according to the network operations that are performed by \hyperlink{interface_parse}{Parse} S\+D\+K.
+
+The number of active requests is incremented or decremented like a stack or a semaphore, the activity indicator will animate, as long as the number is greater than zero. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_p_f_network_activity_indicator_manager_a76f907d87c3a142f2620b6f3467e3dd7}{}\index{P\+F\+Network\+Activity\+Indicator\+Manager@{P\+F\+Network\+Activity\+Indicator\+Manager}!decrement\+Activity\+Count@{decrement\+Activity\+Count}}
+\index{decrement\+Activity\+Count@{decrement\+Activity\+Count}!P\+F\+Network\+Activity\+Indicator\+Manager@{P\+F\+Network\+Activity\+Indicator\+Manager}}
+\subsubsection[{decrement\+Activity\+Count}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) decrement\+Activity\+Count 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_network_activity_indicator_manager_a76f907d87c3a142f2620b6f3467e3dd7}
+Decrements the number of active network requests.
+
+If this number becomes zero after decrementing, this will stop animating network activity indicator in the status bar. \hypertarget{interface_p_f_network_activity_indicator_manager_ad68cb5b671a92d5484d141ed12a9112b}{}\index{P\+F\+Network\+Activity\+Indicator\+Manager@{P\+F\+Network\+Activity\+Indicator\+Manager}!increment\+Activity\+Count@{increment\+Activity\+Count}}
+\index{increment\+Activity\+Count@{increment\+Activity\+Count}!P\+F\+Network\+Activity\+Indicator\+Manager@{P\+F\+Network\+Activity\+Indicator\+Manager}}
+\subsubsection[{increment\+Activity\+Count}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) increment\+Activity\+Count 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_network_activity_indicator_manager_ad68cb5b671a92d5484d141ed12a9112b}
+Increments the number of active network requests.
+
+If this number was zero before incrementing, this will start animating network activity indicator in the status bar. \hypertarget{interface_p_f_network_activity_indicator_manager_afc5291681cd7f23f55aa0244c81c22d4}{}\index{P\+F\+Network\+Activity\+Indicator\+Manager@{P\+F\+Network\+Activity\+Indicator\+Manager}!shared\+Manager@{shared\+Manager}}
+\index{shared\+Manager@{shared\+Manager}!P\+F\+Network\+Activity\+Indicator\+Manager@{P\+F\+Network\+Activity\+Indicator\+Manager}}
+\subsubsection[{shared\+Manager}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf P\+F\+Network\+Activity\+Indicator\+Manager} $\ast$) shared\+Manager 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_network_activity_indicator_manager_afc5291681cd7f23f55aa0244c81c22d4}
+Returns the shared network activity indicator manager object for the system.
+
+\begin{DoxyReturn}{Returns}
+The systemwide network activity indicator manager. 
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_p_f_network_activity_indicator_manager_a8e06100fdf787d0dae5776108400d29e}{}\index{P\+F\+Network\+Activity\+Indicator\+Manager@{P\+F\+Network\+Activity\+Indicator\+Manager}!enabled@{enabled}}
+\index{enabled@{enabled}!P\+F\+Network\+Activity\+Indicator\+Manager@{P\+F\+Network\+Activity\+Indicator\+Manager}}
+\subsubsection[{enabled}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) enabled\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_p_f_network_activity_indicator_manager_a8e06100fdf787d0dae5776108400d29e}
+A Boolean value indicating whether the manager is enabled. If {\ttfamily Y\+E\+S} -\/ the manager will start managing the status bar network activity indicator, according to the network operations that are performed by \hyperlink{interface_parse}{Parse} S\+D\+K. The default value is {\ttfamily Y\+E\+S}. \hypertarget{interface_p_f_network_activity_indicator_manager_ab52923fab090824b0bb2609b91b1e39b}{}\index{P\+F\+Network\+Activity\+Indicator\+Manager@{P\+F\+Network\+Activity\+Indicator\+Manager}!network\+Activity\+Count@{network\+Activity\+Count}}
+\index{network\+Activity\+Count@{network\+Activity\+Count}!P\+F\+Network\+Activity\+Indicator\+Manager@{P\+F\+Network\+Activity\+Indicator\+Manager}}
+\subsubsection[{network\+Activity\+Count}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+U\+Integer) network\+Activity\+Count\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_p_f_network_activity_indicator_manager_ab52923fab090824b0bb2609b91b1e39b}
+The value that indicates current network activities count. \hypertarget{interface_p_f_network_activity_indicator_manager_a1e3d2adc9c714d59c15b63df0f9e8c9a}{}\index{P\+F\+Network\+Activity\+Indicator\+Manager@{P\+F\+Network\+Activity\+Indicator\+Manager}!network\+Activity\+Indicator\+Visible@{network\+Activity\+Indicator\+Visible}}
+\index{network\+Activity\+Indicator\+Visible@{network\+Activity\+Indicator\+Visible}!P\+F\+Network\+Activity\+Indicator\+Manager@{P\+F\+Network\+Activity\+Indicator\+Manager}}
+\subsubsection[{network\+Activity\+Indicator\+Visible}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) network\+Activity\+Indicator\+Visible\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_p_f_network_activity_indicator_manager_a1e3d2adc9c714d59c15b63df0f9e8c9a}
+A Boolean value indicating whether the network activity indicator is currently displayed in the status bar. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Frameworks/\+Parse.\+framework/\+Headers/P\+F\+Network\+Activity\+Indicator\+Manager.\+h\end{DoxyCompactItemize}

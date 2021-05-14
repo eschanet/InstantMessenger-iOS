@@ -1,0 +1,164 @@
+\hypertarget{interface_a_f_security_policy}{}\section{A\+F\+Security\+Policy Class Reference}
+\label{interface_a_f_security_policy}\index{A\+F\+Security\+Policy@{A\+F\+Security\+Policy}}
+
+
+{\ttfamily \#import $<$A\+F\+Security\+Policy.\+h$>$}
+
+Inheritance diagram for A\+F\+Security\+Policy\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_a_f_security_policy}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{Indent}{\bf Evaluating Server Trust}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_a_f_security_policy_a404e83f245843cb7fd6408d5e9ee15e0}{evaluate\+Server\+Trust\+:}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_a_f_security_policy_ae22b5069f31f0eae3cc0ca07fe876c68}{evaluate\+Server\+Trust\+:for\+Domain\+:}
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Class Methods}
+\begin{Indent}{\bf Getting Specific Security Policies}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(instancetype) + \hyperlink{interface_a_f_security_policy_aa63c18e904ef6e42761b7c20a1af2f3f}{default\+Policy}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Initialization}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(instancetype) + \hyperlink{interface_a_f_security_policy_a94c44f7101fa4d0954d0c63f72f1e9cd}{policy\+With\+Pinning\+Mode\+:}
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+A\+F\+S\+S\+L\+Pinning\+Mode \hyperlink{interface_a_f_security_policy_ae9a77137a0fcecbb05ac30e5e1ce8092}{S\+S\+L\+Pinning\+Mode}
+\item 
+B\+O\+O\+L \hyperlink{interface_a_f_security_policy_a8a87a524e04a9229126490ecfe99dac5}{validates\+Certificate\+Chain}
+\item 
+N\+S\+Array $\ast$ \hyperlink{interface_a_f_security_policy_a1be8462e27228dd5bcff65e96526858a}{pinned\+Certificates}
+\item 
+B\+O\+O\+L \hyperlink{interface_a_f_security_policy_a4187dab7a2429bd032513b68934837e3}{allow\+Invalid\+Certificates}
+\item 
+B\+O\+O\+L \hyperlink{interface_a_f_security_policy_ae088468652f51c0f92203ef827e1aef0}{validates\+Domain\+Name}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+{\ttfamily \hyperlink{interface_a_f_security_policy}{A\+F\+Security\+Policy}} evaluates server trust against pinned X.\+509 certificates and public keys over secure connections.
+
+Adding pinned S\+S\+L certificates to your app helps prevent man-\/in-\/the-\/middle attacks and other vulnerabilities. Applications dealing with sensitive customer data or financial information are strongly encouraged to route all communication over an H\+T\+T\+P\+S connection with S\+S\+L pinning configured and enabled. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_a_f_security_policy_aa63c18e904ef6e42761b7c20a1af2f3f}{}\index{A\+F\+Security\+Policy@{A\+F\+Security\+Policy}!default\+Policy@{default\+Policy}}
+\index{default\+Policy@{default\+Policy}!A\+F\+Security\+Policy@{A\+F\+Security\+Policy}}
+\subsubsection[{default\+Policy}]{\setlength{\rightskip}{0pt plus 5cm}+ (instancetype) default\+Policy 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_a_f_security_policy_aa63c18e904ef6e42761b7c20a1af2f3f}
+Returns the shared default security policy, which does not allow invalid certificates, does not validate domain name, and does not validate against pinned certificates or public keys.
+
+\begin{DoxyReturn}{Returns}
+The default security policy. 
+\end{DoxyReturn}
+\hypertarget{interface_a_f_security_policy_a404e83f245843cb7fd6408d5e9ee15e0}{}\index{A\+F\+Security\+Policy@{A\+F\+Security\+Policy}!evaluate\+Server\+Trust\+:@{evaluate\+Server\+Trust\+:}}
+\index{evaluate\+Server\+Trust\+:@{evaluate\+Server\+Trust\+:}!A\+F\+Security\+Policy@{A\+F\+Security\+Policy}}
+\subsubsection[{evaluate\+Server\+Trust\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) evaluate\+Server\+Trust\+: 
+\begin{DoxyParamCaption}
+\item[{(Sec\+Trust\+Ref)}]{D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E}
+\end{DoxyParamCaption}
+}\label{interface_a_f_security_policy_a404e83f245843cb7fd6408d5e9ee15e0}
+Whether or not the specified server trust should be accepted, based on the security policy.
+
+This method should be used when responding to an authentication challenge from a server.
+
+
+\begin{DoxyParams}{Parameters}
+{\em server\+Trust} & The X.\+509 certificate trust of the server.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether or not to trust the server.
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+This method has been deprecated in favor of {\ttfamily -\/evaluate\+Server\+Trust\+:for\+Domain\+:}. 
+\end{DoxyWarning}
+\hypertarget{interface_a_f_security_policy_ae22b5069f31f0eae3cc0ca07fe876c68}{}\index{A\+F\+Security\+Policy@{A\+F\+Security\+Policy}!evaluate\+Server\+Trust\+:for\+Domain\+:@{evaluate\+Server\+Trust\+:for\+Domain\+:}}
+\index{evaluate\+Server\+Trust\+:for\+Domain\+:@{evaluate\+Server\+Trust\+:for\+Domain\+:}!A\+F\+Security\+Policy@{A\+F\+Security\+Policy}}
+\subsubsection[{evaluate\+Server\+Trust\+:for\+Domain\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) {\bf evaluate\+Server\+Trust\+:} 
+\begin{DoxyParamCaption}
+\item[{(Sec\+Trust\+Ref)}]{server\+Trust}
+\item[{forDomain:(N\+S\+String $\ast$)}]{domain}
+\end{DoxyParamCaption}
+}\label{interface_a_f_security_policy_ae22b5069f31f0eae3cc0ca07fe876c68}
+Whether or not the specified server trust should be accepted, based on the security policy.
+
+This method should be used when responding to an authentication challenge from a server.
+
+
+\begin{DoxyParams}{Parameters}
+{\em server\+Trust} & The X.\+509 certificate trust of the server. \\
+\hline
+{\em domain} & The domain of server\+Trust. If {\ttfamily nil}, the domain will not be validated.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether or not to trust the server. 
+\end{DoxyReturn}
+\hypertarget{interface_a_f_security_policy_a94c44f7101fa4d0954d0c63f72f1e9cd}{}\index{A\+F\+Security\+Policy@{A\+F\+Security\+Policy}!policy\+With\+Pinning\+Mode\+:@{policy\+With\+Pinning\+Mode\+:}}
+\index{policy\+With\+Pinning\+Mode\+:@{policy\+With\+Pinning\+Mode\+:}!A\+F\+Security\+Policy@{A\+F\+Security\+Policy}}
+\subsubsection[{policy\+With\+Pinning\+Mode\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (instancetype) policy\+With\+Pinning\+Mode\+: 
+\begin{DoxyParamCaption}
+\item[{(A\+F\+S\+S\+L\+Pinning\+Mode)}]{pinning\+Mode}
+\end{DoxyParamCaption}
+}\label{interface_a_f_security_policy_a94c44f7101fa4d0954d0c63f72f1e9cd}
+Creates and returns a security policy with the specified pinning mode.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pinning\+Mode} & The S\+S\+L pinning mode.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new security policy. 
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_a_f_security_policy_a4187dab7a2429bd032513b68934837e3}{}\index{A\+F\+Security\+Policy@{A\+F\+Security\+Policy}!allow\+Invalid\+Certificates@{allow\+Invalid\+Certificates}}
+\index{allow\+Invalid\+Certificates@{allow\+Invalid\+Certificates}!A\+F\+Security\+Policy@{A\+F\+Security\+Policy}}
+\subsubsection[{allow\+Invalid\+Certificates}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) allow\+Invalid\+Certificates\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_a_f_security_policy_a4187dab7a2429bd032513b68934837e3}
+Whether or not to trust servers with an invalid or expired S\+S\+L certificates. Defaults to {\ttfamily N\+O}. \hypertarget{interface_a_f_security_policy_a1be8462e27228dd5bcff65e96526858a}{}\index{A\+F\+Security\+Policy@{A\+F\+Security\+Policy}!pinned\+Certificates@{pinned\+Certificates}}
+\index{pinned\+Certificates@{pinned\+Certificates}!A\+F\+Security\+Policy@{A\+F\+Security\+Policy}}
+\subsubsection[{pinned\+Certificates}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Array$\ast$) pinned\+Certificates\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_a_f_security_policy_a1be8462e27228dd5bcff65e96526858a}
+The certificates used to evaluate server trust according to the S\+S\+L pinning mode. By default, this property is set to any ({\ttfamily .cer}) certificates included in the app bundle. \hypertarget{interface_a_f_security_policy_ae9a77137a0fcecbb05ac30e5e1ce8092}{}\index{A\+F\+Security\+Policy@{A\+F\+Security\+Policy}!S\+S\+L\+Pinning\+Mode@{S\+S\+L\+Pinning\+Mode}}
+\index{S\+S\+L\+Pinning\+Mode@{S\+S\+L\+Pinning\+Mode}!A\+F\+Security\+Policy@{A\+F\+Security\+Policy}}
+\subsubsection[{S\+S\+L\+Pinning\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (A\+F\+S\+S\+L\+Pinning\+Mode) S\+S\+L\+Pinning\+Mode\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_a_f_security_policy_ae9a77137a0fcecbb05ac30e5e1ce8092}
+The criteria by which server trust should be evaluated against the pinned S\+S\+L certificates. Defaults to {\ttfamily A\+F\+S\+S\+L\+Pinning\+Mode\+None}. \hypertarget{interface_a_f_security_policy_a8a87a524e04a9229126490ecfe99dac5}{}\index{A\+F\+Security\+Policy@{A\+F\+Security\+Policy}!validates\+Certificate\+Chain@{validates\+Certificate\+Chain}}
+\index{validates\+Certificate\+Chain@{validates\+Certificate\+Chain}!A\+F\+Security\+Policy@{A\+F\+Security\+Policy}}
+\subsubsection[{validates\+Certificate\+Chain}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) validates\+Certificate\+Chain\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_a_f_security_policy_a8a87a524e04a9229126490ecfe99dac5}
+Whether to evaluate an entire S\+S\+L certificate chain, or just the leaf certificate. Defaults to {\ttfamily Y\+E\+S}. \hypertarget{interface_a_f_security_policy_ae088468652f51c0f92203ef827e1aef0}{}\index{A\+F\+Security\+Policy@{A\+F\+Security\+Policy}!validates\+Domain\+Name@{validates\+Domain\+Name}}
+\index{validates\+Domain\+Name@{validates\+Domain\+Name}!A\+F\+Security\+Policy@{A\+F\+Security\+Policy}}
+\subsubsection[{validates\+Domain\+Name}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) validates\+Domain\+Name\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_a_f_security_policy_ae088468652f51c0f92203ef827e1aef0}
+Whether or not to validate the domain name in the certificate\textquotesingle{}s C\+N field. Defaults to {\ttfamily Y\+E\+S}. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Vendors/\+A\+F\+Networking/\+A\+F\+Networking/A\+F\+Security\+Policy.\+h\item 
+Vendors/\+A\+F\+Networking/\+A\+F\+Networking/A\+F\+Security\+Policy.\+m\end{DoxyCompactItemize}

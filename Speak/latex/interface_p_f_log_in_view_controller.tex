@@ -1,0 +1,91 @@
+\hypertarget{interface_p_f_log_in_view_controller}{}\section{P\+F\+Log\+In\+View\+Controller Class Reference}
+\label{interface_p_f_log_in_view_controller}\index{P\+F\+Log\+In\+View\+Controller@{P\+F\+Log\+In\+View\+Controller}}
+
+
+{\ttfamily \#import $<$P\+F\+Log\+In\+View\+Controller.\+h$>$}
+
+Inheritance diagram for P\+F\+Log\+In\+View\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_p_f_log_in_view_controller}
+\end{center}
+\end{figure}
+\subsection*{Properties}
+\begin{Indent}{\bf Configuring Log In Elements}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+P\+F\+Log\+In\+Fields \hyperlink{interface_p_f_log_in_view_controller_a9e150a6faf7e08e6bcfb5f120c02ba6f}{fields}
+\item 
+\hyperlink{interface_p_f_log_in_view}{P\+F\+Log\+In\+View} $\ast$ \hyperlink{interface_p_f_log_in_view_controller_a705c69f6a99cfaf962831623b4d6ccff}{log\+In\+View}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Configuring Log In Behaviors}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+id$<$ \hyperlink{protocol_p_f_log_in_view_controller_delegate-p}{P\+F\+Log\+In\+View\+Controller\+Delegate} $>$ \hyperlink{interface_p_f_log_in_view_controller_aee5f26d00a8aa4fa970c0ee8edf18e5b}{delegate}
+\item 
+N\+S\+Array$<$ N\+S\+String $\ast$ $>$ $\ast$ \hyperlink{interface_p_f_log_in_view_controller_a5663b4bc64642b625eb8369bb09c1ff4}{facebook\+Permissions}
+\item 
+\hyperlink{interface_p_f_sign_up_view_controller}{P\+F\+Sign\+Up\+View\+Controller} $\ast$ \hyperlink{interface_p_f_log_in_view_controller_a3b23bb61ef95e3e9418f2f6d29420425}{sign\+Up\+Controller}
+\item 
+B\+O\+O\+L \hyperlink{interface_p_f_log_in_view_controller_a26e4396d8e549640b53d2ec74d7f4a55}{email\+As\+Username}
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \hyperlink{interface_p_f_log_in_view_controller}{P\+F\+Log\+In\+View\+Controller}} class presents and manages a standard authentication interface for logging in a {\ttfamily P\+F\+User}. 
+
+\subsection{Property Documentation}
+\hypertarget{interface_p_f_log_in_view_controller_aee5f26d00a8aa4fa970c0ee8edf18e5b}{}\index{P\+F\+Log\+In\+View\+Controller@{P\+F\+Log\+In\+View\+Controller}!delegate@{delegate}}
+\index{delegate@{delegate}!P\+F\+Log\+In\+View\+Controller@{P\+F\+Log\+In\+View\+Controller}}
+\subsubsection[{delegate}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id$<${\bf P\+F\+Log\+In\+View\+Controller\+Delegate}$>$) delegate\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}\label{interface_p_f_log_in_view_controller_aee5f26d00a8aa4fa970c0ee8edf18e5b}
+The delegate that responds to the control events of {\ttfamily \hyperlink{interface_p_f_log_in_view_controller}{P\+F\+Log\+In\+View\+Controller}}.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{protocol_p_f_log_in_view_controller_delegate-p}{P\+F\+Log\+In\+View\+Controller\+Delegate} 
+\end{DoxySeeAlso}
+\hypertarget{interface_p_f_log_in_view_controller_a26e4396d8e549640b53d2ec74d7f4a55}{}\index{P\+F\+Log\+In\+View\+Controller@{P\+F\+Log\+In\+View\+Controller}!email\+As\+Username@{email\+As\+Username}}
+\index{email\+As\+Username@{email\+As\+Username}!P\+F\+Log\+In\+View\+Controller@{P\+F\+Log\+In\+View\+Controller}}
+\subsubsection[{email\+As\+Username}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) email\+As\+Username\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_p_f_log_in_view_controller_a26e4396d8e549640b53d2ec74d7f4a55}
+Whether to prompt for the email as username on the login view.
+
+If set to {\ttfamily Y\+E\+S}, we\textquotesingle{}ll prompt for the email in the username field. This property value propagates to the attached {\ttfamily sign\+Up\+Controller}. By default, this is set to {\ttfamily N\+O}. \hypertarget{interface_p_f_log_in_view_controller_a5663b4bc64642b625eb8369bb09c1ff4}{}\index{P\+F\+Log\+In\+View\+Controller@{P\+F\+Log\+In\+View\+Controller}!facebook\+Permissions@{facebook\+Permissions}}
+\index{facebook\+Permissions@{facebook\+Permissions}!P\+F\+Log\+In\+View\+Controller@{P\+F\+Log\+In\+View\+Controller}}
+\subsubsection[{facebook\+Permissions}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Array$<$N\+S\+String $\ast$$>$$\ast$) facebook\+Permissions\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_p_f_log_in_view_controller_a5663b4bc64642b625eb8369bb09c1ff4}
+The facebook permissions that Facebook log in requests for.
+
+If unspecified, the default is basic facebook permissions. \hypertarget{interface_p_f_log_in_view_controller_a9e150a6faf7e08e6bcfb5f120c02ba6f}{}\index{P\+F\+Log\+In\+View\+Controller@{P\+F\+Log\+In\+View\+Controller}!fields@{fields}}
+\index{fields@{fields}!P\+F\+Log\+In\+View\+Controller@{P\+F\+Log\+In\+View\+Controller}}
+\subsubsection[{fields}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (P\+F\+Log\+In\+Fields) fields\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_p_f_log_in_view_controller_a9e150a6faf7e08e6bcfb5f120c02ba6f}
+A bitmask specifying the log in elements which are enabled in the view.
+
+\begin{DoxySeeAlso}{See also}
+P\+F\+Log\+In\+Fields 
+\end{DoxySeeAlso}
+\hypertarget{interface_p_f_log_in_view_controller_a705c69f6a99cfaf962831623b4d6ccff}{}\index{P\+F\+Log\+In\+View\+Controller@{P\+F\+Log\+In\+View\+Controller}!log\+In\+View@{log\+In\+View}}
+\index{log\+In\+View@{log\+In\+View}!P\+F\+Log\+In\+View\+Controller@{P\+F\+Log\+In\+View\+Controller}}
+\subsubsection[{log\+In\+View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf P\+F\+Log\+In\+View}$\ast$) log\+In\+View\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_p_f_log_in_view_controller_a705c69f6a99cfaf962831623b4d6ccff}
+The log in view. It contains all the enabled log in elements.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_p_f_log_in_view}{P\+F\+Log\+In\+View} 
+\end{DoxySeeAlso}
+\hypertarget{interface_p_f_log_in_view_controller_a3b23bb61ef95e3e9418f2f6d29420425}{}\index{P\+F\+Log\+In\+View\+Controller@{P\+F\+Log\+In\+View\+Controller}!sign\+Up\+Controller@{sign\+Up\+Controller}}
+\index{sign\+Up\+Controller@{sign\+Up\+Controller}!P\+F\+Log\+In\+View\+Controller@{P\+F\+Log\+In\+View\+Controller}}
+\subsubsection[{sign\+Up\+Controller}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf P\+F\+Sign\+Up\+View\+Controller}$\ast$) sign\+Up\+Controller\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_p_f_log_in_view_controller_a3b23bb61ef95e3e9418f2f6d29420425}
+The sign up controller if sign up is enabled.
+
+Use this to configure the sign up view, and the transition animation to the sign up view. The default is a sign up view with a username, a password, a dismiss button and a sign up button. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Frameworks/\+Parse\+U\+I.\+framework/\+Headers/P\+F\+Log\+In\+View\+Controller.\+h\end{DoxyCompactItemize}

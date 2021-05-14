@@ -1,0 +1,169 @@
+\hypertarget{interface_p_f_log_in_view}{}\section{P\+F\+Log\+In\+View Class Reference}
+\label{interface_p_f_log_in_view}\index{P\+F\+Log\+In\+View@{P\+F\+Log\+In\+View}}
+
+
+{\ttfamily \#import $<$P\+F\+Log\+In\+View.\+h$>$}
+
+Inheritance diagram for P\+F\+Log\+In\+View\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_p_f_log_in_view}
+\end{center}
+\end{figure}
+\subsection*{Properties}
+\begin{Indent}{\bf Customizing the Logo}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_p_f_log_in_view_a0d6b5139aea2f3c3a86b3093f7258455}{}U\+I\+View $\ast$ \hyperlink{interface_p_f_log_in_view_a0d6b5139aea2f3c3a86b3093f7258455}{logo}\label{interface_p_f_log_in_view_a0d6b5139aea2f3c3a86b3093f7258455}
+
+\begin{DoxyCompactList}\small\item\em The logo. By default, it is the \hyperlink{interface_parse}{Parse} logo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Configure Username Behaviour}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+B\+O\+O\+L \hyperlink{interface_p_f_log_in_view_a5158167a0a95cdf25f18e5fe23a8368b}{email\+As\+Username}
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Creating Log In View}
+\label{_amgrpc8428f71b0802c997724718279eeb751}%
+
+
+ 
+
+ \begin{DoxyCompactItemize}
+\item 
+U\+I\+View\+Controller $\ast$ \hyperlink{interface_p_f_log_in_view_a9743c6a9acbb86749fe2dc6d50447552}{presenting\+View\+Controller}
+\item 
+(instancetype) -\/ \hyperlink{interface_p_f_log_in_view_a527a65d9bc4429e6314768e3f88e0ef8}{init\+With\+Fields\+:}
+\end{DoxyCompactItemize}
+\subsection*{Log In Elements}
+\label{_amgrp823f7d999d5c3ea6783fa4e2c28a8de4}%
+
+
+ 
+
+ \begin{DoxyCompactItemize}
+\item 
+P\+F\+Log\+In\+Fields \hyperlink{interface_p_f_log_in_view_a57c9766d511bca34b7f75fd4bd25a63d}{fields}
+\item 
+\hyperlink{interface_p_f_text_field}{P\+F\+Text\+Field} $\ast$ \hyperlink{interface_p_f_log_in_view_af6c5b3c59071b1c79442f4781f703ad2}{username\+Field}
+\item 
+\hyperlink{interface_p_f_text_field}{P\+F\+Text\+Field} $\ast$ \hyperlink{interface_p_f_log_in_view_af2a3676f5d1bfaa67de4b48a6bd358b7}{password\+Field}
+\item 
+U\+I\+Button $\ast$ \hyperlink{interface_p_f_log_in_view_a15c2c32b5a78348e75399cedb99b6968}{password\+Forgotten\+Button}
+\item 
+U\+I\+Button $\ast$ \hyperlink{interface_p_f_log_in_view_afcadd6b2ccea1a5f06cd82c79dd675f0}{log\+In\+Button}
+\item 
+U\+I\+Button $\ast$ \hyperlink{interface_p_f_log_in_view_afbed9acbbd4acf185fce057ab640ab23}{facebook\+Button}
+\item 
+U\+I\+Button $\ast$ \hyperlink{interface_p_f_log_in_view_a831da16d37f7dc63b2d37d198eaafba0}{twitter\+Button}
+\item 
+U\+I\+Button $\ast$ \hyperlink{interface_p_f_log_in_view_aca49da3d4d6b0e7aa6264953dc74f47a}{sign\+Up\+Button}
+\item 
+U\+I\+Button $\ast$ \hyperlink{interface_p_f_log_in_view_a24ee18ef9ab5fe8f9e5e70e9dfd77627}{dismiss\+Button}
+\item 
+(U\+I\+Label $\ast$external\+Log\+In\+Label) -\/ \hyperlink{interface_p_f_log_in_view_afff2ef2f219c539b4a810564faa5a1ed}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}
+\item 
+(U\+I\+Label $\ast$sign\+Up\+Label) -\/ \hyperlink{interface_p_f_log_in_view_a9397b636bd66bd2a348950d932c89fe6}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \hyperlink{interface_p_f_log_in_view}{P\+F\+Log\+In\+View}} class provides a standard log in interface for authenticating a {\ttfamily P\+F\+User}. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_p_f_log_in_view_afff2ef2f219c539b4a810564faa5a1ed}{}\index{P\+F\+Log\+In\+View@{P\+F\+Log\+In\+View}!\+\_\+\+\_\+attribute\+\_\+\+\_\+@{\+\_\+\+\_\+attribute\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+attribute\+\_\+\+\_\+@{\+\_\+\+\_\+attribute\+\_\+\+\_\+}!P\+F\+Log\+In\+View@{P\+F\+Log\+In\+View}}
+\subsubsection[{\+\_\+\+\_\+attribute\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Label$\ast$ external\+Log\+In\+Label) \+\_\+\+\_\+attribute\+\_\+\+\_\+ 
+\begin{DoxyParamCaption}
+\item[{(P\+A\+R\+S\+E\+\_\+\+U\+I\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D(\char`\"{}This property is deprecated and will always be nil.\char`\"{}))}]{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_log_in_view_afff2ef2f219c539b4a810564faa5a1ed}
+The facebook/twitter login label.
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000043}{Deprecated}]This property is deprecated and will always be nil. \end{DoxyRefDesc}
+\hypertarget{interface_p_f_log_in_view_a9397b636bd66bd2a348950d932c89fe6}{}\index{P\+F\+Log\+In\+View@{P\+F\+Log\+In\+View}!\+\_\+\+\_\+attribute\+\_\+\+\_\+@{\+\_\+\+\_\+attribute\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+attribute\+\_\+\+\_\+@{\+\_\+\+\_\+attribute\+\_\+\+\_\+}!P\+F\+Log\+In\+View@{P\+F\+Log\+In\+View}}
+\subsubsection[{\+\_\+\+\_\+attribute\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Label$\ast$ sign\+Up\+Label) \+\_\+\+\_\+attribute\+\_\+\+\_\+ 
+\begin{DoxyParamCaption}
+\item[{(P\+A\+R\+S\+E\+\_\+\+U\+I\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D(\char`\"{}This property is deprecated and will always be nil.\char`\"{}))}]{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_log_in_view_a9397b636bd66bd2a348950d932c89fe6}
+The sign up label.
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000044}{Deprecated}]This property is deprecated and will always be nil. \end{DoxyRefDesc}
+\hypertarget{interface_p_f_log_in_view_a527a65d9bc4429e6314768e3f88e0ef8}{}\index{P\+F\+Log\+In\+View@{P\+F\+Log\+In\+View}!init\+With\+Fields\+:@{init\+With\+Fields\+:}}
+\index{init\+With\+Fields\+:@{init\+With\+Fields\+:}!P\+F\+Log\+In\+View@{P\+F\+Log\+In\+View}}
+\subsubsection[{init\+With\+Fields\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (instancetype) init\+With\+Fields\+: 
+\begin{DoxyParamCaption}
+\item[{(P\+F\+Log\+In\+Fields)}]{fields}
+\end{DoxyParamCaption}
+}\label{interface_p_f_log_in_view_a527a65d9bc4429e6314768e3f88e0ef8}
+Initializes the view with the specified log in elements.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fields} & A bitmask specifying the log in elements which are enabled in the view\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An initialized {\ttfamily \hyperlink{interface_p_f_log_in_view}{P\+F\+Log\+In\+View}} object or {\ttfamily nil} if the object couldn\textquotesingle{}t be created.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+P\+F\+Log\+In\+Fields 
+\end{DoxySeeAlso}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_p_f_log_in_view_a24ee18ef9ab5fe8f9e5e70e9dfd77627}{}\index{P\+F\+Log\+In\+View@{P\+F\+Log\+In\+View}!dismiss\+Button@{dismiss\+Button}}
+\index{dismiss\+Button@{dismiss\+Button}!P\+F\+Log\+In\+View@{P\+F\+Log\+In\+View}}
+\subsubsection[{dismiss\+Button}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Button$\ast$) dismiss\+Button\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_p_f_log_in_view_a24ee18ef9ab5fe8f9e5e70e9dfd77627}
+It is {\ttfamily nil} if the element is not enabled. \hypertarget{interface_p_f_log_in_view_a5158167a0a95cdf25f18e5fe23a8368b}{}\index{P\+F\+Log\+In\+View@{P\+F\+Log\+In\+View}!email\+As\+Username@{email\+As\+Username}}
+\index{email\+As\+Username@{email\+As\+Username}!P\+F\+Log\+In\+View@{P\+F\+Log\+In\+View}}
+\subsubsection[{email\+As\+Username}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) email\+As\+Username\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_p_f_log_in_view_a5158167a0a95cdf25f18e5fe23a8368b}
+If email should be used to log in, instead of username
+
+By default, this is set to {\ttfamily N\+O}. \hypertarget{interface_p_f_log_in_view_afbed9acbbd4acf185fce057ab640ab23}{}\index{P\+F\+Log\+In\+View@{P\+F\+Log\+In\+View}!facebook\+Button@{facebook\+Button}}
+\index{facebook\+Button@{facebook\+Button}!P\+F\+Log\+In\+View@{P\+F\+Log\+In\+View}}
+\subsubsection[{facebook\+Button}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Button$\ast$) facebook\+Button\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_p_f_log_in_view_afbed9acbbd4acf185fce057ab640ab23}
+The Facebook button. It is {\ttfamily nil} if the element is not enabled. \hypertarget{interface_p_f_log_in_view_a57c9766d511bca34b7f75fd4bd25a63d}{}\index{P\+F\+Log\+In\+View@{P\+F\+Log\+In\+View}!fields@{fields}}
+\index{fields@{fields}!P\+F\+Log\+In\+View@{P\+F\+Log\+In\+View}}
+\subsubsection[{fields}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (P\+F\+Log\+In\+Fields) fields\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_p_f_log_in_view_a57c9766d511bca34b7f75fd4bd25a63d}
+The bitmask which specifies the enabled log in elements in the view. \hypertarget{interface_p_f_log_in_view_afcadd6b2ccea1a5f06cd82c79dd675f0}{}\index{P\+F\+Log\+In\+View@{P\+F\+Log\+In\+View}!log\+In\+Button@{log\+In\+Button}}
+\index{log\+In\+Button@{log\+In\+Button}!P\+F\+Log\+In\+View@{P\+F\+Log\+In\+View}}
+\subsubsection[{log\+In\+Button}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Button$\ast$) log\+In\+Button\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_p_f_log_in_view_afcadd6b2ccea1a5f06cd82c79dd675f0}
+The log in button. It is {\ttfamily nil} if the element is not enabled. \hypertarget{interface_p_f_log_in_view_af2a3676f5d1bfaa67de4b48a6bd358b7}{}\index{P\+F\+Log\+In\+View@{P\+F\+Log\+In\+View}!password\+Field@{password\+Field}}
+\index{password\+Field@{password\+Field}!P\+F\+Log\+In\+View@{P\+F\+Log\+In\+View}}
+\subsubsection[{password\+Field}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf P\+F\+Text\+Field}$\ast$) password\+Field\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_p_f_log_in_view_af2a3676f5d1bfaa67de4b48a6bd358b7}
+The password text field. It is {\ttfamily nil} if the element is not enabled. \hypertarget{interface_p_f_log_in_view_a15c2c32b5a78348e75399cedb99b6968}{}\index{P\+F\+Log\+In\+View@{P\+F\+Log\+In\+View}!password\+Forgotten\+Button@{password\+Forgotten\+Button}}
+\index{password\+Forgotten\+Button@{password\+Forgotten\+Button}!P\+F\+Log\+In\+View@{P\+F\+Log\+In\+View}}
+\subsubsection[{password\+Forgotten\+Button}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Button$\ast$) password\+Forgotten\+Button\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_p_f_log_in_view_a15c2c32b5a78348e75399cedb99b6968}
+The password forgotten button. It is {\ttfamily nil} if the element is not enabled. \hypertarget{interface_p_f_log_in_view_a9743c6a9acbb86749fe2dc6d50447552}{}\index{P\+F\+Log\+In\+View@{P\+F\+Log\+In\+View}!presenting\+View\+Controller@{presenting\+View\+Controller}}
+\index{presenting\+View\+Controller@{presenting\+View\+Controller}!P\+F\+Log\+In\+View@{P\+F\+Log\+In\+View}}
+\subsubsection[{presenting\+View\+Controller}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+View\+Controller$\ast$) presenting\+View\+Controller\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}\label{interface_p_f_log_in_view_a9743c6a9acbb86749fe2dc6d50447552}
+The view controller that will present this view.
+
+Used to lay out elements correctly when the presenting view controller has translucent elements. \hypertarget{interface_p_f_log_in_view_aca49da3d4d6b0e7aa6264953dc74f47a}{}\index{P\+F\+Log\+In\+View@{P\+F\+Log\+In\+View}!sign\+Up\+Button@{sign\+Up\+Button}}
+\index{sign\+Up\+Button@{sign\+Up\+Button}!P\+F\+Log\+In\+View@{P\+F\+Log\+In\+View}}
+\subsubsection[{sign\+Up\+Button}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Button$\ast$) sign\+Up\+Button\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_p_f_log_in_view_aca49da3d4d6b0e7aa6264953dc74f47a}
+The sign up button. It is {\ttfamily nil} if the element is not enabled. \hypertarget{interface_p_f_log_in_view_a831da16d37f7dc63b2d37d198eaafba0}{}\index{P\+F\+Log\+In\+View@{P\+F\+Log\+In\+View}!twitter\+Button@{twitter\+Button}}
+\index{twitter\+Button@{twitter\+Button}!P\+F\+Log\+In\+View@{P\+F\+Log\+In\+View}}
+\subsubsection[{twitter\+Button}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Button$\ast$) twitter\+Button\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_p_f_log_in_view_a831da16d37f7dc63b2d37d198eaafba0}
+The Twitter button. It is {\ttfamily nil} if the element is not enabled. \hypertarget{interface_p_f_log_in_view_af6c5b3c59071b1c79442f4781f703ad2}{}\index{P\+F\+Log\+In\+View@{P\+F\+Log\+In\+View}!username\+Field@{username\+Field}}
+\index{username\+Field@{username\+Field}!P\+F\+Log\+In\+View@{P\+F\+Log\+In\+View}}
+\subsubsection[{username\+Field}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf P\+F\+Text\+Field}$\ast$) username\+Field\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_p_f_log_in_view_af6c5b3c59071b1c79442f4781f703ad2}
+The username text field. It is {\ttfamily nil} if the element is not enabled. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Frameworks/\+Parse\+U\+I.\+framework/\+Headers/P\+F\+Log\+In\+View.\+h\end{DoxyCompactItemize}

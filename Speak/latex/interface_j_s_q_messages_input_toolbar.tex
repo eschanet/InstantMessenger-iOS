@@ -1,0 +1,90 @@
+\hypertarget{interface_j_s_q_messages_input_toolbar}{}\section{J\+S\+Q\+Messages\+Input\+Toolbar Class Reference}
+\label{interface_j_s_q_messages_input_toolbar}\index{J\+S\+Q\+Messages\+Input\+Toolbar@{J\+S\+Q\+Messages\+Input\+Toolbar}}
+
+
+{\ttfamily \#import $<$J\+S\+Q\+Messages\+Input\+Toolbar.\+h$>$}
+
+Inheritance diagram for J\+S\+Q\+Messages\+Input\+Toolbar\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_j_s_q_messages_input_toolbar}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_j_s_q_messages_input_toolbar_ac89b6a44ebefc09cdde437de6b457217}{toggle\+Send\+Button\+Enabled}
+\item 
+(\hyperlink{interface_j_s_q_messages_toolbar_content_view}{J\+S\+Q\+Messages\+Toolbar\+Content\+View} $\ast$) -\/ \hyperlink{interface_j_s_q_messages_input_toolbar_aee4b42dd93ee7f2aea157a1a2c061d4b}{load\+Toolbar\+Content\+View}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+id$<$ \hyperlink{protocol_j_s_q_messages_input_toolbar_delegate-p}{J\+S\+Q\+Messages\+Input\+Toolbar\+Delegate} $>$ \hyperlink{interface_j_s_q_messages_input_toolbar_af65de93b536460ed4bb0a7588f241afd}{delegate}
+\item 
+\hyperlink{interface_j_s_q_messages_toolbar_content_view}{J\+S\+Q\+Messages\+Toolbar\+Content\+View} $\ast$ \hyperlink{interface_j_s_q_messages_input_toolbar_adc00b5da906c53dc8075cc2a832ba6b4}{content\+View}
+\item 
+B\+O\+O\+L \hyperlink{interface_j_s_q_messages_input_toolbar_aba8383e330cbdf4187991ee810709751}{send\+Button\+On\+Right}
+\item 
+C\+G\+Float \hyperlink{interface_j_s_q_messages_input_toolbar_aab6cdb4bf7fc9221c06adb7b18b7c239}{preferred\+Default\+Height}
+\item 
+N\+S\+U\+Integer \hyperlink{interface_j_s_q_messages_input_toolbar_ae48c9a471d580726838ce52a8bb52f5d}{maximum\+Height}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An instance of {\ttfamily \hyperlink{interface_j_s_q_messages_input_toolbar}{J\+S\+Q\+Messages\+Input\+Toolbar}} defines the input toolbar for composing a new message. It is displayed above and follow the movement of the system keyboard. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_j_s_q_messages_input_toolbar_aee4b42dd93ee7f2aea157a1a2c061d4b}{}\index{J\+S\+Q\+Messages\+Input\+Toolbar@{J\+S\+Q\+Messages\+Input\+Toolbar}!load\+Toolbar\+Content\+View@{load\+Toolbar\+Content\+View}}
+\index{load\+Toolbar\+Content\+View@{load\+Toolbar\+Content\+View}!J\+S\+Q\+Messages\+Input\+Toolbar@{J\+S\+Q\+Messages\+Input\+Toolbar}}
+\subsubsection[{load\+Toolbar\+Content\+View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf J\+S\+Q\+Messages\+Toolbar\+Content\+View} $\ast$) load\+Toolbar\+Content\+View 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_messages_input_toolbar_aee4b42dd93ee7f2aea157a1a2c061d4b}
+Loads the content view for the toolbar.
+
+Override this method to provide a custom content view for the toolbar.
+
+\begin{DoxyReturn}{Returns}
+An initialized {\ttfamily \hyperlink{interface_j_s_q_messages_toolbar_content_view}{J\+S\+Q\+Messages\+Toolbar\+Content\+View}} if successful, otherwise {\ttfamily nil}. 
+\end{DoxyReturn}
+\hypertarget{interface_j_s_q_messages_input_toolbar_ac89b6a44ebefc09cdde437de6b457217}{}\index{J\+S\+Q\+Messages\+Input\+Toolbar@{J\+S\+Q\+Messages\+Input\+Toolbar}!toggle\+Send\+Button\+Enabled@{toggle\+Send\+Button\+Enabled}}
+\index{toggle\+Send\+Button\+Enabled@{toggle\+Send\+Button\+Enabled}!J\+S\+Q\+Messages\+Input\+Toolbar@{J\+S\+Q\+Messages\+Input\+Toolbar}}
+\subsubsection[{toggle\+Send\+Button\+Enabled}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) toggle\+Send\+Button\+Enabled 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_messages_input_toolbar_ac89b6a44ebefc09cdde437de6b457217}
+Enables or disables the send button based on whether or not its {\ttfamily text\+View} has text. That is, the send button will be enabled if there is text in the {\ttfamily text\+View}, and disabled otherwise. 
+
+\subsection{Property Documentation}
+\hypertarget{interface_j_s_q_messages_input_toolbar_adc00b5da906c53dc8075cc2a832ba6b4}{}\index{J\+S\+Q\+Messages\+Input\+Toolbar@{J\+S\+Q\+Messages\+Input\+Toolbar}!content\+View@{content\+View}}
+\index{content\+View@{content\+View}!J\+S\+Q\+Messages\+Input\+Toolbar@{J\+S\+Q\+Messages\+Input\+Toolbar}}
+\subsubsection[{content\+View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf J\+S\+Q\+Messages\+Toolbar\+Content\+View}$\ast$) content\+View\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}\label{interface_j_s_q_messages_input_toolbar_adc00b5da906c53dc8075cc2a832ba6b4}
+Returns the content view of the toolbar. This view contains all subviews of the toolbar. \hypertarget{interface_j_s_q_messages_input_toolbar_af65de93b536460ed4bb0a7588f241afd}{}\index{J\+S\+Q\+Messages\+Input\+Toolbar@{J\+S\+Q\+Messages\+Input\+Toolbar}!delegate@{delegate}}
+\index{delegate@{delegate}!J\+S\+Q\+Messages\+Input\+Toolbar@{J\+S\+Q\+Messages\+Input\+Toolbar}}
+\subsubsection[{delegate}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id$<${\bf J\+S\+Q\+Messages\+Input\+Toolbar\+Delegate}$>$) delegate\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}\label{interface_j_s_q_messages_input_toolbar_af65de93b536460ed4bb0a7588f241afd}
+The object that acts as the delegate of the toolbar. \hypertarget{interface_j_s_q_messages_input_toolbar_ae48c9a471d580726838ce52a8bb52f5d}{}\index{J\+S\+Q\+Messages\+Input\+Toolbar@{J\+S\+Q\+Messages\+Input\+Toolbar}!maximum\+Height@{maximum\+Height}}
+\index{maximum\+Height@{maximum\+Height}!J\+S\+Q\+Messages\+Input\+Toolbar@{J\+S\+Q\+Messages\+Input\+Toolbar}}
+\subsubsection[{maximum\+Height}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+U\+Integer) maximum\+Height\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_j_s_q_messages_input_toolbar_ae48c9a471d580726838ce52a8bb52f5d}
+Specifies the maximum height for the toolbar. The default value is {\ttfamily N\+S\+Not\+Found}, which specifies no maximum height. \hypertarget{interface_j_s_q_messages_input_toolbar_aab6cdb4bf7fc9221c06adb7b18b7c239}{}\index{J\+S\+Q\+Messages\+Input\+Toolbar@{J\+S\+Q\+Messages\+Input\+Toolbar}!preferred\+Default\+Height@{preferred\+Default\+Height}}
+\index{preferred\+Default\+Height@{preferred\+Default\+Height}!J\+S\+Q\+Messages\+Input\+Toolbar@{J\+S\+Q\+Messages\+Input\+Toolbar}}
+\subsubsection[{preferred\+Default\+Height}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\+G\+Float) preferred\+Default\+Height\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_j_s_q_messages_input_toolbar_aab6cdb4bf7fc9221c06adb7b18b7c239}
+Specifies the default (minimum) height for the toolbar. The default value is {\ttfamily 44.\+0f}. This value must be positive. \hypertarget{interface_j_s_q_messages_input_toolbar_aba8383e330cbdf4187991ee810709751}{}\index{J\+S\+Q\+Messages\+Input\+Toolbar@{J\+S\+Q\+Messages\+Input\+Toolbar}!send\+Button\+On\+Right@{send\+Button\+On\+Right}}
+\index{send\+Button\+On\+Right@{send\+Button\+On\+Right}!J\+S\+Q\+Messages\+Input\+Toolbar@{J\+S\+Q\+Messages\+Input\+Toolbar}}
+\subsubsection[{send\+Button\+On\+Right}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) send\+Button\+On\+Right\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_j_s_q_messages_input_toolbar_aba8383e330cbdf4187991ee810709751}
+A boolean value indicating whether the send button is on the right side of the toolbar or not.
+
+The default value is {\ttfamily Y\+E\+S}, which indicates that the send button is the right-\/most subview of the toolbar\textquotesingle{}s {\ttfamily content\+View}. Set to {\ttfamily N\+O} to specify that the send button is on the left. This property is used to determine which touch events correspond to which actions.
+
+\begin{DoxyWarning}{Warning}
+Note, this property {\itshape does not} change the positions of buttons in the toolbar\textquotesingle{}s content view. It only specifies whether the {\ttfamily right\+Bar\+Button\+Item}or the {\ttfamily left\+Bar\+Button\+Item} is the send button. The other button then acts as the accessory button. 
+\end{DoxyWarning}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Vendors/\+J\+S\+Q\+Messages\+View\+Controller/\+Views/J\+S\+Q\+Messages\+Input\+Toolbar.\+h\item 
+Vendors/\+J\+S\+Q\+Messages\+View\+Controller/\+Views/J\+S\+Q\+Messages\+Input\+Toolbar.\+m\end{DoxyCompactItemize}

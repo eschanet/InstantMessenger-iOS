@@ -1,0 +1,186 @@
+\hypertarget{category_p_f_file_07_synchronous_08}{}\section{P\+F\+File(Synchronous) Category Reference}
+\label{category_p_f_file_07_synchronous_08}\index{P\+F\+File(\+Synchronous)@{P\+F\+File(\+Synchronous)}}
+
+
+{\ttfamily \#import $<$P\+F\+File+\+Synchronous.\+h$>$}
+
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{category_p_f_file_07_synchronous_08_a90a09075c267b8640a6eb1babab5fb7a}{P\+F\+\_\+\+S\+W\+I\+F\+T\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}
+\begin{DoxyCompactList}\small\item\em 
+
+ \end{DoxyCompactList}\item 
+(B\+O\+O\+L) -\/ \hyperlink{category_p_f_file_07_synchronous_08_afee8cdeae2851aaebbe594020a5dd949}{save\+:}
+\item 
+(nullable N\+S\+Data $\ast$) -\/ \hyperlink{category_p_f_file_07_synchronous_08_a9d978a0459e46f7e222acb5c1b51aadc}{P\+F\+\_\+\+S\+W\+I\+F\+T\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}
+\item 
+(nullable N\+S\+Data $\ast$) -\/ \hyperlink{category_p_f_file_07_synchronous_08_a26da7ff9282b86024a4e358fe2489c6d}{get\+Data\+:}
+\item 
+(nullable N\+S\+Input\+Stream $\ast$) -\/ \hyperlink{category_p_f_file_07_synchronous_08_a5cdd02be0cf64455772f9b029babb55e}{P\+F\+\_\+\+S\+W\+I\+F\+T\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}
+\item 
+(nullable N\+S\+Input\+Stream $\ast$) -\/ \hyperlink{category_p_f_file_07_synchronous_08_ac09f2a8585972f12be2f80d9d00dc0c5}{get\+Data\+Stream\+:}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+B\+O\+O\+L \hyperlink{category_p_f_file_07_synchronous_08_aa67b26133772a9317623828eb5f4d349}{data\+Available}
+\begin{DoxyCompactList}\small\item\em 
+
+ \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Copyright (c) 2015-\/present, \hyperlink{interface_parse}{Parse}, L\+L\+C. All rights reserved.
+
+This source code is licensed under the B\+S\+D-\/style license found in the L\+I\+C\+E\+N\+S\+E file in the root directory of this source tree. An additional grant of patent rights can be found in the P\+A\+T\+E\+N\+T\+S file in the same directory. This category lists all methods of {\ttfamily \hyperlink{interface_p_f_file}{P\+F\+File}} class that are synchronous, but have asynchronous counterpart, Calling one of these synchronous methods could potentially block the current thread for a large amount of time, since it might be fetching from network or saving/loading data from disk. 
+
+\subsection{Method Documentation}
+\hypertarget{category_p_f_file_07_synchronous_08_a26da7ff9282b86024a4e358fe2489c6d}{}\index{P\+F\+File(\+Synchronous)@{P\+F\+File(\+Synchronous)}!get\+Data\+:@{get\+Data\+:}}
+\index{get\+Data\+:@{get\+Data\+:}!P\+F\+File(\+Synchronous)@{P\+F\+File(\+Synchronous)}}
+\subsubsection[{get\+Data\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (nullable N\+S\+Data $\ast$) get\+Data\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Error $\ast$$\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{category_p_f_file_07_synchronous_08_a26da7ff9282b86024a4e358fe2489c6d}
+Synchronously$\ast$ gets the data from cache if available or fetches its contents from the network. Sets an error if it occurs.
+
+
+\begin{DoxyParams}{Parameters}
+{\em error} & Pointer to an {\ttfamily N\+S\+Error} that will be set if necessary.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The {\ttfamily N\+S\+Data} object containing file data. Returns {\ttfamily nil} if there was an error in fetching. 
+\end{DoxyReturn}
+
+
+Extends class \hyperlink{interface_p_f_file_a26da7ff9282b86024a4e358fe2489c6d}{P\+F\+File}.
+
+\hypertarget{category_p_f_file_07_synchronous_08_ac09f2a8585972f12be2f80d9d00dc0c5}{}\index{P\+F\+File(\+Synchronous)@{P\+F\+File(\+Synchronous)}!get\+Data\+Stream\+:@{get\+Data\+Stream\+:}}
+\index{get\+Data\+Stream\+:@{get\+Data\+Stream\+:}!P\+F\+File(\+Synchronous)@{P\+F\+File(\+Synchronous)}}
+\subsubsection[{get\+Data\+Stream\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (nullable N\+S\+Input\+Stream $\ast$) get\+Data\+Stream\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Error $\ast$$\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{category_p_f_file_07_synchronous_08_ac09f2a8585972f12be2f80d9d00dc0c5}
+This method is like {\ttfamily -\/get\+Data} but avoids ever holding the entire {\ttfamily \hyperlink{interface_p_f_file}{P\+F\+File}} contents in memory at once.
+
+
+\begin{DoxyParams}{Parameters}
+{\em error} & Pointer to an {\ttfamily N\+S\+Error} that will be set if necessary.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A stream containing the data. Returns nil if there was an error in fetching. 
+\end{DoxyReturn}
+
+
+Extends class \hyperlink{interface_p_f_file_ac09f2a8585972f12be2f80d9d00dc0c5}{P\+F\+File}.
+
+\hypertarget{category_p_f_file_07_synchronous_08_a5cdd02be0cf64455772f9b029babb55e}{}\index{P\+F\+File(\+Synchronous)@{P\+F\+File(\+Synchronous)}!P\+F\+\_\+\+S\+W\+I\+F\+T\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E@{P\+F\+\_\+\+S\+W\+I\+F\+T\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}}
+\index{P\+F\+\_\+\+S\+W\+I\+F\+T\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E@{P\+F\+\_\+\+S\+W\+I\+F\+T\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}!P\+F\+File(\+Synchronous)@{P\+F\+File(\+Synchronous)}}
+\subsubsection[{P\+F\+\_\+\+S\+W\+I\+F\+T\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (nullable N\+S\+Input\+Stream $\ast$) P\+F\+\_\+\+S\+W\+I\+F\+T\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{category_p_f_file_07_synchronous_08_a5cdd02be0cf64455772f9b029babb55e}
+This method is like {\ttfamily -\/get\+Data} but avoids ever holding the entire {\ttfamily \hyperlink{interface_p_f_file}{P\+F\+File}} contents in memory at once.
+
+This can help applications with many large files avoid memory warnings.
+
+\begin{DoxyReturn}{Returns}
+A stream containing the data. Returns {\ttfamily nil} if there was an error in fetching. 
+\end{DoxyReturn}
+
+
+Extends class \hyperlink{interface_p_f_file_a5cdd02be0cf64455772f9b029babb55e}{P\+F\+File}.
+
+\hypertarget{category_p_f_file_07_synchronous_08_a9d978a0459e46f7e222acb5c1b51aadc}{}\index{P\+F\+File(\+Synchronous)@{P\+F\+File(\+Synchronous)}!P\+F\+\_\+\+S\+W\+I\+F\+T\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E@{P\+F\+\_\+\+S\+W\+I\+F\+T\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}}
+\index{P\+F\+\_\+\+S\+W\+I\+F\+T\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E@{P\+F\+\_\+\+S\+W\+I\+F\+T\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}!P\+F\+File(\+Synchronous)@{P\+F\+File(\+Synchronous)}}
+\subsubsection[{P\+F\+\_\+\+S\+W\+I\+F\+T\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (nullable N\+S\+Data $\ast$) P\+F\+\_\+\+S\+W\+I\+F\+T\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{category_p_f_file_07_synchronous_08_a9d978a0459e46f7e222acb5c1b51aadc}
+Synchronously$\ast$ gets the data from cache if available or fetches its contents from the network.
+
+\begin{DoxyReturn}{Returns}
+The {\ttfamily N\+S\+Data} object containing file data. Returns {\ttfamily nil} if there was an error in fetching. 
+\end{DoxyReturn}
+
+
+Extends class \hyperlink{interface_p_f_file_a9d978a0459e46f7e222acb5c1b51aadc}{P\+F\+File}.
+
+\hypertarget{category_p_f_file_07_synchronous_08_a90a09075c267b8640a6eb1babab5fb7a}{}\index{P\+F\+File(\+Synchronous)@{P\+F\+File(\+Synchronous)}!P\+F\+\_\+\+S\+W\+I\+F\+T\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E@{P\+F\+\_\+\+S\+W\+I\+F\+T\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}}
+\index{P\+F\+\_\+\+S\+W\+I\+F\+T\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E@{P\+F\+\_\+\+S\+W\+I\+F\+T\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}!P\+F\+File(\+Synchronous)@{P\+F\+File(\+Synchronous)}}
+\subsubsection[{P\+F\+\_\+\+S\+W\+I\+F\+T\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) P\+F\+\_\+\+S\+W\+I\+F\+T\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{category_p_f_file_07_synchronous_08_a90a09075c267b8640a6eb1babab5fb7a}
+
+
+
+
+ 
+
+
+
+
+
+Saves the file {\itshape synchronously}.
+
+\begin{DoxyReturn}{Returns}
+Returns whether the save succeeded. 
+\end{DoxyReturn}
+
+
+Extends class \hyperlink{interface_p_f_file_a90a09075c267b8640a6eb1babab5fb7a}{P\+F\+File}.
+
+\hypertarget{category_p_f_file_07_synchronous_08_afee8cdeae2851aaebbe594020a5dd949}{}\index{P\+F\+File(\+Synchronous)@{P\+F\+File(\+Synchronous)}!save\+:@{save\+:}}
+\index{save\+:@{save\+:}!P\+F\+File(\+Synchronous)@{P\+F\+File(\+Synchronous)}}
+\subsubsection[{save\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) save\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Error $\ast$$\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{category_p_f_file_07_synchronous_08_afee8cdeae2851aaebbe594020a5dd949}
+Saves the file {\itshape synchronously} and sets an error if it occurs.
+
+
+\begin{DoxyParams}{Parameters}
+{\em error} & Pointer to an {\ttfamily N\+S\+Error} that will be set if necessary.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns whether the save succeeded. 
+\end{DoxyReturn}
+
+
+Extends class \hyperlink{interface_p_f_file_afee8cdeae2851aaebbe594020a5dd949}{P\+F\+File}.
+
+
+
+\subsection{Property Documentation}
+\hypertarget{category_p_f_file_07_synchronous_08_aa67b26133772a9317623828eb5f4d349}{}\index{P\+F\+File(\+Synchronous)@{P\+F\+File(\+Synchronous)}!data\+Available@{data\+Available}}
+\index{data\+Available@{data\+Available}!P\+F\+File(\+Synchronous)@{P\+F\+File(\+Synchronous)}}
+\subsubsection[{data\+Available}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) data\+Available\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{category_p_f_file_07_synchronous_08_aa67b26133772a9317623828eb5f4d349}
+
+
+
+
+ 
+
+
+
+
+
+Whether the data is available in memory or needs to be downloaded. 
+
+Extends class \hyperlink{interface_p_f_file_a5738638cfa60a28a222a0b4e8f97bd3e}{P\+F\+File}.
+
+
+
+The documentation for this category was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Frameworks/\+Parse.\+framework/\+Headers/P\+F\+File+\+Synchronous.\+h\end{DoxyCompactItemize}

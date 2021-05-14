@@ -1,0 +1,47 @@
+\hypertarget{protocol_j_s_q_messages_keyboard_controller_delegate-p}{}\section{$<$J\+S\+Q\+Messages\+Keyboard\+Controller\+Delegate$>$ Protocol Reference}
+\label{protocol_j_s_q_messages_keyboard_controller_delegate-p}\index{$<$\+J\+S\+Q\+Messages\+Keyboard\+Controller\+Delegate$>$@{$<$\+J\+S\+Q\+Messages\+Keyboard\+Controller\+Delegate$>$}}
+
+
+{\ttfamily \#import $<$J\+S\+Q\+Messages\+Keyboard\+Controller.\+h$>$}
+
+Inheritance diagram for $<$J\+S\+Q\+Messages\+Keyboard\+Controller\+Delegate$>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{protocol_j_s_q_messages_keyboard_controller_delegate-p}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{protocol_j_s_q_messages_keyboard_controller_delegate-p_a3973bd7ee8404e95d19ac0f13ad88833}{keyboard\+Controller\+:keyboard\+Did\+Change\+Frame\+:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \hyperlink{protocol_j_s_q_messages_keyboard_controller_delegate-p}{J\+S\+Q\+Messages\+Keyboard\+Controller\+Delegate}} protocol defines methods that allow you to respond to the frame change events of the system keyboard.
+
+A {\ttfamily \hyperlink{interface_j_s_q_messages_keyboard_controller}{J\+S\+Q\+Messages\+Keyboard\+Controller}} object also posts the {\ttfamily J\+S\+Q\+Messages\+Keyboard\+Controller\+Notification\+Keyboard\+Did\+Change\+Frame} in response to frame change events of the system keyboard. 
+
+\subsection{Method Documentation}
+\hypertarget{protocol_j_s_q_messages_keyboard_controller_delegate-p_a3973bd7ee8404e95d19ac0f13ad88833}{}\index{J\+S\+Q\+Messages\+Keyboard\+Controller\+Delegate-\/p@{J\+S\+Q\+Messages\+Keyboard\+Controller\+Delegate-\/p}!keyboard\+Controller\+:keyboard\+Did\+Change\+Frame\+:@{keyboard\+Controller\+:keyboard\+Did\+Change\+Frame\+:}}
+\index{keyboard\+Controller\+:keyboard\+Did\+Change\+Frame\+:@{keyboard\+Controller\+:keyboard\+Did\+Change\+Frame\+:}!J\+S\+Q\+Messages\+Keyboard\+Controller\+Delegate-\/p@{J\+S\+Q\+Messages\+Keyboard\+Controller\+Delegate-\/p}}
+\subsubsection[{keyboard\+Controller\+:keyboard\+Did\+Change\+Frame\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) keyboard\+Controller\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf J\+S\+Q\+Messages\+Keyboard\+Controller} $\ast$)}]{keyboard\+Controller}
+\item[{keyboardDidChangeFrame:(C\+G\+Rect)}]{keyboard\+Frame}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [required]}}\label{protocol_j_s_q_messages_keyboard_controller_delegate-p_a3973bd7ee8404e95d19ac0f13ad88833}
+Tells the delegate that the keyboard frame has changed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em keyboard\+Controller} & The keyboard controller that is notifying the delegate. \\
+\hline
+{\em keyboard\+Frame} & The new frame of the keyboard in the coordinate system of the {\ttfamily context\+View}. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Vendors/\+J\+S\+Q\+Messages\+View\+Controller/\+Controllers/J\+S\+Q\+Messages\+Keyboard\+Controller.\+h\end{DoxyCompactItemize}

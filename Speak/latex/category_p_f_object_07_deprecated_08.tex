@@ -1,0 +1,334 @@
+\hypertarget{category_p_f_object_07_deprecated_08}{}\section{P\+F\+Object(Deprecated) Category Reference}
+\label{category_p_f_object_07_deprecated_08}\index{P\+F\+Object(\+Deprecated)@{P\+F\+Object(\+Deprecated)}}
+
+
+{\ttfamily \#import $<$P\+F\+Object+\+Deprecated.\+h$>$}
+
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{category_p_f_object_07_deprecated_08_a26f570270d7ef495ba0de01fd6518fe9}{save\+In\+Background\+With\+Target\+:selector\+:}
+\begin{DoxyCompactList}\small\item\em 
+
+ \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{category_p_f_object_07_deprecated_08_ac412f8feeb1d679db129dbb78efde1af}{refresh\+In\+Background\+With\+Target\+:selector\+:}
+\begin{DoxyCompactList}\small\item\em 
+
+ \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{category_p_f_object_07_deprecated_08_af3eacaaeffebd4cc0ba339d765a50ade}{fetch\+In\+Background\+With\+Target\+:selector\+:}
+\item 
+(void) -\/ \hyperlink{category_p_f_object_07_deprecated_08_acfcb1ff704744d8706dd63a5a17ca43a}{fetch\+If\+Needed\+In\+Background\+With\+Target\+:selector\+:}
+\item 
+(void) -\/ \hyperlink{category_p_f_object_07_deprecated_08_acdf9948630cfbfb6a2caa0aecfbf58cf}{delete\+In\+Background\+With\+Target\+:selector\+:}
+\begin{DoxyCompactList}\small\item\em 
+
+ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) + \hyperlink{category_p_f_object_07_deprecated_08_aa1fba48cec5bba80c72e6af4d8d88717}{save\+All\+In\+Background\+:target\+:selector\+:}
+\begin{DoxyCompactList}\small\item\em 
+
+ \end{DoxyCompactList}\item 
+(void) + \hyperlink{category_p_f_object_07_deprecated_08_ad503445a923bc28ce86b3540e99ad290}{fetch\+All\+In\+Background\+:target\+:selector\+:}
+\begin{DoxyCompactList}\small\item\em 
+
+ \end{DoxyCompactList}\item 
+(void) + \hyperlink{category_p_f_object_07_deprecated_08_aa783e119f260f5e8598abb0564359318}{fetch\+All\+If\+Needed\+In\+Background\+:target\+:selector\+:}
+\item 
+(void) + \hyperlink{category_p_f_object_07_deprecated_08_a312996cea1a17a6f4bbdfde07f4891a1}{delete\+All\+In\+Background\+:target\+:selector\+:}
+\begin{DoxyCompactList}\small\item\em 
+
+ \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Copyright (c) 2015-\/present, \hyperlink{interface_parse}{Parse}, L\+L\+C. All rights reserved.
+
+This source code is licensed under the B\+S\+D-\/style license found in the L\+I\+C\+E\+N\+S\+E file in the root directory of this source tree. An additional grant of patent rights can be found in the P\+A\+T\+E\+N\+T\+S file in the same directory. This category lists all methods of {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}} that are deprecated and will be removed in the near future. 
+
+\subsection{Method Documentation}
+\hypertarget{category_p_f_object_07_deprecated_08_a312996cea1a17a6f4bbdfde07f4891a1}{}\index{P\+F\+Object(\+Deprecated)@{P\+F\+Object(\+Deprecated)}!delete\+All\+In\+Background\+:target\+:selector\+:@{delete\+All\+In\+Background\+:target\+:selector\+:}}
+\index{delete\+All\+In\+Background\+:target\+:selector\+:@{delete\+All\+In\+Background\+:target\+:selector\+:}!P\+F\+Object(\+Deprecated)@{P\+F\+Object(\+Deprecated)}}
+\subsubsection[{delete\+All\+In\+Background\+:target\+:selector\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) delete\+All\+In\+Background\+: 
+\begin{DoxyParamCaption}
+\item[{(nullable N\+S\+Array$<$ {\bf P\+F\+Object} $\ast$ $>$ $\ast$)}]{objects}
+\item[{target:(nullable id)}]{target}
+\item[{selector:(\char`\"{}Please use `P\+F\+Object.+delete\+All\+In\+Background\+:block\+:` instead.\char`\"{})}]{P\+A\+R\+S\+E\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D}
+\end{DoxyParamCaption}
+}\label{category_p_f_object_07_deprecated_08_a312996cea1a17a6f4bbdfde07f4891a1}
+
+
+
+
+ 
+
+
+
+
+
+Deletes a collection of objects all at once {\itshape asynchronously} and calls a callback when done.
+
+
+\begin{DoxyParams}{Parameters}
+{\em objects} & The array of objects to delete. \\
+\hline
+{\em target} & The object to call selector on. \\
+\hline
+{\em selector} & The selector to call. It should have the following signature\+: {\ttfamily (void)callback\+With\+Result\+:(\+N\+S\+Number $\ast$)number error\+:(\+N\+S\+Error $\ast$)error}. {\ttfamily error} will be {\ttfamily nil} on success and set if there was an error. {\ttfamily \mbox{[}result bool\+Value\mbox{]}} will tell you whether the call succeeded or not.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000026}{Deprecated}]Please use {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}.+delete\+All\+In\+Background\+:block\+:} instead. \end{DoxyRefDesc}
+
+
+Extends class \hyperlink{interface_p_f_object_a312996cea1a17a6f4bbdfde07f4891a1}{P\+F\+Object}.
+
+\hypertarget{category_p_f_object_07_deprecated_08_acdf9948630cfbfb6a2caa0aecfbf58cf}{}\index{P\+F\+Object(\+Deprecated)@{P\+F\+Object(\+Deprecated)}!delete\+In\+Background\+With\+Target\+:selector\+:@{delete\+In\+Background\+With\+Target\+:selector\+:}}
+\index{delete\+In\+Background\+With\+Target\+:selector\+:@{delete\+In\+Background\+With\+Target\+:selector\+:}!P\+F\+Object(\+Deprecated)@{P\+F\+Object(\+Deprecated)}}
+\subsubsection[{delete\+In\+Background\+With\+Target\+:selector\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) delete\+In\+Background\+With\+Target\+: 
+\begin{DoxyParamCaption}
+\item[{(nullable id)}]{target}
+\item[{selector:(\char`\"{}Please use `P\+F\+Object.-\/delete\+In\+Background\+With\+Block\+:` instead.\char`\"{})}]{P\+A\+R\+S\+E\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D}
+\end{DoxyParamCaption}
+}\label{category_p_f_object_07_deprecated_08_acdf9948630cfbfb6a2caa0aecfbf58cf}
+
+
+
+
+ 
+
+
+
+
+
+Deletes the {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}} {\itshape asynchronously} and calls the given callback.
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & The object to call selector on. \\
+\hline
+{\em selector} & The selector to call. It should have the following signature\+: {\ttfamily (void)callback\+With\+Result\+:(\+N\+S\+Number $\ast$)result error\+:(\+N\+S\+Error $\ast$)error}. {\ttfamily error} will be {\ttfamily nil} on success and set if there was an error. {\ttfamily \mbox{[}result bool\+Value\mbox{]}} will tell you whether the call succeeded or not.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000025}{Deprecated}]Please use {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}.-\/delete\+In\+Background\+With\+Block\+:} instead. \end{DoxyRefDesc}
+
+
+Extends class \hyperlink{interface_p_f_object_acdf9948630cfbfb6a2caa0aecfbf58cf}{P\+F\+Object}.
+
+\hypertarget{category_p_f_object_07_deprecated_08_aa783e119f260f5e8598abb0564359318}{}\index{P\+F\+Object(\+Deprecated)@{P\+F\+Object(\+Deprecated)}!fetch\+All\+If\+Needed\+In\+Background\+:target\+:selector\+:@{fetch\+All\+If\+Needed\+In\+Background\+:target\+:selector\+:}}
+\index{fetch\+All\+If\+Needed\+In\+Background\+:target\+:selector\+:@{fetch\+All\+If\+Needed\+In\+Background\+:target\+:selector\+:}!P\+F\+Object(\+Deprecated)@{P\+F\+Object(\+Deprecated)}}
+\subsubsection[{fetch\+All\+If\+Needed\+In\+Background\+:target\+:selector\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) fetch\+All\+If\+Needed\+In\+Background\+: 
+\begin{DoxyParamCaption}
+\item[{(nullable N\+S\+Array$<$ {\bf P\+F\+Object} $\ast$ $>$ $\ast$)}]{objects}
+\item[{target:(nullable id)}]{target}
+\item[{selector:(\char`\"{}Please use `P\+F\+Object.+fetch\+All\+If\+Needed\+In\+Background\+:block\+:` instead.\char`\"{})}]{P\+A\+R\+S\+E\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D}
+\end{DoxyParamCaption}
+}\label{category_p_f_object_07_deprecated_08_aa783e119f260f5e8598abb0564359318}
+Fetches all of the P\+F\+Objects with the current data from the server {\itshape asynchronously} and calls the given callback.
+
+
+\begin{DoxyParams}{Parameters}
+{\em objects} & The list of objects to fetch. \\
+\hline
+{\em target} & The target on which the selector will be called. \\
+\hline
+{\em selector} & The selector to call. It should have the following signature\+: {\ttfamily (void)callback\+With\+Result\+:(\+N\+S\+Array $\ast$)fetched\+Objects error\+:(\+N\+S\+Error $\ast$)error}. {\ttfamily error} will be {\ttfamily nil} on success and set if there was an error. {\ttfamily fetched\+Objects} will the array of {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}} objects that were fetched.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000024}{Deprecated}]Please use {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}.+fetch\+All\+If\+Needed\+In\+Background\+:block\+:} instead. \end{DoxyRefDesc}
+
+
+Extends class \hyperlink{interface_p_f_object_aa783e119f260f5e8598abb0564359318}{P\+F\+Object}.
+
+\hypertarget{category_p_f_object_07_deprecated_08_ad503445a923bc28ce86b3540e99ad290}{}\index{P\+F\+Object(\+Deprecated)@{P\+F\+Object(\+Deprecated)}!fetch\+All\+In\+Background\+:target\+:selector\+:@{fetch\+All\+In\+Background\+:target\+:selector\+:}}
+\index{fetch\+All\+In\+Background\+:target\+:selector\+:@{fetch\+All\+In\+Background\+:target\+:selector\+:}!P\+F\+Object(\+Deprecated)@{P\+F\+Object(\+Deprecated)}}
+\subsubsection[{fetch\+All\+In\+Background\+:target\+:selector\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) fetch\+All\+In\+Background\+: 
+\begin{DoxyParamCaption}
+\item[{(nullable N\+S\+Array$<$ {\bf P\+F\+Object} $\ast$ $>$ $\ast$)}]{objects}
+\item[{target:(nullable id)}]{target}
+\item[{selector:(\char`\"{}Please use `P\+F\+Object.+fetch\+All\+In\+Background\+:block\+:` instead.\char`\"{})}]{P\+A\+R\+S\+E\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D}
+\end{DoxyParamCaption}
+}\label{category_p_f_object_07_deprecated_08_ad503445a923bc28ce86b3540e99ad290}
+
+
+
+
+ 
+
+
+
+
+
+Fetches all of the {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}} objects with the current data from the server {\itshape asynchronously} and calls the given callback.
+
+
+\begin{DoxyParams}{Parameters}
+{\em objects} & The list of objects to fetch. \\
+\hline
+{\em target} & The target on which the selector will be called. \\
+\hline
+{\em selector} & The selector to call. It should have the following signature\+: {\ttfamily (void)callback\+With\+Result\+:(\+N\+S\+Array $\ast$)fetched\+Objects error\+:(\+N\+S\+Error $\ast$)error}. {\ttfamily error} will be {\ttfamily nil} on success and set if there was an error. {\ttfamily fetched\+Objects} will the array of {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}} objects that were fetched.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000023}{Deprecated}]Please use {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}.+fetch\+All\+In\+Background\+:block\+:} instead. \end{DoxyRefDesc}
+
+
+Extends class \hyperlink{interface_p_f_object_ad503445a923bc28ce86b3540e99ad290}{P\+F\+Object}.
+
+\hypertarget{category_p_f_object_07_deprecated_08_acfcb1ff704744d8706dd63a5a17ca43a}{}\index{P\+F\+Object(\+Deprecated)@{P\+F\+Object(\+Deprecated)}!fetch\+If\+Needed\+In\+Background\+With\+Target\+:selector\+:@{fetch\+If\+Needed\+In\+Background\+With\+Target\+:selector\+:}}
+\index{fetch\+If\+Needed\+In\+Background\+With\+Target\+:selector\+:@{fetch\+If\+Needed\+In\+Background\+With\+Target\+:selector\+:}!P\+F\+Object(\+Deprecated)@{P\+F\+Object(\+Deprecated)}}
+\subsubsection[{fetch\+If\+Needed\+In\+Background\+With\+Target\+:selector\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) fetch\+If\+Needed\+In\+Background\+With\+Target\+: 
+\begin{DoxyParamCaption}
+\item[{(nullable id)}]{target}
+\item[{selector:(\char`\"{}Please use `P\+F\+Object.-\/fetch\+If\+Needed\+In\+Background\+With\+Block\+:` instead.\char`\"{})}]{P\+A\+R\+S\+E\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D}
+\end{DoxyParamCaption}
+}\label{category_p_f_object_07_deprecated_08_acfcb1ff704744d8706dd63a5a17ca43a}
+Fetches the \hyperlink{interface_p_f_object}{P\+F\+Object}\textquotesingle{}s data asynchronously if {\ttfamily data\+Available} is {\ttfamily N\+O}, then calls the callback.
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & The target on which the selector will be called. \\
+\hline
+{\em selector} & The selector to call. It should have the following signature\+: {\ttfamily (void)callback\+With\+Result\+:(\+P\+F\+Object $\ast$)fetched\+Object error\+:(\+N\+S\+Error $\ast$)error}. {\ttfamily error} will be {\ttfamily nil} on success and set if there was an error. {\ttfamily refreshed\+Object} will be the {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}} with the refreshed data.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000022}{Deprecated}]Please use {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}.-\/fetch\+If\+Needed\+In\+Background\+With\+Block\+:} instead. \end{DoxyRefDesc}
+
+
+Extends class \hyperlink{interface_p_f_object_acfcb1ff704744d8706dd63a5a17ca43a}{P\+F\+Object}.
+
+\hypertarget{category_p_f_object_07_deprecated_08_af3eacaaeffebd4cc0ba339d765a50ade}{}\index{P\+F\+Object(\+Deprecated)@{P\+F\+Object(\+Deprecated)}!fetch\+In\+Background\+With\+Target\+:selector\+:@{fetch\+In\+Background\+With\+Target\+:selector\+:}}
+\index{fetch\+In\+Background\+With\+Target\+:selector\+:@{fetch\+In\+Background\+With\+Target\+:selector\+:}!P\+F\+Object(\+Deprecated)@{P\+F\+Object(\+Deprecated)}}
+\subsubsection[{fetch\+In\+Background\+With\+Target\+:selector\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) fetch\+In\+Background\+With\+Target\+: 
+\begin{DoxyParamCaption}
+\item[{(nullable id)}]{target}
+\item[{selector:(\char`\"{}Please use `P\+F\+Object.-\/fetch\+In\+Background\+With\+Block\+:` instead.\char`\"{})}]{P\+A\+R\+S\+E\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D}
+\end{DoxyParamCaption}
+}\label{category_p_f_object_07_deprecated_08_af3eacaaeffebd4cc0ba339d765a50ade}
+Fetches the `\+P\+F\+Object {\itshape asynchronously} and calls the given callback.
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & The target on which the selector will be called. \\
+\hline
+{\em selector} & The selector to call. It should have the following signature\+: {\ttfamily (void)callback\+With\+Result\+:(\+P\+F\+Object $\ast$)refreshed\+Object error\+:(\+N\+S\+Error $\ast$)error}. {\ttfamily error} will be {\ttfamily nil} on success and set if there was an error. {\ttfamily refreshed\+Object} will be the {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}} with the refreshed data.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000021}{Deprecated}]Please use {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}.-\/fetch\+In\+Background\+With\+Block\+:} instead. \end{DoxyRefDesc}
+
+
+Extends class \hyperlink{interface_p_f_object_af3eacaaeffebd4cc0ba339d765a50ade}{P\+F\+Object}.
+
+\hypertarget{category_p_f_object_07_deprecated_08_ac412f8feeb1d679db129dbb78efde1af}{}\index{P\+F\+Object(\+Deprecated)@{P\+F\+Object(\+Deprecated)}!refresh\+In\+Background\+With\+Target\+:selector\+:@{refresh\+In\+Background\+With\+Target\+:selector\+:}}
+\index{refresh\+In\+Background\+With\+Target\+:selector\+:@{refresh\+In\+Background\+With\+Target\+:selector\+:}!P\+F\+Object(\+Deprecated)@{P\+F\+Object(\+Deprecated)}}
+\subsubsection[{refresh\+In\+Background\+With\+Target\+:selector\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) refresh\+In\+Background\+With\+Target\+: 
+\begin{DoxyParamCaption}
+\item[{(nullable id)}]{target}
+\item[{selector:(\char`\"{}Please use `P\+F\+Object.-\/fetch\+In\+Background\+With\+Block\+:` instead.\char`\"{})}]{P\+A\+R\+S\+E\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D}
+\end{DoxyParamCaption}
+}\label{category_p_f_object_07_deprecated_08_ac412f8feeb1d679db129dbb78efde1af}
+
+
+
+
+ 
+
+
+
+
+
+Asynchronously$\ast$ refreshes the {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}} and calls the given callback.
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & The target on which the selector will be called. \\
+\hline
+{\em selector} & The selector to call. It should have the following signature\+: {\ttfamily (void)callback\+With\+Result\+:(\+P\+F\+Object $\ast$)refreshed\+Object error\+:(\+N\+S\+Error $\ast$)error}. {\ttfamily error} will be {\ttfamily nil} on success and set if there was an error. {\ttfamily refreshed\+Object} will be the {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}} with the refreshed data.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000020}{Deprecated}]Please use {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}.-\/fetch\+In\+Background\+With\+Block\+:} instead. \end{DoxyRefDesc}
+
+
+Extends class \hyperlink{interface_p_f_object_ac412f8feeb1d679db129dbb78efde1af}{P\+F\+Object}.
+
+\hypertarget{category_p_f_object_07_deprecated_08_aa1fba48cec5bba80c72e6af4d8d88717}{}\index{P\+F\+Object(\+Deprecated)@{P\+F\+Object(\+Deprecated)}!save\+All\+In\+Background\+:target\+:selector\+:@{save\+All\+In\+Background\+:target\+:selector\+:}}
+\index{save\+All\+In\+Background\+:target\+:selector\+:@{save\+All\+In\+Background\+:target\+:selector\+:}!P\+F\+Object(\+Deprecated)@{P\+F\+Object(\+Deprecated)}}
+\subsubsection[{save\+All\+In\+Background\+:target\+:selector\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) save\+All\+In\+Background\+: 
+\begin{DoxyParamCaption}
+\item[{(nullable N\+S\+Array$<$ {\bf P\+F\+Object} $\ast$ $>$ $\ast$)}]{objects}
+\item[{target:(nullable id)}]{target}
+\item[{selector:(\char`\"{}Please use `P\+F\+Object.+save\+All\+In\+Background\+:block\+:` instead.\char`\"{})}]{P\+A\+R\+S\+E\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D}
+\end{DoxyParamCaption}
+}\label{category_p_f_object_07_deprecated_08_aa1fba48cec5bba80c72e6af4d8d88717}
+
+
+
+
+ 
+
+
+
+
+
+Saves a collection of objects all at once {\itshape asynchronously} and calls a callback when done.
+
+
+\begin{DoxyParams}{Parameters}
+{\em objects} & The array of objects to save. \\
+\hline
+{\em target} & The object to call selector on. \\
+\hline
+{\em selector} & The selector to call. It should have the following signature\+: {\ttfamily (void)callback\+With\+Result\+:(\+N\+S\+Number $\ast$)number error\+:(\+N\+S\+Error $\ast$)error}. {\ttfamily error} will be {\ttfamily nil} on success and set if there was an error. {\ttfamily \mbox{[}result bool\+Value\mbox{]}} will tell you whether the call succeeded or not.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000019}{Deprecated}]Please use {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}.+save\+All\+In\+Background\+:block\+:} instead. \end{DoxyRefDesc}
+
+
+Extends class \hyperlink{interface_p_f_object_aa1fba48cec5bba80c72e6af4d8d88717}{P\+F\+Object}.
+
+\hypertarget{category_p_f_object_07_deprecated_08_a26f570270d7ef495ba0de01fd6518fe9}{}\index{P\+F\+Object(\+Deprecated)@{P\+F\+Object(\+Deprecated)}!save\+In\+Background\+With\+Target\+:selector\+:@{save\+In\+Background\+With\+Target\+:selector\+:}}
+\index{save\+In\+Background\+With\+Target\+:selector\+:@{save\+In\+Background\+With\+Target\+:selector\+:}!P\+F\+Object(\+Deprecated)@{P\+F\+Object(\+Deprecated)}}
+\subsubsection[{save\+In\+Background\+With\+Target\+:selector\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) save\+In\+Background\+With\+Target\+: 
+\begin{DoxyParamCaption}
+\item[{(nullable id)}]{target}
+\item[{selector:(\char`\"{}Please use `P\+F\+Object.-\/save\+In\+Background\+With\+Block\+:` instead.\char`\"{})}]{P\+A\+R\+S\+E\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D}
+\end{DoxyParamCaption}
+}\label{category_p_f_object_07_deprecated_08_a26f570270d7ef495ba0de01fd6518fe9}
+
+
+
+
+ 
+
+
+
+
+
+Saves the {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}} asynchronously and calls the given callback.
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & The object to call selector on. \\
+\hline
+{\em selector} & The selector to call. It should have the following signature\+: {\ttfamily (void)callback\+With\+Result\+:(\+N\+S\+Number $\ast$)result error\+:(\+N\+S\+Error $\ast$)error}. {\ttfamily error} will be {\ttfamily nil} on success and set if there was an error. {\ttfamily \mbox{[}result bool\+Value\mbox{]}} will tell you whether the call succeeded or not.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000018}{Deprecated}]Please use {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}.-\/save\+In\+Background\+With\+Block\+:} instead. \end{DoxyRefDesc}
+
+
+Extends class \hyperlink{interface_p_f_object_a26f570270d7ef495ba0de01fd6518fe9}{P\+F\+Object}.
+
+
+
+The documentation for this category was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Frameworks/\+Parse.\+framework/\+Headers/P\+F\+Object+\+Deprecated.\+h\end{DoxyCompactItemize}

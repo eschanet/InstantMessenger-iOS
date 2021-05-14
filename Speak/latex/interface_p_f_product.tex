@@ -1,0 +1,79 @@
+\hypertarget{interface_p_f_product}{}\section{P\+F\+Product Class Reference}
+\label{interface_p_f_product}\index{P\+F\+Product@{P\+F\+Product}}
+
+
+{\ttfamily \#import $<$P\+F\+Product.\+h$>$}
+
+Inheritance diagram for P\+F\+Product\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_p_f_product}
+\end{center}
+\end{figure}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_p_f_product_a354f59da62a2d695096b10f36e75a084}{product\+Identifier}
+\begin{DoxyCompactList}\small\item\em 
+
+ \end{DoxyCompactList}\item 
+\hyperlink{interface_p_f_file}{P\+F\+File} $\ast$ \hyperlink{interface_p_f_product_a23132bc0aeaa67fa7d7e49b477818477}{icon}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_p_f_product_aca711bfd74798b7d0563d5ff5719c6d9}{title}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_p_f_product_a83e9bd4db5d395daf5d7d61094d0293d}{subtitle}
+\item 
+N\+S\+Number $\ast$ \hyperlink{interface_p_f_product_a8e78e9f4607e77954c425698ec7a151f}{order}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_p_f_product_a1462cf0bd4dffe98775e3439208ec238}{download\+Name}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Copyright (c) 2015-\/present, \hyperlink{interface_parse}{Parse}, L\+L\+C. All rights reserved.
+
+This source code is licensed under the B\+S\+D-\/style license found in the L\+I\+C\+E\+N\+S\+E file in the root directory of this source tree. An additional grant of patent rights can be found in the P\+A\+T\+E\+N\+T\+S file in the same directory. The {\ttfamily \hyperlink{interface_p_f_product}{P\+F\+Product}} class represents an in-\/app purchase product on the \hyperlink{interface_parse}{Parse} server. By default, products can only be created via the Data Browser. Saving a {\ttfamily \hyperlink{interface_p_f_product}{P\+F\+Product}} will result in error. However, the products\textquotesingle{} metadata information can be queried and viewed.
+
+This class is currently for i\+O\+S only. 
+
+\subsection{Property Documentation}
+\hypertarget{interface_p_f_product_a1462cf0bd4dffe98775e3439208ec238}{}\index{P\+F\+Product@{P\+F\+Product}!download\+Name@{download\+Name}}
+\index{download\+Name@{download\+Name}!P\+F\+Product@{P\+F\+Product}}
+\subsubsection[{download\+Name}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) download\+Name\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_p_f_product_a1462cf0bd4dffe98775e3439208ec238}
+The name of the associated download.
+
+If there is no downloadable asset, it should be {\ttfamily nil}. \hypertarget{interface_p_f_product_a23132bc0aeaa67fa7d7e49b477818477}{}\index{P\+F\+Product@{P\+F\+Product}!icon@{icon}}
+\index{icon@{icon}!P\+F\+Product@{P\+F\+Product}}
+\subsubsection[{icon}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf P\+F\+File}$\ast$) icon\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_p_f_product_a23132bc0aeaa67fa7d7e49b477818477}
+The icon of the product. \hypertarget{interface_p_f_product_a8e78e9f4607e77954c425698ec7a151f}{}\index{P\+F\+Product@{P\+F\+Product}!order@{order}}
+\index{order@{order}!P\+F\+Product@{P\+F\+Product}}
+\subsubsection[{order}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Number$\ast$) order\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_p_f_product_a8e78e9f4607e77954c425698ec7a151f}
+The order in which the product information is displayed in {\ttfamily \hyperlink{interface_p_f_product_table_view_controller}{P\+F\+Product\+Table\+View\+Controller}}.
+
+The product with a smaller order is displayed earlier in the {\ttfamily \hyperlink{interface_p_f_product_table_view_controller}{P\+F\+Product\+Table\+View\+Controller}}. \hypertarget{interface_p_f_product_a354f59da62a2d695096b10f36e75a084}{}\index{P\+F\+Product@{P\+F\+Product}!product\+Identifier@{product\+Identifier}}
+\index{product\+Identifier@{product\+Identifier}!P\+F\+Product@{P\+F\+Product}}
+\subsubsection[{product\+Identifier}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) product\+Identifier\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_p_f_product_a354f59da62a2d695096b10f36e75a084}
+
+
+
+
+ 
+
+
+
+
+
+The product identifier of the product.
+
+This should match the product identifier in i\+Tunes Connect exactly. \hypertarget{interface_p_f_product_a83e9bd4db5d395daf5d7d61094d0293d}{}\index{P\+F\+Product@{P\+F\+Product}!subtitle@{subtitle}}
+\index{subtitle@{subtitle}!P\+F\+Product@{P\+F\+Product}}
+\subsubsection[{subtitle}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) subtitle\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_p_f_product_a83e9bd4db5d395daf5d7d61094d0293d}
+The subtitle of the product. \hypertarget{interface_p_f_product_aca711bfd74798b7d0563d5ff5719c6d9}{}\index{P\+F\+Product@{P\+F\+Product}!title@{title}}
+\index{title@{title}!P\+F\+Product@{P\+F\+Product}}
+\subsubsection[{title}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) title\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_p_f_product_aca711bfd74798b7d0563d5ff5719c6d9}
+The title of the product. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Frameworks/\+Parse.\+framework/\+Headers/P\+F\+Product.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,126 @@
+\hypertarget{interface_f_b_s_d_k_app_invite_dialog}{}\section{F\+B\+S\+D\+K\+App\+Invite\+Dialog Class Reference}
+\label{interface_f_b_s_d_k_app_invite_dialog}\index{F\+B\+S\+D\+K\+App\+Invite\+Dialog@{F\+B\+S\+D\+K\+App\+Invite\+Dialog}}
+
+
+{\ttfamily \#import $<$F\+B\+S\+D\+K\+App\+Invite\+Dialog.\+h$>$}
+
+Inheritance diagram for F\+B\+S\+D\+K\+App\+Invite\+Dialog\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_f_b_s_d_k_app_invite_dialog}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_f_b_s_d_k_app_invite_dialog_a77e76bfb138db2103dc112800a89eeb3}{can\+Show}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_f_b_s_d_k_app_invite_dialog_a0b425a2d9004ee600a2dcb80ef3fbb77}{show}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_f_b_s_d_k_app_invite_dialog_a2e1f0fa58adabb4c7f2e813aaa64c794}{validate\+With\+Error\+:}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) + \hyperlink{interface_f_b_s_d_k_app_invite_dialog_a67ab5e4822cf101150630e2be6ca4bed}{show\+From\+View\+Controller\+:with\+Content\+:delegate\+:}
+\item 
+(instancetype) + \hyperlink{interface_f_b_s_d_k_app_invite_dialog_a49e82cc53fb40be0ac3995a206542c64}{show\+With\+Content\+:delegate\+:}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+U\+I\+View\+Controller $\ast$ \hyperlink{interface_f_b_s_d_k_app_invite_dialog_ab5b840b13afd930e3eefdbae3d54a8b0}{from\+View\+Controller}
+\item 
+id$<$ \hyperlink{protocol_f_b_s_d_k_app_invite_dialog_delegate-p}{F\+B\+S\+D\+K\+App\+Invite\+Dialog\+Delegate} $>$ \hyperlink{interface_f_b_s_d_k_app_invite_dialog_afd09a07b729c7263d4c3d9e5b0b62ada}{delegate}
+\item 
+\hyperlink{interface_f_b_s_d_k_app_invite_content}{F\+B\+S\+D\+K\+App\+Invite\+Content} $\ast$ \hyperlink{interface_f_b_s_d_k_app_invite_dialog_a18b98a61c112122c1baf3a36047c9cda}{content}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A dialog for sending App Invites. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_f_b_s_d_k_app_invite_dialog_a77e76bfb138db2103dc112800a89eeb3}{}\index{F\+B\+S\+D\+K\+App\+Invite\+Dialog@{F\+B\+S\+D\+K\+App\+Invite\+Dialog}!can\+Show@{can\+Show}}
+\index{can\+Show@{can\+Show}!F\+B\+S\+D\+K\+App\+Invite\+Dialog@{F\+B\+S\+D\+K\+App\+Invite\+Dialog}}
+\subsubsection[{can\+Show}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) can\+Show 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_f_b_s_d_k_app_invite_dialog_a77e76bfb138db2103dc112800a89eeb3}
+A Boolean value that indicates whether the receiver can initiate an app invite.  May return N\+O if the appropriate Facebook app is not installed and is required or an access token is required but not available. This method does not validate the content on the receiver, so this can be checked before building up the content. \begin{DoxySeeAlso}{See also}
+\hyperlink{interface_f_b_s_d_k_app_invite_dialog_a2e1f0fa58adabb4c7f2e813aaa64c794}{-\/ validate\+With\+Error\+:} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+Y\+E\+S if the receiver can show the dialog, otherwise N\+O. 
+\end{DoxyReturn}
+\hypertarget{interface_f_b_s_d_k_app_invite_dialog_a0b425a2d9004ee600a2dcb80ef3fbb77}{}\index{F\+B\+S\+D\+K\+App\+Invite\+Dialog@{F\+B\+S\+D\+K\+App\+Invite\+Dialog}!show@{show}}
+\index{show@{show}!F\+B\+S\+D\+K\+App\+Invite\+Dialog@{F\+B\+S\+D\+K\+App\+Invite\+Dialog}}
+\subsubsection[{show}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) show 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_f_b_s_d_k_app_invite_dialog_a0b425a2d9004ee600a2dcb80ef3fbb77}
+Begins the app invite from the receiver. \begin{DoxyReturn}{Returns}
+Y\+E\+S if the receiver was able to show the dialog, otherwise N\+O. 
+\end{DoxyReturn}
+\hypertarget{interface_f_b_s_d_k_app_invite_dialog_a67ab5e4822cf101150630e2be6ca4bed}{}\index{F\+B\+S\+D\+K\+App\+Invite\+Dialog@{F\+B\+S\+D\+K\+App\+Invite\+Dialog}!show\+From\+View\+Controller\+:with\+Content\+:delegate\+:@{show\+From\+View\+Controller\+:with\+Content\+:delegate\+:}}
+\index{show\+From\+View\+Controller\+:with\+Content\+:delegate\+:@{show\+From\+View\+Controller\+:with\+Content\+:delegate\+:}!F\+B\+S\+D\+K\+App\+Invite\+Dialog@{F\+B\+S\+D\+K\+App\+Invite\+Dialog}}
+\subsubsection[{show\+From\+View\+Controller\+:with\+Content\+:delegate\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (instancetype) show\+From\+View\+Controller\+: 
+\begin{DoxyParamCaption}
+\item[{(U\+I\+View\+Controller $\ast$)}]{view\+Controller}
+\item[{withContent:({\bf F\+B\+S\+D\+K\+App\+Invite\+Content} $\ast$)}]{content}
+\item[{delegate:(id$<$ {\bf F\+B\+S\+D\+K\+App\+Invite\+Dialog\+Delegate} $>$)}]{delegate}
+\end{DoxyParamCaption}
+}\label{interface_f_b_s_d_k_app_invite_dialog_a67ab5e4822cf101150630e2be6ca4bed}
+Convenience method to show a \hyperlink{interface_f_b_s_d_k_app_invite_dialog}{F\+B\+S\+D\+K\+App\+Invite\+Dialog} 
+\begin{DoxyParams}{Parameters}
+{\em view\+Controller} & A \hyperlink{class_u_i_view_controller-p}{U\+I\+View\+Controller} to present the dialog from. \\
+\hline
+{\em content} & The content for the app invite. \\
+\hline
+{\em delegate} & The receiver\textquotesingle{}s delegate. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_f_b_s_d_k_app_invite_dialog_a49e82cc53fb40be0ac3995a206542c64}{}\index{F\+B\+S\+D\+K\+App\+Invite\+Dialog@{F\+B\+S\+D\+K\+App\+Invite\+Dialog}!show\+With\+Content\+:delegate\+:@{show\+With\+Content\+:delegate\+:}}
+\index{show\+With\+Content\+:delegate\+:@{show\+With\+Content\+:delegate\+:}!F\+B\+S\+D\+K\+App\+Invite\+Dialog@{F\+B\+S\+D\+K\+App\+Invite\+Dialog}}
+\subsubsection[{show\+With\+Content\+:delegate\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (instancetype) show\+With\+Content\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf F\+B\+S\+D\+K\+App\+Invite\+Content} $\ast$)}]{content}
+\item[{delegate:((deprecated(\char`\"{}use {\bf show\+From\+View\+Controller\+:with\+Content\+:delegate\+:} instead\char`\"{})))}]{\+\_\+\+\_\+attribute\+\_\+\+\_\+}
+\end{DoxyParamCaption}
+}\label{interface_f_b_s_d_k_app_invite_dialog_a49e82cc53fb40be0ac3995a206542c64}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000011}{Deprecated}]use show\+From\+View\+Controller\+:with\+Content\+:delegate\+: instead \end{DoxyRefDesc}
+\hypertarget{interface_f_b_s_d_k_app_invite_dialog_a2e1f0fa58adabb4c7f2e813aaa64c794}{}\index{F\+B\+S\+D\+K\+App\+Invite\+Dialog@{F\+B\+S\+D\+K\+App\+Invite\+Dialog}!validate\+With\+Error\+:@{validate\+With\+Error\+:}}
+\index{validate\+With\+Error\+:@{validate\+With\+Error\+:}!F\+B\+S\+D\+K\+App\+Invite\+Dialog@{F\+B\+S\+D\+K\+App\+Invite\+Dialog}}
+\subsubsection[{validate\+With\+Error\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) validate\+With\+Error\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Error $\ast$\+\_\+\+\_\+autoreleasing $\ast$)}]{error\+Ref}
+\end{DoxyParamCaption}
+}\label{interface_f_b_s_d_k_app_invite_dialog_a2e1f0fa58adabb4c7f2e813aaa64c794}
+Validates the content on the receiver. 
+\begin{DoxyParams}{Parameters}
+{\em error\+Ref} & If an error occurs, upon return contains an N\+S\+Error object that describes the problem. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Y\+E\+S if the content is valid, otherwise N\+O. 
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_f_b_s_d_k_app_invite_dialog_a18b98a61c112122c1baf3a36047c9cda}{}\index{F\+B\+S\+D\+K\+App\+Invite\+Dialog@{F\+B\+S\+D\+K\+App\+Invite\+Dialog}!content@{content}}
+\index{content@{content}!F\+B\+S\+D\+K\+App\+Invite\+Dialog@{F\+B\+S\+D\+K\+App\+Invite\+Dialog}}
+\subsubsection[{content}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf F\+B\+S\+D\+K\+App\+Invite\+Content}$\ast$) content\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_f_b_s_d_k_app_invite_dialog_a18b98a61c112122c1baf3a36047c9cda}
+The content for app invite. \hypertarget{interface_f_b_s_d_k_app_invite_dialog_afd09a07b729c7263d4c3d9e5b0b62ada}{}\index{F\+B\+S\+D\+K\+App\+Invite\+Dialog@{F\+B\+S\+D\+K\+App\+Invite\+Dialog}!delegate@{delegate}}
+\index{delegate@{delegate}!F\+B\+S\+D\+K\+App\+Invite\+Dialog@{F\+B\+S\+D\+K\+App\+Invite\+Dialog}}
+\subsubsection[{delegate}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id$<${\bf F\+B\+S\+D\+K\+App\+Invite\+Dialog\+Delegate}$>$) delegate\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}\label{interface_f_b_s_d_k_app_invite_dialog_afd09a07b729c7263d4c3d9e5b0b62ada}
+The receiver\textquotesingle{}s delegate or nil if it doesn\textquotesingle{}t have a delegate. \hypertarget{interface_f_b_s_d_k_app_invite_dialog_ab5b840b13afd930e3eefdbae3d54a8b0}{}\index{F\+B\+S\+D\+K\+App\+Invite\+Dialog@{F\+B\+S\+D\+K\+App\+Invite\+Dialog}!from\+View\+Controller@{from\+View\+Controller}}
+\index{from\+View\+Controller@{from\+View\+Controller}!F\+B\+S\+D\+K\+App\+Invite\+Dialog@{F\+B\+S\+D\+K\+App\+Invite\+Dialog}}
+\subsubsection[{from\+View\+Controller}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+View\+Controller$\ast$) from\+View\+Controller\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}\label{interface_f_b_s_d_k_app_invite_dialog_ab5b840b13afd930e3eefdbae3d54a8b0}
+A \hyperlink{class_u_i_view_controller-p}{U\+I\+View\+Controller} to present the dialog from.  If not specified, the top most view controller will be automatically determined as best as possible. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Frameworks/\+F\+B\+S\+D\+K\+Share\+Kit.\+framework/\+Headers/F\+B\+S\+D\+K\+App\+Invite\+Dialog.\+h\end{DoxyCompactItemize}

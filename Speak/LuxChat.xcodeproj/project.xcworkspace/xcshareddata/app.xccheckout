@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>40781310-DEF7-49AF-85BC-158D51E5E4CE</string>
+	<key>IDESourceControlProjectName</key>
+	<string>app</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>4B0ADC091BF586E462D6346C057E22F1C9CB8B5F</key>
+		<string>https://bitbucket.org/eric_schanet/speak-chat.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>app.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>4B0ADC091BF586E462D6346C057E22F1C9CB8B5F</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://bitbucket.org/eric_schanet/speak-chat.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>4B0ADC091BF586E462D6346C057E22F1C9CB8B5F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4B0ADC091BF586E462D6346C057E22F1C9CB8B5F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Speak</string>
+		</dict>
+	</array>
+</dict>
+</plist>

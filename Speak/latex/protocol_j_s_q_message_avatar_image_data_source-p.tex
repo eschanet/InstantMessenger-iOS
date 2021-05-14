@@ -1,0 +1,76 @@
+\hypertarget{protocol_j_s_q_message_avatar_image_data_source-p}{}\section{$<$J\+S\+Q\+Message\+Avatar\+Image\+Data\+Source$>$ Protocol Reference}
+\label{protocol_j_s_q_message_avatar_image_data_source-p}\index{$<$\+J\+S\+Q\+Message\+Avatar\+Image\+Data\+Source$>$@{$<$\+J\+S\+Q\+Message\+Avatar\+Image\+Data\+Source$>$}}
+
+
+{\ttfamily \#import $<$J\+S\+Q\+Message\+Avatar\+Image\+Data\+Source.\+h$>$}
+
+Inheritance diagram for $<$J\+S\+Q\+Message\+Avatar\+Image\+Data\+Source$>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{protocol_j_s_q_message_avatar_image_data_source-p}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(U\+I\+Image $\ast$) -\/ \hyperlink{protocol_j_s_q_message_avatar_image_data_source-p_ad76e99d9fd9d867a65cdde5cea7b64e4}{avatar\+Image}
+\item 
+(U\+I\+Image $\ast$) -\/ \hyperlink{protocol_j_s_q_message_avatar_image_data_source-p_a067f395c36ff8170d680ee924cceb302}{avatar\+Highlighted\+Image}
+\item 
+(U\+I\+Image $\ast$) -\/ \hyperlink{protocol_j_s_q_message_avatar_image_data_source-p_af47620d007d61a9b2c73efd9733d45d5}{avatar\+Placeholder\+Image}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \hyperlink{protocol_j_s_q_message_avatar_image_data_source-p}{J\+S\+Q\+Message\+Avatar\+Image\+Data\+Source}} protocol defines the common interface through which a {\ttfamily \hyperlink{interface_j_s_q_messages_view_controller}{J\+S\+Q\+Messages\+View\+Controller}} and {\ttfamily \hyperlink{interface_j_s_q_messages_collection_view}{J\+S\+Q\+Messages\+Collection\+View}} interact with avatar image model objects.
+
+It declares the required and optional methods that a class must implement so that instances of that class can be display properly within a {\ttfamily \hyperlink{interface_j_s_q_messages_collection_view_cell}{J\+S\+Q\+Messages\+Collection\+View\+Cell}}.
+
+A concrete class that conforms to this protocol is provided in the library. See {\ttfamily \hyperlink{interface_j_s_q_messages_avatar_image}{J\+S\+Q\+Messages\+Avatar\+Image}}.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_j_s_q_messages_avatar_image}{J\+S\+Q\+Messages\+Avatar\+Image}. 
+\end{DoxySeeAlso}
+
+
+\subsection{Method Documentation}
+\hypertarget{protocol_j_s_q_message_avatar_image_data_source-p_a067f395c36ff8170d680ee924cceb302}{}\index{J\+S\+Q\+Message\+Avatar\+Image\+Data\+Source-\/p@{J\+S\+Q\+Message\+Avatar\+Image\+Data\+Source-\/p}!avatar\+Highlighted\+Image@{avatar\+Highlighted\+Image}}
+\index{avatar\+Highlighted\+Image@{avatar\+Highlighted\+Image}!J\+S\+Q\+Message\+Avatar\+Image\+Data\+Source-\/p@{J\+S\+Q\+Message\+Avatar\+Image\+Data\+Source-\/p}}
+\subsubsection[{avatar\+Highlighted\+Image}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Image $\ast$) avatar\+Highlighted\+Image 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [required]}}\label{protocol_j_s_q_message_avatar_image_data_source-p_a067f395c36ff8170d680ee924cceb302}
+\begin{DoxyReturn}{Returns}
+The avatar image for a highlighted display state.
+\end{DoxyReturn}
+You may return {\ttfamily nil} from this method if this does not apply. \hypertarget{protocol_j_s_q_message_avatar_image_data_source-p_ad76e99d9fd9d867a65cdde5cea7b64e4}{}\index{J\+S\+Q\+Message\+Avatar\+Image\+Data\+Source-\/p@{J\+S\+Q\+Message\+Avatar\+Image\+Data\+Source-\/p}!avatar\+Image@{avatar\+Image}}
+\index{avatar\+Image@{avatar\+Image}!J\+S\+Q\+Message\+Avatar\+Image\+Data\+Source-\/p@{J\+S\+Q\+Message\+Avatar\+Image\+Data\+Source-\/p}}
+\subsubsection[{avatar\+Image}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Image $\ast$) avatar\+Image 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [required]}}\label{protocol_j_s_q_message_avatar_image_data_source-p_ad76e99d9fd9d867a65cdde5cea7b64e4}
+\begin{DoxyReturn}{Returns}
+The avatar image for a regular display state.
+\end{DoxyReturn}
+You may return {\ttfamily nil} from this method while the image is being downloaded. \hypertarget{protocol_j_s_q_message_avatar_image_data_source-p_af47620d007d61a9b2c73efd9733d45d5}{}\index{J\+S\+Q\+Message\+Avatar\+Image\+Data\+Source-\/p@{J\+S\+Q\+Message\+Avatar\+Image\+Data\+Source-\/p}!avatar\+Placeholder\+Image@{avatar\+Placeholder\+Image}}
+\index{avatar\+Placeholder\+Image@{avatar\+Placeholder\+Image}!J\+S\+Q\+Message\+Avatar\+Image\+Data\+Source-\/p@{J\+S\+Q\+Message\+Avatar\+Image\+Data\+Source-\/p}}
+\subsubsection[{avatar\+Placeholder\+Image}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Image $\ast$) avatar\+Placeholder\+Image 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [required]}}\label{protocol_j_s_q_message_avatar_image_data_source-p_af47620d007d61a9b2c73efd9733d45d5}
+\begin{DoxyReturn}{Returns}
+A placeholder avatar image to be displayed if avatar\+Image is not yet available, or {\ttfamily nil}. For example, if avatar\+Image needs to be downloaded, this placeholder image will be used until avatar\+Image is not {\ttfamily nil}.
+\end{DoxyReturn}
+If you do not need support for a placeholder image, that is, your images are stored locally on the device, then you may simply return the same value as avatar\+Image here.
+
+\begin{DoxyWarning}{Warning}
+You must not return {\ttfamily nil} from this method. 
+\end{DoxyWarning}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Vendors/\+J\+S\+Q\+Messages\+View\+Controller/\+Model/J\+S\+Q\+Message\+Avatar\+Image\+Data\+Source.\+h\end{DoxyCompactItemize}

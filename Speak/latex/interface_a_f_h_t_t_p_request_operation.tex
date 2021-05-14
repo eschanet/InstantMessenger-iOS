@@ -1,0 +1,87 @@
+\hypertarget{interface_a_f_h_t_t_p_request_operation}{}\section{A\+F\+H\+T\+T\+P\+Request\+Operation Class Reference}
+\label{interface_a_f_h_t_t_p_request_operation}\index{A\+F\+H\+T\+T\+P\+Request\+Operation@{A\+F\+H\+T\+T\+P\+Request\+Operation}}
+
+
+{\ttfamily \#import $<$A\+F\+H\+T\+T\+P\+Request\+Operation.\+h$>$}
+
+Inheritance diagram for A\+F\+H\+T\+T\+P\+Request\+Operation\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.570093cm]{interface_a_f_h_t_t_p_request_operation}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{Indent}{\bf Setting Completion Block Success / Failure Callbacks}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_a_f_h_t_t_p_request_operation_a8cb0d76aee08d4925c044f9bf1d015fb}{set\+Completion\+Block\+With\+Success\+:failure\+:}
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Properties}
+\begin{Indent}{\bf Getting H\+T\+T\+P U\+R\+L Connection Information}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+N\+S\+H\+T\+T\+P\+U\+R\+L\+Response $\ast$ \hyperlink{interface_a_f_h_t_t_p_request_operation_a7a6e0248cffbdfa767d79e864fc1e730}{response}
+\item 
+\hyperlink{interface_a_f_h_t_t_p_response_serializer}{A\+F\+H\+T\+T\+P\+Response\+Serializer}$<$ \hyperlink{protocol_a_f_u_r_l_response_serialization-p}{A\+F\+U\+R\+L\+Response\+Serialization} $>$ $\ast$ \hyperlink{interface_a_f_h_t_t_p_request_operation_a1d59d01b3fff2796f06c35891dc01cea}{response\+Serializer}
+\item 
+id \hyperlink{interface_a_f_h_t_t_p_request_operation_a7418f7784dcaf21623ce588fb27734c3}{response\+Object}
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+{\ttfamily \hyperlink{interface_a_f_h_t_t_p_request_operation}{A\+F\+H\+T\+T\+P\+Request\+Operation}} is a subclass of {\ttfamily \hyperlink{interface_a_f_u_r_l_connection_operation}{A\+F\+U\+R\+L\+Connection\+Operation}} for requests using the H\+T\+T\+P or H\+T\+T\+P\+S protocols. It encapsulates the concept of acceptable status codes and content types, which determine the success or failure of a request. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_a_f_h_t_t_p_request_operation_a8cb0d76aee08d4925c044f9bf1d015fb}{}\index{A\+F\+H\+T\+T\+P\+Request\+Operation@{A\+F\+H\+T\+T\+P\+Request\+Operation}!set\+Completion\+Block\+With\+Success\+:failure\+:@{set\+Completion\+Block\+With\+Success\+:failure\+:}}
+\index{set\+Completion\+Block\+With\+Success\+:failure\+:@{set\+Completion\+Block\+With\+Success\+:failure\+:}!A\+F\+H\+T\+T\+P\+Request\+Operation@{A\+F\+H\+T\+T\+P\+Request\+Operation}}
+\subsubsection[{set\+Completion\+Block\+With\+Success\+:failure\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\+Completion\+Block\+With\+Success\+: 
+\begin{DoxyParamCaption}
+\item[{(void($^\wedge$)({\bf A\+F\+H\+T\+T\+P\+Request\+Operation} $\ast$operation, id {\bf response\+Object}))}]{success}
+\item[{failure:(void($^\wedge$)({\bf A\+F\+H\+T\+T\+P\+Request\+Operation} $\ast$operation, N\+S\+Error $\ast${\bf error}))}]{failure}
+\end{DoxyParamCaption}
+}\label{interface_a_f_h_t_t_p_request_operation_a8cb0d76aee08d4925c044f9bf1d015fb}
+Sets the {\ttfamily completion\+Block} property with a block that executes either the specified success or failure block, depending on the state of the request on completion. If {\ttfamily error} returns a value, which can be caused by an unacceptable status code or content type, then {\ttfamily failure} is executed. Otherwise, {\ttfamily success} is executed.
+
+This method should be overridden in subclasses in order to specify the response object passed into the success block.
+
+
+\begin{DoxyParams}{Parameters}
+{\em success} & The block to be executed on the completion of a successful request. This block has no return value and takes two arguments\+: the receiver operation and the object constructed from the response data of the request. \\
+\hline
+{\em failure} & The block to be executed on the completion of an unsuccessful request. This block has no return value and takes two arguments\+: the receiver operation and the error that occurred during the request. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_a_f_h_t_t_p_request_operation_a7a6e0248cffbdfa767d79e864fc1e730}{}\index{A\+F\+H\+T\+T\+P\+Request\+Operation@{A\+F\+H\+T\+T\+P\+Request\+Operation}!response@{response}}
+\index{response@{response}!A\+F\+H\+T\+T\+P\+Request\+Operation@{A\+F\+H\+T\+T\+P\+Request\+Operation}}
+\subsubsection[{response}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+H\+T\+T\+P\+U\+R\+L\+Response$\ast$) response\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_a_f_h_t_t_p_request_operation_a7a6e0248cffbdfa767d79e864fc1e730}
+The last H\+T\+T\+P response received by the operation\textquotesingle{}s connection. \hypertarget{interface_a_f_h_t_t_p_request_operation_a7418f7784dcaf21623ce588fb27734c3}{}\index{A\+F\+H\+T\+T\+P\+Request\+Operation@{A\+F\+H\+T\+T\+P\+Request\+Operation}!response\+Object@{response\+Object}}
+\index{response\+Object@{response\+Object}!A\+F\+H\+T\+T\+P\+Request\+Operation@{A\+F\+H\+T\+T\+P\+Request\+Operation}}
+\subsubsection[{response\+Object}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) response\+Object\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_a_f_h_t_t_p_request_operation_a7418f7784dcaf21623ce588fb27734c3}
+An object constructed by the {\ttfamily response\+Serializer} from the response and response data. Returns {\ttfamily nil} unless the operation {\ttfamily is\+Finished}, has a {\ttfamily response}, and has {\ttfamily response\+Data} with non-\/zero content length. If an error occurs during serialization, {\ttfamily nil} will be returned, and the {\ttfamily error} property will be populated with the serialization error. \hypertarget{interface_a_f_h_t_t_p_request_operation_a1d59d01b3fff2796f06c35891dc01cea}{}\index{A\+F\+H\+T\+T\+P\+Request\+Operation@{A\+F\+H\+T\+T\+P\+Request\+Operation}!response\+Serializer@{response\+Serializer}}
+\index{response\+Serializer@{response\+Serializer}!A\+F\+H\+T\+T\+P\+Request\+Operation@{A\+F\+H\+T\+T\+P\+Request\+Operation}}
+\subsubsection[{response\+Serializer}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf A\+F\+H\+T\+T\+P\+Response\+Serializer}$<${\bf A\+F\+U\+R\+L\+Response\+Serialization}$>$$\ast$) response\+Serializer\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_a_f_h_t_t_p_request_operation_a1d59d01b3fff2796f06c35891dc01cea}
+Responses sent from the server in data tasks created with {\ttfamily data\+Task\+With\+Request\+:success\+:failure\+:} and run using the {\ttfamily G\+E\+T} / {\ttfamily P\+O\+S\+T} / et al. convenience methods are automatically validated and serialized by the response serializer. By default, this property is set to an A\+F\+H\+T\+T\+P\+Response serializer, which uses the raw data as its response object. The serializer validates the status code to be in the {\ttfamily 2\+X\+X} range, denoting success. If the response serializer generates an error in {\ttfamily -\/response\+Object\+For\+Response\+:data\+:error\+:}, the {\ttfamily failure} callback of the session task or request operation will be executed; otherwise, the {\ttfamily success} callback will be executed.
+
+\begin{DoxyWarning}{Warning}
+{\ttfamily response\+Serializer} must not be {\ttfamily nil}. Setting a response serializer will clear out any cached value 
+\end{DoxyWarning}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Vendors/\+A\+F\+Networking/\+A\+F\+Networking/A\+F\+H\+T\+T\+P\+Request\+Operation.\+h\item 
+Vendors/\+A\+F\+Networking/\+A\+F\+Networking/A\+F\+H\+T\+T\+P\+Request\+Operation.\+m\end{DoxyCompactItemize}

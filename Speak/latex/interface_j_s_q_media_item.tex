@@ -1,0 +1,78 @@
+\hypertarget{interface_j_s_q_media_item}{}\section{J\+S\+Q\+Media\+Item Class Reference}
+\label{interface_j_s_q_media_item}\index{J\+S\+Q\+Media\+Item@{J\+S\+Q\+Media\+Item}}
+
+
+{\ttfamily \#import $<$J\+S\+Q\+Media\+Item.\+h$>$}
+
+Inheritance diagram for J\+S\+Q\+Media\+Item\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.183236cm]{interface_j_s_q_media_item}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) -\/ \hyperlink{interface_j_s_q_media_item_a4fbe76f4a63410540b9d5e7a417d0ad1}{init\+With\+Mask\+As\+Outgoing\+:}
+\item 
+(void) -\/ \hyperlink{interface_j_s_q_media_item_a561cf3f49ca3d9188d66d07ad13b6b6f}{clear\+Cached\+Media\+Views}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+B\+O\+O\+L \hyperlink{interface_j_s_q_media_item_a1fdf831927e6290df2fdceb724ec8046}{applies\+Media\+View\+Mask\+As\+Outgoing}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \hyperlink{interface_j_s_q_media_item}{J\+S\+Q\+Media\+Item}} class is an abstract base class for media item model objects that represents a single media attachment for a user message. It provides some default behavior for media items, including a default media\+View\+Display\+Size, a default media\+Placeholder\+View, and view masking as specified by applies\+Media\+View\+Mask\+As\+Outgoing.
+
+\begin{DoxyWarning}{Warning}
+This class is intended to be subclassed. You should not use it directly.
+\end{DoxyWarning}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_j_s_q_location_media_item}{J\+S\+Q\+Location\+Media\+Item}. 
+
+\hyperlink{interface_j_s_q_e_s_photo_media_item}{J\+S\+Q\+E\+S\+Photo\+Media\+Item}. 
+
+\hyperlink{interface_j_s_q_e_s_video_media_item}{J\+S\+Q\+E\+S\+Video\+Media\+Item}. 
+\end{DoxySeeAlso}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_j_s_q_media_item_a561cf3f49ca3d9188d66d07ad13b6b6f}{}\index{J\+S\+Q\+Media\+Item@{J\+S\+Q\+Media\+Item}!clear\+Cached\+Media\+Views@{clear\+Cached\+Media\+Views}}
+\index{clear\+Cached\+Media\+Views@{clear\+Cached\+Media\+Views}!J\+S\+Q\+Media\+Item@{J\+S\+Q\+Media\+Item}}
+\subsubsection[{clear\+Cached\+Media\+Views}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) clear\+Cached\+Media\+Views 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_media_item_a561cf3f49ca3d9188d66d07ad13b6b6f}
+Clears any media view or media placeholder view that the item has cached. \hypertarget{interface_j_s_q_media_item_a4fbe76f4a63410540b9d5e7a417d0ad1}{}\index{J\+S\+Q\+Media\+Item@{J\+S\+Q\+Media\+Item}!init\+With\+Mask\+As\+Outgoing\+:@{init\+With\+Mask\+As\+Outgoing\+:}}
+\index{init\+With\+Mask\+As\+Outgoing\+:@{init\+With\+Mask\+As\+Outgoing\+:}!J\+S\+Q\+Media\+Item@{J\+S\+Q\+Media\+Item}}
+\subsubsection[{init\+With\+Mask\+As\+Outgoing\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (instancetype) init\+With\+Mask\+As\+Outgoing\+: 
+\begin{DoxyParamCaption}
+\item[{(B\+O\+O\+L)}]{mask\+As\+Outgoing}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_media_item_a4fbe76f4a63410540b9d5e7a417d0ad1}
+Initializes and returns a media item with the specified value for mask\+As\+Outgoing.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mask\+As\+Outgoing} & A boolean value indicating whether this media item should apply an outgoing or incoming bubble image mask to its media views.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An initialized {\ttfamily \hyperlink{interface_j_s_q_media_item}{J\+S\+Q\+Media\+Item}} object if successful, {\ttfamily nil} otherwise. 
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_j_s_q_media_item_a1fdf831927e6290df2fdceb724ec8046}{}\index{J\+S\+Q\+Media\+Item@{J\+S\+Q\+Media\+Item}!applies\+Media\+View\+Mask\+As\+Outgoing@{applies\+Media\+View\+Mask\+As\+Outgoing}}
+\index{applies\+Media\+View\+Mask\+As\+Outgoing@{applies\+Media\+View\+Mask\+As\+Outgoing}!J\+S\+Q\+Media\+Item@{J\+S\+Q\+Media\+Item}}
+\subsubsection[{applies\+Media\+View\+Mask\+As\+Outgoing}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) applies\+Media\+View\+Mask\+As\+Outgoing\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_j_s_q_media_item_a1fdf831927e6290df2fdceb724ec8046}
+A boolean value indicating whether this media item should apply an outgoing or incoming bubble image mask to its media views. Specify {\ttfamily Y\+E\+S} for an outgoing mask, and {\ttfamily N\+O} for an incoming mask. The default value is {\ttfamily Y\+E\+S}. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Vendors/\+J\+S\+Q\+Messages\+View\+Controller/\+Model/J\+S\+Q\+Media\+Item.\+h\item 
+Vendors/\+J\+S\+Q\+Messages\+View\+Controller/\+Model/J\+S\+Q\+Media\+Item.\+m\end{DoxyCompactItemize}

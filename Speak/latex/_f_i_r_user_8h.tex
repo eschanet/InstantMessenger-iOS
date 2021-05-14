@@ -1,0 +1,65 @@
+\hypertarget{_f_i_r_user_8h}{}\section{Frameworks/\+Firebase\+Auth.framework/\+Headers/\+F\+I\+R\+User.h File Reference}
+\label{_f_i_r_user_8h}\index{Frameworks/\+Firebase\+Auth.\+framework/\+Headers/\+F\+I\+R\+User.\+h@{Frameworks/\+Firebase\+Auth.\+framework/\+Headers/\+F\+I\+R\+User.\+h}}
+
+
+Firebase Auth S\+D\+K.  
+
+
+{\ttfamily \#import $<$Foundation/\+Foundation.\+h$>$}\\*
+{\ttfamily \#import $<$Firebase\+Auth/\+F\+I\+R\+Auth.\+h$>$}\\*
+{\ttfamily \#import $<$Firebase\+Auth/\+F\+I\+R\+User\+Info.\+h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{interface_f_i_r_user}{F\+I\+R\+User}
+\begin{DoxyCompactList}\small\item\em Represents a user. \end{DoxyCompactList}\item 
+class \hyperlink{interface_f_i_r_user_profile_change_request}{F\+I\+R\+User\+Profile\+Change\+Request}
+\begin{DoxyCompactList}\small\item\em Represents an object capable of updating a user\textquotesingle{}s profile data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{_f_i_r_user_8h_a80aa12b60fa2513aeb072c0d3ba4bd49}{}typedef void($^\wedge$ {\bfseries F\+I\+R\+Auth\+Token\+Callback}) (N\+S\+String $\ast$\+\_\+\+Nullable token, N\+S\+Error $\ast$\+\_\+\+Nullable error)\label{_f_i_r_user_8h_a80aa12b60fa2513aeb072c0d3ba4bd49}
+
+\item 
+typedef void($^\wedge$ \hyperlink{_f_i_r_user_8h_a8f19eed733909dfb8881c062a29ab36f}{F\+I\+R\+User\+Profile\+Change\+Callback}) (N\+S\+Error $\ast$\+\_\+\+Nullable error)
+\begin{DoxyCompactList}\small\item\em The type of block called when a user profile change has finished. \end{DoxyCompactList}\item 
+typedef void($^\wedge$ \hyperlink{_f_i_r_user_8h_aff460b74c462c7dbd3cc0fae1187ffe5}{F\+I\+R\+Send\+Email\+Verification\+Callback}) (N\+S\+Error $\ast$\+\_\+\+Nullable error)
+\begin{DoxyCompactList}\small\item\em The type of block called when a request to send an email verification has finished. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Firebase Auth S\+D\+K. 
+
+\begin{DoxyCopyright}{Copyright}
+Copyright 2015 Google Inc. 
+\end{DoxyCopyright}
+\begin{DoxyRemark}{Remarks}
+Use of this S\+D\+K is subject to the Google A\+P\+Is Terms of Service\+: \href{https://developers.google.com/terms/}{\tt https\+://developers.\+google.\+com/terms/} 
+\end{DoxyRemark}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{_f_i_r_user_8h_aff460b74c462c7dbd3cc0fae1187ffe5}{}\index{F\+I\+R\+User.\+h@{F\+I\+R\+User.\+h}!F\+I\+R\+Send\+Email\+Verification\+Callback@{F\+I\+R\+Send\+Email\+Verification\+Callback}}
+\index{F\+I\+R\+Send\+Email\+Verification\+Callback@{F\+I\+R\+Send\+Email\+Verification\+Callback}!F\+I\+R\+User.\+h@{F\+I\+R\+User.\+h}}
+\subsubsection[{F\+I\+R\+Send\+Email\+Verification\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}F\+I\+R\+Send\+Email\+Verification\+Callback}\label{_f_i_r_user_8h_aff460b74c462c7dbd3cc0fae1187ffe5}
+
+
+The type of block called when a request to send an email verification has finished. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em error} & Optionally; the error which occurred -\/ or nil if the request was successful. \\
+\hline
+\end{DoxyParams}
+\hypertarget{_f_i_r_user_8h_a8f19eed733909dfb8881c062a29ab36f}{}\index{F\+I\+R\+User.\+h@{F\+I\+R\+User.\+h}!F\+I\+R\+User\+Profile\+Change\+Callback@{F\+I\+R\+User\+Profile\+Change\+Callback}}
+\index{F\+I\+R\+User\+Profile\+Change\+Callback@{F\+I\+R\+User\+Profile\+Change\+Callback}!F\+I\+R\+User.\+h@{F\+I\+R\+User.\+h}}
+\subsubsection[{F\+I\+R\+User\+Profile\+Change\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}F\+I\+R\+User\+Profile\+Change\+Callback}\label{_f_i_r_user_8h_a8f19eed733909dfb8881c062a29ab36f}
+
+
+The type of block called when a user profile change has finished. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em error} & Optionally; the error which occurred -\/ or nil if the request was successful. \\
+\hline
+\end{DoxyParams}

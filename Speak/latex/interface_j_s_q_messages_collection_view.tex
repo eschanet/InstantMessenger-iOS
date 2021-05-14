@@ -1,0 +1,108 @@
+\hypertarget{interface_j_s_q_messages_collection_view}{}\section{J\+S\+Q\+Messages\+Collection\+View Class Reference}
+\label{interface_j_s_q_messages_collection_view}\index{J\+S\+Q\+Messages\+Collection\+View@{J\+S\+Q\+Messages\+Collection\+View}}
+
+
+{\ttfamily \#import $<$J\+S\+Q\+Messages\+Collection\+View.\+h$>$}
+
+Inheritance diagram for J\+S\+Q\+Messages\+Collection\+View\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_j_s_q_messages_collection_view}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_j_s_q_messages_typing_indicator_footer_view}{J\+S\+Q\+Messages\+Typing\+Indicator\+Footer\+View} $\ast$) -\/ \hyperlink{interface_j_s_q_messages_collection_view_a88ab1fcb95a2cdfd9d9a59340f199102}{dequeue\+Typing\+Indicator\+Footer\+View\+For\+Index\+Path\+:}
+\item 
+(\hyperlink{interface_j_s_q_messages_load_earlier_header_view}{J\+S\+Q\+Messages\+Load\+Earlier\+Header\+View} $\ast$) -\/ \hyperlink{interface_j_s_q_messages_collection_view_acc03239285b071c874653f7774faa7e0}{dequeue\+Load\+Earlier\+Messages\+View\+Header\+For\+Index\+Path\+:}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+id$<$ \hyperlink{protocol_j_s_q_messages_collection_view_data_source-p}{J\+S\+Q\+Messages\+Collection\+View\+Data\+Source} $>$ \hyperlink{interface_j_s_q_messages_collection_view_ab2d7a72bc1b6d267cd69e615c4965c2a}{data\+Source}
+\item 
+id$<$ \hyperlink{protocol_j_s_q_messages_collection_view_delegate_flow_layout-p}{J\+S\+Q\+Messages\+Collection\+View\+Delegate\+Flow\+Layout} $>$ \hyperlink{interface_j_s_q_messages_collection_view_ac00c8069a3335df10da0bf609b27ef74}{delegate}
+\item 
+\hyperlink{interface_j_s_q_messages_collection_view_flow_layout}{J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout} $\ast$ \hyperlink{interface_j_s_q_messages_collection_view_a5f685c56a4ef349a6ad8fa04f8915c64}{collection\+View\+Layout}
+\item 
+B\+O\+O\+L \hyperlink{interface_j_s_q_messages_collection_view_a00d402fe933028dbf2c112c1637660dc}{typing\+Indicator\+Displays\+On\+Left}
+\item 
+U\+I\+Color $\ast$ \hyperlink{interface_j_s_q_messages_collection_view_a90851cfff181102d505f4df2e784eef8}{typing\+Indicator\+Message\+Bubble\+Color}
+\item 
+U\+I\+Color $\ast$ \hyperlink{interface_j_s_q_messages_collection_view_a5a31d52d9d888bdae722bf7e0239a052}{typing\+Indicator\+Ellipsis\+Color}
+\item 
+U\+I\+Color $\ast$ \hyperlink{interface_j_s_q_messages_collection_view_ad49ab227a62c4a2a90a24400123d8f43}{load\+Earlier\+Messages\+Header\+Text\+Color}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \hyperlink{interface_j_s_q_messages_collection_view}{J\+S\+Q\+Messages\+Collection\+View}} class manages an ordered collection of message data items and presents them using a specialized layout for messages. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_j_s_q_messages_collection_view_acc03239285b071c874653f7774faa7e0}{}\index{J\+S\+Q\+Messages\+Collection\+View@{J\+S\+Q\+Messages\+Collection\+View}!dequeue\+Load\+Earlier\+Messages\+View\+Header\+For\+Index\+Path\+:@{dequeue\+Load\+Earlier\+Messages\+View\+Header\+For\+Index\+Path\+:}}
+\index{dequeue\+Load\+Earlier\+Messages\+View\+Header\+For\+Index\+Path\+:@{dequeue\+Load\+Earlier\+Messages\+View\+Header\+For\+Index\+Path\+:}!J\+S\+Q\+Messages\+Collection\+View@{J\+S\+Q\+Messages\+Collection\+View}}
+\subsubsection[{dequeue\+Load\+Earlier\+Messages\+View\+Header\+For\+Index\+Path\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf J\+S\+Q\+Messages\+Load\+Earlier\+Header\+View} $\ast$) dequeue\+Load\+Earlier\+Messages\+View\+Header\+For\+Index\+Path\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Index\+Path $\ast$)}]{index\+Path}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_messages_collection_view_acc03239285b071c874653f7774faa7e0}
+Returns a {\ttfamily \hyperlink{interface_j_s_q_messages_load_earlier_header_view}{J\+S\+Q\+Messages\+Load\+Earlier\+Header\+View}} object for the specified index path that is configured using the collection view\textquotesingle{}s load\+Earlier\+Messages\+Header\+Text\+Color property.
+
+
+\begin{DoxyParams}{Parameters}
+{\em index\+Path} & The index path specifying the location of the supplementary view in the collection view. This value must not be {\ttfamily nil}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A valid {\ttfamily \hyperlink{interface_j_s_q_messages_load_earlier_header_view}{J\+S\+Q\+Messages\+Load\+Earlier\+Header\+View}} object. 
+\end{DoxyReturn}
+\hypertarget{interface_j_s_q_messages_collection_view_a88ab1fcb95a2cdfd9d9a59340f199102}{}\index{J\+S\+Q\+Messages\+Collection\+View@{J\+S\+Q\+Messages\+Collection\+View}!dequeue\+Typing\+Indicator\+Footer\+View\+For\+Index\+Path\+:@{dequeue\+Typing\+Indicator\+Footer\+View\+For\+Index\+Path\+:}}
+\index{dequeue\+Typing\+Indicator\+Footer\+View\+For\+Index\+Path\+:@{dequeue\+Typing\+Indicator\+Footer\+View\+For\+Index\+Path\+:}!J\+S\+Q\+Messages\+Collection\+View@{J\+S\+Q\+Messages\+Collection\+View}}
+\subsubsection[{dequeue\+Typing\+Indicator\+Footer\+View\+For\+Index\+Path\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf J\+S\+Q\+Messages\+Typing\+Indicator\+Footer\+View} $\ast$) dequeue\+Typing\+Indicator\+Footer\+View\+For\+Index\+Path\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Index\+Path $\ast$)}]{index\+Path}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_messages_collection_view_a88ab1fcb95a2cdfd9d9a59340f199102}
+Returns a {\ttfamily \hyperlink{interface_j_s_q_messages_typing_indicator_footer_view}{J\+S\+Q\+Messages\+Typing\+Indicator\+Footer\+View}} object for the specified index path that is configured using the collection view\textquotesingle{}s properties\+: typing\+Indicator\+Displays\+On\+Left, typing\+Indicator\+Message\+Bubble\+Color, typing\+Indicator\+Ellipsis\+Color.
+
+
+\begin{DoxyParams}{Parameters}
+{\em index\+Path} & The index path specifying the location of the supplementary view in the collection view. This value must not be {\ttfamily nil}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A valid {\ttfamily \hyperlink{interface_j_s_q_messages_typing_indicator_footer_view}{J\+S\+Q\+Messages\+Typing\+Indicator\+Footer\+View}} object. 
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_j_s_q_messages_collection_view_a5f685c56a4ef349a6ad8fa04f8915c64}{}\index{J\+S\+Q\+Messages\+Collection\+View@{J\+S\+Q\+Messages\+Collection\+View}!collection\+View\+Layout@{collection\+View\+Layout}}
+\index{collection\+View\+Layout@{collection\+View\+Layout}!J\+S\+Q\+Messages\+Collection\+View@{J\+S\+Q\+Messages\+Collection\+View}}
+\subsubsection[{collection\+View\+Layout}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout}$\ast$) collection\+View\+Layout\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_j_s_q_messages_collection_view_a5f685c56a4ef349a6ad8fa04f8915c64}
+The layout used to organize the collection view’s items. \hypertarget{interface_j_s_q_messages_collection_view_ab2d7a72bc1b6d267cd69e615c4965c2a}{}\index{J\+S\+Q\+Messages\+Collection\+View@{J\+S\+Q\+Messages\+Collection\+View}!data\+Source@{data\+Source}}
+\index{data\+Source@{data\+Source}!J\+S\+Q\+Messages\+Collection\+View@{J\+S\+Q\+Messages\+Collection\+View}}
+\subsubsection[{data\+Source}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id$<${\bf J\+S\+Q\+Messages\+Collection\+View\+Data\+Source}$>$) data\+Source\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}\label{interface_j_s_q_messages_collection_view_ab2d7a72bc1b6d267cd69e615c4965c2a}
+The object that provides the data for the collection view. The data source must adopt the {\ttfamily \hyperlink{protocol_j_s_q_messages_collection_view_data_source-p}{J\+S\+Q\+Messages\+Collection\+View\+Data\+Source}} protocol. \hypertarget{interface_j_s_q_messages_collection_view_ac00c8069a3335df10da0bf609b27ef74}{}\index{J\+S\+Q\+Messages\+Collection\+View@{J\+S\+Q\+Messages\+Collection\+View}!delegate@{delegate}}
+\index{delegate@{delegate}!J\+S\+Q\+Messages\+Collection\+View@{J\+S\+Q\+Messages\+Collection\+View}}
+\subsubsection[{delegate}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id$<${\bf J\+S\+Q\+Messages\+Collection\+View\+Delegate\+Flow\+Layout}$>$) delegate\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}\label{interface_j_s_q_messages_collection_view_ac00c8069a3335df10da0bf609b27ef74}
+The object that acts as the delegate of the collection view. The delegate must adpot the {\ttfamily \hyperlink{protocol_j_s_q_messages_collection_view_delegate_flow_layout-p}{J\+S\+Q\+Messages\+Collection\+View\+Delegate\+Flow\+Layout}} protocol. \hypertarget{interface_j_s_q_messages_collection_view_ad49ab227a62c4a2a90a24400123d8f43}{}\index{J\+S\+Q\+Messages\+Collection\+View@{J\+S\+Q\+Messages\+Collection\+View}!load\+Earlier\+Messages\+Header\+Text\+Color@{load\+Earlier\+Messages\+Header\+Text\+Color}}
+\index{load\+Earlier\+Messages\+Header\+Text\+Color@{load\+Earlier\+Messages\+Header\+Text\+Color}!J\+S\+Q\+Messages\+Collection\+View@{J\+S\+Q\+Messages\+Collection\+View}}
+\subsubsection[{load\+Earlier\+Messages\+Header\+Text\+Color}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Color$\ast$) load\+Earlier\+Messages\+Header\+Text\+Color\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_j_s_q_messages_collection_view_ad49ab227a62c4a2a90a24400123d8f43}
+The color of the text in the load earlier messages header. The default value is a bright blue color. \hypertarget{interface_j_s_q_messages_collection_view_a00d402fe933028dbf2c112c1637660dc}{}\index{J\+S\+Q\+Messages\+Collection\+View@{J\+S\+Q\+Messages\+Collection\+View}!typing\+Indicator\+Displays\+On\+Left@{typing\+Indicator\+Displays\+On\+Left}}
+\index{typing\+Indicator\+Displays\+On\+Left@{typing\+Indicator\+Displays\+On\+Left}!J\+S\+Q\+Messages\+Collection\+View@{J\+S\+Q\+Messages\+Collection\+View}}
+\subsubsection[{typing\+Indicator\+Displays\+On\+Left}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) typing\+Indicator\+Displays\+On\+Left\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_j_s_q_messages_collection_view_a00d402fe933028dbf2c112c1637660dc}
+Specifies whether the typing indicator displays on the left or right side of the collection view when shown. That is, whether it displays for an \char`\"{}incoming\char`\"{} or \char`\"{}outgoing\char`\"{} message. The default value is {\ttfamily Y\+E\+S}, meaning that the typing indicator will display on the left side of the collection view for incoming messages.
+
+If your {\ttfamily \hyperlink{interface_j_s_q_messages_view_controller}{J\+S\+Q\+Messages\+View\+Controller}} subclass displays messages for right-\/to-\/left languages, such as Arabic, set this property to {\ttfamily N\+O}. \hypertarget{interface_j_s_q_messages_collection_view_a5a31d52d9d888bdae722bf7e0239a052}{}\index{J\+S\+Q\+Messages\+Collection\+View@{J\+S\+Q\+Messages\+Collection\+View}!typing\+Indicator\+Ellipsis\+Color@{typing\+Indicator\+Ellipsis\+Color}}
+\index{typing\+Indicator\+Ellipsis\+Color@{typing\+Indicator\+Ellipsis\+Color}!J\+S\+Q\+Messages\+Collection\+View@{J\+S\+Q\+Messages\+Collection\+View}}
+\subsubsection[{typing\+Indicator\+Ellipsis\+Color}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Color$\ast$) typing\+Indicator\+Ellipsis\+Color\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_j_s_q_messages_collection_view_a5a31d52d9d888bdae722bf7e0239a052}
+The color of the typing indicator ellipsis. The default value is a dark gray color. \hypertarget{interface_j_s_q_messages_collection_view_a90851cfff181102d505f4df2e784eef8}{}\index{J\+S\+Q\+Messages\+Collection\+View@{J\+S\+Q\+Messages\+Collection\+View}!typing\+Indicator\+Message\+Bubble\+Color@{typing\+Indicator\+Message\+Bubble\+Color}}
+\index{typing\+Indicator\+Message\+Bubble\+Color@{typing\+Indicator\+Message\+Bubble\+Color}!J\+S\+Q\+Messages\+Collection\+View@{J\+S\+Q\+Messages\+Collection\+View}}
+\subsubsection[{typing\+Indicator\+Message\+Bubble\+Color}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Color$\ast$) typing\+Indicator\+Message\+Bubble\+Color\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_j_s_q_messages_collection_view_a90851cfff181102d505f4df2e784eef8}
+The color of the typing indicator message bubble. The default value is a light gray color. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Vendors/\+J\+S\+Q\+Messages\+View\+Controller/\+Views/J\+S\+Q\+Messages\+Collection\+View.\+h\item 
+Vendors/\+J\+S\+Q\+Messages\+View\+Controller/\+Views/J\+S\+Q\+Messages\+Collection\+View.\+m\end{DoxyCompactItemize}

@@ -1,0 +1,90 @@
+\hypertarget{interface_f_i_r_user_profile_change_request}{}\section{F\+I\+R\+User\+Profile\+Change\+Request Class Reference}
+\label{interface_f_i_r_user_profile_change_request}\index{F\+I\+R\+User\+Profile\+Change\+Request@{F\+I\+R\+User\+Profile\+Change\+Request}}
+
+
+Represents an object capable of updating a user\textquotesingle{}s profile data.  
+
+
+
+
+{\ttfamily \#import $<$F\+I\+R\+User.\+h$>$}
+
+Inheritance diagram for F\+I\+R\+User\+Profile\+Change\+Request\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_f_i_r_user_profile_change_request}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_f_i_r_user_profile_change_request_aaf25f58740dbe3b958d1b60ca8ea4c8c}{}(nullable instancetype) -\/ {\bfseries N\+S\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}\label{interface_f_i_r_user_profile_change_request_aaf25f58740dbe3b958d1b60ca8ea4c8c}
+
+\item 
+(void) -\/ \hyperlink{interface_f_i_r_user_profile_change_request_a7f74d324eaf3f3f4a333f91c98135597}{commit\+Changes\+With\+Completion\+:}
+\begin{DoxyCompactList}\small\item\em Commits any pending changes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_f_i_r_user_profile_change_request_a63dd61c44c81de940e3129161b67a8eb}{display\+Name}
+\begin{DoxyCompactList}\small\item\em The user\textquotesingle{}s display name. \end{DoxyCompactList}\item 
+N\+S\+U\+R\+L $\ast$ \hyperlink{interface_f_i_r_user_profile_change_request_a35b38b02ce93ed1104f66021f8c8e620}{photo\+U\+R\+L}
+\begin{DoxyCompactList}\small\item\em The user\textquotesingle{}s photo U\+R\+L. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents an object capable of updating a user\textquotesingle{}s profile data. 
+
+\begin{DoxyRemark}{Remarks}
+Properties are marked as being part of a profile update when they are set. Setting a property value to nil is not the same as leaving the property unassigned. 
+\end{DoxyRemark}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_f_i_r_user_profile_change_request_a7f74d324eaf3f3f4a333f91c98135597}{}\index{F\+I\+R\+User\+Profile\+Change\+Request@{F\+I\+R\+User\+Profile\+Change\+Request}!commit\+Changes\+With\+Completion\+:@{commit\+Changes\+With\+Completion\+:}}
+\index{commit\+Changes\+With\+Completion\+:@{commit\+Changes\+With\+Completion\+:}!F\+I\+R\+User\+Profile\+Change\+Request@{F\+I\+R\+User\+Profile\+Change\+Request}}
+\subsubsection[{commit\+Changes\+With\+Completion\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ commit\+Changes\+With\+Completion\+: 
+\begin{DoxyParamCaption}
+\item[{(nullable {\bf F\+I\+R\+User\+Profile\+Change\+Callback})}]{completion}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_user_profile_change_request_a7f74d324eaf3f3f4a333f91c98135597}
+
+
+Commits any pending changes. 
+
+\begin{DoxyRemark}{Remarks}
+This method should only be called once. Once called, property values should not be changed. 
+\end{DoxyRemark}
+
+\begin{DoxyParams}{Parameters}
+{\em completion} & Optionally; the block invoked when the user profile change has been applied. Invoked asynchronously on the main thread in the future. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_f_i_r_user_profile_change_request_a63dd61c44c81de940e3129161b67a8eb}{}\index{F\+I\+R\+User\+Profile\+Change\+Request@{F\+I\+R\+User\+Profile\+Change\+Request}!display\+Name@{display\+Name}}
+\index{display\+Name@{display\+Name}!F\+I\+R\+User\+Profile\+Change\+Request@{F\+I\+R\+User\+Profile\+Change\+Request}}
+\subsubsection[{display\+Name}]{\setlength{\rightskip}{0pt plus 5cm}-\/ display\+Name\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_f_i_r_user_profile_change_request_a63dd61c44c81de940e3129161b67a8eb}
+
+
+The user\textquotesingle{}s display name. 
+
+\begin{DoxyRemark}{Remarks}
+It is an error to set this property after calling {\ttfamily F\+I\+R\+User\+Profile\+Change\+Request.\+commit\+Changes\+With\+Callback\+:} 
+\end{DoxyRemark}
+\hypertarget{interface_f_i_r_user_profile_change_request_a35b38b02ce93ed1104f66021f8c8e620}{}\index{F\+I\+R\+User\+Profile\+Change\+Request@{F\+I\+R\+User\+Profile\+Change\+Request}!photo\+U\+R\+L@{photo\+U\+R\+L}}
+\index{photo\+U\+R\+L@{photo\+U\+R\+L}!F\+I\+R\+User\+Profile\+Change\+Request@{F\+I\+R\+User\+Profile\+Change\+Request}}
+\subsubsection[{photo\+U\+R\+L}]{\setlength{\rightskip}{0pt plus 5cm}-\/ photo\+U\+R\+L\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_f_i_r_user_profile_change_request_a35b38b02ce93ed1104f66021f8c8e620}
+
+
+The user\textquotesingle{}s photo U\+R\+L. 
+
+\begin{DoxyRemark}{Remarks}
+It is an error to set this property after calling {\ttfamily F\+I\+R\+User\+Profile\+Change\+Request.\+commit\+Changes\+With\+Callback\+:} 
+\end{DoxyRemark}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Frameworks/\+Firebase\+Auth.\+framework/\+Headers/\hyperlink{_f_i_r_user_8h}{F\+I\+R\+User.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,31 @@
+\hypertarget{interface_f_i_r_storage_task}{}\section{F\+I\+R\+Storage\+Task Class Reference}
+\label{interface_f_i_r_storage_task}\index{F\+I\+R\+Storage\+Task@{F\+I\+R\+Storage\+Task}}
+
+
+{\ttfamily \#import $<$F\+I\+R\+Storage\+Task.\+h$>$}
+
+Inheritance diagram for F\+I\+R\+Storage\+Task\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{interface_f_i_r_storage_task}
+\end{center}
+\end{figure}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interface_f_i_r_storage_task_snapshot}{F\+I\+R\+Storage\+Task\+Snapshot} $\ast$ \hyperlink{interface_f_i_r_storage_task_a43e00623001ff84760f98fd4f79eb9ac}{snapshot}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A superclass to all F\+I\+R\+Storage$\ast$\+Tasks, including \hyperlink{interface_f_i_r_storage_upload_task}{F\+I\+R\+Storage\+Upload\+Task} and \hyperlink{interface_f_i_r_storage_download_task}{F\+I\+R\+Storage\+Download\+Task}, to provide state transitions, event raising, and common storage or metadata and errors. Callbacks are always fired on the developer specified callback queue. If no queue is specified by the developer, it defaults to the main queue. Currently not thread safe, so only call methods on the main thread. 
+
+\subsection{Property Documentation}
+\hypertarget{interface_f_i_r_storage_task_a43e00623001ff84760f98fd4f79eb9ac}{}\index{F\+I\+R\+Storage\+Task@{F\+I\+R\+Storage\+Task}!snapshot@{snapshot}}
+\index{snapshot@{snapshot}!F\+I\+R\+Storage\+Task@{F\+I\+R\+Storage\+Task}}
+\subsubsection[{snapshot}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf F\+I\+R\+Storage\+Task\+Snapshot}$\ast$) snapshot\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_f_i_r_storage_task_a43e00623001ff84760f98fd4f79eb9ac}
+An immutable view of the task and associated metadata, progress, error, etc. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Frameworks/\+Firebase\+Storage.\+framework/\+Headers/\hyperlink{_f_i_r_storage_task_8h}{F\+I\+R\+Storage\+Task.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,21 @@
+\hypertarget{interface_f_i_r_storage_download_task}{}\section{F\+I\+R\+Storage\+Download\+Task Class Reference}
+\label{interface_f_i_r_storage_download_task}\index{F\+I\+R\+Storage\+Download\+Task@{F\+I\+R\+Storage\+Download\+Task}}
+
+
+{\ttfamily \#import $<$F\+I\+R\+Storage\+Download\+Task.\+h$>$}
+
+Inheritance diagram for F\+I\+R\+Storage\+Download\+Task\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{interface_f_i_r_storage_download_task}
+\end{center}
+\end{figure}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{interface_f_i_r_storage_download_task}{F\+I\+R\+Storage\+Download\+Task} implements resumable downloads from an object in Firebase Storage. Downloads can be returned on completion with a completion handler, and can be monitored by attaching observers, or controlled by calling F\+I\+R\+Storage\+Task\+::pause, F\+I\+R\+Storage\+Task\+::resume, or F\+I\+R\+Storage\+Task\+::cancel. Downloads can currently be returned as N\+S\+Data in memory, or as an N\+S\+U\+R\+L to a file on disk. Downloads are performed on a background queue, and callbacks are raised on the developer specified callback\+Queue in \hyperlink{interface_f_i_r_storage}{F\+I\+R\+Storage}, or the main queue if left unspecified. Currently all uploads must be initiated and managed on the main queue. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Frameworks/\+Firebase\+Storage.\+framework/\+Headers/\hyperlink{_f_i_r_storage_download_task_8h}{F\+I\+R\+Storage\+Download\+Task.\+h}\end{DoxyCompactItemize}

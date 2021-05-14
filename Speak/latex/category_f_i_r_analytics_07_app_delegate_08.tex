@@ -1,0 +1,95 @@
+\hypertarget{category_f_i_r_analytics_07_app_delegate_08}{}\section{F\+I\+R\+Analytics(App\+Delegate) Category Reference}
+\label{category_f_i_r_analytics_07_app_delegate_08}\index{F\+I\+R\+Analytics(\+App\+Delegate)@{F\+I\+R\+Analytics(\+App\+Delegate)}}
+
+
+{\ttfamily \#import $<$F\+I\+R\+Analytics+\+App\+Delegate.\+h$>$}
+
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) + \hyperlink{category_f_i_r_analytics_07_app_delegate_08_a4d94b911e4b619ea2540942ed3b5c595}{handle\+Events\+For\+Background\+U\+R\+L\+Session\+:completion\+Handler\+:}
+\item 
+(void) + \hyperlink{category_f_i_r_analytics_07_app_delegate_08_a2c64690b7c4aa50fc5ac5ae81c2de9bc}{handle\+Open\+U\+R\+L\+:}
+\item 
+(void) + \hyperlink{category_f_i_r_analytics_07_app_delegate_08_a95b43780df1ead5681f612f3a93b5197}{handle\+User\+Activity\+:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Provides App Delegate handlers to be used in your App Delegate.
+
+To save time integrating Firebase Analytics in an application, Firebase Analytics does not require delegation implementation from the \hyperlink{interface_app_delegate}{App\+Delegate}. Instead this is automatically done by Firebase Analytics. Should you choose instead to delegate manually, you can turn off the App Delegate Proxy by adding Firebase\+App\+Delegate\+Proxy\+Enabled into your Info.\+plist and setting it to N\+O, and adding the methods in this category to corresponding delegation handlers.
+
+To handle Universal Links, you must return Y\+E\+S in \mbox{[}\hyperlink{class_u_i_application_delegate-p}{U\+I\+Application\+Delegate} application\+:did\+Finish\+Launching\+With\+Options\+:\mbox{]}. 
+
+\subsection{Method Documentation}
+\hypertarget{category_f_i_r_analytics_07_app_delegate_08_a4d94b911e4b619ea2540942ed3b5c595}{}\index{F\+I\+R\+Analytics(\+App\+Delegate)@{F\+I\+R\+Analytics(\+App\+Delegate)}!handle\+Events\+For\+Background\+U\+R\+L\+Session\+:completion\+Handler\+:@{handle\+Events\+For\+Background\+U\+R\+L\+Session\+:completion\+Handler\+:}}
+\index{handle\+Events\+For\+Background\+U\+R\+L\+Session\+:completion\+Handler\+:@{handle\+Events\+For\+Background\+U\+R\+L\+Session\+:completion\+Handler\+:}!F\+I\+R\+Analytics(\+App\+Delegate)@{F\+I\+R\+Analytics(\+App\+Delegate)}}
+\subsubsection[{handle\+Events\+For\+Background\+U\+R\+L\+Session\+:completion\+Handler\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) handle\+Events\+For\+Background\+U\+R\+L\+Session\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{identifier}
+\item[{completionHandler:(void($^\wedge$)(void))}]{completion\+Handler}
+\end{DoxyParamCaption}
+}\label{category_f_i_r_analytics_07_app_delegate_08_a4d94b911e4b619ea2540942ed3b5c595}
+Handles events related to a U\+R\+L session that are waiting to be processed.
+
+For optimal use of Firebase Analytics, call this method from the \mbox{[}\hyperlink{class_u_i_application_delegate-p}{U\+I\+Application\+Delegate} application\+:handle\+Events\+For\+Background\+U\+R\+L\+Session\+:completion\+Handler\mbox{]} method of the app delegate in your app.
+
+
+\begin{DoxyParams}{Parameters}
+{\em identifier} & The identifier of the U\+R\+L session requiring attention. \\
+\hline
+{\em completion\+Handler} & The completion handler to call when you finish processing the events. Calling this completion handler lets the system know that your app\textquotesingle{}s user interface is updated and a new snapshot can be taken. \\
+\hline
+\end{DoxyParams}
+
+
+Extends class \hyperlink{interface_f_i_r_analytics_a4d94b911e4b619ea2540942ed3b5c595}{F\+I\+R\+Analytics}.
+
+\hypertarget{category_f_i_r_analytics_07_app_delegate_08_a2c64690b7c4aa50fc5ac5ae81c2de9bc}{}\index{F\+I\+R\+Analytics(\+App\+Delegate)@{F\+I\+R\+Analytics(\+App\+Delegate)}!handle\+Open\+U\+R\+L\+:@{handle\+Open\+U\+R\+L\+:}}
+\index{handle\+Open\+U\+R\+L\+:@{handle\+Open\+U\+R\+L\+:}!F\+I\+R\+Analytics(\+App\+Delegate)@{F\+I\+R\+Analytics(\+App\+Delegate)}}
+\subsubsection[{handle\+Open\+U\+R\+L\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) handle\+Open\+U\+R\+L\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+U\+R\+L $\ast$)}]{url}
+\end{DoxyParamCaption}
+}\label{category_f_i_r_analytics_07_app_delegate_08_a2c64690b7c4aa50fc5ac5ae81c2de9bc}
+Handles the event when the app is launched by a U\+R\+L.
+
+Call this method from \href{on iOS 9.0 and
+above}{\tt U\+I\+Application\+Delegate application\+:open\+U\+R\+L\+:options\+:}, or \href{on iOS 8.x
+and below}{\tt U\+I\+Application\+Delegate application\+:open\+U\+R\+L\+:source\+Application\+:annotation\+:} in your app.
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & The U\+R\+L resource to open. This resource can be a network resource or a file. \\
+\hline
+\end{DoxyParams}
+
+
+Extends class \hyperlink{interface_f_i_r_analytics_a2c64690b7c4aa50fc5ac5ae81c2de9bc}{F\+I\+R\+Analytics}.
+
+\hypertarget{category_f_i_r_analytics_07_app_delegate_08_a95b43780df1ead5681f612f3a93b5197}{}\index{F\+I\+R\+Analytics(\+App\+Delegate)@{F\+I\+R\+Analytics(\+App\+Delegate)}!handle\+User\+Activity\+:@{handle\+User\+Activity\+:}}
+\index{handle\+User\+Activity\+:@{handle\+User\+Activity\+:}!F\+I\+R\+Analytics(\+App\+Delegate)@{F\+I\+R\+Analytics(\+App\+Delegate)}}
+\subsubsection[{handle\+User\+Activity\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) handle\+User\+Activity\+: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{user\+Activity}
+\end{DoxyParamCaption}
+}\label{category_f_i_r_analytics_07_app_delegate_08_a95b43780df1ead5681f612f3a93b5197}
+Handles the event when the app receives data associated with user activity that includes a Universal Link (on i\+O\+S 9.\+0 and above).
+
+Call this method from \mbox{[}U\+I\+Application continue\+User\+Activity\+:restoration\+Handler\+:\mbox{]} in your app delegate (on i\+O\+S 9.\+0 and above).
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Activity} & The activity object containing the data associated with the task the user was performing. \\
+\hline
+\end{DoxyParams}
+
+
+Extends class \hyperlink{interface_f_i_r_analytics_a95b43780df1ead5681f612f3a93b5197}{F\+I\+R\+Analytics}.
+
+
+
+The documentation for this category was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Frameworks/\+Firebase\+Analytics.\+framework/\+Headers/F\+I\+R\+Analytics+\+App\+Delegate.\+h\end{DoxyCompactItemize}

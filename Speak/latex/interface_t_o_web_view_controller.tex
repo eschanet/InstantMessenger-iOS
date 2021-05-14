@@ -1,0 +1,167 @@
+\hypertarget{interface_t_o_web_view_controller}{}\section{T\+O\+Web\+View\+Controller Class Reference}
+\label{interface_t_o_web_view_controller}\index{T\+O\+Web\+View\+Controller@{T\+O\+Web\+View\+Controller}}
+Inheritance diagram for T\+O\+Web\+View\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_t_o_web_view_controller}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) -\/ \hyperlink{interface_t_o_web_view_controller_a724ee402b4d5732c1ef57a1145b6448e}{init\+With\+U\+R\+L\+:}
+\item 
+(instancetype) -\/ \hyperlink{interface_t_o_web_view_controller_a1227f62d998de7c12f8bb3f1d2afea2f}{init\+With\+U\+R\+L\+String\+:}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+N\+S\+U\+R\+L $\ast$ \hyperlink{interface_t_o_web_view_controller_a32d5535e58748da901994b6c7bc12d53}{url}
+\item 
+N\+S\+Mutable\+U\+R\+L\+Request $\ast$ \hyperlink{interface_t_o_web_view_controller_a8b671f36f5e0ba80a1a5a449f3d82b80}{url\+Request}
+\item 
+U\+I\+Web\+View $\ast$ \hyperlink{interface_t_o_web_view_controller_acc4a012c799ce2ab0834426a68bba120}{web\+View}
+\item 
+B\+O\+O\+L \hyperlink{interface_t_o_web_view_controller_a444c7f665ca6923c4cf38b00e95b8061}{show\+Loading\+Bar}
+\item 
+B\+O\+O\+L \hyperlink{interface_t_o_web_view_controller_a3c6797f76219f17cbc29ee118c65e943}{show\+Url\+While\+Loading}
+\item 
+U\+I\+Color $\ast$ \hyperlink{interface_t_o_web_view_controller_ab791dcbf2db93c158264caa4ed4cdf53}{loading\+Bar\+Tint\+Color}
+\item 
+B\+O\+O\+L \hyperlink{interface_t_o_web_view_controller_af512e482ad9d8f9334413c7d80f06247}{navigation\+Buttons\+Hidden}
+\item 
+B\+O\+O\+L \hyperlink{interface_t_o_web_view_controller_a6a44854475f43f7e3e81a6805f5d67af}{show\+Action\+Button}
+\item 
+B\+O\+O\+L \hyperlink{interface_t_o_web_view_controller_a529bbbcc8ff2874152516dd6ab4e5db2}{show\+Done\+Button}
+\item 
+B\+O\+O\+L \hyperlink{interface_t_o_web_view_controller_a8456c37c8259cb9091ddeeaac3d29608}{show\+Page\+Titles}
+\item 
+B\+O\+O\+L \hyperlink{interface_t_o_web_view_controller_aeb510e037dde05a88ff6fb0175d26f3f}{disable\+Contextual\+Popup\+Menu}
+\item 
+B\+O\+O\+L \hyperlink{interface_t_o_web_view_controller_a11fadf270df4ff5b11664f051ed061eb}{hide\+Web\+View\+Boundaries}
+\item 
+void($^\wedge$ \hyperlink{interface_t_o_web_view_controller_a56610537e590382f92d90fd797239d0b}{modal\+Completion\+Handler} )(void)
+\item 
+B\+O\+O\+L($^\wedge$ \hyperlink{interface_t_o_web_view_controller_a030a5b87b4ba4fb31e7bdbe10656f62a}{should\+Start\+Load\+Request\+Handler} )(N\+S\+U\+R\+L\+Request $\ast$request, U\+I\+Web\+View\+Navigation\+Type navigation\+Type)
+\item 
+U\+I\+Color $\ast$ \hyperlink{interface_t_o_web_view_controller_a75c65039f6c1205a568206be6ea25558}{button\+Tint\+Color}
+\item 
+C\+G\+Float \hyperlink{interface_t_o_web_view_controller_a50f0e3cdfdbf352c7d9d46395190208a}{button\+Bevel\+Opacity}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_t_o_web_view_controller_a724ee402b4d5732c1ef57a1145b6448e}{}\index{T\+O\+Web\+View\+Controller@{T\+O\+Web\+View\+Controller}!init\+With\+U\+R\+L\+:@{init\+With\+U\+R\+L\+:}}
+\index{init\+With\+U\+R\+L\+:@{init\+With\+U\+R\+L\+:}!T\+O\+Web\+View\+Controller@{T\+O\+Web\+View\+Controller}}
+\subsubsection[{init\+With\+U\+R\+L\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (instancetype) init\+With\+U\+R\+L\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+U\+R\+L $\ast$)}]{url}
+\end{DoxyParamCaption}
+}\label{interface_t_o_web_view_controller_a724ee402b4d5732c1ef57a1145b6448e}
+Initializes a new {\ttfamily \hyperlink{interface_t_o_web_view_controller}{T\+O\+Web\+View\+Controller}} object with the specified U\+R\+L.
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & The U\+R\+L to the web page that the controller will initially display.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The newly initialized {\ttfamily \hyperlink{interface_t_o_web_view_controller}{T\+O\+Web\+View\+Controller}} object. 
+\end{DoxyReturn}
+\hypertarget{interface_t_o_web_view_controller_a1227f62d998de7c12f8bb3f1d2afea2f}{}\index{T\+O\+Web\+View\+Controller@{T\+O\+Web\+View\+Controller}!init\+With\+U\+R\+L\+String\+:@{init\+With\+U\+R\+L\+String\+:}}
+\index{init\+With\+U\+R\+L\+String\+:@{init\+With\+U\+R\+L\+String\+:}!T\+O\+Web\+View\+Controller@{T\+O\+Web\+View\+Controller}}
+\subsubsection[{init\+With\+U\+R\+L\+String\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (instancetype) init\+With\+U\+R\+L\+String\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{url\+String}
+\end{DoxyParamCaption}
+}\label{interface_t_o_web_view_controller_a1227f62d998de7c12f8bb3f1d2afea2f}
+Initializes a new {\ttfamily \hyperlink{interface_t_o_web_view_controller}{T\+O\+Web\+View\+Controller}} object with the specified U\+R\+L string.
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & The U\+R\+L as a string, of the web page that the controller will initially display.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The newly initialized {\ttfamily \hyperlink{interface_t_o_web_view_controller}{T\+O\+Web\+View\+Controller}} object. 
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_t_o_web_view_controller_a50f0e3cdfdbf352c7d9d46395190208a}{}\index{T\+O\+Web\+View\+Controller@{T\+O\+Web\+View\+Controller}!button\+Bevel\+Opacity@{button\+Bevel\+Opacity}}
+\index{button\+Bevel\+Opacity@{button\+Bevel\+Opacity}!T\+O\+Web\+View\+Controller@{T\+O\+Web\+View\+Controller}}
+\subsubsection[{button\+Bevel\+Opacity}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\+G\+Float) button\+Bevel\+Opacity\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_t_o_web_view_controller_a50f0e3cdfdbf352c7d9d46395190208a}
+On i\+O\+S 6 or below, this overrides the default opacity level of the bevel around the navigation buttons. \hypertarget{interface_t_o_web_view_controller_a75c65039f6c1205a568206be6ea25558}{}\index{T\+O\+Web\+View\+Controller@{T\+O\+Web\+View\+Controller}!button\+Tint\+Color@{button\+Tint\+Color}}
+\index{button\+Tint\+Color@{button\+Tint\+Color}!T\+O\+Web\+View\+Controller@{T\+O\+Web\+View\+Controller}}
+\subsubsection[{button\+Tint\+Color}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Color$\ast$) button\+Tint\+Color\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_t_o_web_view_controller_a75c65039f6c1205a568206be6ea25558}
+This can be used to override the default tint color of the navigation button icons. \hypertarget{interface_t_o_web_view_controller_aeb510e037dde05a88ff6fb0175d26f3f}{}\index{T\+O\+Web\+View\+Controller@{T\+O\+Web\+View\+Controller}!disable\+Contextual\+Popup\+Menu@{disable\+Contextual\+Popup\+Menu}}
+\index{disable\+Contextual\+Popup\+Menu@{disable\+Contextual\+Popup\+Menu}!T\+O\+Web\+View\+Controller@{T\+O\+Web\+View\+Controller}}
+\subsubsection[{disable\+Contextual\+Popup\+Menu}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) disable\+Contextual\+Popup\+Menu\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_t_o_web_view_controller_aeb510e037dde05a88ff6fb0175d26f3f}
+Disables the contextual popups that can appear when the user taps and holds on a page link.
+
+Default value is N\+O. \hypertarget{interface_t_o_web_view_controller_a11fadf270df4ff5b11664f051ed061eb}{}\index{T\+O\+Web\+View\+Controller@{T\+O\+Web\+View\+Controller}!hide\+Web\+View\+Boundaries@{hide\+Web\+View\+Boundaries}}
+\index{hide\+Web\+View\+Boundaries@{hide\+Web\+View\+Boundaries}!T\+O\+Web\+View\+Controller@{T\+O\+Web\+View\+Controller}}
+\subsubsection[{hide\+Web\+View\+Boundaries}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) hide\+Web\+View\+Boundaries\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_t_o_web_view_controller_a11fadf270df4ff5b11664f051ed061eb}
+Hides the default system background behind the outer bounds of the webview, and replaces it with a background color derived from the the page content currently being displayed by the web view.
+
+Default value is N\+O. \hypertarget{interface_t_o_web_view_controller_ab791dcbf2db93c158264caa4ed4cdf53}{}\index{T\+O\+Web\+View\+Controller@{T\+O\+Web\+View\+Controller}!loading\+Bar\+Tint\+Color@{loading\+Bar\+Tint\+Color}}
+\index{loading\+Bar\+Tint\+Color@{loading\+Bar\+Tint\+Color}!T\+O\+Web\+View\+Controller@{T\+O\+Web\+View\+Controller}}
+\subsubsection[{loading\+Bar\+Tint\+Color}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Color$\ast$) loading\+Bar\+Tint\+Color\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_t_o_web_view_controller_ab791dcbf2db93c158264caa4ed4cdf53}
+The tint colour of the page loading progress bar. If not set on i\+O\+S 7 and above, the loading bar will defer to the app\textquotesingle{}s global U\+I\+View tint color. If not set on i\+O\+S 6 or below, it will default to the standard system blue tint color.
+
+Default value is nil. \hypertarget{interface_t_o_web_view_controller_a56610537e590382f92d90fd797239d0b}{}\index{T\+O\+Web\+View\+Controller@{T\+O\+Web\+View\+Controller}!modal\+Completion\+Handler@{modal\+Completion\+Handler}}
+\index{modal\+Completion\+Handler@{modal\+Completion\+Handler}!T\+O\+Web\+View\+Controller@{T\+O\+Web\+View\+Controller}}
+\subsubsection[{modal\+Completion\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void($^\wedge$ modal\+Completion\+Handler) (void))\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_t_o_web_view_controller_a56610537e590382f92d90fd797239d0b}
+When the view controller is being presented as a modal popup, this block will be automatically performed right after the view controller is dismissed. \hypertarget{interface_t_o_web_view_controller_af512e482ad9d8f9334413c7d80f06247}{}\index{T\+O\+Web\+View\+Controller@{T\+O\+Web\+View\+Controller}!navigation\+Buttons\+Hidden@{navigation\+Buttons\+Hidden}}
+\index{navigation\+Buttons\+Hidden@{navigation\+Buttons\+Hidden}!T\+O\+Web\+View\+Controller@{T\+O\+Web\+View\+Controller}}
+\subsubsection[{navigation\+Buttons\+Hidden}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) navigation\+Buttons\+Hidden\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_t_o_web_view_controller_af512e482ad9d8f9334413c7d80f06247}
+Hides all of the page navigation buttons, and on i\+Phone, hides the bottom toolbar.
+
+Default value is N\+O. \hypertarget{interface_t_o_web_view_controller_a030a5b87b4ba4fb31e7bdbe10656f62a}{}\index{T\+O\+Web\+View\+Controller@{T\+O\+Web\+View\+Controller}!should\+Start\+Load\+Request\+Handler@{should\+Start\+Load\+Request\+Handler}}
+\index{should\+Start\+Load\+Request\+Handler@{should\+Start\+Load\+Request\+Handler}!T\+O\+Web\+View\+Controller@{T\+O\+Web\+View\+Controller}}
+\subsubsection[{should\+Start\+Load\+Request\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L($^\wedge$ should\+Start\+Load\+Request\+Handler) (N\+S\+U\+R\+L\+Request $\ast$request, U\+I\+Web\+View\+Navigation\+Type navigation\+Type))\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_t_o_web_view_controller_a030a5b87b4ba4fb31e7bdbe10656f62a}
+An optional block that when set, will have each incoming web load request forwarded to it, and can determine whether to let them proceed or not. \hypertarget{interface_t_o_web_view_controller_a6a44854475f43f7e3e81a6805f5d67af}{}\index{T\+O\+Web\+View\+Controller@{T\+O\+Web\+View\+Controller}!show\+Action\+Button@{show\+Action\+Button}}
+\index{show\+Action\+Button@{show\+Action\+Button}!T\+O\+Web\+View\+Controller@{T\+O\+Web\+View\+Controller}}
+\subsubsection[{show\+Action\+Button}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) show\+Action\+Button\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_t_o_web_view_controller_a6a44854475f43f7e3e81a6805f5d67af}
+Shows the i\+O\+S \textquotesingle{}Activty\textquotesingle{} button, which when tapped, presents a series of actions the user may take, including copying the page U\+R\+L, tweeting the U\+R\+L, or switching to Safari or Chrome.
+
+Default value is Y\+E\+S. \hypertarget{interface_t_o_web_view_controller_a529bbbcc8ff2874152516dd6ab4e5db2}{}\index{T\+O\+Web\+View\+Controller@{T\+O\+Web\+View\+Controller}!show\+Done\+Button@{show\+Done\+Button}}
+\index{show\+Done\+Button@{show\+Done\+Button}!T\+O\+Web\+View\+Controller@{T\+O\+Web\+View\+Controller}}
+\subsubsection[{show\+Done\+Button}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) show\+Done\+Button\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_t_o_web_view_controller_a529bbbcc8ff2874152516dd6ab4e5db2}
+Shows the Done button when presented modally. When tapped, it dismisses the view controller.
+
+Default value is Y\+E\+S. \hypertarget{interface_t_o_web_view_controller_a444c7f665ca6923c4cf38b00e95b8061}{}\index{T\+O\+Web\+View\+Controller@{T\+O\+Web\+View\+Controller}!show\+Loading\+Bar@{show\+Loading\+Bar}}
+\index{show\+Loading\+Bar@{show\+Loading\+Bar}!T\+O\+Web\+View\+Controller@{T\+O\+Web\+View\+Controller}}
+\subsubsection[{show\+Loading\+Bar}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) show\+Loading\+Bar\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_t_o_web_view_controller_a444c7f665ca6923c4cf38b00e95b8061}
+Shows a loading progress bar underneath the top navigation bar.
+
+Default value is Y\+E\+S. \hypertarget{interface_t_o_web_view_controller_a8456c37c8259cb9091ddeeaac3d29608}{}\index{T\+O\+Web\+View\+Controller@{T\+O\+Web\+View\+Controller}!show\+Page\+Titles@{show\+Page\+Titles}}
+\index{show\+Page\+Titles@{show\+Page\+Titles}!T\+O\+Web\+View\+Controller@{T\+O\+Web\+View\+Controller}}
+\subsubsection[{show\+Page\+Titles}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) show\+Page\+Titles\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_t_o_web_view_controller_a8456c37c8259cb9091ddeeaac3d29608}
+When web pages are loaded, the view controller\textquotesingle{}s title property will be set to the page\textquotesingle{}s H\+T\+M\+L title attribute.
+
+Default value is Y\+E\+S. \hypertarget{interface_t_o_web_view_controller_a3c6797f76219f17cbc29ee118c65e943}{}\index{T\+O\+Web\+View\+Controller@{T\+O\+Web\+View\+Controller}!show\+Url\+While\+Loading@{show\+Url\+While\+Loading}}
+\index{show\+Url\+While\+Loading@{show\+Url\+While\+Loading}!T\+O\+Web\+View\+Controller@{T\+O\+Web\+View\+Controller}}
+\subsubsection[{show\+Url\+While\+Loading}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) show\+Url\+While\+Loading\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_t_o_web_view_controller_a3c6797f76219f17cbc29ee118c65e943}
+Shows the U\+R\+L of the web request currently being loaded, before the page\textquotesingle{}s title attribute becomes available.
+
+Default value is Y\+E\+S. \hypertarget{interface_t_o_web_view_controller_a32d5535e58748da901994b6c7bc12d53}{}\index{T\+O\+Web\+View\+Controller@{T\+O\+Web\+View\+Controller}!url@{url}}
+\index{url@{url}!T\+O\+Web\+View\+Controller@{T\+O\+Web\+View\+Controller}}
+\subsubsection[{url}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+U\+R\+L$\ast$) url\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_t_o_web_view_controller_a32d5535e58748da901994b6c7bc12d53}
+Get/set the current U\+R\+L being displayed. (Will automatically start loading) \hypertarget{interface_t_o_web_view_controller_a8b671f36f5e0ba80a1a5a449f3d82b80}{}\index{T\+O\+Web\+View\+Controller@{T\+O\+Web\+View\+Controller}!url\+Request@{url\+Request}}
+\index{url\+Request@{url\+Request}!T\+O\+Web\+View\+Controller@{T\+O\+Web\+View\+Controller}}
+\subsubsection[{url\+Request}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Mutable\+U\+R\+L\+Request$\ast$) url\+Request\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_t_o_web_view_controller_a8b671f36f5e0ba80a1a5a449f3d82b80}
+Get/set the request \hypertarget{interface_t_o_web_view_controller_acc4a012c799ce2ab0834426a68bba120}{}\index{T\+O\+Web\+View\+Controller@{T\+O\+Web\+View\+Controller}!web\+View@{web\+View}}
+\index{web\+View@{web\+View}!T\+O\+Web\+View\+Controller@{T\+O\+Web\+View\+Controller}}
+\subsubsection[{web\+View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Web\+View$\ast$) web\+View\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_t_o_web_view_controller_acc4a012c799ce2ab0834426a68bba120}
+The web view used to display the H\+T\+M\+L content. You can access it through this read-\/only property if you need to anything specific, such as having it execute arbitrary J\+S code.
+
+\begin{DoxyWarning}{Warning}
+Usage of the web view\textquotesingle{}s delegate property is reserved by this view controller. Do not set it to another object. 
+\end{DoxyWarning}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Vendors/\+T\+O\+Web\+View\+Controller/T\+O\+Web\+View\+Controller.\+h\item 
+Vendors/\+T\+O\+Web\+View\+Controller/T\+O\+Web\+View\+Controller.\+m\end{DoxyCompactItemize}

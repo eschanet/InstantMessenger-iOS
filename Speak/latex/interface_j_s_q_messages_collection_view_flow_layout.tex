@@ -1,0 +1,188 @@
+\hypertarget{interface_j_s_q_messages_collection_view_flow_layout}{}\section{J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout Class Reference}
+\label{interface_j_s_q_messages_collection_view_flow_layout}\index{J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout@{J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout}}
+
+
+{\ttfamily \#import $<$J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout.\+h$>$}
+
+Inheritance diagram for J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_j_s_q_messages_collection_view_flow_layout}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(C\+G\+Size) -\/ \hyperlink{interface_j_s_q_messages_collection_view_flow_layout_aecccb28434357c9f960906ec3e552d60}{message\+Bubble\+Size\+For\+Item\+At\+Index\+Path\+:}
+\item 
+(C\+G\+Size) -\/ \hyperlink{interface_j_s_q_messages_collection_view_flow_layout_af665f3e63d5d22ed0b9f14ac51850967}{size\+For\+Item\+At\+Index\+Path\+:}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interface_j_s_q_messages_collection_view}{J\+S\+Q\+Messages\+Collection\+View} $\ast$ \hyperlink{interface_j_s_q_messages_collection_view_flow_layout_a6f7171d412e190bbef0bd4b93d99da9d}{collection\+View}
+\item 
+B\+O\+O\+L \hyperlink{interface_j_s_q_messages_collection_view_flow_layout_aff25c7d92997659fd770b22b2ad6ce69}{springiness\+Enabled}
+\item 
+N\+S\+U\+Integer \hyperlink{interface_j_s_q_messages_collection_view_flow_layout_a44700cf3b96675ce91c62d5e957a4ecc}{spring\+Resistance\+Factor}
+\item 
+C\+G\+Float \hyperlink{interface_j_s_q_messages_collection_view_flow_layout_ae9ad830cfdb3a3fe8375cbd22af5c7e8}{item\+Width}
+\item 
+U\+I\+Font $\ast$ \hyperlink{interface_j_s_q_messages_collection_view_flow_layout_a9a98700ffd5c4acd0538b01b3da945c3}{message\+Bubble\+Font}
+\item 
+C\+G\+Float \hyperlink{interface_j_s_q_messages_collection_view_flow_layout_a2d57bd15268e1063676557bcc73c71b3}{message\+Bubble\+Left\+Right\+Margin}
+\item 
+U\+I\+Edge\+Insets \hyperlink{interface_j_s_q_messages_collection_view_flow_layout_a7dff7bb4f08899a86faa8a7914ff7f53}{message\+Bubble\+Text\+View\+Frame\+Insets}
+\item 
+U\+I\+Edge\+Insets \hyperlink{interface_j_s_q_messages_collection_view_flow_layout_a2a696c1e239c9d8ec6f85fb4e298a33b}{message\+Bubble\+Text\+View\+Text\+Container\+Insets}
+\item 
+C\+G\+Size \hyperlink{interface_j_s_q_messages_collection_view_flow_layout_a5a94d2ca4118b4dd633f08d2251e2447}{incoming\+Avatar\+View\+Size}
+\item 
+C\+G\+Size \hyperlink{interface_j_s_q_messages_collection_view_flow_layout_a01d91d9850fb667deefa69bbbbb58a03}{outgoing\+Avatar\+View\+Size}
+\item 
+N\+S\+U\+Integer \hyperlink{interface_j_s_q_messages_collection_view_flow_layout_a997ac903872be7898fd5696e76aa4be9}{cache\+Limit}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \hyperlink{interface_j_s_q_messages_collection_view_flow_layout}{J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout}} is a concrete layout object that inherits from {\ttfamily U\+I\+Collection\+View\+Flow\+Layout} and organizes message items in a vertical list. Each {\ttfamily \hyperlink{interface_j_s_q_messages_collection_view_cell}{J\+S\+Q\+Messages\+Collection\+View\+Cell}} in the layout can display messages of arbitrary sizes and avatar images, as well as metadata such as a timestamp and sender. You can easily customize the layout via its properties or its delegate methods defined in {\ttfamily \hyperlink{protocol_j_s_q_messages_collection_view_delegate_flow_layout-p}{J\+S\+Q\+Messages\+Collection\+View\+Delegate\+Flow\+Layout}}.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{protocol_j_s_q_messages_collection_view_delegate_flow_layout-p}{J\+S\+Q\+Messages\+Collection\+View\+Delegate\+Flow\+Layout}. 
+
+\hyperlink{interface_j_s_q_messages_collection_view_cell}{J\+S\+Q\+Messages\+Collection\+View\+Cell}. 
+\end{DoxySeeAlso}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_j_s_q_messages_collection_view_flow_layout_aecccb28434357c9f960906ec3e552d60}{}\index{J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout@{J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout}!message\+Bubble\+Size\+For\+Item\+At\+Index\+Path\+:@{message\+Bubble\+Size\+For\+Item\+At\+Index\+Path\+:}}
+\index{message\+Bubble\+Size\+For\+Item\+At\+Index\+Path\+:@{message\+Bubble\+Size\+For\+Item\+At\+Index\+Path\+:}!J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout@{J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout}}
+\subsubsection[{message\+Bubble\+Size\+For\+Item\+At\+Index\+Path\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\+G\+Size) message\+Bubble\+Size\+For\+Item\+At\+Index\+Path\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Index\+Path $\ast$)}]{index\+Path}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_messages_collection_view_flow_layout_aecccb28434357c9f960906ec3e552d60}
+Computes and returns the size of the {\ttfamily message\+Bubble\+Image\+View} property of a {\ttfamily \hyperlink{interface_j_s_q_messages_collection_view_cell}{J\+S\+Q\+Messages\+Collection\+View\+Cell}} at the specified index\+Path. The returned size contains the required dimensions to display the entire message contents. Note, this is {\itshape not} the entire cell, but only its message bubble.
+
+
+\begin{DoxyParams}{Parameters}
+{\em index\+Path} & The index path of the item to be displayed.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The size of the message bubble for the item displayed at index\+Path. 
+\end{DoxyReturn}
+\hypertarget{interface_j_s_q_messages_collection_view_flow_layout_af665f3e63d5d22ed0b9f14ac51850967}{}\index{J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout@{J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout}!size\+For\+Item\+At\+Index\+Path\+:@{size\+For\+Item\+At\+Index\+Path\+:}}
+\index{size\+For\+Item\+At\+Index\+Path\+:@{size\+For\+Item\+At\+Index\+Path\+:}!J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout@{J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout}}
+\subsubsection[{size\+For\+Item\+At\+Index\+Path\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\+G\+Size) size\+For\+Item\+At\+Index\+Path\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Index\+Path $\ast$)}]{index\+Path}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_messages_collection_view_flow_layout_af665f3e63d5d22ed0b9f14ac51850967}
+Computes and returns the size of the item specified by index\+Path.
+
+
+\begin{DoxyParams}{Parameters}
+{\em index\+Path} & The index path of the item to be displayed.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The size of the item displayed at index\+Path. 
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_j_s_q_messages_collection_view_flow_layout_a997ac903872be7898fd5696e76aa4be9}{}\index{J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout@{J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout}!cache\+Limit@{cache\+Limit}}
+\index{cache\+Limit@{cache\+Limit}!J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout@{J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout}}
+\subsubsection[{cache\+Limit}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+U\+Integer) cache\+Limit\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_j_s_q_messages_collection_view_flow_layout_a997ac903872be7898fd5696e76aa4be9}
+The maximum number of items that the layout should keep in its cache of layout information.
+
+The default value is {\ttfamily 200}. A limit of {\ttfamily 0} means no limit. This is not a strict limit. \hypertarget{interface_j_s_q_messages_collection_view_flow_layout_a6f7171d412e190bbef0bd4b93d99da9d}{}\index{J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout@{J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout}!collection\+View@{collection\+View}}
+\index{collection\+View@{collection\+View}!J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout@{J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout}}
+\subsubsection[{collection\+View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf J\+S\+Q\+Messages\+Collection\+View}$\ast$) collection\+View\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_j_s_q_messages_collection_view_flow_layout_a6f7171d412e190bbef0bd4b93d99da9d}
+The collection view object currently using this layout object. \hypertarget{interface_j_s_q_messages_collection_view_flow_layout_a5a94d2ca4118b4dd633f08d2251e2447}{}\index{J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout@{J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout}!incoming\+Avatar\+View\+Size@{incoming\+Avatar\+View\+Size}}
+\index{incoming\+Avatar\+View\+Size@{incoming\+Avatar\+View\+Size}!J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout@{J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout}}
+\subsubsection[{incoming\+Avatar\+View\+Size}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\+G\+Size) incoming\+Avatar\+View\+Size\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_j_s_q_messages_collection_view_flow_layout_a5a94d2ca4118b4dd633f08d2251e2447}
+The size of the avatar image view for incoming messages.
+
+The default value is {\ttfamily (30.\+0f, 30.\+0f)}. Set to {\ttfamily C\+G\+Size\+Zero} to remove incoming avatars. You may use {\ttfamily k\+J\+S\+Q\+Messages\+Collection\+View\+Avatar\+Size\+Default} to size your avatars to the default value. \hypertarget{interface_j_s_q_messages_collection_view_flow_layout_ae9ad830cfdb3a3fe8375cbd22af5c7e8}{}\index{J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout@{J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout}!item\+Width@{item\+Width}}
+\index{item\+Width@{item\+Width}!J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout@{J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout}}
+\subsubsection[{item\+Width}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\+G\+Float) item\+Width\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_j_s_q_messages_collection_view_flow_layout_ae9ad830cfdb3a3fe8375cbd22af5c7e8}
+Returns the width of items in the layout. \hypertarget{interface_j_s_q_messages_collection_view_flow_layout_a9a98700ffd5c4acd0538b01b3da945c3}{}\index{J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout@{J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout}!message\+Bubble\+Font@{message\+Bubble\+Font}}
+\index{message\+Bubble\+Font@{message\+Bubble\+Font}!J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout@{J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout}}
+\subsubsection[{message\+Bubble\+Font}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Font$\ast$) message\+Bubble\+Font\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_j_s_q_messages_collection_view_flow_layout_a9a98700ffd5c4acd0538b01b3da945c3}
+The font used to display the body a text message in the message bubble of each {\ttfamily \hyperlink{interface_j_s_q_messages_collection_view_cell}{J\+S\+Q\+Messages\+Collection\+View\+Cell}} in the collection\+View.
+
+The default value is the preferred system font for {\ttfamily U\+I\+Font\+Text\+Style\+Body}. This value must not be {\ttfamily nil}. \hypertarget{interface_j_s_q_messages_collection_view_flow_layout_a2d57bd15268e1063676557bcc73c71b3}{}\index{J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout@{J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout}!message\+Bubble\+Left\+Right\+Margin@{message\+Bubble\+Left\+Right\+Margin}}
+\index{message\+Bubble\+Left\+Right\+Margin@{message\+Bubble\+Left\+Right\+Margin}!J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout@{J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout}}
+\subsubsection[{message\+Bubble\+Left\+Right\+Margin}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\+G\+Float) message\+Bubble\+Left\+Right\+Margin\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_j_s_q_messages_collection_view_flow_layout_a2d57bd15268e1063676557bcc73c71b3}
+The horizontal spacing used to lay out the {\ttfamily message\+Bubble\+Container\+View} frame within each {\ttfamily \hyperlink{interface_j_s_q_messages_collection_view_cell}{J\+S\+Q\+Messages\+Collection\+View\+Cell}}. This container view holds the message bubble image and message contents of a cell.
+
+This value specifies the horizontal spacing between the {\ttfamily message\+Bubble\+Container\+View} and the edge of the collection view cell in which it is displayed. That is, the edge that is opposite the avatar image.
+
+The default value is {\ttfamily 40.\+0f} on i\+Phone and {\ttfamily 240.\+0f} on i\+Pad. This value must be positive. For {\itshape outgoing} messages, this value specifies the amount of spacing from the left most edge of the collection\+View to the left most edge of a message bubble within a cell.
+
+For {\itshape incoming} messages, this value specifies the amount of spacing from the right most edge of the collection\+View to the right most edge of a message bubble within a cell.
+
+\begin{DoxyWarning}{Warning}
+This value may not be exact when the layout object finishes laying out its items, due to the constraints it must satisfy. This value should be considered more of a recommendation or suggestion to the layout, not an exact value.
+\end{DoxyWarning}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_j_s_q_messages_collection_view_cell_incoming}{J\+S\+Q\+Messages\+Collection\+View\+Cell\+Incoming}. 
+
+\hyperlink{interface_j_s_q_messages_collection_view_cell_outgoing}{J\+S\+Q\+Messages\+Collection\+View\+Cell\+Outgoing}. 
+\end{DoxySeeAlso}
+\hypertarget{interface_j_s_q_messages_collection_view_flow_layout_a7dff7bb4f08899a86faa8a7914ff7f53}{}\index{J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout@{J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout}!message\+Bubble\+Text\+View\+Frame\+Insets@{message\+Bubble\+Text\+View\+Frame\+Insets}}
+\index{message\+Bubble\+Text\+View\+Frame\+Insets@{message\+Bubble\+Text\+View\+Frame\+Insets}!J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout@{J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout}}
+\subsubsection[{message\+Bubble\+Text\+View\+Frame\+Insets}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Edge\+Insets) message\+Bubble\+Text\+View\+Frame\+Insets\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_j_s_q_messages_collection_view_flow_layout_a7dff7bb4f08899a86faa8a7914ff7f53}
+The inset of the frame of the text view within the {\ttfamily message\+Bubble\+Container\+View} of each {\ttfamily \hyperlink{interface_j_s_q_messages_collection_view_cell}{J\+S\+Q\+Messages\+Collection\+View\+Cell}}. The inset values should be positive and are applied in the following ways\+:
+
+
+\begin{DoxyEnumerate}
+\item The right value insets the text view frame on the side adjacent to the avatar image (or where the avatar would normally appear). For outgoing messages this is the right side, for incoming messages this is the left side.
+\item The left value insets the text view frame on the side opposite the avatar image (or where the avatar would normally appear). For outgoing messages this is the left side, for incoming messages this is the right side.
+\item The top value insets the top of the frame.
+\item The bottom value insets the bottom of the frame.
+\end{DoxyEnumerate}
+
+The default value is {\ttfamily \{0.\+0f, 0.\+0f, 0.\+0f, 6.\+0f\}}.
+
+\begin{DoxyWarning}{Warning}
+Adjusting this value is an advanced endeavour and not recommended. You will only need to adjust this value should you choose to provide your own bubble image assets. Changing this value may also require you to manually calculate the item\+Size for each cell in the layout by overriding the delegate method {\ttfamily collection\+View\+:layout\+:size\+For\+Item\+At\+Index\+Path\+:} 
+\end{DoxyWarning}
+\hypertarget{interface_j_s_q_messages_collection_view_flow_layout_a2a696c1e239c9d8ec6f85fb4e298a33b}{}\index{J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout@{J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout}!message\+Bubble\+Text\+View\+Text\+Container\+Insets@{message\+Bubble\+Text\+View\+Text\+Container\+Insets}}
+\index{message\+Bubble\+Text\+View\+Text\+Container\+Insets@{message\+Bubble\+Text\+View\+Text\+Container\+Insets}!J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout@{J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout}}
+\subsubsection[{message\+Bubble\+Text\+View\+Text\+Container\+Insets}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Edge\+Insets) message\+Bubble\+Text\+View\+Text\+Container\+Insets\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_j_s_q_messages_collection_view_flow_layout_a2a696c1e239c9d8ec6f85fb4e298a33b}
+The inset of the text container\textquotesingle{}s layout area within the text view\textquotesingle{}s content area in each {\ttfamily \hyperlink{interface_j_s_q_messages_collection_view_cell}{J\+S\+Q\+Messages\+Collection\+View\+Cell}}. The specified inset values should be positive.
+
+The default value is {\ttfamily \{7.\+0f, 14.\+0f, 7.\+0f, 14.\+0f\}}.
+
+\begin{DoxyWarning}{Warning}
+Adjusting this value is an advanced endeavour and not recommended. You will only need to adjust this value should you choose to provide your own bubble image assets. Changing this value may also require you to manually calculate the item\+Size for each cell in the layout by overriding the delegate method {\ttfamily collection\+View\+:layout\+:size\+For\+Item\+At\+Index\+Path\+:} 
+\end{DoxyWarning}
+\hypertarget{interface_j_s_q_messages_collection_view_flow_layout_a01d91d9850fb667deefa69bbbbb58a03}{}\index{J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout@{J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout}!outgoing\+Avatar\+View\+Size@{outgoing\+Avatar\+View\+Size}}
+\index{outgoing\+Avatar\+View\+Size@{outgoing\+Avatar\+View\+Size}!J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout@{J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout}}
+\subsubsection[{outgoing\+Avatar\+View\+Size}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\+G\+Size) outgoing\+Avatar\+View\+Size\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_j_s_q_messages_collection_view_flow_layout_a01d91d9850fb667deefa69bbbbb58a03}
+The size of the avatar image view for outgoing messages.
+
+The default value is {\ttfamily (30.\+0f, 30.\+0f)}. Set to {\ttfamily C\+G\+Size\+Zero} to remove outgoing avatars. You may use {\ttfamily k\+J\+S\+Q\+Messages\+Collection\+View\+Avatar\+Size\+Default} to size your avatars to the default value. \hypertarget{interface_j_s_q_messages_collection_view_flow_layout_aff25c7d92997659fd770b22b2ad6ce69}{}\index{J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout@{J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout}!springiness\+Enabled@{springiness\+Enabled}}
+\index{springiness\+Enabled@{springiness\+Enabled}!J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout@{J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout}}
+\subsubsection[{springiness\+Enabled}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) springiness\+Enabled\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_j_s_q_messages_collection_view_flow_layout_aff25c7d92997659fd770b22b2ad6ce69}
+Specifies whether or not the layout should enable spring behavior dynamics for its items using {\ttfamily U\+I\+Dynamics}.
+
+The default value is {\ttfamily N\+O}, which disables \char`\"{}springy\char`\"{} or \char`\"{}bouncy\char`\"{} items in the layout. Set to {\ttfamily Y\+E\+S} if you want items to have spring behavior dynamics. You {\itshape must} set this property from {\ttfamily view\+Did\+Appear\+:} in your {\ttfamily \hyperlink{interface_j_s_q_messages_view_controller}{J\+S\+Q\+Messages\+View\+Controller}} subclass.
+
+\begin{DoxyWarning}{Warning}
+Though this feature is mostly stable, it is still considered an experimental feature. 
+\end{DoxyWarning}
+\hypertarget{interface_j_s_q_messages_collection_view_flow_layout_a44700cf3b96675ce91c62d5e957a4ecc}{}\index{J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout@{J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout}!spring\+Resistance\+Factor@{spring\+Resistance\+Factor}}
+\index{spring\+Resistance\+Factor@{spring\+Resistance\+Factor}!J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout@{J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout}}
+\subsubsection[{spring\+Resistance\+Factor}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+U\+Integer) spring\+Resistance\+Factor\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_j_s_q_messages_collection_view_flow_layout_a44700cf3b96675ce91c62d5e957a4ecc}
+Specifies the degree of resistence for the \char`\"{}springiness\char`\"{} of items in the layout. This property has no effect if {\ttfamily springiness\+Enabled} is set to {\ttfamily N\+O}.
+
+The default value is {\ttfamily 1000}. Increasing this value increases the resistance, that is, items become less \char`\"{}bouncy\char`\"{}. Decrease this value in order to make items more \char`\"{}bouncy\char`\"{}. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Vendors/\+J\+S\+Q\+Messages\+View\+Controller/\+Layout/J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout.\+h\item 
+Vendors/\+J\+S\+Q\+Messages\+View\+Controller/\+Layout/J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout.\+m\end{DoxyCompactItemize}

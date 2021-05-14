@@ -1,0 +1,146 @@
+\hypertarget{interface_j_s_q_messages_avatar_image_factory}{}\section{J\+S\+Q\+Messages\+Avatar\+Image\+Factory Class Reference}
+\label{interface_j_s_q_messages_avatar_image_factory}\index{J\+S\+Q\+Messages\+Avatar\+Image\+Factory@{J\+S\+Q\+Messages\+Avatar\+Image\+Factory}}
+
+
+{\ttfamily \#import $<$J\+S\+Q\+Messages\+Avatar\+Image\+Factory.\+h$>$}
+
+Inheritance diagram for J\+S\+Q\+Messages\+Avatar\+Image\+Factory\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_j_s_q_messages_avatar_image_factory}
+\end{center}
+\end{figure}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_j_s_q_messages_avatar_image}{J\+S\+Q\+Messages\+Avatar\+Image} $\ast$) + \hyperlink{interface_j_s_q_messages_avatar_image_factory_ab028fd55833ba3829a88ef81aa28c339}{avatar\+Image\+With\+Placeholder\+:diameter\+:}
+\item 
+(\hyperlink{interface_j_s_q_messages_avatar_image}{J\+S\+Q\+Messages\+Avatar\+Image} $\ast$) + \hyperlink{interface_j_s_q_messages_avatar_image_factory_a75cc88c704c0cbc5fb325bd9aee28b19}{avatar\+Image\+With\+Image\+:diameter\+:}
+\item 
+(U\+I\+Image $\ast$) + \hyperlink{interface_j_s_q_messages_avatar_image_factory_a9f1ed0814bc65980daeb6b3f2fc9483d}{circular\+Avatar\+Image\+:with\+Diameter\+:}
+\item 
+(U\+I\+Image $\ast$) + \hyperlink{interface_j_s_q_messages_avatar_image_factory_a69d65d43733e6578372c306ca99e6b6d}{circular\+Avatar\+Highlighted\+Image\+:with\+Diameter\+:}
+\item 
+(\hyperlink{interface_j_s_q_messages_avatar_image}{J\+S\+Q\+Messages\+Avatar\+Image} $\ast$) + \hyperlink{interface_j_s_q_messages_avatar_image_factory_af0e3cdb04c0c17e95fc7d890526586f4}{avatar\+Image\+With\+User\+Initials\+:background\+Color\+:text\+Color\+:font\+:diameter\+:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+{\ttfamily \hyperlink{interface_j_s_q_messages_avatar_image_factory}{J\+S\+Q\+Messages\+Avatar\+Image\+Factory}} is a factory that provides a means for creating and styling {\ttfamily \hyperlink{interface_j_s_q_messages_avatar_image}{J\+S\+Q\+Messages\+Avatar\+Image}} objects to be displayed in a {\ttfamily \hyperlink{interface_j_s_q_messages_collection_view_cell}{J\+S\+Q\+Messages\+Collection\+View\+Cell}} of a {\ttfamily \hyperlink{interface_j_s_q_messages_collection_view}{J\+S\+Q\+Messages\+Collection\+View}}. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_j_s_q_messages_avatar_image_factory_a75cc88c704c0cbc5fb325bd9aee28b19}{}\index{J\+S\+Q\+Messages\+Avatar\+Image\+Factory@{J\+S\+Q\+Messages\+Avatar\+Image\+Factory}!avatar\+Image\+With\+Image\+:diameter\+:@{avatar\+Image\+With\+Image\+:diameter\+:}}
+\index{avatar\+Image\+With\+Image\+:diameter\+:@{avatar\+Image\+With\+Image\+:diameter\+:}!J\+S\+Q\+Messages\+Avatar\+Image\+Factory@{J\+S\+Q\+Messages\+Avatar\+Image\+Factory}}
+\subsubsection[{avatar\+Image\+With\+Image\+:diameter\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf J\+S\+Q\+Messages\+Avatar\+Image} $\ast$) avatar\+Image\+With\+Image\+: 
+\begin{DoxyParamCaption}
+\item[{(U\+I\+Image $\ast$)}]{image}
+\item[{diameter:(N\+S\+U\+Integer)}]{diameter}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_messages_avatar_image_factory_a75cc88c704c0cbc5fb325bd9aee28b19}
+Creates and returns a {\ttfamily \hyperlink{interface_j_s_q_messages_avatar_image}{J\+S\+Q\+Messages\+Avatar\+Image}} object with the specified image that is cropped to a circle of the given diameter and used for the {\ttfamily avatar\+Image} and {\ttfamily avatar\+Placeholder\+Image} properties of the returned {\ttfamily \hyperlink{interface_j_s_q_messages_avatar_image}{J\+S\+Q\+Messages\+Avatar\+Image}} object. This image is then copied and has a transparent black mask applied to it, which is used for the {\ttfamily avatar\+Highlighted\+Image} property of the returned {\ttfamily \hyperlink{interface_j_s_q_messages_avatar_image}{J\+S\+Q\+Messages\+Avatar\+Image}} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & An image object that represents an avatar image. This value must not be {\ttfamily nil}. \\
+\hline
+{\em diameter} & An integer value specifying the diameter size of the avatar in points. This value must be greater than {\ttfamily 0}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An initialized {\ttfamily \hyperlink{interface_j_s_q_messages_avatar_image}{J\+S\+Q\+Messages\+Avatar\+Image}} object if created successfully, {\ttfamily nil} otherwise. 
+\end{DoxyReturn}
+\hypertarget{interface_j_s_q_messages_avatar_image_factory_ab028fd55833ba3829a88ef81aa28c339}{}\index{J\+S\+Q\+Messages\+Avatar\+Image\+Factory@{J\+S\+Q\+Messages\+Avatar\+Image\+Factory}!avatar\+Image\+With\+Placeholder\+:diameter\+:@{avatar\+Image\+With\+Placeholder\+:diameter\+:}}
+\index{avatar\+Image\+With\+Placeholder\+:diameter\+:@{avatar\+Image\+With\+Placeholder\+:diameter\+:}!J\+S\+Q\+Messages\+Avatar\+Image\+Factory@{J\+S\+Q\+Messages\+Avatar\+Image\+Factory}}
+\subsubsection[{avatar\+Image\+With\+Placeholder\+:diameter\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf J\+S\+Q\+Messages\+Avatar\+Image} $\ast$) avatar\+Image\+With\+Placeholder\+: 
+\begin{DoxyParamCaption}
+\item[{(U\+I\+Image $\ast$)}]{placeholder\+Image}
+\item[{diameter:(N\+S\+U\+Integer)}]{diameter}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_messages_avatar_image_factory_ab028fd55833ba3829a88ef81aa28c339}
+Creates and returns a {\ttfamily \hyperlink{interface_j_s_q_messages_avatar_image}{J\+S\+Q\+Messages\+Avatar\+Image}} object with the specified placeholder\+Image that is cropped to a circle of the given diameter.
+
+
+\begin{DoxyParams}{Parameters}
+{\em placeholder\+Image} & An image object that represents a placeholder avatar image. This value must not be {\ttfamily nil}. \\
+\hline
+{\em diameter} & An integer value specifying the diameter size of the avatar in points. This value must be greater than {\ttfamily 0}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An initialized {\ttfamily \hyperlink{interface_j_s_q_messages_avatar_image}{J\+S\+Q\+Messages\+Avatar\+Image}} object if created successfully, {\ttfamily nil} otherwise. 
+\end{DoxyReturn}
+\hypertarget{interface_j_s_q_messages_avatar_image_factory_af0e3cdb04c0c17e95fc7d890526586f4}{}\index{J\+S\+Q\+Messages\+Avatar\+Image\+Factory@{J\+S\+Q\+Messages\+Avatar\+Image\+Factory}!avatar\+Image\+With\+User\+Initials\+:background\+Color\+:text\+Color\+:font\+:diameter\+:@{avatar\+Image\+With\+User\+Initials\+:background\+Color\+:text\+Color\+:font\+:diameter\+:}}
+\index{avatar\+Image\+With\+User\+Initials\+:background\+Color\+:text\+Color\+:font\+:diameter\+:@{avatar\+Image\+With\+User\+Initials\+:background\+Color\+:text\+Color\+:font\+:diameter\+:}!J\+S\+Q\+Messages\+Avatar\+Image\+Factory@{J\+S\+Q\+Messages\+Avatar\+Image\+Factory}}
+\subsubsection[{avatar\+Image\+With\+User\+Initials\+:background\+Color\+:text\+Color\+:font\+:diameter\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf J\+S\+Q\+Messages\+Avatar\+Image} $\ast$) avatar\+Image\+With\+User\+Initials\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{user\+Initials}
+\item[{backgroundColor:(U\+I\+Color $\ast$)}]{background\+Color}
+\item[{textColor:(U\+I\+Color $\ast$)}]{text\+Color}
+\item[{font:(U\+I\+Font $\ast$)}]{font}
+\item[{diameter:(N\+S\+U\+Integer)}]{diameter}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_messages_avatar_image_factory_af0e3cdb04c0c17e95fc7d890526586f4}
+Creates and returns a {\ttfamily \hyperlink{interface_j_s_q_messages_avatar_image}{J\+S\+Q\+Messages\+Avatar\+Image}} object with a circular shape that displays the specified user\+Initials with the given background\+Color, text\+Color, font, and diameter.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Initials} & The user initials to display in the avatar image. This value must not be {\ttfamily nil}. \\
+\hline
+{\em background\+Color} & The background color of the avatar. This value must not be {\ttfamily nil}. \\
+\hline
+{\em text\+Color} & The color of the text of the user\+Initials. This value must not be {\ttfamily nil}. \\
+\hline
+{\em font} & The font applied to user\+Initials. This value must not be {\ttfamily nil}. \\
+\hline
+{\em diameter} & The diameter of the avatar image. This value must be greater than {\ttfamily 0}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An initialized {\ttfamily \hyperlink{interface_j_s_q_messages_avatar_image}{J\+S\+Q\+Messages\+Avatar\+Image}} object if created successfully, {\ttfamily nil} otherwise.
+\end{DoxyReturn}
+This method does not attempt to detect or correct incompatible parameters. That is to say, you are responsible for providing a font size and diameter that make sense. For example, a font size of {\ttfamily 14.\+0f} and a diameter of {\ttfamily 34.\+0f} will result in an avatar similar to Messages in i\+O\+S 7. However, a font size {\ttfamily 30.\+0f} and diameter of {\ttfamily 10.\+0f} will not produce a desirable image. Further, this method does not check the length of user\+Initials. It is recommended that you pass a string of length {\ttfamily 2} or {\ttfamily 3}. \hypertarget{interface_j_s_q_messages_avatar_image_factory_a69d65d43733e6578372c306ca99e6b6d}{}\index{J\+S\+Q\+Messages\+Avatar\+Image\+Factory@{J\+S\+Q\+Messages\+Avatar\+Image\+Factory}!circular\+Avatar\+Highlighted\+Image\+:with\+Diameter\+:@{circular\+Avatar\+Highlighted\+Image\+:with\+Diameter\+:}}
+\index{circular\+Avatar\+Highlighted\+Image\+:with\+Diameter\+:@{circular\+Avatar\+Highlighted\+Image\+:with\+Diameter\+:}!J\+S\+Q\+Messages\+Avatar\+Image\+Factory@{J\+S\+Q\+Messages\+Avatar\+Image\+Factory}}
+\subsubsection[{circular\+Avatar\+Highlighted\+Image\+:with\+Diameter\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (U\+I\+Image $\ast$) circular\+Avatar\+Highlighted\+Image\+: 
+\begin{DoxyParamCaption}
+\item[{(U\+I\+Image $\ast$)}]{image}
+\item[{withDiameter:(N\+S\+U\+Integer)}]{diameter}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_messages_avatar_image_factory_a69d65d43733e6578372c306ca99e6b6d}
+Returns a copy of the specified image that is cropped to a circle with the given diameter. Additionally, a transparent overlay is applied to the image to represent a pressed or highlighted state.
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & The image to crop. This value must not be {\ttfamily nil}. \\
+\hline
+{\em diameter} & An integer value specifying the diameter size of the image in points. This value must be greater than {\ttfamily 0}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new image object if successful, {\ttfamily nil} otherwise. 
+\end{DoxyReturn}
+\hypertarget{interface_j_s_q_messages_avatar_image_factory_a9f1ed0814bc65980daeb6b3f2fc9483d}{}\index{J\+S\+Q\+Messages\+Avatar\+Image\+Factory@{J\+S\+Q\+Messages\+Avatar\+Image\+Factory}!circular\+Avatar\+Image\+:with\+Diameter\+:@{circular\+Avatar\+Image\+:with\+Diameter\+:}}
+\index{circular\+Avatar\+Image\+:with\+Diameter\+:@{circular\+Avatar\+Image\+:with\+Diameter\+:}!J\+S\+Q\+Messages\+Avatar\+Image\+Factory@{J\+S\+Q\+Messages\+Avatar\+Image\+Factory}}
+\subsubsection[{circular\+Avatar\+Image\+:with\+Diameter\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (U\+I\+Image $\ast$) circular\+Avatar\+Image\+: 
+\begin{DoxyParamCaption}
+\item[{(U\+I\+Image $\ast$)}]{image}
+\item[{withDiameter:(N\+S\+U\+Integer)}]{diameter}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_messages_avatar_image_factory_a9f1ed0814bc65980daeb6b3f2fc9483d}
+Returns a copy of the specified image that is cropped to a circle with the given diameter.
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & The image to crop. This value must not be {\ttfamily nil}. \\
+\hline
+{\em diameter} & An integer value specifying the diameter size of the image in points. This value must be greater than {\ttfamily 0}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new image object if successful, {\ttfamily nil} otherwise. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Vendors/\+J\+S\+Q\+Messages\+View\+Controller/\+Factories/J\+S\+Q\+Messages\+Avatar\+Image\+Factory.\+h\item 
+Vendors/\+J\+S\+Q\+Messages\+View\+Controller/\+Factories/J\+S\+Q\+Messages\+Avatar\+Image\+Factory.\+m\end{DoxyCompactItemize}

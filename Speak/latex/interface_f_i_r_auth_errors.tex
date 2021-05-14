@@ -1,0 +1,106 @@
+\hypertarget{interface_f_i_r_auth_errors}{}\section{F\+I\+R\+Auth\+Errors Class Reference}
+\label{interface_f_i_r_auth_errors}\index{F\+I\+R\+Auth\+Errors@{F\+I\+R\+Auth\+Errors}}
+
+
+{\ttfamily \#import $<$F\+I\+R\+Auth\+Errors.\+h$>$}
+
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(typedef) -\/ \hyperlink{interface_f_i_r_auth_errors_a555636ac7403f4779617c8a647e5c279}{N\+S\+\_\+\+E\+N\+U\+M}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_f_i_r_auth_errors_a83513149a1f893251c6926998a81f0fc}{}N\+S\+String $\ast$const \hyperlink{interface_f_i_r_auth_errors_a83513149a1f893251c6926998a81f0fc}{F\+I\+R\+Auth\+Error\+Domain}\label{interface_f_i_r_auth_errors_a83513149a1f893251c6926998a81f0fc}
+
+\begin{DoxyCompactList}\small\item\em The Firebase Auth error domain. \end{DoxyCompactList}\item 
+\hypertarget{interface_f_i_r_auth_errors_adfecf0870e3de7baf9d6ff0e9ac9df52}{}N\+S\+String $\ast$const \hyperlink{interface_f_i_r_auth_errors_adfecf0870e3de7baf9d6ff0e9ac9df52}{F\+I\+R\+Auth\+Error\+Name\+Key}\label{interface_f_i_r_auth_errors_adfecf0870e3de7baf9d6ff0e9ac9df52}
+
+\begin{DoxyCompactList}\small\item\em The name of the key for the \char`\"{}error\+\_\+name\char`\"{} string in the N\+S\+Error userinfo dictionary. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyRemark}{Remarks}
+Error Codes common to all A\+P\+I Methods\+:
+\begin{DoxyItemize}
+\item F\+I\+R\+Auth\+Error\+Code\+Network\+Error -\/ Indicates a network error occurred during the operation.
+\item F\+I\+R\+Auth\+Error\+Code\+User\+Not\+Found -\/ Indicates the user account was not found. This could happen if the user account has been deleted.
+\item F\+I\+R\+Auth\+Error\+Code\+User\+Token\+Expired -\/ Indicates the current user’s token has expired, for example, the user may have changed account password on another device. You must prompt the user to sign in again on this device.
+\item F\+I\+R\+Auth\+Error\+Code\+Too\+Many\+Requests -\/ Indicates that the request has been blocked after an abnormal number of requests have been made from the caller device to the Firebase Auth servers. Retry again after some time.
+\item F\+I\+R\+Auth\+Error\+Code\+Invalid\+A\+P\+I\+Key -\/ Indicates the application has been configured with an invalid A\+P\+I key.
+\item F\+I\+R\+Auth\+Error\+Code\+App\+Not\+Authorized -\/ Indicates the App is not authorized to use Firebase Authentication with the provided A\+P\+I Key. Go to the Google A\+P\+I Console and check under the credentials tab that the A\+P\+I key you are using has your application’s bundle I\+D whitelisted.
+\item F\+I\+R\+Auth\+Error\+Code\+Keychain\+Error -\/ Indicates an error occurred while accessing the keychain. The N\+S\+Localized\+Failure\+Reason\+Error\+Key and N\+S\+Underlying\+Error\+Key fields in the N\+S\+Error.\+user\+Info dictionary will contain more information about the error encountered.
+\item F\+I\+R\+Auth\+Error\+Code\+Internal\+Error -\/ Indicates an internal error occurred. Please report the error back to us with the entire N\+S\+Error object. 
+\end{DoxyItemize}
+
+Common error codes for \hyperlink{interface_f_i_r_user}{F\+I\+R\+User} operations\+:
+\begin{DoxyItemize}
+\item F\+I\+R\+Auth\+Error\+Code\+Invalid\+User\+Token -\/ Indicates that the signed-\/in user\textquotesingle{}s refresh token, that holds session information, is invalid. You must prompt the user to sign in again on this device.
+\item F\+I\+R\+Auth\+Error\+Code\+User\+Disabled -\/ Indicates the user\textquotesingle{}s account is disabled and can no longer be used until enabled again from within the Users panel in the Firebase console. 
+\end{DoxyItemize}
+\end{DoxyRemark}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_f_i_r_auth_errors_a555636ac7403f4779617c8a647e5c279}{}\index{F\+I\+R\+Auth\+Errors@{F\+I\+R\+Auth\+Errors}!N\+S\+\_\+\+E\+N\+U\+M@{N\+S\+\_\+\+E\+N\+U\+M}}
+\index{N\+S\+\_\+\+E\+N\+U\+M@{N\+S\+\_\+\+E\+N\+U\+M}!F\+I\+R\+Auth\+Errors@{F\+I\+R\+Auth\+Errors}}
+\subsubsection[{N\+S\+\_\+\+E\+N\+U\+M}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (typedef) N\+S\+\_\+\+E\+N\+U\+M 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Integer)}]{}
+\item[{(F\+I\+R\+Auth\+Error\+Code)}]{}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_auth_errors_a555636ac7403f4779617c8a647e5c279}
+Indicates a validation error with the custom token.
+
+Indicates the service account and the A\+P\+I key belong to different projects.
+
+Indicates the I\+D\+P token or request\+Uri is invalid.
+
+Indicates the user\textquotesingle{}s account is disabled on the server.
+
+Indicates the administrator disabled sign in with the specified identity provider.
+
+Indicates the email used to attempt a sign up is already in use.
+
+Indicates the email is invalid.
+
+Indicates the user attempted sign in with a wrong password.
+
+Indicates that too many requests were made to a server method.
+
+Indicates the user account was not found.
+
+Indicates account linking is required.
+
+Same enum as {\ttfamily F\+I\+R\+Auth\+Error\+Code\+Account\+Exists\+With\+Different\+Credential} , but with incorrect spelling. Only exists for backwards compatiblity.
+
+Indicates the user has attemped to change email or password more than 5 minutes after signing in.
+
+Indicates an attempt to link a provider to which the account is already linked.
+
+Indicates an attempt to unlink a provider that is not linked.
+
+Indicates user\textquotesingle{}s saved auth credential is invalid, the user needs to sign in again.
+
+Indicates a network error occurred (such as a timeout, interrupted connection, or unreachable host). These types of errors are often recoverable with a retry. The {\ttfamily N\+S\+Underlying\+Error} field in the {\ttfamily N\+S\+Error.\+user\+Info} dictionary will contain the error encountered.
+
+Indicates the saved token has expired, for example, the user may have changed account password on another device. The user needs to sign in again on the device that made this request.
+
+Indicates an invalid A\+P\+I key was supplied in the request.
+
+Indicates that an attempt was made to reauthenticate with a user which is not the current user.
+
+Indicates an attempt to link with a credential that has already been linked with a different Firebase account
+
+Indicates an attempt to set a password that is considered too weak.
+
+Indicates the App is not authorized to use Firebase Authentication with the provided A\+P\+I Key.
+
+Indicates an error occurred while attempting to access the keychain.
+
+Indicates an internal error occurred.
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Frameworks/\+Firebase\+Auth.\+framework/\+Headers/\hyperlink{_f_i_r_auth_errors_8h}{F\+I\+R\+Auth\+Errors.\+h}\end{DoxyCompactItemize}

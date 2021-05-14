@@ -1,0 +1,235 @@
+\hypertarget{category_p_f_push_07_synchronous_08}{}\section{P\+F\+Push(Synchronous) Category Reference}
+\label{category_p_f_push_07_synchronous_08}\index{P\+F\+Push(\+Synchronous)@{P\+F\+Push(\+Synchronous)}}
+
+
+{\ttfamily \#import $<$P\+F\+Push+\+Synchronous.\+h$>$}
+
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{category_p_f_push_07_synchronous_08_aae95b13e47627b142da7af040a706336}{send\+Push\+:}
+\begin{DoxyCompactList}\small\item\em 
+
+ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(B\+O\+O\+L) + \hyperlink{category_p_f_push_07_synchronous_08_a48fd26a782963ceaeeb2a71bd78abae1}{send\+Push\+Message\+To\+Channel\+:with\+Message\+:error\+:}
+\item 
+(B\+O\+O\+L) + \hyperlink{category_p_f_push_07_synchronous_08_a2924eb65b20afb36f08616103a17d507}{send\+Push\+Message\+To\+Query\+:with\+Message\+:error\+:}
+\item 
+(B\+O\+O\+L) + \hyperlink{category_p_f_push_07_synchronous_08_a7f611687ca4d933640975d5824148a62}{send\+Push\+Data\+To\+Channel\+:with\+Data\+:error\+:}
+\item 
+(B\+O\+O\+L) + \hyperlink{category_p_f_push_07_synchronous_08_a20913948872a62e33086b0a4662356f1}{send\+Push\+Data\+To\+Query\+:with\+Data\+:error\+:}
+\item 
+(nullable N\+S\+Set$<$ N\+S\+String $\ast$ $>$ $\ast$) + \hyperlink{category_p_f_push_07_synchronous_08_a9476931fbe549f6faed8124128f59824}{get\+Subscribed\+Channels\+:}
+\begin{DoxyCompactList}\small\item\em 
+
+ \end{DoxyCompactList}\item 
+(B\+O\+O\+L) + \hyperlink{category_p_f_push_07_synchronous_08_a41a1a6849ce7bec9e9d146ecc4431b14}{subscribe\+To\+Channel\+:error\+:}
+\item 
+(B\+O\+O\+L) + \hyperlink{category_p_f_push_07_synchronous_08_a230f3966d7171601d544b5e2d1bd3ea5}{unsubscribe\+From\+Channel\+:error\+:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Copyright (c) 2015-\/present, \hyperlink{interface_parse}{Parse}, L\+L\+C. All rights reserved.
+
+This source code is licensed under the B\+S\+D-\/style license found in the L\+I\+C\+E\+N\+S\+E file in the root directory of this source tree. An additional grant of patent rights can be found in the P\+A\+T\+E\+N\+T\+S file in the same directory. This category lists all methods of {\ttfamily P\+F\+Push} class that are synchronous, but have asynchronous counterpart, Calling one of these synchronous methods could potentially block the current thread for a large amount of time, since it might be fetching from network or saving/loading data from disk. 
+
+\subsection{Method Documentation}
+\hypertarget{category_p_f_push_07_synchronous_08_a9476931fbe549f6faed8124128f59824}{}\index{P\+F\+Push(\+Synchronous)@{P\+F\+Push(\+Synchronous)}!get\+Subscribed\+Channels\+:@{get\+Subscribed\+Channels\+:}}
+\index{get\+Subscribed\+Channels\+:@{get\+Subscribed\+Channels\+:}!P\+F\+Push(\+Synchronous)@{P\+F\+Push(\+Synchronous)}}
+\subsubsection[{get\+Subscribed\+Channels\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (nullable N\+S\+Set$<$N\+S\+String $\ast$$>$ $\ast$) get\+Subscribed\+Channels\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Error $\ast$$\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{category_p_f_push_07_synchronous_08_a9476931fbe549f6faed8124128f59824}
+
+
+
+
+ 
+
+
+
+
+
+Synchronously$\ast$ get all the channels that this device is subscribed to.
+
+
+\begin{DoxyParams}{Parameters}
+{\em error} & Pointer to an {\ttfamily N\+S\+Error} that will be set if necessary.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns an {\ttfamily N\+S\+Set} containing all the channel names this device is subscribed to. 
+\end{DoxyReturn}
+\hypertarget{category_p_f_push_07_synchronous_08_aae95b13e47627b142da7af040a706336}{}\index{P\+F\+Push(\+Synchronous)@{P\+F\+Push(\+Synchronous)}!send\+Push\+:@{send\+Push\+:}}
+\index{send\+Push\+:@{send\+Push\+:}!P\+F\+Push(\+Synchronous)@{P\+F\+Push(\+Synchronous)}}
+\subsubsection[{send\+Push\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) send\+Push\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Error $\ast$$\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{category_p_f_push_07_synchronous_08_aae95b13e47627b142da7af040a706336}
+
+
+
+
+ 
+
+
+
+
+
+Synchronously$\ast$ send this push message.
+
+
+\begin{DoxyParams}{Parameters}
+{\em error} & Pointer to an {\ttfamily N\+S\+Error} that will be set if necessary.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns whether the send succeeded. 
+\end{DoxyReturn}
+\hypertarget{category_p_f_push_07_synchronous_08_a7f611687ca4d933640975d5824148a62}{}\index{P\+F\+Push(\+Synchronous)@{P\+F\+Push(\+Synchronous)}!send\+Push\+Data\+To\+Channel\+:with\+Data\+:error\+:@{send\+Push\+Data\+To\+Channel\+:with\+Data\+:error\+:}}
+\index{send\+Push\+Data\+To\+Channel\+:with\+Data\+:error\+:@{send\+Push\+Data\+To\+Channel\+:with\+Data\+:error\+:}!P\+F\+Push(\+Synchronous)@{P\+F\+Push(\+Synchronous)}}
+\subsubsection[{send\+Push\+Data\+To\+Channel\+:with\+Data\+:error\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (B\+O\+O\+L) send\+Push\+Data\+To\+Channel\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{channel}
+\item[{withData:(N\+S\+Dictionary $\ast$)}]{data}
+\item[{error:(N\+S\+Error $\ast$$\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{category_p_f_push_07_synchronous_08_a7f611687ca4d933640975d5824148a62}
+Synchronously$\ast$ send a push message with arbitrary data to a channel.
+
+See the guide for information about the dictionary structure.
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & The channel to send to. The channel name must start with a letter and contain only letters, numbers, dashes, and underscores. \\
+\hline
+{\em data} & The data to send. \\
+\hline
+{\em error} & Pointer to an N\+S\+Error that will be set if necessary.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns whether the send succeeded. 
+\end{DoxyReturn}
+\hypertarget{category_p_f_push_07_synchronous_08_a20913948872a62e33086b0a4662356f1}{}\index{P\+F\+Push(\+Synchronous)@{P\+F\+Push(\+Synchronous)}!send\+Push\+Data\+To\+Query\+:with\+Data\+:error\+:@{send\+Push\+Data\+To\+Query\+:with\+Data\+:error\+:}}
+\index{send\+Push\+Data\+To\+Query\+:with\+Data\+:error\+:@{send\+Push\+Data\+To\+Query\+:with\+Data\+:error\+:}!P\+F\+Push(\+Synchronous)@{P\+F\+Push(\+Synchronous)}}
+\subsubsection[{send\+Push\+Data\+To\+Query\+:with\+Data\+:error\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (B\+O\+O\+L) send\+Push\+Data\+To\+Query\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+Query}$<$ {\bf P\+F\+Installation} $\ast$ $>$ $\ast$)}]{query}
+\item[{withData:(N\+S\+Dictionary $\ast$)}]{data}
+\item[{error:(N\+S\+Error $\ast$$\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{category_p_f_push_07_synchronous_08_a20913948872a62e33086b0a4662356f1}
+Synchronously$\ast$ send a push message with arbitrary data to a query.
+
+See the guide for information about the dictionary structure.
+
+
+\begin{DoxyParams}{Parameters}
+{\em query} & The query to send to. The query must be a {\ttfamily \hyperlink{interface_p_f_installation}{P\+F\+Installation}} query created with {\ttfamily \hyperlink{interface_p_f_installation}{P\+F\+Installation}.+query}. \\
+\hline
+{\em data} & The data to send. \\
+\hline
+{\em error} & Pointer to an N\+S\+Error that will be set if necessary.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns whether the send succeeded. 
+\end{DoxyReturn}
+\hypertarget{category_p_f_push_07_synchronous_08_a48fd26a782963ceaeeb2a71bd78abae1}{}\index{P\+F\+Push(\+Synchronous)@{P\+F\+Push(\+Synchronous)}!send\+Push\+Message\+To\+Channel\+:with\+Message\+:error\+:@{send\+Push\+Message\+To\+Channel\+:with\+Message\+:error\+:}}
+\index{send\+Push\+Message\+To\+Channel\+:with\+Message\+:error\+:@{send\+Push\+Message\+To\+Channel\+:with\+Message\+:error\+:}!P\+F\+Push(\+Synchronous)@{P\+F\+Push(\+Synchronous)}}
+\subsubsection[{send\+Push\+Message\+To\+Channel\+:with\+Message\+:error\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (B\+O\+O\+L) send\+Push\+Message\+To\+Channel\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{channel}
+\item[{withMessage:(N\+S\+String $\ast$)}]{message}
+\item[{error:(N\+S\+Error $\ast$$\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{category_p_f_push_07_synchronous_08_a48fd26a782963ceaeeb2a71bd78abae1}
+Synchronously$\ast$ send a push message to a channel.
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & The channel to send to. The channel name must start with a letter and contain only letters, numbers, dashes, and underscores. \\
+\hline
+{\em message} & The message to send. \\
+\hline
+{\em error} & Pointer to an {\ttfamily N\+S\+Error} that will be set if necessary.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns whether the send succeeded. 
+\end{DoxyReturn}
+\hypertarget{category_p_f_push_07_synchronous_08_a2924eb65b20afb36f08616103a17d507}{}\index{P\+F\+Push(\+Synchronous)@{P\+F\+Push(\+Synchronous)}!send\+Push\+Message\+To\+Query\+:with\+Message\+:error\+:@{send\+Push\+Message\+To\+Query\+:with\+Message\+:error\+:}}
+\index{send\+Push\+Message\+To\+Query\+:with\+Message\+:error\+:@{send\+Push\+Message\+To\+Query\+:with\+Message\+:error\+:}!P\+F\+Push(\+Synchronous)@{P\+F\+Push(\+Synchronous)}}
+\subsubsection[{send\+Push\+Message\+To\+Query\+:with\+Message\+:error\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (B\+O\+O\+L) send\+Push\+Message\+To\+Query\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+Query}$<$ {\bf P\+F\+Installation} $\ast$ $>$ $\ast$)}]{query}
+\item[{withMessage:(N\+S\+String $\ast$)}]{message}
+\item[{error:(N\+S\+Error $\ast$$\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{category_p_f_push_07_synchronous_08_a2924eb65b20afb36f08616103a17d507}
+Send a push message to a query.
+
+
+\begin{DoxyParams}{Parameters}
+{\em query} & The query to send to. The query must be a {\ttfamily \hyperlink{interface_p_f_installation}{P\+F\+Installation}} query created with {\ttfamily \hyperlink{interface_p_f_installation}{P\+F\+Installation}.+query}. \\
+\hline
+{\em message} & The message to send. \\
+\hline
+{\em error} & Pointer to an N\+S\+Error that will be set if necessary.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns whether the send succeeded. 
+\end{DoxyReturn}
+\hypertarget{category_p_f_push_07_synchronous_08_a41a1a6849ce7bec9e9d146ecc4431b14}{}\index{P\+F\+Push(\+Synchronous)@{P\+F\+Push(\+Synchronous)}!subscribe\+To\+Channel\+:error\+:@{subscribe\+To\+Channel\+:error\+:}}
+\index{subscribe\+To\+Channel\+:error\+:@{subscribe\+To\+Channel\+:error\+:}!P\+F\+Push(\+Synchronous)@{P\+F\+Push(\+Synchronous)}}
+\subsubsection[{subscribe\+To\+Channel\+:error\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (B\+O\+O\+L) subscribe\+To\+Channel\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{channel}
+\item[{error:(N\+S\+Error $\ast$$\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{category_p_f_push_07_synchronous_08_a41a1a6849ce7bec9e9d146ecc4431b14}
+Synchrnously$\ast$ subscribes the device to a channel of push notifications.
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & The channel to subscribe to. The channel name must start with a letter and contain only letters, numbers, dashes, and underscores. \\
+\hline
+{\em error} & Pointer to an {\ttfamily N\+S\+Error} that will be set if necessary.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns whether the subscribe succeeded. 
+\end{DoxyReturn}
+\hypertarget{category_p_f_push_07_synchronous_08_a230f3966d7171601d544b5e2d1bd3ea5}{}\index{P\+F\+Push(\+Synchronous)@{P\+F\+Push(\+Synchronous)}!unsubscribe\+From\+Channel\+:error\+:@{unsubscribe\+From\+Channel\+:error\+:}}
+\index{unsubscribe\+From\+Channel\+:error\+:@{unsubscribe\+From\+Channel\+:error\+:}!P\+F\+Push(\+Synchronous)@{P\+F\+Push(\+Synchronous)}}
+\subsubsection[{unsubscribe\+From\+Channel\+:error\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (B\+O\+O\+L) unsubscribe\+From\+Channel\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{channel}
+\item[{error:(N\+S\+Error $\ast$$\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{category_p_f_push_07_synchronous_08_a230f3966d7171601d544b5e2d1bd3ea5}
+Synchronously$\ast$ unsubscribes the device to a channel of push notifications.
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & The channel to unsubscribe from. \\
+\hline
+{\em error} & Pointer to an {\ttfamily N\+S\+Error} that will be set if necessary.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns whether the unsubscribe succeeded. 
+\end{DoxyReturn}
+
+
+The documentation for this category was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Frameworks/\+Parse.\+framework/\+Headers/P\+F\+Push+\+Synchronous.\+h\end{DoxyCompactItemize}

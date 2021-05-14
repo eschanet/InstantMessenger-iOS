@@ -1,0 +1,66 @@
+\hypertarget{protocol_s_d_web_image_manager_delegate-p}{}\section{$<$S\+D\+Web\+Image\+Manager\+Delegate$>$ Protocol Reference}
+\label{protocol_s_d_web_image_manager_delegate-p}\index{$<$\+S\+D\+Web\+Image\+Manager\+Delegate$>$@{$<$\+S\+D\+Web\+Image\+Manager\+Delegate$>$}}
+Inheritance diagram for $<$S\+D\+Web\+Image\+Manager\+Delegate$>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{protocol_s_d_web_image_manager_delegate-p}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{protocol_s_d_web_image_manager_delegate-p_a9b8cc250779a1f77cbed2ff6f360272e}{image\+Manager\+:should\+Download\+Image\+For\+U\+R\+L\+:}
+\item 
+(U\+I\+Image $\ast$) -\/ \hyperlink{protocol_s_d_web_image_manager_delegate-p_ae79aaf06dc4a8b2cff10dc7372148483}{image\+Manager\+:transform\+Downloaded\+Image\+:with\+U\+R\+L\+:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\hypertarget{protocol_s_d_web_image_manager_delegate-p_a9b8cc250779a1f77cbed2ff6f360272e}{}\index{S\+D\+Web\+Image\+Manager\+Delegate-\/p@{S\+D\+Web\+Image\+Manager\+Delegate-\/p}!image\+Manager\+:should\+Download\+Image\+For\+U\+R\+L\+:@{image\+Manager\+:should\+Download\+Image\+For\+U\+R\+L\+:}}
+\index{image\+Manager\+:should\+Download\+Image\+For\+U\+R\+L\+:@{image\+Manager\+:should\+Download\+Image\+For\+U\+R\+L\+:}!S\+D\+Web\+Image\+Manager\+Delegate-\/p@{S\+D\+Web\+Image\+Manager\+Delegate-\/p}}
+\subsubsection[{image\+Manager\+:should\+Download\+Image\+For\+U\+R\+L\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) image\+Manager\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf S\+D\+Web\+Image\+Manager} $\ast$)}]{image\+Manager}
+\item[{shouldDownloadImageForURL:(N\+S\+U\+R\+L $\ast$)}]{image\+U\+R\+L}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_s_d_web_image_manager_delegate-p_a9b8cc250779a1f77cbed2ff6f360272e}
+Controls which image should be downloaded when the image is not found in the cache.
+
+
+\begin{DoxyParams}{Parameters}
+{\em image\+Manager} & The current {\ttfamily \hyperlink{interface_s_d_web_image_manager}{S\+D\+Web\+Image\+Manager}} \\
+\hline
+{\em image\+U\+R\+L} & The url of the image to be downloaded\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return N\+O to prevent the downloading of the image on cache misses. If not implemented, Y\+E\+S is implied. 
+\end{DoxyReturn}
+\hypertarget{protocol_s_d_web_image_manager_delegate-p_ae79aaf06dc4a8b2cff10dc7372148483}{}\index{S\+D\+Web\+Image\+Manager\+Delegate-\/p@{S\+D\+Web\+Image\+Manager\+Delegate-\/p}!image\+Manager\+:transform\+Downloaded\+Image\+:with\+U\+R\+L\+:@{image\+Manager\+:transform\+Downloaded\+Image\+:with\+U\+R\+L\+:}}
+\index{image\+Manager\+:transform\+Downloaded\+Image\+:with\+U\+R\+L\+:@{image\+Manager\+:transform\+Downloaded\+Image\+:with\+U\+R\+L\+:}!S\+D\+Web\+Image\+Manager\+Delegate-\/p@{S\+D\+Web\+Image\+Manager\+Delegate-\/p}}
+\subsubsection[{image\+Manager\+:transform\+Downloaded\+Image\+:with\+U\+R\+L\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Image $\ast$) image\+Manager\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf S\+D\+Web\+Image\+Manager} $\ast$)}]{image\+Manager}
+\item[{transformDownloadedImage:(U\+I\+Image $\ast$)}]{image}
+\item[{withURL:(N\+S\+U\+R\+L $\ast$)}]{image\+U\+R\+L}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_s_d_web_image_manager_delegate-p_ae79aaf06dc4a8b2cff10dc7372148483}
+Allows to transform the image immediately after it has been downloaded and just before to cache it on disk and memory. N\+O\+T\+E\+: This method is called from a global queue in order to not to block the main thread.
+
+
+\begin{DoxyParams}{Parameters}
+{\em image\+Manager} & The current {\ttfamily \hyperlink{interface_s_d_web_image_manager}{S\+D\+Web\+Image\+Manager}} \\
+\hline
+{\em image} & The image to transform \\
+\hline
+{\em image\+U\+R\+L} & The url of the image to transform\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The transformed image object. 
+\end{DoxyReturn}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Vendors/\+S\+D\+Web\+Image/S\+D\+Web\+Image\+Manager.\+h\end{DoxyCompactItemize}

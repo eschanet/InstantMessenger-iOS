@@ -1,0 +1,190 @@
+\hypertarget{interface_j_s_q_messages_collection_view_cell}{}\section{J\+S\+Q\+Messages\+Collection\+View\+Cell Class Reference}
+\label{interface_j_s_q_messages_collection_view_cell}\index{J\+S\+Q\+Messages\+Collection\+View\+Cell@{J\+S\+Q\+Messages\+Collection\+View\+Cell}}
+
+
+{\ttfamily \#import $<$J\+S\+Q\+Messages\+Collection\+View\+Cell.\+h$>$}
+
+Inheritance diagram for J\+S\+Q\+Messages\+Collection\+View\+Cell\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_j_s_q_messages_collection_view_cell}
+\end{center}
+\end{figure}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(U\+I\+Nib $\ast$) + \hyperlink{interface_j_s_q_messages_collection_view_cell_aaa9d7b27429f84b2fd893033ab115c8f}{nib}
+\item 
+(N\+S\+String $\ast$) + \hyperlink{interface_j_s_q_messages_collection_view_cell_a00c74350ff61f69a5cba4b2f4d54b22b}{cell\+Reuse\+Identifier}
+\item 
+(N\+S\+String $\ast$) + \hyperlink{interface_j_s_q_messages_collection_view_cell_aecfdef4a089939052879052f6613c703}{media\+Cell\+Reuse\+Identifier}
+\item 
+(void) + \hyperlink{interface_j_s_q_messages_collection_view_cell_aa64ca6a7dc551521571da824faf2ac46}{register\+Menu\+Action\+:}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+id$<$ \hyperlink{protocol_j_s_q_messages_collection_view_cell_delegate-p}{J\+S\+Q\+Messages\+Collection\+View\+Cell\+Delegate} $>$ \hyperlink{interface_j_s_q_messages_collection_view_cell_a4b7a40e8a0fc1a0e32c8817286385737}{delegate}
+\item 
+\hyperlink{interface_j_s_q_messages_label}{J\+S\+Q\+Messages\+Label} $\ast$ \hyperlink{interface_j_s_q_messages_collection_view_cell_aa80fd02c40852bdcb3a0ff5b8e91a650}{cell\+Top\+Label}
+\item 
+\hyperlink{interface_j_s_q_messages_label}{J\+S\+Q\+Messages\+Label} $\ast$ \hyperlink{interface_j_s_q_messages_collection_view_cell_a98c5acf6e191c92bef28da48b14015b0}{message\+Bubble\+Top\+Label}
+\item 
+\hyperlink{interface_j_s_q_messages_label}{J\+S\+Q\+Messages\+Label} $\ast$ \hyperlink{interface_j_s_q_messages_collection_view_cell_a324cc242829d32cc3662bd606dd15994}{cell\+Bottom\+Label}
+\item 
+\hyperlink{interface_j_s_q_messages_cell_text_view}{J\+S\+Q\+Messages\+Cell\+Text\+View} $\ast$ \hyperlink{interface_j_s_q_messages_collection_view_cell_ac6168dfa70a2239ff4633552c5bfe87a}{text\+View}
+\item 
+U\+I\+Image\+View $\ast$ \hyperlink{interface_j_s_q_messages_collection_view_cell_a3488fe5544e3f4f81bd903526170dcbc}{message\+Bubble\+Image\+View}
+\item 
+U\+I\+View $\ast$ \hyperlink{interface_j_s_q_messages_collection_view_cell_a0944e4a1d12b598eef21a2c158cef6e8}{message\+Bubble\+Container\+View}
+\item 
+U\+I\+Image\+View $\ast$ \hyperlink{interface_j_s_q_messages_collection_view_cell_a23cc2af0baa373c2c6712d399ac88999}{avatar\+Image\+View}
+\item 
+U\+I\+View $\ast$ \hyperlink{interface_j_s_q_messages_collection_view_cell_a5cd207504172b57ba6942158dc46e294}{avatar\+Container\+View}
+\item 
+U\+I\+View $\ast$ \hyperlink{interface_j_s_q_messages_collection_view_cell_afa76abf130341fe6e18db8b544f22282}{media\+View}
+\item 
+U\+I\+Tap\+Gesture\+Recognizer $\ast$ \hyperlink{interface_j_s_q_messages_collection_view_cell_a64f75d9084b7476a7a2646b14eff105a}{tap\+Gesture\+Recognizer}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \hyperlink{interface_j_s_q_messages_collection_view_cell}{J\+S\+Q\+Messages\+Collection\+View\+Cell}} is an abstract base class that presents the content for a single message data item when that item is within the collection view’s visible bounds. The layout and presentation of cells is managed by the collection view and its corresponding layout object.
+
+\begin{DoxyWarning}{Warning}
+This class is intended to be subclassed. You should not use it directly.
+\end{DoxyWarning}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_j_s_q_messages_collection_view_cell_incoming}{J\+S\+Q\+Messages\+Collection\+View\+Cell\+Incoming}. 
+
+\hyperlink{interface_j_s_q_messages_collection_view_cell_outgoing}{J\+S\+Q\+Messages\+Collection\+View\+Cell\+Outgoing}. 
+\end{DoxySeeAlso}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_j_s_q_messages_collection_view_cell_a00c74350ff61f69a5cba4b2f4d54b22b}{}\index{J\+S\+Q\+Messages\+Collection\+View\+Cell@{J\+S\+Q\+Messages\+Collection\+View\+Cell}!cell\+Reuse\+Identifier@{cell\+Reuse\+Identifier}}
+\index{cell\+Reuse\+Identifier@{cell\+Reuse\+Identifier}!J\+S\+Q\+Messages\+Collection\+View\+Cell@{J\+S\+Q\+Messages\+Collection\+View\+Cell}}
+\subsubsection[{cell\+Reuse\+Identifier}]{\setlength{\rightskip}{0pt plus 5cm}+ (N\+S\+String $\ast$) cell\+Reuse\+Identifier 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_messages_collection_view_cell_a00c74350ff61f69a5cba4b2f4d54b22b}
+Returns the default string used to identify a reusable cell for text message items.
+
+\begin{DoxyReturn}{Returns}
+The string used to identify a reusable cell. 
+\end{DoxyReturn}
+\hypertarget{interface_j_s_q_messages_collection_view_cell_aecfdef4a089939052879052f6613c703}{}\index{J\+S\+Q\+Messages\+Collection\+View\+Cell@{J\+S\+Q\+Messages\+Collection\+View\+Cell}!media\+Cell\+Reuse\+Identifier@{media\+Cell\+Reuse\+Identifier}}
+\index{media\+Cell\+Reuse\+Identifier@{media\+Cell\+Reuse\+Identifier}!J\+S\+Q\+Messages\+Collection\+View\+Cell@{J\+S\+Q\+Messages\+Collection\+View\+Cell}}
+\subsubsection[{media\+Cell\+Reuse\+Identifier}]{\setlength{\rightskip}{0pt plus 5cm}+ (N\+S\+String $\ast$) media\+Cell\+Reuse\+Identifier 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_messages_collection_view_cell_aecfdef4a089939052879052f6613c703}
+Returns the default string used to identify a reusable cell for media message items.
+
+\begin{DoxyReturn}{Returns}
+The string used to identify a reusable cell. 
+\end{DoxyReturn}
+\hypertarget{interface_j_s_q_messages_collection_view_cell_aaa9d7b27429f84b2fd893033ab115c8f}{}\index{J\+S\+Q\+Messages\+Collection\+View\+Cell@{J\+S\+Q\+Messages\+Collection\+View\+Cell}!nib@{nib}}
+\index{nib@{nib}!J\+S\+Q\+Messages\+Collection\+View\+Cell@{J\+S\+Q\+Messages\+Collection\+View\+Cell}}
+\subsubsection[{nib}]{\setlength{\rightskip}{0pt plus 5cm}+ (U\+I\+Nib $\ast$) nib 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_messages_collection_view_cell_aaa9d7b27429f84b2fd893033ab115c8f}
+Returns the {\ttfamily U\+I\+Nib} object initialized for the cell.
+
+\begin{DoxyReturn}{Returns}
+The initialized {\ttfamily U\+I\+Nib} object or {\ttfamily nil} if there were errors during initialization or the nib file could not be located. 
+\end{DoxyReturn}
+\hypertarget{interface_j_s_q_messages_collection_view_cell_aa64ca6a7dc551521571da824faf2ac46}{}\index{J\+S\+Q\+Messages\+Collection\+View\+Cell@{J\+S\+Q\+Messages\+Collection\+View\+Cell}!register\+Menu\+Action\+:@{register\+Menu\+Action\+:}}
+\index{register\+Menu\+Action\+:@{register\+Menu\+Action\+:}!J\+S\+Q\+Messages\+Collection\+View\+Cell@{J\+S\+Q\+Messages\+Collection\+View\+Cell}}
+\subsubsection[{register\+Menu\+Action\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) register\+Menu\+Action\+: 
+\begin{DoxyParamCaption}
+\item[{(S\+E\+L)}]{action}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_messages_collection_view_cell_aa64ca6a7dc551521571da824faf2ac46}
+Registers an action to be available in the cell\textquotesingle{}s menu.
+
+
+\begin{DoxyParams}{Parameters}
+{\em action} & The selector to register with the cell.\\
+\hline
+\end{DoxyParams}
+Non-\/standard or non-\/system actions must be added to the {\ttfamily U\+I\+Menu\+Controller} manually. You can do this by creating a new {\ttfamily U\+I\+Menu\+Item} and adding it via the controller\textquotesingle{}s {\ttfamily menu\+Items} property.
+
+\begin{DoxyWarning}{Warning}
+Note that all message cells share the all actions registered here. 
+\end{DoxyWarning}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_j_s_q_messages_collection_view_cell_a5cd207504172b57ba6942158dc46e294}{}\index{J\+S\+Q\+Messages\+Collection\+View\+Cell@{J\+S\+Q\+Messages\+Collection\+View\+Cell}!avatar\+Container\+View@{avatar\+Container\+View}}
+\index{avatar\+Container\+View@{avatar\+Container\+View}!J\+S\+Q\+Messages\+Collection\+View\+Cell@{J\+S\+Q\+Messages\+Collection\+View\+Cell}}
+\subsubsection[{avatar\+Container\+View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+View$\ast$) avatar\+Container\+View\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}\label{interface_j_s_q_messages_collection_view_cell_a5cd207504172b57ba6942158dc46e294}
+Returns the avatar container view of the cell. This view is the superview of the cell\textquotesingle{}s avatar\+Image\+View.
+
+You may customize the cell by adding custom views to this container view. To do so, override {\ttfamily collection\+View\+:cell\+For\+Item\+At\+Index\+Path\+:}
+
+\begin{DoxyWarning}{Warning}
+You should not try to manipulate any properties of this view, for example adjusting its frame, nor should you remove this view from the cell or remove any of its subviews. Doing so could result in unexpected behavior. 
+\end{DoxyWarning}
+\hypertarget{interface_j_s_q_messages_collection_view_cell_a23cc2af0baa373c2c6712d399ac88999}{}\index{J\+S\+Q\+Messages\+Collection\+View\+Cell@{J\+S\+Q\+Messages\+Collection\+View\+Cell}!avatar\+Image\+View@{avatar\+Image\+View}}
+\index{avatar\+Image\+View@{avatar\+Image\+View}!J\+S\+Q\+Messages\+Collection\+View\+Cell@{J\+S\+Q\+Messages\+Collection\+View\+Cell}}
+\subsubsection[{avatar\+Image\+View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Image\+View$\ast$) avatar\+Image\+View\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}\label{interface_j_s_q_messages_collection_view_cell_a23cc2af0baa373c2c6712d399ac88999}
+Returns the avatar image view of the cell that is responsible for displaying avatar images. \hypertarget{interface_j_s_q_messages_collection_view_cell_a324cc242829d32cc3662bd606dd15994}{}\index{J\+S\+Q\+Messages\+Collection\+View\+Cell@{J\+S\+Q\+Messages\+Collection\+View\+Cell}!cell\+Bottom\+Label@{cell\+Bottom\+Label}}
+\index{cell\+Bottom\+Label@{cell\+Bottom\+Label}!J\+S\+Q\+Messages\+Collection\+View\+Cell@{J\+S\+Q\+Messages\+Collection\+View\+Cell}}
+\subsubsection[{cell\+Bottom\+Label}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf J\+S\+Q\+Messages\+Label}$\ast$) cell\+Bottom\+Label\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}\label{interface_j_s_q_messages_collection_view_cell_a324cc242829d32cc3662bd606dd15994}
+Returns the label that is pinned to the bottom of the cell. This label is most commonly used to display message delivery status. \hypertarget{interface_j_s_q_messages_collection_view_cell_aa80fd02c40852bdcb3a0ff5b8e91a650}{}\index{J\+S\+Q\+Messages\+Collection\+View\+Cell@{J\+S\+Q\+Messages\+Collection\+View\+Cell}!cell\+Top\+Label@{cell\+Top\+Label}}
+\index{cell\+Top\+Label@{cell\+Top\+Label}!J\+S\+Q\+Messages\+Collection\+View\+Cell@{J\+S\+Q\+Messages\+Collection\+View\+Cell}}
+\subsubsection[{cell\+Top\+Label}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf J\+S\+Q\+Messages\+Label}$\ast$) cell\+Top\+Label\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}\label{interface_j_s_q_messages_collection_view_cell_aa80fd02c40852bdcb3a0ff5b8e91a650}
+Returns the label that is pinned to the top of the cell. This label is most commonly used to display message timestamps. \hypertarget{interface_j_s_q_messages_collection_view_cell_a4b7a40e8a0fc1a0e32c8817286385737}{}\index{J\+S\+Q\+Messages\+Collection\+View\+Cell@{J\+S\+Q\+Messages\+Collection\+View\+Cell}!delegate@{delegate}}
+\index{delegate@{delegate}!J\+S\+Q\+Messages\+Collection\+View\+Cell@{J\+S\+Q\+Messages\+Collection\+View\+Cell}}
+\subsubsection[{delegate}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id$<${\bf J\+S\+Q\+Messages\+Collection\+View\+Cell\+Delegate}$>$) delegate\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}\label{interface_j_s_q_messages_collection_view_cell_a4b7a40e8a0fc1a0e32c8817286385737}
+The object that acts as the delegate for the cell. \hypertarget{interface_j_s_q_messages_collection_view_cell_afa76abf130341fe6e18db8b544f22282}{}\index{J\+S\+Q\+Messages\+Collection\+View\+Cell@{J\+S\+Q\+Messages\+Collection\+View\+Cell}!media\+View@{media\+View}}
+\index{media\+View@{media\+View}!J\+S\+Q\+Messages\+Collection\+View\+Cell@{J\+S\+Q\+Messages\+Collection\+View\+Cell}}
+\subsubsection[{media\+View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+View$\ast$) media\+View\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}\label{interface_j_s_q_messages_collection_view_cell_afa76abf130341fe6e18db8b544f22282}
+The media view of the cell. This view displays the contents of a media message.
+
+\begin{DoxyWarning}{Warning}
+If this value is non-\/nil, then text\+View and message\+Bubble\+Image\+View will both be {\ttfamily nil}. 
+\end{DoxyWarning}
+\hypertarget{interface_j_s_q_messages_collection_view_cell_a0944e4a1d12b598eef21a2c158cef6e8}{}\index{J\+S\+Q\+Messages\+Collection\+View\+Cell@{J\+S\+Q\+Messages\+Collection\+View\+Cell}!message\+Bubble\+Container\+View@{message\+Bubble\+Container\+View}}
+\index{message\+Bubble\+Container\+View@{message\+Bubble\+Container\+View}!J\+S\+Q\+Messages\+Collection\+View\+Cell@{J\+S\+Q\+Messages\+Collection\+View\+Cell}}
+\subsubsection[{message\+Bubble\+Container\+View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+View$\ast$) message\+Bubble\+Container\+View\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}\label{interface_j_s_q_messages_collection_view_cell_a0944e4a1d12b598eef21a2c158cef6e8}
+Returns the message bubble container view of the cell. This view is the superview of the cell\textquotesingle{}s text\+View and message\+Bubble\+Image\+View.
+
+You may customize the cell by adding custom views to this container view. To do so, override {\ttfamily collection\+View\+:cell\+For\+Item\+At\+Index\+Path\+:}
+
+\begin{DoxyWarning}{Warning}
+You should not try to manipulate any properties of this view, for example adjusting its frame, nor should you remove this view from the cell or remove any of its subviews. Doing so could result in unexpected behavior. 
+\end{DoxyWarning}
+\hypertarget{interface_j_s_q_messages_collection_view_cell_a3488fe5544e3f4f81bd903526170dcbc}{}\index{J\+S\+Q\+Messages\+Collection\+View\+Cell@{J\+S\+Q\+Messages\+Collection\+View\+Cell}!message\+Bubble\+Image\+View@{message\+Bubble\+Image\+View}}
+\index{message\+Bubble\+Image\+View@{message\+Bubble\+Image\+View}!J\+S\+Q\+Messages\+Collection\+View\+Cell@{J\+S\+Q\+Messages\+Collection\+View\+Cell}}
+\subsubsection[{message\+Bubble\+Image\+View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Image\+View$\ast$) message\+Bubble\+Image\+View\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}\label{interface_j_s_q_messages_collection_view_cell_a3488fe5544e3f4f81bd903526170dcbc}
+Returns the bubble image view of the cell that is responsible for displaying message bubble images.
+
+\begin{DoxyWarning}{Warning}
+If media\+View returns a non-\/nil view, then this value will be {\ttfamily nil}. 
+\end{DoxyWarning}
+\hypertarget{interface_j_s_q_messages_collection_view_cell_a98c5acf6e191c92bef28da48b14015b0}{}\index{J\+S\+Q\+Messages\+Collection\+View\+Cell@{J\+S\+Q\+Messages\+Collection\+View\+Cell}!message\+Bubble\+Top\+Label@{message\+Bubble\+Top\+Label}}
+\index{message\+Bubble\+Top\+Label@{message\+Bubble\+Top\+Label}!J\+S\+Q\+Messages\+Collection\+View\+Cell@{J\+S\+Q\+Messages\+Collection\+View\+Cell}}
+\subsubsection[{message\+Bubble\+Top\+Label}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf J\+S\+Q\+Messages\+Label}$\ast$) message\+Bubble\+Top\+Label\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}\label{interface_j_s_q_messages_collection_view_cell_a98c5acf6e191c92bef28da48b14015b0}
+Returns the label that is pinned just above the message\+Bubble\+Image\+View, and below the cell\+Top\+Label. This label is most commonly used to display the message sender. \hypertarget{interface_j_s_q_messages_collection_view_cell_a64f75d9084b7476a7a2646b14eff105a}{}\index{J\+S\+Q\+Messages\+Collection\+View\+Cell@{J\+S\+Q\+Messages\+Collection\+View\+Cell}!tap\+Gesture\+Recognizer@{tap\+Gesture\+Recognizer}}
+\index{tap\+Gesture\+Recognizer@{tap\+Gesture\+Recognizer}!J\+S\+Q\+Messages\+Collection\+View\+Cell@{J\+S\+Q\+Messages\+Collection\+View\+Cell}}
+\subsubsection[{tap\+Gesture\+Recognizer}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Tap\+Gesture\+Recognizer$\ast$) tap\+Gesture\+Recognizer\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}\label{interface_j_s_q_messages_collection_view_cell_a64f75d9084b7476a7a2646b14eff105a}
+Returns the underlying gesture recognizer for tap gestures in the avatar\+Image\+View of the cell. This gesture handles the tap event for the avatar\+Image\+View and notifies the cell\textquotesingle{}s delegate. \hypertarget{interface_j_s_q_messages_collection_view_cell_ac6168dfa70a2239ff4633552c5bfe87a}{}\index{J\+S\+Q\+Messages\+Collection\+View\+Cell@{J\+S\+Q\+Messages\+Collection\+View\+Cell}!text\+View@{text\+View}}
+\index{text\+View@{text\+View}!J\+S\+Q\+Messages\+Collection\+View\+Cell@{J\+S\+Q\+Messages\+Collection\+View\+Cell}}
+\subsubsection[{text\+View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf J\+S\+Q\+Messages\+Cell\+Text\+View}$\ast$) text\+View\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}\label{interface_j_s_q_messages_collection_view_cell_ac6168dfa70a2239ff4633552c5bfe87a}
+Returns the text view of the cell. This text view contains the message body text.
+
+\begin{DoxyWarning}{Warning}
+If media\+View returns a non-\/nil view, then this value will be {\ttfamily nil}. 
+\end{DoxyWarning}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Vendors/\+J\+S\+Q\+Messages\+View\+Controller/\+Views/J\+S\+Q\+Messages\+Collection\+View\+Cell.\+h\item 
+Vendors/\+J\+S\+Q\+Messages\+View\+Controller/\+Views/J\+S\+Q\+Messages\+Collection\+View\+Cell.\+m\end{DoxyCompactItemize}

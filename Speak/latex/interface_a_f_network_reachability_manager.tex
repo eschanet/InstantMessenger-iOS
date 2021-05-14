@@ -1,0 +1,201 @@
+\hypertarget{interface_a_f_network_reachability_manager}{}\section{A\+F\+Network\+Reachability\+Manager Class Reference}
+\label{interface_a_f_network_reachability_manager}\index{A\+F\+Network\+Reachability\+Manager@{A\+F\+Network\+Reachability\+Manager}}
+
+
+{\ttfamily \#import $<$A\+F\+Network\+Reachability\+Manager.\+h$>$}
+
+Inheritance diagram for A\+F\+Network\+Reachability\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_a_f_network_reachability_manager}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{Indent}{\bf Starting \& Stopping Reachability Monitoring}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_a_f_network_reachability_manager_aa455bdcd0711021421aef6e2f87f62d7}{start\+Monitoring}
+\item 
+(void) -\/ \hyperlink{interface_a_f_network_reachability_manager_a3494d1eb9e2537cbd828e3632fc8e6ca}{stop\+Monitoring}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Getting Localized Reachability Description}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(N\+S\+String $\ast$) -\/ \hyperlink{interface_a_f_network_reachability_manager_afe6a32b5ab75661a802e6bbefaa74e2d}{localized\+Network\+Reachability\+Status\+String}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Setting Network Reachability Change Callback}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_a_f_network_reachability_manager_af699fc54a9252690a660e8454af70dc9}{set\+Reachability\+Status\+Change\+Block\+:}
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+A\+F\+Network\+Reachability\+Status \hyperlink{interface_a_f_network_reachability_manager_a4de1790d27df4c6a3586d3961d9c7b77}{network\+Reachability\+Status}
+\item 
+B\+O\+O\+L \hyperlink{interface_a_f_network_reachability_manager_a9c2f8249d282f08b770172b86d021983}{reachable}
+\item 
+B\+O\+O\+L \hyperlink{interface_a_f_network_reachability_manager_a3bf818f1daba31c4b15949679d348025}{reachable\+Via\+W\+W\+A\+N}
+\item 
+B\+O\+O\+L \hyperlink{interface_a_f_network_reachability_manager_a8ada1e526c4f63340a2f893fe4b4e947}{reachable\+Via\+Wi\+Fi}
+\end{DoxyCompactItemize}
+\subsection*{Initialization}
+\label{_amgrp61bcd96a2c1f8026527cbf2019d6e9a4}%
+
+
+ 
+
+ \begin{DoxyCompactItemize}
+\item 
+(instancetype) + \hyperlink{interface_a_f_network_reachability_manager_abc98fb713ecc5de942904768512ea1d0}{shared\+Manager}
+\item 
+(instancetype) + \hyperlink{interface_a_f_network_reachability_manager_a6bb357339197c29a2305519e7e4622f3}{manager\+For\+Domain\+:}
+\item 
+(instancetype) + \hyperlink{interface_a_f_network_reachability_manager_abcf59bed68830fd7440310b3772022f4}{manager\+For\+Address\+:}
+\item 
+(instancetype) -\/ \hyperlink{interface_a_f_network_reachability_manager_a14b6db66e80c81c86cb698e98f991392}{init\+With\+Reachability\+:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+{\ttfamily \hyperlink{interface_a_f_network_reachability_manager}{A\+F\+Network\+Reachability\+Manager}} monitors the reachability of domains, and addresses for both W\+W\+A\+N and Wi\+Fi network interfaces.
+
+Reachability can be used to determine background information about why a network operation failed, or to trigger a network operation retrying when a connection is established. It should not be used to prevent a user from initiating a network request, as it\textquotesingle{}s possible that an initial request may be required to establish reachability.
+
+See Apple\textquotesingle{}s Reachability Sample Code (\href{https://developer.apple.com/library/ios/samplecode/reachability/}{\tt https\+://developer.\+apple.\+com/library/ios/samplecode/reachability/})
+
+\begin{DoxyWarning}{Warning}
+Instances of {\ttfamily \hyperlink{interface_a_f_network_reachability_manager}{A\+F\+Network\+Reachability\+Manager}} must be started with {\ttfamily -\/start\+Monitoring} before reachability status can be determined. 
+\end{DoxyWarning}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_a_f_network_reachability_manager_a14b6db66e80c81c86cb698e98f991392}{}\index{A\+F\+Network\+Reachability\+Manager@{A\+F\+Network\+Reachability\+Manager}!init\+With\+Reachability\+:@{init\+With\+Reachability\+:}}
+\index{init\+With\+Reachability\+:@{init\+With\+Reachability\+:}!A\+F\+Network\+Reachability\+Manager@{A\+F\+Network\+Reachability\+Manager}}
+\subsubsection[{init\+With\+Reachability\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (instancetype) init\+With\+Reachability\+: 
+\begin{DoxyParamCaption}
+\item[{(S\+C\+Network\+Reachability\+Ref)}]{N\+S\+\_\+\+D\+E\+S\+I\+G\+N\+A\+T\+E\+D\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+E\+R}
+\end{DoxyParamCaption}
+}\label{interface_a_f_network_reachability_manager_a14b6db66e80c81c86cb698e98f991392}
+Initializes an instance of a network reachability manager from the specified reachability object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em reachability} & The reachability object to monitor.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An initialized network reachability manager, actively monitoring the specified reachability. 
+\end{DoxyReturn}
+\hypertarget{interface_a_f_network_reachability_manager_afe6a32b5ab75661a802e6bbefaa74e2d}{}\index{A\+F\+Network\+Reachability\+Manager@{A\+F\+Network\+Reachability\+Manager}!localized\+Network\+Reachability\+Status\+String@{localized\+Network\+Reachability\+Status\+String}}
+\index{localized\+Network\+Reachability\+Status\+String@{localized\+Network\+Reachability\+Status\+String}!A\+F\+Network\+Reachability\+Manager@{A\+F\+Network\+Reachability\+Manager}}
+\subsubsection[{localized\+Network\+Reachability\+Status\+String}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String $\ast$) localized\+Network\+Reachability\+Status\+String 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_a_f_network_reachability_manager_afe6a32b5ab75661a802e6bbefaa74e2d}
+Returns a localized string representation of the current network reachability status. \hypertarget{interface_a_f_network_reachability_manager_abcf59bed68830fd7440310b3772022f4}{}\index{A\+F\+Network\+Reachability\+Manager@{A\+F\+Network\+Reachability\+Manager}!manager\+For\+Address\+:@{manager\+For\+Address\+:}}
+\index{manager\+For\+Address\+:@{manager\+For\+Address\+:}!A\+F\+Network\+Reachability\+Manager@{A\+F\+Network\+Reachability\+Manager}}
+\subsubsection[{manager\+For\+Address\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (instancetype) manager\+For\+Address\+: 
+\begin{DoxyParamCaption}
+\item[{(const void $\ast$)}]{address}
+\end{DoxyParamCaption}
+}\label{interface_a_f_network_reachability_manager_abcf59bed68830fd7440310b3772022f4}
+Creates and returns a network reachability manager for the socket address.
+
+
+\begin{DoxyParams}{Parameters}
+{\em address} & The socket address ({\ttfamily sockaddr\+\_\+in}) used to evaluate network reachability.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An initialized network reachability manager, actively monitoring the specified socket address. 
+\end{DoxyReturn}
+\hypertarget{interface_a_f_network_reachability_manager_a6bb357339197c29a2305519e7e4622f3}{}\index{A\+F\+Network\+Reachability\+Manager@{A\+F\+Network\+Reachability\+Manager}!manager\+For\+Domain\+:@{manager\+For\+Domain\+:}}
+\index{manager\+For\+Domain\+:@{manager\+For\+Domain\+:}!A\+F\+Network\+Reachability\+Manager@{A\+F\+Network\+Reachability\+Manager}}
+\subsubsection[{manager\+For\+Domain\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (instancetype) manager\+For\+Domain\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{domain}
+\end{DoxyParamCaption}
+}\label{interface_a_f_network_reachability_manager_a6bb357339197c29a2305519e7e4622f3}
+Creates and returns a network reachability manager for the specified domain.
+
+
+\begin{DoxyParams}{Parameters}
+{\em domain} & The domain used to evaluate network reachability.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An initialized network reachability manager, actively monitoring the specified domain. 
+\end{DoxyReturn}
+\hypertarget{interface_a_f_network_reachability_manager_af699fc54a9252690a660e8454af70dc9}{}\index{A\+F\+Network\+Reachability\+Manager@{A\+F\+Network\+Reachability\+Manager}!set\+Reachability\+Status\+Change\+Block\+:@{set\+Reachability\+Status\+Change\+Block\+:}}
+\index{set\+Reachability\+Status\+Change\+Block\+:@{set\+Reachability\+Status\+Change\+Block\+:}!A\+F\+Network\+Reachability\+Manager@{A\+F\+Network\+Reachability\+Manager}}
+\subsubsection[{set\+Reachability\+Status\+Change\+Block\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\+Reachability\+Status\+Change\+Block\+: 
+\begin{DoxyParamCaption}
+\item[{(void($^\wedge$)(A\+F\+Network\+Reachability\+Status status))}]{block}
+\end{DoxyParamCaption}
+}\label{interface_a_f_network_reachability_manager_af699fc54a9252690a660e8454af70dc9}
+Sets a callback to be executed when the network availability of the {\ttfamily base\+U\+R\+L} host changes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em block} & A block object to be executed when the network availability of the {\ttfamily base\+U\+R\+L} host changes.. This block has no return value and takes a single argument which represents the various reachability states from the device to the {\ttfamily base\+U\+R\+L}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_a_f_network_reachability_manager_abc98fb713ecc5de942904768512ea1d0}{}\index{A\+F\+Network\+Reachability\+Manager@{A\+F\+Network\+Reachability\+Manager}!shared\+Manager@{shared\+Manager}}
+\index{shared\+Manager@{shared\+Manager}!A\+F\+Network\+Reachability\+Manager@{A\+F\+Network\+Reachability\+Manager}}
+\subsubsection[{shared\+Manager}]{\setlength{\rightskip}{0pt plus 5cm}+ (instancetype) shared\+Manager 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_a_f_network_reachability_manager_abc98fb713ecc5de942904768512ea1d0}
+Returns the shared network reachability manager. \hypertarget{interface_a_f_network_reachability_manager_aa455bdcd0711021421aef6e2f87f62d7}{}\index{A\+F\+Network\+Reachability\+Manager@{A\+F\+Network\+Reachability\+Manager}!start\+Monitoring@{start\+Monitoring}}
+\index{start\+Monitoring@{start\+Monitoring}!A\+F\+Network\+Reachability\+Manager@{A\+F\+Network\+Reachability\+Manager}}
+\subsubsection[{start\+Monitoring}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) start\+Monitoring 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_a_f_network_reachability_manager_aa455bdcd0711021421aef6e2f87f62d7}
+Starts monitoring for changes in network reachability status. \hypertarget{interface_a_f_network_reachability_manager_a3494d1eb9e2537cbd828e3632fc8e6ca}{}\index{A\+F\+Network\+Reachability\+Manager@{A\+F\+Network\+Reachability\+Manager}!stop\+Monitoring@{stop\+Monitoring}}
+\index{stop\+Monitoring@{stop\+Monitoring}!A\+F\+Network\+Reachability\+Manager@{A\+F\+Network\+Reachability\+Manager}}
+\subsubsection[{stop\+Monitoring}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) stop\+Monitoring 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_a_f_network_reachability_manager_a3494d1eb9e2537cbd828e3632fc8e6ca}
+Stops monitoring for changes in network reachability status. 
+
+\subsection{Property Documentation}
+\hypertarget{interface_a_f_network_reachability_manager_a4de1790d27df4c6a3586d3961d9c7b77}{}\index{A\+F\+Network\+Reachability\+Manager@{A\+F\+Network\+Reachability\+Manager}!network\+Reachability\+Status@{network\+Reachability\+Status}}
+\index{network\+Reachability\+Status@{network\+Reachability\+Status}!A\+F\+Network\+Reachability\+Manager@{A\+F\+Network\+Reachability\+Manager}}
+\subsubsection[{network\+Reachability\+Status}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (A\+F\+Network\+Reachability\+Status) network\+Reachability\+Status\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_a_f_network_reachability_manager_a4de1790d27df4c6a3586d3961d9c7b77}
+The current network reachability status. \hypertarget{interface_a_f_network_reachability_manager_a9c2f8249d282f08b770172b86d021983}{}\index{A\+F\+Network\+Reachability\+Manager@{A\+F\+Network\+Reachability\+Manager}!reachable@{reachable}}
+\index{reachable@{reachable}!A\+F\+Network\+Reachability\+Manager@{A\+F\+Network\+Reachability\+Manager}}
+\subsubsection[{reachable}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) reachable\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_a_f_network_reachability_manager_a9c2f8249d282f08b770172b86d021983}
+Whether or not the network is currently reachable. \hypertarget{interface_a_f_network_reachability_manager_a8ada1e526c4f63340a2f893fe4b4e947}{}\index{A\+F\+Network\+Reachability\+Manager@{A\+F\+Network\+Reachability\+Manager}!reachable\+Via\+Wi\+Fi@{reachable\+Via\+Wi\+Fi}}
+\index{reachable\+Via\+Wi\+Fi@{reachable\+Via\+Wi\+Fi}!A\+F\+Network\+Reachability\+Manager@{A\+F\+Network\+Reachability\+Manager}}
+\subsubsection[{reachable\+Via\+Wi\+Fi}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) reachable\+Via\+Wi\+Fi\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_a_f_network_reachability_manager_a8ada1e526c4f63340a2f893fe4b4e947}
+Whether or not the network is currently reachable via Wi\+Fi. \hypertarget{interface_a_f_network_reachability_manager_a3bf818f1daba31c4b15949679d348025}{}\index{A\+F\+Network\+Reachability\+Manager@{A\+F\+Network\+Reachability\+Manager}!reachable\+Via\+W\+W\+A\+N@{reachable\+Via\+W\+W\+A\+N}}
+\index{reachable\+Via\+W\+W\+A\+N@{reachable\+Via\+W\+W\+A\+N}!A\+F\+Network\+Reachability\+Manager@{A\+F\+Network\+Reachability\+Manager}}
+\subsubsection[{reachable\+Via\+W\+W\+A\+N}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) reachable\+Via\+W\+W\+A\+N\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_a_f_network_reachability_manager_a3bf818f1daba31c4b15949679d348025}
+Whether or not the network is currently reachable via W\+W\+A\+N. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Vendors/\+A\+F\+Networking/\+A\+F\+Networking/A\+F\+Network\+Reachability\+Manager.\+h\item 
+Vendors/\+A\+F\+Networking/\+A\+F\+Networking/A\+F\+Network\+Reachability\+Manager.\+m\end{DoxyCompactItemize}

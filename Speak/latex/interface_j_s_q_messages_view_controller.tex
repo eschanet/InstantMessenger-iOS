@@ -1,0 +1,318 @@
+\hypertarget{interface_j_s_q_messages_view_controller}{}\section{J\+S\+Q\+Messages\+View\+Controller Class Reference}
+\label{interface_j_s_q_messages_view_controller}\index{J\+S\+Q\+Messages\+View\+Controller@{J\+S\+Q\+Messages\+View\+Controller}}
+
+
+{\ttfamily \#import $<$J\+S\+Q\+Messages\+View\+Controller.\+h$>$}
+
+Inheritance diagram for J\+S\+Q\+Messages\+View\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.777778cm]{interface_j_s_q_messages_view_controller}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_j_s_q_messages_view_controller_a1ce21634ac1d71de98e329646cb0faa4}{did\+Press\+Send\+Button\+:with\+Message\+Text\+:sender\+Id\+:sender\+Display\+Name\+:date\+:}
+\item 
+(void) -\/ \hyperlink{interface_j_s_q_messages_view_controller_a40c1228bd394c9917f1fc132d87f00d0}{did\+Press\+Accessory\+Button\+:}
+\item 
+(void) -\/ \hyperlink{interface_j_s_q_messages_view_controller_a09ca5ccbf378e5845ff06b92b1584cbb}{finish\+Sending\+Message}
+\item 
+(void) -\/ \hyperlink{interface_j_s_q_messages_view_controller_ae388c190ff18c23156048bdc0b04be81}{finish\+Sending\+Message\+Animated\+:}
+\item 
+(void) -\/ \hyperlink{interface_j_s_q_messages_view_controller_a00f52e97b18f06276be2bbdc284ccc41}{finish\+Receiving\+Message}
+\item 
+(void) -\/ \hyperlink{interface_j_s_q_messages_view_controller_a3dff4f268a5c1b89dbeb79e123a997bf}{finish\+Receiving\+Message\+Animated\+:}
+\item 
+(void) -\/ \hyperlink{interface_j_s_q_messages_view_controller_ab9827df42e5c49ab99f169d2c2f3838b}{scroll\+To\+Bottom\+Animated\+:}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(U\+I\+Nib $\ast$) + \hyperlink{interface_j_s_q_messages_view_controller_a64504ea2b7ca5b674f6c350d6b76f936}{nib}
+\item 
+(instancetype) + \hyperlink{interface_j_s_q_messages_view_controller_a45d9236ec106e8bf890fc2cdd7f9ca40}{messages\+View\+Controller}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interface_j_s_q_messages_collection_view}{J\+S\+Q\+Messages\+Collection\+View} $\ast$ \hyperlink{interface_j_s_q_messages_view_controller_a31c7589123a872e88cdbb530a953069a}{collection\+View}
+\item 
+\hyperlink{interface_j_s_q_messages_input_toolbar}{J\+S\+Q\+Messages\+Input\+Toolbar} $\ast$ \hyperlink{interface_j_s_q_messages_view_controller_adaa2bbc03bed38797ec29d98c3d0c0e0}{input\+Toolbar}
+\item 
+\hyperlink{interface_j_s_q_messages_keyboard_controller}{J\+S\+Q\+Messages\+Keyboard\+Controller} $\ast$ \hyperlink{interface_j_s_q_messages_view_controller_a5952f0a6cbe8edfc1858109732f3d11b}{keyboard\+Controller}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_j_s_q_messages_view_controller_ad034890061c8c276862b34e09252bae8}{sender\+Display\+Name}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_j_s_q_messages_view_controller_afd474f0e4f7923e29a98484090cbdc45}{sender\+Id}
+\item 
+B\+O\+O\+L \hyperlink{interface_j_s_q_messages_view_controller_a19a60a139ad222e77c6d2e266672c9bd}{automatically\+Scrolls\+To\+Most\+Recent\+Message}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_j_s_q_messages_view_controller_af805e4fee4497e23cde6032f2af76aa7}{outgoing\+Cell\+Identifier}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_j_s_q_messages_view_controller_a1cff2419947e6c239c78206477b5223a}{outgoing\+Media\+Cell\+Identifier}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_j_s_q_messages_view_controller_aff50b7f5fd7e55c0bf19a72079b3ce98}{incoming\+Cell\+Identifier}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_j_s_q_messages_view_controller_a2803500d4718ae80d36013c83044ec8e}{incoming\+Media\+Cell\+Identifier}
+\item 
+B\+O\+O\+L \hyperlink{interface_j_s_q_messages_view_controller_ad1eded3a8cfe024fb2914e9250cd2cc8}{show\+Typing\+Indicator}
+\item 
+B\+O\+O\+L \hyperlink{interface_j_s_q_messages_view_controller_a9d7705d74b5543259ad21013b317b0d3}{show\+Load\+Earlier\+Messages\+Header}
+\item 
+C\+G\+Float \hyperlink{interface_j_s_q_messages_view_controller_a43257bbb486c6cf7d31d3f0fe573147d}{top\+Content\+Additional\+Inset}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \hyperlink{interface_j_s_q_messages_view_controller}{J\+S\+Q\+Messages\+View\+Controller}} class is an abstract class that represents a view controller whose content consists of a {\ttfamily \hyperlink{interface_j_s_q_messages_collection_view}{J\+S\+Q\+Messages\+Collection\+View}} and {\ttfamily \hyperlink{interface_j_s_q_messages_input_toolbar}{J\+S\+Q\+Messages\+Input\+Toolbar}} and is specialized to display a messaging interface.
+
+\begin{DoxyWarning}{Warning}
+This class is intended to be subclassed. You should not use it directly. 
+\end{DoxyWarning}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_j_s_q_messages_view_controller_a40c1228bd394c9917f1fc132d87f00d0}{}\index{J\+S\+Q\+Messages\+View\+Controller@{J\+S\+Q\+Messages\+View\+Controller}!did\+Press\+Accessory\+Button\+:@{did\+Press\+Accessory\+Button\+:}}
+\index{did\+Press\+Accessory\+Button\+:@{did\+Press\+Accessory\+Button\+:}!J\+S\+Q\+Messages\+View\+Controller@{J\+S\+Q\+Messages\+View\+Controller}}
+\subsubsection[{did\+Press\+Accessory\+Button\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) did\+Press\+Accessory\+Button\+: 
+\begin{DoxyParamCaption}
+\item[{(U\+I\+Button $\ast$)}]{sender}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_messages_view_controller_a40c1228bd394c9917f1fc132d87f00d0}
+This method is called when the user taps the accessory button on the {\ttfamily input\+Toolbar}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & The accessory button that was pressed by the user. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_j_s_q_messages_view_controller_a1ce21634ac1d71de98e329646cb0faa4}{}\index{J\+S\+Q\+Messages\+View\+Controller@{J\+S\+Q\+Messages\+View\+Controller}!did\+Press\+Send\+Button\+:with\+Message\+Text\+:sender\+Id\+:sender\+Display\+Name\+:date\+:@{did\+Press\+Send\+Button\+:with\+Message\+Text\+:sender\+Id\+:sender\+Display\+Name\+:date\+:}}
+\index{did\+Press\+Send\+Button\+:with\+Message\+Text\+:sender\+Id\+:sender\+Display\+Name\+:date\+:@{did\+Press\+Send\+Button\+:with\+Message\+Text\+:sender\+Id\+:sender\+Display\+Name\+:date\+:}!J\+S\+Q\+Messages\+View\+Controller@{J\+S\+Q\+Messages\+View\+Controller}}
+\subsubsection[{did\+Press\+Send\+Button\+:with\+Message\+Text\+:sender\+Id\+:sender\+Display\+Name\+:date\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) did\+Press\+Send\+Button\+: 
+\begin{DoxyParamCaption}
+\item[{(U\+I\+Button $\ast$)}]{button}
+\item[{withMessageText:(N\+S\+String $\ast$)}]{text}
+\item[{senderId:(N\+S\+String $\ast$)}]{sender\+Id}
+\item[{senderDisplayName:(N\+S\+String $\ast$)}]{sender\+Display\+Name}
+\item[{date:(N\+S\+Date $\ast$)}]{date}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_messages_view_controller_a1ce21634ac1d71de98e329646cb0faa4}
+This method is called when the user taps the send button on the input\+Toolbar after composing a message with the specified data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em button} & The send button that was pressed by the user. \\
+\hline
+{\em text} & The message text. \\
+\hline
+{\em sender\+Id} & The message sender identifier. \\
+\hline
+{\em sender\+Display\+Name} & The message sender display name. \\
+\hline
+{\em date} & The message date. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_j_s_q_messages_view_controller_a00f52e97b18f06276be2bbdc284ccc41}{}\index{J\+S\+Q\+Messages\+View\+Controller@{J\+S\+Q\+Messages\+View\+Controller}!finish\+Receiving\+Message@{finish\+Receiving\+Message}}
+\index{finish\+Receiving\+Message@{finish\+Receiving\+Message}!J\+S\+Q\+Messages\+View\+Controller@{J\+S\+Q\+Messages\+View\+Controller}}
+\subsubsection[{finish\+Receiving\+Message}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) finish\+Receiving\+Message 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_messages_view_controller_a00f52e97b18f06276be2bbdc284ccc41}
+Animates the receiving of a new message. See {\ttfamily finish\+Receiving\+Message\+Animated\+:} for more details.
+
+\begin{DoxySeeAlso}{See also}
+{\ttfamily \hyperlink{interface_j_s_q_messages_view_controller_a3dff4f268a5c1b89dbeb79e123a997bf}{-\/ finish\+Receiving\+Message\+Animated\+:}}. 
+\end{DoxySeeAlso}
+\hypertarget{interface_j_s_q_messages_view_controller_a3dff4f268a5c1b89dbeb79e123a997bf}{}\index{J\+S\+Q\+Messages\+View\+Controller@{J\+S\+Q\+Messages\+View\+Controller}!finish\+Receiving\+Message\+Animated\+:@{finish\+Receiving\+Message\+Animated\+:}}
+\index{finish\+Receiving\+Message\+Animated\+:@{finish\+Receiving\+Message\+Animated\+:}!J\+S\+Q\+Messages\+View\+Controller@{J\+S\+Q\+Messages\+View\+Controller}}
+\subsubsection[{finish\+Receiving\+Message\+Animated\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) finish\+Receiving\+Message\+Animated\+: 
+\begin{DoxyParamCaption}
+\item[{(B\+O\+O\+L)}]{animated}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_messages_view_controller_a3dff4f268a5c1b89dbeb79e123a997bf}
+Completes the \char`\"{}receiving\char`\"{} of a new message by showing the typing indicator, adding a new collection view cell in the collection view, reloading the collection view, and scrolling to the newly sent message as specified by {\ttfamily automatically\+Scrolls\+To\+Most\+Recent\+Message}. Scrolling to the new message can be animated as specified by the animated parameter.
+
+
+\begin{DoxyParams}{Parameters}
+{\em animated} & Specifies whether the receiving of a message should be animated or not. Pass {\ttfamily Y\+E\+S} to animate changes, {\ttfamily N\+O} otherwise.\\
+\hline
+\end{DoxyParams}
+You should call this method after adding a new \char`\"{}received\char`\"{} message to your data source and performing any related tasks.
+
+\begin{DoxySeeAlso}{See also}
+{\ttfamily \hyperlink{interface_j_s_q_messages_view_controller_a19a60a139ad222e77c6d2e266672c9bd}{automatically\+Scrolls\+To\+Most\+Recent\+Message}}. 
+\end{DoxySeeAlso}
+\hypertarget{interface_j_s_q_messages_view_controller_a09ca5ccbf378e5845ff06b92b1584cbb}{}\index{J\+S\+Q\+Messages\+View\+Controller@{J\+S\+Q\+Messages\+View\+Controller}!finish\+Sending\+Message@{finish\+Sending\+Message}}
+\index{finish\+Sending\+Message@{finish\+Sending\+Message}!J\+S\+Q\+Messages\+View\+Controller@{J\+S\+Q\+Messages\+View\+Controller}}
+\subsubsection[{finish\+Sending\+Message}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) finish\+Sending\+Message 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_messages_view_controller_a09ca5ccbf378e5845ff06b92b1584cbb}
+Animates the sending of a new message. See {\ttfamily finish\+Sending\+Message\+Animated\+:} for more details.
+
+\begin{DoxySeeAlso}{See also}
+{\ttfamily \hyperlink{interface_j_s_q_messages_view_controller_ae388c190ff18c23156048bdc0b04be81}{-\/ finish\+Sending\+Message\+Animated\+:}}. 
+\end{DoxySeeAlso}
+\hypertarget{interface_j_s_q_messages_view_controller_ae388c190ff18c23156048bdc0b04be81}{}\index{J\+S\+Q\+Messages\+View\+Controller@{J\+S\+Q\+Messages\+View\+Controller}!finish\+Sending\+Message\+Animated\+:@{finish\+Sending\+Message\+Animated\+:}}
+\index{finish\+Sending\+Message\+Animated\+:@{finish\+Sending\+Message\+Animated\+:}!J\+S\+Q\+Messages\+View\+Controller@{J\+S\+Q\+Messages\+View\+Controller}}
+\subsubsection[{finish\+Sending\+Message\+Animated\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) finish\+Sending\+Message\+Animated\+: 
+\begin{DoxyParamCaption}
+\item[{(B\+O\+O\+L)}]{animated}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_messages_view_controller_ae388c190ff18c23156048bdc0b04be81}
+Completes the \char`\"{}sending\char`\"{} of a new message by resetting the {\ttfamily input\+Toolbar}, adding a new collection view cell in the collection view, reloading the collection view, and scrolling to the newly sent message as specified by {\ttfamily automatically\+Scrolls\+To\+Most\+Recent\+Message}. Scrolling to the new message can be animated as specified by the animated parameter.
+
+
+\begin{DoxyParams}{Parameters}
+{\em animated} & Specifies whether the sending of a message should be animated or not. Pass {\ttfamily Y\+E\+S} to animate changes, {\ttfamily N\+O} otherwise.\\
+\hline
+\end{DoxyParams}
+You should call this method at the end of {\ttfamily did\+Press\+Send\+Button\+: with\+Message\+Text\+: sender\+Id\+: sender\+Display\+Name\+: date} after adding the new message to your data source and performing any related tasks.
+
+\begin{DoxySeeAlso}{See also}
+{\ttfamily \hyperlink{interface_j_s_q_messages_view_controller_a19a60a139ad222e77c6d2e266672c9bd}{automatically\+Scrolls\+To\+Most\+Recent\+Message}}. 
+\end{DoxySeeAlso}
+\hypertarget{interface_j_s_q_messages_view_controller_a45d9236ec106e8bf890fc2cdd7f9ca40}{}\index{J\+S\+Q\+Messages\+View\+Controller@{J\+S\+Q\+Messages\+View\+Controller}!messages\+View\+Controller@{messages\+View\+Controller}}
+\index{messages\+View\+Controller@{messages\+View\+Controller}!J\+S\+Q\+Messages\+View\+Controller@{J\+S\+Q\+Messages\+View\+Controller}}
+\subsubsection[{messages\+View\+Controller}]{\setlength{\rightskip}{0pt plus 5cm}+ (instancetype) messages\+View\+Controller 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_messages_view_controller_a45d9236ec106e8bf890fc2cdd7f9ca40}
+Creates and returns a new {\ttfamily \hyperlink{interface_j_s_q_messages_view_controller}{J\+S\+Q\+Messages\+View\+Controller}} object.
+
+This is the designated initializer for programmatic instantiation.
+
+\begin{DoxyReturn}{Returns}
+An initialized {\ttfamily \hyperlink{interface_j_s_q_messages_view_controller}{J\+S\+Q\+Messages\+View\+Controller}} object if successful, {\ttfamily nil} otherwise. 
+\end{DoxyReturn}
+\hypertarget{interface_j_s_q_messages_view_controller_a64504ea2b7ca5b674f6c350d6b76f936}{}\index{J\+S\+Q\+Messages\+View\+Controller@{J\+S\+Q\+Messages\+View\+Controller}!nib@{nib}}
+\index{nib@{nib}!J\+S\+Q\+Messages\+View\+Controller@{J\+S\+Q\+Messages\+View\+Controller}}
+\subsubsection[{nib}]{\setlength{\rightskip}{0pt plus 5cm}+ (U\+I\+Nib $\ast$) nib 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_messages_view_controller_a64504ea2b7ca5b674f6c350d6b76f936}
+Returns the {\ttfamily U\+I\+Nib} object initialized for a {\ttfamily \hyperlink{interface_j_s_q_messages_view_controller}{J\+S\+Q\+Messages\+View\+Controller}}.
+
+\begin{DoxyReturn}{Returns}
+The initialized {\ttfamily U\+I\+Nib} object or {\ttfamily nil} if there were errors during initialization or the nib file could not be located.
+\end{DoxyReturn}
+You may override this method to provide a customized nib. If you do, you should also override {\ttfamily messages\+View\+Controller} to return your view controller loaded from your custom nib. \hypertarget{interface_j_s_q_messages_view_controller_ab9827df42e5c49ab99f169d2c2f3838b}{}\index{J\+S\+Q\+Messages\+View\+Controller@{J\+S\+Q\+Messages\+View\+Controller}!scroll\+To\+Bottom\+Animated\+:@{scroll\+To\+Bottom\+Animated\+:}}
+\index{scroll\+To\+Bottom\+Animated\+:@{scroll\+To\+Bottom\+Animated\+:}!J\+S\+Q\+Messages\+View\+Controller@{J\+S\+Q\+Messages\+View\+Controller}}
+\subsubsection[{scroll\+To\+Bottom\+Animated\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) scroll\+To\+Bottom\+Animated\+: 
+\begin{DoxyParamCaption}
+\item[{(B\+O\+O\+L)}]{animated}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_messages_view_controller_ab9827df42e5c49ab99f169d2c2f3838b}
+Scrolls the collection view such that the bottom most cell is completely visible, above the {\ttfamily input\+Toolbar}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em animated} & Pass {\ttfamily Y\+E\+S} if you want to animate scrolling, {\ttfamily N\+O} if it should be immediate. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_j_s_q_messages_view_controller_a19a60a139ad222e77c6d2e266672c9bd}{}\index{J\+S\+Q\+Messages\+View\+Controller@{J\+S\+Q\+Messages\+View\+Controller}!automatically\+Scrolls\+To\+Most\+Recent\+Message@{automatically\+Scrolls\+To\+Most\+Recent\+Message}}
+\index{automatically\+Scrolls\+To\+Most\+Recent\+Message@{automatically\+Scrolls\+To\+Most\+Recent\+Message}!J\+S\+Q\+Messages\+View\+Controller@{J\+S\+Q\+Messages\+View\+Controller}}
+\subsubsection[{automatically\+Scrolls\+To\+Most\+Recent\+Message}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) automatically\+Scrolls\+To\+Most\+Recent\+Message\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_j_s_q_messages_view_controller_a19a60a139ad222e77c6d2e266672c9bd}
+Specifies whether or not the view controller should automatically scroll to the most recent message when the view appears and when sending, receiving, and composing a new message.
+
+The default value is {\ttfamily Y\+E\+S}, which allows the view controller to scroll automatically to the most recent message. Set to {\ttfamily N\+O} if you want to manage scrolling yourself. \hypertarget{interface_j_s_q_messages_view_controller_a31c7589123a872e88cdbb530a953069a}{}\index{J\+S\+Q\+Messages\+View\+Controller@{J\+S\+Q\+Messages\+View\+Controller}!collection\+View@{collection\+View}}
+\index{collection\+View@{collection\+View}!J\+S\+Q\+Messages\+View\+Controller@{J\+S\+Q\+Messages\+View\+Controller}}
+\subsubsection[{collection\+View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf J\+S\+Q\+Messages\+Collection\+View}$\ast$) collection\+View\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}\label{interface_j_s_q_messages_view_controller_a31c7589123a872e88cdbb530a953069a}
+Returns the collection view object managed by this view controller. This view controller is the collection view\textquotesingle{}s data source and delegate. \hypertarget{interface_j_s_q_messages_view_controller_aff50b7f5fd7e55c0bf19a72079b3ce98}{}\index{J\+S\+Q\+Messages\+View\+Controller@{J\+S\+Q\+Messages\+View\+Controller}!incoming\+Cell\+Identifier@{incoming\+Cell\+Identifier}}
+\index{incoming\+Cell\+Identifier@{incoming\+Cell\+Identifier}!J\+S\+Q\+Messages\+View\+Controller@{J\+S\+Q\+Messages\+View\+Controller}}
+\subsubsection[{incoming\+Cell\+Identifier}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) incoming\+Cell\+Identifier\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_j_s_q_messages_view_controller_aff50b7f5fd7e55c0bf19a72079b3ce98}
+The collection view cell identifier to use for dequeuing incoming message collection view cells in the collection\+View for text messages.
+
+This cell identifier is used for incoming text message data items. The default value is the string returned by {\ttfamily \mbox{[}\hyperlink{interface_j_s_q_messages_collection_view_cell_incoming}{J\+S\+Q\+Messages\+Collection\+View\+Cell\+Incoming} cell\+Reuse\+Identifier\mbox{]}}. This value must not be {\ttfamily nil}.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_j_s_q_messages_collection_view_cell_incoming}{J\+S\+Q\+Messages\+Collection\+View\+Cell\+Incoming}.
+\end{DoxySeeAlso}
+\begin{DoxyWarning}{Warning}
+Overriding this property\textquotesingle{}s default value is {\itshape not} recommended. You should only override this property\textquotesingle{}s default value if you are proividing your own cell prototypes. These prototypes must be registered with the collection\+View for reuse and you are then responsible for completely overriding many delegate and data source methods for the collection\+View, including {\ttfamily collection\+View\+:cell\+For\+Item\+At\+Index\+Path\+:}. 
+\end{DoxyWarning}
+\hypertarget{interface_j_s_q_messages_view_controller_a2803500d4718ae80d36013c83044ec8e}{}\index{J\+S\+Q\+Messages\+View\+Controller@{J\+S\+Q\+Messages\+View\+Controller}!incoming\+Media\+Cell\+Identifier@{incoming\+Media\+Cell\+Identifier}}
+\index{incoming\+Media\+Cell\+Identifier@{incoming\+Media\+Cell\+Identifier}!J\+S\+Q\+Messages\+View\+Controller@{J\+S\+Q\+Messages\+View\+Controller}}
+\subsubsection[{incoming\+Media\+Cell\+Identifier}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) incoming\+Media\+Cell\+Identifier\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_j_s_q_messages_view_controller_a2803500d4718ae80d36013c83044ec8e}
+The collection view cell identifier to use for dequeuing incoming message collection view cells in the collection\+View for media messages.
+
+This cell identifier is used for incoming media message data items. The default value is the string returned by {\ttfamily \mbox{[}\hyperlink{interface_j_s_q_messages_collection_view_cell_incoming}{J\+S\+Q\+Messages\+Collection\+View\+Cell\+Incoming} media\+Cell\+Reuse\+Identifier\mbox{]}}. This value must not be {\ttfamily nil}.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_j_s_q_messages_collection_view_cell_incoming}{J\+S\+Q\+Messages\+Collection\+View\+Cell\+Incoming}.
+\end{DoxySeeAlso}
+\begin{DoxyWarning}{Warning}
+Overriding this property\textquotesingle{}s default value is {\itshape not} recommended. You should only override this property\textquotesingle{}s default value if you are proividing your own cell prototypes. These prototypes must be registered with the collection\+View for reuse and you are then responsible for completely overriding many delegate and data source methods for the collection\+View, including {\ttfamily collection\+View\+:cell\+For\+Item\+At\+Index\+Path\+:}. 
+\end{DoxyWarning}
+\hypertarget{interface_j_s_q_messages_view_controller_adaa2bbc03bed38797ec29d98c3d0c0e0}{}\index{J\+S\+Q\+Messages\+View\+Controller@{J\+S\+Q\+Messages\+View\+Controller}!input\+Toolbar@{input\+Toolbar}}
+\index{input\+Toolbar@{input\+Toolbar}!J\+S\+Q\+Messages\+View\+Controller@{J\+S\+Q\+Messages\+View\+Controller}}
+\subsubsection[{input\+Toolbar}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf J\+S\+Q\+Messages\+Input\+Toolbar}$\ast$) input\+Toolbar\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}\label{interface_j_s_q_messages_view_controller_adaa2bbc03bed38797ec29d98c3d0c0e0}
+Returns the input toolbar view object managed by this view controller. This view controller is the toolbar\textquotesingle{}s delegate. \hypertarget{interface_j_s_q_messages_view_controller_a5952f0a6cbe8edfc1858109732f3d11b}{}\index{J\+S\+Q\+Messages\+View\+Controller@{J\+S\+Q\+Messages\+View\+Controller}!keyboard\+Controller@{keyboard\+Controller}}
+\index{keyboard\+Controller@{keyboard\+Controller}!J\+S\+Q\+Messages\+View\+Controller@{J\+S\+Q\+Messages\+View\+Controller}}
+\subsubsection[{keyboard\+Controller}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf J\+S\+Q\+Messages\+Keyboard\+Controller}$\ast$) keyboard\+Controller\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_j_s_q_messages_view_controller_a5952f0a6cbe8edfc1858109732f3d11b}
+Returns the keyboard controller object used to manage the software keyboard. \hypertarget{interface_j_s_q_messages_view_controller_af805e4fee4497e23cde6032f2af76aa7}{}\index{J\+S\+Q\+Messages\+View\+Controller@{J\+S\+Q\+Messages\+View\+Controller}!outgoing\+Cell\+Identifier@{outgoing\+Cell\+Identifier}}
+\index{outgoing\+Cell\+Identifier@{outgoing\+Cell\+Identifier}!J\+S\+Q\+Messages\+View\+Controller@{J\+S\+Q\+Messages\+View\+Controller}}
+\subsubsection[{outgoing\+Cell\+Identifier}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) outgoing\+Cell\+Identifier\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_j_s_q_messages_view_controller_af805e4fee4497e23cde6032f2af76aa7}
+The collection view cell identifier to use for dequeuing outgoing message collection view cells in the collection\+View for text messages.
+
+This cell identifier is used for outgoing text message data items. The default value is the string returned by {\ttfamily \mbox{[}\hyperlink{interface_j_s_q_messages_collection_view_cell_outgoing}{J\+S\+Q\+Messages\+Collection\+View\+Cell\+Outgoing} cell\+Reuse\+Identifier\mbox{]}}. This value must not be {\ttfamily nil}.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_j_s_q_messages_collection_view_cell_outgoing}{J\+S\+Q\+Messages\+Collection\+View\+Cell\+Outgoing}.
+\end{DoxySeeAlso}
+\begin{DoxyWarning}{Warning}
+Overriding this property\textquotesingle{}s default value is {\itshape not} recommended. You should only override this property\textquotesingle{}s default value if you are proividing your own cell prototypes. These prototypes must be registered with the collection\+View for reuse and you are then responsible for completely overriding many delegate and data source methods for the collection\+View, including {\ttfamily collection\+View\+:cell\+For\+Item\+At\+Index\+Path\+:}. 
+\end{DoxyWarning}
+\hypertarget{interface_j_s_q_messages_view_controller_a1cff2419947e6c239c78206477b5223a}{}\index{J\+S\+Q\+Messages\+View\+Controller@{J\+S\+Q\+Messages\+View\+Controller}!outgoing\+Media\+Cell\+Identifier@{outgoing\+Media\+Cell\+Identifier}}
+\index{outgoing\+Media\+Cell\+Identifier@{outgoing\+Media\+Cell\+Identifier}!J\+S\+Q\+Messages\+View\+Controller@{J\+S\+Q\+Messages\+View\+Controller}}
+\subsubsection[{outgoing\+Media\+Cell\+Identifier}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) outgoing\+Media\+Cell\+Identifier\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_j_s_q_messages_view_controller_a1cff2419947e6c239c78206477b5223a}
+The collection view cell identifier to use for dequeuing outgoing message collection view cells in the collection\+View for media messages.
+
+This cell identifier is used for outgoing media message data items. The default value is the string returned by {\ttfamily \mbox{[}\hyperlink{interface_j_s_q_messages_collection_view_cell_outgoing}{J\+S\+Q\+Messages\+Collection\+View\+Cell\+Outgoing} media\+Cell\+Reuse\+Identifier\mbox{]}}. This value must not be {\ttfamily nil}.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_j_s_q_messages_collection_view_cell_outgoing}{J\+S\+Q\+Messages\+Collection\+View\+Cell\+Outgoing}.
+\end{DoxySeeAlso}
+\begin{DoxyWarning}{Warning}
+Overriding this property\textquotesingle{}s default value is {\itshape not} recommended. You should only override this property\textquotesingle{}s default value if you are proividing your own cell prototypes. These prototypes must be registered with the collection\+View for reuse and you are then responsible for completely overriding many delegate and data source methods for the collection\+View, including {\ttfamily collection\+View\+:cell\+For\+Item\+At\+Index\+Path\+:}. 
+\end{DoxyWarning}
+\hypertarget{interface_j_s_q_messages_view_controller_ad034890061c8c276862b34e09252bae8}{}\index{J\+S\+Q\+Messages\+View\+Controller@{J\+S\+Q\+Messages\+View\+Controller}!sender\+Display\+Name@{sender\+Display\+Name}}
+\index{sender\+Display\+Name@{sender\+Display\+Name}!J\+S\+Q\+Messages\+View\+Controller@{J\+S\+Q\+Messages\+View\+Controller}}
+\subsubsection[{sender\+Display\+Name}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) sender\+Display\+Name\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_j_s_q_messages_view_controller_ad034890061c8c276862b34e09252bae8}
+The display name of the current user who is sending messages.
+
+This value does not have to be unique. This value must not be {\ttfamily nil}. \hypertarget{interface_j_s_q_messages_view_controller_afd474f0e4f7923e29a98484090cbdc45}{}\index{J\+S\+Q\+Messages\+View\+Controller@{J\+S\+Q\+Messages\+View\+Controller}!sender\+Id@{sender\+Id}}
+\index{sender\+Id@{sender\+Id}!J\+S\+Q\+Messages\+View\+Controller@{J\+S\+Q\+Messages\+View\+Controller}}
+\subsubsection[{sender\+Id}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) sender\+Id\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_j_s_q_messages_view_controller_afd474f0e4f7923e29a98484090cbdc45}
+The string identifier that uniquely identifies the current user sending messages.
+
+This property is used to determine if a message is incoming or outgoing. All message data objects returned by {\ttfamily collection\+View\+:message\+Data\+For\+Item\+At\+Index\+Path\+:} are checked against this identifier. This value must not be {\ttfamily nil}. \hypertarget{interface_j_s_q_messages_view_controller_a9d7705d74b5543259ad21013b317b0d3}{}\index{J\+S\+Q\+Messages\+View\+Controller@{J\+S\+Q\+Messages\+View\+Controller}!show\+Load\+Earlier\+Messages\+Header@{show\+Load\+Earlier\+Messages\+Header}}
+\index{show\+Load\+Earlier\+Messages\+Header@{show\+Load\+Earlier\+Messages\+Header}!J\+S\+Q\+Messages\+View\+Controller@{J\+S\+Q\+Messages\+View\+Controller}}
+\subsubsection[{show\+Load\+Earlier\+Messages\+Header}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) show\+Load\+Earlier\+Messages\+Header\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_j_s_q_messages_view_controller_a9d7705d74b5543259ad21013b317b0d3}
+Specifies whether or not the view controller should show the \char`\"{}load earlier messages\char`\"{} header view.
+
+Setting this property to {\ttfamily Y\+E\+S} will show the header view immediately. Settings this property to {\ttfamily N\+O} will hide the header view immediately. You will need to scroll to the top of the collection view in order to see the header. \hypertarget{interface_j_s_q_messages_view_controller_ad1eded3a8cfe024fb2914e9250cd2cc8}{}\index{J\+S\+Q\+Messages\+View\+Controller@{J\+S\+Q\+Messages\+View\+Controller}!show\+Typing\+Indicator@{show\+Typing\+Indicator}}
+\index{show\+Typing\+Indicator@{show\+Typing\+Indicator}!J\+S\+Q\+Messages\+View\+Controller@{J\+S\+Q\+Messages\+View\+Controller}}
+\subsubsection[{show\+Typing\+Indicator}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) show\+Typing\+Indicator\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_j_s_q_messages_view_controller_ad1eded3a8cfe024fb2914e9250cd2cc8}
+Specifies whether or not the view controller should show the typing indicator for an incoming message.
+
+Setting this property to {\ttfamily Y\+E\+S} will animate showing the typing indicator immediately. Setting this property to {\ttfamily N\+O} will animate hiding the typing indicator immediately. You will need to scroll to the bottom of the collection view in order to see the typing indicator. You may use {\ttfamily scroll\+To\+Bottom\+Animated\+:} for this. \hypertarget{interface_j_s_q_messages_view_controller_a43257bbb486c6cf7d31d3f0fe573147d}{}\index{J\+S\+Q\+Messages\+View\+Controller@{J\+S\+Q\+Messages\+View\+Controller}!top\+Content\+Additional\+Inset@{top\+Content\+Additional\+Inset}}
+\index{top\+Content\+Additional\+Inset@{top\+Content\+Additional\+Inset}!J\+S\+Q\+Messages\+View\+Controller@{J\+S\+Q\+Messages\+View\+Controller}}
+\subsubsection[{top\+Content\+Additional\+Inset}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\+G\+Float) top\+Content\+Additional\+Inset\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_j_s_q_messages_view_controller_a43257bbb486c6cf7d31d3f0fe573147d}
+Specifies an additional inset amount to be added to the collection\+View\textquotesingle{}s content\+Insets.\+top value.
+
+Use this property to adjust the top content inset to account for a custom subview at the top of your view controller. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Vendors/\+J\+S\+Q\+Messages\+View\+Controller/\+Controllers/J\+S\+Q\+Messages\+View\+Controller.\+h\item 
+Vendors/\+J\+S\+Q\+Messages\+View\+Controller/\+Controllers/J\+S\+Q\+Messages\+View\+Controller.\+m\end{DoxyCompactItemize}

@@ -1,0 +1,56 @@
+\hypertarget{interface_f_i_r_storage_task_snapshot}{}\section{F\+I\+R\+Storage\+Task\+Snapshot Class Reference}
+\label{interface_f_i_r_storage_task_snapshot}\index{F\+I\+R\+Storage\+Task\+Snapshot@{F\+I\+R\+Storage\+Task\+Snapshot}}
+
+
+{\ttfamily \#import $<$F\+I\+R\+Storage\+Task\+Snapshot.\+h$>$}
+
+Inheritance diagram for F\+I\+R\+Storage\+Task\+Snapshot\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_f_i_r_storage_task_snapshot}
+\end{center}
+\end{figure}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+\_\+kindof \hyperlink{interface_f_i_r_storage_task}{F\+I\+R\+Storage\+Task} $\ast$ \hyperlink{interface_f_i_r_storage_task_snapshot_a77fe9c6a0a95cbcc38b8efa358d0b4f6}{task}
+\item 
+\hyperlink{interface_f_i_r_storage_metadata}{F\+I\+R\+Storage\+Metadata} $\ast$ \hyperlink{interface_f_i_r_storage_task_snapshot_ae7f7f0af71f1e41b90ddfa95d739ed80}{metadata}
+\item 
+\hyperlink{interface_f_i_r_storage_reference}{F\+I\+R\+Storage\+Reference} $\ast$ \hyperlink{interface_f_i_r_storage_task_snapshot_a475feffa15b89b28043356a36efeefa6}{reference}
+\item 
+N\+S\+Progress $\ast$ \hyperlink{interface_f_i_r_storage_task_snapshot_a3028516bd16e51c07dbc3c09873b66d5}{progress}
+\item 
+N\+S\+Error $\ast$ \hyperlink{interface_f_i_r_storage_task_snapshot_a7eb79419e14f2ded56d38ae8713e9299}{error}
+\item 
+F\+I\+R\+Storage\+Task\+Status \hyperlink{interface_f_i_r_storage_task_snapshot_a9c558313c12d53012cc7a31bbd927262}{status}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{interface_f_i_r_storage_task_snapshot}{F\+I\+R\+Storage\+Task\+Snapshot} represents an immutable view of a task. A Snapshot contains a task, storage reference, metadata (if it exists), progress, and an error (if one occurred). 
+
+\subsection{Property Documentation}
+\hypertarget{interface_f_i_r_storage_task_snapshot_a7eb79419e14f2ded56d38ae8713e9299}{}\index{F\+I\+R\+Storage\+Task\+Snapshot@{F\+I\+R\+Storage\+Task\+Snapshot}!error@{error}}
+\index{error@{error}!F\+I\+R\+Storage\+Task\+Snapshot@{F\+I\+R\+Storage\+Task\+Snapshot}}
+\subsubsection[{error}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Error$\ast$) error\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_f_i_r_storage_task_snapshot_a7eb79419e14f2ded56d38ae8713e9299}
+Error during task execution, or nil if no error occurred. \hypertarget{interface_f_i_r_storage_task_snapshot_ae7f7f0af71f1e41b90ddfa95d739ed80}{}\index{F\+I\+R\+Storage\+Task\+Snapshot@{F\+I\+R\+Storage\+Task\+Snapshot}!metadata@{metadata}}
+\index{metadata@{metadata}!F\+I\+R\+Storage\+Task\+Snapshot@{F\+I\+R\+Storage\+Task\+Snapshot}}
+\subsubsection[{metadata}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf F\+I\+R\+Storage\+Metadata}$\ast$) metadata\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_f_i_r_storage_task_snapshot_ae7f7f0af71f1e41b90ddfa95d739ed80}
+Metadata returned by the task, or nil if no metadata returned. \hypertarget{interface_f_i_r_storage_task_snapshot_a3028516bd16e51c07dbc3c09873b66d5}{}\index{F\+I\+R\+Storage\+Task\+Snapshot@{F\+I\+R\+Storage\+Task\+Snapshot}!progress@{progress}}
+\index{progress@{progress}!F\+I\+R\+Storage\+Task\+Snapshot@{F\+I\+R\+Storage\+Task\+Snapshot}}
+\subsubsection[{progress}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Progress$\ast$) progress\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_f_i_r_storage_task_snapshot_a3028516bd16e51c07dbc3c09873b66d5}
+N\+S\+Progress object which tracks the progess of an upload or download. \hypertarget{interface_f_i_r_storage_task_snapshot_a475feffa15b89b28043356a36efeefa6}{}\index{F\+I\+R\+Storage\+Task\+Snapshot@{F\+I\+R\+Storage\+Task\+Snapshot}!reference@{reference}}
+\index{reference@{reference}!F\+I\+R\+Storage\+Task\+Snapshot@{F\+I\+R\+Storage\+Task\+Snapshot}}
+\subsubsection[{reference}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf F\+I\+R\+Storage\+Reference}$\ast$) reference\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_f_i_r_storage_task_snapshot_a475feffa15b89b28043356a36efeefa6}
+\hyperlink{interface_f_i_r_storage_reference}{F\+I\+R\+Storage\+Reference} this task is operates on. \hypertarget{interface_f_i_r_storage_task_snapshot_a9c558313c12d53012cc7a31bbd927262}{}\index{F\+I\+R\+Storage\+Task\+Snapshot@{F\+I\+R\+Storage\+Task\+Snapshot}!status@{status}}
+\index{status@{status}!F\+I\+R\+Storage\+Task\+Snapshot@{F\+I\+R\+Storage\+Task\+Snapshot}}
+\subsubsection[{status}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (F\+I\+R\+Storage\+Task\+Status) status\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_f_i_r_storage_task_snapshot_a9c558313c12d53012cc7a31bbd927262}
+Status of the task. \hypertarget{interface_f_i_r_storage_task_snapshot_a77fe9c6a0a95cbcc38b8efa358d0b4f6}{}\index{F\+I\+R\+Storage\+Task\+Snapshot@{F\+I\+R\+Storage\+Task\+Snapshot}!task@{task}}
+\index{task@{task}!F\+I\+R\+Storage\+Task\+Snapshot@{F\+I\+R\+Storage\+Task\+Snapshot}}
+\subsubsection[{task}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (\+\_\+\+\_\+kindof {\bf F\+I\+R\+Storage\+Task}$\ast$) task\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_f_i_r_storage_task_snapshot_a77fe9c6a0a95cbcc38b8efa358d0b4f6}
+Subclass of \hyperlink{interface_f_i_r_storage_task}{F\+I\+R\+Storage\+Task} this snapshot represents. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Frameworks/\+Firebase\+Storage.\+framework/\+Headers/\hyperlink{_f_i_r_storage_task_snapshot_8h}{F\+I\+R\+Storage\+Task\+Snapshot.\+h}\end{DoxyCompactItemize}

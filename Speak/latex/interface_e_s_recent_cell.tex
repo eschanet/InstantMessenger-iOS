@@ -1,0 +1,55 @@
+\hypertarget{interface_e_s_recent_cell}{}\section{E\+S\+Recent\+Cell Class Reference}
+\label{interface_e_s_recent_cell}\index{E\+S\+Recent\+Cell@{E\+S\+Recent\+Cell}}
+Inheritance diagram for E\+S\+Recent\+Cell\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_e_s_recent_cell}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_e_s_recent_cell_a2bf905fd6b043a0d902cd9cb7e27117d}{apply\+Data\+:}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interface_j_s_badge_view}{J\+S\+Badge\+View} $\ast$ \hyperlink{interface_e_s_recent_cell_a75849020312f522349741e170d82cf8c}{badge\+View}
+\item 
+I\+B\+Outlet U\+I\+Label $\ast$ \hyperlink{interface_e_s_recent_cell_aa3b5c8f99f21172bf77a45729281fb0d}{read\+Label}
+\item 
+I\+B\+Outlet U\+I\+View $\ast$ \hyperlink{interface_e_s_recent_cell_afde07a2962344ebf4fcea0c26677510e}{thin\+Line}
+\item 
+I\+B\+Outlet P\+F\+Image\+View $\ast$ \hyperlink{interface_e_s_recent_cell_a96b9c0a70a1fe4a4e78f4c97b88c2fb7}{image\+User}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_e_s_recent_cell_a2bf905fd6b043a0d902cd9cb7e27117d}{}\index{E\+S\+Recent\+Cell@{E\+S\+Recent\+Cell}!apply\+Data\+:@{apply\+Data\+:}}
+\index{apply\+Data\+:@{apply\+Data\+:}!E\+S\+Recent\+Cell@{E\+S\+Recent\+Cell}}
+\subsubsection[{apply\+Data\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) apply\+Data\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Dictionary $\ast$)}]{recent\+\_\+}
+\end{DoxyParamCaption}
+}\label{interface_e_s_recent_cell_a2bf905fd6b043a0d902cd9cb7e27117d}
+At creation of the cell, we call this method to actually bind all the data to the cell, to populate it. 
+
+\subsection{Property Documentation}
+\hypertarget{interface_e_s_recent_cell_a75849020312f522349741e170d82cf8c}{}\index{E\+S\+Recent\+Cell@{E\+S\+Recent\+Cell}!badge\+View@{badge\+View}}
+\index{badge\+View@{badge\+View}!E\+S\+Recent\+Cell@{E\+S\+Recent\+Cell}}
+\subsubsection[{badge\+View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf J\+S\+Badge\+View}$\ast$) badge\+View\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_e_s_recent_cell_a75849020312f522349741e170d82cf8c}
+i\+O\+S styled badge in the upper right corner of the user\textquotesingle{}s profile picture, indicating how many unread messages a conversation has \hypertarget{interface_e_s_recent_cell_a96b9c0a70a1fe4a4e78f4c97b88c2fb7}{}\index{E\+S\+Recent\+Cell@{E\+S\+Recent\+Cell}!image\+User@{image\+User}}
+\index{image\+User@{image\+User}!E\+S\+Recent\+Cell@{E\+S\+Recent\+Cell}}
+\subsubsection[{image\+User}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Outlet P\+F\+Image\+View$\ast$) image\+User\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_e_s_recent_cell_a96b9c0a70a1fe4a4e78f4c97b88c2fb7}
+This is the user\textquotesingle{}s profile picture \hypertarget{interface_e_s_recent_cell_aa3b5c8f99f21172bf77a45729281fb0d}{}\index{E\+S\+Recent\+Cell@{E\+S\+Recent\+Cell}!read\+Label@{read\+Label}}
+\index{read\+Label@{read\+Label}!E\+S\+Recent\+Cell@{E\+S\+Recent\+Cell}}
+\subsubsection[{read\+Label}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Outlet U\+I\+Label$\ast$) read\+Label\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_e_s_recent_cell_aa3b5c8f99f21172bf77a45729281fb0d}
+If a message has been read, this will be indicated via a small label in the cell \hypertarget{interface_e_s_recent_cell_afde07a2962344ebf4fcea0c26677510e}{}\index{E\+S\+Recent\+Cell@{E\+S\+Recent\+Cell}!thin\+Line@{thin\+Line}}
+\index{thin\+Line@{thin\+Line}!E\+S\+Recent\+Cell@{E\+S\+Recent\+Cell}}
+\subsubsection[{thin\+Line}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Outlet U\+I\+View$\ast$) thin\+Line\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_e_s_recent_cell_afde07a2962344ebf4fcea0c26677510e}
+Cells are divided one from another with this small grey line 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Classes/\+Tabs/01\+\_\+\+Recent/E\+S\+Recent\+Cell.\+h\item 
+Classes/\+Tabs/01\+\_\+\+Recent/E\+S\+Recent\+Cell.\+m\end{DoxyCompactItemize}

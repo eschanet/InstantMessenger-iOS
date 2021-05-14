@@ -1,0 +1,57 @@
+\hypertarget{interface_j_s_q_e_s_photo_media_item}{}\section{J\+S\+Q\+E\+S\+Photo\+Media\+Item Class Reference}
+\label{interface_j_s_q_e_s_photo_media_item}\index{J\+S\+Q\+E\+S\+Photo\+Media\+Item@{J\+S\+Q\+E\+S\+Photo\+Media\+Item}}
+
+
+{\ttfamily \#import $<$J\+S\+Q\+Photo\+Media\+Item.\+h$>$}
+
+Inheritance diagram for J\+S\+Q\+E\+S\+Photo\+Media\+Item\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.871345cm]{interface_j_s_q_e_s_photo_media_item}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) -\/ \hyperlink{interface_j_s_q_e_s_photo_media_item_adc498cedf696856b61e5fc0fba987c10}{init\+With\+Image\+:}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+U\+I\+Image $\ast$ \hyperlink{interface_j_s_q_e_s_photo_media_item_a1aa9a1511c093d34738602b8332e1529}{image}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \hyperlink{interface_j_s_q_e_s_photo_media_item}{J\+S\+Q\+E\+S\+Photo\+Media\+Item}} class is a concrete {\ttfamily \hyperlink{interface_j_s_q_media_item}{J\+S\+Q\+Media\+Item}} subclass that implements the {\ttfamily \hyperlink{protocol_j_s_q_message_media_data-p}{J\+S\+Q\+Message\+Media\+Data}} protocol and represents a photo media message. An initialized {\ttfamily \hyperlink{interface_j_s_q_e_s_photo_media_item}{J\+S\+Q\+E\+S\+Photo\+Media\+Item}} object can be passed to a {\ttfamily J\+S\+Q\+Media\+Message} object during its initialization to construct a valid media message object. You may wish to subclass {\ttfamily \hyperlink{interface_j_s_q_e_s_photo_media_item}{J\+S\+Q\+E\+S\+Photo\+Media\+Item}} to provide additional functionality or behavior. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_j_s_q_e_s_photo_media_item_adc498cedf696856b61e5fc0fba987c10}{}\index{J\+S\+Q\+E\+S\+Photo\+Media\+Item@{J\+S\+Q\+E\+S\+Photo\+Media\+Item}!init\+With\+Image\+:@{init\+With\+Image\+:}}
+\index{init\+With\+Image\+:@{init\+With\+Image\+:}!J\+S\+Q\+E\+S\+Photo\+Media\+Item@{J\+S\+Q\+E\+S\+Photo\+Media\+Item}}
+\subsubsection[{init\+With\+Image\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (instancetype) init\+With\+Image\+: 
+\begin{DoxyParamCaption}
+\item[{(U\+I\+Image $\ast$)}]{image}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_e_s_photo_media_item_adc498cedf696856b61e5fc0fba987c10}
+Initializes and returns a photo media item object having the given image.
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & The image for the photo media item. This value may be {\ttfamily nil}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An initialized {\ttfamily \hyperlink{interface_j_s_q_e_s_photo_media_item}{J\+S\+Q\+E\+S\+Photo\+Media\+Item}} if successful, {\ttfamily nil} otherwise.
+\end{DoxyReturn}
+If the image must be dowloaded from the network, you may initialize a {\ttfamily \hyperlink{interface_j_s_q_e_s_photo_media_item}{J\+S\+Q\+E\+S\+Photo\+Media\+Item}} object with a {\ttfamily nil} image. Once the image has been retrieved, you can then set the image property. 
+
+\subsection{Property Documentation}
+\hypertarget{interface_j_s_q_e_s_photo_media_item_a1aa9a1511c093d34738602b8332e1529}{}\index{J\+S\+Q\+E\+S\+Photo\+Media\+Item@{J\+S\+Q\+E\+S\+Photo\+Media\+Item}!image@{image}}
+\index{image@{image}!J\+S\+Q\+E\+S\+Photo\+Media\+Item@{J\+S\+Q\+E\+S\+Photo\+Media\+Item}}
+\subsubsection[{image}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Image$\ast$) image\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_j_s_q_e_s_photo_media_item_a1aa9a1511c093d34738602b8332e1529}
+The image for the photo media item. The default value is {\ttfamily nil}. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Vendors/\+J\+S\+Q\+Messages\+View\+Controller/\+Model/J\+S\+Q\+Photo\+Media\+Item.\+h\item 
+Vendors/\+J\+S\+Q\+Messages\+View\+Controller/\+Model/J\+S\+Q\+Photo\+Media\+Item.\+m\end{DoxyCompactItemize}

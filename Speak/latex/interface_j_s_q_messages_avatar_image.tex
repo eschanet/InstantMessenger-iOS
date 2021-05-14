@@ -1,0 +1,119 @@
+\hypertarget{interface_j_s_q_messages_avatar_image}{}\section{J\+S\+Q\+Messages\+Avatar\+Image Class Reference}
+\label{interface_j_s_q_messages_avatar_image}\index{J\+S\+Q\+Messages\+Avatar\+Image@{J\+S\+Q\+Messages\+Avatar\+Image}}
+
+
+{\ttfamily \#import $<$J\+S\+Q\+Messages\+Avatar\+Image.\+h$>$}
+
+Inheritance diagram for J\+S\+Q\+Messages\+Avatar\+Image\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.258065cm]{interface_j_s_q_messages_avatar_image}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) -\/ \hyperlink{interface_j_s_q_messages_avatar_image_a7444dae666973a8a91063f901ba053e7}{init\+With\+Avatar\+Image\+:highlighted\+Image\+:placeholder\+Image\+:}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) + \hyperlink{interface_j_s_q_messages_avatar_image_ae5e78d7592cf872ed94b6ca34fef3c75}{avatar\+With\+Image\+:}
+\item 
+(instancetype) + \hyperlink{interface_j_s_q_messages_avatar_image_a2aef05dbb0b21cdf09ea8c06de2d3e52}{avatar\+Image\+With\+Placeholder\+:}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+U\+I\+Image $\ast$ \hyperlink{interface_j_s_q_messages_avatar_image_a2ea2e501b24e9de35d362876354b4e1e}{avatar\+Image}
+\item 
+U\+I\+Image $\ast$ \hyperlink{interface_j_s_q_messages_avatar_image_a6941633ed19114faf0a98588925cf991}{avatar\+Highlighted\+Image}
+\item 
+U\+I\+Image $\ast$ \hyperlink{interface_j_s_q_messages_avatar_image_aede18829f8117a9d0116215e91163577}{avatar\+Placeholder\+Image}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A {\ttfamily \hyperlink{interface_j_s_q_messages_avatar_image}{J\+S\+Q\+Messages\+Avatar\+Image}} model object represents an avatar image. This is a concrete class that implements the {\ttfamily \hyperlink{protocol_j_s_q_message_avatar_image_data_source-p}{J\+S\+Q\+Message\+Avatar\+Image\+Data\+Source}} protocol. It contains a regular avatar image, a highlighted avatar image, and a placeholder avatar image.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_j_s_q_messages_avatar_image_factory}{J\+S\+Q\+Messages\+Avatar\+Image\+Factory}. 
+\end{DoxySeeAlso}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_j_s_q_messages_avatar_image_a2aef05dbb0b21cdf09ea8c06de2d3e52}{}\index{J\+S\+Q\+Messages\+Avatar\+Image@{J\+S\+Q\+Messages\+Avatar\+Image}!avatar\+Image\+With\+Placeholder\+:@{avatar\+Image\+With\+Placeholder\+:}}
+\index{avatar\+Image\+With\+Placeholder\+:@{avatar\+Image\+With\+Placeholder\+:}!J\+S\+Q\+Messages\+Avatar\+Image@{J\+S\+Q\+Messages\+Avatar\+Image}}
+\subsubsection[{avatar\+Image\+With\+Placeholder\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (instancetype) avatar\+Image\+With\+Placeholder\+: 
+\begin{DoxyParamCaption}
+\item[{(U\+I\+Image $\ast$)}]{placeholder\+Image}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_messages_avatar_image_a2aef05dbb0b21cdf09ea8c06de2d3e52}
+Initializes and returns an avatar image object having the specified placeholder image.
+
+
+\begin{DoxyParams}{Parameters}
+{\em placeholder\+Image} & The placeholder image for this avatar image. This value must not be {\ttfamily nil}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An initialized {\ttfamily \hyperlink{interface_j_s_q_messages_avatar_image}{J\+S\+Q\+Messages\+Avatar\+Image}} object if successful, {\ttfamily nil} otherwise. 
+\end{DoxyReturn}
+\hypertarget{interface_j_s_q_messages_avatar_image_ae5e78d7592cf872ed94b6ca34fef3c75}{}\index{J\+S\+Q\+Messages\+Avatar\+Image@{J\+S\+Q\+Messages\+Avatar\+Image}!avatar\+With\+Image\+:@{avatar\+With\+Image\+:}}
+\index{avatar\+With\+Image\+:@{avatar\+With\+Image\+:}!J\+S\+Q\+Messages\+Avatar\+Image@{J\+S\+Q\+Messages\+Avatar\+Image}}
+\subsubsection[{avatar\+With\+Image\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (instancetype) avatar\+With\+Image\+: 
+\begin{DoxyParamCaption}
+\item[{(U\+I\+Image $\ast$)}]{image}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_messages_avatar_image_ae5e78d7592cf872ed94b6ca34fef3c75}
+Initializes and returns an avatar image object having the specified image.
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & The image for this avatar image. This image will be used for the all of the following properties\+: avatar\+Image, avatar\+Highlighted\+Image, avatar\+Placeholder\+Image; This value must not be {\ttfamily nil}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An initialized {\ttfamily \hyperlink{interface_j_s_q_messages_avatar_image}{J\+S\+Q\+Messages\+Avatar\+Image}} object if successful, {\ttfamily nil} otherwise. 
+\end{DoxyReturn}
+\hypertarget{interface_j_s_q_messages_avatar_image_a7444dae666973a8a91063f901ba053e7}{}\index{J\+S\+Q\+Messages\+Avatar\+Image@{J\+S\+Q\+Messages\+Avatar\+Image}!init\+With\+Avatar\+Image\+:highlighted\+Image\+:placeholder\+Image\+:@{init\+With\+Avatar\+Image\+:highlighted\+Image\+:placeholder\+Image\+:}}
+\index{init\+With\+Avatar\+Image\+:highlighted\+Image\+:placeholder\+Image\+:@{init\+With\+Avatar\+Image\+:highlighted\+Image\+:placeholder\+Image\+:}!J\+S\+Q\+Messages\+Avatar\+Image@{J\+S\+Q\+Messages\+Avatar\+Image}}
+\subsubsection[{init\+With\+Avatar\+Image\+:highlighted\+Image\+:placeholder\+Image\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (instancetype) init\+With\+Avatar\+Image\+: 
+\begin{DoxyParamCaption}
+\item[{(U\+I\+Image $\ast$)}]{avatar\+Image}
+\item[{highlightedImage:(U\+I\+Image $\ast$)}]{highlighted\+Image}
+\item[{placeholderImage:(U\+I\+Image $\ast$)}]{placeholder\+Image}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_messages_avatar_image_a7444dae666973a8a91063f901ba053e7}
+Initializes and returns an avatar image object having the specified regular, highlighed, and placeholder images.
+
+
+\begin{DoxyParams}{Parameters}
+{\em avatar\+Image} & The avatar image for a regular display state. \\
+\hline
+{\em highlighted\+Image} & The avatar image for a highlighted display state. \\
+\hline
+{\em placeholder\+Image} & The placeholder image for this avatar image. This value must not be {\ttfamily nil}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An initialized {\ttfamily \hyperlink{interface_j_s_q_messages_avatar_image}{J\+S\+Q\+Messages\+Avatar\+Image}} object if successful, {\ttfamily nil} otherwise. 
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_j_s_q_messages_avatar_image_a6941633ed19114faf0a98588925cf991}{}\index{J\+S\+Q\+Messages\+Avatar\+Image@{J\+S\+Q\+Messages\+Avatar\+Image}!avatar\+Highlighted\+Image@{avatar\+Highlighted\+Image}}
+\index{avatar\+Highlighted\+Image@{avatar\+Highlighted\+Image}!J\+S\+Q\+Messages\+Avatar\+Image@{J\+S\+Q\+Messages\+Avatar\+Image}}
+\subsubsection[{avatar\+Highlighted\+Image}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Image$\ast$) avatar\+Highlighted\+Image\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_j_s_q_messages_avatar_image_a6941633ed19114faf0a98588925cf991}
+The avatar image for a highlighted display state. \hypertarget{interface_j_s_q_messages_avatar_image_a2ea2e501b24e9de35d362876354b4e1e}{}\index{J\+S\+Q\+Messages\+Avatar\+Image@{J\+S\+Q\+Messages\+Avatar\+Image}!avatar\+Image@{avatar\+Image}}
+\index{avatar\+Image@{avatar\+Image}!J\+S\+Q\+Messages\+Avatar\+Image@{J\+S\+Q\+Messages\+Avatar\+Image}}
+\subsubsection[{avatar\+Image}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Image$\ast$) avatar\+Image\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_j_s_q_messages_avatar_image_a2ea2e501b24e9de35d362876354b4e1e}
+The avatar image for a regular display state. \hypertarget{interface_j_s_q_messages_avatar_image_aede18829f8117a9d0116215e91163577}{}\index{J\+S\+Q\+Messages\+Avatar\+Image@{J\+S\+Q\+Messages\+Avatar\+Image}!avatar\+Placeholder\+Image@{avatar\+Placeholder\+Image}}
+\index{avatar\+Placeholder\+Image@{avatar\+Placeholder\+Image}!J\+S\+Q\+Messages\+Avatar\+Image@{J\+S\+Q\+Messages\+Avatar\+Image}}
+\subsubsection[{avatar\+Placeholder\+Image}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Image$\ast$) avatar\+Placeholder\+Image\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_j_s_q_messages_avatar_image_aede18829f8117a9d0116215e91163577}
+Returns the placeholder image for an avatar to display if avatar\+Image is {\ttfamily nil}. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Vendors/\+J\+S\+Q\+Messages\+View\+Controller/\+Model/J\+S\+Q\+Messages\+Avatar\+Image.\+h\item 
+Vendors/\+J\+S\+Q\+Messages\+View\+Controller/\+Model/J\+S\+Q\+Messages\+Avatar\+Image.\+m\end{DoxyCompactItemize}

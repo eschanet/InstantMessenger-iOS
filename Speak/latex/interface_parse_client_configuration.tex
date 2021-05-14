@@ -1,0 +1,177 @@
+\hypertarget{interface_parse_client_configuration}{}\section{Parse\+Client\+Configuration Class Reference}
+\label{interface_parse_client_configuration}\index{Parse\+Client\+Configuration@{Parse\+Client\+Configuration}}
+
+
+{\ttfamily \#import $<$Parse\+Client\+Configuration.\+h$>$}
+
+Inheritance diagram for Parse\+Client\+Configuration\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_parse_client_configuration}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_parse_client_configuration_aaa974a25fe0d7376b377abb615a847f0}{}(instancetype) -\/ {\bfseries N\+S\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}\label{interface_parse_client_configuration_aaa974a25fe0d7376b377abb615a847f0}
+
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) + \hyperlink{interface_parse_client_configuration_a855bbb5b20674872eecb34834f8ca59b}{configuration\+With\+Block\+:}
+\begin{DoxyCompactList}\small\item\em 
+
+ \end{DoxyCompactList}\item 
+\hypertarget{interface_parse_client_configuration_aaa974a25fe0d7376b377abb615a847f0}{}(instancetype) + {\bfseries N\+S\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}\label{interface_parse_client_configuration_aaa974a25fe0d7376b377abb615a847f0}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_parse_client_configuration_a5d59beec752cc3904589557beaf3d1ed}{application\+Id}
+\begin{DoxyCompactList}\small\item\em 
+
+ \end{DoxyCompactList}\item 
+N\+S\+String $\ast$ \hyperlink{interface_parse_client_configuration_aa03409b9cd2f80d746864df84e2cc4b3}{client\+Key}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_parse_client_configuration_ab81c2f80805bd75fa3e75bedae4b92b6}{server}
+\item 
+id$<$ \hyperlink{protocol_p_f_file_upload_controller-p}{P\+F\+File\+Upload\+Controller} $>$ \hyperlink{interface_parse_client_configuration_a5cc5a601fbe36c5acc1b047bf8084b89}{file\+Upload\+Controller}
+\item 
+B\+O\+O\+L \hyperlink{interface_parse_client_configuration_acea892ff4236f17a953bcf4da1236951}{local\+Datastore\+Enabled}
+\begin{DoxyCompactList}\small\item\em 
+
+ \end{DoxyCompactList}\item 
+N\+S\+String $\ast$ \hyperlink{interface_parse_client_configuration_a7c2a0563d18d9a6f692574b7c74f46d7}{application\+Group\+Identifier}
+\begin{DoxyCompactList}\small\item\em 
+
+ \end{DoxyCompactList}\item 
+N\+S\+String $\ast$ \hyperlink{interface_parse_client_configuration_aeb495f4191b53673494490d582440e08}{containing\+Application\+Bundle\+Identifier}
+\item 
+N\+S\+U\+Integer \hyperlink{interface_parse_client_configuration_a44d4faba8cf11762f2f065f1f39fbb11}{network\+Retry\+Attempts}
+\begin{DoxyCompactList}\small\item\em 
+
+ \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \hyperlink{interface_parse_client_configuration}{Parse\+Client\+Configuration}} represents the local configuration of the S\+D\+K to connect to the server with.
+
+These configurations can be stored, copied, and compared, but cannot be safely changed once the S\+D\+K is initialized.
+
+Use this object to construct a configuration for the S\+D\+K in your application, and pass it to {\ttfamily \hyperlink{interface_parse}{Parse}.+initialize\+With\+Configuration\+:}. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_parse_client_configuration_a855bbb5b20674872eecb34834f8ca59b}{}\index{Parse\+Client\+Configuration@{Parse\+Client\+Configuration}!configuration\+With\+Block\+:@{configuration\+With\+Block\+:}}
+\index{configuration\+With\+Block\+:@{configuration\+With\+Block\+:}!Parse\+Client\+Configuration@{Parse\+Client\+Configuration}}
+\subsubsection[{configuration\+With\+Block\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (instancetype) configuration\+With\+Block\+: 
+\begin{DoxyParamCaption}
+\item[{(void($^\wedge$)(id$<$ {\bf Parse\+Mutable\+Client\+Configuration} $>$ configuration))}]{configuration\+Block}
+\end{DoxyParamCaption}
+}\label{interface_parse_client_configuration_a855bbb5b20674872eecb34834f8ca59b}
+
+
+
+
+ 
+
+
+
+
+
+Create a new S\+D\+K configuration object. This will create a temporarily modifiable configuration, and pass it to a block to be initialized.
+
+Example usage\+:
+
+``` \mbox{[}\hyperlink{interface_parse_client_configuration}{Parse\+Client\+Configuration} configuration\+With\+Block\+:$^\wedge$(id$<$\+Parse\+Mutable\+Client\+Configuration$>$ configuration) \{ configuration.\+application\+Id = ...; configuration.\+client\+Key = ...; configuration.\+local\+Datastore\+Enabled = ...; \}\mbox{]}; ```
+
+
+\begin{DoxyParams}{Parameters}
+{\em configuration\+Block} & A block used to modify the created configuration.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A newly created configuration. 
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_parse_client_configuration_a7c2a0563d18d9a6f692574b7c74f46d7}{}\index{Parse\+Client\+Configuration@{Parse\+Client\+Configuration}!application\+Group\+Identifier@{application\+Group\+Identifier}}
+\index{application\+Group\+Identifier@{application\+Group\+Identifier}!Parse\+Client\+Configuration@{Parse\+Client\+Configuration}}
+\subsubsection[{application\+Group\+Identifier}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) application\+Group\+Identifier\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_parse_client_configuration_a7c2a0563d18d9a6f692574b7c74f46d7}
+
+
+
+
+ 
+
+
+
+
+
+When set, enables data sharing with an application group identifier.
+
+After enabling -\/ Local Datastore, {\ttfamily P\+F\+User.+current\+User}, {\ttfamily \hyperlink{interface_p_f_installation}{P\+F\+Installation}.+current\+Installation} and all eventually commands are going to be available to every application/extension in a group that have the same \hyperlink{interface_parse}{Parse} application\+Id. \hypertarget{interface_parse_client_configuration_a5d59beec752cc3904589557beaf3d1ed}{}\index{Parse\+Client\+Configuration@{Parse\+Client\+Configuration}!application\+Id@{application\+Id}}
+\index{application\+Id@{application\+Id}!Parse\+Client\+Configuration@{Parse\+Client\+Configuration}}
+\subsubsection[{application\+Id}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) application\+Id\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_parse_client_configuration_a5d59beec752cc3904589557beaf3d1ed}
+
+
+
+
+ 
+
+
+
+
+
+The Parse.\+com application id to configure the S\+D\+K with. \hypertarget{interface_parse_client_configuration_aa03409b9cd2f80d746864df84e2cc4b3}{}\index{Parse\+Client\+Configuration@{Parse\+Client\+Configuration}!client\+Key@{client\+Key}}
+\index{client\+Key@{client\+Key}!Parse\+Client\+Configuration@{Parse\+Client\+Configuration}}
+\subsubsection[{client\+Key}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) client\+Key\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_parse_client_configuration_aa03409b9cd2f80d746864df84e2cc4b3}
+The Parse.\+com client key to configure the S\+D\+K with. \hypertarget{interface_parse_client_configuration_aeb495f4191b53673494490d582440e08}{}\index{Parse\+Client\+Configuration@{Parse\+Client\+Configuration}!containing\+Application\+Bundle\+Identifier@{containing\+Application\+Bundle\+Identifier}}
+\index{containing\+Application\+Bundle\+Identifier@{containing\+Application\+Bundle\+Identifier}!Parse\+Client\+Configuration@{Parse\+Client\+Configuration}}
+\subsubsection[{containing\+Application\+Bundle\+Identifier}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) containing\+Application\+Bundle\+Identifier\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_parse_client_configuration_aeb495f4191b53673494490d582440e08}
+When set, controls the bundle identifier of the parent bundle to connect to.
+
+\begin{DoxyWarning}{Warning}
+This property should only be set from inside an extension environment. 
+\end{DoxyWarning}
+\hypertarget{interface_parse_client_configuration_a5cc5a601fbe36c5acc1b047bf8084b89}{}\index{Parse\+Client\+Configuration@{Parse\+Client\+Configuration}!file\+Upload\+Controller@{file\+Upload\+Controller}}
+\index{file\+Upload\+Controller@{file\+Upload\+Controller}!Parse\+Client\+Configuration@{Parse\+Client\+Configuration}}
+\subsubsection[{file\+Upload\+Controller}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id$<${\bf P\+F\+File\+Upload\+Controller}$>$) file\+Upload\+Controller\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_parse_client_configuration_a5cc5a601fbe36c5acc1b047bf8084b89}
+The custom upload controller that synchronously uploads P\+F\+Files using its own policy. \hypertarget{interface_parse_client_configuration_acea892ff4236f17a953bcf4da1236951}{}\index{Parse\+Client\+Configuration@{Parse\+Client\+Configuration}!local\+Datastore\+Enabled@{local\+Datastore\+Enabled}}
+\index{local\+Datastore\+Enabled@{local\+Datastore\+Enabled}!Parse\+Client\+Configuration@{Parse\+Client\+Configuration}}
+\subsubsection[{local\+Datastore\+Enabled}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) local\+Datastore\+Enabled\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_parse_client_configuration_acea892ff4236f17a953bcf4da1236951}
+
+
+
+
+ 
+
+
+
+
+
+Whether or not to enable pinning in the S\+D\+K.
+
+The default value is {\ttfamily N\+O}. \hypertarget{interface_parse_client_configuration_a44d4faba8cf11762f2f065f1f39fbb11}{}\index{Parse\+Client\+Configuration@{Parse\+Client\+Configuration}!network\+Retry\+Attempts@{network\+Retry\+Attempts}}
+\index{network\+Retry\+Attempts@{network\+Retry\+Attempts}!Parse\+Client\+Configuration@{Parse\+Client\+Configuration}}
+\subsubsection[{network\+Retry\+Attempts}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+U\+Integer) network\+Retry\+Attempts\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_parse_client_configuration_a44d4faba8cf11762f2f065f1f39fbb11}
+
+
+
+
+ 
+
+
+
+
+
+The maximum number of retry attempts to make upon a failed network request. \hypertarget{interface_parse_client_configuration_ab81c2f80805bd75fa3e75bedae4b92b6}{}\index{Parse\+Client\+Configuration@{Parse\+Client\+Configuration}!server@{server}}
+\index{server@{server}!Parse\+Client\+Configuration@{Parse\+Client\+Configuration}}
+\subsubsection[{server}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) server\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_parse_client_configuration_ab81c2f80805bd75fa3e75bedae4b92b6}
+The U\+R\+L of the server that is being used by the S\+D\+K. Defaults to {\ttfamily \href{https://api.parse.com/1}{\tt https\+://api.\+parse.\+com/1}} 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Frameworks/\+Parse.\+framework/\+Headers/Parse\+Client\+Configuration.\+h\end{DoxyCompactItemize}

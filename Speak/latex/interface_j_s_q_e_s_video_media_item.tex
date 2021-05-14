@@ -1,0 +1,67 @@
+\hypertarget{interface_j_s_q_e_s_video_media_item}{}\section{J\+S\+Q\+E\+S\+Video\+Media\+Item Class Reference}
+\label{interface_j_s_q_e_s_video_media_item}\index{J\+S\+Q\+E\+S\+Video\+Media\+Item@{J\+S\+Q\+E\+S\+Video\+Media\+Item}}
+
+
+{\ttfamily \#import $<$J\+S\+Q\+Video\+Media\+Item.\+h$>$}
+
+Inheritance diagram for J\+S\+Q\+E\+S\+Video\+Media\+Item\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.871345cm]{interface_j_s_q_e_s_video_media_item}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) -\/ \hyperlink{interface_j_s_q_e_s_video_media_item_a5fa02584c5cfd904bb8e476860932c6d}{init\+With\+File\+U\+R\+L\+:is\+Ready\+To\+Play\+:}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+N\+S\+U\+R\+L $\ast$ \hyperlink{interface_j_s_q_e_s_video_media_item_a1bb33ad4c3f4d362443b909a818ebf5a}{file\+U\+R\+L}
+\item 
+B\+O\+O\+L \hyperlink{interface_j_s_q_e_s_video_media_item_a39bcd17dda91c3887c51eb9758011569}{is\+Ready\+To\+Play}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \hyperlink{interface_j_s_q_e_s_video_media_item}{J\+S\+Q\+E\+S\+Video\+Media\+Item}} class is a concrete {\ttfamily \hyperlink{interface_j_s_q_media_item}{J\+S\+Q\+Media\+Item}} subclass that implements the {\ttfamily \hyperlink{protocol_j_s_q_message_media_data-p}{J\+S\+Q\+Message\+Media\+Data}} protocol and represents a video media message. An initialized {\ttfamily \hyperlink{interface_j_s_q_e_s_video_media_item}{J\+S\+Q\+E\+S\+Video\+Media\+Item}} object can be passed to a {\ttfamily J\+S\+Q\+Media\+Message} object during its initialization to construct a valid media message object. You may wish to subclass {\ttfamily \hyperlink{interface_j_s_q_e_s_video_media_item}{J\+S\+Q\+E\+S\+Video\+Media\+Item}} to provide additional functionality or behavior. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_j_s_q_e_s_video_media_item_a5fa02584c5cfd904bb8e476860932c6d}{}\index{J\+S\+Q\+E\+S\+Video\+Media\+Item@{J\+S\+Q\+E\+S\+Video\+Media\+Item}!init\+With\+File\+U\+R\+L\+:is\+Ready\+To\+Play\+:@{init\+With\+File\+U\+R\+L\+:is\+Ready\+To\+Play\+:}}
+\index{init\+With\+File\+U\+R\+L\+:is\+Ready\+To\+Play\+:@{init\+With\+File\+U\+R\+L\+:is\+Ready\+To\+Play\+:}!J\+S\+Q\+E\+S\+Video\+Media\+Item@{J\+S\+Q\+E\+S\+Video\+Media\+Item}}
+\subsubsection[{init\+With\+File\+U\+R\+L\+:is\+Ready\+To\+Play\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (instancetype) init\+With\+File\+U\+R\+L\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+U\+R\+L $\ast$)}]{file\+U\+R\+L}
+\item[{isReadyToPlay:(B\+O\+O\+L)}]{is\+Ready\+To\+Play}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_e_s_video_media_item_a5fa02584c5cfd904bb8e476860932c6d}
+Initializes and returns a video media item having the given file\+U\+R\+L.
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+U\+R\+L} & The U\+R\+L that identifies the video resource. \\
+\hline
+{\em is\+Ready\+To\+Play} & A boolean value that specifies if the video is ready to play.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An initialized {\ttfamily \hyperlink{interface_j_s_q_e_s_video_media_item}{J\+S\+Q\+E\+S\+Video\+Media\+Item}} if successful, {\ttfamily nil} otherwise.
+\end{DoxyReturn}
+If the video must be downloaded from the network, you may initialize a {\ttfamily \hyperlink{interface_j_s_q_e_s_video_media_item}{J\+S\+Q\+E\+S\+Video\+Media\+Item}} with a {\ttfamily nil} file\+U\+R\+L or specify {\ttfamily N\+O} for is\+Ready\+To\+Play. Once the video has been saved to disk, or is ready to stream, you can set the file\+U\+R\+L property or is\+Ready\+To\+Play property, respectively. 
+
+\subsection{Property Documentation}
+\hypertarget{interface_j_s_q_e_s_video_media_item_a1bb33ad4c3f4d362443b909a818ebf5a}{}\index{J\+S\+Q\+E\+S\+Video\+Media\+Item@{J\+S\+Q\+E\+S\+Video\+Media\+Item}!file\+U\+R\+L@{file\+U\+R\+L}}
+\index{file\+U\+R\+L@{file\+U\+R\+L}!J\+S\+Q\+E\+S\+Video\+Media\+Item@{J\+S\+Q\+E\+S\+Video\+Media\+Item}}
+\subsubsection[{file\+U\+R\+L}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+U\+R\+L$\ast$) file\+U\+R\+L\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_j_s_q_e_s_video_media_item_a1bb33ad4c3f4d362443b909a818ebf5a}
+The U\+R\+L that identifies a video resource. \hypertarget{interface_j_s_q_e_s_video_media_item_a39bcd17dda91c3887c51eb9758011569}{}\index{J\+S\+Q\+E\+S\+Video\+Media\+Item@{J\+S\+Q\+E\+S\+Video\+Media\+Item}!is\+Ready\+To\+Play@{is\+Ready\+To\+Play}}
+\index{is\+Ready\+To\+Play@{is\+Ready\+To\+Play}!J\+S\+Q\+E\+S\+Video\+Media\+Item@{J\+S\+Q\+E\+S\+Video\+Media\+Item}}
+\subsubsection[{is\+Ready\+To\+Play}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) is\+Ready\+To\+Play\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_j_s_q_e_s_video_media_item_a39bcd17dda91c3887c51eb9758011569}
+A boolean value that specifies whether or not the video is ready to be played.
+
+When set to {\ttfamily Y\+E\+S}, the video is ready. When set to {\ttfamily N\+O} it is not ready. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Vendors/\+J\+S\+Q\+Messages\+View\+Controller/\+Model/J\+S\+Q\+Video\+Media\+Item.\+h\item 
+Vendors/\+J\+S\+Q\+Messages\+View\+Controller/\+Model/J\+S\+Q\+Video\+Media\+Item.\+m\end{DoxyCompactItemize}

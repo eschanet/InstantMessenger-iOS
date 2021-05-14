@@ -1,0 +1,116 @@
+\hypertarget{protocol_p_f_sign_up_view_controller_delegate-p}{}\section{$<$P\+F\+Sign\+Up\+View\+Controller\+Delegate$>$ Protocol Reference}
+\label{protocol_p_f_sign_up_view_controller_delegate-p}\index{$<$\+P\+F\+Sign\+Up\+View\+Controller\+Delegate$>$@{$<$\+P\+F\+Sign\+Up\+View\+Controller\+Delegate$>$}}
+
+
+{\ttfamily \#import $<$P\+F\+Sign\+Up\+View\+Controller.\+h$>$}
+
+Inheritance diagram for $<$P\+F\+Sign\+Up\+View\+Controller\+Delegate$>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{protocol_p_f_sign_up_view_controller_delegate-p}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{Indent}{\bf Customizing Behavior}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{protocol_p_f_sign_up_view_controller_delegate-p_aa3c2936660affd0ae8fbcc500f1f6464}{sign\+Up\+View\+Controller\+:should\+Begin\+Sign\+Up\+:}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Responding to Actions}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{protocol_p_f_sign_up_view_controller_delegate-p_a0722edf19ebc03788c69506b72e914df}{sign\+Up\+View\+Controller\+:did\+Sign\+Up\+User\+:}
+\item 
+(void) -\/ \hyperlink{protocol_p_f_sign_up_view_controller_delegate-p_a9d6c6d7583c0f8d4e2837a50475c2f7f}{sign\+Up\+View\+Controller\+:did\+Fail\+To\+Sign\+Up\+With\+Error\+:}
+\item 
+(void) -\/ \hyperlink{protocol_p_f_sign_up_view_controller_delegate-p_a1e14dd2a7a22f72edd204529a6d6967a}{sign\+Up\+View\+Controller\+Did\+Cancel\+Sign\+Up\+:}
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \hyperlink{protocol_p_f_log_in_view_controller_delegate-p}{P\+F\+Log\+In\+View\+Controller\+Delegate}} protocol defines methods a delegate of a {\ttfamily \hyperlink{interface_p_f_sign_up_view_controller}{P\+F\+Sign\+Up\+View\+Controller}} should implement. All methods of this protocol are optional. 
+
+\subsection{Method Documentation}
+\hypertarget{protocol_p_f_sign_up_view_controller_delegate-p_a9d6c6d7583c0f8d4e2837a50475c2f7f}{}\index{P\+F\+Sign\+Up\+View\+Controller\+Delegate-\/p@{P\+F\+Sign\+Up\+View\+Controller\+Delegate-\/p}!sign\+Up\+View\+Controller\+:did\+Fail\+To\+Sign\+Up\+With\+Error\+:@{sign\+Up\+View\+Controller\+:did\+Fail\+To\+Sign\+Up\+With\+Error\+:}}
+\index{sign\+Up\+View\+Controller\+:did\+Fail\+To\+Sign\+Up\+With\+Error\+:@{sign\+Up\+View\+Controller\+:did\+Fail\+To\+Sign\+Up\+With\+Error\+:}!P\+F\+Sign\+Up\+View\+Controller\+Delegate-\/p@{P\+F\+Sign\+Up\+View\+Controller\+Delegate-\/p}}
+\subsubsection[{sign\+Up\+View\+Controller\+:did\+Fail\+To\+Sign\+Up\+With\+Error\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) sign\+Up\+View\+Controller\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+Sign\+Up\+View\+Controller} $\ast$)}]{sign\+Up\+Controller}
+\item[{didFailToSignUpWithError:(nullable N\+S\+Error $\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{protocol_p_f_sign_up_view_controller_delegate-p_a9d6c6d7583c0f8d4e2837a50475c2f7f}
+Sent to the delegate when the sign up attempt fails.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sign\+Up\+Controller} & The signup view controller where signup failed. \\
+\hline
+{\em error} & {\ttfamily N\+S\+Error} object representing the error that occured. \\
+\hline
+\end{DoxyParams}
+\hypertarget{protocol_p_f_sign_up_view_controller_delegate-p_a0722edf19ebc03788c69506b72e914df}{}\index{P\+F\+Sign\+Up\+View\+Controller\+Delegate-\/p@{P\+F\+Sign\+Up\+View\+Controller\+Delegate-\/p}!sign\+Up\+View\+Controller\+:did\+Sign\+Up\+User\+:@{sign\+Up\+View\+Controller\+:did\+Sign\+Up\+User\+:}}
+\index{sign\+Up\+View\+Controller\+:did\+Sign\+Up\+User\+:@{sign\+Up\+View\+Controller\+:did\+Sign\+Up\+User\+:}!P\+F\+Sign\+Up\+View\+Controller\+Delegate-\/p@{P\+F\+Sign\+Up\+View\+Controller\+Delegate-\/p}}
+\subsubsection[{sign\+Up\+View\+Controller\+:did\+Sign\+Up\+User\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) sign\+Up\+View\+Controller\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+Sign\+Up\+View\+Controller} $\ast$)}]{sign\+Up\+Controller}
+\item[{didSignUpUser:(P\+F\+User $\ast$)}]{user}
+\end{DoxyParamCaption}
+}\label{protocol_p_f_sign_up_view_controller_delegate-p_a0722edf19ebc03788c69506b72e914df}
+Sent to the delegate when a {\ttfamily P\+F\+User} is signed up.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sign\+Up\+Controller} & The signup view controller where signup finished. \\
+\hline
+{\em user} & {\ttfamily P\+F\+User} object that is a result of the sign up. \\
+\hline
+\end{DoxyParams}
+\hypertarget{protocol_p_f_sign_up_view_controller_delegate-p_aa3c2936660affd0ae8fbcc500f1f6464}{}\index{P\+F\+Sign\+Up\+View\+Controller\+Delegate-\/p@{P\+F\+Sign\+Up\+View\+Controller\+Delegate-\/p}!sign\+Up\+View\+Controller\+:should\+Begin\+Sign\+Up\+:@{sign\+Up\+View\+Controller\+:should\+Begin\+Sign\+Up\+:}}
+\index{sign\+Up\+View\+Controller\+:should\+Begin\+Sign\+Up\+:@{sign\+Up\+View\+Controller\+:should\+Begin\+Sign\+Up\+:}!P\+F\+Sign\+Up\+View\+Controller\+Delegate-\/p@{P\+F\+Sign\+Up\+View\+Controller\+Delegate-\/p}}
+\subsubsection[{sign\+Up\+View\+Controller\+:should\+Begin\+Sign\+Up\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) sign\+Up\+View\+Controller\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+Sign\+Up\+View\+Controller} $\ast$)}]{sign\+Up\+Controller}
+\item[{shouldBeginSignUp:(N\+S\+Dictionary$<$ N\+S\+String $\ast$, N\+S\+String $\ast$ $>$ $\ast$)}]{info}
+\end{DoxyParamCaption}
+}\label{protocol_p_f_sign_up_view_controller_delegate-p_aa3c2936660affd0ae8fbcc500f1f6464}
+Sent to the delegate to determine whether the sign up request should be submitted to the server.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sign\+Up\+Controller} & The signup view controller that is requesting the data. \\
+\hline
+{\em info} & An {\ttfamily N\+S\+Dictionary} instance which contains all sign up information that the user entered.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A {\ttfamily B\+O\+O\+L} indicating whether the sign up should proceed. 
+\end{DoxyReturn}
+\hypertarget{protocol_p_f_sign_up_view_controller_delegate-p_a1e14dd2a7a22f72edd204529a6d6967a}{}\index{P\+F\+Sign\+Up\+View\+Controller\+Delegate-\/p@{P\+F\+Sign\+Up\+View\+Controller\+Delegate-\/p}!sign\+Up\+View\+Controller\+Did\+Cancel\+Sign\+Up\+:@{sign\+Up\+View\+Controller\+Did\+Cancel\+Sign\+Up\+:}}
+\index{sign\+Up\+View\+Controller\+Did\+Cancel\+Sign\+Up\+:@{sign\+Up\+View\+Controller\+Did\+Cancel\+Sign\+Up\+:}!P\+F\+Sign\+Up\+View\+Controller\+Delegate-\/p@{P\+F\+Sign\+Up\+View\+Controller\+Delegate-\/p}}
+\subsubsection[{sign\+Up\+View\+Controller\+Did\+Cancel\+Sign\+Up\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) sign\+Up\+View\+Controller\+Did\+Cancel\+Sign\+Up\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+Sign\+Up\+View\+Controller} $\ast$)}]{sign\+Up\+Controller}
+\end{DoxyParamCaption}
+}\label{protocol_p_f_sign_up_view_controller_delegate-p_a1e14dd2a7a22f72edd204529a6d6967a}
+Sent to the delegate when the sign up screen is cancelled.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sign\+Up\+Controller} & The signup view controller where signup was cancelled. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Frameworks/\+Parse\+U\+I.\+framework/\+Headers/P\+F\+Sign\+Up\+View\+Controller.\+h\end{DoxyCompactItemize}

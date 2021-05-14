@@ -1,0 +1,94 @@
+\hypertarget{interface_j_s_q_messages_toolbar_content_view}{}\section{J\+S\+Q\+Messages\+Toolbar\+Content\+View Class Reference}
+\label{interface_j_s_q_messages_toolbar_content_view}\index{J\+S\+Q\+Messages\+Toolbar\+Content\+View@{J\+S\+Q\+Messages\+Toolbar\+Content\+View}}
+
+
+{\ttfamily \#import $<$J\+S\+Q\+Messages\+Toolbar\+Content\+View.\+h$>$}
+
+Inheritance diagram for J\+S\+Q\+Messages\+Toolbar\+Content\+View\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_j_s_q_messages_toolbar_content_view}
+\end{center}
+\end{figure}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(U\+I\+Nib $\ast$) + \hyperlink{interface_j_s_q_messages_toolbar_content_view_a5cffcd9a89b4822dfb45a336fb0b09d6}{nib}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interface_j_s_q_messages_composer_text_view}{J\+S\+Q\+Messages\+Composer\+Text\+View} $\ast$ \hyperlink{interface_j_s_q_messages_toolbar_content_view_aae3a8d9f24e0183c39d001c911150970}{text\+View}
+\item 
+U\+I\+Button $\ast$ \hyperlink{interface_j_s_q_messages_toolbar_content_view_af737e7cc11b7b83ec439bd5e659cf6a3}{left\+Bar\+Button\+Item}
+\item 
+C\+G\+Float \hyperlink{interface_j_s_q_messages_toolbar_content_view_a6976e578e487ce676debe6479b4e6f20}{left\+Bar\+Button\+Item\+Width}
+\item 
+U\+I\+View $\ast$ \hyperlink{interface_j_s_q_messages_toolbar_content_view_a90e3fa0a0808eefe3ffb54f0fe09f22f}{left\+Bar\+Button\+Container\+View}
+\item 
+U\+I\+Button $\ast$ \hyperlink{interface_j_s_q_messages_toolbar_content_view_a376f245e23e4061f5c3bcc48304c7698}{right\+Bar\+Button\+Item}
+\item 
+C\+G\+Float \hyperlink{interface_j_s_q_messages_toolbar_content_view_a6b885f81a85a228cf38eaf6087ce7d39}{right\+Bar\+Button\+Item\+Width}
+\item 
+U\+I\+View $\ast$ \hyperlink{interface_j_s_q_messages_toolbar_content_view_a975f0ae0017e0fe18ba7f75dd12323f3}{right\+Bar\+Button\+Container\+View}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A {\ttfamily \hyperlink{interface_j_s_q_messages_toolbar_content_view}{J\+S\+Q\+Messages\+Toolbar\+Content\+View}} represents the content displayed in a {\ttfamily \hyperlink{interface_j_s_q_messages_input_toolbar}{J\+S\+Q\+Messages\+Input\+Toolbar}}. These subviews consist of a left button, a text view, and a right button. One button is used as the send button, and the other as the accessory button. The text view is used for composing messages. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_j_s_q_messages_toolbar_content_view_a5cffcd9a89b4822dfb45a336fb0b09d6}{}\index{J\+S\+Q\+Messages\+Toolbar\+Content\+View@{J\+S\+Q\+Messages\+Toolbar\+Content\+View}!nib@{nib}}
+\index{nib@{nib}!J\+S\+Q\+Messages\+Toolbar\+Content\+View@{J\+S\+Q\+Messages\+Toolbar\+Content\+View}}
+\subsubsection[{nib}]{\setlength{\rightskip}{0pt plus 5cm}+ (U\+I\+Nib $\ast$) nib 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_messages_toolbar_content_view_a5cffcd9a89b4822dfb45a336fb0b09d6}
+Returns the {\ttfamily U\+I\+Nib} object initialized for a {\ttfamily \hyperlink{interface_j_s_q_messages_toolbar_content_view}{J\+S\+Q\+Messages\+Toolbar\+Content\+View}}.
+
+\begin{DoxyReturn}{Returns}
+The initialized {\ttfamily U\+I\+Nib} object or {\ttfamily nil} if there were errors during initialization or the nib file could not be located. 
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_j_s_q_messages_toolbar_content_view_a90e3fa0a0808eefe3ffb54f0fe09f22f}{}\index{J\+S\+Q\+Messages\+Toolbar\+Content\+View@{J\+S\+Q\+Messages\+Toolbar\+Content\+View}!left\+Bar\+Button\+Container\+View@{left\+Bar\+Button\+Container\+View}}
+\index{left\+Bar\+Button\+Container\+View@{left\+Bar\+Button\+Container\+View}!J\+S\+Q\+Messages\+Toolbar\+Content\+View@{J\+S\+Q\+Messages\+Toolbar\+Content\+View}}
+\subsubsection[{left\+Bar\+Button\+Container\+View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+View$\ast$) left\+Bar\+Button\+Container\+View\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}\label{interface_j_s_q_messages_toolbar_content_view_a90e3fa0a0808eefe3ffb54f0fe09f22f}
+The container view for the left\+Bar\+Button\+Item.
+
+You may use this property to add additional button items to the left side of the toolbar content view. However, you will be completely responsible for responding to all touch events for these buttons in your {\ttfamily \hyperlink{interface_j_s_q_messages_view_controller}{J\+S\+Q\+Messages\+View\+Controller}} subclass. \hypertarget{interface_j_s_q_messages_toolbar_content_view_af737e7cc11b7b83ec439bd5e659cf6a3}{}\index{J\+S\+Q\+Messages\+Toolbar\+Content\+View@{J\+S\+Q\+Messages\+Toolbar\+Content\+View}!left\+Bar\+Button\+Item@{left\+Bar\+Button\+Item}}
+\index{left\+Bar\+Button\+Item@{left\+Bar\+Button\+Item}!J\+S\+Q\+Messages\+Toolbar\+Content\+View@{J\+S\+Q\+Messages\+Toolbar\+Content\+View}}
+\subsubsection[{left\+Bar\+Button\+Item}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Button$\ast$) left\+Bar\+Button\+Item\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}\label{interface_j_s_q_messages_toolbar_content_view_af737e7cc11b7b83ec439bd5e659cf6a3}
+A custom button item displayed on the left of the toolbar content view.
+
+The frame height of this button is ignored. When you set this property, the button is fitted within a pre-\/defined default content view, the left\+Bar\+Button\+Container\+View, whose height is determined by the height of the toolbar. However, the width of this button will be preserved. You may specify a new width using {\ttfamily left\+Bar\+Button\+Item\+Width}. If the frame of this button is equal to {\ttfamily C\+G\+Rect\+Zero} when set, then a default frame size will be used. Set this value to {\ttfamily nil} to remove the button. \hypertarget{interface_j_s_q_messages_toolbar_content_view_a6976e578e487ce676debe6479b4e6f20}{}\index{J\+S\+Q\+Messages\+Toolbar\+Content\+View@{J\+S\+Q\+Messages\+Toolbar\+Content\+View}!left\+Bar\+Button\+Item\+Width@{left\+Bar\+Button\+Item\+Width}}
+\index{left\+Bar\+Button\+Item\+Width@{left\+Bar\+Button\+Item\+Width}!J\+S\+Q\+Messages\+Toolbar\+Content\+View@{J\+S\+Q\+Messages\+Toolbar\+Content\+View}}
+\subsubsection[{left\+Bar\+Button\+Item\+Width}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\+G\+Float) left\+Bar\+Button\+Item\+Width\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_j_s_q_messages_toolbar_content_view_a6976e578e487ce676debe6479b4e6f20}
+Specifies the width of the left\+Bar\+Button\+Item.
+
+This property modifies the width of the left\+Bar\+Button\+Container\+View. \hypertarget{interface_j_s_q_messages_toolbar_content_view_a975f0ae0017e0fe18ba7f75dd12323f3}{}\index{J\+S\+Q\+Messages\+Toolbar\+Content\+View@{J\+S\+Q\+Messages\+Toolbar\+Content\+View}!right\+Bar\+Button\+Container\+View@{right\+Bar\+Button\+Container\+View}}
+\index{right\+Bar\+Button\+Container\+View@{right\+Bar\+Button\+Container\+View}!J\+S\+Q\+Messages\+Toolbar\+Content\+View@{J\+S\+Q\+Messages\+Toolbar\+Content\+View}}
+\subsubsection[{right\+Bar\+Button\+Container\+View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+View$\ast$) right\+Bar\+Button\+Container\+View\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}\label{interface_j_s_q_messages_toolbar_content_view_a975f0ae0017e0fe18ba7f75dd12323f3}
+The container view for the right\+Bar\+Button\+Item.
+
+You may use this property to add additional button items to the right side of the toolbar content view. However, you will be completely responsible for responding to all touch events for these buttons in your {\ttfamily \hyperlink{interface_j_s_q_messages_view_controller}{J\+S\+Q\+Messages\+View\+Controller}} subclass. \hypertarget{interface_j_s_q_messages_toolbar_content_view_a376f245e23e4061f5c3bcc48304c7698}{}\index{J\+S\+Q\+Messages\+Toolbar\+Content\+View@{J\+S\+Q\+Messages\+Toolbar\+Content\+View}!right\+Bar\+Button\+Item@{right\+Bar\+Button\+Item}}
+\index{right\+Bar\+Button\+Item@{right\+Bar\+Button\+Item}!J\+S\+Q\+Messages\+Toolbar\+Content\+View@{J\+S\+Q\+Messages\+Toolbar\+Content\+View}}
+\subsubsection[{right\+Bar\+Button\+Item}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Button$\ast$) right\+Bar\+Button\+Item\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}\label{interface_j_s_q_messages_toolbar_content_view_a376f245e23e4061f5c3bcc48304c7698}
+A custom button item displayed on the right of the toolbar content view.
+
+The frame height of this button is ignored. When you set this property, the button is fitted within a pre-\/defined default content view, the right\+Bar\+Button\+Container\+View, whose height is determined by the height of the toolbar. However, the width of this button will be preserved. You may specify a new width using {\ttfamily right\+Bar\+Button\+Item\+Width}. If the frame of this button is equal to {\ttfamily C\+G\+Rect\+Zero} when set, then a default frame size will be used. Set this value to {\ttfamily nil} to remove the button. \hypertarget{interface_j_s_q_messages_toolbar_content_view_a6b885f81a85a228cf38eaf6087ce7d39}{}\index{J\+S\+Q\+Messages\+Toolbar\+Content\+View@{J\+S\+Q\+Messages\+Toolbar\+Content\+View}!right\+Bar\+Button\+Item\+Width@{right\+Bar\+Button\+Item\+Width}}
+\index{right\+Bar\+Button\+Item\+Width@{right\+Bar\+Button\+Item\+Width}!J\+S\+Q\+Messages\+Toolbar\+Content\+View@{J\+S\+Q\+Messages\+Toolbar\+Content\+View}}
+\subsubsection[{right\+Bar\+Button\+Item\+Width}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\+G\+Float) right\+Bar\+Button\+Item\+Width\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_j_s_q_messages_toolbar_content_view_a6b885f81a85a228cf38eaf6087ce7d39}
+Specifies the width of the right\+Bar\+Button\+Item.
+
+This property modifies the width of the right\+Bar\+Button\+Container\+View. \hypertarget{interface_j_s_q_messages_toolbar_content_view_aae3a8d9f24e0183c39d001c911150970}{}\index{J\+S\+Q\+Messages\+Toolbar\+Content\+View@{J\+S\+Q\+Messages\+Toolbar\+Content\+View}!text\+View@{text\+View}}
+\index{text\+View@{text\+View}!J\+S\+Q\+Messages\+Toolbar\+Content\+View@{J\+S\+Q\+Messages\+Toolbar\+Content\+View}}
+\subsubsection[{text\+View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf J\+S\+Q\+Messages\+Composer\+Text\+View}$\ast$) text\+View\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}\label{interface_j_s_q_messages_toolbar_content_view_aae3a8d9f24e0183c39d001c911150970}
+Returns the text view in which the user composes a message. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Vendors/\+J\+S\+Q\+Messages\+View\+Controller/\+Views/J\+S\+Q\+Messages\+Toolbar\+Content\+View.\+h\item 
+Vendors/\+J\+S\+Q\+Messages\+View\+Controller/\+Views/J\+S\+Q\+Messages\+Toolbar\+Content\+View.\+m\end{DoxyCompactItemize}

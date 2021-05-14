@@ -1,0 +1,133 @@
+\hypertarget{protocol_parse_mutable_client_configuration-p}{}\section{$<$Parse\+Mutable\+Client\+Configuration$>$ Protocol Reference}
+\label{protocol_parse_mutable_client_configuration-p}\index{$<$\+Parse\+Mutable\+Client\+Configuration$>$@{$<$\+Parse\+Mutable\+Client\+Configuration$>$}}
+
+
+{\ttfamily \#import $<$Parse\+Client\+Configuration.\+h$>$}
+
+Inheritance diagram for $<$Parse\+Mutable\+Client\+Configuration$>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{protocol_parse_mutable_client_configuration-p}
+\end{center}
+\end{figure}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+N\+S\+String $\ast$ \hyperlink{protocol_parse_mutable_client_configuration-p_a26cbffdca27f76ffdfcc8e83ed056a8e}{application\+Id}
+\begin{DoxyCompactList}\small\item\em 
+
+ \end{DoxyCompactList}\item 
+N\+S\+String $\ast$ \hyperlink{protocol_parse_mutable_client_configuration-p_a6c73abadbf4fc85fe62e5e7477f0f78f}{client\+Key}
+\item 
+N\+S\+String $\ast$ \hyperlink{protocol_parse_mutable_client_configuration-p_a42bf5a15b0cc4cf6203c9e7950a6ffdb}{server}
+\item 
+id$<$ \hyperlink{protocol_p_f_file_upload_controller-p}{P\+F\+File\+Upload\+Controller} $>$ \hyperlink{protocol_parse_mutable_client_configuration-p_a9f3487a92978a6f57853b73174e23b35}{file\+Upload\+Controller}
+\item 
+B\+O\+O\+L local\+Datastore\+Enabled \hyperlink{protocol_parse_mutable_client_configuration-p_a06b87ec028620d2c0a31751bb81ee21b}{P\+F\+\_\+\+T\+V\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}
+\begin{DoxyCompactList}\small\item\em 
+
+ \end{DoxyCompactList}\item 
+N\+S\+String $\ast$application\+Group\+Identifier \hyperlink{protocol_parse_mutable_client_configuration-p_a06b87ec028620d2c0a31751bb81ee21b}{P\+F\+\_\+\+T\+V\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E} \hyperlink{protocol_parse_mutable_client_configuration-p_a82388e3ffd9d003568d31d3b529afa2c}{P\+F\+\_\+\+W\+A\+T\+C\+H\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}
+\begin{DoxyCompactList}\small\item\em 
+
+ \end{DoxyCompactList}\item 
+N\+S\+String $\ast$containing\+Application\+Bundle\+Identifier \hyperlink{protocol_parse_mutable_client_configuration-p_a06b87ec028620d2c0a31751bb81ee21b}{P\+F\+\_\+\+T\+V\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E} \hyperlink{protocol_parse_mutable_client_configuration-p_a0b25558cbdcf4b583196b1eca6d35b63}{P\+F\+\_\+\+W\+A\+T\+C\+H\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}
+\item 
+N\+S\+U\+Integer \hyperlink{protocol_parse_mutable_client_configuration-p_a3f32025c46ed41103e5833b6b63eae1c}{network\+Retry\+Attempts}
+\begin{DoxyCompactList}\small\item\em 
+
+ \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \hyperlink{protocol_parse_mutable_client_configuration-p}{Parse\+Mutable\+Client\+Configuration}} represents a {\ttfamily \hyperlink{interface_parse_client_configuration}{Parse\+Client\+Configuration}} object that can be mutated.
+
+It is only usable during the execution of the block passed to {\ttfamily \hyperlink{interface_parse_client_configuration}{Parse\+Client\+Configuration}.+configuration\+With\+Block\+:}, during which time you should set your properties on it, similar to the following\+:
+
+``` configuration.\+application\+Id = "$<$\#\+Y\+O\+U\+R A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N I\+D\#$>$\char`\"{}
+configuration.\+client\+Key = @\char`\"{}$<$\#\+Y\+O\+U\+R C\+L\+I\+E\+N\+T K\+E\+Y\#$>$" configuration.\+local\+Datastore\+Enabled = true ``` 
+
+\subsection{Property Documentation}
+\hypertarget{protocol_parse_mutable_client_configuration-p_a26cbffdca27f76ffdfcc8e83ed056a8e}{}\index{Parse\+Mutable\+Client\+Configuration-\/p@{Parse\+Mutable\+Client\+Configuration-\/p}!application\+Id@{application\+Id}}
+\index{application\+Id@{application\+Id}!Parse\+Mutable\+Client\+Configuration-\/p@{Parse\+Mutable\+Client\+Configuration-\/p}}
+\subsubsection[{application\+Id}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) application\+Id\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{protocol_parse_mutable_client_configuration-p_a26cbffdca27f76ffdfcc8e83ed056a8e}
+
+
+
+
+ 
+
+
+
+
+
+The Parse.\+com application id to configure the S\+D\+K with. \hypertarget{protocol_parse_mutable_client_configuration-p_a6c73abadbf4fc85fe62e5e7477f0f78f}{}\index{Parse\+Mutable\+Client\+Configuration-\/p@{Parse\+Mutable\+Client\+Configuration-\/p}!client\+Key@{client\+Key}}
+\index{client\+Key@{client\+Key}!Parse\+Mutable\+Client\+Configuration-\/p@{Parse\+Mutable\+Client\+Configuration-\/p}}
+\subsubsection[{client\+Key}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) client\+Key\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{protocol_parse_mutable_client_configuration-p_a6c73abadbf4fc85fe62e5e7477f0f78f}
+The Parse.\+com client key to configure the S\+D\+K with. \hypertarget{protocol_parse_mutable_client_configuration-p_a9f3487a92978a6f57853b73174e23b35}{}\index{Parse\+Mutable\+Client\+Configuration-\/p@{Parse\+Mutable\+Client\+Configuration-\/p}!file\+Upload\+Controller@{file\+Upload\+Controller}}
+\index{file\+Upload\+Controller@{file\+Upload\+Controller}!Parse\+Mutable\+Client\+Configuration-\/p@{Parse\+Mutable\+Client\+Configuration-\/p}}
+\subsubsection[{file\+Upload\+Controller}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id$<${\bf P\+F\+File\+Upload\+Controller}$>$) file\+Upload\+Controller\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{protocol_parse_mutable_client_configuration-p_a9f3487a92978a6f57853b73174e23b35}
+Sets a custom file upload controller that uploads P\+F\+Files using its own policy. \hypertarget{protocol_parse_mutable_client_configuration-p_a3f32025c46ed41103e5833b6b63eae1c}{}\index{Parse\+Mutable\+Client\+Configuration-\/p@{Parse\+Mutable\+Client\+Configuration-\/p}!network\+Retry\+Attempts@{network\+Retry\+Attempts}}
+\index{network\+Retry\+Attempts@{network\+Retry\+Attempts}!Parse\+Mutable\+Client\+Configuration-\/p@{Parse\+Mutable\+Client\+Configuration-\/p}}
+\subsubsection[{network\+Retry\+Attempts}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+U\+Integer) network\+Retry\+Attempts\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{protocol_parse_mutable_client_configuration-p_a3f32025c46ed41103e5833b6b63eae1c}
+
+
+
+
+ 
+
+
+
+
+
+The maximum number of retry attempts to make upon a failed network request. \hypertarget{protocol_parse_mutable_client_configuration-p_a06b87ec028620d2c0a31751bb81ee21b}{}\index{Parse\+Mutable\+Client\+Configuration-\/p@{Parse\+Mutable\+Client\+Configuration-\/p}!P\+F\+\_\+\+T\+V\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E@{P\+F\+\_\+\+T\+V\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}}
+\index{P\+F\+\_\+\+T\+V\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E@{P\+F\+\_\+\+T\+V\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}!Parse\+Mutable\+Client\+Configuration-\/p@{Parse\+Mutable\+Client\+Configuration-\/p}}
+\subsubsection[{P\+F\+\_\+\+T\+V\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L local\+Datastore\+Enabled) P\+F\+\_\+\+T\+V\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{protocol_parse_mutable_client_configuration-p_a06b87ec028620d2c0a31751bb81ee21b}
+
+
+
+
+ 
+
+
+
+
+
+Whether or not to enable pinning in the S\+D\+K.
+
+The default value is {\ttfamily N\+O}. \hypertarget{protocol_parse_mutable_client_configuration-p_a82388e3ffd9d003568d31d3b529afa2c}{}\index{Parse\+Mutable\+Client\+Configuration-\/p@{Parse\+Mutable\+Client\+Configuration-\/p}!P\+F\+\_\+\+W\+A\+T\+C\+H\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E@{P\+F\+\_\+\+W\+A\+T\+C\+H\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}}
+\index{P\+F\+\_\+\+W\+A\+T\+C\+H\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E@{P\+F\+\_\+\+W\+A\+T\+C\+H\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}!Parse\+Mutable\+Client\+Configuration-\/p@{Parse\+Mutable\+Client\+Configuration-\/p}}
+\subsubsection[{P\+F\+\_\+\+W\+A\+T\+C\+H\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$ application\+Group\+Identifier {\bf P\+F\+\_\+\+T\+V\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}) P\+F\+\_\+\+W\+A\+T\+C\+H\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{protocol_parse_mutable_client_configuration-p_a82388e3ffd9d003568d31d3b529afa2c}
+
+
+
+
+ 
+
+
+
+
+
+When set, enables data sharing with an application group identifier.
+
+After enabling -\/ Local Datastore, {\ttfamily P\+F\+User.+current\+User}, {\ttfamily \hyperlink{interface_p_f_installation}{P\+F\+Installation}.+current\+Installation} and all eventually commands are going to be available to every application/extension in a group that have the same \hyperlink{interface_parse}{Parse} application\+Id. \hypertarget{protocol_parse_mutable_client_configuration-p_a0b25558cbdcf4b583196b1eca6d35b63}{}\index{Parse\+Mutable\+Client\+Configuration-\/p@{Parse\+Mutable\+Client\+Configuration-\/p}!P\+F\+\_\+\+W\+A\+T\+C\+H\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E@{P\+F\+\_\+\+W\+A\+T\+C\+H\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}}
+\index{P\+F\+\_\+\+W\+A\+T\+C\+H\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E@{P\+F\+\_\+\+W\+A\+T\+C\+H\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}!Parse\+Mutable\+Client\+Configuration-\/p@{Parse\+Mutable\+Client\+Configuration-\/p}}
+\subsubsection[{P\+F\+\_\+\+W\+A\+T\+C\+H\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$ containing\+Application\+Bundle\+Identifier {\bf P\+F\+\_\+\+T\+V\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}) P\+F\+\_\+\+W\+A\+T\+C\+H\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{protocol_parse_mutable_client_configuration-p_a0b25558cbdcf4b583196b1eca6d35b63}
+When set, controls the bundle identifier of the parent bundle to connect to.
+
+\begin{DoxyWarning}{Warning}
+This property should only be set from inside an extension environment. 
+\end{DoxyWarning}
+\hypertarget{protocol_parse_mutable_client_configuration-p_a42bf5a15b0cc4cf6203c9e7950a6ffdb}{}\index{Parse\+Mutable\+Client\+Configuration-\/p@{Parse\+Mutable\+Client\+Configuration-\/p}!server@{server}}
+\index{server@{server}!Parse\+Mutable\+Client\+Configuration-\/p@{Parse\+Mutable\+Client\+Configuration-\/p}}
+\subsubsection[{server}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) server\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{protocol_parse_mutable_client_configuration-p_a42bf5a15b0cc4cf6203c9e7950a6ffdb}
+The U\+R\+L of the server that is being used by the S\+D\+K. Defaults to {\ttfamily \href{https://api.parse.com/1}{\tt https\+://api.\+parse.\+com/1}}.
+
+\begin{DoxyNote}{Note}
+Setting this property to a non-\/valid U\+R\+L or {\ttfamily nil} will throw an {\ttfamily N\+S\+Invalid\+Argument\+Exception}. 
+\end{DoxyNote}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Frameworks/\+Parse.\+framework/\+Headers/Parse\+Client\+Configuration.\+h\end{DoxyCompactItemize}

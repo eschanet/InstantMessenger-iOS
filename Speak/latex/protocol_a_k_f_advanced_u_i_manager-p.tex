@@ -1,0 +1,159 @@
+\hypertarget{protocol_a_k_f_advanced_u_i_manager-p}{}\section{$<$A\+K\+F\+Advanced\+U\+I\+Manager$>$ Protocol Reference}
+\label{protocol_a_k_f_advanced_u_i_manager-p}\index{$<$\+A\+K\+F\+Advanced\+U\+I\+Manager$>$@{$<$\+A\+K\+F\+Advanced\+U\+I\+Manager$>$}}
+
+
+{\ttfamily \#import $<$A\+K\+F\+Advanced\+U\+I\+Manager.\+h$>$}
+
+Inheritance diagram for $<$A\+K\+F\+Advanced\+U\+I\+Manager$>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{protocol_a_k_f_advanced_u_i_manager-p}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(nullable U\+I\+View $\ast$) -\/ \hyperlink{protocol_a_k_f_advanced_u_i_manager-p_a51fbcffbea55b19f0f3c91d147452239}{action\+Bar\+View\+For\+State\+:}
+\item 
+(nullable U\+I\+View $\ast$) -\/ \hyperlink{protocol_a_k_f_advanced_u_i_manager-p_a6d6a138374d8e92d1307b934357b3ed7}{body\+View\+For\+State\+:}
+\item 
+(A\+K\+F\+Button\+Type) -\/ \hyperlink{protocol_a_k_f_advanced_u_i_manager-p_ad945c401524db9e22a3f21dc24ce2d2f}{button\+Type\+For\+State\+:}
+\item 
+(nullable U\+I\+View $\ast$) -\/ \hyperlink{protocol_a_k_f_advanced_u_i_manager-p_a9896a3b03c43247bd2e7cd30b8e89da8}{footer\+View\+For\+State\+:}
+\item 
+(nullable U\+I\+View $\ast$) -\/ \hyperlink{protocol_a_k_f_advanced_u_i_manager-p_a2f3c0ba67fdd0a279ccf1f2f93603cd4}{header\+View\+For\+State\+:}
+\item 
+(void) -\/ \hyperlink{protocol_a_k_f_advanced_u_i_manager-p_a043d07a7e11fd542c12064ca4789ffe7}{set\+Action\+Controller\+:}
+\item 
+(void) -\/ \hyperlink{protocol_a_k_f_advanced_u_i_manager-p_a1e844c4c24df443fd55e99edf1cb511f}{set\+Error\+:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Manager for advanced U\+I configuration. 
+
+\subsection{Method Documentation}
+\hypertarget{protocol_a_k_f_advanced_u_i_manager-p_a51fbcffbea55b19f0f3c91d147452239}{}\index{A\+K\+F\+Advanced\+U\+I\+Manager-\/p@{A\+K\+F\+Advanced\+U\+I\+Manager-\/p}!action\+Bar\+View\+For\+State\+:@{action\+Bar\+View\+For\+State\+:}}
+\index{action\+Bar\+View\+For\+State\+:@{action\+Bar\+View\+For\+State\+:}!A\+K\+F\+Advanced\+U\+I\+Manager-\/p@{A\+K\+F\+Advanced\+U\+I\+Manager-\/p}}
+\subsubsection[{action\+Bar\+View\+For\+State\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (nullable U\+I\+View $\ast$) action\+Bar\+View\+For\+State\+: 
+\begin{DoxyParamCaption}
+\item[{(A\+K\+F\+Login\+Flow\+State)}]{state}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_a_k_f_advanced_u_i_manager-p_a51fbcffbea55b19f0f3c91d147452239}
+Returns a custom view to use above the scrollable content.
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & the current state of the login flow\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a View or null for the default view 
+\end{DoxyReturn}
+\hypertarget{protocol_a_k_f_advanced_u_i_manager-p_a6d6a138374d8e92d1307b934357b3ed7}{}\index{A\+K\+F\+Advanced\+U\+I\+Manager-\/p@{A\+K\+F\+Advanced\+U\+I\+Manager-\/p}!body\+View\+For\+State\+:@{body\+View\+For\+State\+:}}
+\index{body\+View\+For\+State\+:@{body\+View\+For\+State\+:}!A\+K\+F\+Advanced\+U\+I\+Manager-\/p@{A\+K\+F\+Advanced\+U\+I\+Manager-\/p}}
+\subsubsection[{body\+View\+For\+State\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (nullable U\+I\+View $\ast$) body\+View\+For\+State\+: 
+\begin{DoxyParamCaption}
+\item[{(A\+K\+F\+Login\+Flow\+State)}]{state}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_a_k_f_advanced_u_i_manager-p_a6d6a138374d8e92d1307b934357b3ed7}
+Returns a custom view for the body in the middle of the scrollable container.
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & the current state of the login flow\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a View or null for the default view 
+\end{DoxyReturn}
+\hypertarget{protocol_a_k_f_advanced_u_i_manager-p_ad945c401524db9e22a3f21dc24ce2d2f}{}\index{A\+K\+F\+Advanced\+U\+I\+Manager-\/p@{A\+K\+F\+Advanced\+U\+I\+Manager-\/p}!button\+Type\+For\+State\+:@{button\+Type\+For\+State\+:}}
+\index{button\+Type\+For\+State\+:@{button\+Type\+For\+State\+:}!A\+K\+F\+Advanced\+U\+I\+Manager-\/p@{A\+K\+F\+Advanced\+U\+I\+Manager-\/p}}
+\subsubsection[{button\+Type\+For\+State\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (A\+K\+F\+Button\+Type) button\+Type\+For\+State\+: 
+\begin{DoxyParamCaption}
+\item[{(A\+K\+F\+Login\+Flow\+State)}]{state}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_a_k_f_advanced_u_i_manager-p_ad945c401524db9e22a3f21dc24ce2d2f}
+Returns the button type for the given login state.
+
+This method is only called for Phone\+Login, Email\+Login and Confirmation\+Code states.
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & the current state of the login flow\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the button type for the state 
+\end{DoxyReturn}
+\hypertarget{protocol_a_k_f_advanced_u_i_manager-p_a9896a3b03c43247bd2e7cd30b8e89da8}{}\index{A\+K\+F\+Advanced\+U\+I\+Manager-\/p@{A\+K\+F\+Advanced\+U\+I\+Manager-\/p}!footer\+View\+For\+State\+:@{footer\+View\+For\+State\+:}}
+\index{footer\+View\+For\+State\+:@{footer\+View\+For\+State\+:}!A\+K\+F\+Advanced\+U\+I\+Manager-\/p@{A\+K\+F\+Advanced\+U\+I\+Manager-\/p}}
+\subsubsection[{footer\+View\+For\+State\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (nullable U\+I\+View $\ast$) footer\+View\+For\+State\+: 
+\begin{DoxyParamCaption}
+\item[{(A\+K\+F\+Login\+Flow\+State)}]{state}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_a_k_f_advanced_u_i_manager-p_a9896a3b03c43247bd2e7cd30b8e89da8}
+Returns a custom view for the bottom of the content in the scrollable container.
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & the current state of the login flow\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a View or null for the default view 
+\end{DoxyReturn}
+\hypertarget{protocol_a_k_f_advanced_u_i_manager-p_a2f3c0ba67fdd0a279ccf1f2f93603cd4}{}\index{A\+K\+F\+Advanced\+U\+I\+Manager-\/p@{A\+K\+F\+Advanced\+U\+I\+Manager-\/p}!header\+View\+For\+State\+:@{header\+View\+For\+State\+:}}
+\index{header\+View\+For\+State\+:@{header\+View\+For\+State\+:}!A\+K\+F\+Advanced\+U\+I\+Manager-\/p@{A\+K\+F\+Advanced\+U\+I\+Manager-\/p}}
+\subsubsection[{header\+View\+For\+State\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (nullable U\+I\+View $\ast$) header\+View\+For\+State\+: 
+\begin{DoxyParamCaption}
+\item[{(A\+K\+F\+Login\+Flow\+State)}]{state}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_a_k_f_advanced_u_i_manager-p_a2f3c0ba67fdd0a279ccf1f2f93603cd4}
+Returns a custom view for the top of the content in the scrollable container.
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & the current state of the login flow\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a View or null for the default view 
+\end{DoxyReturn}
+\hypertarget{protocol_a_k_f_advanced_u_i_manager-p_a043d07a7e11fd542c12064ca4789ffe7}{}\index{A\+K\+F\+Advanced\+U\+I\+Manager-\/p@{A\+K\+F\+Advanced\+U\+I\+Manager-\/p}!set\+Action\+Controller\+:@{set\+Action\+Controller\+:}}
+\index{set\+Action\+Controller\+:@{set\+Action\+Controller\+:}!A\+K\+F\+Advanced\+U\+I\+Manager-\/p@{A\+K\+F\+Advanced\+U\+I\+Manager-\/p}}
+\subsubsection[{set\+Action\+Controller\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\+Action\+Controller\+: 
+\begin{DoxyParamCaption}
+\item[{(nonnull id$<$ {\bf A\+K\+F\+Advanced\+U\+I\+Action\+Controller} $>$)}]{action\+Controller}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_a_k_f_advanced_u_i_manager-p_a043d07a7e11fd542c12064ca4789ffe7}
+Provides a controller for the receiver that can send messages back to the current controller.
+
+This method will be called before any views are retrieved.
+
+
+\begin{DoxyParams}{Parameters}
+{\em action\+Controller} & the action controller \\
+\hline
+\end{DoxyParams}
+\hypertarget{protocol_a_k_f_advanced_u_i_manager-p_a1e844c4c24df443fd55e99edf1cb511f}{}\index{A\+K\+F\+Advanced\+U\+I\+Manager-\/p@{A\+K\+F\+Advanced\+U\+I\+Manager-\/p}!set\+Error\+:@{set\+Error\+:}}
+\index{set\+Error\+:@{set\+Error\+:}!A\+K\+F\+Advanced\+U\+I\+Manager-\/p@{A\+K\+F\+Advanced\+U\+I\+Manager-\/p}}
+\subsubsection[{set\+Error\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\+Error\+: 
+\begin{DoxyParamCaption}
+\item[{(nonnull N\+S\+Error $\ast$)}]{error}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_a_k_f_advanced_u_i_manager-p_a1e844c4c24df443fd55e99edf1cb511f}
+Called when an error is encountered and should be displayed in the U\+I.
+
+This method will be called before the views are retrieved.
+
+
+\begin{DoxyParams}{Parameters}
+{\em error} & the error \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Frameworks/\+Account\+Kit.\+framework/\+Headers/A\+K\+F\+Advanced\+U\+I\+Manager.\+h\end{DoxyCompactItemize}

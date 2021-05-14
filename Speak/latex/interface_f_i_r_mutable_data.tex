@@ -1,0 +1,162 @@
+\hypertarget{interface_f_i_r_mutable_data}{}\section{F\+I\+R\+Mutable\+Data Class Reference}
+\label{interface_f_i_r_mutable_data}\index{F\+I\+R\+Mutable\+Data@{F\+I\+R\+Mutable\+Data}}
+
+
+{\ttfamily \#import $<$F\+I\+R\+Mutable\+Data.\+h$>$}
+
+Inheritance diagram for F\+I\+R\+Mutable\+Data\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_f_i_r_mutable_data}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{Indent}{\bf Inspecting and navigating the data}\par
+\begin{DoxyCompactItemize}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_f_i_r_mutable_data_ad0f1c9128ab6343b99beffb20d83189f}{has\+Children}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_f_i_r_mutable_data_ac653abad42d1327c099e48969a7978d7}{has\+Child\+At\+Path\+:}
+\item 
+(\hyperlink{interface_f_i_r_mutable_data}{F\+I\+R\+Mutable\+Data} $\ast$) -\/ \hyperlink{interface_f_i_r_mutable_data_a4ac67a2165ca92345b12cb4761eca460}{child\+Data\+By\+Appending\+Path\+:}
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Properties}
+\begin{Indent}{\bf Properties}\par
+\begin{DoxyCompactItemize}
+\item 
+id \hyperlink{interface_f_i_r_mutable_data_ac3228205e697a0b5b8810311d9d3eb94}{value}
+\item 
+id \hyperlink{interface_f_i_r_mutable_data_a3dd9f79c360f2ffd294554921134859f}{priority}
+\item 
+N\+S\+U\+Integer \hyperlink{interface_f_i_r_mutable_data_a1368b73f3a5f175f574b50e4db8052cd}{children\+Count}
+\item 
+N\+S\+Enumerator $\ast$ \hyperlink{interface_f_i_r_mutable_data_a19e8940d4b7fa6837de4907c4d5504c0}{children}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_f_i_r_mutable_data_aeb2a1a78746a4d916734cb2c3d62f673}{key}
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{Detailed Description}
+A \hyperlink{interface_f_i_r_mutable_data}{F\+I\+R\+Mutable\+Data} instance is populated with data from a Firebase Database location. When you are using run\+Transaction\+Block\+:, you will be given an instance containing the current data at that location. Your block will be responsible for updating that instance to the data you wish to save at that location, and then returning using \mbox{[}\hyperlink{interface_f_i_r_transaction_result}{F\+I\+R\+Transaction\+Result} success\+With\+Value\+:\mbox{]}.
+
+To modify the data, set its value property to any of the native types support by Firebase Database\+:
+\begin{DoxyItemize}
+\item N\+S\+Number (includes B\+O\+O\+L)
+\item N\+S\+Dictionary
+\item N\+S\+Array
+\item N\+S\+String
+\item nil / N\+S\+Null to remove the data
+\end{DoxyItemize}
+
+Note that changes made to a child \hyperlink{interface_f_i_r_mutable_data}{F\+I\+R\+Mutable\+Data} instance will be visible to the parent. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_f_i_r_mutable_data_a4ac67a2165ca92345b12cb4761eca460}{}\index{F\+I\+R\+Mutable\+Data@{F\+I\+R\+Mutable\+Data}!child\+Data\+By\+Appending\+Path\+:@{child\+Data\+By\+Appending\+Path\+:}}
+\index{child\+Data\+By\+Appending\+Path\+:@{child\+Data\+By\+Appending\+Path\+:}!F\+I\+R\+Mutable\+Data@{F\+I\+R\+Mutable\+Data}}
+\subsubsection[{child\+Data\+By\+Appending\+Path\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf F\+I\+R\+Mutable\+Data} $\ast$) child\+Data\+By\+Appending\+Path\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{path}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_mutable_data_a4ac67a2165ca92345b12cb4761eca460}
+Used to obtain a \hyperlink{interface_f_i_r_mutable_data}{F\+I\+R\+Mutable\+Data} instance that encapsulates the data at the given relative path. Note that changes made to the child will be visible to the parent.
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & A path string, consisting either of a single segment, like \textquotesingle{}child\textquotesingle{}, or multiple segments, \textquotesingle{}a/deeper/child\textquotesingle{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{interface_f_i_r_mutable_data}{F\+I\+R\+Mutable\+Data} instance containing the data at the given path 
+\end{DoxyReturn}
+\hypertarget{interface_f_i_r_mutable_data_ac653abad42d1327c099e48969a7978d7}{}\index{F\+I\+R\+Mutable\+Data@{F\+I\+R\+Mutable\+Data}!has\+Child\+At\+Path\+:@{has\+Child\+At\+Path\+:}}
+\index{has\+Child\+At\+Path\+:@{has\+Child\+At\+Path\+:}!F\+I\+R\+Mutable\+Data@{F\+I\+R\+Mutable\+Data}}
+\subsubsection[{has\+Child\+At\+Path\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) has\+Child\+At\+Path\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{path}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_mutable_data_ac653abad42d1327c099e48969a7978d7}
+Indicates whether this mutable data has a child at the given path.
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & A path string, consisting either of a single segment, like \textquotesingle{}child\textquotesingle{}, or multiple segments, \textquotesingle{}a/deeper/child\textquotesingle{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Y\+E\+S if this data contains a child at the specified relative path 
+\end{DoxyReturn}
+\hypertarget{interface_f_i_r_mutable_data_ad0f1c9128ab6343b99beffb20d83189f}{}\index{F\+I\+R\+Mutable\+Data@{F\+I\+R\+Mutable\+Data}!has\+Children@{has\+Children}}
+\index{has\+Children@{has\+Children}!F\+I\+R\+Mutable\+Data@{F\+I\+R\+Mutable\+Data}}
+\subsubsection[{has\+Children}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) has\+Children 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_mutable_data_ad0f1c9128ab6343b99beffb20d83189f}
+Returns boolean indicating whether this mutable data has children.
+
+\begin{DoxyReturn}{Returns}
+Y\+E\+S if this data contains child nodes. 
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_f_i_r_mutable_data_a19e8940d4b7fa6837de4907c4d5504c0}{}\index{F\+I\+R\+Mutable\+Data@{F\+I\+R\+Mutable\+Data}!children@{children}}
+\index{children@{children}!F\+I\+R\+Mutable\+Data@{F\+I\+R\+Mutable\+Data}}
+\subsubsection[{children}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Enumerator$\ast$) children\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_f_i_r_mutable_data_a19e8940d4b7fa6837de4907c4d5504c0}
+Used to iterate over the children at this location. You can use the native for .. in syntax\+:
+
+for (F\+I\+R\+Mutable\+Data$\ast$ child in data.\+children) \{ ... \}
+
+Note that this enumerator operates on an immutable copy of the child list. So, you can modify the instance during iteration, but the new additions will not be visible until you get a new enumerator. \hypertarget{interface_f_i_r_mutable_data_a1368b73f3a5f175f574b50e4db8052cd}{}\index{F\+I\+R\+Mutable\+Data@{F\+I\+R\+Mutable\+Data}!children\+Count@{children\+Count}}
+\index{children\+Count@{children\+Count}!F\+I\+R\+Mutable\+Data@{F\+I\+R\+Mutable\+Data}}
+\subsubsection[{children\+Count}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+U\+Integer) children\+Count\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_f_i_r_mutable_data_a1368b73f3a5f175f574b50e4db8052cd}
+\begin{DoxyReturn}{Returns}
+The number of child nodes at this location 
+\end{DoxyReturn}
+\hypertarget{interface_f_i_r_mutable_data_aeb2a1a78746a4d916734cb2c3d62f673}{}\index{F\+I\+R\+Mutable\+Data@{F\+I\+R\+Mutable\+Data}!key@{key}}
+\index{key@{key}!F\+I\+R\+Mutable\+Data@{F\+I\+R\+Mutable\+Data}}
+\subsubsection[{key}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) key\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_f_i_r_mutable_data_aeb2a1a78746a4d916734cb2c3d62f673}
+\begin{DoxyReturn}{Returns}
+The key name of this node, or nil if it is the top-\/most location 
+\end{DoxyReturn}
+\hypertarget{interface_f_i_r_mutable_data_a3dd9f79c360f2ffd294554921134859f}{}\index{F\+I\+R\+Mutable\+Data@{F\+I\+R\+Mutable\+Data}!priority@{priority}}
+\index{priority@{priority}!F\+I\+R\+Mutable\+Data@{F\+I\+R\+Mutable\+Data}}
+\subsubsection[{priority}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) priority\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_f_i_r_mutable_data_a3dd9f79c360f2ffd294554921134859f}
+Set this property to update the priority of the data at this location. Can be set to the following types\+:
+
+
+\begin{DoxyItemize}
+\item N\+S\+Number
+\item N\+S\+String
+\item nil / N\+S\+Null to remove the priority
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+The priority of the data at this location 
+\end{DoxyReturn}
+\hypertarget{interface_f_i_r_mutable_data_ac3228205e697a0b5b8810311d9d3eb94}{}\index{F\+I\+R\+Mutable\+Data@{F\+I\+R\+Mutable\+Data}!value@{value}}
+\index{value@{value}!F\+I\+R\+Mutable\+Data@{F\+I\+R\+Mutable\+Data}}
+\subsubsection[{value}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) value\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_f_i_r_mutable_data_ac3228205e697a0b5b8810311d9d3eb94}
+To modify the data contained by this instance of \hyperlink{interface_f_i_r_mutable_data}{F\+I\+R\+Mutable\+Data}, set this to any of the native types supported by Firebase Database\+:
+
+
+\begin{DoxyItemize}
+\item N\+S\+Number (includes B\+O\+O\+L)
+\item N\+S\+Dictionary
+\item N\+S\+Array
+\item N\+S\+String
+\item nil / N\+S\+Null to remove the data
+\end{DoxyItemize}
+
+Note that setting this value will override the priority at this location.
+
+\begin{DoxyReturn}{Returns}
+The current data at this location as a native object 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Frameworks/\+Firebase\+Database.\+framework/\+Headers/F\+I\+R\+Mutable\+Data.\+h\end{DoxyCompactItemize}

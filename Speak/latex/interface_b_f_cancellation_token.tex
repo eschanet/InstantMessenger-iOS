@@ -1,0 +1,46 @@
+\hypertarget{interface_b_f_cancellation_token}{}\section{B\+F\+Cancellation\+Token Class Reference}
+\label{interface_b_f_cancellation_token}\index{B\+F\+Cancellation\+Token@{B\+F\+Cancellation\+Token}}
+
+
+{\ttfamily \#import $<$B\+F\+Cancellation\+Token.\+h$>$}
+
+Inheritance diagram for B\+F\+Cancellation\+Token\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_b_f_cancellation_token}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_b_f_cancellation_token_registration}{B\+F\+Cancellation\+Token\+Registration} $\ast$) -\/ \hyperlink{interface_b_f_cancellation_token_a4e0bfbca022aa0ab343b8f2a217d87ed}{register\+Cancellation\+Observer\+With\+Block\+:}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+B\+O\+O\+L \hyperlink{interface_b_f_cancellation_token_a565a06cb4c105838f66495b5b79e1280}{cancellation\+Requested}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The consumer view of a Cancellation\+Token. Propagates notification that operations should be canceled. A \hyperlink{interface_b_f_cancellation_token}{B\+F\+Cancellation\+Token} has methods to inspect whether the token has been cancelled. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_b_f_cancellation_token_a4e0bfbca022aa0ab343b8f2a217d87ed}{}\index{B\+F\+Cancellation\+Token@{B\+F\+Cancellation\+Token}!register\+Cancellation\+Observer\+With\+Block\+:@{register\+Cancellation\+Observer\+With\+Block\+:}}
+\index{register\+Cancellation\+Observer\+With\+Block\+:@{register\+Cancellation\+Observer\+With\+Block\+:}!B\+F\+Cancellation\+Token@{B\+F\+Cancellation\+Token}}
+\subsubsection[{register\+Cancellation\+Observer\+With\+Block\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf B\+F\+Cancellation\+Token\+Registration} $\ast$) register\+Cancellation\+Observer\+With\+Block\+: 
+\begin{DoxyParamCaption}
+\item[{(B\+F\+Cancellation\+Block)}]{block}
+\end{DoxyParamCaption}
+}\label{interface_b_f_cancellation_token_a4e0bfbca022aa0ab343b8f2a217d87ed}
+Register a block to be notified when the token is cancelled. If the token is already cancelled the delegate will be notified immediately. 
+
+\subsection{Property Documentation}
+\hypertarget{interface_b_f_cancellation_token_a565a06cb4c105838f66495b5b79e1280}{}\index{B\+F\+Cancellation\+Token@{B\+F\+Cancellation\+Token}!cancellation\+Requested@{cancellation\+Requested}}
+\index{cancellation\+Requested@{cancellation\+Requested}!B\+F\+Cancellation\+Token@{B\+F\+Cancellation\+Token}}
+\subsubsection[{cancellation\+Requested}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) cancellation\+Requested\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_b_f_cancellation_token_a565a06cb4c105838f66495b5b79e1280}
+Whether cancellation has been requested for this token source. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Frameworks/\+Bolts.\+framework/\+Headers/B\+F\+Cancellation\+Token.\+h\end{DoxyCompactItemize}

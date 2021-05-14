@@ -1,0 +1,121 @@
+\hypertarget{protocol_p_f_log_in_view_controller_delegate-p}{}\section{$<$P\+F\+Log\+In\+View\+Controller\+Delegate$>$ Protocol Reference}
+\label{protocol_p_f_log_in_view_controller_delegate-p}\index{$<$\+P\+F\+Log\+In\+View\+Controller\+Delegate$>$@{$<$\+P\+F\+Log\+In\+View\+Controller\+Delegate$>$}}
+
+
+{\ttfamily \#import $<$P\+F\+Log\+In\+View\+Controller.\+h$>$}
+
+Inheritance diagram for $<$P\+F\+Log\+In\+View\+Controller\+Delegate$>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{protocol_p_f_log_in_view_controller_delegate-p}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{Indent}{\bf Customizing Behavior}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{protocol_p_f_log_in_view_controller_delegate-p_a60cfb2662f46527be38db7fb01227d03}{log\+In\+View\+Controller\+:should\+Begin\+Log\+In\+With\+Username\+:password\+:}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Responding to Actions}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{protocol_p_f_log_in_view_controller_delegate-p_aa9813f265c5c79668c0e175f259f72e0}{log\+In\+View\+Controller\+:did\+Log\+In\+User\+:}
+\item 
+(void) -\/ \hyperlink{protocol_p_f_log_in_view_controller_delegate-p_a5b8e48859f7cf1fa1bf20d9bb7da4421}{log\+In\+View\+Controller\+:did\+Fail\+To\+Log\+In\+With\+Error\+:}
+\item 
+(void) -\/ \hyperlink{protocol_p_f_log_in_view_controller_delegate-p_a5d25a707aa54c6497a39298095690974}{log\+In\+View\+Controller\+Did\+Cancel\+Log\+In\+:}
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \hyperlink{protocol_p_f_log_in_view_controller_delegate-p}{P\+F\+Log\+In\+View\+Controller\+Delegate}} protocol defines methods a delegate of a {\ttfamily \hyperlink{interface_p_f_log_in_view_controller}{P\+F\+Log\+In\+View\+Controller}} should implement. All methods of this protocol are optional. 
+
+\subsection{Method Documentation}
+\hypertarget{protocol_p_f_log_in_view_controller_delegate-p_a5b8e48859f7cf1fa1bf20d9bb7da4421}{}\index{P\+F\+Log\+In\+View\+Controller\+Delegate-\/p@{P\+F\+Log\+In\+View\+Controller\+Delegate-\/p}!log\+In\+View\+Controller\+:did\+Fail\+To\+Log\+In\+With\+Error\+:@{log\+In\+View\+Controller\+:did\+Fail\+To\+Log\+In\+With\+Error\+:}}
+\index{log\+In\+View\+Controller\+:did\+Fail\+To\+Log\+In\+With\+Error\+:@{log\+In\+View\+Controller\+:did\+Fail\+To\+Log\+In\+With\+Error\+:}!P\+F\+Log\+In\+View\+Controller\+Delegate-\/p@{P\+F\+Log\+In\+View\+Controller\+Delegate-\/p}}
+\subsubsection[{log\+In\+View\+Controller\+:did\+Fail\+To\+Log\+In\+With\+Error\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) log\+In\+View\+Controller\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+Log\+In\+View\+Controller} $\ast$)}]{log\+In\+Controller}
+\item[{didFailToLogInWithError:(nullable N\+S\+Error $\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{protocol_p_f_log_in_view_controller_delegate-p_a5b8e48859f7cf1fa1bf20d9bb7da4421}
+Sent to the delegate when the log in attempt fails.
+
+If you implement this method, P\+F\+Login\+View\+Controller will not automatically show its default login failure alert view. Instead, you should show your custom alert view in your implementation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em log\+In\+Controller} & The login view controller where login failed. \\
+\hline
+{\em error} & {\ttfamily N\+S\+Error} object representing the error that occured. \\
+\hline
+\end{DoxyParams}
+\hypertarget{protocol_p_f_log_in_view_controller_delegate-p_aa9813f265c5c79668c0e175f259f72e0}{}\index{P\+F\+Log\+In\+View\+Controller\+Delegate-\/p@{P\+F\+Log\+In\+View\+Controller\+Delegate-\/p}!log\+In\+View\+Controller\+:did\+Log\+In\+User\+:@{log\+In\+View\+Controller\+:did\+Log\+In\+User\+:}}
+\index{log\+In\+View\+Controller\+:did\+Log\+In\+User\+:@{log\+In\+View\+Controller\+:did\+Log\+In\+User\+:}!P\+F\+Log\+In\+View\+Controller\+Delegate-\/p@{P\+F\+Log\+In\+View\+Controller\+Delegate-\/p}}
+\subsubsection[{log\+In\+View\+Controller\+:did\+Log\+In\+User\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) log\+In\+View\+Controller\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+Log\+In\+View\+Controller} $\ast$)}]{log\+In\+Controller}
+\item[{didLogInUser:(P\+F\+User $\ast$)}]{user}
+\end{DoxyParamCaption}
+}\label{protocol_p_f_log_in_view_controller_delegate-p_aa9813f265c5c79668c0e175f259f72e0}
+Sent to the delegate when a {\ttfamily P\+F\+User} is logged in.
+
+
+\begin{DoxyParams}{Parameters}
+{\em log\+In\+Controller} & The login view controller where login finished. \\
+\hline
+{\em user} & {\ttfamily P\+F\+User} object that is a result of the login. \\
+\hline
+\end{DoxyParams}
+\hypertarget{protocol_p_f_log_in_view_controller_delegate-p_a60cfb2662f46527be38db7fb01227d03}{}\index{P\+F\+Log\+In\+View\+Controller\+Delegate-\/p@{P\+F\+Log\+In\+View\+Controller\+Delegate-\/p}!log\+In\+View\+Controller\+:should\+Begin\+Log\+In\+With\+Username\+:password\+:@{log\+In\+View\+Controller\+:should\+Begin\+Log\+In\+With\+Username\+:password\+:}}
+\index{log\+In\+View\+Controller\+:should\+Begin\+Log\+In\+With\+Username\+:password\+:@{log\+In\+View\+Controller\+:should\+Begin\+Log\+In\+With\+Username\+:password\+:}!P\+F\+Log\+In\+View\+Controller\+Delegate-\/p@{P\+F\+Log\+In\+View\+Controller\+Delegate-\/p}}
+\subsubsection[{log\+In\+View\+Controller\+:should\+Begin\+Log\+In\+With\+Username\+:password\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) log\+In\+View\+Controller\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+Log\+In\+View\+Controller} $\ast$)}]{log\+In\+Controller}
+\item[{shouldBeginLogInWithUsername:(N\+S\+String $\ast$)}]{username}
+\item[{password:(N\+S\+String $\ast$)}]{password}
+\end{DoxyParamCaption}
+}\label{protocol_p_f_log_in_view_controller_delegate-p_a60cfb2662f46527be38db7fb01227d03}
+Sent to the delegate to determine whether the log in request should be submitted to the server.
+
+
+\begin{DoxyParams}{Parameters}
+{\em log\+In\+Controller} & The login view controller that is requesting the data. \\
+\hline
+{\em username} & the username the user tries to log in with. \\
+\hline
+{\em password} & the password the user tries to log in with.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A {\ttfamily B\+O\+O\+L} indicating whether the log in should proceed. 
+\end{DoxyReturn}
+\hypertarget{protocol_p_f_log_in_view_controller_delegate-p_a5d25a707aa54c6497a39298095690974}{}\index{P\+F\+Log\+In\+View\+Controller\+Delegate-\/p@{P\+F\+Log\+In\+View\+Controller\+Delegate-\/p}!log\+In\+View\+Controller\+Did\+Cancel\+Log\+In\+:@{log\+In\+View\+Controller\+Did\+Cancel\+Log\+In\+:}}
+\index{log\+In\+View\+Controller\+Did\+Cancel\+Log\+In\+:@{log\+In\+View\+Controller\+Did\+Cancel\+Log\+In\+:}!P\+F\+Log\+In\+View\+Controller\+Delegate-\/p@{P\+F\+Log\+In\+View\+Controller\+Delegate-\/p}}
+\subsubsection[{log\+In\+View\+Controller\+Did\+Cancel\+Log\+In\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) log\+In\+View\+Controller\+Did\+Cancel\+Log\+In\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+Log\+In\+View\+Controller} $\ast$)}]{log\+In\+Controller}
+\end{DoxyParamCaption}
+}\label{protocol_p_f_log_in_view_controller_delegate-p_a5d25a707aa54c6497a39298095690974}
+Sent to the delegate when the log in screen is cancelled.
+
+
+\begin{DoxyParams}{Parameters}
+{\em log\+In\+Controller} & The login view controller where login was cancelled. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Frameworks/\+Parse\+U\+I.\+framework/\+Headers/P\+F\+Log\+In\+View\+Controller.\+h\end{DoxyCompactItemize}

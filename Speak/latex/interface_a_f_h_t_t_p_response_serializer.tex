@@ -1,0 +1,102 @@
+\hypertarget{interface_a_f_h_t_t_p_response_serializer}{}\section{A\+F\+H\+T\+T\+P\+Response\+Serializer Class Reference}
+\label{interface_a_f_h_t_t_p_response_serializer}\index{A\+F\+H\+T\+T\+P\+Response\+Serializer@{A\+F\+H\+T\+T\+P\+Response\+Serializer}}
+
+
+{\ttfamily \#import $<$A\+F\+U\+R\+L\+Response\+Serialization.\+h$>$}
+
+Inheritance diagram for A\+F\+H\+T\+T\+P\+Response\+Serializer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.093458cm]{interface_a_f_h_t_t_p_response_serializer}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_a_f_h_t_t_p_response_serializer_ac68c43deaaf530d7b8a6cdd5228e6889}{}(instancetype) -\/ {\bfseries init}\label{interface_a_f_h_t_t_p_response_serializer_ac68c43deaaf530d7b8a6cdd5228e6889}
+
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) + \hyperlink{interface_a_f_h_t_t_p_response_serializer_a9aee0c560f22d56f985170b0cdc0617f}{serializer}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+N\+S\+String\+Encoding \hyperlink{interface_a_f_h_t_t_p_response_serializer_a91382381388e01522dabf5c81e91ca62}{string\+Encoding}
+\end{DoxyCompactItemize}
+\subsection*{Configuring Response Serialization}
+\label{_amgrp94c412383321d03aa01a99b81009d01e}%
+
+
+ 
+
+ \begin{DoxyCompactItemize}
+\item 
+N\+S\+Index\+Set $\ast$ \hyperlink{interface_a_f_h_t_t_p_response_serializer_a5d977b3a90fdc06ed91b875deacc0c5c}{acceptable\+Status\+Codes}
+\item 
+N\+S\+Set $\ast$ \hyperlink{interface_a_f_h_t_t_p_response_serializer_af89f899b8bcb560d179180084961940c}{acceptable\+Content\+Types}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_a_f_h_t_t_p_response_serializer_a157d08e8e3bbb36627a82202c1482db1}{validate\+Response\+:data\+:error\+:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+{\ttfamily \hyperlink{interface_a_f_h_t_t_p_response_serializer}{A\+F\+H\+T\+T\+P\+Response\+Serializer}} conforms to the {\ttfamily \hyperlink{protocol_a_f_u_r_l_request_serialization-p}{A\+F\+U\+R\+L\+Request\+Serialization}} \& {\ttfamily \hyperlink{protocol_a_f_u_r_l_response_serialization-p}{A\+F\+U\+R\+L\+Response\+Serialization}} protocols, offering a concrete base implementation of query string / U\+R\+L form-\/encoded parameter serialization and default request headers, as well as response status code and content type validation.
+
+Any request or response serializer dealing with H\+T\+T\+P is encouraged to subclass {\ttfamily \hyperlink{interface_a_f_h_t_t_p_response_serializer}{A\+F\+H\+T\+T\+P\+Response\+Serializer}} in order to ensure consistent default behavior. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_a_f_h_t_t_p_response_serializer_a9aee0c560f22d56f985170b0cdc0617f}{}\index{A\+F\+H\+T\+T\+P\+Response\+Serializer@{A\+F\+H\+T\+T\+P\+Response\+Serializer}!serializer@{serializer}}
+\index{serializer@{serializer}!A\+F\+H\+T\+T\+P\+Response\+Serializer@{A\+F\+H\+T\+T\+P\+Response\+Serializer}}
+\subsubsection[{serializer}]{\setlength{\rightskip}{0pt plus 5cm}+ (instancetype) serializer 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_a_f_h_t_t_p_response_serializer_a9aee0c560f22d56f985170b0cdc0617f}
+Creates and returns a serializer with default configuration. \hypertarget{interface_a_f_h_t_t_p_response_serializer_a157d08e8e3bbb36627a82202c1482db1}{}\index{A\+F\+H\+T\+T\+P\+Response\+Serializer@{A\+F\+H\+T\+T\+P\+Response\+Serializer}!validate\+Response\+:data\+:error\+:@{validate\+Response\+:data\+:error\+:}}
+\index{validate\+Response\+:data\+:error\+:@{validate\+Response\+:data\+:error\+:}!A\+F\+H\+T\+T\+P\+Response\+Serializer@{A\+F\+H\+T\+T\+P\+Response\+Serializer}}
+\subsubsection[{validate\+Response\+:data\+:error\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) validate\+Response\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+H\+T\+T\+P\+U\+R\+L\+Response $\ast$)}]{response}
+\item[{data:(N\+S\+Data $\ast$)}]{data}
+\item[{error:(N\+S\+Error $\ast$\+\_\+\+\_\+autoreleasing $\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{interface_a_f_h_t_t_p_response_serializer_a157d08e8e3bbb36627a82202c1482db1}
+Validates the specified response and data.
+
+In its base implementation, this method checks for an acceptable status code and content type. Subclasses may wish to add other domain-\/specific checks.
+
+
+\begin{DoxyParams}{Parameters}
+{\em response} & The response to be validated. \\
+\hline
+{\em data} & The data associated with the response. \\
+\hline
+{\em error} & The error that occurred while attempting to validate the response.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily Y\+E\+S} if the response is valid, otherwise {\ttfamily N\+O}. 
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_a_f_h_t_t_p_response_serializer_af89f899b8bcb560d179180084961940c}{}\index{A\+F\+H\+T\+T\+P\+Response\+Serializer@{A\+F\+H\+T\+T\+P\+Response\+Serializer}!acceptable\+Content\+Types@{acceptable\+Content\+Types}}
+\index{acceptable\+Content\+Types@{acceptable\+Content\+Types}!A\+F\+H\+T\+T\+P\+Response\+Serializer@{A\+F\+H\+T\+T\+P\+Response\+Serializer}}
+\subsubsection[{acceptable\+Content\+Types}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Set$\ast$) acceptable\+Content\+Types\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_a_f_h_t_t_p_response_serializer_af89f899b8bcb560d179180084961940c}
+The acceptable M\+I\+M\+E types for responses. When non-\/{\ttfamily nil}, responses with a {\ttfamily Content-\/\+Type} with M\+I\+M\+E types that do not intersect with the set will result in an error during validation. \hypertarget{interface_a_f_h_t_t_p_response_serializer_a5d977b3a90fdc06ed91b875deacc0c5c}{}\index{A\+F\+H\+T\+T\+P\+Response\+Serializer@{A\+F\+H\+T\+T\+P\+Response\+Serializer}!acceptable\+Status\+Codes@{acceptable\+Status\+Codes}}
+\index{acceptable\+Status\+Codes@{acceptable\+Status\+Codes}!A\+F\+H\+T\+T\+P\+Response\+Serializer@{A\+F\+H\+T\+T\+P\+Response\+Serializer}}
+\subsubsection[{acceptable\+Status\+Codes}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Index\+Set$\ast$) acceptable\+Status\+Codes\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_a_f_h_t_t_p_response_serializer_a5d977b3a90fdc06ed91b875deacc0c5c}
+The acceptable H\+T\+T\+P status codes for responses. When non-\/{\ttfamily nil}, responses with status codes not contained by the set will result in an error during validation.
+
+See \href{http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html}{\tt http\+://www.\+w3.\+org/\+Protocols/rfc2616/rfc2616-\/sec10.\+html} \hypertarget{interface_a_f_h_t_t_p_response_serializer_a91382381388e01522dabf5c81e91ca62}{}\index{A\+F\+H\+T\+T\+P\+Response\+Serializer@{A\+F\+H\+T\+T\+P\+Response\+Serializer}!string\+Encoding@{string\+Encoding}}
+\index{string\+Encoding@{string\+Encoding}!A\+F\+H\+T\+T\+P\+Response\+Serializer@{A\+F\+H\+T\+T\+P\+Response\+Serializer}}
+\subsubsection[{string\+Encoding}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String\+Encoding) string\+Encoding\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_a_f_h_t_t_p_response_serializer_a91382381388e01522dabf5c81e91ca62}
+The string encoding used to serialize data received from the server, when no string encoding is specified by the response. {\ttfamily N\+S\+U\+T\+F8\+String\+Encoding} by default. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Vendors/\+A\+F\+Networking/\+A\+F\+Networking/A\+F\+U\+R\+L\+Response\+Serialization.\+h\item 
+Vendors/\+A\+F\+Networking/\+A\+F\+Networking/A\+F\+U\+R\+L\+Response\+Serialization.\+m\end{DoxyCompactItemize}

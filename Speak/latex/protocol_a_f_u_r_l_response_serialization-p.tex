@@ -1,0 +1,53 @@
+\hypertarget{protocol_a_f_u_r_l_response_serialization-p}{}\section{$<$A\+F\+U\+R\+L\+Response\+Serialization$>$ Protocol Reference}
+\label{protocol_a_f_u_r_l_response_serialization-p}\index{$<$\+A\+F\+U\+R\+L\+Response\+Serialization$>$@{$<$\+A\+F\+U\+R\+L\+Response\+Serialization$>$}}
+
+
+{\ttfamily \#import $<$A\+F\+U\+R\+L\+Response\+Serialization.\+h$>$}
+
+Inheritance diagram for $<$A\+F\+U\+R\+L\+Response\+Serialization$>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.093458cm]{protocol_a_f_u_r_l_response_serialization-p}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{protocol_a_f_u_r_l_response_serialization-p_a151c5671cda99d602f7dc5fc3318725e}{response\+Object\+For\+Response\+:data\+:error\+:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \hyperlink{protocol_a_f_u_r_l_response_serialization-p}{A\+F\+U\+R\+L\+Response\+Serialization}} protocol is adopted by an object that decodes data into a more useful object representation, according to details in the server response. Response serializers may additionally perform validation on the incoming response and data.
+
+For example, a J\+S\+O\+N response serializer may check for an acceptable status code ({\ttfamily 2\+X\+X} range) and content type ({\ttfamily application/json}), decoding a valid J\+S\+O\+N response into an object. 
+
+\subsection{Method Documentation}
+\hypertarget{protocol_a_f_u_r_l_response_serialization-p_a151c5671cda99d602f7dc5fc3318725e}{}\index{A\+F\+U\+R\+L\+Response\+Serialization-\/p@{A\+F\+U\+R\+L\+Response\+Serialization-\/p}!response\+Object\+For\+Response\+:data\+:error\+:@{response\+Object\+For\+Response\+:data\+:error\+:}}
+\index{response\+Object\+For\+Response\+:data\+:error\+:@{response\+Object\+For\+Response\+:data\+:error\+:}!A\+F\+U\+R\+L\+Response\+Serialization-\/p@{A\+F\+U\+R\+L\+Response\+Serialization-\/p}}
+\subsubsection[{response\+Object\+For\+Response\+:data\+:error\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) response\+Object\+For\+Response\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+U\+R\+L\+Response $\ast$)}]{response}
+\item[{data:(N\+S\+Data $\ast$)}]{data}
+\item[{error:(N\+S\+Error $\ast$\+\_\+\+\_\+autoreleasing $\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{protocol_a_f_u_r_l_response_serialization-p_a151c5671cda99d602f7dc5fc3318725e}
+The response object decoded from the data associated with a specified response.
+
+
+\begin{DoxyParams}{Parameters}
+{\em response} & The response to be processed. \\
+\hline
+{\em data} & The response data to be decoded. \\
+\hline
+{\em error} & The error that occurred while attempting to decode the response data.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The object decoded from the specified response data. 
+\end{DoxyReturn}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Vendors/\+A\+F\+Networking/\+A\+F\+Networking/A\+F\+U\+R\+L\+Response\+Serialization.\+h\end{DoxyCompactItemize}

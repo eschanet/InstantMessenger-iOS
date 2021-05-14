@@ -1,0 +1,84 @@
+\hypertarget{interface_f_i_r_storage_observable_task}{}\section{F\+I\+R\+Storage\+Observable\+Task Class Reference}
+\label{interface_f_i_r_storage_observable_task}\index{F\+I\+R\+Storage\+Observable\+Task@{F\+I\+R\+Storage\+Observable\+Task}}
+
+
+{\ttfamily \#import $<$F\+I\+R\+Storage\+Observable\+Task.\+h$>$}
+
+Inheritance diagram for F\+I\+R\+Storage\+Observable\+Task\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{interface_f_i_r_storage_observable_task}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{_f_i_r_storage_constants_8h_a4b4a51653670ef0159b5bacd10bc541d}{F\+I\+R\+Storage\+Handle}) -\/ \hyperlink{interface_f_i_r_storage_observable_task_a8782fe1abaf934d1a2e790e20a46dc6f}{observe\+Status\+:handler\+:}
+\item 
+(void) -\/ \hyperlink{interface_f_i_r_storage_observable_task_a26a592a88db9462a70d91741174c88c8}{remove\+Observer\+With\+Handle\+:}
+\item 
+(void) -\/ \hyperlink{interface_f_i_r_storage_observable_task_a50b536dbe022a878f5f6b0aabf6795ac}{remove\+All\+Observers\+For\+Status\+:}
+\item 
+(void) -\/ \hyperlink{interface_f_i_r_storage_observable_task_afac053f775258421be63085385a6b604}{remove\+All\+Observers}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Extends \hyperlink{interface_f_i_r_storage_task}{F\+I\+R\+Storage\+Task} to provide observable semantics such as adding and removing observers. Observers produce a F\+I\+R\+Storage\+Handle, which is used to keep track of and remove specific observers at a later date. This class is currently not thread safe and can only be called on the main thread. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_f_i_r_storage_observable_task_a8782fe1abaf934d1a2e790e20a46dc6f}{}\index{F\+I\+R\+Storage\+Observable\+Task@{F\+I\+R\+Storage\+Observable\+Task}!observe\+Status\+:handler\+:@{observe\+Status\+:handler\+:}}
+\index{observe\+Status\+:handler\+:@{observe\+Status\+:handler\+:}!F\+I\+R\+Storage\+Observable\+Task@{F\+I\+R\+Storage\+Observable\+Task}}
+\subsubsection[{observe\+Status\+:handler\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf F\+I\+R\+Storage\+Handle}) observe\+Status\+: 
+\begin{DoxyParamCaption}
+\item[{(F\+I\+R\+Storage\+Task\+Status)}]{status}
+\item[{handler:(void($^\wedge$)({\bf F\+I\+R\+Storage\+Task\+Snapshot} $\ast${\bf snapshot}))}]{handler}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_storage_observable_task_a8782fe1abaf934d1a2e790e20a46dc6f}
+Observes changes in the upload status\+: Resume, Pause, Progress, Success, and Failure. 
+\begin{DoxyParams}{Parameters}
+{\em status} & The F\+I\+R\+Storage\+Task\+Status change to observe. \\
+\hline
+{\em handler} & A callback that fires every time the status event occurs, returns a \hyperlink{interface_f_i_r_storage_task_snapshot}{F\+I\+R\+Storage\+Task\+Snapshot} containing the state of the task. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A task handle that can be used to remove the observer at a later date. 
+\end{DoxyReturn}
+\hypertarget{interface_f_i_r_storage_observable_task_afac053f775258421be63085385a6b604}{}\index{F\+I\+R\+Storage\+Observable\+Task@{F\+I\+R\+Storage\+Observable\+Task}!remove\+All\+Observers@{remove\+All\+Observers}}
+\index{remove\+All\+Observers@{remove\+All\+Observers}!F\+I\+R\+Storage\+Observable\+Task@{F\+I\+R\+Storage\+Observable\+Task}}
+\subsubsection[{remove\+All\+Observers}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) remove\+All\+Observers 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_storage_observable_task_afac053f775258421be63085385a6b604}
+Removes all observers. \hypertarget{interface_f_i_r_storage_observable_task_a50b536dbe022a878f5f6b0aabf6795ac}{}\index{F\+I\+R\+Storage\+Observable\+Task@{F\+I\+R\+Storage\+Observable\+Task}!remove\+All\+Observers\+For\+Status\+:@{remove\+All\+Observers\+For\+Status\+:}}
+\index{remove\+All\+Observers\+For\+Status\+:@{remove\+All\+Observers\+For\+Status\+:}!F\+I\+R\+Storage\+Observable\+Task@{F\+I\+R\+Storage\+Observable\+Task}}
+\subsubsection[{remove\+All\+Observers\+For\+Status\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) remove\+All\+Observers\+For\+Status\+: 
+\begin{DoxyParamCaption}
+\item[{(F\+I\+R\+Storage\+Task\+Status)}]{status}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_storage_observable_task_a50b536dbe022a878f5f6b0aabf6795ac}
+Removes all observers for a single status. 
+\begin{DoxyParams}{Parameters}
+{\em status} & A F\+I\+R\+Storage\+Task\+Status to remove listeners for. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_f_i_r_storage_observable_task_a26a592a88db9462a70d91741174c88c8}{}\index{F\+I\+R\+Storage\+Observable\+Task@{F\+I\+R\+Storage\+Observable\+Task}!remove\+Observer\+With\+Handle\+:@{remove\+Observer\+With\+Handle\+:}}
+\index{remove\+Observer\+With\+Handle\+:@{remove\+Observer\+With\+Handle\+:}!F\+I\+R\+Storage\+Observable\+Task@{F\+I\+R\+Storage\+Observable\+Task}}
+\subsubsection[{remove\+Observer\+With\+Handle\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) remove\+Observer\+With\+Handle\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf F\+I\+R\+Storage\+Handle})}]{handle}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_storage_observable_task_a26a592a88db9462a70d91741174c88c8}
+Removes the single observer with the provided handle. 
+\begin{DoxyParams}{Parameters}
+{\em handle} & The handle of the task to remove. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Frameworks/\+Firebase\+Storage.\+framework/\+Headers/\hyperlink{_f_i_r_storage_observable_task_8h}{F\+I\+R\+Storage\+Observable\+Task.\+h}\end{DoxyCompactItemize}

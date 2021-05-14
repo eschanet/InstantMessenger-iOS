@@ -1,0 +1,21 @@
+\hypertarget{interface_f_i_r_storage_upload_task}{}\section{F\+I\+R\+Storage\+Upload\+Task Class Reference}
+\label{interface_f_i_r_storage_upload_task}\index{F\+I\+R\+Storage\+Upload\+Task@{F\+I\+R\+Storage\+Upload\+Task}}
+
+
+{\ttfamily \#import $<$F\+I\+R\+Storage\+Upload\+Task.\+h$>$}
+
+Inheritance diagram for F\+I\+R\+Storage\+Upload\+Task\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{interface_f_i_r_storage_upload_task}
+\end{center}
+\end{figure}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{interface_f_i_r_storage_upload_task}{F\+I\+R\+Storage\+Upload\+Task} implements resumable uploads to a file in Firebase Storage. Uploads can be returned on completion with a completion callback, and can be monitored by attaching observers, or controlled by calling F\+I\+R\+Storage\+Task\+::pause, F\+I\+R\+Storage\+Task\+::resume, or F\+I\+R\+Storage\+Task\+::cancel. Uploads can take N\+S\+Data in memory, or an N\+S\+U\+R\+L to a file on disk. Uploads are performed on a background queue, and callbacks are raised on the developer specified callback\+Queue in \hyperlink{interface_f_i_r_storage}{F\+I\+R\+Storage}, or the main queue if left unspecified. Currently all uploads must be initiated and managed on the main queue. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Frameworks/\+Firebase\+Storage.\+framework/\+Headers/\hyperlink{_f_i_r_storage_upload_task_8h}{F\+I\+R\+Storage\+Upload\+Task.\+h}\end{DoxyCompactItemize}

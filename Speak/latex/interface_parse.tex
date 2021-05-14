@@ -1,0 +1,292 @@
+\hypertarget{interface_parse}{}\section{Parse Class Reference}
+\label{interface_parse}\index{Parse@{Parse}}
+
+
+{\ttfamily \#import $<$Parse.\+h$>$}
+
+Inheritance diagram for Parse\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_parse}
+\end{center}
+\end{figure}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) + \hyperlink{interface_parse_a2ab9fb9897adfeef2f15d2a4d17eedc5}{set\+Application\+Id\+:client\+Key\+:}
+\begin{DoxyCompactList}\small\item\em 
+
+ \end{DoxyCompactList}\item 
+(void) + \hyperlink{interface_parse_a5a03444772235e4c7d62fb8c2dc12a04}{initialize\+With\+Configuration\+:}
+\item 
+(nullable \hyperlink{interface_parse_client_configuration}{Parse\+Client\+Configuration} $\ast$) + \hyperlink{interface_parse_afb3ecb775da799cfdf35b4e123a7f171}{current\+Configuration}
+\item 
+(N\+S\+String $\ast$) + \hyperlink{interface_parse_a2518969bfaf490a9e978fce7114401e3}{get\+Application\+Id}
+\item 
+(nullable N\+S\+String $\ast$) + \hyperlink{interface_parse_aa8cbb47db00f3180a8d84406ce16a7e1}{get\+Client\+Key}
+\item 
+(void) + \hyperlink{interface_parse_a72019d0929724fe9a66a7ce70ee5845d}{P\+F\+\_\+\+T\+V\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}
+\begin{DoxyCompactList}\small\item\em 
+
+ \end{DoxyCompactList}\item 
+(B\+O\+O\+L) + \hyperlink{interface_parse_aeba4206a1ffaf53d0335a28c12352a31}{P\+F\+\_\+\+T\+V\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}
+\item 
+(void) + \hyperlink{interface_parse_a1410ebbcc67f5809e4ece8bb915c580d}{enable\+Data\+Sharing\+With\+Application\+Group\+Identifier\+:}
+\begin{DoxyCompactList}\small\item\em 
+
+ \end{DoxyCompactList}\item 
+(void) + \hyperlink{interface_parse_aa442b96b5838e440db7b9fa4e93c1af7}{enable\+Data\+Sharing\+With\+Application\+Group\+Identifier\+:containing\+Application\+:}
+\item 
+(N\+S\+String $\ast$) + \hyperlink{interface_parse_af38a20d48d36d71026273cb005b48444}{P\+F\+\_\+\+T\+V\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}
+\item 
+(N\+S\+String $\ast$) + \hyperlink{interface_parse_af38a20d48d36d71026273cb005b48444}{P\+F\+\_\+\+T\+V\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}
+\item 
+(void) + \hyperlink{interface_parse_a2d0d1535297de00a85c1160ee217fb96}{set\+Log\+Level\+:}
+\begin{DoxyCompactList}\small\item\em 
+
+ \end{DoxyCompactList}\item 
+(P\+F\+Log\+Level) + \hyperlink{interface_parse_ae583f0c67f64ed4d0ee77a6b70c05406}{log\+Level}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Copyright (c) 2015-\/present, \hyperlink{interface_parse}{Parse}, L\+L\+C. All rights reserved.
+
+This source code is licensed under the B\+S\+D-\/style license found in the L\+I\+C\+E\+N\+S\+E file in the root directory of this source tree. An additional grant of patent rights can be found in the P\+A\+T\+E\+N\+T\+S file in the same directory. The {\ttfamily \hyperlink{interface_parse}{Parse}} class contains static functions that handle global configuration for the \hyperlink{interface_parse}{Parse} framework. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_parse_afb3ecb775da799cfdf35b4e123a7f171}{}\index{Parse@{Parse}!current\+Configuration@{current\+Configuration}}
+\index{current\+Configuration@{current\+Configuration}!Parse@{Parse}}
+\subsubsection[{current\+Configuration}]{\setlength{\rightskip}{0pt plus 5cm}+ (nullable {\bf Parse\+Client\+Configuration} $\ast$) current\+Configuration 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_parse_afb3ecb775da799cfdf35b4e123a7f171}
+Gets the current configuration in use by the \hyperlink{interface_parse}{Parse} S\+D\+K.
+
+\begin{DoxyReturn}{Returns}
+The current configuration in use by the S\+D\+K. Returns nil if the S\+D\+K has not been initialized yet. 
+\end{DoxyReturn}
+\hypertarget{interface_parse_a1410ebbcc67f5809e4ece8bb915c580d}{}\index{Parse@{Parse}!enable\+Data\+Sharing\+With\+Application\+Group\+Identifier\+:@{enable\+Data\+Sharing\+With\+Application\+Group\+Identifier\+:}}
+\index{enable\+Data\+Sharing\+With\+Application\+Group\+Identifier\+:@{enable\+Data\+Sharing\+With\+Application\+Group\+Identifier\+:}!Parse@{Parse}}
+\subsubsection[{enable\+Data\+Sharing\+With\+Application\+Group\+Identifier\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) enable\+Data\+Sharing\+With\+Application\+Group\+Identifier\+: 
+\begin{DoxyParamCaption}
+\item[{(\char`\"{}Use `{\bf enable\+Data\+Sharing\+With\+Application\+Group\+Identifier\+:containing\+Application\+:}`.\char`\"{})}]{P\+F\+\_\+\+T\+V\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}
+\end{DoxyParamCaption}
+}\label{interface_parse_a1410ebbcc67f5809e4ece8bb915c580d}
+
+
+
+
+ 
+
+
+
+
+
+Enables data sharing with an application group identifier.
+
+After enabling -\/ Local Datastore, {\ttfamily P\+F\+User.+current\+User}, {\ttfamily \hyperlink{interface_p_f_installation}{P\+F\+Installation}.+current\+Installation} and all eventually commands are going to be available to every application/extension in a group that have the same \hyperlink{interface_parse}{Parse} application\+Id.
+
+\begin{DoxyWarning}{Warning}
+This method is required to be called before {\ttfamily +set\+Application\+Id\+:client\+Key\+:}.
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em group\+Identifier} & Application Group Identifier to share data with. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_parse_aa442b96b5838e440db7b9fa4e93c1af7}{}\index{Parse@{Parse}!enable\+Data\+Sharing\+With\+Application\+Group\+Identifier\+:containing\+Application\+:@{enable\+Data\+Sharing\+With\+Application\+Group\+Identifier\+:containing\+Application\+:}}
+\index{enable\+Data\+Sharing\+With\+Application\+Group\+Identifier\+:containing\+Application\+:@{enable\+Data\+Sharing\+With\+Application\+Group\+Identifier\+:containing\+Application\+:}!Parse@{Parse}}
+\subsubsection[{enable\+Data\+Sharing\+With\+Application\+Group\+Identifier\+:containing\+Application\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) {\bf enable\+Data\+Sharing\+With\+Application\+Group\+Identifier\+:} 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{group\+Identifier}
+\item[{containingApplication:(N\+S\+String $\ast$)}]{P\+F\+\_\+\+T\+V\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}
+\end{DoxyParamCaption}
+}\label{interface_parse_aa442b96b5838e440db7b9fa4e93c1af7}
+Enables data sharing with an application group identifier.
+
+After enabling -\/ Local Datastore, {\ttfamily P\+F\+User.+current\+User}, {\ttfamily \hyperlink{interface_p_f_installation}{P\+F\+Installation}.+current\+Installation} and all eventually commands are going to be available to every application/extension in a group that have the same \hyperlink{interface_parse}{Parse} application\+Id.
+
+\begin{DoxyWarning}{Warning}
+This method is required to be called before {\ttfamily +set\+Application\+Id\+:client\+Key\+:}. This method can only be used by application extensions.
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em group\+Identifier} & Application Group Identifier to share data with. \\
+\hline
+{\em bundle\+Identifier} & Bundle identifier of the containing application. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_parse_a2518969bfaf490a9e978fce7114401e3}{}\index{Parse@{Parse}!get\+Application\+Id@{get\+Application\+Id}}
+\index{get\+Application\+Id@{get\+Application\+Id}!Parse@{Parse}}
+\subsubsection[{get\+Application\+Id}]{\setlength{\rightskip}{0pt plus 5cm}+ (N\+S\+String $\ast$) get\+Application\+Id 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_parse_a2518969bfaf490a9e978fce7114401e3}
+The current application id that was used to configure \hyperlink{interface_parse}{Parse} framework. \hypertarget{interface_parse_aa8cbb47db00f3180a8d84406ce16a7e1}{}\index{Parse@{Parse}!get\+Client\+Key@{get\+Client\+Key}}
+\index{get\+Client\+Key@{get\+Client\+Key}!Parse@{Parse}}
+\subsubsection[{get\+Client\+Key}]{\setlength{\rightskip}{0pt plus 5cm}+ (nullable N\+S\+String $\ast$) get\+Client\+Key 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_parse_aa8cbb47db00f3180a8d84406ce16a7e1}
+The current client key that was used to configure \hyperlink{interface_parse}{Parse} framework. \hypertarget{interface_parse_a5a03444772235e4c7d62fb8c2dc12a04}{}\index{Parse@{Parse}!initialize\+With\+Configuration\+:@{initialize\+With\+Configuration\+:}}
+\index{initialize\+With\+Configuration\+:@{initialize\+With\+Configuration\+:}!Parse@{Parse}}
+\subsubsection[{initialize\+With\+Configuration\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) initialize\+With\+Configuration\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf Parse\+Client\+Configuration} $\ast$)}]{configuration}
+\end{DoxyParamCaption}
+}\label{interface_parse_a5a03444772235e4c7d62fb8c2dc12a04}
+Sets the configuration to be used for the \hyperlink{interface_parse}{Parse} S\+D\+K.
+
+\begin{DoxyNote}{Note}
+Re-\/setting the configuration after having previously sent requests through the S\+D\+K results in undefined behavior.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em configuration} & The new configuration to set for the S\+D\+K. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_parse_ae583f0c67f64ed4d0ee77a6b70c05406}{}\index{Parse@{Parse}!log\+Level@{log\+Level}}
+\index{log\+Level@{log\+Level}!Parse@{Parse}}
+\subsubsection[{log\+Level}]{\setlength{\rightskip}{0pt plus 5cm}+ (P\+F\+Log\+Level) log\+Level 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_parse_ae583f0c67f64ed4d0ee77a6b70c05406}
+Log level that will be displayed.
+
+By default\+:
+
+
+\begin{DoxyItemize}
+\item If running inside an app that was downloaded from i\+O\+S App Store -\/ it is set to {\ttfamily P\+F\+Log\+Level\+None}
+\item All other cases -\/ it is set to {\ttfamily P\+F\+Log\+Level\+Warning}
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+A {\ttfamily P\+F\+Log\+Level} value. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+P\+F\+Log\+Level 
+\end{DoxySeeAlso}
+\hypertarget{interface_parse_af38a20d48d36d71026273cb005b48444}{}\index{Parse@{Parse}!P\+F\+\_\+\+T\+V\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E@{P\+F\+\_\+\+T\+V\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}}
+\index{P\+F\+\_\+\+T\+V\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E@{P\+F\+\_\+\+T\+V\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}!Parse@{Parse}}
+\subsubsection[{P\+F\+\_\+\+T\+V\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}]{\setlength{\rightskip}{0pt plus 5cm}+ (N\+S\+String $\ast$) P\+F\+\_\+\+T\+V\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_parse_af38a20d48d36d71026273cb005b48444}
+Application Group Identifier for Data Sharing.
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily N\+S\+String} value if data sharing is enabled, otherwise {\ttfamily nil}. 
+\end{DoxyReturn}
+\hypertarget{interface_parse_a72019d0929724fe9a66a7ce70ee5845d}{}\index{Parse@{Parse}!P\+F\+\_\+\+T\+V\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E@{P\+F\+\_\+\+T\+V\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}}
+\index{P\+F\+\_\+\+T\+V\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E@{P\+F\+\_\+\+T\+V\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}!Parse@{Parse}}
+\subsubsection[{P\+F\+\_\+\+T\+V\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) P\+F\+\_\+\+T\+V\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_parse_a72019d0929724fe9a66a7ce70ee5845d}
+
+
+
+
+ 
+
+
+
+
+
+Enable pinning in your application. This must be called before your application can use pinning. The recommended way is to call this method before {\ttfamily +set\+Application\+Id\+:client\+Key\+:}. \hypertarget{interface_parse_af38a20d48d36d71026273cb005b48444}{}\index{Parse@{Parse}!P\+F\+\_\+\+T\+V\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E@{P\+F\+\_\+\+T\+V\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}}
+\index{P\+F\+\_\+\+T\+V\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E@{P\+F\+\_\+\+T\+V\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}!Parse@{Parse}}
+\subsubsection[{P\+F\+\_\+\+T\+V\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}]{\setlength{\rightskip}{0pt plus 5cm}+ (N\+S\+String $\ast$) P\+F\+\_\+\+T\+V\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_parse_af38a20d48d36d71026273cb005b48444}
+Containing application bundle identifier for Data Sharing.
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily N\+S\+String} value if data sharing is enabled, otherwise {\ttfamily nil}. 
+\end{DoxyReturn}
+\hypertarget{interface_parse_aeba4206a1ffaf53d0335a28c12352a31}{}\index{Parse@{Parse}!P\+F\+\_\+\+T\+V\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E@{P\+F\+\_\+\+T\+V\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}}
+\index{P\+F\+\_\+\+T\+V\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E@{P\+F\+\_\+\+T\+V\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}!Parse@{Parse}}
+\subsubsection[{P\+F\+\_\+\+T\+V\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}]{\setlength{\rightskip}{0pt plus 5cm}+ (B\+O\+O\+L) P\+F\+\_\+\+T\+V\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_parse_aeba4206a1ffaf53d0335a28c12352a31}
+Flag that indicates whether Local Datastore is enabled.
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily Y\+E\+S} if Local Datastore is enabled, otherwise {\ttfamily N\+O}. 
+\end{DoxyReturn}
+\hypertarget{interface_parse_a2ab9fb9897adfeef2f15d2a4d17eedc5}{}\index{Parse@{Parse}!set\+Application\+Id\+:client\+Key\+:@{set\+Application\+Id\+:client\+Key\+:}}
+\index{set\+Application\+Id\+:client\+Key\+:@{set\+Application\+Id\+:client\+Key\+:}!Parse@{Parse}}
+\subsubsection[{set\+Application\+Id\+:client\+Key\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) set\+Application\+Id\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{application\+Id}
+\item[{clientKey:(N\+S\+String $\ast$)}]{client\+Key}
+\end{DoxyParamCaption}
+}\label{interface_parse_a2ab9fb9897adfeef2f15d2a4d17eedc5}
+
+
+
+
+ 
+
+
+
+
+
+Sets the application\+Id and client\+Key of your application.
+
+
+\begin{DoxyParams}{Parameters}
+{\em application\+Id} & The application id of your \hyperlink{interface_parse}{Parse} application. \\
+\hline
+{\em client\+Key} & The client key of your \hyperlink{interface_parse}{Parse} application. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_parse_a2d0d1535297de00a85c1160ee217fb96}{}\index{Parse@{Parse}!set\+Log\+Level\+:@{set\+Log\+Level\+:}}
+\index{set\+Log\+Level\+:@{set\+Log\+Level\+:}!Parse@{Parse}}
+\subsubsection[{set\+Log\+Level\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) set\+Log\+Level\+: 
+\begin{DoxyParamCaption}
+\item[{(P\+F\+Log\+Level)}]{log\+Level}
+\end{DoxyParamCaption}
+}\label{interface_parse_a2d0d1535297de00a85c1160ee217fb96}
+
+
+
+
+ 
+
+
+
+
+
+Sets the level of logging to display.
+
+By default\+:
+\begin{DoxyItemize}
+\item If running inside an app that was downloaded from i\+O\+S App Store -\/ it is set to {\ttfamily P\+F\+Log\+Level\+None}
+\item All other cases -\/ it is set to {\ttfamily P\+F\+Log\+Level\+Warning}
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em log\+Level} & Log level to set. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+P\+F\+Log\+Level 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Frameworks/\+Parse.\+framework/\+Headers/Parse.\+h\end{DoxyCompactItemize}

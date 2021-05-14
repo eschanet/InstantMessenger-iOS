@@ -1,0 +1,206 @@
+\hypertarget{protocol_j_s_q_messages_collection_view_delegate_flow_layout-p}{}\section{$<$J\+S\+Q\+Messages\+Collection\+View\+Delegate\+Flow\+Layout$>$ Protocol Reference}
+\label{protocol_j_s_q_messages_collection_view_delegate_flow_layout-p}\index{$<$\+J\+S\+Q\+Messages\+Collection\+View\+Delegate\+Flow\+Layout$>$@{$<$\+J\+S\+Q\+Messages\+Collection\+View\+Delegate\+Flow\+Layout$>$}}
+
+
+{\ttfamily \#import $<$J\+S\+Q\+Messages\+Collection\+View\+Delegate\+Flow\+Layout.\+h$>$}
+
+Inheritance diagram for $<$J\+S\+Q\+Messages\+Collection\+View\+Delegate\+Flow\+Layout$>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{protocol_j_s_q_messages_collection_view_delegate_flow_layout-p}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(C\+G\+Float) -\/ \hyperlink{protocol_j_s_q_messages_collection_view_delegate_flow_layout-p_ae65c3c8bd637ce6c98b676cd9be68b4b}{collection\+View\+:layout\+:height\+For\+Cell\+Top\+Label\+At\+Index\+Path\+:}
+\item 
+(C\+G\+Float) -\/ \hyperlink{protocol_j_s_q_messages_collection_view_delegate_flow_layout-p_a44f783c4f7116efb4c1e505621ccc685}{collection\+View\+:layout\+:height\+For\+Message\+Bubble\+Top\+Label\+At\+Index\+Path\+:}
+\item 
+(C\+G\+Float) -\/ \hyperlink{protocol_j_s_q_messages_collection_view_delegate_flow_layout-p_a60a3fddb6f9308e970beb920b34c1bd2}{collection\+View\+:layout\+:height\+For\+Cell\+Bottom\+Label\+At\+Index\+Path\+:}
+\item 
+(void) -\/ \hyperlink{protocol_j_s_q_messages_collection_view_delegate_flow_layout-p_a3c626bde62e4d33258dcb33d9c77abb7}{collection\+View\+:did\+Tap\+Avatar\+Image\+View\+:at\+Index\+Path\+:}
+\item 
+(void) -\/ \hyperlink{protocol_j_s_q_messages_collection_view_delegate_flow_layout-p_ac961f1b3942c4a0ac6223b3b50f724f9}{collection\+View\+:did\+Tap\+Message\+Bubble\+At\+Index\+Path\+:}
+\item 
+\hypertarget{protocol_j_s_q_messages_collection_view_delegate_flow_layout-p_a2ee5eb03db7f8704942a67feab0c464d}{}(void) -\/ {\bfseries collection\+View\+:did\+Long\+Tap\+Message\+Bubble\+At\+Index\+Path\+:}\label{protocol_j_s_q_messages_collection_view_delegate_flow_layout-p_a2ee5eb03db7f8704942a67feab0c464d}
+
+\item 
+(void) -\/ \hyperlink{protocol_j_s_q_messages_collection_view_delegate_flow_layout-p_a2506b06e4d3f87897c5d0eb380070c80}{collection\+View\+:did\+Tap\+Cell\+At\+Index\+Path\+:touch\+Location\+:}
+\item 
+(void) -\/ \hyperlink{protocol_j_s_q_messages_collection_view_delegate_flow_layout-p_ab8f91bf1f17289f0e2e0116f14490d68}{collection\+View\+:header\+:did\+Tap\+Load\+Earlier\+Messages\+Button\+:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \hyperlink{protocol_j_s_q_messages_collection_view_delegate_flow_layout-p}{J\+S\+Q\+Messages\+Collection\+View\+Delegate\+Flow\+Layout}} protocol defines methods that allow you to manage additional layout information for the collection view and respond to additional actions on its items. The methods of this protocol are all optional. 
+
+\subsection{Method Documentation}
+\hypertarget{protocol_j_s_q_messages_collection_view_delegate_flow_layout-p_a3c626bde62e4d33258dcb33d9c77abb7}{}\index{J\+S\+Q\+Messages\+Collection\+View\+Delegate\+Flow\+Layout-\/p@{J\+S\+Q\+Messages\+Collection\+View\+Delegate\+Flow\+Layout-\/p}!collection\+View\+:did\+Tap\+Avatar\+Image\+View\+:at\+Index\+Path\+:@{collection\+View\+:did\+Tap\+Avatar\+Image\+View\+:at\+Index\+Path\+:}}
+\index{collection\+View\+:did\+Tap\+Avatar\+Image\+View\+:at\+Index\+Path\+:@{collection\+View\+:did\+Tap\+Avatar\+Image\+View\+:at\+Index\+Path\+:}!J\+S\+Q\+Messages\+Collection\+View\+Delegate\+Flow\+Layout-\/p@{J\+S\+Q\+Messages\+Collection\+View\+Delegate\+Flow\+Layout-\/p}}
+\subsubsection[{collection\+View\+:did\+Tap\+Avatar\+Image\+View\+:at\+Index\+Path\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) collection\+View\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf J\+S\+Q\+Messages\+Collection\+View} $\ast$)}]{collection\+View}
+\item[{didTapAvatarImageView:(U\+I\+Image\+View $\ast$)}]{avatar\+Image\+View}
+\item[{atIndexPath:(N\+S\+Index\+Path $\ast$)}]{index\+Path}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_j_s_q_messages_collection_view_delegate_flow_layout-p_a3c626bde62e4d33258dcb33d9c77abb7}
+Notifies the delegate that the avatar image view at the specified index\+Path did receive a tap event.
+
+
+\begin{DoxyParams}{Parameters}
+{\em collection\+View} & The collection view object that is notifying the delegate of the tap event. \\
+\hline
+{\em avatar\+Image\+View} & The avatar image view that was tapped. \\
+\hline
+{\em index\+Path} & The index path of the item for which the avatar was tapped. \\
+\hline
+\end{DoxyParams}
+\hypertarget{protocol_j_s_q_messages_collection_view_delegate_flow_layout-p_a2506b06e4d3f87897c5d0eb380070c80}{}\index{J\+S\+Q\+Messages\+Collection\+View\+Delegate\+Flow\+Layout-\/p@{J\+S\+Q\+Messages\+Collection\+View\+Delegate\+Flow\+Layout-\/p}!collection\+View\+:did\+Tap\+Cell\+At\+Index\+Path\+:touch\+Location\+:@{collection\+View\+:did\+Tap\+Cell\+At\+Index\+Path\+:touch\+Location\+:}}
+\index{collection\+View\+:did\+Tap\+Cell\+At\+Index\+Path\+:touch\+Location\+:@{collection\+View\+:did\+Tap\+Cell\+At\+Index\+Path\+:touch\+Location\+:}!J\+S\+Q\+Messages\+Collection\+View\+Delegate\+Flow\+Layout-\/p@{J\+S\+Q\+Messages\+Collection\+View\+Delegate\+Flow\+Layout-\/p}}
+\subsubsection[{collection\+View\+:did\+Tap\+Cell\+At\+Index\+Path\+:touch\+Location\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) collection\+View\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf J\+S\+Q\+Messages\+Collection\+View} $\ast$)}]{collection\+View}
+\item[{didTapCellAtIndexPath:(N\+S\+Index\+Path $\ast$)}]{index\+Path}
+\item[{touchLocation:(C\+G\+Point)}]{touch\+Location}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_j_s_q_messages_collection_view_delegate_flow_layout-p_a2506b06e4d3f87897c5d0eb380070c80}
+Notifies the delegate that the cell at the specified index\+Path did receive a tap event at the specified touch\+Location.
+
+
+\begin{DoxyParams}{Parameters}
+{\em collection\+View} & The collection view object that is notifying the delegate of the tap event. \\
+\hline
+{\em index\+Path} & The index path of the item for which the message bubble was tapped. \\
+\hline
+{\em touch\+Location} & The location of the touch event in the cell\textquotesingle{}s coordinate system.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+This method is {\itshape only} called if position is {\itshape not} within the bounds of the cell\textquotesingle{}s avatar image view or message bubble image view. In other words, this method is {\itshape not} called when the cell\textquotesingle{}s avatar or message bubble are tapped. There are separate delegate methods for these two cases.
+\end{DoxyWarning}
+\begin{DoxySeeAlso}{See also}
+{\ttfamily \hyperlink{protocol_j_s_q_messages_collection_view_delegate_flow_layout-p_a3c626bde62e4d33258dcb33d9c77abb7}{-\/ collection\+View\+:did\+Tap\+Avatar\+Image\+View\+:at\+Index\+Path\+:}} 
+
+{\ttfamily collection\+View\+:did\+Tap\+Message\+Bubble\+At\+Index\+Path\+:at\+Index\+Path\+:} 
+\end{DoxySeeAlso}
+\hypertarget{protocol_j_s_q_messages_collection_view_delegate_flow_layout-p_ac961f1b3942c4a0ac6223b3b50f724f9}{}\index{J\+S\+Q\+Messages\+Collection\+View\+Delegate\+Flow\+Layout-\/p@{J\+S\+Q\+Messages\+Collection\+View\+Delegate\+Flow\+Layout-\/p}!collection\+View\+:did\+Tap\+Message\+Bubble\+At\+Index\+Path\+:@{collection\+View\+:did\+Tap\+Message\+Bubble\+At\+Index\+Path\+:}}
+\index{collection\+View\+:did\+Tap\+Message\+Bubble\+At\+Index\+Path\+:@{collection\+View\+:did\+Tap\+Message\+Bubble\+At\+Index\+Path\+:}!J\+S\+Q\+Messages\+Collection\+View\+Delegate\+Flow\+Layout-\/p@{J\+S\+Q\+Messages\+Collection\+View\+Delegate\+Flow\+Layout-\/p}}
+\subsubsection[{collection\+View\+:did\+Tap\+Message\+Bubble\+At\+Index\+Path\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) collection\+View\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf J\+S\+Q\+Messages\+Collection\+View} $\ast$)}]{collection\+View}
+\item[{didTapMessageBubbleAtIndexPath:(N\+S\+Index\+Path $\ast$)}]{index\+Path}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_j_s_q_messages_collection_view_delegate_flow_layout-p_ac961f1b3942c4a0ac6223b3b50f724f9}
+Notifies the delegate that the message bubble at the specified index\+Path did receive a tap event.
+
+
+\begin{DoxyParams}{Parameters}
+{\em collection\+View} & The collection view object that is notifying the delegate of the tap event. \\
+\hline
+{\em index\+Path} & The index path of the item for which the message bubble was tapped. \\
+\hline
+\end{DoxyParams}
+\hypertarget{protocol_j_s_q_messages_collection_view_delegate_flow_layout-p_ab8f91bf1f17289f0e2e0116f14490d68}{}\index{J\+S\+Q\+Messages\+Collection\+View\+Delegate\+Flow\+Layout-\/p@{J\+S\+Q\+Messages\+Collection\+View\+Delegate\+Flow\+Layout-\/p}!collection\+View\+:header\+:did\+Tap\+Load\+Earlier\+Messages\+Button\+:@{collection\+View\+:header\+:did\+Tap\+Load\+Earlier\+Messages\+Button\+:}}
+\index{collection\+View\+:header\+:did\+Tap\+Load\+Earlier\+Messages\+Button\+:@{collection\+View\+:header\+:did\+Tap\+Load\+Earlier\+Messages\+Button\+:}!J\+S\+Q\+Messages\+Collection\+View\+Delegate\+Flow\+Layout-\/p@{J\+S\+Q\+Messages\+Collection\+View\+Delegate\+Flow\+Layout-\/p}}
+\subsubsection[{collection\+View\+:header\+:did\+Tap\+Load\+Earlier\+Messages\+Button\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) collection\+View\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf J\+S\+Q\+Messages\+Collection\+View} $\ast$)}]{collection\+View}
+\item[{header:({\bf J\+S\+Q\+Messages\+Load\+Earlier\+Header\+View} $\ast$)}]{header\+View}
+\item[{didTapLoadEarlierMessagesButton:(U\+I\+Button $\ast$)}]{sender}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_j_s_q_messages_collection_view_delegate_flow_layout-p_ab8f91bf1f17289f0e2e0116f14490d68}
+Notifies the delegate that the collection view\textquotesingle{}s header did receive a tap event.
+
+
+\begin{DoxyParams}{Parameters}
+{\em collection\+View} & The collection view object that is notifying the delegate of the tap event. \\
+\hline
+{\em header\+View} & The header view in the collection view. \\
+\hline
+{\em sender} & The button that was tapped. \\
+\hline
+\end{DoxyParams}
+\hypertarget{protocol_j_s_q_messages_collection_view_delegate_flow_layout-p_a60a3fddb6f9308e970beb920b34c1bd2}{}\index{J\+S\+Q\+Messages\+Collection\+View\+Delegate\+Flow\+Layout-\/p@{J\+S\+Q\+Messages\+Collection\+View\+Delegate\+Flow\+Layout-\/p}!collection\+View\+:layout\+:height\+For\+Cell\+Bottom\+Label\+At\+Index\+Path\+:@{collection\+View\+:layout\+:height\+For\+Cell\+Bottom\+Label\+At\+Index\+Path\+:}}
+\index{collection\+View\+:layout\+:height\+For\+Cell\+Bottom\+Label\+At\+Index\+Path\+:@{collection\+View\+:layout\+:height\+For\+Cell\+Bottom\+Label\+At\+Index\+Path\+:}!J\+S\+Q\+Messages\+Collection\+View\+Delegate\+Flow\+Layout-\/p@{J\+S\+Q\+Messages\+Collection\+View\+Delegate\+Flow\+Layout-\/p}}
+\subsubsection[{collection\+View\+:layout\+:height\+For\+Cell\+Bottom\+Label\+At\+Index\+Path\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\+G\+Float) collection\+View\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf J\+S\+Q\+Messages\+Collection\+View} $\ast$)}]{collection\+View}
+\item[{layout:({\bf J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout} $\ast$)}]{collection\+View\+Layout}
+\item[{heightForCellBottomLabelAtIndexPath:(N\+S\+Index\+Path $\ast$)}]{index\+Path}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_j_s_q_messages_collection_view_delegate_flow_layout-p_a60a3fddb6f9308e970beb920b34c1bd2}
+Asks the delegate for the height of the {\ttfamily cell\+Bottom\+Label} for the item at the specified index\+Path.
+
+
+\begin{DoxyParams}{Parameters}
+{\em collection\+View} & The collection view object displaying the flow layout. \\
+\hline
+{\em collection\+View\+Layout} & The layout object requesting the information. \\
+\hline
+{\em index\+Path} & The index path of the item.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The height of the {\ttfamily cell\+Bottom\+Label} for the item at index\+Path.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_j_s_q_messages_collection_view_cell}{J\+S\+Q\+Messages\+Collection\+View\+Cell}. 
+\end{DoxySeeAlso}
+\hypertarget{protocol_j_s_q_messages_collection_view_delegate_flow_layout-p_ae65c3c8bd637ce6c98b676cd9be68b4b}{}\index{J\+S\+Q\+Messages\+Collection\+View\+Delegate\+Flow\+Layout-\/p@{J\+S\+Q\+Messages\+Collection\+View\+Delegate\+Flow\+Layout-\/p}!collection\+View\+:layout\+:height\+For\+Cell\+Top\+Label\+At\+Index\+Path\+:@{collection\+View\+:layout\+:height\+For\+Cell\+Top\+Label\+At\+Index\+Path\+:}}
+\index{collection\+View\+:layout\+:height\+For\+Cell\+Top\+Label\+At\+Index\+Path\+:@{collection\+View\+:layout\+:height\+For\+Cell\+Top\+Label\+At\+Index\+Path\+:}!J\+S\+Q\+Messages\+Collection\+View\+Delegate\+Flow\+Layout-\/p@{J\+S\+Q\+Messages\+Collection\+View\+Delegate\+Flow\+Layout-\/p}}
+\subsubsection[{collection\+View\+:layout\+:height\+For\+Cell\+Top\+Label\+At\+Index\+Path\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\+G\+Float) collection\+View\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf J\+S\+Q\+Messages\+Collection\+View} $\ast$)}]{collection\+View}
+\item[{layout:({\bf J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout} $\ast$)}]{collection\+View\+Layout}
+\item[{heightForCellTopLabelAtIndexPath:(N\+S\+Index\+Path $\ast$)}]{index\+Path}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_j_s_q_messages_collection_view_delegate_flow_layout-p_ae65c3c8bd637ce6c98b676cd9be68b4b}
+Asks the delegate for the height of the {\ttfamily cell\+Top\+Label} for the item at the specified index\+Path.
+
+
+\begin{DoxyParams}{Parameters}
+{\em collection\+View} & The collection view object displaying the flow layout. \\
+\hline
+{\em collection\+View\+Layout} & The layout object requesting the information. \\
+\hline
+{\em index\+Path} & The index path of the item.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The height of the {\ttfamily cell\+Top\+Label} for the item at index\+Path.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_j_s_q_messages_collection_view_cell}{J\+S\+Q\+Messages\+Collection\+View\+Cell}. 
+\end{DoxySeeAlso}
+\hypertarget{protocol_j_s_q_messages_collection_view_delegate_flow_layout-p_a44f783c4f7116efb4c1e505621ccc685}{}\index{J\+S\+Q\+Messages\+Collection\+View\+Delegate\+Flow\+Layout-\/p@{J\+S\+Q\+Messages\+Collection\+View\+Delegate\+Flow\+Layout-\/p}!collection\+View\+:layout\+:height\+For\+Message\+Bubble\+Top\+Label\+At\+Index\+Path\+:@{collection\+View\+:layout\+:height\+For\+Message\+Bubble\+Top\+Label\+At\+Index\+Path\+:}}
+\index{collection\+View\+:layout\+:height\+For\+Message\+Bubble\+Top\+Label\+At\+Index\+Path\+:@{collection\+View\+:layout\+:height\+For\+Message\+Bubble\+Top\+Label\+At\+Index\+Path\+:}!J\+S\+Q\+Messages\+Collection\+View\+Delegate\+Flow\+Layout-\/p@{J\+S\+Q\+Messages\+Collection\+View\+Delegate\+Flow\+Layout-\/p}}
+\subsubsection[{collection\+View\+:layout\+:height\+For\+Message\+Bubble\+Top\+Label\+At\+Index\+Path\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\+G\+Float) collection\+View\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf J\+S\+Q\+Messages\+Collection\+View} $\ast$)}]{collection\+View}
+\item[{layout:({\bf J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout} $\ast$)}]{collection\+View\+Layout}
+\item[{heightForMessageBubbleTopLabelAtIndexPath:(N\+S\+Index\+Path $\ast$)}]{index\+Path}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_j_s_q_messages_collection_view_delegate_flow_layout-p_a44f783c4f7116efb4c1e505621ccc685}
+Asks the delegate for the height of the {\ttfamily message\+Bubble\+Top\+Label} for the item at the specified index\+Path.
+
+
+\begin{DoxyParams}{Parameters}
+{\em collection\+View} & The collection view object displaying the flow layout. \\
+\hline
+{\em collection\+View\+Layout} & The layout object requesting the information. \\
+\hline
+{\em index\+Path} & The index path of the item.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The height of the {\ttfamily message\+Bubble\+Top\+Label} for the item at index\+Path.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_j_s_q_messages_collection_view_cell}{J\+S\+Q\+Messages\+Collection\+View\+Cell}. 
+\end{DoxySeeAlso}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Vendors/\+J\+S\+Q\+Messages\+View\+Controller/\+Model/J\+S\+Q\+Messages\+Collection\+View\+Delegate\+Flow\+Layout.\+h\end{DoxyCompactItemize}

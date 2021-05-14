@@ -1,0 +1,50 @@
+\hypertarget{protocol_p_f_user_authentication_delegate-p}{}\section{$<$P\+F\+User\+Authentication\+Delegate$>$ Protocol Reference}
+\label{protocol_p_f_user_authentication_delegate-p}\index{$<$\+P\+F\+User\+Authentication\+Delegate$>$@{$<$\+P\+F\+User\+Authentication\+Delegate$>$}}
+
+
+{\ttfamily \#import $<$P\+F\+User\+Authentication\+Delegate.\+h$>$}
+
+Inheritance diagram for $<$P\+F\+User\+Authentication\+Delegate$>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{protocol_p_f_user_authentication_delegate-p}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{protocol_p_f_user_authentication_delegate-p_afc4b395947ed8ab07351e3f762aa11b7}{restore\+Authentication\+With\+Auth\+Data\+:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Copyright (c) 2015-\/present, \hyperlink{interface_parse}{Parse}, L\+L\+C. All rights reserved.
+
+This source code is licensed under the B\+S\+D-\/style license found in the L\+I\+C\+E\+N\+S\+E file in the root directory of this source tree. An additional grant of patent rights can be found in the P\+A\+T\+E\+N\+T\+S file in the same directory. Provides a general interface for delegation of third party authentication with {\ttfamily P\+F\+User}s. 
+
+\subsection{Method Documentation}
+\hypertarget{protocol_p_f_user_authentication_delegate-p_afc4b395947ed8ab07351e3f762aa11b7}{}\index{P\+F\+User\+Authentication\+Delegate-\/p@{P\+F\+User\+Authentication\+Delegate-\/p}!restore\+Authentication\+With\+Auth\+Data\+:@{restore\+Authentication\+With\+Auth\+Data\+:}}
+\index{restore\+Authentication\+With\+Auth\+Data\+:@{restore\+Authentication\+With\+Auth\+Data\+:}!P\+F\+User\+Authentication\+Delegate-\/p@{P\+F\+User\+Authentication\+Delegate-\/p}}
+\subsubsection[{restore\+Authentication\+With\+Auth\+Data\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) restore\+Authentication\+With\+Auth\+Data\+: 
+\begin{DoxyParamCaption}
+\item[{(nullable N\+S\+Dictionary$<$ N\+S\+String $\ast$, N\+S\+String $\ast$ $>$ $\ast$)}]{auth\+Data}
+\end{DoxyParamCaption}
+}\label{protocol_p_f_user_authentication_delegate-p_afc4b395947ed8ab07351e3f762aa11b7}
+Called when restoring third party authentication credentials that have been serialized, such as session keys, user id, etc.
+
+\begin{DoxyNote}{Note}
+This method will be executed on a background thread.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em auth\+Data} & The auth data for the provider. This value may be {\ttfamily nil} when unlinking an account.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily Y\+E\+S} -\/ if the {\ttfamily auth\+Data} was succesfully synchronized, or {\ttfamily N\+O} if user should not longer be associated because of bad {\ttfamily auth\+Data}. 
+\end{DoxyReturn}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Frameworks/\+Parse.\+framework/\+Headers/P\+F\+User\+Authentication\+Delegate.\+h\end{DoxyCompactItemize}

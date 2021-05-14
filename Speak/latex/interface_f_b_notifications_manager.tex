@@ -1,0 +1,205 @@
+\hypertarget{interface_f_b_notifications_manager}{}\section{F\+B\+Notifications\+Manager Class Reference}
+\label{interface_f_b_notifications_manager}\index{F\+B\+Notifications\+Manager@{F\+B\+Notifications\+Manager}}
+
+
+{\ttfamily \#import $<$F\+B\+Notifications\+Manager.\+h$>$}
+
+Inheritance diagram for F\+B\+Notifications\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_f_b_notifications_manager}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_f_b_notifications_manager_a2cdca76fda69d18dc055c09c8fb49f4a}{}(instancetype) -\/ {\bfseries N\+S\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}\label{interface_f_b_notifications_manager_a2cdca76fda69d18dc055c09c8fb49f4a}
+
+\item 
+(void) -\/ \hyperlink{interface_f_b_notifications_manager_aeb90c6f3581f32e6c5b2b3ca23a7c39a}{prepare\+Push\+Card\+Content\+For\+Remote\+Notification\+Payload\+:completion\+:}
+\begin{DoxyCompactList}\small\item\em 
+
+ \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{interface_f_b_notifications_manager_a001f7ea8d80a0a612fd3ee8eb7a04cc5}{present\+Push\+Card\+For\+Remote\+Notification\+Payload\+:from\+View\+Controller\+:completion\+:}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_f_b_notifications_manager_af37f5c674af62149c51ecb587ce83887}{can\+Present\+Push\+Card\+From\+Remote\+Notification\+Payload\+:}
+\item 
+(void) -\/ \hyperlink{interface_f_b_notifications_manager_a799d0670fb473f7a5e7bd759b68ca787}{create\+Local\+Notification\+From\+Remote\+Notification\+Payload\+:completion\+:}
+\begin{DoxyCompactList}\small\item\em 
+
+ \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{interface_f_b_notifications_manager_a1c6bb5bdbbfe387454b86b20848dafa0}{present\+Push\+Card\+For\+Local\+Notification\+:from\+View\+Controller\+:completion\+:}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_f_b_notifications_manager_ac479f10ae4c5d38a19aec399dff54994}{can\+Present\+Push\+Card\+From\+Local\+Notification\+:}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) + \hyperlink{interface_f_b_notifications_manager_a0301cac2d5897ff25c8c0f02cf631c9c}{shared\+Manager}
+\begin{DoxyCompactList}\small\item\em 
+
+ \end{DoxyCompactList}\item 
+\hypertarget{interface_f_b_notifications_manager_a2cdca76fda69d18dc055c09c8fb49f4a}{}(instancetype) + {\bfseries N\+S\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}\label{interface_f_b_notifications_manager_a2cdca76fda69d18dc055c09c8fb49f4a}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+{\ttfamily \hyperlink{interface_f_b_notifications_manager}{F\+B\+Notifications\+Manager}} is a primary interface for interacting with F\+B\+Notifications.\+framework. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_f_b_notifications_manager_ac479f10ae4c5d38a19aec399dff54994}{}\index{F\+B\+Notifications\+Manager@{F\+B\+Notifications\+Manager}!can\+Present\+Push\+Card\+From\+Local\+Notification\+:@{can\+Present\+Push\+Card\+From\+Local\+Notification\+:}}
+\index{can\+Present\+Push\+Card\+From\+Local\+Notification\+:@{can\+Present\+Push\+Card\+From\+Local\+Notification\+:}!F\+B\+Notifications\+Manager@{F\+B\+Notifications\+Manager}}
+\subsubsection[{can\+Present\+Push\+Card\+From\+Local\+Notification\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) can\+Present\+Push\+Card\+From\+Local\+Notification\+: 
+\begin{DoxyParamCaption}
+\item[{(U\+I\+Local\+Notification $\ast$)}]{notification}
+\end{DoxyParamCaption}
+}\label{interface_f_b_notifications_manager_ac479f10ae4c5d38a19aec399dff54994}
+Returns a boolean value that indicates whether a push card can be presented from a local notification.
+
+
+\begin{DoxyParams}{Parameters}
+{\em notification} & Local notification to check.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily Y\+E\+S} if push card can be presented, otherwise -\/ {\ttfamily N\+O}. 
+\end{DoxyReturn}
+\hypertarget{interface_f_b_notifications_manager_af37f5c674af62149c51ecb587ce83887}{}\index{F\+B\+Notifications\+Manager@{F\+B\+Notifications\+Manager}!can\+Present\+Push\+Card\+From\+Remote\+Notification\+Payload\+:@{can\+Present\+Push\+Card\+From\+Remote\+Notification\+Payload\+:}}
+\index{can\+Present\+Push\+Card\+From\+Remote\+Notification\+Payload\+:@{can\+Present\+Push\+Card\+From\+Remote\+Notification\+Payload\+:}!F\+B\+Notifications\+Manager@{F\+B\+Notifications\+Manager}}
+\subsubsection[{can\+Present\+Push\+Card\+From\+Remote\+Notification\+Payload\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) can\+Present\+Push\+Card\+From\+Remote\+Notification\+Payload\+: 
+\begin{DoxyParamCaption}
+\item[{(nullable N\+S\+Dictionary $\ast$)}]{payload}
+\end{DoxyParamCaption}
+}\label{interface_f_b_notifications_manager_af37f5c674af62149c51ecb587ce83887}
+Returns a {\ttfamily B\+O\+O\+L} value that designated whether a push notification payload is a valid push card payload.
+
+
+\begin{DoxyParams}{Parameters}
+{\em payload} & Push notification payload.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily Y\+E\+S} if payload is a valid push card payload, otherwise -\/ {\ttfamily N\+O}. 
+\end{DoxyReturn}
+\hypertarget{interface_f_b_notifications_manager_a799d0670fb473f7a5e7bd759b68ca787}{}\index{F\+B\+Notifications\+Manager@{F\+B\+Notifications\+Manager}!create\+Local\+Notification\+From\+Remote\+Notification\+Payload\+:completion\+:@{create\+Local\+Notification\+From\+Remote\+Notification\+Payload\+:completion\+:}}
+\index{create\+Local\+Notification\+From\+Remote\+Notification\+Payload\+:completion\+:@{create\+Local\+Notification\+From\+Remote\+Notification\+Payload\+:completion\+:}!F\+B\+Notifications\+Manager@{F\+B\+Notifications\+Manager}}
+\subsubsection[{create\+Local\+Notification\+From\+Remote\+Notification\+Payload\+:completion\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) create\+Local\+Notification\+From\+Remote\+Notification\+Payload\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Dictionary $\ast$)}]{payload}
+\item[{completion:(F\+B\+N\+Local\+Notification\+Creation\+Completion)}]{completion}
+\end{DoxyParamCaption}
+}\label{interface_f_b_notifications_manager_a799d0670fb473f7a5e7bd759b68ca787}
+
+
+
+
+ 
+
+
+
+
+
+Creates a local notification from a remote notification payload (if present). The completion will be called when all content is cached for the in app notification or if there was an error.
+
+
+\begin{DoxyParams}{Parameters}
+{\em payload} & Remote notification payload, usually acquired via {\ttfamily application\+:did\+Receive\+Remote\+Notification\+:}. \\
+\hline
+{\em completion} & A block that will be called after the content is ready for presentation or if there was an error. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_f_b_notifications_manager_aeb90c6f3581f32e6c5b2b3ca23a7c39a}{}\index{F\+B\+Notifications\+Manager@{F\+B\+Notifications\+Manager}!prepare\+Push\+Card\+Content\+For\+Remote\+Notification\+Payload\+:completion\+:@{prepare\+Push\+Card\+Content\+For\+Remote\+Notification\+Payload\+:completion\+:}}
+\index{prepare\+Push\+Card\+Content\+For\+Remote\+Notification\+Payload\+:completion\+:@{prepare\+Push\+Card\+Content\+For\+Remote\+Notification\+Payload\+:completion\+:}!F\+B\+Notifications\+Manager@{F\+B\+Notifications\+Manager}}
+\subsubsection[{prepare\+Push\+Card\+Content\+For\+Remote\+Notification\+Payload\+:completion\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) prepare\+Push\+Card\+Content\+For\+Remote\+Notification\+Payload\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Dictionary $\ast$)}]{payload}
+\item[{completion:(nullable F\+B\+N\+Card\+Content\+Preparation\+Completion)}]{completion}
+\end{DoxyParamCaption}
+}\label{interface_f_b_notifications_manager_aeb90c6f3581f32e6c5b2b3ca23a7c39a}
+
+
+
+
+ 
+
+
+
+
+
+Fetch push card content from a remote notification payload and cache it for later use. If the payload doesn\textquotesingle{}t contain a push card -\/ completion block is going to be called with an error.
+
+
+\begin{DoxyParams}{Parameters}
+{\em payload} & Remote notification payload. \\
+\hline
+{\em completion} & Completion block that will be called when content fetch is done or there was an error. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_f_b_notifications_manager_a1c6bb5bdbbfe387454b86b20848dafa0}{}\index{F\+B\+Notifications\+Manager@{F\+B\+Notifications\+Manager}!present\+Push\+Card\+For\+Local\+Notification\+:from\+View\+Controller\+:completion\+:@{present\+Push\+Card\+For\+Local\+Notification\+:from\+View\+Controller\+:completion\+:}}
+\index{present\+Push\+Card\+For\+Local\+Notification\+:from\+View\+Controller\+:completion\+:@{present\+Push\+Card\+For\+Local\+Notification\+:from\+View\+Controller\+:completion\+:}!F\+B\+Notifications\+Manager@{F\+B\+Notifications\+Manager}}
+\subsubsection[{present\+Push\+Card\+For\+Local\+Notification\+:from\+View\+Controller\+:completion\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) present\+Push\+Card\+For\+Local\+Notification\+: 
+\begin{DoxyParamCaption}
+\item[{(U\+I\+Local\+Notification $\ast$)}]{notification}
+\item[{fromViewController:(nullable U\+I\+View\+Controller $\ast$)}]{view\+Controller}
+\item[{completion:(nullable F\+B\+N\+Card\+Presentation\+Completion)}]{completion}
+\end{DoxyParamCaption}
+}\label{interface_f_b_notifications_manager_a1c6bb5bdbbfe387454b86b20848dafa0}
+Presents a push card from a local notification if it contains one.
+
+
+\begin{DoxyParams}{Parameters}
+{\em notification} & A local notification. \\
+\hline
+{\em view\+Controller} & View controller to present a push card from (optional). \\
+\hline
+{\em completion} & Optional completion block that will be called when a card is visible or there was an error. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_f_b_notifications_manager_a001f7ea8d80a0a612fd3ee8eb7a04cc5}{}\index{F\+B\+Notifications\+Manager@{F\+B\+Notifications\+Manager}!present\+Push\+Card\+For\+Remote\+Notification\+Payload\+:from\+View\+Controller\+:completion\+:@{present\+Push\+Card\+For\+Remote\+Notification\+Payload\+:from\+View\+Controller\+:completion\+:}}
+\index{present\+Push\+Card\+For\+Remote\+Notification\+Payload\+:from\+View\+Controller\+:completion\+:@{present\+Push\+Card\+For\+Remote\+Notification\+Payload\+:from\+View\+Controller\+:completion\+:}!F\+B\+Notifications\+Manager@{F\+B\+Notifications\+Manager}}
+\subsubsection[{present\+Push\+Card\+For\+Remote\+Notification\+Payload\+:from\+View\+Controller\+:completion\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) present\+Push\+Card\+For\+Remote\+Notification\+Payload\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Dictionary $\ast$)}]{payload}
+\item[{fromViewController:(nullable U\+I\+View\+Controller $\ast$)}]{view\+Controller}
+\item[{completion:(nullable F\+B\+N\+Card\+Presentation\+Completion)}]{completion}
+\end{DoxyParamCaption}
+}\label{interface_f_b_notifications_manager_a001f7ea8d80a0a612fd3ee8eb7a04cc5}
+Presents a push card from a remote notification if it contains one. If content is not fully available for a given push card, a loading indicator will be shown instead of a card.
+
+
+\begin{DoxyParams}{Parameters}
+{\em payload} & Remote notification payload. \\
+\hline
+{\em view\+Controller} & View controller to present a push card from (optional). \\
+\hline
+{\em completion} & Optional completion block that will be called when a card is visible or there was an error. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_f_b_notifications_manager_a0301cac2d5897ff25c8c0f02cf631c9c}{}\index{F\+B\+Notifications\+Manager@{F\+B\+Notifications\+Manager}!shared\+Manager@{shared\+Manager}}
+\index{shared\+Manager@{shared\+Manager}!F\+B\+Notifications\+Manager@{F\+B\+Notifications\+Manager}}
+\subsubsection[{shared\+Manager}]{\setlength{\rightskip}{0pt plus 5cm}+ (instancetype) shared\+Manager 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_f_b_notifications_manager_a0301cac2d5897ff25c8c0f02cf631c9c}
+
+
+
+
+ 
+
+
+
+
+
+Returns a shared notifications manager for the current process.
+
+\begin{DoxyReturn}{Returns}
+Shared notifications manager. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Frameworks/\+F\+B\+Notifications.\+framework/\+Headers/F\+B\+Notifications\+Manager.\+h\end{DoxyCompactItemize}

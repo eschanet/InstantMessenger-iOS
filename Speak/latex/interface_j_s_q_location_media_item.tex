@@ -1,0 +1,107 @@
+\hypertarget{interface_j_s_q_location_media_item}{}\section{J\+S\+Q\+Location\+Media\+Item Class Reference}
+\label{interface_j_s_q_location_media_item}\index{J\+S\+Q\+Location\+Media\+Item@{J\+S\+Q\+Location\+Media\+Item}}
+
+
+{\ttfamily \#import $<$J\+S\+Q\+Location\+Media\+Item.\+h$>$}
+
+Inheritance diagram for J\+S\+Q\+Location\+Media\+Item\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.637427cm]{interface_j_s_q_location_media_item}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) -\/ \hyperlink{interface_j_s_q_location_media_item_a6917e2ed7962dc50fdc79c138d885946}{init\+With\+Location\+:}
+\item 
+(void) -\/ \hyperlink{interface_j_s_q_location_media_item_a1c491825c3f0bdd60618e07d4acc97c1}{set\+Location\+:with\+Completion\+Handler\+:}
+\item 
+(void) -\/ \hyperlink{interface_j_s_q_location_media_item_a77fbbf9fcc95e60be4f35bf7d695d91e}{set\+Location\+:region\+:with\+Completion\+Handler\+:}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+C\+L\+Location $\ast$ \hyperlink{interface_j_s_q_location_media_item_afc1f1935469dc2b05605218f59fdb0a1}{location}
+\item 
+C\+L\+Location\+Coordinate2\+D \hyperlink{interface_j_s_q_location_media_item_a58c900c60211c297722242bce1769b00}{coordinate}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \hyperlink{interface_j_s_q_location_media_item}{J\+S\+Q\+Location\+Media\+Item}} class is a concrete {\ttfamily \hyperlink{interface_j_s_q_media_item}{J\+S\+Q\+Media\+Item}} subclass that implements the {\ttfamily \hyperlink{protocol_j_s_q_message_media_data-p}{J\+S\+Q\+Message\+Media\+Data}} protocol and represents a location media message. An initialized {\ttfamily \hyperlink{interface_j_s_q_location_media_item}{J\+S\+Q\+Location\+Media\+Item}} object can be passed to a {\ttfamily J\+S\+Q\+Media\+Message} object during its initialization to construct a valid media message object. You may wish to subclass {\ttfamily \hyperlink{interface_j_s_q_location_media_item}{J\+S\+Q\+Location\+Media\+Item}} to provide additional functionality or behavior. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_j_s_q_location_media_item_a6917e2ed7962dc50fdc79c138d885946}{}\index{J\+S\+Q\+Location\+Media\+Item@{J\+S\+Q\+Location\+Media\+Item}!init\+With\+Location\+:@{init\+With\+Location\+:}}
+\index{init\+With\+Location\+:@{init\+With\+Location\+:}!J\+S\+Q\+Location\+Media\+Item@{J\+S\+Q\+Location\+Media\+Item}}
+\subsubsection[{init\+With\+Location\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (instancetype) init\+With\+Location\+: 
+\begin{DoxyParamCaption}
+\item[{(C\+L\+Location $\ast$)}]{location}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_location_media_item_a6917e2ed7962dc50fdc79c138d885946}
+Initializes and returns a location media item object having the given location.
+
+
+\begin{DoxyParams}{Parameters}
+{\em location} & The location for the media item. This value may be {\ttfamily nil}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An initialized {\ttfamily \hyperlink{interface_j_s_q_location_media_item}{J\+S\+Q\+Location\+Media\+Item}} if successful, {\ttfamily nil} otherwise.
+\end{DoxyReturn}
+If the location data must be dowloaded from the network, you may initialize a {\ttfamily \hyperlink{interface_j_s_q_location_media_item}{J\+S\+Q\+Location\+Media\+Item}} object with a {\ttfamily nil} location. Once the location data has been retrieved, you can then set the location property using {\ttfamily set\+Location\+: with\+Completion\+Handler\+:} \hypertarget{interface_j_s_q_location_media_item_a77fbbf9fcc95e60be4f35bf7d695d91e}{}\index{J\+S\+Q\+Location\+Media\+Item@{J\+S\+Q\+Location\+Media\+Item}!set\+Location\+:region\+:with\+Completion\+Handler\+:@{set\+Location\+:region\+:with\+Completion\+Handler\+:}}
+\index{set\+Location\+:region\+:with\+Completion\+Handler\+:@{set\+Location\+:region\+:with\+Completion\+Handler\+:}!J\+S\+Q\+Location\+Media\+Item@{J\+S\+Q\+Location\+Media\+Item}}
+\subsubsection[{set\+Location\+:region\+:with\+Completion\+Handler\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\+Location\+: 
+\begin{DoxyParamCaption}
+\item[{(C\+L\+Location $\ast$)}]{location}
+\item[{region:(M\+K\+Coordinate\+Region)}]{region}
+\item[{withCompletionHandler:(J\+S\+Q\+Location\+Media\+Item\+Completion\+Block)}]{completion}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_location_media_item_a77fbbf9fcc95e60be4f35bf7d695d91e}
+Sets the specified location for the location media item and immediately begins creating a map view snapshot image on a background thread.
+
+The specified block is executed upon completion of creating the snapshot image and is executed on the app’s main thread.
+
+
+\begin{DoxyParams}{Parameters}
+{\em location} & The location for the media item. \\
+\hline
+{\em region} & The map region that you want to capture. \\
+\hline
+{\em completion} & The block to call after the map view snapshot for the given location has been created. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_j_s_q_location_media_item_a1c491825c3f0bdd60618e07d4acc97c1}{}\index{J\+S\+Q\+Location\+Media\+Item@{J\+S\+Q\+Location\+Media\+Item}!set\+Location\+:with\+Completion\+Handler\+:@{set\+Location\+:with\+Completion\+Handler\+:}}
+\index{set\+Location\+:with\+Completion\+Handler\+:@{set\+Location\+:with\+Completion\+Handler\+:}!J\+S\+Q\+Location\+Media\+Item@{J\+S\+Q\+Location\+Media\+Item}}
+\subsubsection[{set\+Location\+:with\+Completion\+Handler\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\+Location\+: 
+\begin{DoxyParamCaption}
+\item[{(C\+L\+Location $\ast$)}]{location}
+\item[{withCompletionHandler:(J\+S\+Q\+Location\+Media\+Item\+Completion\+Block)}]{completion}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_location_media_item_a1c491825c3f0bdd60618e07d4acc97c1}
+Sets the specified location for the location media item and immediately begins creating a map view snapshot image on a background thread. The map view zooms to a default region whose center point is the location coordinate and whose span is 500 meters for both the latitudinal and longitudinal meters.
+
+The specified block is executed upon completion of creating the snapshot image and is executed on the app’s main thread.
+
+
+\begin{DoxyParams}{Parameters}
+{\em location} & The location for the media item. \\
+\hline
+{\em completion} & The block to call after the map view snapshot for the given location has been created. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_j_s_q_location_media_item_a58c900c60211c297722242bce1769b00}{}\index{J\+S\+Q\+Location\+Media\+Item@{J\+S\+Q\+Location\+Media\+Item}!coordinate@{coordinate}}
+\index{coordinate@{coordinate}!J\+S\+Q\+Location\+Media\+Item@{J\+S\+Q\+Location\+Media\+Item}}
+\subsubsection[{coordinate}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\+L\+Location\+Coordinate2\+D) coordinate\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_j_s_q_location_media_item_a58c900c60211c297722242bce1769b00}
+The coordinate of the location property. \hypertarget{interface_j_s_q_location_media_item_afc1f1935469dc2b05605218f59fdb0a1}{}\index{J\+S\+Q\+Location\+Media\+Item@{J\+S\+Q\+Location\+Media\+Item}!location@{location}}
+\index{location@{location}!J\+S\+Q\+Location\+Media\+Item@{J\+S\+Q\+Location\+Media\+Item}}
+\subsubsection[{location}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\+L\+Location$\ast$) location\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_j_s_q_location_media_item_afc1f1935469dc2b05605218f59fdb0a1}
+The location for the media item. The default value is {\ttfamily nil}. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Vendors/\+J\+S\+Q\+Messages\+View\+Controller/\+Model/J\+S\+Q\+Location\+Media\+Item.\+h\item 
+Vendors/\+J\+S\+Q\+Messages\+View\+Controller/\+Model/J\+S\+Q\+Location\+Media\+Item.\+m\end{DoxyCompactItemize}

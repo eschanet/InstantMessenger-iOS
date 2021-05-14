@@ -1,0 +1,61 @@
+\hypertarget{protocol_f_b_n_card_view_controller_delegate-p}{}\section{$<$F\+B\+N\+Card\+View\+Controller\+Delegate$>$ Protocol Reference}
+\label{protocol_f_b_n_card_view_controller_delegate-p}\index{$<$\+F\+B\+N\+Card\+View\+Controller\+Delegate$>$@{$<$\+F\+B\+N\+Card\+View\+Controller\+Delegate$>$}}
+
+
+{\ttfamily \#import $<$F\+B\+N\+Card\+View\+Controller.\+h$>$}
+
+Inheritance diagram for $<$F\+B\+N\+Card\+View\+Controller\+Delegate$>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{protocol_f_b_n_card_view_controller_delegate-p}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{protocol_f_b_n_card_view_controller_delegate-p_aa06876ddfecc0d59fbccb3544e211975}{push\+Card\+View\+Controller\+:will\+Dismiss\+With\+Open\+U\+R\+L\+:}
+\item 
+(void) -\/ \hyperlink{protocol_f_b_n_card_view_controller_delegate-p_a04baebc794cfdd634b927f9272684945}{push\+Card\+View\+Controller\+Will\+Dismiss\+:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \hyperlink{protocol_f_b_n_card_view_controller_delegate-p}{F\+B\+N\+Card\+View\+Controller\+Delegate}} defines methods for delegate of {\ttfamily \hyperlink{interface_f_b_n_card_view_controller}{F\+B\+N\+Card\+View\+Controller}}. 
+
+\subsection{Method Documentation}
+\hypertarget{protocol_f_b_n_card_view_controller_delegate-p_aa06876ddfecc0d59fbccb3544e211975}{}\index{F\+B\+N\+Card\+View\+Controller\+Delegate-\/p@{F\+B\+N\+Card\+View\+Controller\+Delegate-\/p}!push\+Card\+View\+Controller\+:will\+Dismiss\+With\+Open\+U\+R\+L\+:@{push\+Card\+View\+Controller\+:will\+Dismiss\+With\+Open\+U\+R\+L\+:}}
+\index{push\+Card\+View\+Controller\+:will\+Dismiss\+With\+Open\+U\+R\+L\+:@{push\+Card\+View\+Controller\+:will\+Dismiss\+With\+Open\+U\+R\+L\+:}!F\+B\+N\+Card\+View\+Controller\+Delegate-\/p@{F\+B\+N\+Card\+View\+Controller\+Delegate-\/p}}
+\subsubsection[{push\+Card\+View\+Controller\+:will\+Dismiss\+With\+Open\+U\+R\+L\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) push\+Card\+View\+Controller\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf F\+B\+N\+Card\+View\+Controller} $\ast$)}]{controller}
+\item[{willDismissWithOpenURL:(N\+S\+U\+R\+L $\ast$)}]{url}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_f_b_n_card_view_controller_delegate-p_aa06876ddfecc0d59fbccb3544e211975}
+Called when a view controller is about to dismiss and open a U\+R\+L.
+
+
+\begin{DoxyParams}{Parameters}
+{\em controller} & The view controller that called this method. \\
+\hline
+{\em url} & U\+R\+L that will be open after the view controller is dismissed. \\
+\hline
+\end{DoxyParams}
+\hypertarget{protocol_f_b_n_card_view_controller_delegate-p_a04baebc794cfdd634b927f9272684945}{}\index{F\+B\+N\+Card\+View\+Controller\+Delegate-\/p@{F\+B\+N\+Card\+View\+Controller\+Delegate-\/p}!push\+Card\+View\+Controller\+Will\+Dismiss\+:@{push\+Card\+View\+Controller\+Will\+Dismiss\+:}}
+\index{push\+Card\+View\+Controller\+Will\+Dismiss\+:@{push\+Card\+View\+Controller\+Will\+Dismiss\+:}!F\+B\+N\+Card\+View\+Controller\+Delegate-\/p@{F\+B\+N\+Card\+View\+Controller\+Delegate-\/p}}
+\subsubsection[{push\+Card\+View\+Controller\+Will\+Dismiss\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) push\+Card\+View\+Controller\+Will\+Dismiss\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf F\+B\+N\+Card\+View\+Controller} $\ast$)}]{controller}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_f_b_n_card_view_controller_delegate-p_a04baebc794cfdd634b927f9272684945}
+Called when a view controller is about to dismiss without opening any U\+R\+L.
+
+
+\begin{DoxyParams}{Parameters}
+{\em controller} & The view controller that called this method. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Frameworks/\+F\+B\+Notifications.\+framework/\+Headers/F\+B\+N\+Card\+View\+Controller.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,286 @@
+\hypertarget{interface_j_s_q_system_sound_player}{}\section{J\+S\+Q\+System\+Sound\+Player Class Reference}
+\label{interface_j_s_q_system_sound_player}\index{J\+S\+Q\+System\+Sound\+Player@{J\+S\+Q\+System\+Sound\+Player}}
+
+
+{\ttfamily \#import $<$J\+S\+Q\+System\+Sound\+Player.\+h$>$}
+
+Inheritance diagram for J\+S\+Q\+System\+Sound\+Player\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_j_s_q_system_sound_player}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_j_s_q_system_sound_player_afb71d72c35b2b9b26974947ab3d5ee70}{toggle\+Sound\+Player\+On\+:}
+\item 
+(void) -\/ \hyperlink{interface_j_s_q_system_sound_player_a4c84bb7a42d6e989b6cbfc84cf2725b2}{play\+Sound\+With\+Filename\+:file\+Extension\+:}
+\item 
+(void) -\/ \hyperlink{interface_j_s_q_system_sound_player_aea0ee1756925854dc1a3eaceacce3bc5}{play\+Sound\+With\+Filename\+:file\+Extension\+:completion\+:}
+\item 
+(void) -\/ \hyperlink{interface_j_s_q_system_sound_player_a771fb3f532c6e7a62ad78a1d2dd53015}{play\+Alert\+Sound\+With\+Filename\+:file\+Extension\+:}
+\item 
+(void) -\/ \hyperlink{interface_j_s_q_system_sound_player_a16516a244af3b76e8036052565de07a2}{play\+Alert\+Sound\+With\+Filename\+:file\+Extension\+:completion\+:}
+\item 
+(void) -\/ \hyperlink{interface_j_s_q_system_sound_player_a4230aae8c171b62415026374cb513660}{stop\+All\+Sounds}
+\item 
+(void) -\/ \hyperlink{interface_j_s_q_system_sound_player_afed4bc00952d56e5111533e574f56f6b}{stop\+Sound\+With\+Filename\+:}
+\item 
+(void) -\/ \hyperlink{interface_j_s_q_system_sound_player_ab6be31eefeb86bd1d6498adfb755c995}{preload\+Sound\+With\+Filename\+:file\+Extension\+:}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_j_s_q_system_sound_player}{J\+S\+Q\+System\+Sound\+Player} $\ast$) + \hyperlink{interface_j_s_q_system_sound_player_acd1a2295361c112fcfeccf4c797d3ad2}{shared\+Player}
+\item 
+(void) + \hyperlink{interface_j_s_q_system_sound_player_a4fb177fa49a0a184b0335ded7a27b267}{jsq\+\_\+play\+Message\+Received\+Sound}
+\item 
+(void) + \hyperlink{interface_j_s_q_system_sound_player_a9cbbf194debd5c11bfd8d2f57edd509c}{jsq\+\_\+play\+Message\+Received\+Alert}
+\item 
+(void) + \hyperlink{interface_j_s_q_system_sound_player_a21462f78a8f5a4715c14936141e5f085}{jsq\+\_\+play\+Message\+Sent\+Sound}
+\item 
+(void) + \hyperlink{interface_j_s_q_system_sound_player_ae8a8ebbe7039de1656a495d10bfd1ccb}{jsq\+\_\+play\+Message\+Sent\+Alert}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+B\+O\+O\+L \hyperlink{interface_j_s_q_system_sound_player_acfbac062deb875d2818c5565c80602ad}{on}
+\item 
+N\+S\+Bundle $\ast$ \hyperlink{interface_j_s_q_system_sound_player_a7ffd82c67a99e926282624b897e1fa1d}{bundle}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \hyperlink{interface_j_s_q_system_sound_player}{J\+S\+Q\+System\+Sound\+Player}} class enables you to play sound effects, alert sounds, or other short sounds. It lazily loads and caches all {\ttfamily System\+Sound\+I\+D} objects and purges them upon receiving the {\ttfamily U\+I\+Application\+Did\+Receive\+Memory\+Warning\+Notification} notification. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_j_s_q_system_sound_player_a9cbbf194debd5c11bfd8d2f57edd509c}{}\index{J\+S\+Q\+System\+Sound\+Player@{J\+S\+Q\+System\+Sound\+Player}!jsq\+\_\+play\+Message\+Received\+Alert@{jsq\+\_\+play\+Message\+Received\+Alert}}
+\index{jsq\+\_\+play\+Message\+Received\+Alert@{jsq\+\_\+play\+Message\+Received\+Alert}!J\+S\+Q\+System\+Sound\+Player@{J\+S\+Q\+System\+Sound\+Player}}
+\subsubsection[{jsq\+\_\+play\+Message\+Received\+Alert}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) jsq\+\_\+play\+Message\+Received\+Alert 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_system_sound_player_a9cbbf194debd5c11bfd8d2f57edd509c}
+Plays the default sound for received messages {\itshape as an alert}, invoking device vibration if available. 
+
+Provided by category \hyperlink{category_j_s_q_system_sound_player_07_j_s_q_messages_08_a9cbbf194debd5c11bfd8d2f57edd509c}{J\+S\+Q\+System\+Sound\+Player(\+J\+S\+Q\+Messages)}.
+
+\hypertarget{interface_j_s_q_system_sound_player_a4fb177fa49a0a184b0335ded7a27b267}{}\index{J\+S\+Q\+System\+Sound\+Player@{J\+S\+Q\+System\+Sound\+Player}!jsq\+\_\+play\+Message\+Received\+Sound@{jsq\+\_\+play\+Message\+Received\+Sound}}
+\index{jsq\+\_\+play\+Message\+Received\+Sound@{jsq\+\_\+play\+Message\+Received\+Sound}!J\+S\+Q\+System\+Sound\+Player@{J\+S\+Q\+System\+Sound\+Player}}
+\subsubsection[{jsq\+\_\+play\+Message\+Received\+Sound}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) jsq\+\_\+play\+Message\+Received\+Sound 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_system_sound_player_a4fb177fa49a0a184b0335ded7a27b267}
+Plays the default sound for received messages. 
+
+Provided by category \hyperlink{category_j_s_q_system_sound_player_07_j_s_q_messages_08_a4fb177fa49a0a184b0335ded7a27b267}{J\+S\+Q\+System\+Sound\+Player(\+J\+S\+Q\+Messages)}.
+
+\hypertarget{interface_j_s_q_system_sound_player_ae8a8ebbe7039de1656a495d10bfd1ccb}{}\index{J\+S\+Q\+System\+Sound\+Player@{J\+S\+Q\+System\+Sound\+Player}!jsq\+\_\+play\+Message\+Sent\+Alert@{jsq\+\_\+play\+Message\+Sent\+Alert}}
+\index{jsq\+\_\+play\+Message\+Sent\+Alert@{jsq\+\_\+play\+Message\+Sent\+Alert}!J\+S\+Q\+System\+Sound\+Player@{J\+S\+Q\+System\+Sound\+Player}}
+\subsubsection[{jsq\+\_\+play\+Message\+Sent\+Alert}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) jsq\+\_\+play\+Message\+Sent\+Alert 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_system_sound_player_ae8a8ebbe7039de1656a495d10bfd1ccb}
+Plays the default sound for sent messages {\itshape as an alert}, invoking device vibration if available. 
+
+Provided by category \hyperlink{category_j_s_q_system_sound_player_07_j_s_q_messages_08_ae8a8ebbe7039de1656a495d10bfd1ccb}{J\+S\+Q\+System\+Sound\+Player(\+J\+S\+Q\+Messages)}.
+
+\hypertarget{interface_j_s_q_system_sound_player_a21462f78a8f5a4715c14936141e5f085}{}\index{J\+S\+Q\+System\+Sound\+Player@{J\+S\+Q\+System\+Sound\+Player}!jsq\+\_\+play\+Message\+Sent\+Sound@{jsq\+\_\+play\+Message\+Sent\+Sound}}
+\index{jsq\+\_\+play\+Message\+Sent\+Sound@{jsq\+\_\+play\+Message\+Sent\+Sound}!J\+S\+Q\+System\+Sound\+Player@{J\+S\+Q\+System\+Sound\+Player}}
+\subsubsection[{jsq\+\_\+play\+Message\+Sent\+Sound}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) jsq\+\_\+play\+Message\+Sent\+Sound 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_system_sound_player_a21462f78a8f5a4715c14936141e5f085}
+Plays the default sound for sent messages. 
+
+Provided by category \hyperlink{category_j_s_q_system_sound_player_07_j_s_q_messages_08_a21462f78a8f5a4715c14936141e5f085}{J\+S\+Q\+System\+Sound\+Player(\+J\+S\+Q\+Messages)}.
+
+\hypertarget{interface_j_s_q_system_sound_player_a771fb3f532c6e7a62ad78a1d2dd53015}{}\index{J\+S\+Q\+System\+Sound\+Player@{J\+S\+Q\+System\+Sound\+Player}!play\+Alert\+Sound\+With\+Filename\+:file\+Extension\+:@{play\+Alert\+Sound\+With\+Filename\+:file\+Extension\+:}}
+\index{play\+Alert\+Sound\+With\+Filename\+:file\+Extension\+:@{play\+Alert\+Sound\+With\+Filename\+:file\+Extension\+:}!J\+S\+Q\+System\+Sound\+Player@{J\+S\+Q\+System\+Sound\+Player}}
+\subsubsection[{play\+Alert\+Sound\+With\+Filename\+:file\+Extension\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) play\+Alert\+Sound\+With\+Filename\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{filename}
+\item[{fileExtension:(N\+S\+String $\ast$)}]{file\+Extension}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_system_sound_player_a771fb3f532c6e7a62ad78a1d2dd53015}
+Plays a system sound object {\itshape as an alert} corresponding to an audio file with the given filename and extension. The system sound player will lazily initialize and load the file before playing it, and then cache its corresponding {\ttfamily System\+Sound\+I\+D}. If this file has previously been played, it will be loaded from cache and played immediately.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & A string containing the base name of the audio file to play. \\
+\hline
+{\em file\+Extension} & A string containing the extension of the audio file to play. This parameter must be one of {\ttfamily k\+J\+S\+Q\+System\+Sound\+Type\+C\+A\+F}, {\ttfamily k\+J\+S\+Q\+System\+Sound\+Type\+A\+I\+F}, {\ttfamily k\+J\+S\+Q\+System\+Sound\+Type\+A\+I\+F\+F}, or {\ttfamily k\+J\+S\+Q\+System\+Sound\+Type\+W\+A\+V}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+If the system sound object cannot be created, this method does nothing.
+
+This method performs the same functions as {\ttfamily play\+Sound\+With\+Name\+: extension\+:}, with the excepion that, depending on the particular i\+O\+S device, this method may invoke vibration. 
+\end{DoxyWarning}
+\hypertarget{interface_j_s_q_system_sound_player_a16516a244af3b76e8036052565de07a2}{}\index{J\+S\+Q\+System\+Sound\+Player@{J\+S\+Q\+System\+Sound\+Player}!play\+Alert\+Sound\+With\+Filename\+:file\+Extension\+:completion\+:@{play\+Alert\+Sound\+With\+Filename\+:file\+Extension\+:completion\+:}}
+\index{play\+Alert\+Sound\+With\+Filename\+:file\+Extension\+:completion\+:@{play\+Alert\+Sound\+With\+Filename\+:file\+Extension\+:completion\+:}!J\+S\+Q\+System\+Sound\+Player@{J\+S\+Q\+System\+Sound\+Player}}
+\subsubsection[{play\+Alert\+Sound\+With\+Filename\+:file\+Extension\+:completion\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) play\+Alert\+Sound\+With\+Filename\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{filename}
+\item[{fileExtension:(N\+S\+String $\ast$)}]{file\+Extension}
+\item[{completion:(J\+S\+Q\+System\+Sound\+Player\+Completion\+Block)}]{completion\+Block}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_system_sound_player_a16516a244af3b76e8036052565de07a2}
+Plays a system sound object {\itshape as an alert} corresponding to an audio file with the given filename and extension, and and excutes completion\+Block when the sound has stopped playing. The system sound player will lazily initialize and load the file before playing it, and then cache its corresponding {\ttfamily System\+Sound\+I\+D}. If this file has previously been played, it will be loaded from cache and played immediately.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & A string containing the base name of the audio file to play. \\
+\hline
+{\em file\+Extension} & A string containing the extension of the audio file to play. This parameter must be one of {\ttfamily k\+J\+S\+Q\+System\+Sound\+Type\+C\+A\+F}, {\ttfamily k\+J\+S\+Q\+System\+Sound\+Type\+A\+I\+F}, {\ttfamily k\+J\+S\+Q\+System\+Sound\+Type\+A\+I\+F\+F}, or {\ttfamily k\+J\+S\+Q\+System\+Sound\+Type\+W\+A\+V}.\\
+\hline
+{\em completion\+Block} & A block called after the sound has stopped playing. This block is retained by {\ttfamily \hyperlink{interface_j_s_q_system_sound_player}{J\+S\+Q\+System\+Sound\+Player}}, temporarily cached, and released after its execution.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+If the system sound object cannot be created, this method does nothing.
+
+This method performs the same functions as {\ttfamily play\+Sound\+With\+Name\+: extension\+: completion\+:}, with the excepion that, depending on the particular i\+O\+S device, this method may invoke vibration. 
+\end{DoxyWarning}
+\hypertarget{interface_j_s_q_system_sound_player_a4c84bb7a42d6e989b6cbfc84cf2725b2}{}\index{J\+S\+Q\+System\+Sound\+Player@{J\+S\+Q\+System\+Sound\+Player}!play\+Sound\+With\+Filename\+:file\+Extension\+:@{play\+Sound\+With\+Filename\+:file\+Extension\+:}}
+\index{play\+Sound\+With\+Filename\+:file\+Extension\+:@{play\+Sound\+With\+Filename\+:file\+Extension\+:}!J\+S\+Q\+System\+Sound\+Player@{J\+S\+Q\+System\+Sound\+Player}}
+\subsubsection[{play\+Sound\+With\+Filename\+:file\+Extension\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) play\+Sound\+With\+Filename\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{filename}
+\item[{fileExtension:(N\+S\+String $\ast$)}]{file\+Extension}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_system_sound_player_a4c84bb7a42d6e989b6cbfc84cf2725b2}
+Plays a system sound object corresponding to an audio file with the given filename and extension. The system sound player will lazily initialize and load the file before playing it, and then cache its corresponding {\ttfamily System\+Sound\+I\+D}. If this file has previously been played, it will be loaded from cache and played immediately.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & A string containing the base name of the audio file to play. \\
+\hline
+{\em file\+Extension} & A string containing the extension of the audio file to play. This parameter must be one of {\ttfamily k\+J\+S\+Q\+System\+Sound\+Type\+C\+A\+F}, {\ttfamily k\+J\+S\+Q\+System\+Sound\+Type\+A\+I\+F}, {\ttfamily k\+J\+S\+Q\+System\+Sound\+Type\+A\+I\+F\+F}, or {\ttfamily k\+J\+S\+Q\+System\+Sound\+Type\+W\+A\+V}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+If the system sound object cannot be created, this method does nothing. 
+\end{DoxyWarning}
+\hypertarget{interface_j_s_q_system_sound_player_aea0ee1756925854dc1a3eaceacce3bc5}{}\index{J\+S\+Q\+System\+Sound\+Player@{J\+S\+Q\+System\+Sound\+Player}!play\+Sound\+With\+Filename\+:file\+Extension\+:completion\+:@{play\+Sound\+With\+Filename\+:file\+Extension\+:completion\+:}}
+\index{play\+Sound\+With\+Filename\+:file\+Extension\+:completion\+:@{play\+Sound\+With\+Filename\+:file\+Extension\+:completion\+:}!J\+S\+Q\+System\+Sound\+Player@{J\+S\+Q\+System\+Sound\+Player}}
+\subsubsection[{play\+Sound\+With\+Filename\+:file\+Extension\+:completion\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) play\+Sound\+With\+Filename\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{filename}
+\item[{fileExtension:(N\+S\+String $\ast$)}]{file\+Extension}
+\item[{completion:(J\+S\+Q\+System\+Sound\+Player\+Completion\+Block)}]{completion\+Block}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_system_sound_player_aea0ee1756925854dc1a3eaceacce3bc5}
+Plays a system sound object corresponding to an audio file with the given filename and extension, and excutes completion\+Block when the sound has stopped playing. The system sound player will lazily initialize and load the file before playing it, and then cache its corresponding {\ttfamily System\+Sound\+I\+D}. If this file has previously been played, it will be loaded from cache and played immediately.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & A string containing the base name of the audio file to play. \\
+\hline
+{\em file\+Extension} & A string containing the extension of the audio file to play. This parameter must be one of {\ttfamily k\+J\+S\+Q\+System\+Sound\+Type\+C\+A\+F}, {\ttfamily k\+J\+S\+Q\+System\+Sound\+Type\+A\+I\+F}, {\ttfamily k\+J\+S\+Q\+System\+Sound\+Type\+A\+I\+F\+F}, or {\ttfamily k\+J\+S\+Q\+System\+Sound\+Type\+W\+A\+V}.\\
+\hline
+{\em completion\+Block} & A block called after the sound has stopped playing. This block is retained by {\ttfamily \hyperlink{interface_j_s_q_system_sound_player}{J\+S\+Q\+System\+Sound\+Player}}, temporarily cached, and released after its execution.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+If the system sound object cannot be created, this method does nothing. 
+\end{DoxyWarning}
+\hypertarget{interface_j_s_q_system_sound_player_ab6be31eefeb86bd1d6498adfb755c995}{}\index{J\+S\+Q\+System\+Sound\+Player@{J\+S\+Q\+System\+Sound\+Player}!preload\+Sound\+With\+Filename\+:file\+Extension\+:@{preload\+Sound\+With\+Filename\+:file\+Extension\+:}}
+\index{preload\+Sound\+With\+Filename\+:file\+Extension\+:@{preload\+Sound\+With\+Filename\+:file\+Extension\+:}!J\+S\+Q\+System\+Sound\+Player@{J\+S\+Q\+System\+Sound\+Player}}
+\subsubsection[{preload\+Sound\+With\+Filename\+:file\+Extension\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) preload\+Sound\+With\+Filename\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{filename}
+\item[{fileExtension:(N\+S\+String $\ast$)}]{file\+Extension}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_system_sound_player_ab6be31eefeb86bd1d6498adfb755c995}
+Preloads a system sound object corresponding to an audio file with the given filename and extension. The system sound player will initialize, load, and cache the corresponding {\ttfamily System\+Sound\+I\+D}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & A string containing the base name of the audio file to play. \\
+\hline
+{\em file\+Extension} & A string containing the extension of the audio file to play. This parameter must be one of {\ttfamily k\+J\+S\+Q\+System\+Sound\+Type\+C\+A\+F}, {\ttfamily k\+J\+S\+Q\+System\+Sound\+Type\+A\+I\+F}, {\ttfamily k\+J\+S\+Q\+System\+Sound\+Type\+A\+I\+F\+F}, or {\ttfamily k\+J\+S\+Q\+System\+Sound\+Type\+W\+A\+V}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_j_s_q_system_sound_player_acd1a2295361c112fcfeccf4c797d3ad2}{}\index{J\+S\+Q\+System\+Sound\+Player@{J\+S\+Q\+System\+Sound\+Player}!shared\+Player@{shared\+Player}}
+\index{shared\+Player@{shared\+Player}!J\+S\+Q\+System\+Sound\+Player@{J\+S\+Q\+System\+Sound\+Player}}
+\subsubsection[{shared\+Player}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf J\+S\+Q\+System\+Sound\+Player} $\ast$) shared\+Player 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_system_sound_player_acd1a2295361c112fcfeccf4c797d3ad2}
+Returns the shared {\ttfamily \hyperlink{interface_j_s_q_system_sound_player}{J\+S\+Q\+System\+Sound\+Player}} object. This method always returns the same sound system player object.
+
+\begin{DoxyReturn}{Returns}
+An initialized {\ttfamily \hyperlink{interface_j_s_q_system_sound_player}{J\+S\+Q\+System\+Sound\+Player}} object if successful, {\ttfamily nil} otherwise. 
+\end{DoxyReturn}
+\hypertarget{interface_j_s_q_system_sound_player_a4230aae8c171b62415026374cb513660}{}\index{J\+S\+Q\+System\+Sound\+Player@{J\+S\+Q\+System\+Sound\+Player}!stop\+All\+Sounds@{stop\+All\+Sounds}}
+\index{stop\+All\+Sounds@{stop\+All\+Sounds}!J\+S\+Q\+System\+Sound\+Player@{J\+S\+Q\+System\+Sound\+Player}}
+\subsubsection[{stop\+All\+Sounds}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) stop\+All\+Sounds 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_system_sound_player_a4230aae8c171b62415026374cb513660}
+Available on i\+O\+S only. On some i\+O\+S devices, you can call this method to invoke vibration. If this functionaly is not available, then calling this method does nothing. Stops playing all sounds immediately.
+
+\begin{DoxyWarning}{Warning}
+Any completion blocks attached to any currently playing sound will {\itshape not} be executed. Calling this method will purge all {\ttfamily System\+Sound\+I\+D} objects from cache, regardless of whether or not they were currently playing. 
+\end{DoxyWarning}
+\hypertarget{interface_j_s_q_system_sound_player_afed4bc00952d56e5111533e574f56f6b}{}\index{J\+S\+Q\+System\+Sound\+Player@{J\+S\+Q\+System\+Sound\+Player}!stop\+Sound\+With\+Filename\+:@{stop\+Sound\+With\+Filename\+:}}
+\index{stop\+Sound\+With\+Filename\+:@{stop\+Sound\+With\+Filename\+:}!J\+S\+Q\+System\+Sound\+Player@{J\+S\+Q\+System\+Sound\+Player}}
+\subsubsection[{stop\+Sound\+With\+Filename\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) stop\+Sound\+With\+Filename\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{filename}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_system_sound_player_afed4bc00952d56e5111533e574f56f6b}
+Stops playing the sound with the given filename immediately.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The filename of the sound to stop playing.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+If a completion block is attached to the given sound, it will {\itshape not} be executed. Calling this method will purge the {\ttfamily System\+Sound\+I\+D} object for this file from cache, regardless of whether or not it was currently playing. 
+\end{DoxyWarning}
+\hypertarget{interface_j_s_q_system_sound_player_afb71d72c35b2b9b26974947ab3d5ee70}{}\index{J\+S\+Q\+System\+Sound\+Player@{J\+S\+Q\+System\+Sound\+Player}!toggle\+Sound\+Player\+On\+:@{toggle\+Sound\+Player\+On\+:}}
+\index{toggle\+Sound\+Player\+On\+:@{toggle\+Sound\+Player\+On\+:}!J\+S\+Q\+System\+Sound\+Player@{J\+S\+Q\+System\+Sound\+Player}}
+\subsubsection[{toggle\+Sound\+Player\+On\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) toggle\+Sound\+Player\+On\+: 
+\begin{DoxyParamCaption}
+\item[{(B\+O\+O\+L)}]{on}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_system_sound_player_afb71d72c35b2b9b26974947ab3d5ee70}
+Toggles the sound player on or off by setting the {\ttfamily k\+J\+S\+Q\+System\+Sound\+Player\+User\+Defaults\+Key} key in {\ttfamily N\+S\+User\+Defaults} to the given value. This will enable or disable the playing of sounds via {\ttfamily \hyperlink{interface_j_s_q_system_sound_player}{J\+S\+Q\+System\+Sound\+Player}} globally. This setting is persisted across application launches.
+
+
+\begin{DoxyParams}{Parameters}
+{\em on} & A boolean indicating whether or not to enable or disable the sound player settings. Pass {\ttfamily Y\+E\+S} to turn sounds on, and {\ttfamily N\+O} to turn sounds off.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+Disabling the sound player (passing a value of {\ttfamily N\+O}) will invoke the {\ttfamily stop\+All\+Sounds} method. 
+\end{DoxyWarning}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_j_s_q_system_sound_player_a7ffd82c67a99e926282624b897e1fa1d}{}\index{J\+S\+Q\+System\+Sound\+Player@{J\+S\+Q\+System\+Sound\+Player}!bundle@{bundle}}
+\index{bundle@{bundle}!J\+S\+Q\+System\+Sound\+Player@{J\+S\+Q\+System\+Sound\+Player}}
+\subsubsection[{bundle}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Bundle$\ast$) bundle\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_j_s_q_system_sound_player_a7ffd82c67a99e926282624b897e1fa1d}
+The bundle in which the sound player uses to search for sound file resources. You may change this property as needed. The default value is the main bundle. This value must not be {\ttfamily nil}. \hypertarget{interface_j_s_q_system_sound_player_acfbac062deb875d2818c5565c80602ad}{}\index{J\+S\+Q\+System\+Sound\+Player@{J\+S\+Q\+System\+Sound\+Player}!on@{on}}
+\index{on@{on}!J\+S\+Q\+System\+Sound\+Player@{J\+S\+Q\+System\+Sound\+Player}}
+\subsubsection[{on}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) on\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_j_s_q_system_sound_player_acfbac062deb875d2818c5565c80602ad}
+Returns whether or not the sound player is on. That is, whether the sound player is enabled or disabled. If disabled, it will not play sounds.
+
+\begin{DoxySeeAlso}{See also}
+{\ttfamily \hyperlink{interface_j_s_q_system_sound_player_afb71d72c35b2b9b26974947ab3d5ee70}{-\/ toggle\+Sound\+Player\+On\+:}} 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Vendors/\+J\+S\+Q\+System\+Sound\+Player/J\+S\+Q\+System\+Sound\+Player.\+h\item 
+Vendors/\+J\+S\+Q\+System\+Sound\+Player/J\+S\+Q\+System\+Sound\+Player.\+m\end{DoxyCompactItemize}

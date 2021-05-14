@@ -1,0 +1,118 @@
+\hypertarget{interface_j_s_q_messages_keyboard_controller}{}\section{J\+S\+Q\+Messages\+Keyboard\+Controller Class Reference}
+\label{interface_j_s_q_messages_keyboard_controller}\index{J\+S\+Q\+Messages\+Keyboard\+Controller@{J\+S\+Q\+Messages\+Keyboard\+Controller}}
+
+
+{\ttfamily \#import $<$J\+S\+Q\+Messages\+Keyboard\+Controller.\+h$>$}
+
+Inheritance diagram for J\+S\+Q\+Messages\+Keyboard\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_j_s_q_messages_keyboard_controller}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) -\/ \hyperlink{interface_j_s_q_messages_keyboard_controller_a2f9062c6b57d0dbe141189b8978dee72}{init\+With\+Text\+View\+:context\+View\+:pan\+Gesture\+Recognizer\+:delegate\+:}
+\item 
+(void) -\/ \hyperlink{interface_j_s_q_messages_keyboard_controller_a47a097e782ec215e80642719ee43eb3a}{begin\+Listening\+For\+Keyboard}
+\item 
+(void) -\/ \hyperlink{interface_j_s_q_messages_keyboard_controller_a65a4ab5bd93ed8350f034839ad608af5}{end\+Listening\+For\+Keyboard}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+id$<$ \hyperlink{protocol_j_s_q_messages_keyboard_controller_delegate-p}{J\+S\+Q\+Messages\+Keyboard\+Controller\+Delegate} $>$ \hyperlink{interface_j_s_q_messages_keyboard_controller_ad0a23adc2f26a8243ded913b5ab905a4}{delegate}
+\item 
+U\+I\+Text\+View $\ast$ \hyperlink{interface_j_s_q_messages_keyboard_controller_a4053b7b2aafa792d2cceba5e3ccdf56d}{text\+View}
+\item 
+U\+I\+View $\ast$ \hyperlink{interface_j_s_q_messages_keyboard_controller_a9af5df9417b929671f7a8228054bd988}{context\+View}
+\item 
+U\+I\+Pan\+Gesture\+Recognizer $\ast$ \hyperlink{interface_j_s_q_messages_keyboard_controller_a017aa6ba932e9d0d3d4c521b416644a8}{pan\+Gesture\+Recognizer}
+\item 
+C\+G\+Point \hyperlink{interface_j_s_q_messages_keyboard_controller_a46912c3e769f2dd63aa2d714ad36c39c}{keyboard\+Trigger\+Point}
+\item 
+B\+O\+O\+L \hyperlink{interface_j_s_q_messages_keyboard_controller_abcd730af98f27ef8d6e9207200b7db74}{keyboard\+Is\+Visible}
+\item 
+C\+G\+Rect \hyperlink{interface_j_s_q_messages_keyboard_controller_a890ae9c5de10661967ddbc8070f95e9b}{current\+Keyboard\+Frame}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An instance of {\ttfamily \hyperlink{interface_j_s_q_messages_keyboard_controller}{J\+S\+Q\+Messages\+Keyboard\+Controller}} manages responding to the hiding and showing of the system keyboard for editing its {\ttfamily text\+View} within its specified {\ttfamily context\+View}. It also controls user interaction with the system keyboard via its {\ttfamily pan\+Gesture\+Recognizer}, allow the user to interactively pan the keyboard up and down in the {\ttfamily context\+View}.
+
+When the system keyboard frame changes, it posts the {\ttfamily J\+S\+Q\+Messages\+Keyboard\+Controller\+Notification\+Keyboard\+Did\+Change\+Frame}. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_j_s_q_messages_keyboard_controller_a47a097e782ec215e80642719ee43eb3a}{}\index{J\+S\+Q\+Messages\+Keyboard\+Controller@{J\+S\+Q\+Messages\+Keyboard\+Controller}!begin\+Listening\+For\+Keyboard@{begin\+Listening\+For\+Keyboard}}
+\index{begin\+Listening\+For\+Keyboard@{begin\+Listening\+For\+Keyboard}!J\+S\+Q\+Messages\+Keyboard\+Controller@{J\+S\+Q\+Messages\+Keyboard\+Controller}}
+\subsubsection[{begin\+Listening\+For\+Keyboard}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) begin\+Listening\+For\+Keyboard 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_messages_keyboard_controller_a47a097e782ec215e80642719ee43eb3a}
+Tells the keyboard controller that it should begin listening for system keyboard notifications. \hypertarget{interface_j_s_q_messages_keyboard_controller_a65a4ab5bd93ed8350f034839ad608af5}{}\index{J\+S\+Q\+Messages\+Keyboard\+Controller@{J\+S\+Q\+Messages\+Keyboard\+Controller}!end\+Listening\+For\+Keyboard@{end\+Listening\+For\+Keyboard}}
+\index{end\+Listening\+For\+Keyboard@{end\+Listening\+For\+Keyboard}!J\+S\+Q\+Messages\+Keyboard\+Controller@{J\+S\+Q\+Messages\+Keyboard\+Controller}}
+\subsubsection[{end\+Listening\+For\+Keyboard}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) end\+Listening\+For\+Keyboard 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_messages_keyboard_controller_a65a4ab5bd93ed8350f034839ad608af5}
+Tells the keyboard controller that it should end listening for system keyboard notifications. \hypertarget{interface_j_s_q_messages_keyboard_controller_a2f9062c6b57d0dbe141189b8978dee72}{}\index{J\+S\+Q\+Messages\+Keyboard\+Controller@{J\+S\+Q\+Messages\+Keyboard\+Controller}!init\+With\+Text\+View\+:context\+View\+:pan\+Gesture\+Recognizer\+:delegate\+:@{init\+With\+Text\+View\+:context\+View\+:pan\+Gesture\+Recognizer\+:delegate\+:}}
+\index{init\+With\+Text\+View\+:context\+View\+:pan\+Gesture\+Recognizer\+:delegate\+:@{init\+With\+Text\+View\+:context\+View\+:pan\+Gesture\+Recognizer\+:delegate\+:}!J\+S\+Q\+Messages\+Keyboard\+Controller@{J\+S\+Q\+Messages\+Keyboard\+Controller}}
+\subsubsection[{init\+With\+Text\+View\+:context\+View\+:pan\+Gesture\+Recognizer\+:delegate\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (instancetype) init\+With\+Text\+View\+: 
+\begin{DoxyParamCaption}
+\item[{(U\+I\+Text\+View $\ast$)}]{text\+View}
+\item[{contextView:(U\+I\+View $\ast$)}]{context\+View}
+\item[{panGestureRecognizer:(U\+I\+Pan\+Gesture\+Recognizer $\ast$)}]{pan\+Gesture\+Recognizer}
+\item[{delegate:(id$<${\bf J\+S\+Q\+Messages\+Keyboard\+Controller\+Delegate}$>$)}]{delegate}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_messages_keyboard_controller_a2f9062c6b57d0dbe141189b8978dee72}
+Creates a new keyboard controller object with the specified text\+View, context\+View, pan\+Gesture\+Recognizer, and delegate.
+
+
+\begin{DoxyParams}{Parameters}
+{\em text\+View} & The text view in which the user is editing with the system keyboard. This value must not be {\ttfamily nil}. \\
+\hline
+{\em context\+View} & The view in which the keyboard will be shown. This should be the parent or a sibling of {\ttfamily text\+View}. This value must not be {\ttfamily nil}. \\
+\hline
+{\em pan\+Gesture\+Recognizer} & The pan gesture recognizer responsible for handling user interaction with the system keyboard. This value must not be {\ttfamily nil}. \\
+\hline
+{\em delegate} & The object that acts as the delegate of the keyboard controller.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An initialized {\ttfamily \hyperlink{interface_j_s_q_messages_keyboard_controller}{J\+S\+Q\+Messages\+Keyboard\+Controller}} if created successfully, {\ttfamily nil} otherwise. 
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_j_s_q_messages_keyboard_controller_a9af5df9417b929671f7a8228054bd988}{}\index{J\+S\+Q\+Messages\+Keyboard\+Controller@{J\+S\+Q\+Messages\+Keyboard\+Controller}!context\+View@{context\+View}}
+\index{context\+View@{context\+View}!J\+S\+Q\+Messages\+Keyboard\+Controller@{J\+S\+Q\+Messages\+Keyboard\+Controller}}
+\subsubsection[{context\+View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+View$\ast$) context\+View\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}\label{interface_j_s_q_messages_keyboard_controller_a9af5df9417b929671f7a8228054bd988}
+The view in which the keyboard will be shown. This should be the parent or a sibling of {\ttfamily text\+View}. \hypertarget{interface_j_s_q_messages_keyboard_controller_a890ae9c5de10661967ddbc8070f95e9b}{}\index{J\+S\+Q\+Messages\+Keyboard\+Controller@{J\+S\+Q\+Messages\+Keyboard\+Controller}!current\+Keyboard\+Frame@{current\+Keyboard\+Frame}}
+\index{current\+Keyboard\+Frame@{current\+Keyboard\+Frame}!J\+S\+Q\+Messages\+Keyboard\+Controller@{J\+S\+Q\+Messages\+Keyboard\+Controller}}
+\subsubsection[{current\+Keyboard\+Frame}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\+G\+Rect) current\+Keyboard\+Frame\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_j_s_q_messages_keyboard_controller_a890ae9c5de10661967ddbc8070f95e9b}
+Returns the current frame of the keyboard if it is visible, otherwise {\ttfamily C\+G\+Rect\+Null}. \hypertarget{interface_j_s_q_messages_keyboard_controller_ad0a23adc2f26a8243ded913b5ab905a4}{}\index{J\+S\+Q\+Messages\+Keyboard\+Controller@{J\+S\+Q\+Messages\+Keyboard\+Controller}!delegate@{delegate}}
+\index{delegate@{delegate}!J\+S\+Q\+Messages\+Keyboard\+Controller@{J\+S\+Q\+Messages\+Keyboard\+Controller}}
+\subsubsection[{delegate}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id$<${\bf J\+S\+Q\+Messages\+Keyboard\+Controller\+Delegate}$>$) delegate\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}\label{interface_j_s_q_messages_keyboard_controller_ad0a23adc2f26a8243ded913b5ab905a4}
+The object that acts as the delegate of the keyboard controller. \hypertarget{interface_j_s_q_messages_keyboard_controller_abcd730af98f27ef8d6e9207200b7db74}{}\index{J\+S\+Q\+Messages\+Keyboard\+Controller@{J\+S\+Q\+Messages\+Keyboard\+Controller}!keyboard\+Is\+Visible@{keyboard\+Is\+Visible}}
+\index{keyboard\+Is\+Visible@{keyboard\+Is\+Visible}!J\+S\+Q\+Messages\+Keyboard\+Controller@{J\+S\+Q\+Messages\+Keyboard\+Controller}}
+\subsubsection[{keyboard\+Is\+Visible}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) keyboard\+Is\+Visible\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_j_s_q_messages_keyboard_controller_abcd730af98f27ef8d6e9207200b7db74}
+Returns {\ttfamily Y\+E\+S} if the keyboard is currently visible, {\ttfamily N\+O} otherwise. \hypertarget{interface_j_s_q_messages_keyboard_controller_a46912c3e769f2dd63aa2d714ad36c39c}{}\index{J\+S\+Q\+Messages\+Keyboard\+Controller@{J\+S\+Q\+Messages\+Keyboard\+Controller}!keyboard\+Trigger\+Point@{keyboard\+Trigger\+Point}}
+\index{keyboard\+Trigger\+Point@{keyboard\+Trigger\+Point}!J\+S\+Q\+Messages\+Keyboard\+Controller@{J\+S\+Q\+Messages\+Keyboard\+Controller}}
+\subsubsection[{keyboard\+Trigger\+Point}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\+G\+Point) keyboard\+Trigger\+Point\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_j_s_q_messages_keyboard_controller_a46912c3e769f2dd63aa2d714ad36c39c}
+Specifies the distance from the keyboard at which the {\ttfamily pan\+Gesture\+Recognizer} should trigger user interaction with the keyboard by panning.
+
+The x value of the point is not used. \hypertarget{interface_j_s_q_messages_keyboard_controller_a017aa6ba932e9d0d3d4c521b416644a8}{}\index{J\+S\+Q\+Messages\+Keyboard\+Controller@{J\+S\+Q\+Messages\+Keyboard\+Controller}!pan\+Gesture\+Recognizer@{pan\+Gesture\+Recognizer}}
+\index{pan\+Gesture\+Recognizer@{pan\+Gesture\+Recognizer}!J\+S\+Q\+Messages\+Keyboard\+Controller@{J\+S\+Q\+Messages\+Keyboard\+Controller}}
+\subsubsection[{pan\+Gesture\+Recognizer}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Pan\+Gesture\+Recognizer$\ast$) pan\+Gesture\+Recognizer\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}\label{interface_j_s_q_messages_keyboard_controller_a017aa6ba932e9d0d3d4c521b416644a8}
+The pan gesture recognizer responsible for handling user interaction with the system keyboard. \hypertarget{interface_j_s_q_messages_keyboard_controller_a4053b7b2aafa792d2cceba5e3ccdf56d}{}\index{J\+S\+Q\+Messages\+Keyboard\+Controller@{J\+S\+Q\+Messages\+Keyboard\+Controller}!text\+View@{text\+View}}
+\index{text\+View@{text\+View}!J\+S\+Q\+Messages\+Keyboard\+Controller@{J\+S\+Q\+Messages\+Keyboard\+Controller}}
+\subsubsection[{text\+View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Text\+View$\ast$) text\+View\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}\label{interface_j_s_q_messages_keyboard_controller_a4053b7b2aafa792d2cceba5e3ccdf56d}
+The text view in which the user is editing with the system keyboard. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Vendors/\+J\+S\+Q\+Messages\+View\+Controller/\+Controllers/J\+S\+Q\+Messages\+Keyboard\+Controller.\+h\item 
+Vendors/\+J\+S\+Q\+Messages\+View\+Controller/\+Controllers/J\+S\+Q\+Messages\+Keyboard\+Controller.\+m\end{DoxyCompactItemize}

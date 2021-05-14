@@ -1,0 +1,46 @@
+//
+//  PrefixHeader.pch
+//  app
+//
+//  Created by Eric Schanet on 12.09.15.
+//  Copyright (c) 2015 KZ. All rights reserved.
+//
+
+#ifndef app_PrefixHeader_pch
+#define app_PrefixHeader_pch
+
+#import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
+#import <Foundation/Foundation.h>
+#import <CoreGraphics/CoreGraphics.h>
+#import <MapKit/MapKit.h>
+#import <Social/Social.h>
+#import <MediaPlayer/MediaPlayer.h>
+
+#import "AFNetworking.h"
+#import "UIImageView+AFNetworking.h"
+#import "UIImage+JSQMessages.h"
+#import "UIImageView+WebCache.h"
+#import "IDMPhotoBrowser.h"
+#import "RNGridMenu.h"
+#import "TOWebViewController.h"
+
+
+#import "ProgressHUD.h"
+#import "ESConstants.h"
+#import "ESUtility.h"
+
+
+//Firebase headers
+#import "Firebase.h"
+
+//Parse headers
+#import <Parse/Parse.h>
+#import <ParseUI/ParseUI.h>
+#import <ParseFacebookUtilsV4/PFFacebookUtils.h>
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import "PFUser+Utility.h"
+
+
+#endif

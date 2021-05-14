@@ -1,0 +1,108 @@
+\hypertarget{_f_i_r_auth_8h}{}\section{Frameworks/\+Firebase\+Auth.framework/\+Headers/\+F\+I\+R\+Auth.h File Reference}
+\label{_f_i_r_auth_8h}\index{Frameworks/\+Firebase\+Auth.\+framework/\+Headers/\+F\+I\+R\+Auth.\+h@{Frameworks/\+Firebase\+Auth.\+framework/\+Headers/\+F\+I\+R\+Auth.\+h}}
+
+
+Firebase Auth S\+D\+K.  
+
+
+{\ttfamily \#import $<$Foundation/\+Foundation.\+h$>$}\\*
+{\ttfamily \#import $<$Firebase\+Auth/\+F\+I\+R\+Auth\+Errors.\+h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{interface_f_i_r_auth}{F\+I\+R\+Auth}
+\begin{DoxyCompactList}\small\item\em Manages authentication for Firebase apps. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{_f_i_r_auth_8h_acbf985c8e9c264a5c2bc4f1cbe85c06c}{}typedef id$<$ N\+S\+Object $>$ {\bfseries F\+I\+R\+Auth\+State\+Did\+Change\+Listener\+Handle}\label{_f_i_r_auth_8h_acbf985c8e9c264a5c2bc4f1cbe85c06c}
+
+\item 
+typedef void($^\wedge$ \hyperlink{_f_i_r_auth_8h_aa154141b9929f5664750dbc410c87cd9}{F\+I\+R\+Auth\+State\+Did\+Change\+Listener\+Block}) (\hyperlink{interface_f_i_r_auth}{F\+I\+R\+Auth} $\ast$auth, \hyperlink{interface_f_i_r_user}{F\+I\+R\+User} $\ast$\+\_\+\+Nullable user)
+\begin{DoxyCompactList}\small\item\em The type of block which can be registered as a listener for auth state did change events. \end{DoxyCompactList}\item 
+typedef void($^\wedge$ \hyperlink{_f_i_r_auth_8h_abc5650a2aa6a7b34366808f53efee703}{F\+I\+R\+Auth\+Result\+Callback}) (\hyperlink{interface_f_i_r_user}{F\+I\+R\+User} $\ast$\+\_\+\+Nullable user, N\+S\+Error $\ast$\+\_\+\+Nullable error)
+\begin{DoxyCompactList}\small\item\em The type of block invoked when sign-\/in related events complete. \end{DoxyCompactList}\item 
+typedef void($^\wedge$ \hyperlink{_f_i_r_auth_8h_a670291b9468e701d0bce8823e0d7fc15}{F\+I\+R\+Provider\+Query\+Callback}) (N\+S\+Array$<$ N\+S\+String $\ast$ $>$ $\ast$\+\_\+\+Nullable providers, N\+S\+Error $\ast$\+\_\+\+Nullable error)
+\begin{DoxyCompactList}\small\item\em The type of block invoked when a list of identity providers for a given email address is requested. \end{DoxyCompactList}\item 
+typedef void($^\wedge$ \hyperlink{_f_i_r_auth_8h_ad39d1e5fa0f0f28dcf16153e8d864c84}{F\+I\+R\+Send\+Password\+Reset\+Callback}) (N\+S\+Error $\ast$\+\_\+\+Nullable error)
+\begin{DoxyCompactList}\small\item\em The type of block invoked when initiating a password reset. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{_f_i_r_auth_8h_a3c5b8fedbe00dd2585041e645bca41f2}{}N\+S\+String $\ast$const \hyperlink{_f_i_r_auth_8h_a3c5b8fedbe00dd2585041e645bca41f2}{F\+I\+R\+Auth\+State\+Did\+Change\+Notification}\label{_f_i_r_auth_8h_a3c5b8fedbe00dd2585041e645bca41f2}
+
+\begin{DoxyCompactList}\small\item\em The name of the {\ttfamily N\+S\+Notification\+Center} notification which is posted when the auth state changes (for example, a new token has been produced, a user signs in or signs out). The object parameter of the notification is the sender {\ttfamily \hyperlink{interface_f_i_r_auth}{F\+I\+R\+Auth}} instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Firebase Auth S\+D\+K. 
+
+\begin{DoxyCopyright}{Copyright}
+Copyright 2015 Google Inc. 
+\end{DoxyCopyright}
+\begin{DoxyRemark}{Remarks}
+Use of this S\+D\+K is subject to the Google A\+P\+Is Terms of Service\+: \href{https://developers.google.com/terms/}{\tt https\+://developers.\+google.\+com/terms/} 
+\end{DoxyRemark}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{_f_i_r_auth_8h_abc5650a2aa6a7b34366808f53efee703}{}\index{F\+I\+R\+Auth.\+h@{F\+I\+R\+Auth.\+h}!F\+I\+R\+Auth\+Result\+Callback@{F\+I\+R\+Auth\+Result\+Callback}}
+\index{F\+I\+R\+Auth\+Result\+Callback@{F\+I\+R\+Auth\+Result\+Callback}!F\+I\+R\+Auth.\+h@{F\+I\+R\+Auth.\+h}}
+\subsubsection[{F\+I\+R\+Auth\+Result\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}F\+I\+R\+Auth\+Result\+Callback}\label{_f_i_r_auth_8h_abc5650a2aa6a7b34366808f53efee703}
+
+
+The type of block invoked when sign-\/in related events complete. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & Optionally; the signed in user, if any. \\
+\hline
+{\em error} & Optionally; if an error occurs, this is the N\+S\+Error object that describes the problem. Set to nil otherwise. \\
+\hline
+\end{DoxyParams}
+\hypertarget{_f_i_r_auth_8h_aa154141b9929f5664750dbc410c87cd9}{}\index{F\+I\+R\+Auth.\+h@{F\+I\+R\+Auth.\+h}!F\+I\+R\+Auth\+State\+Did\+Change\+Listener\+Block@{F\+I\+R\+Auth\+State\+Did\+Change\+Listener\+Block}}
+\index{F\+I\+R\+Auth\+State\+Did\+Change\+Listener\+Block@{F\+I\+R\+Auth\+State\+Did\+Change\+Listener\+Block}!F\+I\+R\+Auth.\+h@{F\+I\+R\+Auth.\+h}}
+\subsubsection[{F\+I\+R\+Auth\+State\+Did\+Change\+Listener\+Block}]{\setlength{\rightskip}{0pt plus 5cm}F\+I\+R\+Auth\+State\+Did\+Change\+Listener\+Block}\label{_f_i_r_auth_8h_aa154141b9929f5664750dbc410c87cd9}
+
+
+The type of block which can be registered as a listener for auth state did change events. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em auth} & The {\ttfamily \hyperlink{interface_f_i_r_auth}{F\+I\+R\+Auth}} object on which state changes occurred. \\
+\hline
+{\em user} & Optionally; the current signed in user, if any. \\
+\hline
+\end{DoxyParams}
+\hypertarget{_f_i_r_auth_8h_a670291b9468e701d0bce8823e0d7fc15}{}\index{F\+I\+R\+Auth.\+h@{F\+I\+R\+Auth.\+h}!F\+I\+R\+Provider\+Query\+Callback@{F\+I\+R\+Provider\+Query\+Callback}}
+\index{F\+I\+R\+Provider\+Query\+Callback@{F\+I\+R\+Provider\+Query\+Callback}!F\+I\+R\+Auth.\+h@{F\+I\+R\+Auth.\+h}}
+\subsubsection[{F\+I\+R\+Provider\+Query\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}F\+I\+R\+Provider\+Query\+Callback}\label{_f_i_r_auth_8h_a670291b9468e701d0bce8823e0d7fc15}
+
+
+The type of block invoked when a list of identity providers for a given email address is requested. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em providers} & Optionally; a list of provider identifiers, if any. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+F\+I\+R\+Google\+Auth\+Provider\+I\+D etc. 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em error} & Optionally; if an error occurs, this is the N\+S\+Error object that describes the problem. Set to nil otherwise. \\
+\hline
+\end{DoxyParams}
+\hypertarget{_f_i_r_auth_8h_ad39d1e5fa0f0f28dcf16153e8d864c84}{}\index{F\+I\+R\+Auth.\+h@{F\+I\+R\+Auth.\+h}!F\+I\+R\+Send\+Password\+Reset\+Callback@{F\+I\+R\+Send\+Password\+Reset\+Callback}}
+\index{F\+I\+R\+Send\+Password\+Reset\+Callback@{F\+I\+R\+Send\+Password\+Reset\+Callback}!F\+I\+R\+Auth.\+h@{F\+I\+R\+Auth.\+h}}
+\subsubsection[{F\+I\+R\+Send\+Password\+Reset\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}F\+I\+R\+Send\+Password\+Reset\+Callback}\label{_f_i_r_auth_8h_ad39d1e5fa0f0f28dcf16153e8d864c84}
+
+
+The type of block invoked when initiating a password reset. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em error} & Optionally; if an error occurs, this is the N\+S\+Error object that describes the problem. Set to nil otherwise. \\
+\hline
+\end{DoxyParams}

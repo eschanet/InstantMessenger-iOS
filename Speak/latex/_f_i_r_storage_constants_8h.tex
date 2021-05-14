@@ -1,0 +1,146 @@
+\hypertarget{_f_i_r_storage_constants_8h}{}\section{Frameworks/\+Firebase\+Storage.framework/\+Headers/\+F\+I\+R\+Storage\+Constants.h File Reference}
+\label{_f_i_r_storage_constants_8h}\index{Frameworks/\+Firebase\+Storage.\+framework/\+Headers/\+F\+I\+R\+Storage\+Constants.\+h@{Frameworks/\+Firebase\+Storage.\+framework/\+Headers/\+F\+I\+R\+Storage\+Constants.\+h}}
+
+
+Firebase S\+D\+K.  
+
+
+{\ttfamily \#import $<$Foundation/\+Foundation.\+h$>$}\\*
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void($^\wedge$ \hyperlink{_f_i_r_storage_constants_8h_a6a85be6582738d11abbe226df8722d87}{F\+I\+R\+Storage\+Void\+Data\+Error}) (N\+S\+Data $\ast$\+\_\+\+Nullable data, N\+S\+Error $\ast$\+\_\+\+Nullable error)
+\item 
+typedef void($^\wedge$ \hyperlink{_f_i_r_storage_constants_8h_a464342d2ad9cc65cbc96ab847eb97f38}{F\+I\+R\+Storage\+Void\+Error}) (N\+S\+Error $\ast$\+\_\+\+Nullable error)
+\item 
+typedef void($^\wedge$ \hyperlink{_f_i_r_storage_constants_8h_a820b06c469be4cbce3fec79f855c7397}{F\+I\+R\+Storage\+Void\+Metadata}) (\hyperlink{interface_f_i_r_storage_metadata}{F\+I\+R\+Storage\+Metadata} $\ast$\+\_\+\+Nullable metadata)
+\item 
+typedef void($^\wedge$ \hyperlink{_f_i_r_storage_constants_8h_a1bbb27ef3bb7bf5b72123d06c33fea63}{F\+I\+R\+Storage\+Void\+Metadata\+Error}) (\hyperlink{interface_f_i_r_storage_metadata}{F\+I\+R\+Storage\+Metadata} $\ast$\+\_\+\+Nullable metadata, N\+S\+Error $\ast$\+\_\+\+Nullable error)
+\item 
+typedef void($^\wedge$ \hyperlink{_f_i_r_storage_constants_8h_a757659289693a7f7beac254c30c05521}{F\+I\+R\+Storage\+Void\+Snapshot}) (\hyperlink{interface_f_i_r_storage_task_snapshot}{F\+I\+R\+Storage\+Task\+Snapshot} $\ast$snapshot)
+\item 
+typedef void($^\wedge$ \hyperlink{_f_i_r_storage_constants_8h_af5005689f270a64680b03f26faaad8da}{F\+I\+R\+Storage\+Void\+U\+R\+L\+Error}) (N\+S\+U\+R\+L $\ast$\+\_\+\+Nullable U\+R\+L, N\+S\+Error $\ast$\+\_\+\+Nullable error)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{_f_i_r_storage_constants_8h_aa6f395af95bb36528e185dfcadd16ceb}{N\+S\+\_\+\+E\+N\+U\+M} (N\+S\+Integer, F\+I\+R\+Storage\+Task\+Status)
+\item 
+typedef \hyperlink{_f_i_r_storage_constants_8h_ac3b518a833d0facb36bb12d336d4b79e}{N\+S\+\_\+\+E\+N\+U\+M} (N\+S\+Integer, F\+I\+R\+Storage\+Error\+Code)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+N\+S\+\_\+\+A\+S\+S\+U\+M\+E\+\_\+\+N\+O\+N\+N\+U\+L\+L\+\_\+\+B\+E\+G\+I\+N typedef N\+S\+String $\ast$ \hyperlink{_f_i_r_storage_constants_8h_a4b4a51653670ef0159b5bacd10bc541d}{F\+I\+R\+Storage\+Handle}
+\item 
+F\+O\+U\+N\+D\+A\+T\+I\+O\+N\+\_\+\+E\+X\+P\+O\+R\+T N\+S\+String $\ast$const \hyperlink{_f_i_r_storage_constants_8h_a5c793c382ca526ba925dd78aca0c1329}{F\+I\+R\+Storage\+Error\+Domain}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Firebase S\+D\+K. 
+
+\begin{DoxyCopyright}{Copyright}
+Copyright 2016 Google Inc. 
+\end{DoxyCopyright}
+\begin{DoxyRemark}{Remarks}
+Use of this S\+D\+K is subject to the Google A\+P\+Is Terms of Service\+: \href{https://developers.google.com/terms/}{\tt https\+://developers.\+google.\+com/terms/} 
+\end{DoxyRemark}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{_f_i_r_storage_constants_8h_a6a85be6582738d11abbe226df8722d87}{}\index{F\+I\+R\+Storage\+Constants.\+h@{F\+I\+R\+Storage\+Constants.\+h}!F\+I\+R\+Storage\+Void\+Data\+Error@{F\+I\+R\+Storage\+Void\+Data\+Error}}
+\index{F\+I\+R\+Storage\+Void\+Data\+Error@{F\+I\+R\+Storage\+Void\+Data\+Error}!F\+I\+R\+Storage\+Constants.\+h@{F\+I\+R\+Storage\+Constants.\+h}}
+\subsubsection[{F\+I\+R\+Storage\+Void\+Data\+Error}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($^\wedge$ F\+I\+R\+Storage\+Void\+Data\+Error) (N\+S\+Data $\ast$\+\_\+\+Nullable data, N\+S\+Error $\ast$\+\_\+\+Nullable error)}\label{_f_i_r_storage_constants_8h_a6a85be6582738d11abbe226df8722d87}
+Block typedef typically used when downloading data. 
+\begin{DoxyParams}{Parameters}
+{\em data} & The data returned by the download, or nil if no data available or download failed. \\
+\hline
+{\em error} & The error describing failure, if one occurred. \\
+\hline
+\end{DoxyParams}
+\hypertarget{_f_i_r_storage_constants_8h_a464342d2ad9cc65cbc96ab847eb97f38}{}\index{F\+I\+R\+Storage\+Constants.\+h@{F\+I\+R\+Storage\+Constants.\+h}!F\+I\+R\+Storage\+Void\+Error@{F\+I\+R\+Storage\+Void\+Error}}
+\index{F\+I\+R\+Storage\+Void\+Error@{F\+I\+R\+Storage\+Void\+Error}!F\+I\+R\+Storage\+Constants.\+h@{F\+I\+R\+Storage\+Constants.\+h}}
+\subsubsection[{F\+I\+R\+Storage\+Void\+Error}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($^\wedge$ F\+I\+R\+Storage\+Void\+Error) (N\+S\+Error $\ast$\+\_\+\+Nullable error)}\label{_f_i_r_storage_constants_8h_a464342d2ad9cc65cbc96ab847eb97f38}
+Block typedef typically used when performing \char`\"{}binary\char`\"{} async operations such as delete, where the operation either succeeds without an error or fails with an error. 
+\begin{DoxyParams}{Parameters}
+{\em error} & The error describing failure, if one occurred. \\
+\hline
+\end{DoxyParams}
+\hypertarget{_f_i_r_storage_constants_8h_a820b06c469be4cbce3fec79f855c7397}{}\index{F\+I\+R\+Storage\+Constants.\+h@{F\+I\+R\+Storage\+Constants.\+h}!F\+I\+R\+Storage\+Void\+Metadata@{F\+I\+R\+Storage\+Void\+Metadata}}
+\index{F\+I\+R\+Storage\+Void\+Metadata@{F\+I\+R\+Storage\+Void\+Metadata}!F\+I\+R\+Storage\+Constants.\+h@{F\+I\+R\+Storage\+Constants.\+h}}
+\subsubsection[{F\+I\+R\+Storage\+Void\+Metadata}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($^\wedge$ F\+I\+R\+Storage\+Void\+Metadata) ({\bf F\+I\+R\+Storage\+Metadata} $\ast$\+\_\+\+Nullable metadata)}\label{_f_i_r_storage_constants_8h_a820b06c469be4cbce3fec79f855c7397}
+Block typedef typically used when retrieving metadata. 
+\begin{DoxyParams}{Parameters}
+{\em metadata} & The metadata returned by the operation, if metadata exists. \\
+\hline
+\end{DoxyParams}
+\hypertarget{_f_i_r_storage_constants_8h_a1bbb27ef3bb7bf5b72123d06c33fea63}{}\index{F\+I\+R\+Storage\+Constants.\+h@{F\+I\+R\+Storage\+Constants.\+h}!F\+I\+R\+Storage\+Void\+Metadata\+Error@{F\+I\+R\+Storage\+Void\+Metadata\+Error}}
+\index{F\+I\+R\+Storage\+Void\+Metadata\+Error@{F\+I\+R\+Storage\+Void\+Metadata\+Error}!F\+I\+R\+Storage\+Constants.\+h@{F\+I\+R\+Storage\+Constants.\+h}}
+\subsubsection[{F\+I\+R\+Storage\+Void\+Metadata\+Error}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($^\wedge$ F\+I\+R\+Storage\+Void\+Metadata\+Error) ({\bf F\+I\+R\+Storage\+Metadata} $\ast$\+\_\+\+Nullable metadata, N\+S\+Error $\ast$\+\_\+\+Nullable error)}\label{_f_i_r_storage_constants_8h_a1bbb27ef3bb7bf5b72123d06c33fea63}
+Block typedef typically used when retrieving metadata with the possibility of an error. 
+\begin{DoxyParams}{Parameters}
+{\em metadata} & The metadata returned by the operation, if metadata exists. \\
+\hline
+{\em error} & The error describing failure, if one occurred. \\
+\hline
+\end{DoxyParams}
+\hypertarget{_f_i_r_storage_constants_8h_a757659289693a7f7beac254c30c05521}{}\index{F\+I\+R\+Storage\+Constants.\+h@{F\+I\+R\+Storage\+Constants.\+h}!F\+I\+R\+Storage\+Void\+Snapshot@{F\+I\+R\+Storage\+Void\+Snapshot}}
+\index{F\+I\+R\+Storage\+Void\+Snapshot@{F\+I\+R\+Storage\+Void\+Snapshot}!F\+I\+R\+Storage\+Constants.\+h@{F\+I\+R\+Storage\+Constants.\+h}}
+\subsubsection[{F\+I\+R\+Storage\+Void\+Snapshot}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($^\wedge$ F\+I\+R\+Storage\+Void\+Snapshot) ({\bf F\+I\+R\+Storage\+Task\+Snapshot} $\ast$snapshot)}\label{_f_i_r_storage_constants_8h_a757659289693a7f7beac254c30c05521}
+Block typedef typically used when getting or updating metadata with the possibility of an error. 
+\begin{DoxyParams}{Parameters}
+{\em metadata} & The metadata returned by the operation, if metadata exists. \\
+\hline
+{\em error} & The error describing failure, if one occurred. \\
+\hline
+\end{DoxyParams}
+\hypertarget{_f_i_r_storage_constants_8h_af5005689f270a64680b03f26faaad8da}{}\index{F\+I\+R\+Storage\+Constants.\+h@{F\+I\+R\+Storage\+Constants.\+h}!F\+I\+R\+Storage\+Void\+U\+R\+L\+Error@{F\+I\+R\+Storage\+Void\+U\+R\+L\+Error}}
+\index{F\+I\+R\+Storage\+Void\+U\+R\+L\+Error@{F\+I\+R\+Storage\+Void\+U\+R\+L\+Error}!F\+I\+R\+Storage\+Constants.\+h@{F\+I\+R\+Storage\+Constants.\+h}}
+\subsubsection[{F\+I\+R\+Storage\+Void\+U\+R\+L\+Error}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($^\wedge$ F\+I\+R\+Storage\+Void\+U\+R\+L\+Error) (N\+S\+U\+R\+L $\ast$\+\_\+\+Nullable U\+R\+L, N\+S\+Error $\ast$\+\_\+\+Nullable error)}\label{_f_i_r_storage_constants_8h_af5005689f270a64680b03f26faaad8da}
+Block typedef typically used when retrieving a download U\+R\+L. 
+\begin{DoxyParams}{Parameters}
+{\em U\+R\+L} & The download U\+R\+L associated with the operation. \\
+\hline
+{\em error} & The error describing failure, if one occurred. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Function Documentation}
+\hypertarget{_f_i_r_storage_constants_8h_aa6f395af95bb36528e185dfcadd16ceb}{}\index{F\+I\+R\+Storage\+Constants.\+h@{F\+I\+R\+Storage\+Constants.\+h}!N\+S\+\_\+\+E\+N\+U\+M@{N\+S\+\_\+\+E\+N\+U\+M}}
+\index{N\+S\+\_\+\+E\+N\+U\+M@{N\+S\+\_\+\+E\+N\+U\+M}!F\+I\+R\+Storage\+Constants.\+h@{F\+I\+R\+Storage\+Constants.\+h}}
+\subsubsection[{N\+S\+\_\+\+E\+N\+U\+M}]{\setlength{\rightskip}{0pt plus 5cm}typedef N\+S\+\_\+\+E\+N\+U\+M (
+\begin{DoxyParamCaption}
+\item[{N\+S\+Integer}]{, }
+\item[{F\+I\+R\+Storage\+Task\+Status}]{}
+\end{DoxyParamCaption}
+)}\label{_f_i_r_storage_constants_8h_aa6f395af95bb36528e185dfcadd16ceb}
+Enum representing the upload and download task status. Unknown task status.
+
+Task is being resumed.
+
+Task reported a progress event.
+
+Task is paused.
+
+Task has completed successfully.
+
+Task has failed and is unrecoverable.\hypertarget{_f_i_r_storage_constants_8h_ac3b518a833d0facb36bb12d336d4b79e}{}\index{F\+I\+R\+Storage\+Constants.\+h@{F\+I\+R\+Storage\+Constants.\+h}!N\+S\+\_\+\+E\+N\+U\+M@{N\+S\+\_\+\+E\+N\+U\+M}}
+\index{N\+S\+\_\+\+E\+N\+U\+M@{N\+S\+\_\+\+E\+N\+U\+M}!F\+I\+R\+Storage\+Constants.\+h@{F\+I\+R\+Storage\+Constants.\+h}}
+\subsubsection[{N\+S\+\_\+\+E\+N\+U\+M}]{\setlength{\rightskip}{0pt plus 5cm}typedef N\+S\+\_\+\+E\+N\+U\+M (
+\begin{DoxyParamCaption}
+\item[{N\+S\+Integer}]{, }
+\item[{F\+I\+R\+Storage\+Error\+Code}]{}
+\end{DoxyParamCaption}
+)}\label{_f_i_r_storage_constants_8h_ac3b518a833d0facb36bb12d336d4b79e}
+Enum representing the errors raised by Firebase Storage. 
+
+\subsection{Variable Documentation}
+\hypertarget{_f_i_r_storage_constants_8h_a5c793c382ca526ba925dd78aca0c1329}{}\index{F\+I\+R\+Storage\+Constants.\+h@{F\+I\+R\+Storage\+Constants.\+h}!F\+I\+R\+Storage\+Error\+Domain@{F\+I\+R\+Storage\+Error\+Domain}}
+\index{F\+I\+R\+Storage\+Error\+Domain@{F\+I\+R\+Storage\+Error\+Domain}!F\+I\+R\+Storage\+Constants.\+h@{F\+I\+R\+Storage\+Constants.\+h}}
+\subsubsection[{F\+I\+R\+Storage\+Error\+Domain}]{\setlength{\rightskip}{0pt plus 5cm}F\+O\+U\+N\+D\+A\+T\+I\+O\+N\+\_\+\+E\+X\+P\+O\+R\+T N\+S\+String$\ast$ const F\+I\+R\+Storage\+Error\+Domain}\label{_f_i_r_storage_constants_8h_a5c793c382ca526ba925dd78aca0c1329}
+Firebase Storage error domain. \hypertarget{_f_i_r_storage_constants_8h_a4b4a51653670ef0159b5bacd10bc541d}{}\index{F\+I\+R\+Storage\+Constants.\+h@{F\+I\+R\+Storage\+Constants.\+h}!F\+I\+R\+Storage\+Handle@{F\+I\+R\+Storage\+Handle}}
+\index{F\+I\+R\+Storage\+Handle@{F\+I\+R\+Storage\+Handle}!F\+I\+R\+Storage\+Constants.\+h@{F\+I\+R\+Storage\+Constants.\+h}}
+\subsubsection[{F\+I\+R\+Storage\+Handle}]{\setlength{\rightskip}{0pt plus 5cm}N\+S\+\_\+\+A\+S\+S\+U\+M\+E\+\_\+\+N\+O\+N\+N\+U\+L\+L\+\_\+\+B\+E\+G\+I\+N typedef N\+S\+String$\ast$ F\+I\+R\+Storage\+Handle}\label{_f_i_r_storage_constants_8h_a4b4a51653670ef0159b5bacd10bc541d}
+N\+S\+String typedef representing a task listener handle. 

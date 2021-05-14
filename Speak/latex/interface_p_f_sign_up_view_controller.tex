@@ -1,0 +1,82 @@
+\hypertarget{interface_p_f_sign_up_view_controller}{}\section{P\+F\+Sign\+Up\+View\+Controller Class Reference}
+\label{interface_p_f_sign_up_view_controller}\index{P\+F\+Sign\+Up\+View\+Controller@{P\+F\+Sign\+Up\+View\+Controller}}
+
+
+{\ttfamily \#import $<$P\+F\+Sign\+Up\+View\+Controller.\+h$>$}
+
+Inheritance diagram for P\+F\+Sign\+Up\+View\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_p_f_sign_up_view_controller}
+\end{center}
+\end{figure}
+\subsection*{Properties}
+\begin{Indent}{\bf Configuring Sign Up Elements}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+P\+F\+Sign\+Up\+Fields \hyperlink{interface_p_f_sign_up_view_controller_a14aee5e2f66057ce9a998fb8576d412b}{fields}
+\item 
+\hyperlink{interface_p_f_sign_up_view}{P\+F\+Sign\+Up\+View} $\ast$ \hyperlink{interface_p_f_sign_up_view_controller_aabe62b83ad3128c64650b19e995aad27}{sign\+Up\+View}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Configuring Sign Up Behaviors}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+id$<$ \hyperlink{protocol_p_f_sign_up_view_controller_delegate-p}{P\+F\+Sign\+Up\+View\+Controller\+Delegate} $>$ \hyperlink{interface_p_f_sign_up_view_controller_a1150c82d22998c1f83f712e1e60a386a}{delegate}
+\item 
+N\+S\+U\+Integer \hyperlink{interface_p_f_sign_up_view_controller_a9142fa63faede5be9fe94ab55851c8a7}{min\+Password\+Length}
+\item 
+B\+O\+O\+L \hyperlink{interface_p_f_sign_up_view_controller_a90fe2f50758438dcc328bb9833ba6922}{email\+As\+Username}
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \hyperlink{interface_p_f_sign_up_view_controller}{P\+F\+Sign\+Up\+View\+Controller}} class that presents and manages a standard authentication interface for signing up a {\ttfamily P\+F\+User}. 
+
+\subsection{Property Documentation}
+\hypertarget{interface_p_f_sign_up_view_controller_a1150c82d22998c1f83f712e1e60a386a}{}\index{P\+F\+Sign\+Up\+View\+Controller@{P\+F\+Sign\+Up\+View\+Controller}!delegate@{delegate}}
+\index{delegate@{delegate}!P\+F\+Sign\+Up\+View\+Controller@{P\+F\+Sign\+Up\+View\+Controller}}
+\subsubsection[{delegate}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id$<${\bf P\+F\+Sign\+Up\+View\+Controller\+Delegate}$>$) delegate\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}\label{interface_p_f_sign_up_view_controller_a1150c82d22998c1f83f712e1e60a386a}
+The delegate that responds to the control events of {\ttfamily \hyperlink{interface_p_f_sign_up_view_controller}{P\+F\+Sign\+Up\+View\+Controller}}.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{protocol_p_f_sign_up_view_controller_delegate-p}{P\+F\+Sign\+Up\+View\+Controller\+Delegate} 
+\end{DoxySeeAlso}
+\hypertarget{interface_p_f_sign_up_view_controller_a90fe2f50758438dcc328bb9833ba6922}{}\index{P\+F\+Sign\+Up\+View\+Controller@{P\+F\+Sign\+Up\+View\+Controller}!email\+As\+Username@{email\+As\+Username}}
+\index{email\+As\+Username@{email\+As\+Username}!P\+F\+Sign\+Up\+View\+Controller@{P\+F\+Sign\+Up\+View\+Controller}}
+\subsubsection[{email\+As\+Username}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) email\+As\+Username\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_p_f_sign_up_view_controller_a90fe2f50758438dcc328bb9833ba6922}
+Whether to use the email as username on the attached {\ttfamily sign\+Up\+View}.
+
+If set to {\ttfamily Y\+E\+S}, we\textquotesingle{}ll hide the email field, prompt for the email in the username field, and save the email into both username and email fields on the new {\ttfamily P\+F\+User} object. By default, this is set to {\ttfamily N\+O}. \hypertarget{interface_p_f_sign_up_view_controller_a14aee5e2f66057ce9a998fb8576d412b}{}\index{P\+F\+Sign\+Up\+View\+Controller@{P\+F\+Sign\+Up\+View\+Controller}!fields@{fields}}
+\index{fields@{fields}!P\+F\+Sign\+Up\+View\+Controller@{P\+F\+Sign\+Up\+View\+Controller}}
+\subsubsection[{fields}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (P\+F\+Sign\+Up\+Fields) fields\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_p_f_sign_up_view_controller_a14aee5e2f66057ce9a998fb8576d412b}
+A bitmask specifying the log in elements which are enabled in the view.
+
+\begin{DoxySeeAlso}{See also}
+P\+F\+Sign\+Up\+Fields 
+\end{DoxySeeAlso}
+\hypertarget{interface_p_f_sign_up_view_controller_a9142fa63faede5be9fe94ab55851c8a7}{}\index{P\+F\+Sign\+Up\+View\+Controller@{P\+F\+Sign\+Up\+View\+Controller}!min\+Password\+Length@{min\+Password\+Length}}
+\index{min\+Password\+Length@{min\+Password\+Length}!P\+F\+Sign\+Up\+View\+Controller@{P\+F\+Sign\+Up\+View\+Controller}}
+\subsubsection[{min\+Password\+Length}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+U\+Integer) min\+Password\+Length\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_p_f_sign_up_view_controller_a9142fa63faede5be9fe94ab55851c8a7}
+Minimum required password length for user signups, defaults to {\ttfamily 0}. \hypertarget{interface_p_f_sign_up_view_controller_aabe62b83ad3128c64650b19e995aad27}{}\index{P\+F\+Sign\+Up\+View\+Controller@{P\+F\+Sign\+Up\+View\+Controller}!sign\+Up\+View@{sign\+Up\+View}}
+\index{sign\+Up\+View@{sign\+Up\+View}!P\+F\+Sign\+Up\+View\+Controller@{P\+F\+Sign\+Up\+View\+Controller}}
+\subsubsection[{sign\+Up\+View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf P\+F\+Sign\+Up\+View}$\ast$) sign\+Up\+View\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_p_f_sign_up_view_controller_aabe62b83ad3128c64650b19e995aad27}
+The sign up view. It contains all the enabled log in elements.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_p_f_sign_up_view}{P\+F\+Sign\+Up\+View} 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Frameworks/\+Parse\+U\+I.\+framework/\+Headers/P\+F\+Sign\+Up\+View\+Controller.\+h\end{DoxyCompactItemize}

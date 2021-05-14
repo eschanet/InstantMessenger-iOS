@@ -1,0 +1,47 @@
+\hypertarget{interface_c_r_toast_interaction_responder}{}\section{C\+R\+Toast\+Interaction\+Responder Class Reference}
+\label{interface_c_r_toast_interaction_responder}\index{C\+R\+Toast\+Interaction\+Responder@{C\+R\+Toast\+Interaction\+Responder}}
+
+
+{\ttfamily \#import $<$C\+R\+Toast.\+h$>$}
+
+Inheritance diagram for C\+R\+Toast\+Interaction\+Responder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_c_r_toast_interaction_responder}
+\end{center}
+\end{figure}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) + \hyperlink{interface_c_r_toast_interaction_responder_ab27bdcf249576cdbf6eb66b80131d488}{interaction\+Responder\+With\+Interaction\+Type\+:automatically\+Dismiss\+:block\+:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{interface_c_r_toast_interaction_responder}{C\+R\+Toast\+Interaction\+Responder} is a container object to configure responses to user interactions with a notification. A collection of interaction responders can be included in the options for any given notification or in defaults. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_c_r_toast_interaction_responder_ab27bdcf249576cdbf6eb66b80131d488}{}\index{C\+R\+Toast\+Interaction\+Responder@{C\+R\+Toast\+Interaction\+Responder}!interaction\+Responder\+With\+Interaction\+Type\+:automatically\+Dismiss\+:block\+:@{interaction\+Responder\+With\+Interaction\+Type\+:automatically\+Dismiss\+:block\+:}}
+\index{interaction\+Responder\+With\+Interaction\+Type\+:automatically\+Dismiss\+:block\+:@{interaction\+Responder\+With\+Interaction\+Type\+:automatically\+Dismiss\+:block\+:}!C\+R\+Toast\+Interaction\+Responder@{C\+R\+Toast\+Interaction\+Responder}}
+\subsubsection[{interaction\+Responder\+With\+Interaction\+Type\+:automatically\+Dismiss\+:block\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (instancetype) interaction\+Responder\+With\+Interaction\+Type\+: 
+\begin{DoxyParamCaption}
+\item[{(C\+R\+Toast\+Interaction\+Type)}]{interaction\+Type}
+\item[{automaticallyDismiss:(B\+O\+O\+L)}]{automatically\+Dismiss}
+\item[{block:(void($^\wedge$)(C\+R\+Toast\+Interaction\+Type interaction\+Type))}]{block}
+\end{DoxyParamCaption}
+}\label{interface_c_r_toast_interaction_responder_ab27bdcf249576cdbf6eb66b80131d488}
+Creates an interaction responder for a given interaction type. 
+\begin{DoxyParams}{Parameters}
+{\em interaction\+Type} & The kind of interaction that will trigger the responder \\
+\hline
+{\em automatically\+Dismiss} & A B\+O\+O\+L indiciating if the notification should automatically be dismissed on the interaction being observed. If Y\+E\+S the configured notification dismisall animation will begin immidiately upon encountering the interaction. \\
+\hline
+{\em block} & A block of code to be called immidiately upon the interaction being encountered. The block will be provided the specific C\+R\+Toast\+Interaction\+Type that resulted in the block firing \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Vendors/\+C\+R\+Toast/C\+R\+Toast.\+h\item 
+Vendors/\+C\+R\+Toast/C\+R\+Toast.\+m\end{DoxyCompactItemize}

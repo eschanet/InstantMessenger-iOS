@@ -1,0 +1,181 @@
+\hypertarget{interface_s_d_web_image_downloader}{}\section{S\+D\+Web\+Image\+Downloader Class Reference}
+\label{interface_s_d_web_image_downloader}\index{S\+D\+Web\+Image\+Downloader@{S\+D\+Web\+Image\+Downloader}}
+
+
+{\ttfamily \#import $<$S\+D\+Web\+Image\+Downloader.\+h$>$}
+
+Inheritance diagram for S\+D\+Web\+Image\+Downloader\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_s_d_web_image_downloader}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_s_d_web_image_downloader_a4705bbfc9ce6a39b8a72c7400451adbd}{set\+Value\+:for\+H\+T\+T\+P\+Header\+Field\+:}
+\item 
+(N\+S\+String $\ast$) -\/ \hyperlink{interface_s_d_web_image_downloader_a35c47c9cf43fbce253153417f5f9f2f4}{value\+For\+H\+T\+T\+P\+Header\+Field\+:}
+\item 
+(void) -\/ \hyperlink{interface_s_d_web_image_downloader_a27a55eb9ae3c7b1c9f3a2617420390e9}{set\+Operation\+Class\+:}
+\item 
+(id$<$ \hyperlink{protocol_s_d_web_image_operation-p}{S\+D\+Web\+Image\+Operation} $>$) -\/ \hyperlink{interface_s_d_web_image_downloader_ac60cbbe2cfeb0ca230fa3e04e5f94015}{download\+Image\+With\+U\+R\+L\+:options\+:progress\+:completed\+:}
+\item 
+(void) -\/ \hyperlink{interface_s_d_web_image_downloader_aa477f2fb00e135fbaa7cef40111feb06}{set\+Suspended\+:}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_s_d_web_image_downloader}{S\+D\+Web\+Image\+Downloader} $\ast$) + \hyperlink{interface_s_d_web_image_downloader_a3611251a4eebd50128610c79d48aadca}{shared\+Downloader}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+B\+O\+O\+L \hyperlink{interface_s_d_web_image_downloader_ac91a3f91279023164c48bd066abbfbea}{should\+Decompress\+Images}
+\item 
+\hypertarget{interface_s_d_web_image_downloader_a6895c7acffd3bd3769a3c2f0e75e32f6}{}N\+S\+Integer {\bfseries max\+Concurrent\+Downloads}\label{interface_s_d_web_image_downloader_a6895c7acffd3bd3769a3c2f0e75e32f6}
+
+\item 
+N\+S\+U\+Integer \hyperlink{interface_s_d_web_image_downloader_a5fa5ece3c9fbec729d208f9901c6b711}{current\+Download\+Count}
+\item 
+N\+S\+Time\+Interval \hyperlink{interface_s_d_web_image_downloader_ab8353ea3b82be017001b01ac3577f52f}{download\+Timeout}
+\item 
+S\+D\+Web\+Image\+Downloader\+Execution\+Order \hyperlink{interface_s_d_web_image_downloader_a4f5cbec407970585eb0c08de1a0319fa}{execution\+Order}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_s_d_web_image_downloader_adec754b62354b9c84a190cd954a52aaa}{username}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_s_d_web_image_downloader_a12a536dd22cd02d2a6ef3588cc0a37d9}{password}
+\item 
+S\+D\+Web\+Image\+Downloader\+Headers\+Filter\+Block \hyperlink{interface_s_d_web_image_downloader_ae7594a7c9a621aaa6a27fdb72fcbae9b}{headers\+Filter}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Asynchronous downloader dedicated and optimized for image loading. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_s_d_web_image_downloader_ac60cbbe2cfeb0ca230fa3e04e5f94015}{}\index{S\+D\+Web\+Image\+Downloader@{S\+D\+Web\+Image\+Downloader}!download\+Image\+With\+U\+R\+L\+:options\+:progress\+:completed\+:@{download\+Image\+With\+U\+R\+L\+:options\+:progress\+:completed\+:}}
+\index{download\+Image\+With\+U\+R\+L\+:options\+:progress\+:completed\+:@{download\+Image\+With\+U\+R\+L\+:options\+:progress\+:completed\+:}!S\+D\+Web\+Image\+Downloader@{S\+D\+Web\+Image\+Downloader}}
+\subsubsection[{download\+Image\+With\+U\+R\+L\+:options\+:progress\+:completed\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id$<$ {\bf S\+D\+Web\+Image\+Operation} $>$) download\+Image\+With\+U\+R\+L\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+U\+R\+L $\ast$)}]{url}
+\item[{options:(S\+D\+Web\+Image\+Downloader\+Options)}]{options}
+\item[{progress:(S\+D\+Web\+Image\+Downloader\+Progress\+Block)}]{progress\+Block}
+\item[{completed:(S\+D\+Web\+Image\+Downloader\+Completed\+Block)}]{completed\+Block}
+\end{DoxyParamCaption}
+}\label{interface_s_d_web_image_downloader_ac60cbbe2cfeb0ca230fa3e04e5f94015}
+Creates a \hyperlink{interface_s_d_web_image_downloader}{S\+D\+Web\+Image\+Downloader} async downloader instance with a given U\+R\+L
+
+The delegate will be informed when the image is finish downloaded or an error has happen.
+
+\begin{DoxySeeAlso}{See also}
+S\+D\+Web\+Image\+Downloader\+Delegate
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em url} & The U\+R\+L to the image to download \\
+\hline
+{\em options} & The options to be used for this download \\
+\hline
+{\em progress\+Block} & A block called repeatedly while the image is downloading \\
+\hline
+{\em completed\+Block} & A block called once the download is completed. If the download succeeded, the image parameter is set, in case of error, error parameter is set with the error. The last parameter is always Y\+E\+S if S\+D\+Web\+Image\+Downloader\+Progressive\+Download isn\textquotesingle{}t use. With the S\+D\+Web\+Image\+Downloader\+Progressive\+Download option, this block is called repeatedly with the partial image object and the finished argument set to N\+O before to be called a last time with the full image and finished argument set to Y\+E\+S. In case of error, the finished argument is always Y\+E\+S.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A cancellable \hyperlink{protocol_s_d_web_image_operation-p}{S\+D\+Web\+Image\+Operation} 
+\end{DoxyReturn}
+\hypertarget{interface_s_d_web_image_downloader_a27a55eb9ae3c7b1c9f3a2617420390e9}{}\index{S\+D\+Web\+Image\+Downloader@{S\+D\+Web\+Image\+Downloader}!set\+Operation\+Class\+:@{set\+Operation\+Class\+:}}
+\index{set\+Operation\+Class\+:@{set\+Operation\+Class\+:}!S\+D\+Web\+Image\+Downloader@{S\+D\+Web\+Image\+Downloader}}
+\subsubsection[{set\+Operation\+Class\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\+Operation\+Class\+: 
+\begin{DoxyParamCaption}
+\item[{(Class)}]{operation\+Class}
+\end{DoxyParamCaption}
+}\label{interface_s_d_web_image_downloader_a27a55eb9ae3c7b1c9f3a2617420390e9}
+Sets a subclass of {\ttfamily \hyperlink{interface_s_d_web_image_downloader_operation}{S\+D\+Web\+Image\+Downloader\+Operation}} as the default {\ttfamily N\+S\+Operation} to be used each time S\+D\+Web\+Image constructs a request operation to download an image.
+
+
+\begin{DoxyParams}{Parameters}
+{\em operation\+Class} & The subclass of {\ttfamily \hyperlink{interface_s_d_web_image_downloader_operation}{S\+D\+Web\+Image\+Downloader\+Operation}} to set as default. Passing {\ttfamily nil} will revert to {\ttfamily \hyperlink{interface_s_d_web_image_downloader_operation}{S\+D\+Web\+Image\+Downloader\+Operation}}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_s_d_web_image_downloader_aa477f2fb00e135fbaa7cef40111feb06}{}\index{S\+D\+Web\+Image\+Downloader@{S\+D\+Web\+Image\+Downloader}!set\+Suspended\+:@{set\+Suspended\+:}}
+\index{set\+Suspended\+:@{set\+Suspended\+:}!S\+D\+Web\+Image\+Downloader@{S\+D\+Web\+Image\+Downloader}}
+\subsubsection[{set\+Suspended\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\+Suspended\+: 
+\begin{DoxyParamCaption}
+\item[{(B\+O\+O\+L)}]{suspended}
+\end{DoxyParamCaption}
+}\label{interface_s_d_web_image_downloader_aa477f2fb00e135fbaa7cef40111feb06}
+Sets the download queue suspension state \hypertarget{interface_s_d_web_image_downloader_a4705bbfc9ce6a39b8a72c7400451adbd}{}\index{S\+D\+Web\+Image\+Downloader@{S\+D\+Web\+Image\+Downloader}!set\+Value\+:for\+H\+T\+T\+P\+Header\+Field\+:@{set\+Value\+:for\+H\+T\+T\+P\+Header\+Field\+:}}
+\index{set\+Value\+:for\+H\+T\+T\+P\+Header\+Field\+:@{set\+Value\+:for\+H\+T\+T\+P\+Header\+Field\+:}!S\+D\+Web\+Image\+Downloader@{S\+D\+Web\+Image\+Downloader}}
+\subsubsection[{set\+Value\+:for\+H\+T\+T\+P\+Header\+Field\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\+Value\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{value}
+\item[{forHTTPHeaderField:(N\+S\+String $\ast$)}]{field}
+\end{DoxyParamCaption}
+}\label{interface_s_d_web_image_downloader_a4705bbfc9ce6a39b8a72c7400451adbd}
+Set a value for a H\+T\+T\+P header to be appended to each download H\+T\+T\+P request.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value for the header field. Use {\ttfamily nil} value to remove the header. \\
+\hline
+{\em field} & The name of the header field to set. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_s_d_web_image_downloader_a3611251a4eebd50128610c79d48aadca}{}\index{S\+D\+Web\+Image\+Downloader@{S\+D\+Web\+Image\+Downloader}!shared\+Downloader@{shared\+Downloader}}
+\index{shared\+Downloader@{shared\+Downloader}!S\+D\+Web\+Image\+Downloader@{S\+D\+Web\+Image\+Downloader}}
+\subsubsection[{shared\+Downloader}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf S\+D\+Web\+Image\+Downloader} $\ast$) shared\+Downloader 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_s_d_web_image_downloader_a3611251a4eebd50128610c79d48aadca}
+Singleton method, returns the shared instance
+
+\begin{DoxyReturn}{Returns}
+global shared instance of downloader class 
+\end{DoxyReturn}
+\hypertarget{interface_s_d_web_image_downloader_a35c47c9cf43fbce253153417f5f9f2f4}{}\index{S\+D\+Web\+Image\+Downloader@{S\+D\+Web\+Image\+Downloader}!value\+For\+H\+T\+T\+P\+Header\+Field\+:@{value\+For\+H\+T\+T\+P\+Header\+Field\+:}}
+\index{value\+For\+H\+T\+T\+P\+Header\+Field\+:@{value\+For\+H\+T\+T\+P\+Header\+Field\+:}!S\+D\+Web\+Image\+Downloader@{S\+D\+Web\+Image\+Downloader}}
+\subsubsection[{value\+For\+H\+T\+T\+P\+Header\+Field\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String $\ast$) value\+For\+H\+T\+T\+P\+Header\+Field\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{field}
+\end{DoxyParamCaption}
+}\label{interface_s_d_web_image_downloader_a35c47c9cf43fbce253153417f5f9f2f4}
+Returns the value of the specified H\+T\+T\+P header field.
+
+\begin{DoxyReturn}{Returns}
+The value associated with the header field field, or {\ttfamily nil} if there is no corresponding header field. 
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_s_d_web_image_downloader_a5fa5ece3c9fbec729d208f9901c6b711}{}\index{S\+D\+Web\+Image\+Downloader@{S\+D\+Web\+Image\+Downloader}!current\+Download\+Count@{current\+Download\+Count}}
+\index{current\+Download\+Count@{current\+Download\+Count}!S\+D\+Web\+Image\+Downloader@{S\+D\+Web\+Image\+Downloader}}
+\subsubsection[{current\+Download\+Count}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+U\+Integer) current\+Download\+Count\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_s_d_web_image_downloader_a5fa5ece3c9fbec729d208f9901c6b711}
+Shows the current amount of downloads that still need to be downloaded \hypertarget{interface_s_d_web_image_downloader_ab8353ea3b82be017001b01ac3577f52f}{}\index{S\+D\+Web\+Image\+Downloader@{S\+D\+Web\+Image\+Downloader}!download\+Timeout@{download\+Timeout}}
+\index{download\+Timeout@{download\+Timeout}!S\+D\+Web\+Image\+Downloader@{S\+D\+Web\+Image\+Downloader}}
+\subsubsection[{download\+Timeout}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Time\+Interval) download\+Timeout\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_s_d_web_image_downloader_ab8353ea3b82be017001b01ac3577f52f}
+The timeout value (in seconds) for the download operation. Default\+: 15.\+0. \hypertarget{interface_s_d_web_image_downloader_a4f5cbec407970585eb0c08de1a0319fa}{}\index{S\+D\+Web\+Image\+Downloader@{S\+D\+Web\+Image\+Downloader}!execution\+Order@{execution\+Order}}
+\index{execution\+Order@{execution\+Order}!S\+D\+Web\+Image\+Downloader@{S\+D\+Web\+Image\+Downloader}}
+\subsubsection[{execution\+Order}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (S\+D\+Web\+Image\+Downloader\+Execution\+Order) execution\+Order\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_s_d_web_image_downloader_a4f5cbec407970585eb0c08de1a0319fa}
+Changes download operations execution order. Default value is {\ttfamily S\+D\+Web\+Image\+Downloader\+F\+I\+F\+O\+Execution\+Order}. \hypertarget{interface_s_d_web_image_downloader_ae7594a7c9a621aaa6a27fdb72fcbae9b}{}\index{S\+D\+Web\+Image\+Downloader@{S\+D\+Web\+Image\+Downloader}!headers\+Filter@{headers\+Filter}}
+\index{headers\+Filter@{headers\+Filter}!S\+D\+Web\+Image\+Downloader@{S\+D\+Web\+Image\+Downloader}}
+\subsubsection[{headers\+Filter}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (S\+D\+Web\+Image\+Downloader\+Headers\+Filter\+Block) headers\+Filter\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_s_d_web_image_downloader_ae7594a7c9a621aaa6a27fdb72fcbae9b}
+Set filter to pick headers for downloading image H\+T\+T\+P request.
+
+This block will be invoked for each downloading image request, returned N\+S\+Dictionary will be used as headers in corresponding H\+T\+T\+P request. \hypertarget{interface_s_d_web_image_downloader_a12a536dd22cd02d2a6ef3588cc0a37d9}{}\index{S\+D\+Web\+Image\+Downloader@{S\+D\+Web\+Image\+Downloader}!password@{password}}
+\index{password@{password}!S\+D\+Web\+Image\+Downloader@{S\+D\+Web\+Image\+Downloader}}
+\subsubsection[{password}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) password\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_s_d_web_image_downloader_a12a536dd22cd02d2a6ef3588cc0a37d9}
+Set password \hypertarget{interface_s_d_web_image_downloader_ac91a3f91279023164c48bd066abbfbea}{}\index{S\+D\+Web\+Image\+Downloader@{S\+D\+Web\+Image\+Downloader}!should\+Decompress\+Images@{should\+Decompress\+Images}}
+\index{should\+Decompress\+Images@{should\+Decompress\+Images}!S\+D\+Web\+Image\+Downloader@{S\+D\+Web\+Image\+Downloader}}
+\subsubsection[{should\+Decompress\+Images}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) should\+Decompress\+Images\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_s_d_web_image_downloader_ac91a3f91279023164c48bd066abbfbea}
+Decompressing images that are downloaded and cached can improve peformance but can consume lot of memory. Defaults to Y\+E\+S. Set this to N\+O if you are experiencing a crash due to excessive memory consumption. \hypertarget{interface_s_d_web_image_downloader_adec754b62354b9c84a190cd954a52aaa}{}\index{S\+D\+Web\+Image\+Downloader@{S\+D\+Web\+Image\+Downloader}!username@{username}}
+\index{username@{username}!S\+D\+Web\+Image\+Downloader@{S\+D\+Web\+Image\+Downloader}}
+\subsubsection[{username}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) username\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_s_d_web_image_downloader_adec754b62354b9c84a190cd954a52aaa}
+Set username 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Vendors/\+S\+D\+Web\+Image/S\+D\+Web\+Image\+Downloader.\+h\item 
+Vendors/\+S\+D\+Web\+Image/S\+D\+Web\+Image\+Downloader.\+m\end{DoxyCompactItemize}

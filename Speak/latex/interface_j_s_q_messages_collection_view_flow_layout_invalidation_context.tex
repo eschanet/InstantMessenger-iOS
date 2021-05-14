@@ -1,0 +1,54 @@
+\hypertarget{interface_j_s_q_messages_collection_view_flow_layout_invalidation_context}{}\section{J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout\+Invalidation\+Context Class Reference}
+\label{interface_j_s_q_messages_collection_view_flow_layout_invalidation_context}\index{J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout\+Invalidation\+Context@{J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout\+Invalidation\+Context}}
+
+
+{\ttfamily \#import $<$J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout\+Invalidation\+Context.\+h$>$}
+
+Inheritance diagram for J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout\+Invalidation\+Context\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_j_s_q_messages_collection_view_flow_layout_invalidation_context}
+\end{center}
+\end{figure}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) + \hyperlink{interface_j_s_q_messages_collection_view_flow_layout_invalidation_context_a32a9727db994e6b186b50ae2c6721d44}{context}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+B\+O\+O\+L \hyperlink{interface_j_s_q_messages_collection_view_flow_layout_invalidation_context_aa696f200fad5e62ff83ca423b369a20f}{invalidate\+Flow\+Layout\+Messages\+Cache}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A {\ttfamily \hyperlink{interface_j_s_q_messages_collection_view_flow_layout_invalidation_context}{J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout\+Invalidation\+Context}} object specifies properties for determining whether to recompute the size of items or their position in the layout. The flow layout object creates instances of this class when it needs to invalidate its contents in response to changes. You can also create instances when invalidating the flow layout manually. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_j_s_q_messages_collection_view_flow_layout_invalidation_context_a32a9727db994e6b186b50ae2c6721d44}{}\index{J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout\+Invalidation\+Context@{J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout\+Invalidation\+Context}!context@{context}}
+\index{context@{context}!J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout\+Invalidation\+Context@{J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout\+Invalidation\+Context}}
+\subsubsection[{context}]{\setlength{\rightskip}{0pt plus 5cm}+ (instancetype) context 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_messages_collection_view_flow_layout_invalidation_context_a32a9727db994e6b186b50ae2c6721d44}
+Creates and returns a new {\ttfamily \hyperlink{interface_j_s_q_messages_collection_view_flow_layout_invalidation_context}{J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout\+Invalidation\+Context}} object.
+
+When you need to invalidate the {\ttfamily \hyperlink{interface_j_s_q_messages_collection_view_flow_layout}{J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout}} object for your {\ttfamily \hyperlink{interface_j_s_q_messages_view_controller}{J\+S\+Q\+Messages\+View\+Controller}} subclass, you should use this method to instantiate a new invalidation context and pass this object to {\ttfamily invalidate\+Layout\+With\+Context\+:}.
+
+\begin{DoxyReturn}{Returns}
+An initialized invalidation context object if successful, otherwise {\ttfamily nil}. 
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_j_s_q_messages_collection_view_flow_layout_invalidation_context_aa696f200fad5e62ff83ca423b369a20f}{}\index{J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout\+Invalidation\+Context@{J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout\+Invalidation\+Context}!invalidate\+Flow\+Layout\+Messages\+Cache@{invalidate\+Flow\+Layout\+Messages\+Cache}}
+\index{invalidate\+Flow\+Layout\+Messages\+Cache@{invalidate\+Flow\+Layout\+Messages\+Cache}!J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout\+Invalidation\+Context@{J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout\+Invalidation\+Context}}
+\subsubsection[{invalidate\+Flow\+Layout\+Messages\+Cache}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) invalidate\+Flow\+Layout\+Messages\+Cache\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_j_s_q_messages_collection_view_flow_layout_invalidation_context_aa696f200fad5e62ff83ca423b369a20f}
+A boolean indicating whether to empty the messages layout information cache for items and views in the layout. The default value is {\ttfamily N\+O}. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Vendors/\+J\+S\+Q\+Messages\+View\+Controller/\+Layout/J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout\+Invalidation\+Context.\+h\item 
+Vendors/\+J\+S\+Q\+Messages\+View\+Controller/\+Layout/J\+S\+Q\+Messages\+Collection\+View\+Flow\+Layout\+Invalidation\+Context.\+m\end{DoxyCompactItemize}

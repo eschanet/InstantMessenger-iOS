@@ -1,0 +1,74 @@
+\hypertarget{interface_f_i_r_analytics_configuration}{}\section{F\+I\+R\+Analytics\+Configuration Class Reference}
+\label{interface_f_i_r_analytics_configuration}\index{F\+I\+R\+Analytics\+Configuration@{F\+I\+R\+Analytics\+Configuration}}
+
+
+{\ttfamily \#import $<$F\+I\+R\+Analytics\+Configuration.\+h$>$}
+
+Inheritance diagram for F\+I\+R\+Analytics\+Configuration\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_f_i_r_analytics_configuration}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_f_i_r_analytics_configuration_a5c3d5801d596a25b4af6b9dd696918ab}{set\+Minimum\+Session\+Interval\+:}
+\item 
+(void) -\/ \hyperlink{interface_f_i_r_analytics_configuration_ab52dc6e74a096a8042abc52c02062deb}{set\+Session\+Timeout\+Interval\+:}
+\item 
+(void) -\/ \hyperlink{interface_f_i_r_analytics_configuration_a274f7ebe5becd0661b9d70ebc7f1b9d6}{set\+Analytics\+Collection\+Enabled\+:}
+\item 
+(void) -\/ \hyperlink{interface_f_i_r_analytics_configuration_a1f251a37056e4991f07afa6d7b281690}{set\+Is\+Enabled\+:}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_f_i_r_analytics_configuration}{F\+I\+R\+Analytics\+Configuration} $\ast$) + \hyperlink{interface_f_i_r_analytics_configuration_ae85d78fb93e01c84c376f9bec1655194}{shared\+Instance}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class provides configuration fields for Firebase Analytics. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_f_i_r_analytics_configuration_a274f7ebe5becd0661b9d70ebc7f1b9d6}{}\index{F\+I\+R\+Analytics\+Configuration@{F\+I\+R\+Analytics\+Configuration}!set\+Analytics\+Collection\+Enabled\+:@{set\+Analytics\+Collection\+Enabled\+:}}
+\index{set\+Analytics\+Collection\+Enabled\+:@{set\+Analytics\+Collection\+Enabled\+:}!F\+I\+R\+Analytics\+Configuration@{F\+I\+R\+Analytics\+Configuration}}
+\subsubsection[{set\+Analytics\+Collection\+Enabled\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\+Analytics\+Collection\+Enabled\+: 
+\begin{DoxyParamCaption}
+\item[{(B\+O\+O\+L)}]{analytics\+Collection\+Enabled}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_analytics_configuration_a274f7ebe5becd0661b9d70ebc7f1b9d6}
+Sets whether analytics collection is enabled for this app on this device. This setting is persisted across app sessions. By default it is enabled. \hypertarget{interface_f_i_r_analytics_configuration_a1f251a37056e4991f07afa6d7b281690}{}\index{F\+I\+R\+Analytics\+Configuration@{F\+I\+R\+Analytics\+Configuration}!set\+Is\+Enabled\+:@{set\+Is\+Enabled\+:}}
+\index{set\+Is\+Enabled\+:@{set\+Is\+Enabled\+:}!F\+I\+R\+Analytics\+Configuration@{F\+I\+R\+Analytics\+Configuration}}
+\subsubsection[{set\+Is\+Enabled\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\+Is\+Enabled\+: 
+\begin{DoxyParamCaption}
+\item[{(\char`\"{}Use {\bf set\+Analytics\+Collection\+Enabled\+:} instead.\char`\"{})}]{D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+M\+S\+G\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_analytics_configuration_a1f251a37056e4991f07afa6d7b281690}
+Deprecated. Sets whether measurement and reporting are enabled for this app on this device. By default they are enabled. \hypertarget{interface_f_i_r_analytics_configuration_a5c3d5801d596a25b4af6b9dd696918ab}{}\index{F\+I\+R\+Analytics\+Configuration@{F\+I\+R\+Analytics\+Configuration}!set\+Minimum\+Session\+Interval\+:@{set\+Minimum\+Session\+Interval\+:}}
+\index{set\+Minimum\+Session\+Interval\+:@{set\+Minimum\+Session\+Interval\+:}!F\+I\+R\+Analytics\+Configuration@{F\+I\+R\+Analytics\+Configuration}}
+\subsubsection[{set\+Minimum\+Session\+Interval\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\+Minimum\+Session\+Interval\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Time\+Interval)}]{minimum\+Session\+Interval}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_analytics_configuration_a5c3d5801d596a25b4af6b9dd696918ab}
+Sets the minimum engagement time in seconds required to start a new session. The default value is 10 seconds. \hypertarget{interface_f_i_r_analytics_configuration_ab52dc6e74a096a8042abc52c02062deb}{}\index{F\+I\+R\+Analytics\+Configuration@{F\+I\+R\+Analytics\+Configuration}!set\+Session\+Timeout\+Interval\+:@{set\+Session\+Timeout\+Interval\+:}}
+\index{set\+Session\+Timeout\+Interval\+:@{set\+Session\+Timeout\+Interval\+:}!F\+I\+R\+Analytics\+Configuration@{F\+I\+R\+Analytics\+Configuration}}
+\subsubsection[{set\+Session\+Timeout\+Interval\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\+Session\+Timeout\+Interval\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Time\+Interval)}]{session\+Timeout\+Interval}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_analytics_configuration_ab52dc6e74a096a8042abc52c02062deb}
+Sets the interval of inactivity in seconds that terminates the current session. The default value is 1800 seconds (30 minutes). \hypertarget{interface_f_i_r_analytics_configuration_ae85d78fb93e01c84c376f9bec1655194}{}\index{F\+I\+R\+Analytics\+Configuration@{F\+I\+R\+Analytics\+Configuration}!shared\+Instance@{shared\+Instance}}
+\index{shared\+Instance@{shared\+Instance}!F\+I\+R\+Analytics\+Configuration@{F\+I\+R\+Analytics\+Configuration}}
+\subsubsection[{shared\+Instance}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf F\+I\+R\+Analytics\+Configuration} $\ast$) shared\+Instance 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_analytics_configuration_ae85d78fb93e01c84c376f9bec1655194}
+Returns the shared instance of \hyperlink{interface_f_i_r_analytics_configuration}{F\+I\+R\+Analytics\+Configuration}. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Frameworks/\+Firebase\+Analytics.\+framework/\+Headers/F\+I\+R\+Analytics\+Configuration.\+h\end{DoxyCompactItemize}

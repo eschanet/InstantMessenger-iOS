@@ -1,0 +1,158 @@
+\hypertarget{interface_f_i_r_storage_metadata}{}\section{F\+I\+R\+Storage\+Metadata Class Reference}
+\label{interface_f_i_r_storage_metadata}\index{F\+I\+R\+Storage\+Metadata@{F\+I\+R\+Storage\+Metadata}}
+
+
+{\ttfamily \#import $<$F\+I\+R\+Storage\+Metadata.\+h$>$}
+
+Inheritance diagram for F\+I\+R\+Storage\+Metadata\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_f_i_r_storage_metadata}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(nullable instancetype) -\/ \hyperlink{interface_f_i_r_storage_metadata_ae7110ecf4d13cfcfbdbfc0082ebe9599}{init\+With\+Dictionary\+:}
+\item 
+(N\+S\+Dictionary $\ast$) -\/ \hyperlink{interface_f_i_r_storage_metadata_a72f84cd8844a0f597fb00650bd142e34}{dictionary\+Representation}
+\item 
+(nullable N\+S\+U\+R\+L $\ast$) -\/ \hyperlink{interface_f_i_r_storage_metadata_a922c94911b4a6e89229abc60b57a7ad3}{download\+U\+R\+L}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_f_i_r_storage_metadata_a6ec4ccad9a1d014f4b3d2886c7087670}{bucket}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_f_i_r_storage_metadata_a9295ac69ec90b478fbb46d333cc7f6d7}{cache\+Control}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_f_i_r_storage_metadata_a95ddd8f9198315b23c4501f057c0493f}{content\+Disposition}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_f_i_r_storage_metadata_a76ab3cc6c1281e52ca634a8e3988971d}{content\+Encoding}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_f_i_r_storage_metadata_a42c55f8c2b8a161440a0e1b11eedcb1c}{content\+Language}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_f_i_r_storage_metadata_aa25b5eeafc607411a4c40071e29b626e}{content\+Type}
+\item 
+int64\+\_\+t \hyperlink{interface_f_i_r_storage_metadata_acd11f19a7fcbb1f2659f726a64a6f98a}{generation}
+\item 
+N\+S\+Dictionary$<$ N\+S\+String $\ast$, N\+S\+String $\ast$ $>$ $\ast$ \hyperlink{interface_f_i_r_storage_metadata_a4c8c37ff4ab534e9ae422111b18b38c6}{custom\+Metadata}
+\item 
+int64\+\_\+t \hyperlink{interface_f_i_r_storage_metadata_a180ce1f0978ba7c89b6381bd123af20c}{metageneration}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_f_i_r_storage_metadata_a9c68a1e47f6d3dc053e2c291bdf91e6b}{name}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_f_i_r_storage_metadata_a27e524765d46c62512a894ff7e361619}{path}
+\item 
+int64\+\_\+t \hyperlink{interface_f_i_r_storage_metadata_a20b034c311ea8d5d712bb1068feaa3e0}{size}
+\item 
+N\+S\+Date $\ast$ \hyperlink{interface_f_i_r_storage_metadata_a70044f390f5ff5ef27179498a97e4454}{time\+Created}
+\item 
+N\+S\+Date $\ast$ \hyperlink{interface_f_i_r_storage_metadata_aae35491c0e2247378e80a4347cfe9d5c}{updated}
+\item 
+\hyperlink{interface_f_i_r_storage_reference}{F\+I\+R\+Storage\+Reference} $\ast$ \hyperlink{interface_f_i_r_storage_metadata_af2ad54d3a7335a0a7979462179e111b5}{storage\+Reference}
+\item 
+N\+S\+Array$<$ N\+S\+U\+R\+L $\ast$ $>$ $\ast$ \hyperlink{interface_f_i_r_storage_metadata_ad9f8ea32b8ad163cd6fdb940fbd7a71c}{download\+U\+R\+Ls}
+\item 
+B\+O\+O\+L \hyperlink{interface_f_i_r_storage_metadata_a322014be3799e4bedf649487503fee4a}{file}
+\item 
+B\+O\+O\+L \hyperlink{interface_f_i_r_storage_metadata_a99ce3b3110b480cc90a8120a70dec971}{folder}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class which represents the metadata on an object in Firebase Storage. This metadata is returned on successful operations, and can be used to retrieve download U\+R\+Ls, content types, and a \hyperlink{interface_f_i_r_storage}{F\+I\+R\+Storage} reference to the object in question. Full documentation can be found at the G\+C\+S Objects\+::resource docs. \begin{DoxySeeAlso}{See also}
+\href{https://cloud.google.com/storage/docs/json_api/v1/objects#resource}{\tt https\+://cloud.\+google.\+com/storage/docs/json\+\_\+api/v1/objects\#resource} 
+\end{DoxySeeAlso}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_f_i_r_storage_metadata_a72f84cd8844a0f597fb00650bd142e34}{}\index{F\+I\+R\+Storage\+Metadata@{F\+I\+R\+Storage\+Metadata}!dictionary\+Representation@{dictionary\+Representation}}
+\index{dictionary\+Representation@{dictionary\+Representation}!F\+I\+R\+Storage\+Metadata@{F\+I\+R\+Storage\+Metadata}}
+\subsubsection[{dictionary\+Representation}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Dictionary $\ast$) dictionary\+Representation 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_storage_metadata_a72f84cd8844a0f597fb00650bd142e34}
+Creates an N\+S\+Dictionary from the contents of the metadata. \begin{DoxyReturn}{Returns}
+An N\+S\+Dictionary that represents the contents of the metadata. 
+\end{DoxyReturn}
+\hypertarget{interface_f_i_r_storage_metadata_a922c94911b4a6e89229abc60b57a7ad3}{}\index{F\+I\+R\+Storage\+Metadata@{F\+I\+R\+Storage\+Metadata}!download\+U\+R\+L@{download\+U\+R\+L}}
+\index{download\+U\+R\+L@{download\+U\+R\+L}!F\+I\+R\+Storage\+Metadata@{F\+I\+R\+Storage\+Metadata}}
+\subsubsection[{download\+U\+R\+L}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (nullable N\+S\+U\+R\+L $\ast$) download\+U\+R\+L 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_storage_metadata_a922c94911b4a6e89229abc60b57a7ad3}
+Retrieves a download U\+R\+L for the given object, or nil if none exist. Note that if there are many valid download tokens, this will always return the first valid token created. \hypertarget{interface_f_i_r_storage_metadata_ae7110ecf4d13cfcfbdbfc0082ebe9599}{}\index{F\+I\+R\+Storage\+Metadata@{F\+I\+R\+Storage\+Metadata}!init\+With\+Dictionary\+:@{init\+With\+Dictionary\+:}}
+\index{init\+With\+Dictionary\+:@{init\+With\+Dictionary\+:}!F\+I\+R\+Storage\+Metadata@{F\+I\+R\+Storage\+Metadata}}
+\subsubsection[{init\+With\+Dictionary\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (nullable instancetype) init\+With\+Dictionary\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Dictionary $\ast$)}]{N\+S\+\_\+\+D\+E\+S\+I\+G\+N\+A\+T\+E\+D\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+E\+R}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_storage_metadata_ae7110ecf4d13cfcfbdbfc0082ebe9599}
+Creates an instanece of \hyperlink{interface_f_i_r_storage_metadata}{F\+I\+R\+Storage\+Metadata} from the contents of a dictionary. \begin{DoxyReturn}{Returns}
+An instance of \hyperlink{interface_f_i_r_storage_metadata}{F\+I\+R\+Storage\+Metadata} that represents the contents of a dictionary. 
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_f_i_r_storage_metadata_a6ec4ccad9a1d014f4b3d2886c7087670}{}\index{F\+I\+R\+Storage\+Metadata@{F\+I\+R\+Storage\+Metadata}!bucket@{bucket}}
+\index{bucket@{bucket}!F\+I\+R\+Storage\+Metadata@{F\+I\+R\+Storage\+Metadata}}
+\subsubsection[{bucket}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) bucket\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_f_i_r_storage_metadata_a6ec4ccad9a1d014f4b3d2886c7087670}
+The name of the bucket containing this object. \hypertarget{interface_f_i_r_storage_metadata_a9295ac69ec90b478fbb46d333cc7f6d7}{}\index{F\+I\+R\+Storage\+Metadata@{F\+I\+R\+Storage\+Metadata}!cache\+Control@{cache\+Control}}
+\index{cache\+Control@{cache\+Control}!F\+I\+R\+Storage\+Metadata@{F\+I\+R\+Storage\+Metadata}}
+\subsubsection[{cache\+Control}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) cache\+Control\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_f_i_r_storage_metadata_a9295ac69ec90b478fbb46d333cc7f6d7}
+Cache-\/\+Control directive for the object data. \hypertarget{interface_f_i_r_storage_metadata_a95ddd8f9198315b23c4501f057c0493f}{}\index{F\+I\+R\+Storage\+Metadata@{F\+I\+R\+Storage\+Metadata}!content\+Disposition@{content\+Disposition}}
+\index{content\+Disposition@{content\+Disposition}!F\+I\+R\+Storage\+Metadata@{F\+I\+R\+Storage\+Metadata}}
+\subsubsection[{content\+Disposition}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) content\+Disposition\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_f_i_r_storage_metadata_a95ddd8f9198315b23c4501f057c0493f}
+Content-\/\+Disposition of the object data. \hypertarget{interface_f_i_r_storage_metadata_a76ab3cc6c1281e52ca634a8e3988971d}{}\index{F\+I\+R\+Storage\+Metadata@{F\+I\+R\+Storage\+Metadata}!content\+Encoding@{content\+Encoding}}
+\index{content\+Encoding@{content\+Encoding}!F\+I\+R\+Storage\+Metadata@{F\+I\+R\+Storage\+Metadata}}
+\subsubsection[{content\+Encoding}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) content\+Encoding\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_f_i_r_storage_metadata_a76ab3cc6c1281e52ca634a8e3988971d}
+Content-\/\+Encoding of the object data. \hypertarget{interface_f_i_r_storage_metadata_a42c55f8c2b8a161440a0e1b11eedcb1c}{}\index{F\+I\+R\+Storage\+Metadata@{F\+I\+R\+Storage\+Metadata}!content\+Language@{content\+Language}}
+\index{content\+Language@{content\+Language}!F\+I\+R\+Storage\+Metadata@{F\+I\+R\+Storage\+Metadata}}
+\subsubsection[{content\+Language}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) content\+Language\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_f_i_r_storage_metadata_a42c55f8c2b8a161440a0e1b11eedcb1c}
+Content-\/\+Language of the object data. \hypertarget{interface_f_i_r_storage_metadata_aa25b5eeafc607411a4c40071e29b626e}{}\index{F\+I\+R\+Storage\+Metadata@{F\+I\+R\+Storage\+Metadata}!content\+Type@{content\+Type}}
+\index{content\+Type@{content\+Type}!F\+I\+R\+Storage\+Metadata@{F\+I\+R\+Storage\+Metadata}}
+\subsubsection[{content\+Type}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) content\+Type\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_f_i_r_storage_metadata_aa25b5eeafc607411a4c40071e29b626e}
+Content-\/\+Type of the object data. \hypertarget{interface_f_i_r_storage_metadata_a4c8c37ff4ab534e9ae422111b18b38c6}{}\index{F\+I\+R\+Storage\+Metadata@{F\+I\+R\+Storage\+Metadata}!custom\+Metadata@{custom\+Metadata}}
+\index{custom\+Metadata@{custom\+Metadata}!F\+I\+R\+Storage\+Metadata@{F\+I\+R\+Storage\+Metadata}}
+\subsubsection[{custom\+Metadata}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Dictionary$<$N\+S\+String $\ast$, N\+S\+String $\ast$$>$$\ast$) custom\+Metadata\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_f_i_r_storage_metadata_a4c8c37ff4ab534e9ae422111b18b38c6}
+User-\/provided metadata, in key/value pairs. \hypertarget{interface_f_i_r_storage_metadata_ad9f8ea32b8ad163cd6fdb940fbd7a71c}{}\index{F\+I\+R\+Storage\+Metadata@{F\+I\+R\+Storage\+Metadata}!download\+U\+R\+Ls@{download\+U\+R\+Ls}}
+\index{download\+U\+R\+Ls@{download\+U\+R\+Ls}!F\+I\+R\+Storage\+Metadata@{F\+I\+R\+Storage\+Metadata}}
+\subsubsection[{download\+U\+R\+Ls}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Array$<$N\+S\+U\+R\+L $\ast$$>$$\ast$) download\+U\+R\+Ls\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_f_i_r_storage_metadata_ad9f8ea32b8ad163cd6fdb940fbd7a71c}
+An array containing all download U\+R\+Ls available for the object. \hypertarget{interface_f_i_r_storage_metadata_a322014be3799e4bedf649487503fee4a}{}\index{F\+I\+R\+Storage\+Metadata@{F\+I\+R\+Storage\+Metadata}!file@{file}}
+\index{file@{file}!F\+I\+R\+Storage\+Metadata@{F\+I\+R\+Storage\+Metadata}}
+\subsubsection[{file}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) file\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [atomic]}, {\ttfamily [assign]}}\label{interface_f_i_r_storage_metadata_a322014be3799e4bedf649487503fee4a}
+Determines if the current metadata represents a \char`\"{}file\char`\"{}. \hypertarget{interface_f_i_r_storage_metadata_a99ce3b3110b480cc90a8120a70dec971}{}\index{F\+I\+R\+Storage\+Metadata@{F\+I\+R\+Storage\+Metadata}!folder@{folder}}
+\index{folder@{folder}!F\+I\+R\+Storage\+Metadata@{F\+I\+R\+Storage\+Metadata}}
+\subsubsection[{folder}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) folder\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [atomic]}, {\ttfamily [assign]}}\label{interface_f_i_r_storage_metadata_a99ce3b3110b480cc90a8120a70dec971}
+Determines if the current metadata represents a \char`\"{}folder\char`\"{}. \hypertarget{interface_f_i_r_storage_metadata_acd11f19a7fcbb1f2659f726a64a6f98a}{}\index{F\+I\+R\+Storage\+Metadata@{F\+I\+R\+Storage\+Metadata}!generation@{generation}}
+\index{generation@{generation}!F\+I\+R\+Storage\+Metadata@{F\+I\+R\+Storage\+Metadata}}
+\subsubsection[{generation}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (int64\+\_\+t) generation\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [atomic]}, {\ttfamily [assign]}}\label{interface_f_i_r_storage_metadata_acd11f19a7fcbb1f2659f726a64a6f98a}
+The content generation of this object. Used for object versioning. \hypertarget{interface_f_i_r_storage_metadata_a180ce1f0978ba7c89b6381bd123af20c}{}\index{F\+I\+R\+Storage\+Metadata@{F\+I\+R\+Storage\+Metadata}!metageneration@{metageneration}}
+\index{metageneration@{metageneration}!F\+I\+R\+Storage\+Metadata@{F\+I\+R\+Storage\+Metadata}}
+\subsubsection[{metageneration}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (int64\+\_\+t) metageneration\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [atomic]}, {\ttfamily [assign]}}\label{interface_f_i_r_storage_metadata_a180ce1f0978ba7c89b6381bd123af20c}
+The version of the metadata for this object at this generation. Used for preconditions and for detecting changes in metadata. A metageneration number is only meaningful in the context of a particular generation of a particular object. \hypertarget{interface_f_i_r_storage_metadata_a9c68a1e47f6d3dc053e2c291bdf91e6b}{}\index{F\+I\+R\+Storage\+Metadata@{F\+I\+R\+Storage\+Metadata}!name@{name}}
+\index{name@{name}!F\+I\+R\+Storage\+Metadata@{F\+I\+R\+Storage\+Metadata}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) name\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_f_i_r_storage_metadata_a9c68a1e47f6d3dc053e2c291bdf91e6b}
+The name of this object, in gs\+://bucket/path/to/object.txt, this is object.\+txt. \hypertarget{interface_f_i_r_storage_metadata_a27e524765d46c62512a894ff7e361619}{}\index{F\+I\+R\+Storage\+Metadata@{F\+I\+R\+Storage\+Metadata}!path@{path}}
+\index{path@{path}!F\+I\+R\+Storage\+Metadata@{F\+I\+R\+Storage\+Metadata}}
+\subsubsection[{path}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) path\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_f_i_r_storage_metadata_a27e524765d46c62512a894ff7e361619}
+The full path of this object, in gs\+://bucket/path/to/object.txt, this is path/to/object.\+txt. \hypertarget{interface_f_i_r_storage_metadata_a20b034c311ea8d5d712bb1068feaa3e0}{}\index{F\+I\+R\+Storage\+Metadata@{F\+I\+R\+Storage\+Metadata}!size@{size}}
+\index{size@{size}!F\+I\+R\+Storage\+Metadata@{F\+I\+R\+Storage\+Metadata}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (int64\+\_\+t) size\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [atomic]}, {\ttfamily [assign]}}\label{interface_f_i_r_storage_metadata_a20b034c311ea8d5d712bb1068feaa3e0}
+Content-\/\+Length of the data in bytes. \hypertarget{interface_f_i_r_storage_metadata_af2ad54d3a7335a0a7979462179e111b5}{}\index{F\+I\+R\+Storage\+Metadata@{F\+I\+R\+Storage\+Metadata}!storage\+Reference@{storage\+Reference}}
+\index{storage\+Reference@{storage\+Reference}!F\+I\+R\+Storage\+Metadata@{F\+I\+R\+Storage\+Metadata}}
+\subsubsection[{storage\+Reference}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf F\+I\+R\+Storage\+Reference}$\ast$) storage\+Reference\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_f_i_r_storage_metadata_af2ad54d3a7335a0a7979462179e111b5}
+A reference to the object in Firebase Storage. \hypertarget{interface_f_i_r_storage_metadata_a70044f390f5ff5ef27179498a97e4454}{}\index{F\+I\+R\+Storage\+Metadata@{F\+I\+R\+Storage\+Metadata}!time\+Created@{time\+Created}}
+\index{time\+Created@{time\+Created}!F\+I\+R\+Storage\+Metadata@{F\+I\+R\+Storage\+Metadata}}
+\subsubsection[{time\+Created}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Date$\ast$) time\+Created\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_f_i_r_storage_metadata_a70044f390f5ff5ef27179498a97e4454}
+The creation time of the object in R\+F\+C 3339 format. \hypertarget{interface_f_i_r_storage_metadata_aae35491c0e2247378e80a4347cfe9d5c}{}\index{F\+I\+R\+Storage\+Metadata@{F\+I\+R\+Storage\+Metadata}!updated@{updated}}
+\index{updated@{updated}!F\+I\+R\+Storage\+Metadata@{F\+I\+R\+Storage\+Metadata}}
+\subsubsection[{updated}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Date$\ast$) updated\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_f_i_r_storage_metadata_aae35491c0e2247378e80a4347cfe9d5c}
+The modification time of the object metadata in R\+F\+C 3339 format. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Frameworks/\+Firebase\+Storage.\+framework/\+Headers/\hyperlink{_f_i_r_storage_metadata_8h}{F\+I\+R\+Storage\+Metadata.\+h}\end{DoxyCompactItemize}

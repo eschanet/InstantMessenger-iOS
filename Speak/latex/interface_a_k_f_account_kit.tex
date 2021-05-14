@@ -1,0 +1,167 @@
+\hypertarget{interface_a_k_f_account_kit}{}\section{A\+K\+F\+Account\+Kit Class Reference}
+\label{interface_a_k_f_account_kit}\index{A\+K\+F\+Account\+Kit@{A\+K\+F\+Account\+Kit}}
+
+
+{\ttfamily \#import $<$A\+K\+F\+Account\+Kit.\+h$>$}
+
+Inheritance diagram for A\+K\+F\+Account\+Kit\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_a_k_f_account_kit}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) -\/ \hyperlink{interface_a_k_f_account_kit_a9c2fc06e9b26c94d19b54c6e9adc0010}{init\+With\+Response\+Type\+:}
+\item 
+\hypertarget{interface_a_k_f_account_kit_a96eaa77d34e9b00e3b0c75a5179a76f5}{}(instancetype) -\/ {\bfseries N\+S\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}\label{interface_a_k_f_account_kit_a96eaa77d34e9b00e3b0c75a5179a76f5}
+
+\item 
+(nullable \hyperlink{interface_a_k_f_account_preferences}{A\+K\+F\+Account\+Preferences} $\ast$) -\/ \hyperlink{interface_a_k_f_account_kit_a04f85f6087f4f3d503935fecf081606e}{account\+Preferences}
+\item 
+(void) -\/ \hyperlink{interface_a_k_f_account_kit_a4befd5b5da3c3a4e4b868dc1e2a20ee9}{cancel\+Login}
+\item 
+(void) -\/ \hyperlink{interface_a_k_f_account_kit_a34755906f0c698eeb0db0a6d2e22b06c}{log\+Out}
+\item 
+(void) -\/ \hyperlink{interface_a_k_f_account_kit_ac1bf48cfc7d77fe4720aa134fe127625}{request\+Account\+:}
+\item 
+(U\+I\+View\+Controller$<$ \hyperlink{protocol_a_k_f_view_controller-p}{A\+K\+F\+View\+Controller} $>$ $\ast$) -\/ \hyperlink{interface_a_k_f_account_kit_a19a30692950c7eda0abd6d7460b9bc59}{view\+Controller\+For\+Email\+Login}
+\item 
+(U\+I\+View\+Controller$<$ \hyperlink{protocol_a_k_f_view_controller-p}{A\+K\+F\+View\+Controller} $>$ $\ast$) -\/ \hyperlink{interface_a_k_f_account_kit_a096234954145c1df8b01cd3ed2fc44f4}{view\+Controller\+For\+Email\+Login\+With\+Email\+:state\+:}
+\item 
+(U\+I\+View\+Controller$<$ \hyperlink{protocol_a_k_f_view_controller-p}{A\+K\+F\+View\+Controller} $>$ $\ast$) -\/ \hyperlink{interface_a_k_f_account_kit_ac830816cb15455aa2d0c8a6807dedb0a}{view\+Controller\+For\+Phone\+Login}
+\item 
+(U\+I\+View\+Controller$<$ \hyperlink{protocol_a_k_f_view_controller-p}{A\+K\+F\+View\+Controller} $>$ $\ast$) -\/ \hyperlink{interface_a_k_f_account_kit_a0c021ffc193a8b338b017a765c5f9117}{view\+Controller\+For\+Phone\+Login\+With\+Phone\+Number\+:state\+:}
+\item 
+(U\+I\+View\+Controller$<$ \hyperlink{protocol_a_k_f_view_controller-p}{A\+K\+F\+View\+Controller} $>$ $\ast$) -\/ \hyperlink{interface_a_k_f_account_kit_a3eb6a2554a6196ca459c812e32210b3d}{view\+Controller\+For\+Login\+Resume}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(N\+S\+String $\ast$) + \hyperlink{interface_a_k_f_account_kit_aa29d6fab362264245f6f281287d13801}{graph\+Version\+String}
+\item 
+(N\+S\+String $\ast$) + \hyperlink{interface_a_k_f_account_kit_a4c930f9fea1c1964994a6c36a7fc62e5}{version\+String}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+id$<$ \hyperlink{protocol_a_k_f_access_token-p}{A\+K\+F\+Access\+Token} $>$ \hyperlink{interface_a_k_f_account_kit_a8c8f98feac16993dc66e75f33d23a561}{current\+Access\+Token}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Primary interface for authenticating Account\+Kit accounts. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_a_k_f_account_kit_a04f85f6087f4f3d503935fecf081606e}{}\index{A\+K\+F\+Account\+Kit@{A\+K\+F\+Account\+Kit}!account\+Preferences@{account\+Preferences}}
+\index{account\+Preferences@{account\+Preferences}!A\+K\+F\+Account\+Kit@{A\+K\+F\+Account\+Kit}}
+\subsubsection[{account\+Preferences}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (nullable {\bf A\+K\+F\+Account\+Preferences} $\ast$) account\+Preferences 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_a_k_f_account_kit_a04f85f6087f4f3d503935fecf081606e}
+Returns an instance of account preferences for the current access token. \hypertarget{interface_a_k_f_account_kit_a4befd5b5da3c3a4e4b868dc1e2a20ee9}{}\index{A\+K\+F\+Account\+Kit@{A\+K\+F\+Account\+Kit}!cancel\+Login@{cancel\+Login}}
+\index{cancel\+Login@{cancel\+Login}!A\+K\+F\+Account\+Kit@{A\+K\+F\+Account\+Kit}}
+\subsubsection[{cancel\+Login}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) cancel\+Login 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_a_k_f_account_kit_a4befd5b5da3c3a4e4b868dc1e2a20ee9}
+Cancels the pending login request. \hypertarget{interface_a_k_f_account_kit_aa29d6fab362264245f6f281287d13801}{}\index{A\+K\+F\+Account\+Kit@{A\+K\+F\+Account\+Kit}!graph\+Version\+String@{graph\+Version\+String}}
+\index{graph\+Version\+String@{graph\+Version\+String}!A\+K\+F\+Account\+Kit@{A\+K\+F\+Account\+Kit}}
+\subsubsection[{graph\+Version\+String}]{\setlength{\rightskip}{0pt plus 5cm}+ (N\+S\+String $\ast$) graph\+Version\+String 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_a_k_f_account_kit_aa29d6fab362264245f6f281287d13801}
+The version of the Account Kit Graph A\+P\+I used. \hypertarget{interface_a_k_f_account_kit_a9c2fc06e9b26c94d19b54c6e9adc0010}{}\index{A\+K\+F\+Account\+Kit@{A\+K\+F\+Account\+Kit}!init\+With\+Response\+Type\+:@{init\+With\+Response\+Type\+:}}
+\index{init\+With\+Response\+Type\+:@{init\+With\+Response\+Type\+:}!A\+K\+F\+Account\+Kit@{A\+K\+F\+Account\+Kit}}
+\subsubsection[{init\+With\+Response\+Type\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (instancetype) init\+With\+Response\+Type\+: 
+\begin{DoxyParamCaption}
+\item[{(A\+K\+F\+Response\+Type)}]{N\+S\+\_\+\+D\+E\+S\+I\+G\+N\+A\+T\+E\+D\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+E\+R}
+\end{DoxyParamCaption}
+}\label{interface_a_k_f_account_kit_a9c2fc06e9b26c94d19b54c6e9adc0010}
+Init Account Kit with a specified response type. \hypertarget{interface_a_k_f_account_kit_a34755906f0c698eeb0db0a6d2e22b06c}{}\index{A\+K\+F\+Account\+Kit@{A\+K\+F\+Account\+Kit}!log\+Out@{log\+Out}}
+\index{log\+Out@{log\+Out}!A\+K\+F\+Account\+Kit@{A\+K\+F\+Account\+Kit}}
+\subsubsection[{log\+Out}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) log\+Out 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_a_k_f_account_kit_a34755906f0c698eeb0db0a6d2e22b06c}
+Logs out currently logged in account. \hypertarget{interface_a_k_f_account_kit_ac1bf48cfc7d77fe4720aa134fe127625}{}\index{A\+K\+F\+Account\+Kit@{A\+K\+F\+Account\+Kit}!request\+Account\+:@{request\+Account\+:}}
+\index{request\+Account\+:@{request\+Account\+:}!A\+K\+F\+Account\+Kit@{A\+K\+F\+Account\+Kit}}
+\subsubsection[{request\+Account\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) request\+Account\+: 
+\begin{DoxyParamCaption}
+\item[{(A\+K\+F\+Request\+Account\+Handler)}]{handler}
+\end{DoxyParamCaption}
+}\label{interface_a_k_f_account_kit_ac1bf48cfc7d77fe4720aa134fe127625}
+Asynchronously returns Account Kit account information \hypertarget{interface_a_k_f_account_kit_a4c930f9fea1c1964994a6c36a7fc62e5}{}\index{A\+K\+F\+Account\+Kit@{A\+K\+F\+Account\+Kit}!version\+String@{version\+String}}
+\index{version\+String@{version\+String}!A\+K\+F\+Account\+Kit@{A\+K\+F\+Account\+Kit}}
+\subsubsection[{version\+String}]{\setlength{\rightskip}{0pt plus 5cm}+ (N\+S\+String $\ast$) version\+String 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_a_k_f_account_kit_a4c930f9fea1c1964994a6c36a7fc62e5}
+\#abstract The version of the Account Kit S\+D\+K. \hypertarget{interface_a_k_f_account_kit_a19a30692950c7eda0abd6d7460b9bc59}{}\index{A\+K\+F\+Account\+Kit@{A\+K\+F\+Account\+Kit}!view\+Controller\+For\+Email\+Login@{view\+Controller\+For\+Email\+Login}}
+\index{view\+Controller\+For\+Email\+Login@{view\+Controller\+For\+Email\+Login}!A\+K\+F\+Account\+Kit@{A\+K\+F\+Account\+Kit}}
+\subsubsection[{view\+Controller\+For\+Email\+Login}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+View\+Controller$<${\bf A\+K\+F\+View\+Controller}$>$ $\ast$) view\+Controller\+For\+Email\+Login 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_a_k_f_account_kit_a19a30692950c7eda0abd6d7460b9bc59}
+Returns a view controller to be presented to initiate an email login. \hypertarget{interface_a_k_f_account_kit_a096234954145c1df8b01cd3ed2fc44f4}{}\index{A\+K\+F\+Account\+Kit@{A\+K\+F\+Account\+Kit}!view\+Controller\+For\+Email\+Login\+With\+Email\+:state\+:@{view\+Controller\+For\+Email\+Login\+With\+Email\+:state\+:}}
+\index{view\+Controller\+For\+Email\+Login\+With\+Email\+:state\+:@{view\+Controller\+For\+Email\+Login\+With\+Email\+:state\+:}!A\+K\+F\+Account\+Kit@{A\+K\+F\+Account\+Kit}}
+\subsubsection[{view\+Controller\+For\+Email\+Login\+With\+Email\+:state\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+View\+Controller$<${\bf A\+K\+F\+View\+Controller}$>$ $\ast$) view\+Controller\+For\+Email\+Login\+With\+Email\+: 
+\begin{DoxyParamCaption}
+\item[{(nullable N\+S\+String $\ast$)}]{email}
+\item[{state:(nullable N\+S\+String $\ast$)}]{state}
+\end{DoxyParamCaption}
+}\label{interface_a_k_f_account_kit_a096234954145c1df8b01cd3ed2fc44f4}
+Returns a view controller to be presented to initiate an email login. 
+\begin{DoxyParams}{Parameters}
+{\em email} & the email to be used for login. \\
+\hline
+{\em state} & the state for the login request. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_a_k_f_account_kit_a3eb6a2554a6196ca459c812e32210b3d}{}\index{A\+K\+F\+Account\+Kit@{A\+K\+F\+Account\+Kit}!view\+Controller\+For\+Login\+Resume@{view\+Controller\+For\+Login\+Resume}}
+\index{view\+Controller\+For\+Login\+Resume@{view\+Controller\+For\+Login\+Resume}!A\+K\+F\+Account\+Kit@{A\+K\+F\+Account\+Kit}}
+\subsubsection[{view\+Controller\+For\+Login\+Resume}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+View\+Controller$<${\bf A\+K\+F\+View\+Controller}$>$ $\ast$) view\+Controller\+For\+Login\+Resume 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_a_k_f_account_kit_a3eb6a2554a6196ca459c812e32210b3d}
+Returns a view controller to resume a login that was pending when the app shutdown. \hypertarget{interface_a_k_f_account_kit_ac830816cb15455aa2d0c8a6807dedb0a}{}\index{A\+K\+F\+Account\+Kit@{A\+K\+F\+Account\+Kit}!view\+Controller\+For\+Phone\+Login@{view\+Controller\+For\+Phone\+Login}}
+\index{view\+Controller\+For\+Phone\+Login@{view\+Controller\+For\+Phone\+Login}!A\+K\+F\+Account\+Kit@{A\+K\+F\+Account\+Kit}}
+\subsubsection[{view\+Controller\+For\+Phone\+Login}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+View\+Controller$<${\bf A\+K\+F\+View\+Controller}$>$ $\ast$) view\+Controller\+For\+Phone\+Login 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_a_k_f_account_kit_ac830816cb15455aa2d0c8a6807dedb0a}
+Returns a view controller to be presented to initiate a phone login. \hypertarget{interface_a_k_f_account_kit_a0c021ffc193a8b338b017a765c5f9117}{}\index{A\+K\+F\+Account\+Kit@{A\+K\+F\+Account\+Kit}!view\+Controller\+For\+Phone\+Login\+With\+Phone\+Number\+:state\+:@{view\+Controller\+For\+Phone\+Login\+With\+Phone\+Number\+:state\+:}}
+\index{view\+Controller\+For\+Phone\+Login\+With\+Phone\+Number\+:state\+:@{view\+Controller\+For\+Phone\+Login\+With\+Phone\+Number\+:state\+:}!A\+K\+F\+Account\+Kit@{A\+K\+F\+Account\+Kit}}
+\subsubsection[{view\+Controller\+For\+Phone\+Login\+With\+Phone\+Number\+:state\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+View\+Controller$<${\bf A\+K\+F\+View\+Controller}$>$ $\ast$) view\+Controller\+For\+Phone\+Login\+With\+Phone\+Number\+: 
+\begin{DoxyParamCaption}
+\item[{(nullable {\bf A\+K\+F\+Phone\+Number} $\ast$)}]{phone\+Number}
+\item[{state:(nullable N\+S\+String $\ast$)}]{state}
+\end{DoxyParamCaption}
+}\label{interface_a_k_f_account_kit_a0c021ffc193a8b338b017a765c5f9117}
+Returns a view controller to be presented to initiate a phone login. 
+\begin{DoxyParams}{Parameters}
+{\em phone\+Number} & the phone number to be used for login. \\
+\hline
+{\em state} & the state for the login request. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_a_k_f_account_kit_a8c8f98feac16993dc66e75f33d23a561}{}\index{A\+K\+F\+Account\+Kit@{A\+K\+F\+Account\+Kit}!current\+Access\+Token@{current\+Access\+Token}}
+\index{current\+Access\+Token@{current\+Access\+Token}!A\+K\+F\+Account\+Kit@{A\+K\+F\+Account\+Kit}}
+\subsubsection[{current\+Access\+Token}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id$<${\bf A\+K\+F\+Access\+Token}$>$) current\+Access\+Token\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_a_k_f_account_kit_a8c8f98feac16993dc66e75f33d23a561}
+Retrieve the current access token, if any. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Frameworks/\+Account\+Kit.\+framework/\+Headers/A\+K\+F\+Account\+Kit.\+h\end{DoxyCompactItemize}

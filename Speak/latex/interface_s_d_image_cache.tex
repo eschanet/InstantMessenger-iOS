@@ -1,0 +1,479 @@
+\hypertarget{interface_s_d_image_cache}{}\section{S\+D\+Image\+Cache Class Reference}
+\label{interface_s_d_image_cache}\index{S\+D\+Image\+Cache@{S\+D\+Image\+Cache}}
+
+
+{\ttfamily \#import $<$S\+D\+Image\+Cache.\+h$>$}
+
+Inheritance diagram for S\+D\+Image\+Cache\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_s_d_image_cache}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_s_d_image_cache_a586dcc0a4f8b68e5866b8d2c7bdce7db}{init\+With\+Namespace\+:}
+\item 
+\hypertarget{interface_s_d_image_cache_a48625e7237af6b6b4cc6c52ee8a661b0}{}(N\+S\+String $\ast$) -\/ {\bfseries make\+Disk\+Cache\+Path\+:}\label{interface_s_d_image_cache_a48625e7237af6b6b4cc6c52ee8a661b0}
+
+\item 
+(void) -\/ \hyperlink{interface_s_d_image_cache_a9bfedcc9878284b76502287b4b16c1a6}{add\+Read\+Only\+Cache\+Path\+:}
+\item 
+(void) -\/ \hyperlink{interface_s_d_image_cache_a7b6b4ac73077bb74457d8c6dda577ee0}{store\+Image\+:for\+Key\+:}
+\item 
+(void) -\/ \hyperlink{interface_s_d_image_cache_a0fca24c5836005dcbd9a12c628e23d0f}{store\+Image\+:for\+Key\+:to\+Disk\+:}
+\item 
+(void) -\/ \hyperlink{interface_s_d_image_cache_ac5e81b51c7645ac3f095d4bb35719629}{store\+Image\+:recalculate\+From\+Image\+:image\+Data\+:for\+Key\+:to\+Disk\+:}
+\item 
+(N\+S\+Operation $\ast$) -\/ \hyperlink{interface_s_d_image_cache_aa66fd2fa0008ad893957aeff1a26efda}{query\+Disk\+Cache\+For\+Key\+:done\+:}
+\item 
+(U\+I\+Image $\ast$) -\/ \hyperlink{interface_s_d_image_cache_abe13b43b333bbb5bbe56142b8d573bd2}{image\+From\+Memory\+Cache\+For\+Key\+:}
+\item 
+(U\+I\+Image $\ast$) -\/ \hyperlink{interface_s_d_image_cache_ad3502d702952c60cd046ba4e7cba0197}{image\+From\+Disk\+Cache\+For\+Key\+:}
+\item 
+(void) -\/ \hyperlink{interface_s_d_image_cache_a1d6ca2afef59216e0cb1740d431833cf}{remove\+Image\+For\+Key\+:}
+\item 
+(void) -\/ \hyperlink{interface_s_d_image_cache_a69e6ab293ca40c795ac6feeb658cb239}{remove\+Image\+For\+Key\+:with\+Completion\+:}
+\item 
+(void) -\/ \hyperlink{interface_s_d_image_cache_a69b6e3c4082d3e8602e2be641cc851de}{remove\+Image\+For\+Key\+:from\+Disk\+:}
+\item 
+(void) -\/ \hyperlink{interface_s_d_image_cache_a2a0176203de63d22b85c936eaeb161b0}{remove\+Image\+For\+Key\+:from\+Disk\+:with\+Completion\+:}
+\item 
+(void) -\/ \hyperlink{interface_s_d_image_cache_a931b161c379dd952affffe8c0544527d}{clear\+Memory}
+\item 
+(void) -\/ \hyperlink{interface_s_d_image_cache_ab936a83a1b711209d30f9051cc3658cc}{clear\+Disk\+On\+Completion\+:}
+\item 
+(void) -\/ \hyperlink{interface_s_d_image_cache_a2a9bcc872d749959df5dd458247b3301}{clear\+Disk}
+\item 
+(void) -\/ \hyperlink{interface_s_d_image_cache_a1f82c522f4cb0fafdb063291cbcb23d0}{clean\+Disk\+With\+Completion\+Block\+:}
+\item 
+(void) -\/ \hyperlink{interface_s_d_image_cache_a491f75cc5c1df37dce478c00f898a0d8}{clean\+Disk}
+\item 
+(N\+S\+U\+Integer) -\/ \hyperlink{interface_s_d_image_cache_a934d85543e92fdb3ac35cbdff3e668d3}{get\+Size}
+\item 
+(N\+S\+U\+Integer) -\/ \hyperlink{interface_s_d_image_cache_abc59ee03f3afc7d9fa202a0790f8b5c0}{get\+Disk\+Count}
+\item 
+(void) -\/ \hyperlink{interface_s_d_image_cache_a276a37cdab08d116906f65040bad9c99}{calculate\+Size\+With\+Completion\+Block\+:}
+\item 
+(void) -\/ \hyperlink{interface_s_d_image_cache_a8de2e0e5aea556048957eb34a30bdd02}{disk\+Image\+Exists\+With\+Key\+:completion\+:}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_s_d_image_cache_a67feea7b5568f427dfcf4f380abc1ba7}{disk\+Image\+Exists\+With\+Key\+:}
+\item 
+(N\+S\+String $\ast$) -\/ \hyperlink{interface_s_d_image_cache_ae1de10e873f845c01509585b3e1716a3}{cache\+Path\+For\+Key\+:in\+Path\+:}
+\item 
+(N\+S\+String $\ast$) -\/ \hyperlink{interface_s_d_image_cache_a591ff2cb8bcd813969b33c610c569bdc}{default\+Cache\+Path\+For\+Key\+:}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_s_d_image_cache}{S\+D\+Image\+Cache} $\ast$) + \hyperlink{interface_s_d_image_cache_a3a622a32640d15bf01e873275ea1e95e}{shared\+Image\+Cache}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+B\+O\+O\+L \hyperlink{interface_s_d_image_cache_ae9994880d8e741fff3221b4ecca61a63}{should\+Decompress\+Images}
+\item 
+N\+S\+U\+Integer \hyperlink{interface_s_d_image_cache_ad4cb88a511e5be6961623db24c343405}{max\+Memory\+Cost}
+\item 
+N\+S\+U\+Integer \hyperlink{interface_s_d_image_cache_a25af9c52316058a4cfd4fda7e0bf707a}{max\+Memory\+Count\+Limit}
+\item 
+N\+S\+Integer \hyperlink{interface_s_d_image_cache_adbf7dbc8734ac3a8d62c2a800372b108}{max\+Cache\+Age}
+\item 
+N\+S\+U\+Integer \hyperlink{interface_s_d_image_cache_adfd2955f16b5cb5aaa1f8e6d930229d4}{max\+Cache\+Size}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{interface_s_d_image_cache}{S\+D\+Image\+Cache} maintains a memory cache and an optional disk cache. Disk cache write operations are performed asynchronous so it doesn’t add unnecessary latency to the U\+I. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_s_d_image_cache_a9bfedcc9878284b76502287b4b16c1a6}{}\index{S\+D\+Image\+Cache@{S\+D\+Image\+Cache}!add\+Read\+Only\+Cache\+Path\+:@{add\+Read\+Only\+Cache\+Path\+:}}
+\index{add\+Read\+Only\+Cache\+Path\+:@{add\+Read\+Only\+Cache\+Path\+:}!S\+D\+Image\+Cache@{S\+D\+Image\+Cache}}
+\subsubsection[{add\+Read\+Only\+Cache\+Path\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) add\+Read\+Only\+Cache\+Path\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{path}
+\end{DoxyParamCaption}
+}\label{interface_s_d_image_cache_a9bfedcc9878284b76502287b4b16c1a6}
+Add a read-\/only cache path to search for images pre-\/cached by \hyperlink{interface_s_d_image_cache}{S\+D\+Image\+Cache} Useful if you want to bundle pre-\/loaded images with your app
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & The path to use for this read-\/only cache path \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_s_d_image_cache_ae1de10e873f845c01509585b3e1716a3}{}\index{S\+D\+Image\+Cache@{S\+D\+Image\+Cache}!cache\+Path\+For\+Key\+:in\+Path\+:@{cache\+Path\+For\+Key\+:in\+Path\+:}}
+\index{cache\+Path\+For\+Key\+:in\+Path\+:@{cache\+Path\+For\+Key\+:in\+Path\+:}!S\+D\+Image\+Cache@{S\+D\+Image\+Cache}}
+\subsubsection[{cache\+Path\+For\+Key\+:in\+Path\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String $\ast$) cache\+Path\+For\+Key\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{key}
+\item[{inPath:(N\+S\+String $\ast$)}]{path}
+\end{DoxyParamCaption}
+}\label{interface_s_d_image_cache_ae1de10e873f845c01509585b3e1716a3}
+Get the cache path for a certain key (needs the cache path root folder)
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & the key (can be obtained from url using cache\+Key\+For\+U\+R\+L) \\
+\hline
+{\em path} & the cach path root folder\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the cache path 
+\end{DoxyReturn}
+\hypertarget{interface_s_d_image_cache_a276a37cdab08d116906f65040bad9c99}{}\index{S\+D\+Image\+Cache@{S\+D\+Image\+Cache}!calculate\+Size\+With\+Completion\+Block\+:@{calculate\+Size\+With\+Completion\+Block\+:}}
+\index{calculate\+Size\+With\+Completion\+Block\+:@{calculate\+Size\+With\+Completion\+Block\+:}!S\+D\+Image\+Cache@{S\+D\+Image\+Cache}}
+\subsubsection[{calculate\+Size\+With\+Completion\+Block\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) calculate\+Size\+With\+Completion\+Block\+: 
+\begin{DoxyParamCaption}
+\item[{(S\+D\+Web\+Image\+Calculate\+Size\+Block)}]{completion\+Block}
+\end{DoxyParamCaption}
+}\label{interface_s_d_image_cache_a276a37cdab08d116906f65040bad9c99}
+Asynchronously calculate the disk cache\textquotesingle{}s size. \hypertarget{interface_s_d_image_cache_a491f75cc5c1df37dce478c00f898a0d8}{}\index{S\+D\+Image\+Cache@{S\+D\+Image\+Cache}!clean\+Disk@{clean\+Disk}}
+\index{clean\+Disk@{clean\+Disk}!S\+D\+Image\+Cache@{S\+D\+Image\+Cache}}
+\subsubsection[{clean\+Disk}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) clean\+Disk 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_s_d_image_cache_a491f75cc5c1df37dce478c00f898a0d8}
+Remove all expired cached image from disk \begin{DoxySeeAlso}{See also}
+\hyperlink{interface_s_d_image_cache_a1f82c522f4cb0fafdb063291cbcb23d0}{-\/ clean\+Disk\+With\+Completion\+Block\+:} 
+\end{DoxySeeAlso}
+\hypertarget{interface_s_d_image_cache_a1f82c522f4cb0fafdb063291cbcb23d0}{}\index{S\+D\+Image\+Cache@{S\+D\+Image\+Cache}!clean\+Disk\+With\+Completion\+Block\+:@{clean\+Disk\+With\+Completion\+Block\+:}}
+\index{clean\+Disk\+With\+Completion\+Block\+:@{clean\+Disk\+With\+Completion\+Block\+:}!S\+D\+Image\+Cache@{S\+D\+Image\+Cache}}
+\subsubsection[{clean\+Disk\+With\+Completion\+Block\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) clean\+Disk\+With\+Completion\+Block\+: 
+\begin{DoxyParamCaption}
+\item[{(S\+D\+Web\+Image\+No\+Params\+Block)}]{completion\+Block}
+\end{DoxyParamCaption}
+}\label{interface_s_d_image_cache_a1f82c522f4cb0fafdb063291cbcb23d0}
+Remove all expired cached image from disk. Non-\/blocking method -\/ returns immediately. 
+\begin{DoxyParams}{Parameters}
+{\em completion\+Block} & An block that should be executed after cache expiration completes (optional) \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_s_d_image_cache_a2a9bcc872d749959df5dd458247b3301}{}\index{S\+D\+Image\+Cache@{S\+D\+Image\+Cache}!clear\+Disk@{clear\+Disk}}
+\index{clear\+Disk@{clear\+Disk}!S\+D\+Image\+Cache@{S\+D\+Image\+Cache}}
+\subsubsection[{clear\+Disk}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) clear\+Disk 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_s_d_image_cache_a2a9bcc872d749959df5dd458247b3301}
+Clear all disk cached images \begin{DoxySeeAlso}{See also}
+\hyperlink{interface_s_d_image_cache_ab936a83a1b711209d30f9051cc3658cc}{-\/ clear\+Disk\+On\+Completion\+:} 
+\end{DoxySeeAlso}
+\hypertarget{interface_s_d_image_cache_ab936a83a1b711209d30f9051cc3658cc}{}\index{S\+D\+Image\+Cache@{S\+D\+Image\+Cache}!clear\+Disk\+On\+Completion\+:@{clear\+Disk\+On\+Completion\+:}}
+\index{clear\+Disk\+On\+Completion\+:@{clear\+Disk\+On\+Completion\+:}!S\+D\+Image\+Cache@{S\+D\+Image\+Cache}}
+\subsubsection[{clear\+Disk\+On\+Completion\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) clear\+Disk\+On\+Completion\+: 
+\begin{DoxyParamCaption}
+\item[{(S\+D\+Web\+Image\+No\+Params\+Block)}]{completion}
+\end{DoxyParamCaption}
+}\label{interface_s_d_image_cache_ab936a83a1b711209d30f9051cc3658cc}
+Clear all disk cached images. Non-\/blocking method -\/ returns immediately. 
+\begin{DoxyParams}{Parameters}
+{\em completion} & An block that should be executed after cache expiration completes (optional) \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_s_d_image_cache_a931b161c379dd952affffe8c0544527d}{}\index{S\+D\+Image\+Cache@{S\+D\+Image\+Cache}!clear\+Memory@{clear\+Memory}}
+\index{clear\+Memory@{clear\+Memory}!S\+D\+Image\+Cache@{S\+D\+Image\+Cache}}
+\subsubsection[{clear\+Memory}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) clear\+Memory 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_s_d_image_cache_a931b161c379dd952affffe8c0544527d}
+Clear all memory cached images \hypertarget{interface_s_d_image_cache_a591ff2cb8bcd813969b33c610c569bdc}{}\index{S\+D\+Image\+Cache@{S\+D\+Image\+Cache}!default\+Cache\+Path\+For\+Key\+:@{default\+Cache\+Path\+For\+Key\+:}}
+\index{default\+Cache\+Path\+For\+Key\+:@{default\+Cache\+Path\+For\+Key\+:}!S\+D\+Image\+Cache@{S\+D\+Image\+Cache}}
+\subsubsection[{default\+Cache\+Path\+For\+Key\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String $\ast$) default\+Cache\+Path\+For\+Key\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{key}
+\end{DoxyParamCaption}
+}\label{interface_s_d_image_cache_a591ff2cb8bcd813969b33c610c569bdc}
+Get the default cache path for a certain key
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & the key (can be obtained from url using cache\+Key\+For\+U\+R\+L)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the default cache path 
+\end{DoxyReturn}
+\hypertarget{interface_s_d_image_cache_a67feea7b5568f427dfcf4f380abc1ba7}{}\index{S\+D\+Image\+Cache@{S\+D\+Image\+Cache}!disk\+Image\+Exists\+With\+Key\+:@{disk\+Image\+Exists\+With\+Key\+:}}
+\index{disk\+Image\+Exists\+With\+Key\+:@{disk\+Image\+Exists\+With\+Key\+:}!S\+D\+Image\+Cache@{S\+D\+Image\+Cache}}
+\subsubsection[{disk\+Image\+Exists\+With\+Key\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) disk\+Image\+Exists\+With\+Key\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{key}
+\end{DoxyParamCaption}
+}\label{interface_s_d_image_cache_a67feea7b5568f427dfcf4f380abc1ba7}
+Check if image exists in disk cache already (does not load the image)
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & the key describing the url\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Y\+E\+S if an image exists for the given key 
+\end{DoxyReturn}
+\hypertarget{interface_s_d_image_cache_a8de2e0e5aea556048957eb34a30bdd02}{}\index{S\+D\+Image\+Cache@{S\+D\+Image\+Cache}!disk\+Image\+Exists\+With\+Key\+:completion\+:@{disk\+Image\+Exists\+With\+Key\+:completion\+:}}
+\index{disk\+Image\+Exists\+With\+Key\+:completion\+:@{disk\+Image\+Exists\+With\+Key\+:completion\+:}!S\+D\+Image\+Cache@{S\+D\+Image\+Cache}}
+\subsubsection[{disk\+Image\+Exists\+With\+Key\+:completion\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf disk\+Image\+Exists\+With\+Key\+:} 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{key}
+\item[{completion:(S\+D\+Web\+Image\+Check\+Cache\+Completion\+Block)}]{completion\+Block}
+\end{DoxyParamCaption}
+}\label{interface_s_d_image_cache_a8de2e0e5aea556048957eb34a30bdd02}
+Async check if image exists in disk cache already (does not load the image)
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & the key describing the url \\
+\hline
+{\em completion\+Block} & the block to be executed when the check is done. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+the completion block will be always executed on the main queue 
+\end{DoxyNote}
+\hypertarget{interface_s_d_image_cache_abc59ee03f3afc7d9fa202a0790f8b5c0}{}\index{S\+D\+Image\+Cache@{S\+D\+Image\+Cache}!get\+Disk\+Count@{get\+Disk\+Count}}
+\index{get\+Disk\+Count@{get\+Disk\+Count}!S\+D\+Image\+Cache@{S\+D\+Image\+Cache}}
+\subsubsection[{get\+Disk\+Count}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+U\+Integer) get\+Disk\+Count 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_s_d_image_cache_abc59ee03f3afc7d9fa202a0790f8b5c0}
+Get the number of images in the disk cache \hypertarget{interface_s_d_image_cache_a934d85543e92fdb3ac35cbdff3e668d3}{}\index{S\+D\+Image\+Cache@{S\+D\+Image\+Cache}!get\+Size@{get\+Size}}
+\index{get\+Size@{get\+Size}!S\+D\+Image\+Cache@{S\+D\+Image\+Cache}}
+\subsubsection[{get\+Size}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+U\+Integer) get\+Size 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_s_d_image_cache_a934d85543e92fdb3ac35cbdff3e668d3}
+Get the size used by the disk cache \hypertarget{interface_s_d_image_cache_ad3502d702952c60cd046ba4e7cba0197}{}\index{S\+D\+Image\+Cache@{S\+D\+Image\+Cache}!image\+From\+Disk\+Cache\+For\+Key\+:@{image\+From\+Disk\+Cache\+For\+Key\+:}}
+\index{image\+From\+Disk\+Cache\+For\+Key\+:@{image\+From\+Disk\+Cache\+For\+Key\+:}!S\+D\+Image\+Cache@{S\+D\+Image\+Cache}}
+\subsubsection[{image\+From\+Disk\+Cache\+For\+Key\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Image $\ast$) image\+From\+Disk\+Cache\+For\+Key\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{key}
+\end{DoxyParamCaption}
+}\label{interface_s_d_image_cache_ad3502d702952c60cd046ba4e7cba0197}
+Query the disk cache synchronously after checking the memory cache.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The unique key used to store the wanted image \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_s_d_image_cache_abe13b43b333bbb5bbe56142b8d573bd2}{}\index{S\+D\+Image\+Cache@{S\+D\+Image\+Cache}!image\+From\+Memory\+Cache\+For\+Key\+:@{image\+From\+Memory\+Cache\+For\+Key\+:}}
+\index{image\+From\+Memory\+Cache\+For\+Key\+:@{image\+From\+Memory\+Cache\+For\+Key\+:}!S\+D\+Image\+Cache@{S\+D\+Image\+Cache}}
+\subsubsection[{image\+From\+Memory\+Cache\+For\+Key\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Image $\ast$) image\+From\+Memory\+Cache\+For\+Key\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{key}
+\end{DoxyParamCaption}
+}\label{interface_s_d_image_cache_abe13b43b333bbb5bbe56142b8d573bd2}
+Query the memory cache synchronously.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The unique key used to store the wanted image \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_s_d_image_cache_a586dcc0a4f8b68e5866b8d2c7bdce7db}{}\index{S\+D\+Image\+Cache@{S\+D\+Image\+Cache}!init\+With\+Namespace\+:@{init\+With\+Namespace\+:}}
+\index{init\+With\+Namespace\+:@{init\+With\+Namespace\+:}!S\+D\+Image\+Cache@{S\+D\+Image\+Cache}}
+\subsubsection[{init\+With\+Namespace\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\+With\+Namespace\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{ns}
+\end{DoxyParamCaption}
+}\label{interface_s_d_image_cache_a586dcc0a4f8b68e5866b8d2c7bdce7db}
+Init a new cache store with a specific namespace
+
+
+\begin{DoxyParams}{Parameters}
+{\em ns} & The namespace to use for this cache store \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_s_d_image_cache_aa66fd2fa0008ad893957aeff1a26efda}{}\index{S\+D\+Image\+Cache@{S\+D\+Image\+Cache}!query\+Disk\+Cache\+For\+Key\+:done\+:@{query\+Disk\+Cache\+For\+Key\+:done\+:}}
+\index{query\+Disk\+Cache\+For\+Key\+:done\+:@{query\+Disk\+Cache\+For\+Key\+:done\+:}!S\+D\+Image\+Cache@{S\+D\+Image\+Cache}}
+\subsubsection[{query\+Disk\+Cache\+For\+Key\+:done\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Operation $\ast$) query\+Disk\+Cache\+For\+Key\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{key}
+\item[{done:(S\+D\+Web\+Image\+Query\+Completed\+Block)}]{done\+Block}
+\end{DoxyParamCaption}
+}\label{interface_s_d_image_cache_aa66fd2fa0008ad893957aeff1a26efda}
+Query the disk cache asynchronously.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The unique key used to store the wanted image \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_s_d_image_cache_a1d6ca2afef59216e0cb1740d431833cf}{}\index{S\+D\+Image\+Cache@{S\+D\+Image\+Cache}!remove\+Image\+For\+Key\+:@{remove\+Image\+For\+Key\+:}}
+\index{remove\+Image\+For\+Key\+:@{remove\+Image\+For\+Key\+:}!S\+D\+Image\+Cache@{S\+D\+Image\+Cache}}
+\subsubsection[{remove\+Image\+For\+Key\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) remove\+Image\+For\+Key\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{key}
+\end{DoxyParamCaption}
+}\label{interface_s_d_image_cache_a1d6ca2afef59216e0cb1740d431833cf}
+Remove the image from memory and disk cache synchronously
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The unique image cache key \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_s_d_image_cache_a69b6e3c4082d3e8602e2be641cc851de}{}\index{S\+D\+Image\+Cache@{S\+D\+Image\+Cache}!remove\+Image\+For\+Key\+:from\+Disk\+:@{remove\+Image\+For\+Key\+:from\+Disk\+:}}
+\index{remove\+Image\+For\+Key\+:from\+Disk\+:@{remove\+Image\+For\+Key\+:from\+Disk\+:}!S\+D\+Image\+Cache@{S\+D\+Image\+Cache}}
+\subsubsection[{remove\+Image\+For\+Key\+:from\+Disk\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf remove\+Image\+For\+Key\+:} 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{key}
+\item[{fromDisk:(B\+O\+O\+L)}]{from\+Disk}
+\end{DoxyParamCaption}
+}\label{interface_s_d_image_cache_a69b6e3c4082d3e8602e2be641cc851de}
+Remove the image from memory and optionally disk cache asynchronously
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The unique image cache key \\
+\hline
+{\em from\+Disk} & Also remove cache entry from disk if Y\+E\+S \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_s_d_image_cache_a2a0176203de63d22b85c936eaeb161b0}{}\index{S\+D\+Image\+Cache@{S\+D\+Image\+Cache}!remove\+Image\+For\+Key\+:from\+Disk\+:with\+Completion\+:@{remove\+Image\+For\+Key\+:from\+Disk\+:with\+Completion\+:}}
+\index{remove\+Image\+For\+Key\+:from\+Disk\+:with\+Completion\+:@{remove\+Image\+For\+Key\+:from\+Disk\+:with\+Completion\+:}!S\+D\+Image\+Cache@{S\+D\+Image\+Cache}}
+\subsubsection[{remove\+Image\+For\+Key\+:from\+Disk\+:with\+Completion\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf remove\+Image\+For\+Key\+:} 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{key}
+\item[{fromDisk:(B\+O\+O\+L)}]{from\+Disk}
+\item[{withCompletion:(S\+D\+Web\+Image\+No\+Params\+Block)}]{completion}
+\end{DoxyParamCaption}
+}\label{interface_s_d_image_cache_a2a0176203de63d22b85c936eaeb161b0}
+Remove the image from memory and optionally disk cache asynchronously
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The unique image cache key \\
+\hline
+{\em from\+Disk} & Also remove cache entry from disk if Y\+E\+S \\
+\hline
+{\em completion} & An block that should be executed after the image has been removed (optional) \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_s_d_image_cache_a69e6ab293ca40c795ac6feeb658cb239}{}\index{S\+D\+Image\+Cache@{S\+D\+Image\+Cache}!remove\+Image\+For\+Key\+:with\+Completion\+:@{remove\+Image\+For\+Key\+:with\+Completion\+:}}
+\index{remove\+Image\+For\+Key\+:with\+Completion\+:@{remove\+Image\+For\+Key\+:with\+Completion\+:}!S\+D\+Image\+Cache@{S\+D\+Image\+Cache}}
+\subsubsection[{remove\+Image\+For\+Key\+:with\+Completion\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf remove\+Image\+For\+Key\+:} 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{key}
+\item[{withCompletion:(S\+D\+Web\+Image\+No\+Params\+Block)}]{completion}
+\end{DoxyParamCaption}
+}\label{interface_s_d_image_cache_a69e6ab293ca40c795ac6feeb658cb239}
+Remove the image from memory and disk cache asynchronously
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The unique image cache key \\
+\hline
+{\em completion} & An block that should be executed after the image has been removed (optional) \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_s_d_image_cache_a3a622a32640d15bf01e873275ea1e95e}{}\index{S\+D\+Image\+Cache@{S\+D\+Image\+Cache}!shared\+Image\+Cache@{shared\+Image\+Cache}}
+\index{shared\+Image\+Cache@{shared\+Image\+Cache}!S\+D\+Image\+Cache@{S\+D\+Image\+Cache}}
+\subsubsection[{shared\+Image\+Cache}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf S\+D\+Image\+Cache} $\ast$) shared\+Image\+Cache 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_s_d_image_cache_a3a622a32640d15bf01e873275ea1e95e}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{
+    NSFileManager *\_fileManager
+\end{DoxyCode}
+Returns global shared cache instance
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{interface_s_d_image_cache}{S\+D\+Image\+Cache} global instance 
+\end{DoxyReturn}
+\hypertarget{interface_s_d_image_cache_a7b6b4ac73077bb74457d8c6dda577ee0}{}\index{S\+D\+Image\+Cache@{S\+D\+Image\+Cache}!store\+Image\+:for\+Key\+:@{store\+Image\+:for\+Key\+:}}
+\index{store\+Image\+:for\+Key\+:@{store\+Image\+:for\+Key\+:}!S\+D\+Image\+Cache@{S\+D\+Image\+Cache}}
+\subsubsection[{store\+Image\+:for\+Key\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) store\+Image\+: 
+\begin{DoxyParamCaption}
+\item[{(U\+I\+Image $\ast$)}]{image}
+\item[{forKey:(N\+S\+String $\ast$)}]{key}
+\end{DoxyParamCaption}
+}\label{interface_s_d_image_cache_a7b6b4ac73077bb74457d8c6dda577ee0}
+Store an image into memory and disk cache at the given key.
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & The image to store \\
+\hline
+{\em key} & The unique image cache key, usually it\textquotesingle{}s image absolute U\+R\+L \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_s_d_image_cache_a0fca24c5836005dcbd9a12c628e23d0f}{}\index{S\+D\+Image\+Cache@{S\+D\+Image\+Cache}!store\+Image\+:for\+Key\+:to\+Disk\+:@{store\+Image\+:for\+Key\+:to\+Disk\+:}}
+\index{store\+Image\+:for\+Key\+:to\+Disk\+:@{store\+Image\+:for\+Key\+:to\+Disk\+:}!S\+D\+Image\+Cache@{S\+D\+Image\+Cache}}
+\subsubsection[{store\+Image\+:for\+Key\+:to\+Disk\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) store\+Image\+: 
+\begin{DoxyParamCaption}
+\item[{(U\+I\+Image $\ast$)}]{image}
+\item[{forKey:(N\+S\+String $\ast$)}]{key}
+\item[{toDisk:(B\+O\+O\+L)}]{to\+Disk}
+\end{DoxyParamCaption}
+}\label{interface_s_d_image_cache_a0fca24c5836005dcbd9a12c628e23d0f}
+Store an image into memory and optionally disk cache at the given key.
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & The image to store \\
+\hline
+{\em key} & The unique image cache key, usually it\textquotesingle{}s image absolute U\+R\+L \\
+\hline
+{\em to\+Disk} & Store the image to disk cache if Y\+E\+S \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_s_d_image_cache_ac5e81b51c7645ac3f095d4bb35719629}{}\index{S\+D\+Image\+Cache@{S\+D\+Image\+Cache}!store\+Image\+:recalculate\+From\+Image\+:image\+Data\+:for\+Key\+:to\+Disk\+:@{store\+Image\+:recalculate\+From\+Image\+:image\+Data\+:for\+Key\+:to\+Disk\+:}}
+\index{store\+Image\+:recalculate\+From\+Image\+:image\+Data\+:for\+Key\+:to\+Disk\+:@{store\+Image\+:recalculate\+From\+Image\+:image\+Data\+:for\+Key\+:to\+Disk\+:}!S\+D\+Image\+Cache@{S\+D\+Image\+Cache}}
+\subsubsection[{store\+Image\+:recalculate\+From\+Image\+:image\+Data\+:for\+Key\+:to\+Disk\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) store\+Image\+: 
+\begin{DoxyParamCaption}
+\item[{(U\+I\+Image $\ast$)}]{image}
+\item[{recalculateFromImage:(B\+O\+O\+L)}]{recalculate}
+\item[{imageData:(N\+S\+Data $\ast$)}]{image\+Data}
+\item[{forKey:(N\+S\+String $\ast$)}]{key}
+\item[{toDisk:(B\+O\+O\+L)}]{to\+Disk}
+\end{DoxyParamCaption}
+}\label{interface_s_d_image_cache_ac5e81b51c7645ac3f095d4bb35719629}
+Store an image into memory and optionally disk cache at the given key.
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & The image to store \\
+\hline
+{\em recalculate} & B\+O\+O\+L indicates if image\+Data can be used or a new data should be constructed from the U\+I\+Image \\
+\hline
+{\em image\+Data} & The image data as returned by the server, this representation will be used for disk storage instead of converting the given image object into a storable/compressed image format in order to save quality and C\+P\+U \\
+\hline
+{\em key} & The unique image cache key, usually it\textquotesingle{}s image absolute U\+R\+L \\
+\hline
+{\em to\+Disk} & Store the image to disk cache if Y\+E\+S \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_s_d_image_cache_adbf7dbc8734ac3a8d62c2a800372b108}{}\index{S\+D\+Image\+Cache@{S\+D\+Image\+Cache}!max\+Cache\+Age@{max\+Cache\+Age}}
+\index{max\+Cache\+Age@{max\+Cache\+Age}!S\+D\+Image\+Cache@{S\+D\+Image\+Cache}}
+\subsubsection[{max\+Cache\+Age}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Integer) max\+Cache\+Age\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_s_d_image_cache_adbf7dbc8734ac3a8d62c2a800372b108}
+The maximum length of time to keep an image in the cache, in seconds \hypertarget{interface_s_d_image_cache_adfd2955f16b5cb5aaa1f8e6d930229d4}{}\index{S\+D\+Image\+Cache@{S\+D\+Image\+Cache}!max\+Cache\+Size@{max\+Cache\+Size}}
+\index{max\+Cache\+Size@{max\+Cache\+Size}!S\+D\+Image\+Cache@{S\+D\+Image\+Cache}}
+\subsubsection[{max\+Cache\+Size}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+U\+Integer) max\+Cache\+Size\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_s_d_image_cache_adfd2955f16b5cb5aaa1f8e6d930229d4}
+The maximum size of the cache, in bytes. \hypertarget{interface_s_d_image_cache_ad4cb88a511e5be6961623db24c343405}{}\index{S\+D\+Image\+Cache@{S\+D\+Image\+Cache}!max\+Memory\+Cost@{max\+Memory\+Cost}}
+\index{max\+Memory\+Cost@{max\+Memory\+Cost}!S\+D\+Image\+Cache@{S\+D\+Image\+Cache}}
+\subsubsection[{max\+Memory\+Cost}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+U\+Integer) max\+Memory\+Cost\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_s_d_image_cache_ad4cb88a511e5be6961623db24c343405}
+The maximum \char`\"{}total cost\char`\"{} of the in-\/memory image cache. The cost function is the number of pixels held in memory. \hypertarget{interface_s_d_image_cache_a25af9c52316058a4cfd4fda7e0bf707a}{}\index{S\+D\+Image\+Cache@{S\+D\+Image\+Cache}!max\+Memory\+Count\+Limit@{max\+Memory\+Count\+Limit}}
+\index{max\+Memory\+Count\+Limit@{max\+Memory\+Count\+Limit}!S\+D\+Image\+Cache@{S\+D\+Image\+Cache}}
+\subsubsection[{max\+Memory\+Count\+Limit}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+U\+Integer) max\+Memory\+Count\+Limit\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_s_d_image_cache_a25af9c52316058a4cfd4fda7e0bf707a}
+The maximum number of objects the cache should hold. \hypertarget{interface_s_d_image_cache_ae9994880d8e741fff3221b4ecca61a63}{}\index{S\+D\+Image\+Cache@{S\+D\+Image\+Cache}!should\+Decompress\+Images@{should\+Decompress\+Images}}
+\index{should\+Decompress\+Images@{should\+Decompress\+Images}!S\+D\+Image\+Cache@{S\+D\+Image\+Cache}}
+\subsubsection[{should\+Decompress\+Images}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) should\+Decompress\+Images\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_s_d_image_cache_ae9994880d8e741fff3221b4ecca61a63}
+Decompressing images that are downloaded and cached can improve peformance but can consume lot of memory. Defaults to Y\+E\+S. Set this to N\+O if you are experiencing a crash due to excessive memory consumption. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Vendors/\+S\+D\+Web\+Image/S\+D\+Image\+Cache.\+h\item 
+Vendors/\+S\+D\+Web\+Image/S\+D\+Image\+Cache.\+m\end{DoxyCompactItemize}

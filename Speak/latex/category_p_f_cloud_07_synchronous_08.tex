@@ -1,0 +1,77 @@
+\hypertarget{category_p_f_cloud_07_synchronous_08}{}\section{P\+F\+Cloud(Synchronous) Category Reference}
+\label{category_p_f_cloud_07_synchronous_08}\index{P\+F\+Cloud(\+Synchronous)@{P\+F\+Cloud(\+Synchronous)}}
+
+
+{\ttfamily \#import $<$P\+F\+Cloud+\+Synchronous.\+h$>$}
+
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(nullable id) + \hyperlink{category_p_f_cloud_07_synchronous_08_a14a5d00feb7ce9dba38888145948a1ed}{call\+Function\+:with\+Parameters\+:}
+\item 
+(nullable id) + \hyperlink{category_p_f_cloud_07_synchronous_08_a50b8989c8f64013800ec67d3c116c98c}{call\+Function\+:with\+Parameters\+:error\+:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Copyright (c) 2015-\/present, \hyperlink{interface_parse}{Parse}, L\+L\+C. All rights reserved.
+
+This source code is licensed under the B\+S\+D-\/style license found in the L\+I\+C\+E\+N\+S\+E file in the root directory of this source tree. An additional grant of patent rights can be found in the P\+A\+T\+E\+N\+T\+S file in the same directory. This category lists all methods of {\ttfamily \hyperlink{interface_p_f_cloud}{P\+F\+Cloud}} class that are synchronous, but have asynchronous counterpart, Calling one of these synchronous methods could potentially block the current thread for a large amount of time, since it might be fetching from network or saving/loading data from disk. 
+
+\subsection{Method Documentation}
+\hypertarget{category_p_f_cloud_07_synchronous_08_a14a5d00feb7ce9dba38888145948a1ed}{}\index{P\+F\+Cloud(\+Synchronous)@{P\+F\+Cloud(\+Synchronous)}!call\+Function\+:with\+Parameters\+:@{call\+Function\+:with\+Parameters\+:}}
+\index{call\+Function\+:with\+Parameters\+:@{call\+Function\+:with\+Parameters\+:}!P\+F\+Cloud(\+Synchronous)@{P\+F\+Cloud(\+Synchronous)}}
+\subsubsection[{call\+Function\+:with\+Parameters\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (nullable id) call\+Function\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{function}
+\item[{withParameters:(nullable N\+S\+Dictionary $\ast$)}]{P\+F\+\_\+\+S\+W\+I\+F\+T\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}
+\end{DoxyParamCaption}
+}\label{category_p_f_cloud_07_synchronous_08_a14a5d00feb7ce9dba38888145948a1ed}
+Calls the given cloud function {\itshape synchronously} with the parameters provided.
+
+
+\begin{DoxyParams}{Parameters}
+{\em function} & The function name to call. \\
+\hline
+{\em parameters} & The parameters to send to the function.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The response from the cloud function. 
+\end{DoxyReturn}
+
+
+Extends class \hyperlink{interface_p_f_cloud_a14a5d00feb7ce9dba38888145948a1ed}{P\+F\+Cloud}.
+
+\hypertarget{category_p_f_cloud_07_synchronous_08_a50b8989c8f64013800ec67d3c116c98c}{}\index{P\+F\+Cloud(\+Synchronous)@{P\+F\+Cloud(\+Synchronous)}!call\+Function\+:with\+Parameters\+:error\+:@{call\+Function\+:with\+Parameters\+:error\+:}}
+\index{call\+Function\+:with\+Parameters\+:error\+:@{call\+Function\+:with\+Parameters\+:error\+:}!P\+F\+Cloud(\+Synchronous)@{P\+F\+Cloud(\+Synchronous)}}
+\subsubsection[{call\+Function\+:with\+Parameters\+:error\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (nullable id) call\+Function\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{function}
+\item[{withParameters:(nullable N\+S\+Dictionary $\ast$)}]{parameters}
+\item[{error:(N\+S\+Error $\ast$$\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{category_p_f_cloud_07_synchronous_08_a50b8989c8f64013800ec67d3c116c98c}
+Calls the given cloud function {\itshape synchronously} with the parameters provided and sets the error if there is one.
+
+
+\begin{DoxyParams}{Parameters}
+{\em function} & The function name to call. \\
+\hline
+{\em parameters} & The parameters to send to the function. \\
+\hline
+{\em error} & Pointer to an {\ttfamily N\+S\+Error} that will be set if necessary.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The response from the cloud function. This result could be a {\ttfamily N\+S\+Dictionary}, an {\ttfamily N\+S\+Array}, {\ttfamily N\+S\+Number} or {\ttfamily N\+S\+String}. 
+\end{DoxyReturn}
+
+
+Extends class \hyperlink{interface_p_f_cloud_a50b8989c8f64013800ec67d3c116c98c}{P\+F\+Cloud}.
+
+
+
+The documentation for this category was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Frameworks/\+Parse.\+framework/\+Headers/P\+F\+Cloud+\+Synchronous.\+h\end{DoxyCompactItemize}

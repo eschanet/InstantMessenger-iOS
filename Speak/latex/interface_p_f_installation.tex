@@ -1,0 +1,175 @@
+\hypertarget{interface_p_f_installation}{}\section{P\+F\+Installation Class Reference}
+\label{interface_p_f_installation}\index{P\+F\+Installation@{P\+F\+Installation}}
+
+
+{\ttfamily \#import $<$P\+F\+Installation.\+h$>$}
+
+Inheritance diagram for P\+F\+Installation\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_p_f_installation}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_p_f_installation_aa80761aecdfdb358702f10a6f1b2f70d}{set\+Device\+Token\+From\+Data\+:}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(nullable instancetype) + \hyperlink{interface_p_f_installation_acbfae927713dd2e2ea1d8bf164074893}{current\+Installation}
+\begin{DoxyCompactList}\small\item\em 
+
+ \end{DoxyCompactList}\item 
+(\hyperlink{class_b_f_task}{B\+F\+Task}$<$ \+\_\+\+\_\+kindof \hyperlink{interface_p_f_installation}{P\+F\+Installation} $\ast$ $>$ $\ast$) + \hyperlink{interface_p_f_installation_a702bcd03f3cecb6be3a91c37f3e63212}{get\+Current\+Installation\+In\+Background}
+\item 
+(nullable \hyperlink{class_p_f_query}{P\+F\+Query} $\ast$) + \hyperlink{interface_p_f_installation_a100d82347b3492642b9fdb64c880c884}{query}
+\begin{DoxyCompactList}\small\item\em 
+
+ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_p_f_installation_afac8d2521c0fd031e204c5642ce271a6}{device\+Type}
+\begin{DoxyCompactList}\small\item\em 
+
+ \end{DoxyCompactList}\item 
+N\+S\+String $\ast$ \hyperlink{interface_p_f_installation_aba5ea4cb6705ac365a6a33fcf775deb8}{installation\+Id}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_p_f_installation_a5ea812bfe9db860563f3b672dc657ce7}{device\+Token}
+\item 
+N\+S\+Integer \hyperlink{interface_p_f_installation_add31abb42268a9d3f2e744de1316f993}{badge}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_p_f_installation_adb6faa1119a0a6155940bf6837037bff}{time\+Zone}
+\item 
+N\+S\+Array$<$ N\+S\+String $\ast$ $>$ $\ast$ \hyperlink{interface_p_f_installation_a647f10455d9fc2608317520b34de22ee}{channels}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Copyright (c) 2015-\/present, \hyperlink{interface_parse}{Parse}, L\+L\+C. All rights reserved.
+
+This source code is licensed under the B\+S\+D-\/style license found in the L\+I\+C\+E\+N\+S\+E file in the root directory of this source tree. An additional grant of patent rights can be found in the P\+A\+T\+E\+N\+T\+S file in the same directory. A \hyperlink{interface_parse}{Parse} Framework Installation Object that is a local representation of an installation persisted to the \hyperlink{interface_parse}{Parse} cloud. This class is a subclass of a {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}}, and retains the same functionality of a \hyperlink{interface_p_f_object}{P\+F\+Object}, but also extends it with installation-\/specific fields and related immutability and validity checks.
+
+A valid {\ttfamily \hyperlink{interface_p_f_installation}{P\+F\+Installation}} can only be instantiated via {\ttfamily +current\+Installation} because the required identifier fields are readonly. The {\ttfamily time\+Zone} and {\ttfamily badge} fields are also readonly properties which are automatically updated to match the device\textquotesingle{}s time zone and application badge when the {\ttfamily \hyperlink{interface_p_f_installation}{P\+F\+Installation}} is saved, thus these fields might not reflect the latest device state if the installation has not recently been saved.
+
+{\ttfamily \hyperlink{interface_p_f_installation}{P\+F\+Installation}} objects which have a valid {\ttfamily device\+Token} and are saved to the \hyperlink{interface_parse}{Parse} cloud can be used to target push notifications. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_p_f_installation_acbfae927713dd2e2ea1d8bf164074893}{}\index{P\+F\+Installation@{P\+F\+Installation}!current\+Installation@{current\+Installation}}
+\index{current\+Installation@{current\+Installation}!P\+F\+Installation@{P\+F\+Installation}}
+\subsubsection[{current\+Installation}]{\setlength{\rightskip}{0pt plus 5cm}+ (nullable instancetype) current\+Installation 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_installation_acbfae927713dd2e2ea1d8bf164074893}
+
+
+
+
+ 
+
+
+
+
+
+Gets the currently-\/running installation from disk and returns an instance of it.
+
+If this installation is not stored on disk this method will create a new {\ttfamily \hyperlink{interface_p_f_installation}{P\+F\+Installation}} with {\ttfamily device\+Type} and {\ttfamily installation\+Id} fields set to those of the current installation.
+
+\begin{DoxyReturn}{Returns}
+Returns a {\ttfamily \hyperlink{interface_p_f_installation}{P\+F\+Installation}} that represents the currently-\/running installation if it could be loaded from disk, otherwise -\/ {\ttfamily nil}. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_installation_a702bcd03f3cecb6be3a91c37f3e63212}{}\index{P\+F\+Installation@{P\+F\+Installation}!get\+Current\+Installation\+In\+Background@{get\+Current\+Installation\+In\+Background}}
+\index{get\+Current\+Installation\+In\+Background@{get\+Current\+Installation\+In\+Background}!P\+F\+Installation@{P\+F\+Installation}}
+\subsubsection[{get\+Current\+Installation\+In\+Background}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf B\+F\+Task}$<$\+\_\+\+\_\+kindof {\bf P\+F\+Installation} $\ast$$>$ $\ast$) get\+Current\+Installation\+In\+Background 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_installation_a702bcd03f3cecb6be3a91c37f3e63212}
+Asynchronously$\ast$ loads the currently-\/running installation from disk and returns an instance of it.
+
+If this installation is not stored on disk this method will create a new {\ttfamily \hyperlink{interface_p_f_installation}{P\+F\+Installation}} with {\ttfamily device\+Type} and {\ttfamily installation\+Id} fields set to those of the current installation.
+
+\begin{DoxyReturn}{Returns}
+Returns a task that incapsulates the current installation. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_installation_a100d82347b3492642b9fdb64c880c884}{}\index{P\+F\+Installation@{P\+F\+Installation}!query@{query}}
+\index{query@{query}!P\+F\+Installation@{P\+F\+Installation}}
+\subsubsection[{query}]{\setlength{\rightskip}{0pt plus 5cm}+ (nullable {\bf P\+F\+Query} $\ast$) query 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_installation_a100d82347b3492642b9fdb64c880c884}
+
+
+
+
+ 
+
+
+
+
+
+Creates a {\ttfamily \hyperlink{class_p_f_query}{P\+F\+Query}} for {\ttfamily \hyperlink{interface_p_f_installation}{P\+F\+Installation}} objects.
+
+Only the following types of queries are allowed for installations\+:
+
+
+\begin{DoxyItemize}
+\item {\ttfamily \mbox{[}query get\+Object\+With\+Id\+:$<$value$>$\mbox{]}}
+\item {\ttfamily \mbox{[}query where\+Key\+:@\char`\"{}installation\+Id\char`\"{} equal\+To\+:$<$value$>$\mbox{]}}
+\item {\ttfamily \mbox{[}query where\+Key\+:@\char`\"{}installation\+Id\char`\"{} matches\+Key\+:$<$key in query$>$ in\+Query\+:$<$query$>$\mbox{]}}
+\end{DoxyItemize}
+
+You can add additional query conditions, but one of the above must appear as a top-\/level {\ttfamily A\+N\+D} clause in the query. \hypertarget{interface_p_f_installation_aa80761aecdfdb358702f10a6f1b2f70d}{}\index{P\+F\+Installation@{P\+F\+Installation}!set\+Device\+Token\+From\+Data\+:@{set\+Device\+Token\+From\+Data\+:}}
+\index{set\+Device\+Token\+From\+Data\+:@{set\+Device\+Token\+From\+Data\+:}!P\+F\+Installation@{P\+F\+Installation}}
+\subsubsection[{set\+Device\+Token\+From\+Data\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\+Device\+Token\+From\+Data\+: 
+\begin{DoxyParamCaption}
+\item[{(nullable N\+S\+Data $\ast$)}]{device\+Token\+Data}
+\end{DoxyParamCaption}
+}\label{interface_p_f_installation_aa80761aecdfdb358702f10a6f1b2f70d}
+Sets the device token string property from an {\ttfamily N\+S\+Data}-\/encoded token.
+
+
+\begin{DoxyParams}{Parameters}
+{\em device\+Token\+Data} & A token that identifies the device. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_p_f_installation_add31abb42268a9d3f2e744de1316f993}{}\index{P\+F\+Installation@{P\+F\+Installation}!badge@{badge}}
+\index{badge@{badge}!P\+F\+Installation@{P\+F\+Installation}}
+\subsubsection[{badge}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Integer) badge\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_p_f_installation_add31abb42268a9d3f2e744de1316f993}
+The badge for the {\ttfamily \hyperlink{interface_p_f_installation}{P\+F\+Installation}}. \hypertarget{interface_p_f_installation_a647f10455d9fc2608317520b34de22ee}{}\index{P\+F\+Installation@{P\+F\+Installation}!channels@{channels}}
+\index{channels@{channels}!P\+F\+Installation@{P\+F\+Installation}}
+\subsubsection[{channels}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Array$<$N\+S\+String $\ast$$>$$\ast$) channels\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_p_f_installation_a647f10455d9fc2608317520b34de22ee}
+The channels for the {\ttfamily \hyperlink{interface_p_f_installation}{P\+F\+Installation}}. \hypertarget{interface_p_f_installation_a5ea812bfe9db860563f3b672dc657ce7}{}\index{P\+F\+Installation@{P\+F\+Installation}!device\+Token@{device\+Token}}
+\index{device\+Token@{device\+Token}!P\+F\+Installation@{P\+F\+Installation}}
+\subsubsection[{device\+Token}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) device\+Token\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_p_f_installation_a5ea812bfe9db860563f3b672dc657ce7}
+The device token for the {\ttfamily \hyperlink{interface_p_f_installation}{P\+F\+Installation}}. \hypertarget{interface_p_f_installation_afac8d2521c0fd031e204c5642ce271a6}{}\index{P\+F\+Installation@{P\+F\+Installation}!device\+Type@{device\+Type}}
+\index{device\+Type@{device\+Type}!P\+F\+Installation@{P\+F\+Installation}}
+\subsubsection[{device\+Type}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) device\+Type\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_p_f_installation_afac8d2521c0fd031e204c5642ce271a6}
+
+
+
+
+ 
+
+
+
+
+
+The device type for the {\ttfamily \hyperlink{interface_p_f_installation}{P\+F\+Installation}}. \hypertarget{interface_p_f_installation_aba5ea4cb6705ac365a6a33fcf775deb8}{}\index{P\+F\+Installation@{P\+F\+Installation}!installation\+Id@{installation\+Id}}
+\index{installation\+Id@{installation\+Id}!P\+F\+Installation@{P\+F\+Installation}}
+\subsubsection[{installation\+Id}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) installation\+Id\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_p_f_installation_aba5ea4cb6705ac365a6a33fcf775deb8}
+The installation\+Id for the {\ttfamily \hyperlink{interface_p_f_installation}{P\+F\+Installation}}. \hypertarget{interface_p_f_installation_adb6faa1119a0a6155940bf6837037bff}{}\index{P\+F\+Installation@{P\+F\+Installation}!time\+Zone@{time\+Zone}}
+\index{time\+Zone@{time\+Zone}!P\+F\+Installation@{P\+F\+Installation}}
+\subsubsection[{time\+Zone}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) time\+Zone\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_p_f_installation_adb6faa1119a0a6155940bf6837037bff}
+The name of the time zone for the {\ttfamily \hyperlink{interface_p_f_installation}{P\+F\+Installation}}. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Frameworks/\+Parse.\+framework/\+Headers/P\+F\+Installation.\+h\end{DoxyCompactItemize}

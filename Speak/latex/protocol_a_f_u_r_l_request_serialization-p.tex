@@ -1,0 +1,53 @@
+\hypertarget{protocol_a_f_u_r_l_request_serialization-p}{}\section{$<$A\+F\+U\+R\+L\+Request\+Serialization$>$ Protocol Reference}
+\label{protocol_a_f_u_r_l_request_serialization-p}\index{$<$\+A\+F\+U\+R\+L\+Request\+Serialization$>$@{$<$\+A\+F\+U\+R\+L\+Request\+Serialization$>$}}
+
+
+{\ttfamily \#import $<$A\+F\+U\+R\+L\+Request\+Serialization.\+h$>$}
+
+Inheritance diagram for $<$A\+F\+U\+R\+L\+Request\+Serialization$>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.678161cm]{protocol_a_f_u_r_l_request_serialization-p}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(N\+S\+U\+R\+L\+Request $\ast$) -\/ \hyperlink{protocol_a_f_u_r_l_request_serialization-p_a582252428e18798af17559ce339ef820}{request\+By\+Serializing\+Request\+:with\+Parameters\+:error\+:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \hyperlink{protocol_a_f_u_r_l_request_serialization-p}{A\+F\+U\+R\+L\+Request\+Serialization}} protocol is adopted by an object that encodes parameters for a specified H\+T\+T\+P requests. Request serializers may encode parameters as query strings, H\+T\+T\+P bodies, setting the appropriate H\+T\+T\+P header fields as necessary.
+
+For example, a J\+S\+O\+N request serializer may set the H\+T\+T\+P body of the request to a J\+S\+O\+N representation, and set the {\ttfamily Content-\/\+Type} H\+T\+T\+P header field value to {\ttfamily application/json}. 
+
+\subsection{Method Documentation}
+\hypertarget{protocol_a_f_u_r_l_request_serialization-p_a582252428e18798af17559ce339ef820}{}\index{A\+F\+U\+R\+L\+Request\+Serialization-\/p@{A\+F\+U\+R\+L\+Request\+Serialization-\/p}!request\+By\+Serializing\+Request\+:with\+Parameters\+:error\+:@{request\+By\+Serializing\+Request\+:with\+Parameters\+:error\+:}}
+\index{request\+By\+Serializing\+Request\+:with\+Parameters\+:error\+:@{request\+By\+Serializing\+Request\+:with\+Parameters\+:error\+:}!A\+F\+U\+R\+L\+Request\+Serialization-\/p@{A\+F\+U\+R\+L\+Request\+Serialization-\/p}}
+\subsubsection[{request\+By\+Serializing\+Request\+:with\+Parameters\+:error\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+U\+R\+L\+Request $\ast$) request\+By\+Serializing\+Request\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+U\+R\+L\+Request $\ast$)}]{request}
+\item[{withParameters:(id)}]{parameters}
+\item[{error:(N\+S\+Error $\ast$\+\_\+\+\_\+autoreleasing $\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{protocol_a_f_u_r_l_request_serialization-p_a582252428e18798af17559ce339ef820}
+Returns a request with the specified parameters encoded into a copy of the original request.
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & The original request. \\
+\hline
+{\em parameters} & The parameters to be encoded. \\
+\hline
+{\em error} & The error that occurred while attempting to encode the request parameters.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A serialized request. 
+\end{DoxyReturn}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Vendors/\+A\+F\+Networking/\+A\+F\+Networking/A\+F\+U\+R\+L\+Request\+Serialization.\+h\end{DoxyCompactItemize}

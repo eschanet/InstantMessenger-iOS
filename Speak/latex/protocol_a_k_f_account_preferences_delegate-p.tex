@@ -1,0 +1,105 @@
+\hypertarget{protocol_a_k_f_account_preferences_delegate-p}{}\section{$<$A\+K\+F\+Account\+Preferences\+Delegate$>$ Protocol Reference}
+\label{protocol_a_k_f_account_preferences_delegate-p}\index{$<$\+A\+K\+F\+Account\+Preferences\+Delegate$>$@{$<$\+A\+K\+F\+Account\+Preferences\+Delegate$>$}}
+Inheritance diagram for $<$A\+K\+F\+Account\+Preferences\+Delegate$>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{protocol_a_k_f_account_preferences_delegate-p}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{protocol_a_k_f_account_preferences_delegate-p_ac73d86edb22c71b15d463f27ef93eeb3}{account\+Preferences\+:did\+Delete\+Preference\+For\+Key\+:error\+:}
+\item 
+(void) -\/ \hyperlink{protocol_a_k_f_account_preferences_delegate-p_a5761ea2cb7f31d11d58bbef294da859f}{account\+Preferences\+:did\+Load\+Preferences\+:error\+:}
+\item 
+(void) -\/ \hyperlink{protocol_a_k_f_account_preferences_delegate-p_a23a3cc383174a976202c8ab2661049db}{account\+Preferences\+:did\+Load\+Preference\+For\+Key\+:value\+:error\+:}
+\item 
+(void) -\/ \hyperlink{protocol_a_k_f_account_preferences_delegate-p_a0c7c00aaf87f7431029dc3048812b9b7}{account\+Preferences\+:did\+Set\+Preference\+For\+Key\+:value\+:error\+:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\hypertarget{protocol_a_k_f_account_preferences_delegate-p_ac73d86edb22c71b15d463f27ef93eeb3}{}\index{A\+K\+F\+Account\+Preferences\+Delegate-\/p@{A\+K\+F\+Account\+Preferences\+Delegate-\/p}!account\+Preferences\+:did\+Delete\+Preference\+For\+Key\+:error\+:@{account\+Preferences\+:did\+Delete\+Preference\+For\+Key\+:error\+:}}
+\index{account\+Preferences\+:did\+Delete\+Preference\+For\+Key\+:error\+:@{account\+Preferences\+:did\+Delete\+Preference\+For\+Key\+:error\+:}!A\+K\+F\+Account\+Preferences\+Delegate-\/p@{A\+K\+F\+Account\+Preferences\+Delegate-\/p}}
+\subsubsection[{account\+Preferences\+:did\+Delete\+Preference\+For\+Key\+:error\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) account\+Preferences\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf A\+K\+F\+Account\+Preferences} $\ast$)}]{account\+Preferences}
+\item[{didDeletePreferenceForKey:(N\+S\+String $\ast$)}]{key}
+\item[{error:(nullable N\+S\+Error $\ast$)}]{error}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_a_k_f_account_preferences_delegate-p_ac73d86edb22c71b15d463f27ef93eeb3}
+Notifies the delegate that a single preference was deleted. 
+\begin{DoxyParams}{Parameters}
+{\em account\+Preferences} & The \hyperlink{interface_a_k_f_account_preferences}{A\+K\+F\+Account\+Preferences} instance that deleted the preference. \\
+\hline
+{\em key} & The key for the deleted preference. \\
+\hline
+{\em error} & The error if the preference could not be deleted. \\
+\hline
+\end{DoxyParams}
+\hypertarget{protocol_a_k_f_account_preferences_delegate-p_a23a3cc383174a976202c8ab2661049db}{}\index{A\+K\+F\+Account\+Preferences\+Delegate-\/p@{A\+K\+F\+Account\+Preferences\+Delegate-\/p}!account\+Preferences\+:did\+Load\+Preference\+For\+Key\+:value\+:error\+:@{account\+Preferences\+:did\+Load\+Preference\+For\+Key\+:value\+:error\+:}}
+\index{account\+Preferences\+:did\+Load\+Preference\+For\+Key\+:value\+:error\+:@{account\+Preferences\+:did\+Load\+Preference\+For\+Key\+:value\+:error\+:}!A\+K\+F\+Account\+Preferences\+Delegate-\/p@{A\+K\+F\+Account\+Preferences\+Delegate-\/p}}
+\subsubsection[{account\+Preferences\+:did\+Load\+Preference\+For\+Key\+:value\+:error\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) account\+Preferences\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf A\+K\+F\+Account\+Preferences} $\ast$)}]{account\+Preferences}
+\item[{didLoadPreferenceForKey:(N\+S\+String $\ast$)}]{key}
+\item[{value:(nullable N\+S\+String $\ast$)}]{value}
+\item[{error:(nullable N\+S\+Error $\ast$)}]{error}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_a_k_f_account_preferences_delegate-p_a23a3cc383174a976202c8ab2661049db}
+Notifies the delegate that a single preference was loaded. 
+\begin{DoxyParams}{Parameters}
+{\em account\+Preferences} & The \hyperlink{interface_a_k_f_account_preferences}{A\+K\+F\+Account\+Preferences} instance that loaded the preference. \\
+\hline
+{\em key} & The key for the loaded preference. \\
+\hline
+{\em value} & The value for the loaded preference. \\
+\hline
+{\em error} & The error if the preference could not be loaded. \\
+\hline
+\end{DoxyParams}
+\hypertarget{protocol_a_k_f_account_preferences_delegate-p_a5761ea2cb7f31d11d58bbef294da859f}{}\index{A\+K\+F\+Account\+Preferences\+Delegate-\/p@{A\+K\+F\+Account\+Preferences\+Delegate-\/p}!account\+Preferences\+:did\+Load\+Preferences\+:error\+:@{account\+Preferences\+:did\+Load\+Preferences\+:error\+:}}
+\index{account\+Preferences\+:did\+Load\+Preferences\+:error\+:@{account\+Preferences\+:did\+Load\+Preferences\+:error\+:}!A\+K\+F\+Account\+Preferences\+Delegate-\/p@{A\+K\+F\+Account\+Preferences\+Delegate-\/p}}
+\subsubsection[{account\+Preferences\+:did\+Load\+Preferences\+:error\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) account\+Preferences\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf A\+K\+F\+Account\+Preferences} $\ast$)}]{account\+Preferences}
+\item[{didLoadPreferences:(nullable N\+S\+Dictionary$<$ N\+S\+String $\ast$, N\+S\+String $\ast$ $>$ $\ast$)}]{preferences}
+\item[{error:(nullable N\+S\+Error $\ast$)}]{error}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_a_k_f_account_preferences_delegate-p_a5761ea2cb7f31d11d58bbef294da859f}
+Notifies the delegate that preferences were loaded. 
+\begin{DoxyParams}{Parameters}
+{\em account\+Preferences} & The \hyperlink{interface_a_k_f_account_preferences}{A\+K\+F\+Account\+Preferences} instance that loaded the preferences. \\
+\hline
+{\em preferences} & The dictionary of preferences. \\
+\hline
+{\em error} & The error if the preferences could not be loaded. \\
+\hline
+\end{DoxyParams}
+\hypertarget{protocol_a_k_f_account_preferences_delegate-p_a0c7c00aaf87f7431029dc3048812b9b7}{}\index{A\+K\+F\+Account\+Preferences\+Delegate-\/p@{A\+K\+F\+Account\+Preferences\+Delegate-\/p}!account\+Preferences\+:did\+Set\+Preference\+For\+Key\+:value\+:error\+:@{account\+Preferences\+:did\+Set\+Preference\+For\+Key\+:value\+:error\+:}}
+\index{account\+Preferences\+:did\+Set\+Preference\+For\+Key\+:value\+:error\+:@{account\+Preferences\+:did\+Set\+Preference\+For\+Key\+:value\+:error\+:}!A\+K\+F\+Account\+Preferences\+Delegate-\/p@{A\+K\+F\+Account\+Preferences\+Delegate-\/p}}
+\subsubsection[{account\+Preferences\+:did\+Set\+Preference\+For\+Key\+:value\+:error\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) account\+Preferences\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf A\+K\+F\+Account\+Preferences} $\ast$)}]{account\+Preferences}
+\item[{didSetPreferenceForKey:(N\+S\+String $\ast$)}]{key}
+\item[{value:(N\+S\+String $\ast$)}]{value}
+\item[{error:(nullable N\+S\+Error $\ast$)}]{error}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_a_k_f_account_preferences_delegate-p_a0c7c00aaf87f7431029dc3048812b9b7}
+Notifies the delegate that a single preference was set. 
+\begin{DoxyParams}{Parameters}
+{\em account\+Preferences} & The \hyperlink{interface_a_k_f_account_preferences}{A\+K\+F\+Account\+Preferences} instance that set the preference. \\
+\hline
+{\em key} & The key for the set preference. \\
+\hline
+{\em value} & The value for the set preference. \\
+\hline
+{\em error} & The error if the preference could not be set. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Frameworks/\+Account\+Kit.\+framework/\+Headers/A\+K\+F\+Account\+Preferences.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,136 @@
+\hypertarget{interface_f_i_r_app}{}\section{F\+I\+R\+App Class Reference}
+\label{interface_f_i_r_app}\index{F\+I\+R\+App@{F\+I\+R\+App}}
+
+
+{\ttfamily \#import $<$F\+I\+R\+App.\+h$>$}
+
+Inheritance diagram for F\+I\+R\+App\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_f_i_r_app}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_f_i_r_app_ac58faffee0f92780532f5b58986c100a}{delete\+App\+:}
+\item 
+(nullable instancetype) -\/ \hyperlink{interface_f_i_r_app_a7a3365b06f49a8dc13cc39b0ab15047a}{N\+S\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) + \hyperlink{interface_f_i_r_app_a4fcb4890baccad094cffe3ea4d25d764}{configure}
+\item 
+(void) + \hyperlink{interface_f_i_r_app_a2e4b970bfb6ed8b606c456f42a82b967}{configure\+With\+Options\+:}
+\item 
+(void) + \hyperlink{interface_f_i_r_app_ab9ce69bec960856900bcf1265bba98b6}{configure\+With\+Name\+:options\+:}
+\item 
+(default\+App() + \hyperlink{interface_f_i_r_app_a3c93e9f896c81011866c1decbed30411}{N\+S\+\_\+\+S\+W\+I\+F\+T\+\_\+\+N\+A\+M\+E}
+\item 
+(nullable \hyperlink{interface_f_i_r_app}{F\+I\+R\+App} $\ast$) + \hyperlink{interface_f_i_r_app_a16d4ec3d3382378b9346d6a99ed9d9d7}{app\+Named\+:}
+\item 
+(nullable N\+S\+Dictionary $\ast$) + \hyperlink{interface_f_i_r_app_aa1d0f87e8e35a8b1d4d87b9e05879514}{all\+Apps}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_f_i_r_app_abf05c456b55ada37a554388492f682a8}{name}
+\item 
+\hyperlink{interface_f_i_r_options}{F\+I\+R\+Options} $\ast$ \hyperlink{interface_f_i_r_app_afa0d43acd7f017d4710720c8131a185a}{options}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The entry point of Firebase S\+D\+Ks.
+
+Initialize and configure \hyperlink{interface_f_i_r_app}{F\+I\+R\+App} using \mbox{[}\hyperlink{interface_f_i_r_app}{F\+I\+R\+App} configure\mbox{]}; Or other customized ways as shown below. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_f_i_r_app_aa1d0f87e8e35a8b1d4d87b9e05879514}{}\index{F\+I\+R\+App@{F\+I\+R\+App}!all\+Apps@{all\+Apps}}
+\index{all\+Apps@{all\+Apps}!F\+I\+R\+App@{F\+I\+R\+App}}
+\subsubsection[{all\+Apps}]{\setlength{\rightskip}{0pt plus 5cm}+ (nullable N\+S\+Dictionary $\ast$) all\+Apps 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_app_aa1d0f87e8e35a8b1d4d87b9e05879514}
+Returns the set of all extant \hyperlink{interface_f_i_r_app}{F\+I\+R\+App} instances, or nil if there is no \hyperlink{interface_f_i_r_app}{F\+I\+R\+App} instance. This method is thread safe. \hypertarget{interface_f_i_r_app_a16d4ec3d3382378b9346d6a99ed9d9d7}{}\index{F\+I\+R\+App@{F\+I\+R\+App}!app\+Named\+:@{app\+Named\+:}}
+\index{app\+Named\+:@{app\+Named\+:}!F\+I\+R\+App@{F\+I\+R\+App}}
+\subsubsection[{app\+Named\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (nullable {\bf F\+I\+R\+App} $\ast$) app\+Named\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{name}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_app_a16d4ec3d3382378b9346d6a99ed9d9d7}
+Returns a previously created \hyperlink{interface_f_i_r_app}{F\+I\+R\+App} instance with the given name, or nil if no such app exists. This method is thread safe. \hypertarget{interface_f_i_r_app_a4fcb4890baccad094cffe3ea4d25d764}{}\index{F\+I\+R\+App@{F\+I\+R\+App}!configure@{configure}}
+\index{configure@{configure}!F\+I\+R\+App@{F\+I\+R\+App}}
+\subsubsection[{configure}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) configure 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_app_a4fcb4890baccad094cffe3ea4d25d764}
+Configures a default Firebase app. Raises an exception if any configuration step fails. The default app is named \char`\"{}\+\_\+\+\_\+\+F\+I\+R\+A\+P\+P\+\_\+\+D\+E\+F\+A\+U\+L\+T\char`\"{}. This method should be called after the app is launched and before using Firebase services. This method is thread safe. \hypertarget{interface_f_i_r_app_ab9ce69bec960856900bcf1265bba98b6}{}\index{F\+I\+R\+App@{F\+I\+R\+App}!configure\+With\+Name\+:options\+:@{configure\+With\+Name\+:options\+:}}
+\index{configure\+With\+Name\+:options\+:@{configure\+With\+Name\+:options\+:}!F\+I\+R\+App@{F\+I\+R\+App}}
+\subsubsection[{configure\+With\+Name\+:options\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) configure\+With\+Name\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{name}
+\item[{options:({\bf F\+I\+R\+Options} $\ast$)}]{options}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_app_ab9ce69bec960856900bcf1265bba98b6}
+Configures a Firebase app with the given name and options. Raises an exception if any configuration step fails. This method is thread safe.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The application\textquotesingle{}s name given by the developer. The name should should only contain Letters, Numbers and Underscore. \\
+\hline
+{\em options} & The Firebase application options used to configure the services. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_f_i_r_app_a2e4b970bfb6ed8b606c456f42a82b967}{}\index{F\+I\+R\+App@{F\+I\+R\+App}!configure\+With\+Options\+:@{configure\+With\+Options\+:}}
+\index{configure\+With\+Options\+:@{configure\+With\+Options\+:}!F\+I\+R\+App@{F\+I\+R\+App}}
+\subsubsection[{configure\+With\+Options\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) configure\+With\+Options\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf F\+I\+R\+Options} $\ast$)}]{options}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_app_a2e4b970bfb6ed8b606c456f42a82b967}
+Configures the default Firebase app with the provided options. The default app is named \char`\"{}\+\_\+\+\_\+\+F\+I\+R\+A\+P\+P\+\_\+\+D\+E\+F\+A\+U\+L\+T\char`\"{}. Raises an exception if any configuration step fails. This method is thread safe.
+
+
+\begin{DoxyParams}{Parameters}
+{\em options} & The Firebase application options used to configure the service. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_f_i_r_app_ac58faffee0f92780532f5b58986c100a}{}\index{F\+I\+R\+App@{F\+I\+R\+App}!delete\+App\+:@{delete\+App\+:}}
+\index{delete\+App\+:@{delete\+App\+:}!F\+I\+R\+App@{F\+I\+R\+App}}
+\subsubsection[{delete\+App\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) delete\+App\+: 
+\begin{DoxyParamCaption}
+\item[{(F\+I\+R\+App\+Void\+Bool\+Callback)}]{completion}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_app_ac58faffee0f92780532f5b58986c100a}
+Cleans up the current \hyperlink{interface_f_i_r_app}{F\+I\+R\+App}, freeing associated data and returning its name to the pool for future use. This method is thread safe in class level. \hypertarget{interface_f_i_r_app_a3c93e9f896c81011866c1decbed30411}{}\index{F\+I\+R\+App@{F\+I\+R\+App}!N\+S\+\_\+\+S\+W\+I\+F\+T\+\_\+\+N\+A\+M\+E@{N\+S\+\_\+\+S\+W\+I\+F\+T\+\_\+\+N\+A\+M\+E}}
+\index{N\+S\+\_\+\+S\+W\+I\+F\+T\+\_\+\+N\+A\+M\+E@{N\+S\+\_\+\+S\+W\+I\+F\+T\+\_\+\+N\+A\+M\+E}!F\+I\+R\+App@{F\+I\+R\+App}}
+\subsubsection[{N\+S\+\_\+\+S\+W\+I\+F\+T\+\_\+\+N\+A\+M\+E}]{\setlength{\rightskip}{0pt plus 5cm}+ (default\+App() N\+S\+\_\+\+S\+W\+I\+F\+T\+\_\+\+N\+A\+M\+E 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_app_a3c93e9f896c81011866c1decbed30411}
+Returns the default app, or nil if the default app does not exist. \hypertarget{interface_f_i_r_app_a7a3365b06f49a8dc13cc39b0ab15047a}{}\index{F\+I\+R\+App@{F\+I\+R\+App}!N\+S\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E@{N\+S\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}}
+\index{N\+S\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E@{N\+S\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}!F\+I\+R\+App@{F\+I\+R\+App}}
+\subsubsection[{N\+S\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (nullable instancetype) N\+S\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_app_a7a3365b06f49a8dc13cc39b0ab15047a}
+F\+I\+R\+Firebase\+App instances should not be initialized directly. Call $\vert$\+F\+I\+R\+App configure$\vert$, or $\vert$\+F\+I\+R\+App configure\+With\+Options\+:$\vert$, or $\vert$\+F\+I\+R\+App configure\+With\+Names\+:options$\vert$ directly. 
+
+\subsection{Property Documentation}
+\hypertarget{interface_f_i_r_app_abf05c456b55ada37a554388492f682a8}{}\index{F\+I\+R\+App@{F\+I\+R\+App}!name@{name}}
+\index{name@{name}!F\+I\+R\+App@{F\+I\+R\+App}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) name\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_f_i_r_app_abf05c456b55ada37a554388492f682a8}
+Gets the name of this app. \hypertarget{interface_f_i_r_app_afa0d43acd7f017d4710720c8131a185a}{}\index{F\+I\+R\+App@{F\+I\+R\+App}!options@{options}}
+\index{options@{options}!F\+I\+R\+App@{F\+I\+R\+App}}
+\subsubsection[{options}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf F\+I\+R\+Options}$\ast$) options\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_f_i_r_app_afa0d43acd7f017d4710720c8131a185a}
+Gets the options for this app. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Frameworks/\+Firebase\+Analytics.\+framework/\+Headers/F\+I\+R\+App.\+h\end{DoxyCompactItemize}

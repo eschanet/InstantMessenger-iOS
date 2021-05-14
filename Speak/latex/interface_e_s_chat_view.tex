@@ -1,0 +1,406 @@
+\hypertarget{interface_e_s_chat_view}{}\section{E\+S\+Chat\+View Class Reference}
+\label{interface_e_s_chat_view}\index{E\+S\+Chat\+View@{E\+S\+Chat\+View}}
+
+
+{\ttfamily \#import $<$E\+S\+Chat\+View.\+h$>$}
+
+Inheritance diagram for E\+S\+Chat\+View\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=11.000000cm]{interface_e_s_chat_view}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_e_s_chat_view_a6ec8f75cb0c2f0c39b912f9ed12d3b56}{init\+With\+:and\+Title\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_chat_view_a603cc891c9635478a8502c519f3ed706}{add\+User}
+\item 
+(void) -\/ \hyperlink{interface_e_s_chat_view_ab825e4e694ee3d7e42199eef85040476}{did\+Tap\+Avatar}
+\item 
+(void) -\/ \hyperlink{interface_e_s_chat_view_adfca3c92c6b7e88a5de929416c6457a8}{load\+Messages}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_e_s_chat_view_a9ca8ca78c6eff923615c685e2a0ea7ee}{add\+Message\+:}
+\item 
+(\hyperlink{interface_j_s_q_message}{J\+S\+Q\+Message} $\ast$) -\/ \hyperlink{interface_e_s_chat_view_a7f4df28472241d9245460745b870035a}{create\+Text\+Message\+:}
+\item 
+(\hyperlink{interface_j_s_q_message}{J\+S\+Q\+Message} $\ast$) -\/ \hyperlink{interface_e_s_chat_view_a6e5dea59adfd97c0efe9a962bba85dc5}{create\+Video\+Message\+:}
+\item 
+(\hyperlink{interface_j_s_q_message}{J\+S\+Q\+Message} $\ast$) -\/ \hyperlink{interface_e_s_chat_view_a91f00608c90279de8a260a761c546336}{create\+Picture\+Message\+:}
+\item 
+(\hyperlink{interface_j_s_q_message}{J\+S\+Q\+Message} $\ast$) -\/ \hyperlink{interface_e_s_chat_view_a690636848cdb2e1af770c87362df97bb}{create\+Audio\+Message\+:}
+\item 
+(\hyperlink{interface_j_s_q_message}{J\+S\+Q\+Message} $\ast$) -\/ \hyperlink{interface_e_s_chat_view_a0b90d9c790e9b9c4f3ad6219823c8129}{create\+Location\+Message\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_chat_view_a53cf72a1c34fb52e341462d775320305}{message\+Save\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_chat_view_aa66b5195264392b51c7852578f4d8579}{update\+Message\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_chat_view_ab48f2c73ca9c46532139af880238ebb9}{load\+Avatar\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_chat_view_ab707062257d5ed5e0b057e4bc6c933b8}{send\+Message\+:with\+Video\+:with\+Picture\+:and\+With\+Audio\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_chat_view_adc4bef549e63db712055a0bfc249047d}{send\+Text\+Message\+:with\+Text\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_chat_view_a1cf0b3fbc2ec16ebb2a3ac7fd04182a5}{send\+Video\+Message\+:with\+Video\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_chat_view_a969f070d70f575f1669ad64600e2b89c}{send\+Picture\+Message\+:with\+Picture\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_chat_view_a90a1dc38bf4b335b66bbf280c1cb98c6}{send\+Audio\+Message\+:and\+With\+Audio\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_chat_view_a0c3cf62cdb8cbeebf07a1b1717b34e07}{send\+Location\+Message\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_chat_view_a6bc7b786a8e907d8e7df6c6842ddec14}{message\+Update\+:}
+\item 
+(void) -\/ \hyperlink{interface_e_s_chat_view_a821a59ec0c2c3d4fbeef96ef6d831aca}{message\+Delete}
+\item 
+(void) -\/ \hyperlink{interface_e_s_chat_view_a7d14fa2c5530ba80a298775fc55652cb}{typing\+Indicator\+Load}
+\item 
+(void) -\/ \hyperlink{interface_e_s_chat_view_a462c60d9db099450c14c108b034a46af}{typing\+Indicator\+Save\+:}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Interface declaration of the chat view, the actual messaging viewcontroller, a subclass of the \hyperlink{interface_j_s_q_messages_view_controller}{J\+S\+Q\+Messages\+View\+Controller} 
+
+\subsection{Method Documentation}
+\hypertarget{interface_e_s_chat_view_a9ca8ca78c6eff923615c685e2a0ea7ee}{}\index{E\+S\+Chat\+View@{E\+S\+Chat\+View}!add\+Message\+:@{add\+Message\+:}}
+\index{add\+Message\+:@{add\+Message\+:}!E\+S\+Chat\+View@{E\+S\+Chat\+View}}
+\subsubsection[{add\+Message\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) add\+Message\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Dictionary $\ast$)}]{item}
+\end{DoxyParamCaption}
+}\label{interface_e_s_chat_view_a9ca8ca78c6eff923615c685e2a0ea7ee}
+Add a new message to the conversation
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & The item containing the message data\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{interface_e_s_chat_view_a603cc891c9635478a8502c519f3ed706}{}\index{E\+S\+Chat\+View@{E\+S\+Chat\+View}!add\+User@{add\+User}}
+\index{add\+User@{add\+User}!E\+S\+Chat\+View@{E\+S\+Chat\+View}}
+\subsubsection[{add\+User}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) add\+User 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_e_s_chat_view_a603cc891c9635478a8502c519f3ed706}
+Adding a user to the contacts \hypertarget{interface_e_s_chat_view_a690636848cdb2e1af770c87362df97bb}{}\index{E\+S\+Chat\+View@{E\+S\+Chat\+View}!create\+Audio\+Message\+:@{create\+Audio\+Message\+:}}
+\index{create\+Audio\+Message\+:@{create\+Audio\+Message\+:}!E\+S\+Chat\+View@{E\+S\+Chat\+View}}
+\subsubsection[{create\+Audio\+Message\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf J\+S\+Q\+Message} $\ast$) create\+Audio\+Message\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Dictionary $\ast$)}]{item}
+\end{DoxyParamCaption}
+}\label{interface_e_s_chat_view_a690636848cdb2e1af770c87362df97bb}
+Create a new audio message
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & The item containg the message data\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{interface_e_s_chat_view_a0b90d9c790e9b9c4f3ad6219823c8129}{}\index{E\+S\+Chat\+View@{E\+S\+Chat\+View}!create\+Location\+Message\+:@{create\+Location\+Message\+:}}
+\index{create\+Location\+Message\+:@{create\+Location\+Message\+:}!E\+S\+Chat\+View@{E\+S\+Chat\+View}}
+\subsubsection[{create\+Location\+Message\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf J\+S\+Q\+Message} $\ast$) create\+Location\+Message\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Dictionary $\ast$)}]{item}
+\end{DoxyParamCaption}
+}\label{interface_e_s_chat_view_a0b90d9c790e9b9c4f3ad6219823c8129}
+Create a new location message
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & The item containg the message data\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{interface_e_s_chat_view_a91f00608c90279de8a260a761c546336}{}\index{E\+S\+Chat\+View@{E\+S\+Chat\+View}!create\+Picture\+Message\+:@{create\+Picture\+Message\+:}}
+\index{create\+Picture\+Message\+:@{create\+Picture\+Message\+:}!E\+S\+Chat\+View@{E\+S\+Chat\+View}}
+\subsubsection[{create\+Picture\+Message\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf J\+S\+Q\+Message} $\ast$) create\+Picture\+Message\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Dictionary $\ast$)}]{item}
+\end{DoxyParamCaption}
+}\label{interface_e_s_chat_view_a91f00608c90279de8a260a761c546336}
+Create a new picture message
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & The item containg the message data\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{interface_e_s_chat_view_a7f4df28472241d9245460745b870035a}{}\index{E\+S\+Chat\+View@{E\+S\+Chat\+View}!create\+Text\+Message\+:@{create\+Text\+Message\+:}}
+\index{create\+Text\+Message\+:@{create\+Text\+Message\+:}!E\+S\+Chat\+View@{E\+S\+Chat\+View}}
+\subsubsection[{create\+Text\+Message\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf J\+S\+Q\+Message} $\ast$) create\+Text\+Message\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Dictionary $\ast$)}]{item}
+\end{DoxyParamCaption}
+}\label{interface_e_s_chat_view_a7f4df28472241d9245460745b870035a}
+Create a new text message
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & The item containg the message data\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{interface_e_s_chat_view_a6e5dea59adfd97c0efe9a962bba85dc5}{}\index{E\+S\+Chat\+View@{E\+S\+Chat\+View}!create\+Video\+Message\+:@{create\+Video\+Message\+:}}
+\index{create\+Video\+Message\+:@{create\+Video\+Message\+:}!E\+S\+Chat\+View@{E\+S\+Chat\+View}}
+\subsubsection[{create\+Video\+Message\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf J\+S\+Q\+Message} $\ast$) create\+Video\+Message\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Dictionary $\ast$)}]{item}
+\end{DoxyParamCaption}
+}\label{interface_e_s_chat_view_a6e5dea59adfd97c0efe9a962bba85dc5}
+Create a new video message
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & The item containg the message data\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{interface_e_s_chat_view_ab825e4e694ee3d7e42199eef85040476}{}\index{E\+S\+Chat\+View@{E\+S\+Chat\+View}!did\+Tap\+Avatar@{did\+Tap\+Avatar}}
+\index{did\+Tap\+Avatar@{did\+Tap\+Avatar}!E\+S\+Chat\+View@{E\+S\+Chat\+View}}
+\subsubsection[{did\+Tap\+Avatar}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) did\+Tap\+Avatar 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_e_s_chat_view_ab825e4e694ee3d7e42199eef85040476}
+User did tap on the other user\textquotesingle{}s avatar, take him to the profile page \hypertarget{interface_e_s_chat_view_a6ec8f75cb0c2f0c39b912f9ed12d3b56}{}\index{E\+S\+Chat\+View@{E\+S\+Chat\+View}!init\+With\+:and\+Title\+:@{init\+With\+:and\+Title\+:}}
+\index{init\+With\+:and\+Title\+:@{init\+With\+:and\+Title\+:}!E\+S\+Chat\+View@{E\+S\+Chat\+View}}
+\subsubsection[{init\+With\+:and\+Title\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\+With\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{group\+Id\+\_\+}
+\item[{andTitle:(N\+S\+String $\ast$)}]{title\+\_\+}
+\end{DoxyParamCaption}
+}\label{interface_e_s_chat_view_a6ec8f75cb0c2f0c39b912f9ed12d3b56}
+Custom init method of the chatview, passing the group\+Id and the title of the chat window (e.\+g. the name of the other user)
+
+
+\begin{DoxyParams}{Parameters}
+{\em group\+Id\+\_\+} & I\+D of the group \\
+\hline
+{\em title\+\_\+} & title of the conversation\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{interface_e_s_chat_view_ab48f2c73ca9c46532139af880238ebb9}{}\index{E\+S\+Chat\+View@{E\+S\+Chat\+View}!load\+Avatar\+:@{load\+Avatar\+:}}
+\index{load\+Avatar\+:@{load\+Avatar\+:}!E\+S\+Chat\+View@{E\+S\+Chat\+View}}
+\subsubsection[{load\+Avatar\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) load\+Avatar\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{sender\+Id}
+\end{DoxyParamCaption}
+}\label{interface_e_s_chat_view_ab48f2c73ca9c46532139af880238ebb9}
+Load profile picture of the other user
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender\+Id} & User\+Id of the other user \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_e_s_chat_view_adfca3c92c6b7e88a5de929416c6457a8}{}\index{E\+S\+Chat\+View@{E\+S\+Chat\+View}!load\+Messages@{load\+Messages}}
+\index{load\+Messages@{load\+Messages}!E\+S\+Chat\+View@{E\+S\+Chat\+View}}
+\subsubsection[{load\+Messages}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) load\+Messages 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_e_s_chat_view_adfca3c92c6b7e88a5de929416c6457a8}
+Load the last 50 messages of the conversation, and then again 50, and again, and again and again as the user scrolls upwards \hypertarget{interface_e_s_chat_view_a821a59ec0c2c3d4fbeef96ef6d831aca}{}\index{E\+S\+Chat\+View@{E\+S\+Chat\+View}!message\+Delete@{message\+Delete}}
+\index{message\+Delete@{message\+Delete}!E\+S\+Chat\+View@{E\+S\+Chat\+View}}
+\subsubsection[{message\+Delete}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) message\+Delete 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_e_s_chat_view_a821a59ec0c2c3d4fbeef96ef6d831aca}
+If the other user hasn\textquotesingle{}t yet read the message, you can delete it by calling this method \hypertarget{interface_e_s_chat_view_a53cf72a1c34fb52e341462d775320305}{}\index{E\+S\+Chat\+View@{E\+S\+Chat\+View}!message\+Save\+:@{message\+Save\+:}}
+\index{message\+Save\+:@{message\+Save\+:}!E\+S\+Chat\+View@{E\+S\+Chat\+View}}
+\subsubsection[{message\+Save\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) message\+Save\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Mutable\+Dictionary $\ast$)}]{item}
+\end{DoxyParamCaption}
+}\label{interface_e_s_chat_view_a53cf72a1c34fb52e341462d775320305}
+Save the actual message to Firebase
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & The item containing the message data \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_e_s_chat_view_a6bc7b786a8e907d8e7df6c6842ddec14}{}\index{E\+S\+Chat\+View@{E\+S\+Chat\+View}!message\+Update\+:@{message\+Update\+:}}
+\index{message\+Update\+:@{message\+Update\+:}!E\+S\+Chat\+View@{E\+S\+Chat\+View}}
+\subsubsection[{message\+Update\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) message\+Update\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Dictionary $\ast$)}]{item}
+\end{DoxyParamCaption}
+}\label{interface_e_s_chat_view_a6bc7b786a8e907d8e7df6c6842ddec14}
+Update the firebase item and indicate that there is a new message, thus we have to change the read receipts etc.
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & The item containing the message data \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_e_s_chat_view_a90a1dc38bf4b335b66bbf280c1cb98c6}{}\index{E\+S\+Chat\+View@{E\+S\+Chat\+View}!send\+Audio\+Message\+:and\+With\+Audio\+:@{send\+Audio\+Message\+:and\+With\+Audio\+:}}
+\index{send\+Audio\+Message\+:and\+With\+Audio\+:@{send\+Audio\+Message\+:and\+With\+Audio\+:}!E\+S\+Chat\+View@{E\+S\+Chat\+View}}
+\subsubsection[{send\+Audio\+Message\+:and\+With\+Audio\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) send\+Audio\+Message\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Mutable\+Dictionary $\ast$)}]{item}
+\item[{andWithAudio:(N\+S\+String $\ast$)}]{audio}
+\end{DoxyParamCaption}
+}\label{interface_e_s_chat_view_a90a1dc38bf4b335b66bbf280c1cb98c6}
+User wants to send
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & The item containing the data of the message \\
+\hline
+{\em audio} & Actual audio of the message \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_e_s_chat_view_a0c3cf62cdb8cbeebf07a1b1717b34e07}{}\index{E\+S\+Chat\+View@{E\+S\+Chat\+View}!send\+Location\+Message\+:@{send\+Location\+Message\+:}}
+\index{send\+Location\+Message\+:@{send\+Location\+Message\+:}!E\+S\+Chat\+View@{E\+S\+Chat\+View}}
+\subsubsection[{send\+Location\+Message\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) send\+Location\+Message\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Mutable\+Dictionary $\ast$)}]{item}
+\end{DoxyParamCaption}
+}\label{interface_e_s_chat_view_a0c3cf62cdb8cbeebf07a1b1717b34e07}
+User wants to send his location
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & The item containing the data of the message \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_e_s_chat_view_ab707062257d5ed5e0b057e4bc6c933b8}{}\index{E\+S\+Chat\+View@{E\+S\+Chat\+View}!send\+Message\+:with\+Video\+:with\+Picture\+:and\+With\+Audio\+:@{send\+Message\+:with\+Video\+:with\+Picture\+:and\+With\+Audio\+:}}
+\index{send\+Message\+:with\+Video\+:with\+Picture\+:and\+With\+Audio\+:@{send\+Message\+:with\+Video\+:with\+Picture\+:and\+With\+Audio\+:}!E\+S\+Chat\+View@{E\+S\+Chat\+View}}
+\subsubsection[{send\+Message\+:with\+Video\+:with\+Picture\+:and\+With\+Audio\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) send\+Message\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{text}
+\item[{withVideo:(N\+S\+U\+R\+L $\ast$)}]{video}
+\item[{withPicture:(U\+I\+Image $\ast$)}]{picture}
+\item[{andWithAudio:(N\+S\+String $\ast$)}]{audio}
+\end{DoxyParamCaption}
+}\label{interface_e_s_chat_view_ab707062257d5ed5e0b057e4bc6c933b8}
+User has hit \char`\"{}send\char`\"{}, now decide what type of message it is and handle the outcome
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & The text of the message \\
+\hline
+{\em video} & The video of the message \\
+\hline
+{\em picture} & The picture of the message \\
+\hline
+{\em audio} & The audio of the message \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_e_s_chat_view_a969f070d70f575f1669ad64600e2b89c}{}\index{E\+S\+Chat\+View@{E\+S\+Chat\+View}!send\+Picture\+Message\+:with\+Picture\+:@{send\+Picture\+Message\+:with\+Picture\+:}}
+\index{send\+Picture\+Message\+:with\+Picture\+:@{send\+Picture\+Message\+:with\+Picture\+:}!E\+S\+Chat\+View@{E\+S\+Chat\+View}}
+\subsubsection[{send\+Picture\+Message\+:with\+Picture\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) send\+Picture\+Message\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Mutable\+Dictionary $\ast$)}]{item}
+\item[{withPicture:(U\+I\+Image $\ast$)}]{picture}
+\end{DoxyParamCaption}
+}\label{interface_e_s_chat_view_a969f070d70f575f1669ad64600e2b89c}
+User wants to send a picture message
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & The item containing the data of the message \\
+\hline
+{\em picture} & U\+I\+Image of the actual picture being sent \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_e_s_chat_view_adc4bef549e63db712055a0bfc249047d}{}\index{E\+S\+Chat\+View@{E\+S\+Chat\+View}!send\+Text\+Message\+:with\+Text\+:@{send\+Text\+Message\+:with\+Text\+:}}
+\index{send\+Text\+Message\+:with\+Text\+:@{send\+Text\+Message\+:with\+Text\+:}!E\+S\+Chat\+View@{E\+S\+Chat\+View}}
+\subsubsection[{send\+Text\+Message\+:with\+Text\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) send\+Text\+Message\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Mutable\+Dictionary $\ast$)}]{item}
+\item[{withText:(N\+S\+String $\ast$)}]{text}
+\end{DoxyParamCaption}
+}\label{interface_e_s_chat_view_adc4bef549e63db712055a0bfc249047d}
+User wants to send a normal text message
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & The item containing the data of the message \\
+\hline
+{\em text} & Actual text of the message \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_e_s_chat_view_a1cf0b3fbc2ec16ebb2a3ac7fd04182a5}{}\index{E\+S\+Chat\+View@{E\+S\+Chat\+View}!send\+Video\+Message\+:with\+Video\+:@{send\+Video\+Message\+:with\+Video\+:}}
+\index{send\+Video\+Message\+:with\+Video\+:@{send\+Video\+Message\+:with\+Video\+:}!E\+S\+Chat\+View@{E\+S\+Chat\+View}}
+\subsubsection[{send\+Video\+Message\+:with\+Video\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) send\+Video\+Message\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Mutable\+Dictionary $\ast$)}]{item}
+\item[{withVideo:(N\+S\+U\+R\+L $\ast$)}]{video}
+\end{DoxyParamCaption}
+}\label{interface_e_s_chat_view_a1cf0b3fbc2ec16ebb2a3ac7fd04182a5}
+User wants to send a video message
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & The item containing the data of the message \\
+\hline
+{\em video} & N\+S\+U\+R\+L of the actual video being sent \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_e_s_chat_view_a7d14fa2c5530ba80a298775fc55652cb}{}\index{E\+S\+Chat\+View@{E\+S\+Chat\+View}!typing\+Indicator\+Load@{typing\+Indicator\+Load}}
+\index{typing\+Indicator\+Load@{typing\+Indicator\+Load}!E\+S\+Chat\+View@{E\+S\+Chat\+View}}
+\subsubsection[{typing\+Indicator\+Load}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) typing\+Indicator\+Load 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_e_s_chat_view_a7d14fa2c5530ba80a298775fc55652cb}
+Display the typing indicator if the other user is currently typing \hypertarget{interface_e_s_chat_view_a462c60d9db099450c14c108b034a46af}{}\index{E\+S\+Chat\+View@{E\+S\+Chat\+View}!typing\+Indicator\+Save\+:@{typing\+Indicator\+Save\+:}}
+\index{typing\+Indicator\+Save\+:@{typing\+Indicator\+Save\+:}!E\+S\+Chat\+View@{E\+S\+Chat\+View}}
+\subsubsection[{typing\+Indicator\+Save\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) typing\+Indicator\+Save\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Number $\ast$)}]{typing}
+\end{DoxyParamCaption}
+}\label{interface_e_s_chat_view_a462c60d9db099450c14c108b034a46af}
+Typing state changed, save this as a number
+
+
+\begin{DoxyParams}{Parameters}
+{\em typing} & Number telling us if the user types currently or not \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_e_s_chat_view_aa66b5195264392b51c7852578f4d8579}{}\index{E\+S\+Chat\+View@{E\+S\+Chat\+View}!update\+Message\+:@{update\+Message\+:}}
+\index{update\+Message\+:@{update\+Message\+:}!E\+S\+Chat\+View@{E\+S\+Chat\+View}}
+\subsubsection[{update\+Message\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) update\+Message\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Dictionary $\ast$)}]{item}
+\end{DoxyParamCaption}
+}\label{interface_e_s_chat_view_aa66b5195264392b51c7852578f4d8579}
+Update the firebase item and indicate that there is a new message, thus we have to change the read receipts etc.
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & The item containing the message data \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Classes/\+Chat/E\+S\+Chat\+View.\+h\item 
+Classes/\+Chat/E\+S\+Chat\+View.\+m\end{DoxyCompactItemize}

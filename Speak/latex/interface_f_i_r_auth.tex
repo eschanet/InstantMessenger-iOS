@@ -1,0 +1,359 @@
+\hypertarget{interface_f_i_r_auth}{}\section{F\+I\+R\+Auth Class Reference}
+\label{interface_f_i_r_auth}\index{F\+I\+R\+Auth@{F\+I\+R\+Auth}}
+
+
+Manages authentication for Firebase apps.  
+
+
+
+
+{\ttfamily \#import $<$F\+I\+R\+Auth.\+h$>$}
+
+Inheritance diagram for F\+I\+R\+Auth\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_f_i_r_auth}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_f_i_r_auth_ac4a9c5d6d9c6858401fbacc74bee84c0}{}(nullable instancetype) -\/ {\bfseries N\+S\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}\label{interface_f_i_r_auth_ac4a9c5d6d9c6858401fbacc74bee84c0}
+
+\item 
+(void) -\/ \hyperlink{interface_f_i_r_auth_a73b6d5a22b27b7d73a686d70fa275718}{fetch\+Providers\+For\+Email\+:completion\+:}
+\begin{DoxyCompactList}\small\item\em Fetches the list of Id\+Ps that can be used for signing in with the provided email address. Useful for an \char`\"{}identifier-\/first\char`\"{} sign-\/in flow. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{interface_f_i_r_auth_a4156646de978ff01c961edb6eab8f937}{sign\+In\+With\+Email\+:password\+:completion\+:}
+\begin{DoxyCompactList}\small\item\em Signs in using an email address and password. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{interface_f_i_r_auth_a693aa99f8a912fa89b370917c47b06ab}{sign\+In\+With\+Credential\+:completion\+:}
+\begin{DoxyCompactList}\small\item\em Asynchronously signs in to Firebase with the given 3rd-\/party credentials (e.\+g. a Facebook login Access Token, a Google I\+D Token/\+Access Token pair, etc.) \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{interface_f_i_r_auth_a0ffa43acd046e5ee42967106f73556f6}{sign\+In\+Anonymously\+With\+Completion\+:}
+\begin{DoxyCompactList}\small\item\em Asynchronously creates and becomes an anonymous user. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{interface_f_i_r_auth_ad3ac6db56df7193d2b40648cd9ffd060}{sign\+In\+With\+Custom\+Token\+:completion\+:}
+\begin{DoxyCompactList}\small\item\em Asynchronously signs in to Firebase with the given Auth token. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{interface_f_i_r_auth_aeaee7fcef878990954f8e72f7278cd7d}{create\+User\+With\+Email\+:password\+:completion\+:}
+\begin{DoxyCompactList}\small\item\em Creates and, on success, signs in a user with the given email address and password. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{interface_f_i_r_auth_a05d5232f0666b7c197a9296fee7c3b68}{send\+Password\+Reset\+With\+Email\+:completion\+:}
+\begin{DoxyCompactList}\small\item\em Initiates a password reset for the given email address. \end{DoxyCompactList}\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_f_i_r_auth_ab0d5111f05c3f1906243852cc8ef41b1}{sign\+Out\+:}
+\begin{DoxyCompactList}\small\item\em Signs out the current user. \end{DoxyCompactList}\item 
+(F\+I\+R\+Auth\+State\+Did\+Change\+Listener\+Handle) -\/ \hyperlink{interface_f_i_r_auth_ad02b7299781bfc4b3509adc4f90359c3}{add\+Auth\+State\+Did\+Change\+Listener\+:}
+\begin{DoxyCompactList}\small\item\em Registers a block as an \char`\"{}auth state did change\char`\"{} listener. To be invoked when\+: \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{interface_f_i_r_auth_ab9f0ef0de75cb75153a933047bb5daec}{remove\+Auth\+State\+Did\+Change\+Listener\+:}
+\begin{DoxyCompactList}\small\item\em Unregisters a block as an \char`\"{}auth state did change\char`\"{} listener. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_f_i_r_auth_a4278a762b4973096c3f6030b6f397615}{}(auth() + {\bfseries N\+S\+\_\+\+S\+W\+I\+F\+T\+\_\+\+N\+A\+M\+E}\label{interface_f_i_r_auth_a4278a762b4973096c3f6030b6f397615}
+
+\item 
+(nullable \hyperlink{interface_f_i_r_auth}{F\+I\+R\+Auth} $\ast$) + \hyperlink{interface_f_i_r_auth_ae1ef631c29aac73a5a2f1ab417ebda71}{auth\+With\+App\+:}
+\begin{DoxyCompactList}\small\item\em Gets the auth object for a {\ttfamily \hyperlink{interface_f_i_r_app}{F\+I\+R\+App}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_f_i_r_auth_a77ea6c7265f8d8ab8dd15072bd91e637}{}\hyperlink{interface_f_i_r_app}{F\+I\+R\+App} $\ast$ \hyperlink{interface_f_i_r_auth_a77ea6c7265f8d8ab8dd15072bd91e637}{app}\label{interface_f_i_r_auth_a77ea6c7265f8d8ab8dd15072bd91e637}
+
+\begin{DoxyCompactList}\small\item\em Gets the {\ttfamily \hyperlink{interface_f_i_r_app}{F\+I\+R\+App}} object that this auth object is connected to. \end{DoxyCompactList}\item 
+\hypertarget{interface_f_i_r_auth_ad68f58c2984dc0418daed4f3aab8d52f}{}\hyperlink{interface_f_i_r_user}{F\+I\+R\+User} $\ast$ \hyperlink{interface_f_i_r_auth_ad68f58c2984dc0418daed4f3aab8d52f}{current\+User}\label{interface_f_i_r_auth_ad68f58c2984dc0418daed4f3aab8d52f}
+
+\begin{DoxyCompactList}\small\item\em Synchronously gets the cached current user, or null if there is none. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Manages authentication for Firebase apps. 
+
+\begin{DoxyRemark}{Remarks}
+This class is thread-\/safe. 
+\end{DoxyRemark}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_f_i_r_auth_ad02b7299781bfc4b3509adc4f90359c3}{}\index{F\+I\+R\+Auth@{F\+I\+R\+Auth}!add\+Auth\+State\+Did\+Change\+Listener\+:@{add\+Auth\+State\+Did\+Change\+Listener\+:}}
+\index{add\+Auth\+State\+Did\+Change\+Listener\+:@{add\+Auth\+State\+Did\+Change\+Listener\+:}!F\+I\+R\+Auth@{F\+I\+R\+Auth}}
+\subsubsection[{add\+Auth\+State\+Did\+Change\+Listener\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ add\+Auth\+State\+Did\+Change\+Listener\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf F\+I\+R\+Auth\+State\+Did\+Change\+Listener\+Block})}]{listener}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_auth_ad02b7299781bfc4b3509adc4f90359c3}
+
+
+Registers a block as an \char`\"{}auth state did change\char`\"{} listener. To be invoked when\+: 
+
+
+\begin{DoxyItemize}
+\item The block is registered as a listener,
+\item The current user changes, or,
+\item The current user\textquotesingle{}s access token changes. 
+\begin{DoxyParams}{Parameters}
+{\em listener} & The block to be invoked. The block is always invoked asynchronously on the main thread, even for it\textquotesingle{}s initial invocation after having been added as a listener. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+The block is invoked immediately after adding it according to it\textquotesingle{}s standard invocation semantics, asynchronously on the main thread. Users should pay special attention to making sure the block does not inadvertently retain objects which should not be retained by the long-\/lived block. The block itself will be retained by {\ttfamily \hyperlink{interface_f_i_r_auth}{F\+I\+R\+Auth}} until it is unregistered or until the {\ttfamily \hyperlink{interface_f_i_r_auth}{F\+I\+R\+Auth}} instance is otherwise deallocated. 
+\end{DoxyRemark}
+\begin{DoxyReturn}{Returns}
+A handle useful for manually unregistering the block as a listener. 
+\end{DoxyReturn}
+
+\end{DoxyItemize}\hypertarget{interface_f_i_r_auth_ae1ef631c29aac73a5a2f1ab417ebda71}{}\index{F\+I\+R\+Auth@{F\+I\+R\+Auth}!auth\+With\+App\+:@{auth\+With\+App\+:}}
+\index{auth\+With\+App\+:@{auth\+With\+App\+:}!F\+I\+R\+Auth@{F\+I\+R\+Auth}}
+\subsubsection[{auth\+With\+App\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ auth\+With\+App\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf F\+I\+R\+App} $\ast$)}]{app}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_auth_ae1ef631c29aac73a5a2f1ab417ebda71}
+
+
+Gets the auth object for a {\ttfamily \hyperlink{interface_f_i_r_app}{F\+I\+R\+App}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em app} & The {\ttfamily \hyperlink{interface_f_i_r_app}{F\+I\+R\+App}} for which to retrieve the associated {\ttfamily \hyperlink{interface_f_i_r_auth}{F\+I\+R\+Auth}} instance. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The {\ttfamily \hyperlink{interface_f_i_r_auth}{F\+I\+R\+Auth}} instance associated with the given {\ttfamily \hyperlink{interface_f_i_r_app}{F\+I\+R\+App}}. 
+\end{DoxyReturn}
+\hypertarget{interface_f_i_r_auth_aeaee7fcef878990954f8e72f7278cd7d}{}\index{F\+I\+R\+Auth@{F\+I\+R\+Auth}!create\+User\+With\+Email\+:password\+:completion\+:@{create\+User\+With\+Email\+:password\+:completion\+:}}
+\index{create\+User\+With\+Email\+:password\+:completion\+:@{create\+User\+With\+Email\+:password\+:completion\+:}!F\+I\+R\+Auth@{F\+I\+R\+Auth}}
+\subsubsection[{create\+User\+With\+Email\+:password\+:completion\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ create\+User\+With\+Email\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{email}
+\item[{password:(N\+S\+String $\ast$)}]{password}
+\item[{completion:(nullable {\bf F\+I\+R\+Auth\+Result\+Callback})}]{completion}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_auth_aeaee7fcef878990954f8e72f7278cd7d}
+
+
+Creates and, on success, signs in a user with the given email address and password. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em email} & The user\textquotesingle{}s email address. \\
+\hline
+{\em password} & The user\textquotesingle{}s desired password. \\
+\hline
+{\em completion} & Optionally; a block which is invoked when the sign up flow finishes, or is canceled. Invoked asynchronously on the main thread in the future. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+Possible error codes\+:
+\begin{DoxyItemize}
+\item {\ttfamily F\+I\+R\+Auth\+Error\+Code\+Invalid\+Email} -\/ Indicates the email address is malformed.
+\item {\ttfamily F\+I\+R\+Auth\+Error\+Code\+Email\+Already\+In\+Use} Indicates the email used to attempt sign up already exists. Call fetch\+Providers\+For\+Email to check which sign-\/in mechanisms the user used, and prompt the user to sign in with one of those.
+\item {\ttfamily F\+I\+R\+Auth\+Error\+Code\+Operation\+Not\+Allowed} Indicates that email and password accounts are not enabled. Enable them in the Auth section of the Firebase console.
+\item {\ttfamily F\+I\+R\+Auth\+Error\+Code\+Weak\+Password} Indicates an attempt to set a password that is considered too weak. The N\+S\+Localized\+Failure\+Reason\+Error\+Key field in the N\+S\+Error.\+user\+Info dictionary object will contain more detailed explanation that can be shown to the user.
+\item See {\ttfamily \hyperlink{interface_f_i_r_auth_errors}{F\+I\+R\+Auth\+Errors}} for a list of error codes that are common to all A\+P\+I methods. 
+\end{DoxyItemize}
+\end{DoxyRemark}
+\hypertarget{interface_f_i_r_auth_a73b6d5a22b27b7d73a686d70fa275718}{}\index{F\+I\+R\+Auth@{F\+I\+R\+Auth}!fetch\+Providers\+For\+Email\+:completion\+:@{fetch\+Providers\+For\+Email\+:completion\+:}}
+\index{fetch\+Providers\+For\+Email\+:completion\+:@{fetch\+Providers\+For\+Email\+:completion\+:}!F\+I\+R\+Auth@{F\+I\+R\+Auth}}
+\subsubsection[{fetch\+Providers\+For\+Email\+:completion\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ fetch\+Providers\+For\+Email\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{email}
+\item[{completion:(nullable {\bf F\+I\+R\+Provider\+Query\+Callback})}]{completion}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_auth_a73b6d5a22b27b7d73a686d70fa275718}
+
+
+Fetches the list of Id\+Ps that can be used for signing in with the provided email address. Useful for an \char`\"{}identifier-\/first\char`\"{} sign-\/in flow. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em email} & The email address for which to obtain a list of identity providers. \\
+\hline
+{\em completion} & Optionally; a block which is invoked when the list of providers for the specified email address is ready or an error was encountered. Invoked asynchronously on the main thread in the future. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+Possible error codes\+:
+\begin{DoxyItemize}
+\item {\ttfamily F\+I\+R\+Auth\+Error\+Code\+Invalid\+Email} -\/ Indicates the email address is malformed.
+\item See {\ttfamily \hyperlink{interface_f_i_r_auth_errors}{F\+I\+R\+Auth\+Errors}} for a list of error codes that are common to all A\+P\+I methods. 
+\end{DoxyItemize}
+\end{DoxyRemark}
+\hypertarget{interface_f_i_r_auth_ab9f0ef0de75cb75153a933047bb5daec}{}\index{F\+I\+R\+Auth@{F\+I\+R\+Auth}!remove\+Auth\+State\+Did\+Change\+Listener\+:@{remove\+Auth\+State\+Did\+Change\+Listener\+:}}
+\index{remove\+Auth\+State\+Did\+Change\+Listener\+:@{remove\+Auth\+State\+Did\+Change\+Listener\+:}!F\+I\+R\+Auth@{F\+I\+R\+Auth}}
+\subsubsection[{remove\+Auth\+State\+Did\+Change\+Listener\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ remove\+Auth\+State\+Did\+Change\+Listener\+: 
+\begin{DoxyParamCaption}
+\item[{(F\+I\+R\+Auth\+State\+Did\+Change\+Listener\+Handle)}]{listener\+Handle}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_auth_ab9f0ef0de75cb75153a933047bb5daec}
+
+
+Unregisters a block as an \char`\"{}auth state did change\char`\"{} listener. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em listener\+Handle} & The handle for the listener. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_f_i_r_auth_a05d5232f0666b7c197a9296fee7c3b68}{}\index{F\+I\+R\+Auth@{F\+I\+R\+Auth}!send\+Password\+Reset\+With\+Email\+:completion\+:@{send\+Password\+Reset\+With\+Email\+:completion\+:}}
+\index{send\+Password\+Reset\+With\+Email\+:completion\+:@{send\+Password\+Reset\+With\+Email\+:completion\+:}!F\+I\+R\+Auth@{F\+I\+R\+Auth}}
+\subsubsection[{send\+Password\+Reset\+With\+Email\+:completion\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ send\+Password\+Reset\+With\+Email\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{email}
+\item[{completion:(nullable {\bf F\+I\+R\+Send\+Password\+Reset\+Callback})}]{completion}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_auth_a05d5232f0666b7c197a9296fee7c3b68}
+
+
+Initiates a password reset for the given email address. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em email} & The email address of the user. \\
+\hline
+{\em completion} & Optionally; a block which is invoked when the request finishes. Invoked asynchronously on the main thread in the future. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+Possible error codes\+:
+\begin{DoxyItemize}
+\item See {\ttfamily \hyperlink{interface_f_i_r_auth_errors}{F\+I\+R\+Auth\+Errors}} for a list of error codes that are common to all A\+P\+I methods. 
+\end{DoxyItemize}
+\end{DoxyRemark}
+\hypertarget{interface_f_i_r_auth_a0ffa43acd046e5ee42967106f73556f6}{}\index{F\+I\+R\+Auth@{F\+I\+R\+Auth}!sign\+In\+Anonymously\+With\+Completion\+:@{sign\+In\+Anonymously\+With\+Completion\+:}}
+\index{sign\+In\+Anonymously\+With\+Completion\+:@{sign\+In\+Anonymously\+With\+Completion\+:}!F\+I\+R\+Auth@{F\+I\+R\+Auth}}
+\subsubsection[{sign\+In\+Anonymously\+With\+Completion\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ sign\+In\+Anonymously\+With\+Completion\+: 
+\begin{DoxyParamCaption}
+\item[{(nullable {\bf F\+I\+R\+Auth\+Result\+Callback})}]{completion}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_auth_a0ffa43acd046e5ee42967106f73556f6}
+
+
+Asynchronously creates and becomes an anonymous user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em completion} & Optionally; a block which is invoked when the sign in finishes, or is canceled. Invoked asynchronously on the main thread in the future. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+If there is already an anonymous user signed in, that user will be returned instead. If there is any other existing user signed in, that user will be signed out. 
+
+Possible error codes\+:
+\begin{DoxyItemize}
+\item {\ttfamily F\+I\+R\+Auth\+Error\+Code\+Operation\+Not\+Allowed} Indicates that anonymous accounts are not enabled. Enable them in the Auth section of the Firebase console.
+\item See {\ttfamily \hyperlink{interface_f_i_r_auth_errors}{F\+I\+R\+Auth\+Errors}} for a list of error codes that are common to all A\+P\+I methods. 
+\end{DoxyItemize}
+\end{DoxyRemark}
+\hypertarget{interface_f_i_r_auth_a693aa99f8a912fa89b370917c47b06ab}{}\index{F\+I\+R\+Auth@{F\+I\+R\+Auth}!sign\+In\+With\+Credential\+:completion\+:@{sign\+In\+With\+Credential\+:completion\+:}}
+\index{sign\+In\+With\+Credential\+:completion\+:@{sign\+In\+With\+Credential\+:completion\+:}!F\+I\+R\+Auth@{F\+I\+R\+Auth}}
+\subsubsection[{sign\+In\+With\+Credential\+:completion\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ sign\+In\+With\+Credential\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf F\+I\+R\+Auth\+Credential} $\ast$)}]{credential}
+\item[{completion:(nullable {\bf F\+I\+R\+Auth\+Result\+Callback})}]{completion}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_auth_a693aa99f8a912fa89b370917c47b06ab}
+
+
+Asynchronously signs in to Firebase with the given 3rd-\/party credentials (e.\+g. a Facebook login Access Token, a Google I\+D Token/\+Access Token pair, etc.) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em credential} & The credential supplied by the Id\+P. \\
+\hline
+{\em completion} & Optionally; a block which is invoked when the sign in flow finishes, or is canceled. Invoked asynchronously on the main thread in the future. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+Possible error codes\+:
+\begin{DoxyItemize}
+\item {\ttfamily F\+I\+R\+Auth\+Error\+Code\+Invalid\+Credential} Indicates the supplied credential is invalid. This could happen if it has expired or it is malformed.
+\item {\ttfamily F\+I\+R\+Auth\+Error\+Code\+Operation\+Not\+Allowed} Indicates that accounts with the identity provider represented by the credential are not enabled. Enable them in the Auth section of the Firebase console.
+\item {\ttfamily F\+I\+R\+Auth\+Error\+Code\+Email\+Already\+In\+Use} Indicates the email asserted by the credential (e.\+g. the email in a Facebook access token) is already in use by an existing account, that cannot be authenticated with this sign-\/in method. Call fetch\+Providers\+For\+Email for this user’s email and then prompt them to sign in with any of the sign-\/in providers returned. This error will only be thrown if the “\+One account per email address” setting is enabled in the Firebase console, under Auth settings. -\/ Please note that the error code raised in this specific situation may not be the same on Web and Android.
+\item {\ttfamily F\+I\+R\+Auth\+Error\+Code\+User\+Disabled} Indicates the user\textquotesingle{}s account is disabled.
+\item {\ttfamily F\+I\+R\+Auth\+Error\+Code\+Wrong\+Password} Indicates the user attempted sign in with a incorrect password, if credential is of the type Email\+Password\+Auth\+Credential.
+\item See {\ttfamily \hyperlink{interface_f_i_r_auth_errors}{F\+I\+R\+Auth\+Errors}} for a list of error codes that are common to all A\+P\+I methods. 
+\end{DoxyItemize}
+\end{DoxyRemark}
+\hypertarget{interface_f_i_r_auth_ad3ac6db56df7193d2b40648cd9ffd060}{}\index{F\+I\+R\+Auth@{F\+I\+R\+Auth}!sign\+In\+With\+Custom\+Token\+:completion\+:@{sign\+In\+With\+Custom\+Token\+:completion\+:}}
+\index{sign\+In\+With\+Custom\+Token\+:completion\+:@{sign\+In\+With\+Custom\+Token\+:completion\+:}!F\+I\+R\+Auth@{F\+I\+R\+Auth}}
+\subsubsection[{sign\+In\+With\+Custom\+Token\+:completion\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ sign\+In\+With\+Custom\+Token\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{token}
+\item[{completion:(nullable {\bf F\+I\+R\+Auth\+Result\+Callback})}]{completion}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_auth_ad3ac6db56df7193d2b40648cd9ffd060}
+
+
+Asynchronously signs in to Firebase with the given Auth token. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em token} & A self-\/signed custom auth token. \\
+\hline
+{\em completion} & Optionally; a block which is invoked when the sign in finishes, or is canceled. Invoked asynchronously on the main thread in the future. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+Possible error codes\+:
+\begin{DoxyItemize}
+\item {\ttfamily F\+I\+R\+Auth\+Error\+Code\+Invalid\+Custom\+Token} Indicates a validation error with the custom token.
+\item {\ttfamily F\+I\+R\+Auth\+Error\+Code\+Custom\+Token\+Mismatch} Indicates the service account and the A\+P\+I key belong to different projects.
+\item See {\ttfamily \hyperlink{interface_f_i_r_auth_errors}{F\+I\+R\+Auth\+Errors}} for a list of error codes that are common to all A\+P\+I methods. 
+\end{DoxyItemize}
+\end{DoxyRemark}
+\hypertarget{interface_f_i_r_auth_a4156646de978ff01c961edb6eab8f937}{}\index{F\+I\+R\+Auth@{F\+I\+R\+Auth}!sign\+In\+With\+Email\+:password\+:completion\+:@{sign\+In\+With\+Email\+:password\+:completion\+:}}
+\index{sign\+In\+With\+Email\+:password\+:completion\+:@{sign\+In\+With\+Email\+:password\+:completion\+:}!F\+I\+R\+Auth@{F\+I\+R\+Auth}}
+\subsubsection[{sign\+In\+With\+Email\+:password\+:completion\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ sign\+In\+With\+Email\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{email}
+\item[{password:(N\+S\+String $\ast$)}]{password}
+\item[{completion:(nullable {\bf F\+I\+R\+Auth\+Result\+Callback})}]{completion}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_auth_a4156646de978ff01c961edb6eab8f937}
+
+
+Signs in using an email address and password. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em email} & The user\textquotesingle{}s email address. \\
+\hline
+{\em password} & The user\textquotesingle{}s password. \\
+\hline
+{\em completion} & Optionally; a block which is invoked when the sign in flow finishes, or is canceled. Invoked asynchronously on the main thread in the future. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+Possible error codes\+:
+\begin{DoxyItemize}
+\item {\ttfamily F\+I\+R\+Auth\+Error\+Code\+Operation\+Not\+Allowed} Indicates that email and password accounts are not enabled. Enable them in the Auth section of the Firebase console.
+\item {\ttfamily F\+I\+R\+Auth\+Error\+Code\+User\+Disabled} Indicates the user\textquotesingle{}s account is disabled.
+\item {\ttfamily F\+I\+R\+Auth\+Error\+Code\+Wrong\+Password} Indicates the user attempted sign in with an incorrect password.
+\item See {\ttfamily \hyperlink{interface_f_i_r_auth_errors}{F\+I\+R\+Auth\+Errors}} for a list of error codes that are common to all A\+P\+I methods. 
+\end{DoxyItemize}
+\end{DoxyRemark}
+\hypertarget{interface_f_i_r_auth_ab0d5111f05c3f1906243852cc8ef41b1}{}\index{F\+I\+R\+Auth@{F\+I\+R\+Auth}!sign\+Out\+:@{sign\+Out\+:}}
+\index{sign\+Out\+:@{sign\+Out\+:}!F\+I\+R\+Auth@{F\+I\+R\+Auth}}
+\subsubsection[{sign\+Out\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ sign\+Out\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Error $\ast$\+\_\+\+Nullable $\ast$\+\_\+\+Nullable)}]{error}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_auth_ab0d5111f05c3f1906243852cc8ef41b1}
+
+
+Signs out the current user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em error} & Optionally; if an error occurs, upon return contains an N\+S\+Error object that describes the problem; is nil otherwise. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+when the sign out request was successful.  otherwise. 
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+Possible error codes\+:
+\begin{DoxyItemize}
+\item {\ttfamily F\+I\+R\+Auth\+Error\+Code\+Keychain\+Error} Indicated an error occurred when accessing the keychain. The {\ttfamily N\+S\+Localized\+Failure\+Reason\+Error\+Key} field in the {\ttfamily N\+S\+Error.\+user\+Info} dictionary will contain more information about the error encountered. 
+\end{DoxyItemize}
+\end{DoxyRemark}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Frameworks/\+Firebase\+Auth.\+framework/\+Headers/\hyperlink{_f_i_r_auth_8h}{F\+I\+R\+Auth.\+h}\end{DoxyCompactItemize}

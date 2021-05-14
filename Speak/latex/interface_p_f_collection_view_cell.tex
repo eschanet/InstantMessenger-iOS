@@ -1,0 +1,65 @@
+\hypertarget{interface_p_f_collection_view_cell}{}\section{P\+F\+Collection\+View\+Cell Class Reference}
+\label{interface_p_f_collection_view_cell}\index{P\+F\+Collection\+View\+Cell@{P\+F\+Collection\+View\+Cell}}
+
+
+{\ttfamily \#import $<$P\+F\+Collection\+View\+Cell.\+h$>$}
+
+Inheritance diagram for P\+F\+Collection\+View\+Cell\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_p_f_collection_view_cell}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_p_f_collection_view_cell_af559fdc11609064724577a2c0366752d}{update\+From\+Object\+:}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+U\+I\+Label $\ast$ \hyperlink{interface_p_f_collection_view_cell_a7b74bb02a74dc52ce87a7b6b45d9feaf}{text\+Label}
+\item 
+P\+F\+Image\+View $\ast$ \hyperlink{interface_p_f_collection_view_cell_a8731a5d627f633ddd94e025606eafe72}{image\+View}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \hyperlink{interface_p_f_collection_view_cell}{P\+F\+Collection\+View\+Cell}} class represents a collection view cell which can download and display remote images stored on \hyperlink{interface_parse}{Parse} as well as has a default simple text label. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_p_f_collection_view_cell_af559fdc11609064724577a2c0366752d}{}\index{P\+F\+Collection\+View\+Cell@{P\+F\+Collection\+View\+Cell}!update\+From\+Object\+:@{update\+From\+Object\+:}}
+\index{update\+From\+Object\+:@{update\+From\+Object\+:}!P\+F\+Collection\+View\+Cell@{P\+F\+Collection\+View\+Cell}}
+\subsubsection[{update\+From\+Object\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) update\+From\+Object\+: 
+\begin{DoxyParamCaption}
+\item[{(nullable {\bf P\+F\+Object} $\ast$)}]{object}
+\end{DoxyParamCaption}
+}\label{interface_p_f_collection_view_cell_af559fdc11609064724577a2c0366752d}
+This method should update all the relevant information inside a subclass of {\ttfamily \hyperlink{interface_p_f_collection_view_cell}{P\+F\+Collection\+View\+Cell}}.
+
+This method is automatically called by {\ttfamily P\+F\+Query\+Collection\+View\+Controller} whenever the cell should display new information. By default this method does nothing.
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & An instance of {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}} to update from. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_p_f_collection_view_cell_a8731a5d627f633ddd94e025606eafe72}{}\index{P\+F\+Collection\+View\+Cell@{P\+F\+Collection\+View\+Cell}!image\+View@{image\+View}}
+\index{image\+View@{image\+View}!P\+F\+Collection\+View\+Cell@{P\+F\+Collection\+View\+Cell}}
+\subsubsection[{image\+View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (P\+F\+Image\+View$\ast$) image\+View\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_p_f_collection_view_cell_a8731a5d627f633ddd94e025606eafe72}
+The lazy-\/loaded image\+View of the collection view cell.
+
+\begin{DoxySeeAlso}{See also}
+P\+F\+Image\+View 
+\end{DoxySeeAlso}
+\hypertarget{interface_p_f_collection_view_cell_a7b74bb02a74dc52ce87a7b6b45d9feaf}{}\index{P\+F\+Collection\+View\+Cell@{P\+F\+Collection\+View\+Cell}!text\+Label@{text\+Label}}
+\index{text\+Label@{text\+Label}!P\+F\+Collection\+View\+Cell@{P\+F\+Collection\+View\+Cell}}
+\subsubsection[{text\+Label}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Label$\ast$) text\+Label\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_p_f_collection_view_cell_a7b74bb02a74dc52ce87a7b6b45d9feaf}
+A simple lazy-\/loaded label for the collection view cell. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Frameworks/\+Parse\+U\+I.\+framework/\+Headers/P\+F\+Collection\+View\+Cell.\+h\end{DoxyCompactItemize}

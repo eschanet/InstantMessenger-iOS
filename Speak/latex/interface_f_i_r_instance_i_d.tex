@@ -1,0 +1,243 @@
+\hypertarget{interface_f_i_r_instance_i_d}{}\section{F\+I\+R\+Instance\+I\+D Class Reference}
+\label{interface_f_i_r_instance_i_d}\index{F\+I\+R\+Instance\+I\+D@{F\+I\+R\+Instance\+I\+D}}
+
+
+{\ttfamily \#import $<$F\+I\+R\+Instance\+I\+D.\+h$>$}
+
+Inheritance diagram for F\+I\+R\+Instance\+I\+D\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_f_i_r_instance_i_d}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+((unavailable(\char`\"{}Use +instance\+I\+D instead.\char`\"{}) -\/ \hyperlink{interface_f_i_r_instance_i_d_af279c596c921d128d0e93ee83f1391f1}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}
+\item 
+(void) -\/ \hyperlink{interface_f_i_r_instance_i_d_a7cd9dde64e899e05a27397d3ee3fb398}{set\+A\+P\+N\+S\+Token\+:type\+:}
+\item 
+(nullable N\+S\+String $\ast$) -\/ \hyperlink{interface_f_i_r_instance_i_d_a24c0ad9b49c659939163ebdcadabb91b}{token}
+\item 
+(void) -\/ \hyperlink{interface_f_i_r_instance_i_d_a7a80d4f005651f1ee55c99ccbb46d937}{token\+With\+Authorized\+Entity\+:scope\+:options\+:handler\+:}
+\item 
+(void) -\/ \hyperlink{interface_f_i_r_instance_i_d_ac6591ae2dbe461f7b4a1b5556929e271}{delete\+Token\+With\+Authorized\+Entity\+:scope\+:handler\+:}
+\item 
+(void) -\/ \hyperlink{interface_f_i_r_instance_i_d_a1b25f9da3a7d07337ea21fe67cfd20de}{get\+I\+D\+With\+Handler\+:}
+\item 
+(void) -\/ \hyperlink{interface_f_i_r_instance_i_d_a51b2466dd3f41ad16756cdfb592391cc}{delete\+I\+D\+With\+Handler\+:}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instance\+I\+D() + \hyperlink{interface_f_i_r_instance_i_d_a8bbb19df485d7968f771d23d91f017d0}{N\+S\+\_\+\+S\+W\+I\+F\+T\+\_\+\+N\+A\+M\+E}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+F\+O\+U\+N\+D\+A\+T\+I\+O\+N\+\_\+\+E\+X\+P\+O\+R\+T N\+S\+String $\ast$\+\_\+\+\_\+nonnull const \hyperlink{interface_f_i_r_instance_i_d_a458ffe70dc5bb35b35a38696893840fd}{k\+F\+I\+R\+Instance\+I\+D\+Scope\+Firebase\+Messaging}
+\end{DoxyCompactItemize}
+\subsection*{Related Functions}
+(Note that these are not member functions.) \begin{DoxyCompactItemize}
+\item 
+typedef void($^\wedge$ \hyperlink{interface_f_i_r_instance_i_d_a47838dd5b1538db6035b93ce8be1a63a}{F\+I\+R\+Instance\+I\+D\+Token\+Handler}) (N\+S\+String $\ast$\+\_\+\+\_\+nullable \hyperlink{interface_f_i_r_instance_i_d_a24c0ad9b49c659939163ebdcadabb91b}{token}, N\+S\+Error $\ast$\+\_\+\+\_\+nullable error)
+\item 
+typedef void($^\wedge$ \hyperlink{interface_f_i_r_instance_i_d_a511dc978f832ebb91d45a67c66b5873c}{F\+I\+R\+Instance\+I\+D\+Delete\+Token\+Handler}) (N\+S\+Error $\ast$\+\_\+\+\_\+nullable error)
+\item 
+typedef void($^\wedge$ \hyperlink{interface_f_i_r_instance_i_d_af36e2c9155abb05a1a05092d93322229}{F\+I\+R\+Instance\+I\+D\+Handler}) (N\+S\+String $\ast$\+\_\+\+\_\+nullable identity, N\+S\+Error $\ast$\+\_\+\+\_\+nullable error)
+\item 
+typedef void($^\wedge$ \hyperlink{interface_f_i_r_instance_i_d_ab51fbd359aa730c0d3e596b7f122f9d2}{F\+I\+R\+Instance\+I\+D\+Delete\+Handler}) (N\+S\+Error $\ast$\+\_\+\+\_\+nullable error)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Instance I\+D provides a unique identifier for each app instance and a mechanism to authenticate and authorize actions (for example, sending a G\+C\+M message).
+
+Instance I\+D is long lived but, may be reset if the device is not used for a long time or the Instance I\+D service detects a problem. If Instance I\+D is reset, the app will be notified with a {\ttfamily com.\+firebase.\+iid.\+token-\/refresh} notification.
+
+If the Instance I\+D has become invalid, the app can request a new one and send it to the app server. To prove ownership of Instance I\+D and to allow servers to access data or services associated with the app, call {\ttfamily \mbox{[}\hyperlink{interface_f_i_r_instance_i_d}{F\+I\+R\+Instance\+I\+D} token\+With\+Authorized\+Entity\+:scope\+:options\+:handler\mbox{]}}. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_f_i_r_instance_i_d_af279c596c921d128d0e93ee83f1391f1}{}\index{F\+I\+R\+Instance\+I\+D@{F\+I\+R\+Instance\+I\+D}!\+\_\+\+\_\+attribute\+\_\+\+\_\+@{\+\_\+\+\_\+attribute\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+attribute\+\_\+\+\_\+@{\+\_\+\+\_\+attribute\+\_\+\+\_\+}!F\+I\+R\+Instance\+I\+D@{F\+I\+R\+Instance\+I\+D}}
+\subsubsection[{\+\_\+\+\_\+attribute\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ((unavailable(\char`\"{}Use +instance\+I\+D instead.\char`\"{}) \+\_\+\+\_\+attribute\+\_\+\+\_\+ 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_instance_i_d_af279c596c921d128d0e93ee83f1391f1}
+Unavailable. Use +instance\+I\+D instead. \hypertarget{interface_f_i_r_instance_i_d_a51b2466dd3f41ad16756cdfb592391cc}{}\index{F\+I\+R\+Instance\+I\+D@{F\+I\+R\+Instance\+I\+D}!delete\+I\+D\+With\+Handler\+:@{delete\+I\+D\+With\+Handler\+:}}
+\index{delete\+I\+D\+With\+Handler\+:@{delete\+I\+D\+With\+Handler\+:}!F\+I\+R\+Instance\+I\+D@{F\+I\+R\+Instance\+I\+D}}
+\subsubsection[{delete\+I\+D\+With\+Handler\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) delete\+I\+D\+With\+Handler\+: 
+\begin{DoxyParamCaption}
+\item[{(nonnull {\bf F\+I\+R\+Instance\+I\+D\+Delete\+Handler})}]{handler}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_instance_i_d_a51b2466dd3f41ad16756cdfb592391cc}
+Resets Instance I\+D and revokes all tokens. \hypertarget{interface_f_i_r_instance_i_d_ac6591ae2dbe461f7b4a1b5556929e271}{}\index{F\+I\+R\+Instance\+I\+D@{F\+I\+R\+Instance\+I\+D}!delete\+Token\+With\+Authorized\+Entity\+:scope\+:handler\+:@{delete\+Token\+With\+Authorized\+Entity\+:scope\+:handler\+:}}
+\index{delete\+Token\+With\+Authorized\+Entity\+:scope\+:handler\+:@{delete\+Token\+With\+Authorized\+Entity\+:scope\+:handler\+:}!F\+I\+R\+Instance\+I\+D@{F\+I\+R\+Instance\+I\+D}}
+\subsubsection[{delete\+Token\+With\+Authorized\+Entity\+:scope\+:handler\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) delete\+Token\+With\+Authorized\+Entity\+: 
+\begin{DoxyParamCaption}
+\item[{(nonnull N\+S\+String $\ast$)}]{authorized\+Entity}
+\item[{scope:(nonnull N\+S\+String $\ast$)}]{scope}
+\item[{handler:(nonnull {\bf F\+I\+R\+Instance\+I\+D\+Delete\+Token\+Handler})}]{handler}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_instance_i_d_ac6591ae2dbe461f7b4a1b5556929e271}
+Revokes access to a scope (action) for an entity previously authorized by {\ttfamily \mbox{[}\hyperlink{interface_f_i_r_instance_i_d}{F\+I\+R\+Instance\+I\+D} token\+With\+Authorized\+Entity\+:scope\+:options\+:handler\mbox{]}}.
+
+This is an asynchronous call. Call this on the main thread since Instance\+I\+D lib is not thread safe. In case token deletion fails for some reason we invoke the {\ttfamily handler} callback passed in with the appropriate error code.
+
+Note, you can only have one {\ttfamily token} or {\ttfamily delete\+Token} call for a given authorized\+Entity and scope at a point of time. Making another such call with the same authorized\+Entity and scope before the last one finishes will result in an error with code {\ttfamily Operation\+In\+Progress}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em authorized\+Entity} & Entity that must no longer have access. \\
+\hline
+{\em scope} & Action that entity is no longer authorized to perform. \\
+\hline
+{\em handler} & The handler that is invoked once the unsubscribe call ends. In case of error an appropriate error object is returned else error is nil. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_f_i_r_instance_i_d_a1b25f9da3a7d07337ea21fe67cfd20de}{}\index{F\+I\+R\+Instance\+I\+D@{F\+I\+R\+Instance\+I\+D}!get\+I\+D\+With\+Handler\+:@{get\+I\+D\+With\+Handler\+:}}
+\index{get\+I\+D\+With\+Handler\+:@{get\+I\+D\+With\+Handler\+:}!F\+I\+R\+Instance\+I\+D@{F\+I\+R\+Instance\+I\+D}}
+\subsubsection[{get\+I\+D\+With\+Handler\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) get\+I\+D\+With\+Handler\+: 
+\begin{DoxyParamCaption}
+\item[{(nonnull {\bf F\+I\+R\+Instance\+I\+D\+Handler})}]{handler}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_instance_i_d_a1b25f9da3a7d07337ea21fe67cfd20de}
+Asynchronously fetch a stable identifier that uniquely identifies the app instance. If the identifier has been revoked or has expired, this method will return a new identifier.
+
+
+\begin{DoxyParams}{Parameters}
+{\em handler} & The handler to invoke once the identifier has been fetched. In case of error an appropriate error object is returned else a valid identifier is returned and a valid identifier for the application instance. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_f_i_r_instance_i_d_a8bbb19df485d7968f771d23d91f017d0}{}\index{F\+I\+R\+Instance\+I\+D@{F\+I\+R\+Instance\+I\+D}!N\+S\+\_\+\+S\+W\+I\+F\+T\+\_\+\+N\+A\+M\+E@{N\+S\+\_\+\+S\+W\+I\+F\+T\+\_\+\+N\+A\+M\+E}}
+\index{N\+S\+\_\+\+S\+W\+I\+F\+T\+\_\+\+N\+A\+M\+E@{N\+S\+\_\+\+S\+W\+I\+F\+T\+\_\+\+N\+A\+M\+E}!F\+I\+R\+Instance\+I\+D@{F\+I\+R\+Instance\+I\+D}}
+\subsubsection[{N\+S\+\_\+\+S\+W\+I\+F\+T\+\_\+\+N\+A\+M\+E}]{\setlength{\rightskip}{0pt plus 5cm}+ (instance\+I\+D() N\+S\+\_\+\+S\+W\+I\+F\+T\+\_\+\+N\+A\+M\+E 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_instance_i_d_a8bbb19df485d7968f771d23d91f017d0}
+\hyperlink{interface_f_i_r_instance_i_d}{F\+I\+R\+Instance\+I\+D}.
+
+\begin{DoxyReturn}{Returns}
+A shared instance of \hyperlink{interface_f_i_r_instance_i_d}{F\+I\+R\+Instance\+I\+D}. 
+\end{DoxyReturn}
+\hypertarget{interface_f_i_r_instance_i_d_a7cd9dde64e899e05a27397d3ee3fb398}{}\index{F\+I\+R\+Instance\+I\+D@{F\+I\+R\+Instance\+I\+D}!set\+A\+P\+N\+S\+Token\+:type\+:@{set\+A\+P\+N\+S\+Token\+:type\+:}}
+\index{set\+A\+P\+N\+S\+Token\+:type\+:@{set\+A\+P\+N\+S\+Token\+:type\+:}!F\+I\+R\+Instance\+I\+D@{F\+I\+R\+Instance\+I\+D}}
+\subsubsection[{set\+A\+P\+N\+S\+Token\+:type\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\+A\+P\+N\+S\+Token\+: 
+\begin{DoxyParamCaption}
+\item[{(nonnull N\+S\+Data $\ast$)}]{token}
+\item[{type:(F\+I\+R\+Instance\+I\+D\+A\+P\+N\+S\+Token\+Type)}]{type}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_instance_i_d_a7cd9dde64e899e05a27397d3ee3fb398}
+Set A\+P\+N\+S token for the application. This A\+P\+N\+S token will be used to register with Firebase Messaging using {\ttfamily token} or {\ttfamily token\+With\+Authorized\+Entity\+:scope\+:options\+:handler}. If the token type is set to {\ttfamily F\+I\+R\+Instance\+I\+D\+A\+P\+N\+S\+Token\+Type\+Unknown} Instance\+I\+D will read the provisioning profile to find out the token type.
+
+
+\begin{DoxyParams}{Parameters}
+{\em token} & The A\+P\+N\+S token for the application. \\
+\hline
+{\em type} & The A\+P\+N\+S token type for the above token. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_f_i_r_instance_i_d_a24c0ad9b49c659939163ebdcadabb91b}{}\index{F\+I\+R\+Instance\+I\+D@{F\+I\+R\+Instance\+I\+D}!token@{token}}
+\index{token@{token}!F\+I\+R\+Instance\+I\+D@{F\+I\+R\+Instance\+I\+D}}
+\subsubsection[{token}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (nullable N\+S\+String $\ast$) token 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_instance_i_d_a24c0ad9b49c659939163ebdcadabb91b}
+Returns a Firebase Messaging scoped token for the firebase app.
+
+\begin{DoxyReturn}{Returns}
+Null Returns null if the device has not yet been registerd with Firebase Message else returns a valid token. 
+\end{DoxyReturn}
+\hypertarget{interface_f_i_r_instance_i_d_a7a80d4f005651f1ee55c99ccbb46d937}{}\index{F\+I\+R\+Instance\+I\+D@{F\+I\+R\+Instance\+I\+D}!token\+With\+Authorized\+Entity\+:scope\+:options\+:handler\+:@{token\+With\+Authorized\+Entity\+:scope\+:options\+:handler\+:}}
+\index{token\+With\+Authorized\+Entity\+:scope\+:options\+:handler\+:@{token\+With\+Authorized\+Entity\+:scope\+:options\+:handler\+:}!F\+I\+R\+Instance\+I\+D@{F\+I\+R\+Instance\+I\+D}}
+\subsubsection[{token\+With\+Authorized\+Entity\+:scope\+:options\+:handler\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) token\+With\+Authorized\+Entity\+: 
+\begin{DoxyParamCaption}
+\item[{(nonnull N\+S\+String $\ast$)}]{authorized\+Entity}
+\item[{scope:(nonnull N\+S\+String $\ast$)}]{scope}
+\item[{options:(nullable N\+S\+Dictionary $\ast$)}]{options}
+\item[{handler:(nonnull {\bf F\+I\+R\+Instance\+I\+D\+Token\+Handler})}]{handler}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_instance_i_d_a7a80d4f005651f1ee55c99ccbb46d937}
+Returns a token that authorizes an Entity (example\+: cloud service) to perform an action on behalf of the application identified by Instance I\+D.
+
+This is similar to an O\+Auth2 token except, it applies to the application instance instead of a user.
+
+This is an asynchronous call. If the token fetching fails for some reason we invoke the completion callback with nil {\ttfamily token} and the appropriate error.
+
+Note, you can only have one {\ttfamily token} or {\ttfamily delete\+Token} call for a given authorized\+Entity and scope at any point of time. Making another such call with the same authorized\+Entity and scope before the last one finishes will result in an error with code {\ttfamily Operation\+In\+Progress}.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_f_i_r_instance_i_d}{F\+I\+R\+Instance\+I\+D} \hyperlink{interface_f_i_r_instance_i_d_ac6591ae2dbe461f7b4a1b5556929e271}{-\/ delete\+Token\+With\+Authorized\+Entity\+:scope\+:handler\+:}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em authorized\+Entity} & Entity authorized by the token. \\
+\hline
+{\em scope} & Action authorized for authorized\+Entity. \\
+\hline
+{\em options} & The extra options to be sent with your token request. The value for the {\ttfamily apns\+\_\+token} should be the N\+S\+Data object passed to U\+I\+Application\textquotesingle{}s {\ttfamily did\+Register\+For\+Remote\+Notifications\+With\+Device\+Token} method. All other keys and values in the options dict need to be instances of N\+S\+String or else they will be discarded. Bundle keys starting with \textquotesingle{}G\+C\+M.\textquotesingle{} and \textquotesingle{}G\+O\+O\+G\+L\+E.\textquotesingle{} are reserved. \\
+\hline
+{\em handler} & The callback handler which is invoked when the token is successfully fetched. In case of success a valid {\ttfamily token} and {\ttfamily nil} error are returned. In case of any error the {\ttfamily token} is nil and a valid {\ttfamily error} is returned. The valid error codes have been documented above. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{interface_f_i_r_instance_i_d_ab51fbd359aa730c0d3e596b7f122f9d2}{}\index{F\+I\+R\+Instance\+I\+D@{F\+I\+R\+Instance\+I\+D}!F\+I\+R\+Instance\+I\+D\+Delete\+Handler@{F\+I\+R\+Instance\+I\+D\+Delete\+Handler}}
+\index{F\+I\+R\+Instance\+I\+D\+Delete\+Handler@{F\+I\+R\+Instance\+I\+D\+Delete\+Handler}!F\+I\+R\+Instance\+I\+D@{F\+I\+R\+Instance\+I\+D}}
+\subsubsection[{F\+I\+R\+Instance\+I\+D\+Delete\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (typedef void($^\wedge$ F\+I\+R\+Instance\+I\+D\+Delete\+Handler) (N\+S\+Error $\ast$\+\_\+\+\_\+nullable error))\hspace{0.3cm}{\ttfamily [related]}}\label{interface_f_i_r_instance_i_d_ab51fbd359aa730c0d3e596b7f122f9d2}
+The completion handler invoked when the app identity and all the tokens associated with it are deleted. Returns a valid error object in case of failure else nil.
+
+
+\begin{DoxyParams}{Parameters}
+{\em error} & The error if deleting the identity and all the tokens associated with it fails else nil. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_f_i_r_instance_i_d_a511dc978f832ebb91d45a67c66b5873c}{}\index{F\+I\+R\+Instance\+I\+D@{F\+I\+R\+Instance\+I\+D}!F\+I\+R\+Instance\+I\+D\+Delete\+Token\+Handler@{F\+I\+R\+Instance\+I\+D\+Delete\+Token\+Handler}}
+\index{F\+I\+R\+Instance\+I\+D\+Delete\+Token\+Handler@{F\+I\+R\+Instance\+I\+D\+Delete\+Token\+Handler}!F\+I\+R\+Instance\+I\+D@{F\+I\+R\+Instance\+I\+D}}
+\subsubsection[{F\+I\+R\+Instance\+I\+D\+Delete\+Token\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (typedef void($^\wedge$ F\+I\+R\+Instance\+I\+D\+Delete\+Token\+Handler) (N\+S\+Error $\ast$\+\_\+\+\_\+nullable error))\hspace{0.3cm}{\ttfamily [related]}}\label{interface_f_i_r_instance_i_d_a511dc978f832ebb91d45a67c66b5873c}
+The completion handler invoked when the Instance\+I\+D {\ttfamily delete\+Token} returns. If the call fails we return the appropriate {\ttfamily error code} as described below
+
+
+\begin{DoxyParams}{Parameters}
+{\em error} & The error describing why deleting the token failed. See the error codes below for a more detailed description. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_f_i_r_instance_i_d_af36e2c9155abb05a1a05092d93322229}{}\index{F\+I\+R\+Instance\+I\+D@{F\+I\+R\+Instance\+I\+D}!F\+I\+R\+Instance\+I\+D\+Handler@{F\+I\+R\+Instance\+I\+D\+Handler}}
+\index{F\+I\+R\+Instance\+I\+D\+Handler@{F\+I\+R\+Instance\+I\+D\+Handler}!F\+I\+R\+Instance\+I\+D@{F\+I\+R\+Instance\+I\+D}}
+\subsubsection[{F\+I\+R\+Instance\+I\+D\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (typedef void($^\wedge$ F\+I\+R\+Instance\+I\+D\+Handler) (N\+S\+String $\ast$\+\_\+\+\_\+nullable identity, N\+S\+Error $\ast$\+\_\+\+\_\+nullable error))\hspace{0.3cm}{\ttfamily [related]}}\label{interface_f_i_r_instance_i_d_af36e2c9155abb05a1a05092d93322229}
+The completion handler invoked when the app identity is created. If the identity wasn\textquotesingle{}t created for some reason we return the appropriate error code.
+
+
+\begin{DoxyParams}{Parameters}
+{\em identity} & A valid identity for the app instance, nil if there was an error while creating an identity. \\
+\hline
+{\em error} & The error if fetching the identity fails else nil. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_f_i_r_instance_i_d_a47838dd5b1538db6035b93ce8be1a63a}{}\index{F\+I\+R\+Instance\+I\+D@{F\+I\+R\+Instance\+I\+D}!F\+I\+R\+Instance\+I\+D\+Token\+Handler@{F\+I\+R\+Instance\+I\+D\+Token\+Handler}}
+\index{F\+I\+R\+Instance\+I\+D\+Token\+Handler@{F\+I\+R\+Instance\+I\+D\+Token\+Handler}!F\+I\+R\+Instance\+I\+D@{F\+I\+R\+Instance\+I\+D}}
+\subsubsection[{F\+I\+R\+Instance\+I\+D\+Token\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (typedef void($^\wedge$ F\+I\+R\+Instance\+I\+D\+Token\+Handler) (N\+S\+String $\ast$\+\_\+\+\_\+nullable {\bf token}, N\+S\+Error $\ast$\+\_\+\+\_\+nullable error))\hspace{0.3cm}{\ttfamily [related]}}\label{interface_f_i_r_instance_i_d_a47838dd5b1538db6035b93ce8be1a63a}
+The completion handler invoked when the Instance\+I\+D token returns. If the call fails we return the appropriate {\ttfamily error code} as described below.
+
+
+\begin{DoxyParams}{Parameters}
+{\em token} & The valid token as returned by Instance\+I\+D backend.\\
+\hline
+{\em error} & The error describing why generating a new token failed. See the error codes below for a more detailed description. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{interface_f_i_r_instance_i_d_a458ffe70dc5bb35b35a38696893840fd}{}\index{F\+I\+R\+Instance\+I\+D@{F\+I\+R\+Instance\+I\+D}!k\+F\+I\+R\+Instance\+I\+D\+Scope\+Firebase\+Messaging@{k\+F\+I\+R\+Instance\+I\+D\+Scope\+Firebase\+Messaging}}
+\index{k\+F\+I\+R\+Instance\+I\+D\+Scope\+Firebase\+Messaging@{k\+F\+I\+R\+Instance\+I\+D\+Scope\+Firebase\+Messaging}!F\+I\+R\+Instance\+I\+D@{F\+I\+R\+Instance\+I\+D}}
+\subsubsection[{k\+F\+I\+R\+Instance\+I\+D\+Scope\+Firebase\+Messaging}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (F\+O\+U\+N\+D\+A\+T\+I\+O\+N\+\_\+\+E\+X\+P\+O\+R\+T N\+S\+String$\ast$ \+\_\+\+\_\+nonnull const) k\+F\+I\+R\+Instance\+I\+D\+Scope\+Firebase\+Messaging}\label{interface_f_i_r_instance_i_d_a458ffe70dc5bb35b35a38696893840fd}
+The scope to be used when fetching/deleting a token for Firebase Messaging. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Frameworks/\+Firebase\+Instance\+I\+D.\+framework/\+Headers/F\+I\+R\+Instance\+I\+D.\+h\end{DoxyCompactItemize}

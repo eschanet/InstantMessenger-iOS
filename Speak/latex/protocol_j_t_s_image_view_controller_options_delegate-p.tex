@@ -1,0 +1,94 @@
+\hypertarget{protocol_j_t_s_image_view_controller_options_delegate-p}{}\section{$<$J\+T\+S\+Image\+View\+Controller\+Options\+Delegate$>$ Protocol Reference}
+\label{protocol_j_t_s_image_view_controller_options_delegate-p}\index{$<$\+J\+T\+S\+Image\+View\+Controller\+Options\+Delegate$>$@{$<$\+J\+T\+S\+Image\+View\+Controller\+Options\+Delegate$>$}}
+
+
+{\ttfamily \#import $<$J\+T\+S\+Image\+View\+Controller.\+h$>$}
+
+Inheritance diagram for $<$J\+T\+S\+Image\+View\+Controller\+Options\+Delegate$>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{protocol_j_t_s_image_view_controller_options_delegate-p}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{protocol_j_t_s_image_view_controller_options_delegate-p_a3b1587114fd108563e054c6c1f2bd360}{image\+Viewer\+Should\+Fade\+Thumbnails\+During\+Presentation\+And\+Dismissal\+:}
+\item 
+(U\+I\+Font $\ast$) -\/ \hyperlink{protocol_j_t_s_image_view_controller_options_delegate-p_a31fa95c2a99452c3d3d09cfcc6d87b26}{font\+For\+Alt\+Text\+In\+Image\+Viewer\+:}
+\item 
+(U\+I\+Color $\ast$) -\/ \hyperlink{protocol_j_t_s_image_view_controller_options_delegate-p_a69555bc3496d77da6116c5b5fb9c5624}{accent\+Color\+For\+Alt\+Text\+In\+Image\+Viewer\+:}
+\item 
+(U\+I\+Color $\ast$) -\/ \hyperlink{protocol_j_t_s_image_view_controller_options_delegate-p_ac709745b90b404a93eb300325a40a47f}{background\+Color\+Image\+View\+In\+Image\+Viewer\+:}
+\item 
+(C\+G\+Float) -\/ \hyperlink{protocol_j_t_s_image_view_controller_options_delegate-p_a37bb9fe1918b81fd71fa70445428a523}{alpha\+For\+Background\+Dimming\+Overlay\+In\+Image\+Viewer\+:}
+\item 
+(C\+G\+Float) -\/ \hyperlink{protocol_j_t_s_image_view_controller_options_delegate-p_ab20b68d5566bd2251e88ee2a2bfa4c66}{background\+Blur\+Radius\+For\+Image\+Viewer\+:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+ \subsubsection*{Options Delegate }
+
+\subsection{Method Documentation}
+\hypertarget{protocol_j_t_s_image_view_controller_options_delegate-p_a69555bc3496d77da6116c5b5fb9c5624}{}\index{J\+T\+S\+Image\+View\+Controller\+Options\+Delegate-\/p@{J\+T\+S\+Image\+View\+Controller\+Options\+Delegate-\/p}!accent\+Color\+For\+Alt\+Text\+In\+Image\+Viewer\+:@{accent\+Color\+For\+Alt\+Text\+In\+Image\+Viewer\+:}}
+\index{accent\+Color\+For\+Alt\+Text\+In\+Image\+Viewer\+:@{accent\+Color\+For\+Alt\+Text\+In\+Image\+Viewer\+:}!J\+T\+S\+Image\+View\+Controller\+Options\+Delegate-\/p@{J\+T\+S\+Image\+View\+Controller\+Options\+Delegate-\/p}}
+\subsubsection[{accent\+Color\+For\+Alt\+Text\+In\+Image\+Viewer\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Color $\ast$) accent\+Color\+For\+Alt\+Text\+In\+Image\+Viewer\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf J\+T\+S\+Image\+View\+Controller} $\ast$)}]{image\+View}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_j_t_s_image_view_controller_options_delegate-p_a69555bc3496d77da6116c5b5fb9c5624}
+The tint color applied to tappable text and selection controls.
+
+This method is only used with {\ttfamily J\+T\+S\+Image\+View\+Controller\+Mode\+\_\+\+Alt\+Text}. \hypertarget{protocol_j_t_s_image_view_controller_options_delegate-p_a37bb9fe1918b81fd71fa70445428a523}{}\index{J\+T\+S\+Image\+View\+Controller\+Options\+Delegate-\/p@{J\+T\+S\+Image\+View\+Controller\+Options\+Delegate-\/p}!alpha\+For\+Background\+Dimming\+Overlay\+In\+Image\+Viewer\+:@{alpha\+For\+Background\+Dimming\+Overlay\+In\+Image\+Viewer\+:}}
+\index{alpha\+For\+Background\+Dimming\+Overlay\+In\+Image\+Viewer\+:@{alpha\+For\+Background\+Dimming\+Overlay\+In\+Image\+Viewer\+:}!J\+T\+S\+Image\+View\+Controller\+Options\+Delegate-\/p@{J\+T\+S\+Image\+View\+Controller\+Options\+Delegate-\/p}}
+\subsubsection[{alpha\+For\+Background\+Dimming\+Overlay\+In\+Image\+Viewer\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\+G\+Float) alpha\+For\+Background\+Dimming\+Overlay\+In\+Image\+Viewer\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf J\+T\+S\+Image\+View\+Controller} $\ast$)}]{image\+Viewer}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_j_t_s_image_view_controller_options_delegate-p_a37bb9fe1918b81fd71fa70445428a523}
+Defaults to {\ttfamily J\+T\+S\+Image\+View\+Controller\+\_\+\+Default\+Alpha\+For\+Background\+Dimming\+Overlay}. \hypertarget{protocol_j_t_s_image_view_controller_options_delegate-p_ab20b68d5566bd2251e88ee2a2bfa4c66}{}\index{J\+T\+S\+Image\+View\+Controller\+Options\+Delegate-\/p@{J\+T\+S\+Image\+View\+Controller\+Options\+Delegate-\/p}!background\+Blur\+Radius\+For\+Image\+Viewer\+:@{background\+Blur\+Radius\+For\+Image\+Viewer\+:}}
+\index{background\+Blur\+Radius\+For\+Image\+Viewer\+:@{background\+Blur\+Radius\+For\+Image\+Viewer\+:}!J\+T\+S\+Image\+View\+Controller\+Options\+Delegate-\/p@{J\+T\+S\+Image\+View\+Controller\+Options\+Delegate-\/p}}
+\subsubsection[{background\+Blur\+Radius\+For\+Image\+Viewer\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\+G\+Float) background\+Blur\+Radius\+For\+Image\+Viewer\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf J\+T\+S\+Image\+View\+Controller} $\ast$)}]{image\+Viewer}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_j_t_s_image_view_controller_options_delegate-p_ab20b68d5566bd2251e88ee2a2bfa4c66}
+Used with a J\+T\+S\+Image\+View\+Controller\+Background\+Style\+\_\+\+Scaled\+Dimmed\+Blurred background style.
+
+Defaults to {\ttfamily J\+T\+S\+Image\+View\+Controller\+\_\+\+Default\+Background\+Blur\+Radius}. The larger the radius, the more profound the blur effect. Larger radii may lead to decreased performance on older devices. To offset this, \hyperlink{interface_j_t_s_image_view_controller}{J\+T\+S\+Image\+View\+Controller} applies the blur effect to a scaled-\/down snapshot of the background view. \hypertarget{protocol_j_t_s_image_view_controller_options_delegate-p_ac709745b90b404a93eb300325a40a47f}{}\index{J\+T\+S\+Image\+View\+Controller\+Options\+Delegate-\/p@{J\+T\+S\+Image\+View\+Controller\+Options\+Delegate-\/p}!background\+Color\+Image\+View\+In\+Image\+Viewer\+:@{background\+Color\+Image\+View\+In\+Image\+Viewer\+:}}
+\index{background\+Color\+Image\+View\+In\+Image\+Viewer\+:@{background\+Color\+Image\+View\+In\+Image\+Viewer\+:}!J\+T\+S\+Image\+View\+Controller\+Options\+Delegate-\/p@{J\+T\+S\+Image\+View\+Controller\+Options\+Delegate-\/p}}
+\subsubsection[{background\+Color\+Image\+View\+In\+Image\+Viewer\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Color $\ast$) background\+Color\+Image\+View\+In\+Image\+Viewer\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf J\+T\+S\+Image\+View\+Controller} $\ast$)}]{image\+Viewer}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_j_t_s_image_view_controller_options_delegate-p_ac709745b90b404a93eb300325a40a47f}
+The background color of the image view itself, not to be confused with the background color for the view controller\textquotesingle{}s view.
+
+You may wish to override this method if displaying an image with dark content on an otherwise clear background color (such as images from the X\+K\+C\+D What If? site).
+
+The default color is {\ttfamily \mbox{[}U\+I\+Color clear\+Color\mbox{]}}. \hypertarget{protocol_j_t_s_image_view_controller_options_delegate-p_a31fa95c2a99452c3d3d09cfcc6d87b26}{}\index{J\+T\+S\+Image\+View\+Controller\+Options\+Delegate-\/p@{J\+T\+S\+Image\+View\+Controller\+Options\+Delegate-\/p}!font\+For\+Alt\+Text\+In\+Image\+Viewer\+:@{font\+For\+Alt\+Text\+In\+Image\+Viewer\+:}}
+\index{font\+For\+Alt\+Text\+In\+Image\+Viewer\+:@{font\+For\+Alt\+Text\+In\+Image\+Viewer\+:}!J\+T\+S\+Image\+View\+Controller\+Options\+Delegate-\/p@{J\+T\+S\+Image\+View\+Controller\+Options\+Delegate-\/p}}
+\subsubsection[{font\+For\+Alt\+Text\+In\+Image\+Viewer\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Font $\ast$) font\+For\+Alt\+Text\+In\+Image\+Viewer\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf J\+T\+S\+Image\+View\+Controller} $\ast$)}]{image\+Viewer}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_j_t_s_image_view_controller_options_delegate-p_a31fa95c2a99452c3d3d09cfcc6d87b26}
+The font used in the alt text mode\textquotesingle{}s text view.
+
+This method is only used with {\ttfamily J\+T\+S\+Image\+View\+Controller\+Mode\+\_\+\+Alt\+Text}. \hypertarget{protocol_j_t_s_image_view_controller_options_delegate-p_a3b1587114fd108563e054c6c1f2bd360}{}\index{J\+T\+S\+Image\+View\+Controller\+Options\+Delegate-\/p@{J\+T\+S\+Image\+View\+Controller\+Options\+Delegate-\/p}!image\+Viewer\+Should\+Fade\+Thumbnails\+During\+Presentation\+And\+Dismissal\+:@{image\+Viewer\+Should\+Fade\+Thumbnails\+During\+Presentation\+And\+Dismissal\+:}}
+\index{image\+Viewer\+Should\+Fade\+Thumbnails\+During\+Presentation\+And\+Dismissal\+:@{image\+Viewer\+Should\+Fade\+Thumbnails\+During\+Presentation\+And\+Dismissal\+:}!J\+T\+S\+Image\+View\+Controller\+Options\+Delegate-\/p@{J\+T\+S\+Image\+View\+Controller\+Options\+Delegate-\/p}}
+\subsubsection[{image\+Viewer\+Should\+Fade\+Thumbnails\+During\+Presentation\+And\+Dismissal\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) image\+Viewer\+Should\+Fade\+Thumbnails\+During\+Presentation\+And\+Dismissal\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf J\+T\+S\+Image\+View\+Controller} $\ast$)}]{image\+Viewer}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_j_t_s_image_view_controller_options_delegate-p_a3b1587114fd108563e054c6c1f2bd360}
+Return Y\+E\+S if you want the image thumbnail to fade to/from zero during presentation and dismissal animations.
+
+This may be helpful if the reference image in your presenting view controller has been dimmed, such as for a dark mode. \hyperlink{interface_j_t_s_image_view_controller}{J\+T\+S\+Image\+View\+Controller} otherwise presents the animated image view at full opacity, which can look jarring. 
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Vendors/J\+T\+S\+Image\+View\+Controller.\+h\end{DoxyCompactItemize}

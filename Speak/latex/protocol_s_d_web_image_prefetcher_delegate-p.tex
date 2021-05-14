@@ -1,0 +1,64 @@
+\hypertarget{protocol_s_d_web_image_prefetcher_delegate-p}{}\section{$<$S\+D\+Web\+Image\+Prefetcher\+Delegate$>$ Protocol Reference}
+\label{protocol_s_d_web_image_prefetcher_delegate-p}\index{$<$\+S\+D\+Web\+Image\+Prefetcher\+Delegate$>$@{$<$\+S\+D\+Web\+Image\+Prefetcher\+Delegate$>$}}
+Inheritance diagram for $<$S\+D\+Web\+Image\+Prefetcher\+Delegate$>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{protocol_s_d_web_image_prefetcher_delegate-p}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{protocol_s_d_web_image_prefetcher_delegate-p_a39f2c901a34761cb31b1e2b7e2c639a4}{image\+Prefetcher\+:did\+Prefetch\+U\+R\+L\+:finished\+Count\+:total\+Count\+:}
+\item 
+(void) -\/ \hyperlink{protocol_s_d_web_image_prefetcher_delegate-p_af7e00bd1ca1102c8b2e4065e529c45f2}{image\+Prefetcher\+:did\+Finish\+With\+Total\+Count\+:skipped\+Count\+:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\hypertarget{protocol_s_d_web_image_prefetcher_delegate-p_af7e00bd1ca1102c8b2e4065e529c45f2}{}\index{S\+D\+Web\+Image\+Prefetcher\+Delegate-\/p@{S\+D\+Web\+Image\+Prefetcher\+Delegate-\/p}!image\+Prefetcher\+:did\+Finish\+With\+Total\+Count\+:skipped\+Count\+:@{image\+Prefetcher\+:did\+Finish\+With\+Total\+Count\+:skipped\+Count\+:}}
+\index{image\+Prefetcher\+:did\+Finish\+With\+Total\+Count\+:skipped\+Count\+:@{image\+Prefetcher\+:did\+Finish\+With\+Total\+Count\+:skipped\+Count\+:}!S\+D\+Web\+Image\+Prefetcher\+Delegate-\/p@{S\+D\+Web\+Image\+Prefetcher\+Delegate-\/p}}
+\subsubsection[{image\+Prefetcher\+:did\+Finish\+With\+Total\+Count\+:skipped\+Count\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) image\+Prefetcher\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf S\+D\+Web\+Image\+Prefetcher} $\ast$)}]{image\+Prefetcher}
+\item[{didFinishWithTotalCount:(N\+S\+U\+Integer)}]{total\+Count}
+\item[{skippedCount:(N\+S\+U\+Integer)}]{skipped\+Count}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_s_d_web_image_prefetcher_delegate-p_af7e00bd1ca1102c8b2e4065e529c45f2}
+Called when all images are prefetched. 
+\begin{DoxyParams}{Parameters}
+{\em image\+Prefetcher} & The current image prefetcher \\
+\hline
+{\em total\+Count} & The total number of images that were prefetched (whether successful or not) \\
+\hline
+{\em skipped\+Count} & The total number of images that were skipped \\
+\hline
+\end{DoxyParams}
+\hypertarget{protocol_s_d_web_image_prefetcher_delegate-p_a39f2c901a34761cb31b1e2b7e2c639a4}{}\index{S\+D\+Web\+Image\+Prefetcher\+Delegate-\/p@{S\+D\+Web\+Image\+Prefetcher\+Delegate-\/p}!image\+Prefetcher\+:did\+Prefetch\+U\+R\+L\+:finished\+Count\+:total\+Count\+:@{image\+Prefetcher\+:did\+Prefetch\+U\+R\+L\+:finished\+Count\+:total\+Count\+:}}
+\index{image\+Prefetcher\+:did\+Prefetch\+U\+R\+L\+:finished\+Count\+:total\+Count\+:@{image\+Prefetcher\+:did\+Prefetch\+U\+R\+L\+:finished\+Count\+:total\+Count\+:}!S\+D\+Web\+Image\+Prefetcher\+Delegate-\/p@{S\+D\+Web\+Image\+Prefetcher\+Delegate-\/p}}
+\subsubsection[{image\+Prefetcher\+:did\+Prefetch\+U\+R\+L\+:finished\+Count\+:total\+Count\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) image\+Prefetcher\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf S\+D\+Web\+Image\+Prefetcher} $\ast$)}]{image\+Prefetcher}
+\item[{didPrefetchURL:(N\+S\+U\+R\+L $\ast$)}]{image\+U\+R\+L}
+\item[{finishedCount:(N\+S\+U\+Integer)}]{finished\+Count}
+\item[{totalCount:(N\+S\+U\+Integer)}]{total\+Count}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_s_d_web_image_prefetcher_delegate-p_a39f2c901a34761cb31b1e2b7e2c639a4}
+Called when an image was prefetched.
+
+
+\begin{DoxyParams}{Parameters}
+{\em image\+Prefetcher} & The current image prefetcher \\
+\hline
+{\em image\+U\+R\+L} & The image url that was prefetched \\
+\hline
+{\em finished\+Count} & The total number of images that were prefetched (successful or not) \\
+\hline
+{\em total\+Count} & The total number of images that were to be prefetched \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Vendors/\+S\+D\+Web\+Image/S\+D\+Web\+Image\+Prefetcher.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,109 @@
+\hypertarget{interface_s_d_web_image_downloader_operation}{}\section{S\+D\+Web\+Image\+Downloader\+Operation Class Reference}
+\label{interface_s_d_web_image_downloader_operation}\index{S\+D\+Web\+Image\+Downloader\+Operation@{S\+D\+Web\+Image\+Downloader\+Operation}}
+Inheritance diagram for S\+D\+Web\+Image\+Downloader\+Operation\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_s_d_web_image_downloader_operation}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_s_d_web_image_downloader_operation_af684c0887b1476b75355ff48c173daa2}{init\+With\+Request\+:options\+:progress\+:completed\+:cancelled\+:}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+N\+S\+U\+R\+L\+Request $\ast$ \hyperlink{interface_s_d_web_image_downloader_operation_a077713a2777bdd0ec9c023250aa76fc1}{request}
+\item 
+\hypertarget{interface_s_d_web_image_downloader_operation_ad5c77a9560d8abd6a69d758df1f4efa3}{}B\+O\+O\+L {\bfseries should\+Decompress\+Images}\label{interface_s_d_web_image_downloader_operation_ad5c77a9560d8abd6a69d758df1f4efa3}
+
+\item 
+B\+O\+O\+L \hyperlink{interface_s_d_web_image_downloader_operation_a14ddcfc11ad65f0cff5c11e8cda517bc}{should\+Use\+Credential\+Storage}
+\item 
+N\+S\+U\+R\+L\+Credential $\ast$ \hyperlink{interface_s_d_web_image_downloader_operation_aeecac5b9b93001026f4e90f2804c8cca}{credential}
+\item 
+S\+D\+Web\+Image\+Downloader\+Options \hyperlink{interface_s_d_web_image_downloader_operation_a4f2ad3e089bd8130321fa8cceccaafee}{options}
+\item 
+N\+S\+Integer \hyperlink{interface_s_d_web_image_downloader_operation_ace822ba63156e817ce6f6671c7c67880}{expected\+Size}
+\item 
+N\+S\+U\+R\+L\+Response $\ast$ \hyperlink{interface_s_d_web_image_downloader_operation_ab76442c8925dbc1908bbb0bc66dcf299}{response}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_s_d_web_image_downloader_operation_af684c0887b1476b75355ff48c173daa2}{}\index{S\+D\+Web\+Image\+Downloader\+Operation@{S\+D\+Web\+Image\+Downloader\+Operation}!init\+With\+Request\+:options\+:progress\+:completed\+:cancelled\+:@{init\+With\+Request\+:options\+:progress\+:completed\+:cancelled\+:}}
+\index{init\+With\+Request\+:options\+:progress\+:completed\+:cancelled\+:@{init\+With\+Request\+:options\+:progress\+:completed\+:cancelled\+:}!S\+D\+Web\+Image\+Downloader\+Operation@{S\+D\+Web\+Image\+Downloader\+Operation}}
+\subsubsection[{init\+With\+Request\+:options\+:progress\+:completed\+:cancelled\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\+With\+Request\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+U\+R\+L\+Request $\ast$)}]{request}
+\item[{options:(S\+D\+Web\+Image\+Downloader\+Options)}]{options}
+\item[{progress:(S\+D\+Web\+Image\+Downloader\+Progress\+Block)}]{progress\+Block}
+\item[{completed:(S\+D\+Web\+Image\+Downloader\+Completed\+Block)}]{completed\+Block}
+\item[{cancelled:(S\+D\+Web\+Image\+No\+Params\+Block)}]{cancel\+Block}
+\end{DoxyParamCaption}
+}\label{interface_s_d_web_image_downloader_operation_af684c0887b1476b75355ff48c173daa2}
+Initializes a {\ttfamily \hyperlink{interface_s_d_web_image_downloader_operation}{S\+D\+Web\+Image\+Downloader\+Operation}} object
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_s_d_web_image_downloader_operation}{S\+D\+Web\+Image\+Downloader\+Operation}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em request} & the U\+R\+L request \\
+\hline
+{\em options} & downloader options \\
+\hline
+{\em progress\+Block} & the block executed when a new chunk of data arrives. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+the progress block is executed on a background queue 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em completed\+Block} & the block executed when the download is done. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+the completed block is executed on the main queue for success. If errors are found, there is a chance the block will be executed on a background queue 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em cancel\+Block} & the block executed if the download (operation) is cancelled\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the initialized instance 
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_s_d_web_image_downloader_operation_aeecac5b9b93001026f4e90f2804c8cca}{}\index{S\+D\+Web\+Image\+Downloader\+Operation@{S\+D\+Web\+Image\+Downloader\+Operation}!credential@{credential}}
+\index{credential@{credential}!S\+D\+Web\+Image\+Downloader\+Operation@{S\+D\+Web\+Image\+Downloader\+Operation}}
+\subsubsection[{credential}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+U\+R\+L\+Credential$\ast$) credential\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_s_d_web_image_downloader_operation_aeecac5b9b93001026f4e90f2804c8cca}
+The credential used for authentication challenges in {\ttfamily -\/connection\+:did\+Receive\+Authentication\+Challenge\+:}.
+
+This will be overridden by any shared credentials that exist for the username or password of the request U\+R\+L, if present. \hypertarget{interface_s_d_web_image_downloader_operation_ace822ba63156e817ce6f6671c7c67880}{}\index{S\+D\+Web\+Image\+Downloader\+Operation@{S\+D\+Web\+Image\+Downloader\+Operation}!expected\+Size@{expected\+Size}}
+\index{expected\+Size@{expected\+Size}!S\+D\+Web\+Image\+Downloader\+Operation@{S\+D\+Web\+Image\+Downloader\+Operation}}
+\subsubsection[{expected\+Size}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Integer) expected\+Size\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_s_d_web_image_downloader_operation_ace822ba63156e817ce6f6671c7c67880}
+The expected size of data. \hypertarget{interface_s_d_web_image_downloader_operation_a4f2ad3e089bd8130321fa8cceccaafee}{}\index{S\+D\+Web\+Image\+Downloader\+Operation@{S\+D\+Web\+Image\+Downloader\+Operation}!options@{options}}
+\index{options@{options}!S\+D\+Web\+Image\+Downloader\+Operation@{S\+D\+Web\+Image\+Downloader\+Operation}}
+\subsubsection[{options}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (S\+D\+Web\+Image\+Downloader\+Options) options\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_s_d_web_image_downloader_operation_a4f2ad3e089bd8130321fa8cceccaafee}
+The S\+D\+Web\+Image\+Downloader\+Options for the receiver. \hypertarget{interface_s_d_web_image_downloader_operation_a077713a2777bdd0ec9c023250aa76fc1}{}\index{S\+D\+Web\+Image\+Downloader\+Operation@{S\+D\+Web\+Image\+Downloader\+Operation}!request@{request}}
+\index{request@{request}!S\+D\+Web\+Image\+Downloader\+Operation@{S\+D\+Web\+Image\+Downloader\+Operation}}
+\subsubsection[{request}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+U\+R\+L\+Request$\ast$) request\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_s_d_web_image_downloader_operation_a077713a2777bdd0ec9c023250aa76fc1}
+The request used by the operation\textquotesingle{}s connection. \hypertarget{interface_s_d_web_image_downloader_operation_ab76442c8925dbc1908bbb0bc66dcf299}{}\index{S\+D\+Web\+Image\+Downloader\+Operation@{S\+D\+Web\+Image\+Downloader\+Operation}!response@{response}}
+\index{response@{response}!S\+D\+Web\+Image\+Downloader\+Operation@{S\+D\+Web\+Image\+Downloader\+Operation}}
+\subsubsection[{response}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+U\+R\+L\+Response$\ast$) response\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_s_d_web_image_downloader_operation_ab76442c8925dbc1908bbb0bc66dcf299}
+The response returned by the operation\textquotesingle{}s connection. \hypertarget{interface_s_d_web_image_downloader_operation_a14ddcfc11ad65f0cff5c11e8cda517bc}{}\index{S\+D\+Web\+Image\+Downloader\+Operation@{S\+D\+Web\+Image\+Downloader\+Operation}!should\+Use\+Credential\+Storage@{should\+Use\+Credential\+Storage}}
+\index{should\+Use\+Credential\+Storage@{should\+Use\+Credential\+Storage}!S\+D\+Web\+Image\+Downloader\+Operation@{S\+D\+Web\+Image\+Downloader\+Operation}}
+\subsubsection[{should\+Use\+Credential\+Storage}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) should\+Use\+Credential\+Storage\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_s_d_web_image_downloader_operation_a14ddcfc11ad65f0cff5c11e8cda517bc}
+Whether the U\+R\+L connection should consult the credential storage for authenticating the connection. {\ttfamily Y\+E\+S} by default.
+
+This is the value that is returned in the {\ttfamily \hyperlink{class_n_s_u_r_l_connection_delegate-p}{N\+S\+U\+R\+L\+Connection\+Delegate}} method {\ttfamily -\/connection\+Should\+Use\+Credential\+Storage\+:}. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Vendors/\+S\+D\+Web\+Image/S\+D\+Web\+Image\+Downloader\+Operation.\+h\item 
+Vendors/\+S\+D\+Web\+Image/S\+D\+Web\+Image\+Downloader\+Operation.\+m\end{DoxyCompactItemize}

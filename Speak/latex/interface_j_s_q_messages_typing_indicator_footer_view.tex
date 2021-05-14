@@ -1,0 +1,83 @@
+\hypertarget{interface_j_s_q_messages_typing_indicator_footer_view}{}\section{J\+S\+Q\+Messages\+Typing\+Indicator\+Footer\+View Class Reference}
+\label{interface_j_s_q_messages_typing_indicator_footer_view}\index{J\+S\+Q\+Messages\+Typing\+Indicator\+Footer\+View@{J\+S\+Q\+Messages\+Typing\+Indicator\+Footer\+View}}
+
+
+{\ttfamily \#import $<$J\+S\+Q\+Messages\+Typing\+Indicator\+Footer\+View.\+h$>$}
+
+Inheritance diagram for J\+S\+Q\+Messages\+Typing\+Indicator\+Footer\+View\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_j_s_q_messages_typing_indicator_footer_view}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_j_s_q_messages_typing_indicator_footer_view_a8901993f187be90ce22fcde392319264}{configure\+With\+Ellipsis\+Color\+:message\+Bubble\+Color\+:should\+Display\+On\+Left\+:for\+Collection\+View\+:}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(U\+I\+Nib $\ast$) + \hyperlink{interface_j_s_q_messages_typing_indicator_footer_view_ad945b6c6838aafd3379a1f5cde012bb2}{nib}
+\item 
+(N\+S\+String $\ast$) + \hyperlink{interface_j_s_q_messages_typing_indicator_footer_view_accd9c376ec6c8312e48034203865a7e1}{footer\+Reuse\+Identifier}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \hyperlink{interface_j_s_q_messages_typing_indicator_footer_view}{J\+S\+Q\+Messages\+Typing\+Indicator\+Footer\+View}} class implements a reusable view that can be placed at the bottom of a {\ttfamily \hyperlink{interface_j_s_q_messages_collection_view}{J\+S\+Q\+Messages\+Collection\+View}}. This view represents a typing indicator for incoming messages. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_j_s_q_messages_typing_indicator_footer_view_a8901993f187be90ce22fcde392319264}{}\index{J\+S\+Q\+Messages\+Typing\+Indicator\+Footer\+View@{J\+S\+Q\+Messages\+Typing\+Indicator\+Footer\+View}!configure\+With\+Ellipsis\+Color\+:message\+Bubble\+Color\+:should\+Display\+On\+Left\+:for\+Collection\+View\+:@{configure\+With\+Ellipsis\+Color\+:message\+Bubble\+Color\+:should\+Display\+On\+Left\+:for\+Collection\+View\+:}}
+\index{configure\+With\+Ellipsis\+Color\+:message\+Bubble\+Color\+:should\+Display\+On\+Left\+:for\+Collection\+View\+:@{configure\+With\+Ellipsis\+Color\+:message\+Bubble\+Color\+:should\+Display\+On\+Left\+:for\+Collection\+View\+:}!J\+S\+Q\+Messages\+Typing\+Indicator\+Footer\+View@{J\+S\+Q\+Messages\+Typing\+Indicator\+Footer\+View}}
+\subsubsection[{configure\+With\+Ellipsis\+Color\+:message\+Bubble\+Color\+:should\+Display\+On\+Left\+:for\+Collection\+View\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) configure\+With\+Ellipsis\+Color\+: 
+\begin{DoxyParamCaption}
+\item[{(U\+I\+Color $\ast$)}]{ellipsis\+Color}
+\item[{messageBubbleColor:(U\+I\+Color $\ast$)}]{message\+Bubble\+Color}
+\item[{shouldDisplayOnLeft:(B\+O\+O\+L)}]{should\+Display\+On\+Left}
+\item[{forCollectionView:(U\+I\+Collection\+View $\ast$)}]{collection\+View}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_messages_typing_indicator_footer_view_a8901993f187be90ce22fcde392319264}
+Configures the receiver with the specified attributes for the given collection view. Call this method after dequeuing the footer view.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ellipsis\+Color} & The color of the typing indicator ellipsis. This value must not be {\ttfamily nil}. \\
+\hline
+{\em message\+Bubble\+Color} & The color of the typing indicator message bubble. This value must not be {\ttfamily nil}. \\
+\hline
+{\em should\+Display\+On\+Left} & Specifies whether the typing indicator displays on the left or right side of the collection view when displayed. \\
+\hline
+{\em collection\+View} & The collection view in which the footer view will appear. This value must not be {\ttfamily nil}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_j_s_q_messages_typing_indicator_footer_view_accd9c376ec6c8312e48034203865a7e1}{}\index{J\+S\+Q\+Messages\+Typing\+Indicator\+Footer\+View@{J\+S\+Q\+Messages\+Typing\+Indicator\+Footer\+View}!footer\+Reuse\+Identifier@{footer\+Reuse\+Identifier}}
+\index{footer\+Reuse\+Identifier@{footer\+Reuse\+Identifier}!J\+S\+Q\+Messages\+Typing\+Indicator\+Footer\+View@{J\+S\+Q\+Messages\+Typing\+Indicator\+Footer\+View}}
+\subsubsection[{footer\+Reuse\+Identifier}]{\setlength{\rightskip}{0pt plus 5cm}+ (N\+S\+String $\ast$) footer\+Reuse\+Identifier 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_messages_typing_indicator_footer_view_accd9c376ec6c8312e48034203865a7e1}
+Returns the default string used to identify the reusable footer view.
+
+\begin{DoxyReturn}{Returns}
+The string used to identify the reusable footer view. 
+\end{DoxyReturn}
+\hypertarget{interface_j_s_q_messages_typing_indicator_footer_view_ad945b6c6838aafd3379a1f5cde012bb2}{}\index{J\+S\+Q\+Messages\+Typing\+Indicator\+Footer\+View@{J\+S\+Q\+Messages\+Typing\+Indicator\+Footer\+View}!nib@{nib}}
+\index{nib@{nib}!J\+S\+Q\+Messages\+Typing\+Indicator\+Footer\+View@{J\+S\+Q\+Messages\+Typing\+Indicator\+Footer\+View}}
+\subsubsection[{nib}]{\setlength{\rightskip}{0pt plus 5cm}+ (U\+I\+Nib $\ast$) nib 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_messages_typing_indicator_footer_view_ad945b6c6838aafd3379a1f5cde012bb2}
+Returns the {\ttfamily U\+I\+Nib} object initialized for the collection reusable view.
+
+\begin{DoxyReturn}{Returns}
+The initialized {\ttfamily U\+I\+Nib} object or {\ttfamily nil} if there were errors during initialization or the nib file could not be located. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Vendors/\+J\+S\+Q\+Messages\+View\+Controller/\+Views/J\+S\+Q\+Messages\+Typing\+Indicator\+Footer\+View.\+h\item 
+Vendors/\+J\+S\+Q\+Messages\+View\+Controller/\+Views/J\+S\+Q\+Messages\+Typing\+Indicator\+Footer\+View.\+m\end{DoxyCompactItemize}

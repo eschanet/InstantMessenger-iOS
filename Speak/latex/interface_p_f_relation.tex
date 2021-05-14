@@ -1,0 +1,109 @@
+\hypertarget{interface_p_f_relation}{}\section{P\+F\+Relation Class Reference}
+\label{interface_p_f_relation}\index{P\+F\+Relation@{P\+F\+Relation}}
+
+
+{\ttfamily \#import $<$P\+F\+Relation.\+h$>$}
+
+Inheritance diagram for P\+F\+Relation\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_p_f_relation}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{class_p_f_query}{P\+F\+Query}$<$ Object\+Type $>$ $\ast$) -\/ \hyperlink{interface_p_f_relation_a9fec978a2192c1452e56ede4551a14b2}{query}
+\begin{DoxyCompactList}\small\item\em 
+
+ \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{interface_p_f_relation_a28af311372ef3190483e82ca89599510}{add\+Object\+:}
+\begin{DoxyCompactList}\small\item\em 
+
+ \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{interface_p_f_relation_aa7c652e7f27acf337b116278d02bbc24}{remove\+Object\+:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_p_f_relation_a82a721e8b8f2e621997126e5ac59a340}{}{\bfseries \+\_\+\+\_\+pad0\+\_\+\+\_\+}\+: N\+S\+Object@property (nullable\label{interface_p_f_relation_a82a721e8b8f2e621997126e5ac59a340}
+
+\item 
+\hypertarget{interface_p_f_relation_a8b9b9863e7467327fd1c551eea8819a7}{}{\bfseries nonatomic}\label{interface_p_f_relation_a8b9b9863e7467327fd1c551eea8819a7}
+
+\item 
+\hypertarget{interface_p_f_relation_a2f9a38f347b5d5c3a6480902e9f19ef7}{}copy N\+S\+String $\ast$ {\bfseries target\+Class}\label{interface_p_f_relation_a2f9a38f347b5d5c3a6480902e9f19ef7}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Copyright (c) 2015-\/present, \hyperlink{interface_parse}{Parse}, L\+L\+C. All rights reserved.
+
+This source code is licensed under the B\+S\+D-\/style license found in the L\+I\+C\+E\+N\+S\+E file in the root directory of this source tree. An additional grant of patent rights can be found in the P\+A\+T\+E\+N\+T\+S file in the same directory. The {\ttfamily \hyperlink{interface_p_f_relation}{P\+F\+Relation}} class that is used to access all of the children of a many-\/to-\/many relationship. Each instance of {\ttfamily \hyperlink{interface_p_f_relation}{P\+F\+Relation}} is associated with a particular parent object and key.
+
+Copyright (c) 2015-\/present, \hyperlink{interface_parse}{Parse}, L\+L\+C. All rights reserved.
+
+This source code is licensed under the B\+S\+D-\/style license found in the L\+I\+C\+E\+N\+S\+E file in the root directory of this source tree. An additional grant of patent rights can be found in the P\+A\+T\+E\+N\+T\+S file in the same directory. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_p_f_relation_a28af311372ef3190483e82ca89599510}{}\index{P\+F\+Relation@{P\+F\+Relation}!add\+Object\+:@{add\+Object\+:}}
+\index{add\+Object\+:@{add\+Object\+:}!P\+F\+Relation@{P\+F\+Relation}}
+\subsubsection[{add\+Object\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) add\+Object\+: 
+\begin{DoxyParamCaption}
+\item[{(Object\+Type)}]{object}
+\end{DoxyParamCaption}
+}\label{interface_p_f_relation_a28af311372ef3190483e82ca89599510}
+
+
+
+
+ 
+
+
+
+
+
+Adds a relation to the passed in object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & A {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}} object to add relation to. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_relation_a9fec978a2192c1452e56ede4551a14b2}{}\index{P\+F\+Relation@{P\+F\+Relation}!query@{query}}
+\index{query@{query}!P\+F\+Relation@{P\+F\+Relation}}
+\subsubsection[{query}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf P\+F\+Query}$<$Object\+Type$>$ $\ast$) query 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_relation_a9fec978a2192c1452e56ede4551a14b2}
+
+
+
+
+ 
+
+
+
+
+
+Returns a {\ttfamily \hyperlink{class_p_f_query}{P\+F\+Query}} object that can be used to get objects in this relation. \hypertarget{interface_p_f_relation_aa7c652e7f27acf337b116278d02bbc24}{}\index{P\+F\+Relation@{P\+F\+Relation}!remove\+Object\+:@{remove\+Object\+:}}
+\index{remove\+Object\+:@{remove\+Object\+:}!P\+F\+Relation@{P\+F\+Relation}}
+\subsubsection[{remove\+Object\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) remove\+Object\+: 
+\begin{DoxyParamCaption}
+\item[{(Object\+Type)}]{object}
+\end{DoxyParamCaption}
+}\label{interface_p_f_relation_aa7c652e7f27acf337b116278d02bbc24}
+Removes a relation to the passed in object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & A {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}} object to add relation to. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Frameworks/\+Parse.\+framework/\+Headers/P\+F\+Relation.\+h\end{DoxyCompactItemize}

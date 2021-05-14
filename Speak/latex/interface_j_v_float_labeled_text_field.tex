@@ -1,0 +1,124 @@
+\hypertarget{interface_j_v_float_labeled_text_field}{}\section{J\+V\+Float\+Labeled\+Text\+Field Class Reference}
+\label{interface_j_v_float_labeled_text_field}\index{J\+V\+Float\+Labeled\+Text\+Field@{J\+V\+Float\+Labeled\+Text\+Field}}
+
+
+{\ttfamily \#import $<$J\+V\+Float\+Labeled\+Text\+Field.\+h$>$}
+
+Inheritance diagram for J\+V\+Float\+Labeled\+Text\+Field\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_j_v_float_labeled_text_field}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_j_v_float_labeled_text_field_a195fa78fcd5fcc7c648ef544d90c6f16}{set\+Placeholder\+:floating\+Title\+:}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+U\+I\+Label $\ast$ \hyperlink{interface_j_v_float_labeled_text_field_a63571476c8d5dbbd4103a644d0d060b7}{floating\+Label}
+\item 
+I\+B\+Inspectable C\+G\+Float \hyperlink{interface_j_v_float_labeled_text_field_a3758fd3387b355cd75a53784e55d0bfe}{floating\+Label\+Y\+Padding}
+\item 
+I\+B\+Inspectable C\+G\+Float \hyperlink{interface_j_v_float_labeled_text_field_a005ea0687f1048ae375072b0eddd842b}{floating\+Label\+X\+Padding}
+\item 
+I\+B\+Inspectable C\+G\+Float \hyperlink{interface_j_v_float_labeled_text_field_a503fcd34a364088ba893cd491123ef48}{placeholder\+Y\+Padding}
+\item 
+U\+I\+Font $\ast$ \hyperlink{interface_j_v_float_labeled_text_field_aa1d2ea55ded3f079d09ee35d34a1b8ea}{floating\+Label\+Font}
+\item 
+I\+B\+Inspectable U\+I\+Color $\ast$ \hyperlink{interface_j_v_float_labeled_text_field_ac1a4f59f841121c3831be1ee34fcca55}{floating\+Label\+Text\+Color}
+\item 
+I\+B\+Inspectable U\+I\+Color $\ast$ \hyperlink{interface_j_v_float_labeled_text_field_aa64fbb90cafa476f2fa52eb8a8875aa1}{floating\+Label\+Active\+Text\+Color}
+\item 
+I\+B\+Inspectable B\+O\+O\+L \hyperlink{interface_j_v_float_labeled_text_field_ac452b0c37e43fa86df3a6d136ab91e93}{animate\+Even\+If\+Not\+First\+Responder}
+\item 
+N\+S\+Time\+Interval \hyperlink{interface_j_v_float_labeled_text_field_ae2547182365ad7d20fc67623e8148920}{floating\+Label\+Show\+Animation\+Duration}
+\item 
+N\+S\+Time\+Interval \hyperlink{interface_j_v_float_labeled_text_field_a22466509e0b40b1a7a24aa17d949b79b}{floating\+Label\+Hide\+Animation\+Duration}
+\item 
+I\+B\+Inspectable B\+O\+O\+L \hyperlink{interface_j_v_float_labeled_text_field_a2eca492728f3ea23c780debb151f27f1}{adjusts\+Clear\+Button\+Rect}
+\item 
+I\+B\+Inspectable B\+O\+O\+L \hyperlink{interface_j_v_float_labeled_text_field_adbdb4e36a9903fe4fd6772c7f113570a}{keep\+Baseline}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+{\ttfamily \hyperlink{interface_j_v_float_labeled_text_field}{J\+V\+Float\+Labeled\+Text\+Field}} is a {\ttfamily U\+I\+Text\+Field} subclass that implements the \char`\"{}\+Float Label Pattern\char`\"{}.
+
+Due to space constraints on mobile devices, it is common to rely solely on placeholders as a means to label fields. This presents a U\+X problem, in that, once the user begins to fill out a form, no labels are present.
+
+{\ttfamily \hyperlink{interface_j_v_float_labeled_text_field}{J\+V\+Float\+Labeled\+Text\+Field}} aims to improve the user experience by having placeholders transition into \char`\"{}floating labels\char`\"{} that hover above the text field after it is populated with text.
+
+\hyperlink{interface_j_v_float_labeled_text_field}{J\+V\+Float\+Labeled\+Text\+Field} supports i\+O\+S 6+.
+
+Credits for the concept to Matt D. Smith (), and his original design\+: \href{http://mattdsmith.com/float-label-pattern/}{\tt http\+://mattdsmith.\+com/float-\/label-\/pattern/} 
+
+\subsection{Method Documentation}
+\hypertarget{interface_j_v_float_labeled_text_field_a195fa78fcd5fcc7c648ef544d90c6f16}{}\index{J\+V\+Float\+Labeled\+Text\+Field@{J\+V\+Float\+Labeled\+Text\+Field}!set\+Placeholder\+:floating\+Title\+:@{set\+Placeholder\+:floating\+Title\+:}}
+\index{set\+Placeholder\+:floating\+Title\+:@{set\+Placeholder\+:floating\+Title\+:}!J\+V\+Float\+Labeled\+Text\+Field@{J\+V\+Float\+Labeled\+Text\+Field}}
+\subsubsection[{set\+Placeholder\+:floating\+Title\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\+Placeholder\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{placeholder}
+\item[{floatingTitle:(N\+S\+String $\ast$)}]{floating\+Title}
+\end{DoxyParamCaption}
+}\label{interface_j_v_float_labeled_text_field_a195fa78fcd5fcc7c648ef544d90c6f16}
+Sets the placeholder and the floating title
+
+
+\begin{DoxyParams}{Parameters}
+{\em placeholder} & The string that to be shown in the text field when no other text is present. \\
+\hline
+{\em floating\+Title} & The string to be shown above the text field once it has been populated with text by the user. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_j_v_float_labeled_text_field_a2eca492728f3ea23c780debb151f27f1}{}\index{J\+V\+Float\+Labeled\+Text\+Field@{J\+V\+Float\+Labeled\+Text\+Field}!adjusts\+Clear\+Button\+Rect@{adjusts\+Clear\+Button\+Rect}}
+\index{adjusts\+Clear\+Button\+Rect@{adjusts\+Clear\+Button\+Rect}!J\+V\+Float\+Labeled\+Text\+Field@{J\+V\+Float\+Labeled\+Text\+Field}}
+\subsubsection[{adjusts\+Clear\+Button\+Rect}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Inspectable B\+O\+O\+L) adjusts\+Clear\+Button\+Rect\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_j_v_float_labeled_text_field_a2eca492728f3ea23c780debb151f27f1}
+Indicates whether the clear\+Button position is adjusted to align with the text Defaults to 1. \hypertarget{interface_j_v_float_labeled_text_field_ac452b0c37e43fa86df3a6d136ab91e93}{}\index{J\+V\+Float\+Labeled\+Text\+Field@{J\+V\+Float\+Labeled\+Text\+Field}!animate\+Even\+If\+Not\+First\+Responder@{animate\+Even\+If\+Not\+First\+Responder}}
+\index{animate\+Even\+If\+Not\+First\+Responder@{animate\+Even\+If\+Not\+First\+Responder}!J\+V\+Float\+Labeled\+Text\+Field@{J\+V\+Float\+Labeled\+Text\+Field}}
+\subsubsection[{animate\+Even\+If\+Not\+First\+Responder}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Inspectable B\+O\+O\+L) animate\+Even\+If\+Not\+First\+Responder\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_j_v_float_labeled_text_field_ac452b0c37e43fa86df3a6d136ab91e93}
+Indicates whether the floating label\textquotesingle{}s appearance should be animated regardless of first responder status. By default, animation only occurs if the text field is a first responder. \hypertarget{interface_j_v_float_labeled_text_field_a63571476c8d5dbbd4103a644d0d060b7}{}\index{J\+V\+Float\+Labeled\+Text\+Field@{J\+V\+Float\+Labeled\+Text\+Field}!floating\+Label@{floating\+Label}}
+\index{floating\+Label@{floating\+Label}!J\+V\+Float\+Labeled\+Text\+Field@{J\+V\+Float\+Labeled\+Text\+Field}}
+\subsubsection[{floating\+Label}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Label$\ast$) floating\+Label\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_j_v_float_labeled_text_field_a63571476c8d5dbbd4103a644d0d060b7}
+Read-\/only access to the floating label. \hypertarget{interface_j_v_float_labeled_text_field_aa64fbb90cafa476f2fa52eb8a8875aa1}{}\index{J\+V\+Float\+Labeled\+Text\+Field@{J\+V\+Float\+Labeled\+Text\+Field}!floating\+Label\+Active\+Text\+Color@{floating\+Label\+Active\+Text\+Color}}
+\index{floating\+Label\+Active\+Text\+Color@{floating\+Label\+Active\+Text\+Color}!J\+V\+Float\+Labeled\+Text\+Field@{J\+V\+Float\+Labeled\+Text\+Field}}
+\subsubsection[{floating\+Label\+Active\+Text\+Color}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Inspectable U\+I\+Color$\ast$) floating\+Label\+Active\+Text\+Color\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_j_v_float_labeled_text_field_aa64fbb90cafa476f2fa52eb8a8875aa1}
+Text color to be applied to the floating label while the field is a first responder. Tint color is used by default if an {\ttfamily floating\+Label\+Active\+Text\+Color} is not provided. \hypertarget{interface_j_v_float_labeled_text_field_aa1d2ea55ded3f079d09ee35d34a1b8ea}{}\index{J\+V\+Float\+Labeled\+Text\+Field@{J\+V\+Float\+Labeled\+Text\+Field}!floating\+Label\+Font@{floating\+Label\+Font}}
+\index{floating\+Label\+Font@{floating\+Label\+Font}!J\+V\+Float\+Labeled\+Text\+Field@{J\+V\+Float\+Labeled\+Text\+Field}}
+\subsubsection[{floating\+Label\+Font}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Font$\ast$) floating\+Label\+Font\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_j_v_float_labeled_text_field_aa1d2ea55ded3f079d09ee35d34a1b8ea}
+Font to be applied to the floating label. Defaults to the first applicable of the following\+:
+\begin{DoxyItemize}
+\item the custom specified attributed placeholder font at 70\% of its size
+\item the custom specified text\+Field font at 70\% of its size 
+\end{DoxyItemize}\hypertarget{interface_j_v_float_labeled_text_field_a22466509e0b40b1a7a24aa17d949b79b}{}\index{J\+V\+Float\+Labeled\+Text\+Field@{J\+V\+Float\+Labeled\+Text\+Field}!floating\+Label\+Hide\+Animation\+Duration@{floating\+Label\+Hide\+Animation\+Duration}}
+\index{floating\+Label\+Hide\+Animation\+Duration@{floating\+Label\+Hide\+Animation\+Duration}!J\+V\+Float\+Labeled\+Text\+Field@{J\+V\+Float\+Labeled\+Text\+Field}}
+\subsubsection[{floating\+Label\+Hide\+Animation\+Duration}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Time\+Interval) floating\+Label\+Hide\+Animation\+Duration\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_j_v_float_labeled_text_field_a22466509e0b40b1a7a24aa17d949b79b}
+Duration of the animation when hiding the floating label. Defaults to 0.\+3 seconds. \hypertarget{interface_j_v_float_labeled_text_field_ae2547182365ad7d20fc67623e8148920}{}\index{J\+V\+Float\+Labeled\+Text\+Field@{J\+V\+Float\+Labeled\+Text\+Field}!floating\+Label\+Show\+Animation\+Duration@{floating\+Label\+Show\+Animation\+Duration}}
+\index{floating\+Label\+Show\+Animation\+Duration@{floating\+Label\+Show\+Animation\+Duration}!J\+V\+Float\+Labeled\+Text\+Field@{J\+V\+Float\+Labeled\+Text\+Field}}
+\subsubsection[{floating\+Label\+Show\+Animation\+Duration}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Time\+Interval) floating\+Label\+Show\+Animation\+Duration\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_j_v_float_labeled_text_field_ae2547182365ad7d20fc67623e8148920}
+Duration of the animation when showing the floating label. Defaults to 0.\+3 seconds. \hypertarget{interface_j_v_float_labeled_text_field_ac1a4f59f841121c3831be1ee34fcca55}{}\index{J\+V\+Float\+Labeled\+Text\+Field@{J\+V\+Float\+Labeled\+Text\+Field}!floating\+Label\+Text\+Color@{floating\+Label\+Text\+Color}}
+\index{floating\+Label\+Text\+Color@{floating\+Label\+Text\+Color}!J\+V\+Float\+Labeled\+Text\+Field@{J\+V\+Float\+Labeled\+Text\+Field}}
+\subsubsection[{floating\+Label\+Text\+Color}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Inspectable U\+I\+Color$\ast$) floating\+Label\+Text\+Color\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_j_v_float_labeled_text_field_ac1a4f59f841121c3831be1ee34fcca55}
+Text color to be applied to the floating label. Defaults to {\ttfamily \mbox{[}U\+I\+Color gray\+Color\mbox{]}}. \hypertarget{interface_j_v_float_labeled_text_field_a005ea0687f1048ae375072b0eddd842b}{}\index{J\+V\+Float\+Labeled\+Text\+Field@{J\+V\+Float\+Labeled\+Text\+Field}!floating\+Label\+X\+Padding@{floating\+Label\+X\+Padding}}
+\index{floating\+Label\+X\+Padding@{floating\+Label\+X\+Padding}!J\+V\+Float\+Labeled\+Text\+Field@{J\+V\+Float\+Labeled\+Text\+Field}}
+\subsubsection[{floating\+Label\+X\+Padding}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Inspectable C\+G\+Float) floating\+Label\+X\+Padding\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_j_v_float_labeled_text_field_a005ea0687f1048ae375072b0eddd842b}
+Padding to be applied to the x coordinate of the floating label upon presentation. Defaults to zero \hypertarget{interface_j_v_float_labeled_text_field_a3758fd3387b355cd75a53784e55d0bfe}{}\index{J\+V\+Float\+Labeled\+Text\+Field@{J\+V\+Float\+Labeled\+Text\+Field}!floating\+Label\+Y\+Padding@{floating\+Label\+Y\+Padding}}
+\index{floating\+Label\+Y\+Padding@{floating\+Label\+Y\+Padding}!J\+V\+Float\+Labeled\+Text\+Field@{J\+V\+Float\+Labeled\+Text\+Field}}
+\subsubsection[{floating\+Label\+Y\+Padding}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Inspectable C\+G\+Float) floating\+Label\+Y\+Padding\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_j_v_float_labeled_text_field_a3758fd3387b355cd75a53784e55d0bfe}
+Padding to be applied to the y coordinate of the floating label upon presentation. Defaults to zero. \hypertarget{interface_j_v_float_labeled_text_field_adbdb4e36a9903fe4fd6772c7f113570a}{}\index{J\+V\+Float\+Labeled\+Text\+Field@{J\+V\+Float\+Labeled\+Text\+Field}!keep\+Baseline@{keep\+Baseline}}
+\index{keep\+Baseline@{keep\+Baseline}!J\+V\+Float\+Labeled\+Text\+Field@{J\+V\+Float\+Labeled\+Text\+Field}}
+\subsubsection[{keep\+Baseline}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Inspectable B\+O\+O\+L) keep\+Baseline\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_j_v_float_labeled_text_field_adbdb4e36a9903fe4fd6772c7f113570a}
+Indicates whether or not to drop the baseline when entering text. Setting to Y\+E\+S (not the default) means the standard greyed-\/out placeholder will be aligned with the entered text Defaults to N\+O (standard placeholder will be above whatever text is entered) \hypertarget{interface_j_v_float_labeled_text_field_a503fcd34a364088ba893cd491123ef48}{}\index{J\+V\+Float\+Labeled\+Text\+Field@{J\+V\+Float\+Labeled\+Text\+Field}!placeholder\+Y\+Padding@{placeholder\+Y\+Padding}}
+\index{placeholder\+Y\+Padding@{placeholder\+Y\+Padding}!J\+V\+Float\+Labeled\+Text\+Field@{J\+V\+Float\+Labeled\+Text\+Field}}
+\subsubsection[{placeholder\+Y\+Padding}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Inspectable C\+G\+Float) placeholder\+Y\+Padding\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_j_v_float_labeled_text_field_a503fcd34a364088ba893cd491123ef48}
+Padding to be applied to the y coordinate of the placeholder. Defaults to zero. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Vendors/\+J\+V\+Float\+Labeled\+Text\+Field/J\+V\+Float\+Labeled\+Text\+Field.\+h\item 
+Vendors/\+J\+V\+Float\+Labeled\+Text\+Field/J\+V\+Float\+Labeled\+Text\+Field.\+m\end{DoxyCompactItemize}

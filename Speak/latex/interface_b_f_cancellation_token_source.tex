@@ -1,0 +1,86 @@
+\hypertarget{interface_b_f_cancellation_token_source}{}\section{B\+F\+Cancellation\+Token\+Source Class Reference}
+\label{interface_b_f_cancellation_token_source}\index{B\+F\+Cancellation\+Token\+Source@{B\+F\+Cancellation\+Token\+Source}}
+
+
+{\ttfamily \#import $<$B\+F\+Cancellation\+Token\+Source.\+h$>$}
+
+Inheritance diagram for B\+F\+Cancellation\+Token\+Source\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_b_f_cancellation_token_source}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_b_f_cancellation_token_source_afe09a2d3bc4a38d68dc64f0be137b2a3}{cancel}
+\item 
+(void) -\/ \hyperlink{interface_b_f_cancellation_token_source_a348edca9126992114d0ea49a2d103a8d}{cancel\+After\+Delay\+:}
+\item 
+(void) -\/ \hyperlink{interface_b_f_cancellation_token_source_ae5d7966c4905d977c078ebf04f066f38}{dispose}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) + \hyperlink{interface_b_f_cancellation_token_source_ae0f8b9936121cfe2a5da3e5af4626f40}{cancellation\+Token\+Source}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interface_b_f_cancellation_token}{B\+F\+Cancellation\+Token} $\ast$ \hyperlink{interface_b_f_cancellation_token_source_a17a7f0b94735efcab2dd4985060f4cb7}{token}
+\item 
+B\+O\+O\+L \hyperlink{interface_b_f_cancellation_token_source_a4e692d28c80e58a2e5e45a77e97461f5}{cancellation\+Requested}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{interface_b_f_cancellation_token_source}{B\+F\+Cancellation\+Token\+Source} represents the producer side of a Cancellation\+Token. Signals to a Cancellation\+Token that it should be canceled. It is a cancellation token that also has methods for changing the state of a token by cancelling it. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_b_f_cancellation_token_source_afe09a2d3bc4a38d68dc64f0be137b2a3}{}\index{B\+F\+Cancellation\+Token\+Source@{B\+F\+Cancellation\+Token\+Source}!cancel@{cancel}}
+\index{cancel@{cancel}!B\+F\+Cancellation\+Token\+Source@{B\+F\+Cancellation\+Token\+Source}}
+\subsubsection[{cancel}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) cancel 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_b_f_cancellation_token_source_afe09a2d3bc4a38d68dc64f0be137b2a3}
+Cancels the token if it has not already been cancelled. \hypertarget{interface_b_f_cancellation_token_source_a348edca9126992114d0ea49a2d103a8d}{}\index{B\+F\+Cancellation\+Token\+Source@{B\+F\+Cancellation\+Token\+Source}!cancel\+After\+Delay\+:@{cancel\+After\+Delay\+:}}
+\index{cancel\+After\+Delay\+:@{cancel\+After\+Delay\+:}!B\+F\+Cancellation\+Token\+Source@{B\+F\+Cancellation\+Token\+Source}}
+\subsubsection[{cancel\+After\+Delay\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) cancel\+After\+Delay\+: 
+\begin{DoxyParamCaption}
+\item[{(int)}]{millis}
+\end{DoxyParamCaption}
+}\label{interface_b_f_cancellation_token_source_a348edca9126992114d0ea49a2d103a8d}
+Schedules a cancel operation on this Cancellation\+Token\+Source after the specified number of milliseconds. 
+\begin{DoxyParams}{Parameters}
+{\em millis} & The number of milliseconds to wait before completing the returned task. If delay is {\ttfamily 0} the cancel is executed immediately. If delay is {\ttfamily -\/1} any scheduled cancellation is stopped. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_b_f_cancellation_token_source_ae0f8b9936121cfe2a5da3e5af4626f40}{}\index{B\+F\+Cancellation\+Token\+Source@{B\+F\+Cancellation\+Token\+Source}!cancellation\+Token\+Source@{cancellation\+Token\+Source}}
+\index{cancellation\+Token\+Source@{cancellation\+Token\+Source}!B\+F\+Cancellation\+Token\+Source@{B\+F\+Cancellation\+Token\+Source}}
+\subsubsection[{cancellation\+Token\+Source}]{\setlength{\rightskip}{0pt plus 5cm}+ (instancetype) cancellation\+Token\+Source 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_b_f_cancellation_token_source_ae0f8b9936121cfe2a5da3e5af4626f40}
+Creates a new cancellation token source. \hypertarget{interface_b_f_cancellation_token_source_ae5d7966c4905d977c078ebf04f066f38}{}\index{B\+F\+Cancellation\+Token\+Source@{B\+F\+Cancellation\+Token\+Source}!dispose@{dispose}}
+\index{dispose@{dispose}!B\+F\+Cancellation\+Token\+Source@{B\+F\+Cancellation\+Token\+Source}}
+\subsubsection[{dispose}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) dispose 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_b_f_cancellation_token_source_ae5d7966c4905d977c078ebf04f066f38}
+Releases all resources associated with this token source, including disposing of all registrations. 
+
+\subsection{Property Documentation}
+\hypertarget{interface_b_f_cancellation_token_source_a4e692d28c80e58a2e5e45a77e97461f5}{}\index{B\+F\+Cancellation\+Token\+Source@{B\+F\+Cancellation\+Token\+Source}!cancellation\+Requested@{cancellation\+Requested}}
+\index{cancellation\+Requested@{cancellation\+Requested}!B\+F\+Cancellation\+Token\+Source@{B\+F\+Cancellation\+Token\+Source}}
+\subsubsection[{cancellation\+Requested}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) cancellation\+Requested\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_b_f_cancellation_token_source_a4e692d28c80e58a2e5e45a77e97461f5}
+Whether cancellation has been requested for this token source. \hypertarget{interface_b_f_cancellation_token_source_a17a7f0b94735efcab2dd4985060f4cb7}{}\index{B\+F\+Cancellation\+Token\+Source@{B\+F\+Cancellation\+Token\+Source}!token@{token}}
+\index{token@{token}!B\+F\+Cancellation\+Token\+Source@{B\+F\+Cancellation\+Token\+Source}}
+\subsubsection[{token}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf B\+F\+Cancellation\+Token}$\ast$) token\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_b_f_cancellation_token_source_a17a7f0b94735efcab2dd4985060f4cb7}
+The cancellation token associated with this Cancellation\+Token\+Source. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Frameworks/\+Bolts.\+framework/\+Headers/B\+F\+Cancellation\+Token\+Source.\+h\end{DoxyCompactItemize}

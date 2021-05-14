@@ -1,0 +1,74 @@
+\hypertarget{interface_a_f_j_s_o_n_response_serializer}{}\section{A\+F\+J\+S\+O\+N\+Response\+Serializer Class Reference}
+\label{interface_a_f_j_s_o_n_response_serializer}\index{A\+F\+J\+S\+O\+N\+Response\+Serializer@{A\+F\+J\+S\+O\+N\+Response\+Serializer}}
+
+
+{\ttfamily \#import $<$A\+F\+U\+R\+L\+Response\+Serialization.\+h$>$}
+
+Inheritance diagram for A\+F\+J\+S\+O\+N\+Response\+Serializer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.771044cm]{interface_a_f_j_s_o_n_response_serializer}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_a_f_j_s_o_n_response_serializer_a05c10f46317a64479c52c870213479b8}{}(instancetype) -\/ {\bfseries init}\label{interface_a_f_j_s_o_n_response_serializer_a05c10f46317a64479c52c870213479b8}
+
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) + \hyperlink{interface_a_f_j_s_o_n_response_serializer_a84c05ae2bc646684aa9cb39041687979}{serializer\+With\+Reading\+Options\+:}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+N\+S\+J\+S\+O\+N\+Reading\+Options \hyperlink{interface_a_f_j_s_o_n_response_serializer_a344e139d77d63a22446f3c95990d2bce}{reading\+Options}
+\item 
+B\+O\+O\+L \hyperlink{interface_a_f_j_s_o_n_response_serializer_af7be2fbd6e630440952f10bf448569aa}{removes\+Keys\+With\+Null\+Values}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+{\ttfamily \hyperlink{interface_a_f_j_s_o_n_response_serializer}{A\+F\+J\+S\+O\+N\+Response\+Serializer}} is a subclass of {\ttfamily \hyperlink{interface_a_f_h_t_t_p_response_serializer}{A\+F\+H\+T\+T\+P\+Response\+Serializer}} that validates and decodes J\+S\+O\+N responses.
+
+By default, {\ttfamily \hyperlink{interface_a_f_j_s_o_n_response_serializer}{A\+F\+J\+S\+O\+N\+Response\+Serializer}} accepts the following M\+I\+M\+E types, which includes the official standard, {\ttfamily application/json}, as well as other commonly-\/used types\+:
+
+
+\begin{DoxyItemize}
+\item {\ttfamily application/json}
+\item {\ttfamily text/json}
+\item {\ttfamily text/javascript} 
+\end{DoxyItemize}
+
+\subsection{Method Documentation}
+\hypertarget{interface_a_f_j_s_o_n_response_serializer_a84c05ae2bc646684aa9cb39041687979}{}\index{A\+F\+J\+S\+O\+N\+Response\+Serializer@{A\+F\+J\+S\+O\+N\+Response\+Serializer}!serializer\+With\+Reading\+Options\+:@{serializer\+With\+Reading\+Options\+:}}
+\index{serializer\+With\+Reading\+Options\+:@{serializer\+With\+Reading\+Options\+:}!A\+F\+J\+S\+O\+N\+Response\+Serializer@{A\+F\+J\+S\+O\+N\+Response\+Serializer}}
+\subsubsection[{serializer\+With\+Reading\+Options\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (instancetype) serializer\+With\+Reading\+Options\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+J\+S\+O\+N\+Reading\+Options)}]{reading\+Options}
+\end{DoxyParamCaption}
+}\label{interface_a_f_j_s_o_n_response_serializer_a84c05ae2bc646684aa9cb39041687979}
+Creates and returns a J\+S\+O\+N serializer with specified reading and writing options.
+
+
+\begin{DoxyParams}{Parameters}
+{\em reading\+Options} & The specified J\+S\+O\+N reading options. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_a_f_j_s_o_n_response_serializer_a344e139d77d63a22446f3c95990d2bce}{}\index{A\+F\+J\+S\+O\+N\+Response\+Serializer@{A\+F\+J\+S\+O\+N\+Response\+Serializer}!reading\+Options@{reading\+Options}}
+\index{reading\+Options@{reading\+Options}!A\+F\+J\+S\+O\+N\+Response\+Serializer@{A\+F\+J\+S\+O\+N\+Response\+Serializer}}
+\subsubsection[{reading\+Options}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+J\+S\+O\+N\+Reading\+Options) reading\+Options\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_a_f_j_s_o_n_response_serializer_a344e139d77d63a22446f3c95990d2bce}
+Options for reading the response J\+S\+O\+N data and creating the Foundation objects. For possible values, see the {\ttfamily N\+S\+J\+S\+O\+N\+Serialization} documentation section \char`\"{}\+N\+S\+J\+S\+O\+N\+Reading\+Options\char`\"{}. {\ttfamily 0} by default. \hypertarget{interface_a_f_j_s_o_n_response_serializer_af7be2fbd6e630440952f10bf448569aa}{}\index{A\+F\+J\+S\+O\+N\+Response\+Serializer@{A\+F\+J\+S\+O\+N\+Response\+Serializer}!removes\+Keys\+With\+Null\+Values@{removes\+Keys\+With\+Null\+Values}}
+\index{removes\+Keys\+With\+Null\+Values@{removes\+Keys\+With\+Null\+Values}!A\+F\+J\+S\+O\+N\+Response\+Serializer@{A\+F\+J\+S\+O\+N\+Response\+Serializer}}
+\subsubsection[{removes\+Keys\+With\+Null\+Values}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) removes\+Keys\+With\+Null\+Values\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_a_f_j_s_o_n_response_serializer_af7be2fbd6e630440952f10bf448569aa}
+Whether to remove keys with {\ttfamily N\+S\+Null} values from response J\+S\+O\+N. Defaults to {\ttfamily N\+O}. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Vendors/\+A\+F\+Networking/\+A\+F\+Networking/A\+F\+U\+R\+L\+Response\+Serialization.\+h\item 
+Vendors/\+A\+F\+Networking/\+A\+F\+Networking/A\+F\+U\+R\+L\+Response\+Serialization.\+m\end{DoxyCompactItemize}

@@ -1,0 +1,69 @@
+\hypertarget{interface_a_f_property_list_request_serializer}{}\section{A\+F\+Property\+List\+Request\+Serializer Class Reference}
+\label{interface_a_f_property_list_request_serializer}\index{A\+F\+Property\+List\+Request\+Serializer@{A\+F\+Property\+List\+Request\+Serializer}}
+
+
+{\ttfamily \#import $<$A\+F\+U\+R\+L\+Request\+Serialization.\+h$>$}
+
+Inheritance diagram for A\+F\+Property\+List\+Request\+Serializer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.678161cm]{interface_a_f_property_list_request_serializer}
+\end{center}
+\end{figure}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) + \hyperlink{interface_a_f_property_list_request_serializer_abd5f5e201b54bb0d2982c937b5f494f4}{serializer\+With\+Format\+:write\+Options\+:}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+N\+S\+Property\+List\+Format \hyperlink{interface_a_f_property_list_request_serializer_a7caf5c4c62553db952c3f8dca8cf5b5f}{format}
+\item 
+N\+S\+Property\+List\+Write\+Options \hyperlink{interface_a_f_property_list_request_serializer_a15d74e1c93bc158815a46aa351e6fb79}{write\+Options}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+{\ttfamily \hyperlink{interface_a_f_property_list_request_serializer}{A\+F\+Property\+List\+Request\+Serializer}} is a subclass of {\ttfamily \hyperlink{interface_a_f_h_t_t_p_request_serializer}{A\+F\+H\+T\+T\+P\+Request\+Serializer}} that encodes parameters as J\+S\+O\+N using {\ttfamily N\+S\+Property\+List\+Serializer}, setting the {\ttfamily Content-\/\+Type} of the encoded request to {\ttfamily application/x-\/plist}. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_a_f_property_list_request_serializer_abd5f5e201b54bb0d2982c937b5f494f4}{}\index{A\+F\+Property\+List\+Request\+Serializer@{A\+F\+Property\+List\+Request\+Serializer}!serializer\+With\+Format\+:write\+Options\+:@{serializer\+With\+Format\+:write\+Options\+:}}
+\index{serializer\+With\+Format\+:write\+Options\+:@{serializer\+With\+Format\+:write\+Options\+:}!A\+F\+Property\+List\+Request\+Serializer@{A\+F\+Property\+List\+Request\+Serializer}}
+\subsubsection[{serializer\+With\+Format\+:write\+Options\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (instancetype) serializer\+With\+Format\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Property\+List\+Format)}]{format}
+\item[{writeOptions:(N\+S\+Property\+List\+Write\+Options)}]{write\+Options}
+\end{DoxyParamCaption}
+}\label{interface_a_f_property_list_request_serializer_abd5f5e201b54bb0d2982c937b5f494f4}
+Creates and returns a property list serializer with a specified format, read options, and write options.
+
+
+\begin{DoxyParams}{Parameters}
+{\em format} & The property list format. \\
+\hline
+{\em write\+Options} & The property list write options.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+The {\ttfamily write\+Options} property is currently unused. 
+\end{DoxyWarning}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_a_f_property_list_request_serializer_a7caf5c4c62553db952c3f8dca8cf5b5f}{}\index{A\+F\+Property\+List\+Request\+Serializer@{A\+F\+Property\+List\+Request\+Serializer}!format@{format}}
+\index{format@{format}!A\+F\+Property\+List\+Request\+Serializer@{A\+F\+Property\+List\+Request\+Serializer}}
+\subsubsection[{format}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Property\+List\+Format) format\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_a_f_property_list_request_serializer_a7caf5c4c62553db952c3f8dca8cf5b5f}
+The property list format. Possible values are described in \char`\"{}\+N\+S\+Property\+List\+Format\char`\"{}. \hypertarget{interface_a_f_property_list_request_serializer_a15d74e1c93bc158815a46aa351e6fb79}{}\index{A\+F\+Property\+List\+Request\+Serializer@{A\+F\+Property\+List\+Request\+Serializer}!write\+Options@{write\+Options}}
+\index{write\+Options@{write\+Options}!A\+F\+Property\+List\+Request\+Serializer@{A\+F\+Property\+List\+Request\+Serializer}}
+\subsubsection[{write\+Options}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Property\+List\+Write\+Options) write\+Options\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_a_f_property_list_request_serializer_a15d74e1c93bc158815a46aa351e6fb79}
+\begin{DoxyWarning}{Warning}
+The {\ttfamily write\+Options} property is currently unused. 
+\end{DoxyWarning}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Vendors/\+A\+F\+Networking/\+A\+F\+Networking/A\+F\+U\+R\+L\+Request\+Serialization.\+h\item 
+Vendors/\+A\+F\+Networking/\+A\+F\+Networking/A\+F\+U\+R\+L\+Request\+Serialization.\+m\end{DoxyCompactItemize}

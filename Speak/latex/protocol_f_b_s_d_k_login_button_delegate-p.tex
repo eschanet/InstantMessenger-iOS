@@ -1,0 +1,70 @@
+\hypertarget{protocol_f_b_s_d_k_login_button_delegate-p}{}\section{$<$F\+B\+S\+D\+K\+Login\+Button\+Delegate$>$ Protocol Reference}
+\label{protocol_f_b_s_d_k_login_button_delegate-p}\index{$<$\+F\+B\+S\+D\+K\+Login\+Button\+Delegate$>$@{$<$\+F\+B\+S\+D\+K\+Login\+Button\+Delegate$>$}}
+Inheritance diagram for $<$F\+B\+S\+D\+K\+Login\+Button\+Delegate$>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{protocol_f_b_s_d_k_login_button_delegate-p}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{protocol_f_b_s_d_k_login_button_delegate-p_aa50925943f306f510831696587f85f2e}{login\+Button\+:did\+Complete\+With\+Result\+:error\+:}
+\item 
+(void) -\/ \hyperlink{protocol_f_b_s_d_k_login_button_delegate-p_ad28c4d44ec4407039914f1d329b79ac4}{login\+Button\+Did\+Log\+Out\+:}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{protocol_f_b_s_d_k_login_button_delegate-p_a44b67647f87de22d26325ca8632562c0}{login\+Button\+Will\+Login\+:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\hypertarget{protocol_f_b_s_d_k_login_button_delegate-p_aa50925943f306f510831696587f85f2e}{}\index{F\+B\+S\+D\+K\+Login\+Button\+Delegate-\/p@{F\+B\+S\+D\+K\+Login\+Button\+Delegate-\/p}!login\+Button\+:did\+Complete\+With\+Result\+:error\+:@{login\+Button\+:did\+Complete\+With\+Result\+:error\+:}}
+\index{login\+Button\+:did\+Complete\+With\+Result\+:error\+:@{login\+Button\+:did\+Complete\+With\+Result\+:error\+:}!F\+B\+S\+D\+K\+Login\+Button\+Delegate-\/p@{F\+B\+S\+D\+K\+Login\+Button\+Delegate-\/p}}
+\subsubsection[{login\+Button\+:did\+Complete\+With\+Result\+:error\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) login\+Button\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf F\+B\+S\+D\+K\+Login\+Button} $\ast$)}]{login\+Button}
+\item[{didCompleteWithResult:({\bf F\+B\+S\+D\+K\+Login\+Manager\+Login\+Result} $\ast$)}]{result}
+\item[{error:(N\+S\+Error $\ast$)}]{error}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [required]}}\label{protocol_f_b_s_d_k_login_button_delegate-p_aa50925943f306f510831696587f85f2e}
+Sent to the delegate when the button was used to login. 
+\begin{DoxyParams}{Parameters}
+{\em login\+Button} & the sender \\
+\hline
+{\em result} & The results of the login \\
+\hline
+{\em error} & The error (if any) from the login \\
+\hline
+\end{DoxyParams}
+\hypertarget{protocol_f_b_s_d_k_login_button_delegate-p_ad28c4d44ec4407039914f1d329b79ac4}{}\index{F\+B\+S\+D\+K\+Login\+Button\+Delegate-\/p@{F\+B\+S\+D\+K\+Login\+Button\+Delegate-\/p}!login\+Button\+Did\+Log\+Out\+:@{login\+Button\+Did\+Log\+Out\+:}}
+\index{login\+Button\+Did\+Log\+Out\+:@{login\+Button\+Did\+Log\+Out\+:}!F\+B\+S\+D\+K\+Login\+Button\+Delegate-\/p@{F\+B\+S\+D\+K\+Login\+Button\+Delegate-\/p}}
+\subsubsection[{login\+Button\+Did\+Log\+Out\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) login\+Button\+Did\+Log\+Out\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf F\+B\+S\+D\+K\+Login\+Button} $\ast$)}]{login\+Button}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [required]}}\label{protocol_f_b_s_d_k_login_button_delegate-p_ad28c4d44ec4407039914f1d329b79ac4}
+Sent to the delegate when the button was used to logout. 
+\begin{DoxyParams}{Parameters}
+{\em login\+Button} & The button that was clicked. \\
+\hline
+\end{DoxyParams}
+\hypertarget{protocol_f_b_s_d_k_login_button_delegate-p_a44b67647f87de22d26325ca8632562c0}{}\index{F\+B\+S\+D\+K\+Login\+Button\+Delegate-\/p@{F\+B\+S\+D\+K\+Login\+Button\+Delegate-\/p}!login\+Button\+Will\+Login\+:@{login\+Button\+Will\+Login\+:}}
+\index{login\+Button\+Will\+Login\+:@{login\+Button\+Will\+Login\+:}!F\+B\+S\+D\+K\+Login\+Button\+Delegate-\/p@{F\+B\+S\+D\+K\+Login\+Button\+Delegate-\/p}}
+\subsubsection[{login\+Button\+Will\+Login\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) login\+Button\+Will\+Login\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf F\+B\+S\+D\+K\+Login\+Button} $\ast$)}]{login\+Button}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_f_b_s_d_k_login_button_delegate-p_a44b67647f87de22d26325ca8632562c0}
+Sent to the delegate when the button is about to login. 
+\begin{DoxyParams}{Parameters}
+{\em login\+Button} & the sender \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Y\+E\+S if the login should be allowed to proceed, N\+O otherwise 
+\end{DoxyReturn}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Frameworks/\+F\+B\+S\+D\+K\+Login\+Kit.\+framework/\+Headers/F\+B\+S\+D\+K\+Login\+Button.\+h\end{DoxyCompactItemize}

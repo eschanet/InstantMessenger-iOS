@@ -1,0 +1,144 @@
+\hypertarget{interface_f_i_r_storage}{}\section{F\+I\+R\+Storage Class Reference}
+\label{interface_f_i_r_storage}\index{F\+I\+R\+Storage@{F\+I\+R\+Storage}}
+
+
+{\ttfamily \#import $<$F\+I\+R\+Storage.\+h$>$}
+
+Inheritance diagram for F\+I\+R\+Storage\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_f_i_r_storage}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_f_i_r_storage_reference}{F\+I\+R\+Storage\+Reference} $\ast$) -\/ \hyperlink{interface_f_i_r_storage_a76c8a90c5f009f90eca7a0d2c9659577}{reference}
+\item 
+(\hyperlink{interface_f_i_r_storage_reference}{F\+I\+R\+Storage\+Reference} $\ast$) -\/ \hyperlink{interface_f_i_r_storage_a1025aff31aa13bd0c46ea0fc95aa8f34}{reference\+For\+U\+R\+L\+:}
+\item 
+(\hyperlink{interface_f_i_r_storage_reference}{F\+I\+R\+Storage\+Reference} $\ast$) -\/ \hyperlink{interface_f_i_r_storage_a33517f32be6d260ffe4c029bc866210f}{reference\+With\+Path\+:}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(storage() + \hyperlink{interface_f_i_r_storage_acf8749ecdcad4629aa32f25b6d1aa002}{N\+S\+\_\+\+S\+W\+I\+F\+T\+\_\+\+N\+A\+M\+E}
+\item 
+(instancetype) + \hyperlink{interface_f_i_r_storage_ac6d604da3e215033f3f2fdb47b603249}{storage\+For\+App\+:}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interface_f_i_r_app}{F\+I\+R\+App} $\ast$ \hyperlink{interface_f_i_r_storage_acb8f251a84f7adf957795b1305350025}{app}
+\item 
+N\+S\+Time\+Interval \hyperlink{interface_f_i_r_storage_aa661aa6cfbf3810148d56a3897002549}{max\+Upload\+Retry\+Time}
+\item 
+N\+S\+Time\+Interval \hyperlink{interface_f_i_r_storage_aceb260f6e31d980386560e46c0903772}{max\+Download\+Retry\+Time}
+\item 
+N\+S\+Time\+Interval \hyperlink{interface_f_i_r_storage_a197aa620f2ba27a1c898e6c77b791f0f}{max\+Operation\+Retry\+Time}
+\item 
+dispatch\+\_\+queue\+\_\+t \hyperlink{interface_f_i_r_storage_a96538feb8fc023d6771f6ce2b614eee5}{callback\+Queue}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Firebase\+Storage is a service that supports uploading and downloading binary objects, such as images, videos, and other files to Google Cloud Storage.
+
+If you call \mbox{[}\hyperlink{interface_f_i_r_storage}{F\+I\+R\+Storage} storage\mbox{]}, the instance will initialize with the default \hyperlink{interface_f_i_r_app}{F\+I\+R\+App}, \mbox{[}\hyperlink{interface_f_i_r_app}{F\+I\+R\+App} default\+App\mbox{]}, and the storage location will come from the provided Google\+Service-\/\+Info.\+plist.
+
+If you call \mbox{[}\hyperlink{interface_f_i_r_storage}{F\+I\+R\+Storage} storage\+For\+App\+:\mbox{]} and provide a custom instance of \hyperlink{interface_f_i_r_app}{F\+I\+R\+App}, the storage location will be specified via the \hyperlink{interface_f_i_r_options_a53cff0d6c7dfec85412f2e0c345ad7fc}{F\+I\+R\+Options\+::storage\+Bucket} property. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_f_i_r_storage_acf8749ecdcad4629aa32f25b6d1aa002}{}\index{F\+I\+R\+Storage@{F\+I\+R\+Storage}!N\+S\+\_\+\+S\+W\+I\+F\+T\+\_\+\+N\+A\+M\+E@{N\+S\+\_\+\+S\+W\+I\+F\+T\+\_\+\+N\+A\+M\+E}}
+\index{N\+S\+\_\+\+S\+W\+I\+F\+T\+\_\+\+N\+A\+M\+E@{N\+S\+\_\+\+S\+W\+I\+F\+T\+\_\+\+N\+A\+M\+E}!F\+I\+R\+Storage@{F\+I\+R\+Storage}}
+\subsubsection[{N\+S\+\_\+\+S\+W\+I\+F\+T\+\_\+\+N\+A\+M\+E}]{\setlength{\rightskip}{0pt plus 5cm}+ (storage() N\+S\+\_\+\+S\+W\+I\+F\+T\+\_\+\+N\+A\+M\+E 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_storage_acf8749ecdcad4629aa32f25b6d1aa002}
+Creates an instance of \hyperlink{interface_f_i_r_storage}{F\+I\+R\+Storage}, configured with the default \hyperlink{interface_f_i_r_app}{F\+I\+R\+App}. \begin{DoxyReturn}{Returns}
+the \hyperlink{interface_f_i_r_storage}{F\+I\+R\+Storage} instance, initialized with the default \hyperlink{interface_f_i_r_app}{F\+I\+R\+App}. 
+\end{DoxyReturn}
+\hypertarget{interface_f_i_r_storage_a76c8a90c5f009f90eca7a0d2c9659577}{}\index{F\+I\+R\+Storage@{F\+I\+R\+Storage}!reference@{reference}}
+\index{reference@{reference}!F\+I\+R\+Storage@{F\+I\+R\+Storage}}
+\subsubsection[{reference}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf F\+I\+R\+Storage\+Reference} $\ast$) reference 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_storage_a76c8a90c5f009f90eca7a0d2c9659577}
+Creates a \hyperlink{interface_f_i_r_storage_reference}{F\+I\+R\+Storage\+Reference} initialized at the root Firebase Storage location. \begin{DoxyReturn}{Returns}
+An instance of \hyperlink{interface_f_i_r_storage_reference}{F\+I\+R\+Storage\+Reference} initialized at the root. 
+\end{DoxyReturn}
+\hypertarget{interface_f_i_r_storage_a1025aff31aa13bd0c46ea0fc95aa8f34}{}\index{F\+I\+R\+Storage@{F\+I\+R\+Storage}!reference\+For\+U\+R\+L\+:@{reference\+For\+U\+R\+L\+:}}
+\index{reference\+For\+U\+R\+L\+:@{reference\+For\+U\+R\+L\+:}!F\+I\+R\+Storage@{F\+I\+R\+Storage}}
+\subsubsection[{reference\+For\+U\+R\+L\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf F\+I\+R\+Storage\+Reference} $\ast$) reference\+For\+U\+R\+L\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{string}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_storage_a1025aff31aa13bd0c46ea0fc95aa8f34}
+Creates a \hyperlink{interface_f_i_r_storage_reference}{F\+I\+R\+Storage\+Reference} given a gs\+:// or \href{https://}{\tt https\+://} U\+R\+L pointing to a Firebase Storage location. For example, you can pass in an \href{https://}{\tt https\+://} download U\+R\+L retrieved from \mbox{[}\hyperlink{interface_f_i_r_storage_reference}{F\+I\+R\+Storage\+Reference} get\+Download\+U\+R\+L\mbox{]} or the gs\+:// U\+R\+I from \mbox{[}\hyperlink{interface_f_i_r_storage_reference}{F\+I\+R\+Storage\+Reference} description\mbox{]}. 
+\begin{DoxyParams}{Parameters}
+{\em string} & A gs\+:// or \href{https://}{\tt https\+://} U\+R\+L to initialize the reference with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An instance of \hyperlink{interface_f_i_r_storage_reference}{F\+I\+R\+Storage\+Reference} at the given child path. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Throws} & an exception if passed in U\+R\+L is not associated with the \hyperlink{interface_f_i_r_app}{F\+I\+R\+App} used to initialize this \hyperlink{interface_f_i_r_storage}{F\+I\+R\+Storage}. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{interface_f_i_r_storage_a33517f32be6d260ffe4c029bc866210f}{}\index{F\+I\+R\+Storage@{F\+I\+R\+Storage}!reference\+With\+Path\+:@{reference\+With\+Path\+:}}
+\index{reference\+With\+Path\+:@{reference\+With\+Path\+:}!F\+I\+R\+Storage@{F\+I\+R\+Storage}}
+\subsubsection[{reference\+With\+Path\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf F\+I\+R\+Storage\+Reference} $\ast$) reference\+With\+Path\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{string}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_storage_a33517f32be6d260ffe4c029bc866210f}
+Creates a \hyperlink{interface_f_i_r_storage_reference}{F\+I\+R\+Storage\+Reference} initialized at a child Firebase Storage location. 
+\begin{DoxyParams}{Parameters}
+{\em string} & A relative path from the root to initialize the reference with, for instance "path/to/object". \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An instance of \hyperlink{interface_f_i_r_storage_reference}{F\+I\+R\+Storage\+Reference} at the given child path. 
+\end{DoxyReturn}
+\hypertarget{interface_f_i_r_storage_ac6d604da3e215033f3f2fdb47b603249}{}\index{F\+I\+R\+Storage@{F\+I\+R\+Storage}!storage\+For\+App\+:@{storage\+For\+App\+:}}
+\index{storage\+For\+App\+:@{storage\+For\+App\+:}!F\+I\+R\+Storage@{F\+I\+R\+Storage}}
+\subsubsection[{storage\+For\+App\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (instancetype) storage\+For\+App\+: 
+\begin{DoxyParamCaption}
+\item[{(storage(app\+:))}]{N\+S\+\_\+\+S\+W\+I\+F\+T\+\_\+\+N\+A\+M\+E}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_storage_ac6d604da3e215033f3f2fdb47b603249}
+Creates an instance of \hyperlink{interface_f_i_r_storage}{F\+I\+R\+Storage}, configured with the custom \hyperlink{interface_f_i_r_app}{F\+I\+R\+App} {\itshape app}. 
+\begin{DoxyParams}{Parameters}
+{\em app} & The custom \hyperlink{interface_f_i_r_app}{F\+I\+R\+App} used for initialization. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the \hyperlink{interface_f_i_r_storage}{F\+I\+R\+Storage} instance, initialized with the custom \hyperlink{interface_f_i_r_app}{F\+I\+R\+App}. 
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_f_i_r_storage_acb8f251a84f7adf957795b1305350025}{}\index{F\+I\+R\+Storage@{F\+I\+R\+Storage}!app@{app}}
+\index{app@{app}!F\+I\+R\+Storage@{F\+I\+R\+Storage}}
+\subsubsection[{app}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf F\+I\+R\+App}$\ast$) app\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_f_i_r_storage_acb8f251a84f7adf957795b1305350025}
+The Firebase App associated with this Firebase Storage instance. \hypertarget{interface_f_i_r_storage_a96538feb8fc023d6771f6ce2b614eee5}{}\index{F\+I\+R\+Storage@{F\+I\+R\+Storage}!callback\+Queue@{callback\+Queue}}
+\index{callback\+Queue@{callback\+Queue}!F\+I\+R\+Storage@{F\+I\+R\+Storage}}
+\subsubsection[{callback\+Queue}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (dispatch\+\_\+queue\+\_\+t) callback\+Queue\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_f_i_r_storage_a96538feb8fc023d6771f6ce2b614eee5}
+Queue that all developer callbacks are fired on. Defaults to the main queue. \hypertarget{interface_f_i_r_storage_aceb260f6e31d980386560e46c0903772}{}\index{F\+I\+R\+Storage@{F\+I\+R\+Storage}!max\+Download\+Retry\+Time@{max\+Download\+Retry\+Time}}
+\index{max\+Download\+Retry\+Time@{max\+Download\+Retry\+Time}!F\+I\+R\+Storage@{F\+I\+R\+Storage}}
+\subsubsection[{max\+Download\+Retry\+Time}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Time\+Interval) max\+Download\+Retry\+Time\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}}\label{interface_f_i_r_storage_aceb260f6e31d980386560e46c0903772}
+Maximum time in seconds to retry a download if a failure occurs. Defaults to 10 minutes (600 seconds). \hypertarget{interface_f_i_r_storage_a197aa620f2ba27a1c898e6c77b791f0f}{}\index{F\+I\+R\+Storage@{F\+I\+R\+Storage}!max\+Operation\+Retry\+Time@{max\+Operation\+Retry\+Time}}
+\index{max\+Operation\+Retry\+Time@{max\+Operation\+Retry\+Time}!F\+I\+R\+Storage@{F\+I\+R\+Storage}}
+\subsubsection[{max\+Operation\+Retry\+Time}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Time\+Interval) max\+Operation\+Retry\+Time\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}}\label{interface_f_i_r_storage_a197aa620f2ba27a1c898e6c77b791f0f}
+Maximum time in seconds to retry operations other than upload and download if a failure occurs. Defaults to 2 minutes (120 seconds). \hypertarget{interface_f_i_r_storage_aa661aa6cfbf3810148d56a3897002549}{}\index{F\+I\+R\+Storage@{F\+I\+R\+Storage}!max\+Upload\+Retry\+Time@{max\+Upload\+Retry\+Time}}
+\index{max\+Upload\+Retry\+Time@{max\+Upload\+Retry\+Time}!F\+I\+R\+Storage@{F\+I\+R\+Storage}}
+\subsubsection[{max\+Upload\+Retry\+Time}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Time\+Interval) max\+Upload\+Retry\+Time\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}}\label{interface_f_i_r_storage_aa661aa6cfbf3810148d56a3897002549}
+Maximum time in seconds to retry an upload if a failure occurs. Defaults to 10 minutes (600 seconds). 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Frameworks/\+Firebase\+Storage.\+framework/\+Headers/\hyperlink{_f_i_r_storage_8h}{F\+I\+R\+Storage.\+h}\end{DoxyCompactItemize}

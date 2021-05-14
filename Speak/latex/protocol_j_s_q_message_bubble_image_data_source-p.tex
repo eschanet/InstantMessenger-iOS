@@ -1,0 +1,65 @@
+\hypertarget{protocol_j_s_q_message_bubble_image_data_source-p}{}\section{$<$J\+S\+Q\+Message\+Bubble\+Image\+Data\+Source$>$ Protocol Reference}
+\label{protocol_j_s_q_message_bubble_image_data_source-p}\index{$<$\+J\+S\+Q\+Message\+Bubble\+Image\+Data\+Source$>$@{$<$\+J\+S\+Q\+Message\+Bubble\+Image\+Data\+Source$>$}}
+
+
+{\ttfamily \#import $<$J\+S\+Q\+Message\+Bubble\+Image\+Data\+Source.\+h$>$}
+
+Inheritance diagram for $<$J\+S\+Q\+Message\+Bubble\+Image\+Data\+Source$>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{protocol_j_s_q_message_bubble_image_data_source-p}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(U\+I\+Image $\ast$) -\/ \hyperlink{protocol_j_s_q_message_bubble_image_data_source-p_a73145db7929a8b4311d614153187d4c1}{message\+Bubble\+Image}
+\item 
+(U\+I\+Image $\ast$) -\/ \hyperlink{protocol_j_s_q_message_bubble_image_data_source-p_a2bb25017c879f47bc5421b8f6da1a377}{message\+Bubble\+Highlighted\+Image}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \hyperlink{protocol_j_s_q_message_bubble_image_data_source-p}{J\+S\+Q\+Message\+Bubble\+Image\+Data\+Source}} protocol defines the common interface through which a {\ttfamily \hyperlink{interface_j_s_q_messages_view_controller}{J\+S\+Q\+Messages\+View\+Controller}} and {\ttfamily \hyperlink{interface_j_s_q_messages_collection_view}{J\+S\+Q\+Messages\+Collection\+View}} interact with message bubble image model objects.
+
+It declares the required and optional methods that a class must implement so that instances of that class can be display properly within a {\ttfamily \hyperlink{interface_j_s_q_messages_collection_view_cell}{J\+S\+Q\+Messages\+Collection\+View\+Cell}}.
+
+A concrete class that conforms to this protocol is provided in the library. See {\ttfamily \hyperlink{interface_j_s_q_messages_bubble_image}{J\+S\+Q\+Messages\+Bubble\+Image}}.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_j_s_q_messages_bubble_image}{J\+S\+Q\+Messages\+Bubble\+Image}. 
+\end{DoxySeeAlso}
+
+
+\subsection{Method Documentation}
+\hypertarget{protocol_j_s_q_message_bubble_image_data_source-p_a2bb25017c879f47bc5421b8f6da1a377}{}\index{J\+S\+Q\+Message\+Bubble\+Image\+Data\+Source-\/p@{J\+S\+Q\+Message\+Bubble\+Image\+Data\+Source-\/p}!message\+Bubble\+Highlighted\+Image@{message\+Bubble\+Highlighted\+Image}}
+\index{message\+Bubble\+Highlighted\+Image@{message\+Bubble\+Highlighted\+Image}!J\+S\+Q\+Message\+Bubble\+Image\+Data\+Source-\/p@{J\+S\+Q\+Message\+Bubble\+Image\+Data\+Source-\/p}}
+\subsubsection[{message\+Bubble\+Highlighted\+Image}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Image $\ast$) message\+Bubble\+Highlighted\+Image 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [required]}}\label{protocol_j_s_q_message_bubble_image_data_source-p_a2bb25017c879f47bc5421b8f6da1a377}
+\begin{DoxyReturn}{Returns}
+The message bubble image for a highlighted display state.
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+You must not return {\ttfamily nil} from this method. 
+\end{DoxyWarning}
+\hypertarget{protocol_j_s_q_message_bubble_image_data_source-p_a73145db7929a8b4311d614153187d4c1}{}\index{J\+S\+Q\+Message\+Bubble\+Image\+Data\+Source-\/p@{J\+S\+Q\+Message\+Bubble\+Image\+Data\+Source-\/p}!message\+Bubble\+Image@{message\+Bubble\+Image}}
+\index{message\+Bubble\+Image@{message\+Bubble\+Image}!J\+S\+Q\+Message\+Bubble\+Image\+Data\+Source-\/p@{J\+S\+Q\+Message\+Bubble\+Image\+Data\+Source-\/p}}
+\subsubsection[{message\+Bubble\+Image}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Image $\ast$) message\+Bubble\+Image 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [required]}}\label{protocol_j_s_q_message_bubble_image_data_source-p_a73145db7929a8b4311d614153187d4c1}
+\begin{DoxyReturn}{Returns}
+The message bubble image for a regular display state.
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+You must not return {\ttfamily nil} from this method. 
+\end{DoxyWarning}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Vendors/\+J\+S\+Q\+Messages\+View\+Controller/\+Model/J\+S\+Q\+Message\+Bubble\+Image\+Data\+Source.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,100 @@
+\hypertarget{protocol_j_s_q_message_media_data-p}{}\section{$<$J\+S\+Q\+Message\+Media\+Data$>$ Protocol Reference}
+\label{protocol_j_s_q_message_media_data-p}\index{$<$\+J\+S\+Q\+Message\+Media\+Data$>$@{$<$\+J\+S\+Q\+Message\+Media\+Data$>$}}
+
+
+{\ttfamily \#import $<$J\+S\+Q\+Message\+Media\+Data.\+h$>$}
+
+Inheritance diagram for $<$J\+S\+Q\+Message\+Media\+Data$>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.309942cm]{protocol_j_s_q_message_media_data-p}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(U\+I\+View $\ast$) -\/ \hyperlink{protocol_j_s_q_message_media_data-p_a9b9c8d5c88a45112c345248da58169f4}{media\+View}
+\item 
+(C\+G\+Size) -\/ \hyperlink{protocol_j_s_q_message_media_data-p_ae1b1ff9bfecc2a4a02eabf4da793b94d}{media\+View\+Display\+Size}
+\item 
+(U\+I\+View $\ast$) -\/ \hyperlink{protocol_j_s_q_message_media_data-p_a5436746b19645862254924e1fa4ad21e}{media\+Placeholder\+View}
+\item 
+(N\+S\+U\+Integer) -\/ \hyperlink{protocol_j_s_q_message_media_data-p_abc76463a45e3d010e05799a24a3c0076}{media\+Hash}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \hyperlink{protocol_j_s_q_message_media_data-p}{J\+S\+Q\+Message\+Media\+Data}} protocol defines the common interface through which a {\ttfamily \hyperlink{interface_j_s_q_messages_view_controller}{J\+S\+Q\+Messages\+View\+Controller}} and {\ttfamily \hyperlink{interface_j_s_q_messages_collection_view}{J\+S\+Q\+Messages\+Collection\+View}} interact with media message model objects.
+
+It declares the required and optional methods that a class must implement so that instances of that class can be displayed properly within a {\ttfamily \hyperlink{interface_j_s_q_messages_collection_view_cell}{J\+S\+Q\+Messages\+Collection\+View\+Cell}}.
+
+This library provides a few concrete classes that conform to this protocol. You may use them as-\/is, but they will likely require some modifications or extensions to conform to your particular data models. These concrete media items are\+: {\ttfamily \hyperlink{interface_j_s_q_e_s_photo_media_item}{J\+S\+Q\+E\+S\+Photo\+Media\+Item}}, {\ttfamily \hyperlink{interface_j_s_q_location_media_item}{J\+S\+Q\+Location\+Media\+Item}}, {\ttfamily \hyperlink{interface_j_s_q_e_s_video_media_item}{J\+S\+Q\+E\+S\+Video\+Media\+Item}}.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_j_s_q_e_s_photo_media_item}{J\+S\+Q\+E\+S\+Photo\+Media\+Item}. 
+
+\hyperlink{interface_j_s_q_location_media_item}{J\+S\+Q\+Location\+Media\+Item}. 
+
+\hyperlink{interface_j_s_q_e_s_video_media_item}{J\+S\+Q\+E\+S\+Video\+Media\+Item}. 
+\end{DoxySeeAlso}
+
+
+\subsection{Method Documentation}
+\hypertarget{protocol_j_s_q_message_media_data-p_abc76463a45e3d010e05799a24a3c0076}{}\index{J\+S\+Q\+Message\+Media\+Data-\/p@{J\+S\+Q\+Message\+Media\+Data-\/p}!media\+Hash@{media\+Hash}}
+\index{media\+Hash@{media\+Hash}!J\+S\+Q\+Message\+Media\+Data-\/p@{J\+S\+Q\+Message\+Media\+Data-\/p}}
+\subsubsection[{media\+Hash}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+U\+Integer) media\+Hash 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [required]}}\label{protocol_j_s_q_message_media_data-p_abc76463a45e3d010e05799a24a3c0076}
+\begin{DoxyReturn}{Returns}
+An integer that can be used as a table address in a hash table structure.
+\end{DoxyReturn}
+This value must be unique for each media item with distinct contents. This value is used to cache layout information in the collection view. \hypertarget{protocol_j_s_q_message_media_data-p_a5436746b19645862254924e1fa4ad21e}{}\index{J\+S\+Q\+Message\+Media\+Data-\/p@{J\+S\+Q\+Message\+Media\+Data-\/p}!media\+Placeholder\+View@{media\+Placeholder\+View}}
+\index{media\+Placeholder\+View@{media\+Placeholder\+View}!J\+S\+Q\+Message\+Media\+Data-\/p@{J\+S\+Q\+Message\+Media\+Data-\/p}}
+\subsubsection[{media\+Placeholder\+View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+View $\ast$) media\+Placeholder\+View 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [required]}}\label{protocol_j_s_q_message_media_data-p_a5436746b19645862254924e1fa4ad21e}
+\begin{DoxyReturn}{Returns}
+A placeholder media view to be displayed if media\+View is not yet available, or {\ttfamily nil}. For example, if media\+View will be constructed based on media data that must be downloaded, this placeholder view will be used until media\+View is not {\ttfamily nil}.
+\end{DoxyReturn}
+If you do not need support for a placeholder view, then you may simply return the same value here as media\+View. Otherwise, consider using {\ttfamily \hyperlink{interface_j_s_q_messages_media_placeholder_view}{J\+S\+Q\+Messages\+Media\+Placeholder\+View}}.
+
+\begin{DoxyWarning}{Warning}
+You must not return {\ttfamily nil} from this method.
+\end{DoxyWarning}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_j_s_q_messages_media_placeholder_view}{J\+S\+Q\+Messages\+Media\+Placeholder\+View}. 
+\end{DoxySeeAlso}
+\hypertarget{protocol_j_s_q_message_media_data-p_a9b9c8d5c88a45112c345248da58169f4}{}\index{J\+S\+Q\+Message\+Media\+Data-\/p@{J\+S\+Q\+Message\+Media\+Data-\/p}!media\+View@{media\+View}}
+\index{media\+View@{media\+View}!J\+S\+Q\+Message\+Media\+Data-\/p@{J\+S\+Q\+Message\+Media\+Data-\/p}}
+\subsubsection[{media\+View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+View $\ast$) media\+View 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [required]}}\label{protocol_j_s_q_message_media_data-p_a9b9c8d5c88a45112c345248da58169f4}
+\begin{DoxyReturn}{Returns}
+An initialized {\ttfamily U\+I\+View} object that represents the data for this media object.
+\end{DoxyReturn}
+You may return {\ttfamily nil} from this method while the media data is being downloaded. \hypertarget{protocol_j_s_q_message_media_data-p_ae1b1ff9bfecc2a4a02eabf4da793b94d}{}\index{J\+S\+Q\+Message\+Media\+Data-\/p@{J\+S\+Q\+Message\+Media\+Data-\/p}!media\+View\+Display\+Size@{media\+View\+Display\+Size}}
+\index{media\+View\+Display\+Size@{media\+View\+Display\+Size}!J\+S\+Q\+Message\+Media\+Data-\/p@{J\+S\+Q\+Message\+Media\+Data-\/p}}
+\subsubsection[{media\+View\+Display\+Size}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\+G\+Size) media\+View\+Display\+Size 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [required]}}\label{protocol_j_s_q_message_media_data-p_ae1b1ff9bfecc2a4a02eabf4da793b94d}
+\begin{DoxyReturn}{Returns}
+The frame size for the media\+View when displayed in a {\ttfamily \hyperlink{interface_j_s_q_messages_collection_view_cell}{J\+S\+Q\+Messages\+Collection\+View\+Cell}}.
+\end{DoxyReturn}
+You should return an appropriate size value to be set for the media\+View\textquotesingle{}s frame based on the contents of the view, and the frame and layout of the {\ttfamily \hyperlink{interface_j_s_q_messages_collection_view_cell}{J\+S\+Q\+Messages\+Collection\+View\+Cell}} in which media\+View will be displayed.
+
+\begin{DoxyWarning}{Warning}
+You must return a size with non-\/zero, positive width and height values. 
+\end{DoxyWarning}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Vendors/\+J\+S\+Q\+Messages\+View\+Controller/\+Model/J\+S\+Q\+Message\+Media\+Data.\+h\end{DoxyCompactItemize}

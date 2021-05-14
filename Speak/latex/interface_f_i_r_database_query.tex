@@ -1,0 +1,597 @@
+\hypertarget{interface_f_i_r_database_query}{}\section{F\+I\+R\+Database\+Query Class Reference}
+\label{interface_f_i_r_database_query}\index{F\+I\+R\+Database\+Query@{F\+I\+R\+Database\+Query}}
+
+
+{\ttfamily \#import $<$F\+I\+R\+Database\+Query.\+h$>$}
+
+Inheritance diagram for F\+I\+R\+Database\+Query\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_f_i_r_database_query}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{Indent}{\bf Attach observers to read data}\par
+\begin{DoxyCompactItemize}
+\item 
+(F\+I\+R\+Database\+Handle) -\/ \hyperlink{interface_f_i_r_database_query_a6862c953406b45914cc0f1725aed26f9}{observe\+Event\+Type\+:with\+Block\+:}
+\item 
+(F\+I\+R\+Database\+Handle) -\/ \hyperlink{interface_f_i_r_database_query_a206825e56f8ab6803b1764feec51cd45}{observe\+Event\+Type\+:and\+Previous\+Sibling\+Key\+With\+Block\+:}
+\item 
+(F\+I\+R\+Database\+Handle) -\/ \hyperlink{interface_f_i_r_database_query_a939d866e0e40c8d75135f35ac25487a3}{observe\+Event\+Type\+:with\+Block\+:with\+Cancel\+Block\+:}
+\item 
+(F\+I\+R\+Database\+Handle) -\/ \hyperlink{interface_f_i_r_database_query_a37b21064ed9c40c186725ea77ca6194e}{observe\+Event\+Type\+:and\+Previous\+Sibling\+Key\+With\+Block\+:with\+Cancel\+Block\+:}
+\item 
+(void) -\/ \hyperlink{interface_f_i_r_database_query_a403e05f65d5a4d597392e232247f9d6a}{observe\+Single\+Event\+Of\+Type\+:with\+Block\+:}
+\item 
+(void) -\/ \hyperlink{interface_f_i_r_database_query_ab874dc0b4bc703f245d69f88823f1912}{observe\+Single\+Event\+Of\+Type\+:and\+Previous\+Sibling\+Key\+With\+Block\+:}
+\item 
+(void) -\/ \hyperlink{interface_f_i_r_database_query_a8d2baf564e8b20350aeccc3ad9b600cd}{observe\+Single\+Event\+Of\+Type\+:with\+Block\+:with\+Cancel\+Block\+:}
+\item 
+(void) -\/ \hyperlink{interface_f_i_r_database_query_aaf798cab75512cc021749f13abb5d467}{observe\+Single\+Event\+Of\+Type\+:and\+Previous\+Sibling\+Key\+With\+Block\+:with\+Cancel\+Block\+:}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Detaching observers}\par
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_f_i_r_database_query_a1ddc91b4b35613bd5fe9f361fce0e4a3}{remove\+Observer\+With\+Handle\+:}
+\item 
+(void) -\/ \hyperlink{interface_f_i_r_database_query_a650d750b8044b5e74162c35ea4896b6e}{remove\+All\+Observers}
+\item 
+(void) -\/ \hyperlink{interface_f_i_r_database_query_a80b1f52d52caca276a2b1da77472dbad}{keep\+Synced\+:}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Querying and limiting}\par
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_f_i_r_database_query}{F\+I\+R\+Database\+Query} $\ast$) -\/ \hyperlink{interface_f_i_r_database_query_aaf2bd589708a3753b605d99176099dfa}{query\+Limited\+To\+First\+:}
+\item 
+(\hyperlink{interface_f_i_r_database_query}{F\+I\+R\+Database\+Query} $\ast$) -\/ \hyperlink{interface_f_i_r_database_query_a1b3e5a178d43ef71b85cd8e46838b81d}{query\+Limited\+To\+Last\+:}
+\item 
+(\hyperlink{interface_f_i_r_database_query}{F\+I\+R\+Database\+Query} $\ast$) -\/ \hyperlink{interface_f_i_r_database_query_a5d089e583013c7cdcd653f974e2cba56}{query\+Ordered\+By\+Child\+:}
+\item 
+(\hyperlink{interface_f_i_r_database_query}{F\+I\+R\+Database\+Query} $\ast$) -\/ \hyperlink{interface_f_i_r_database_query_ad77840264e0c925ed3045cb3f9dc08b9}{query\+Ordered\+By\+Key}
+\item 
+(\hyperlink{interface_f_i_r_database_query}{F\+I\+R\+Database\+Query} $\ast$) -\/ \hyperlink{interface_f_i_r_database_query_a0e8cfe18720932f0c016c5b002518d85}{query\+Ordered\+By\+Value}
+\item 
+(\hyperlink{interface_f_i_r_database_query}{F\+I\+R\+Database\+Query} $\ast$) -\/ \hyperlink{interface_f_i_r_database_query_a39a48a5a1634f3bcb7b9fc877de21358}{query\+Ordered\+By\+Priority}
+\item 
+(\hyperlink{interface_f_i_r_database_query}{F\+I\+R\+Database\+Query} $\ast$) -\/ \hyperlink{interface_f_i_r_database_query_a43da151946ea4ba98dbe3053cb2692d3}{query\+Starting\+At\+Value\+:}
+\item 
+(\hyperlink{interface_f_i_r_database_query}{F\+I\+R\+Database\+Query} $\ast$) -\/ \hyperlink{interface_f_i_r_database_query_a73645c8c244cb9aedd6c9d05b16ebf54}{query\+Starting\+At\+Value\+:child\+Key\+:}
+\item 
+(\hyperlink{interface_f_i_r_database_query}{F\+I\+R\+Database\+Query} $\ast$) -\/ \hyperlink{interface_f_i_r_database_query_ab8e9beccc9d62fdeb38b43f6874b4d5b}{query\+Ending\+At\+Value\+:}
+\item 
+(\hyperlink{interface_f_i_r_database_query}{F\+I\+R\+Database\+Query} $\ast$) -\/ \hyperlink{interface_f_i_r_database_query_a0fbc07c9e88066cc91b9f4a92e380de5}{query\+Ending\+At\+Value\+:child\+Key\+:}
+\item 
+(\hyperlink{interface_f_i_r_database_query}{F\+I\+R\+Database\+Query} $\ast$) -\/ \hyperlink{interface_f_i_r_database_query_a976e08ccfcdd4290900eaf6010d09b2d}{query\+Equal\+To\+Value\+:}
+\item 
+(\hyperlink{interface_f_i_r_database_query}{F\+I\+R\+Database\+Query} $\ast$) -\/ \hyperlink{interface_f_i_r_database_query_a157a0049e37c32f5da5a4d1d09f212e3}{query\+Equal\+To\+Value\+:child\+Key\+:}
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Properties}
+\begin{Indent}{\bf Properties}\par
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interface_f_i_r_database_reference}{F\+I\+R\+Database\+Reference} $\ast$ \hyperlink{interface_f_i_r_database_query_a36c154b73831083be721e36f3cb73b10}{ref}
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{Detailed Description}
+A \hyperlink{interface_f_i_r_database_query}{F\+I\+R\+Database\+Query} instance represents a query over the data at a particular location.
+
+You create one by calling one of the query methods (query\+Ordered\+By\+Child\+:, query\+Starting\+At\+Value\+:, etc.) on a \hyperlink{interface_f_i_r_database_reference}{F\+I\+R\+Database\+Reference}. The query methods can be chained to further specify the data you are interested in observing 
+
+\subsection{Method Documentation}
+\hypertarget{interface_f_i_r_database_query_a80b1f52d52caca276a2b1da77472dbad}{}\index{F\+I\+R\+Database\+Query@{F\+I\+R\+Database\+Query}!keep\+Synced\+:@{keep\+Synced\+:}}
+\index{keep\+Synced\+:@{keep\+Synced\+:}!F\+I\+R\+Database\+Query@{F\+I\+R\+Database\+Query}}
+\subsubsection[{keep\+Synced\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) keep\+Synced\+: 
+\begin{DoxyParamCaption}
+\item[{(B\+O\+O\+L)}]{keep\+Synced}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_database_query_a80b1f52d52caca276a2b1da77472dbad}
+By calling {\ttfamily keep\+Synced\+:Y\+E\+S} on a location, the data for that location will automatically be downloaded and kept in sync, even when no listeners are attached for that location. Additionally, while a location is kept synced, it will not be evicted from the persistent disk cache.
+
+
+\begin{DoxyParams}{Parameters}
+{\em keep\+Synced} & Pass Y\+E\+S to keep this location synchronized, pass N\+O to stop synchronization. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{interface_f_i_r_database_reference_aecf6c7ddf5d232b8ec00b00ebbffe78c}{F\+I\+R\+Database\+Reference}.
+
+\hypertarget{interface_f_i_r_database_query_a206825e56f8ab6803b1764feec51cd45}{}\index{F\+I\+R\+Database\+Query@{F\+I\+R\+Database\+Query}!observe\+Event\+Type\+:and\+Previous\+Sibling\+Key\+With\+Block\+:@{observe\+Event\+Type\+:and\+Previous\+Sibling\+Key\+With\+Block\+:}}
+\index{observe\+Event\+Type\+:and\+Previous\+Sibling\+Key\+With\+Block\+:@{observe\+Event\+Type\+:and\+Previous\+Sibling\+Key\+With\+Block\+:}!F\+I\+R\+Database\+Query@{F\+I\+R\+Database\+Query}}
+\subsubsection[{observe\+Event\+Type\+:and\+Previous\+Sibling\+Key\+With\+Block\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (F\+I\+R\+Database\+Handle) observe\+Event\+Type\+: 
+\begin{DoxyParamCaption}
+\item[{(F\+I\+R\+Data\+Event\+Type)}]{event\+Type}
+\item[{andPreviousSiblingKeyWithBlock:(void($^\wedge$)({\bf F\+I\+R\+Data\+Snapshot} $\ast$snapshot, N\+S\+String $\ast$\+\_\+\+\_\+nullable prev\+Key))}]{block}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_database_query_a206825e56f8ab6803b1764feec51cd45}
+observe\+Event\+Type\+:and\+Previous\+Sibling\+Key\+With\+Block\+: is used to listen for data changes at a particular location. This is the primary way to read data from the Firebase Database. Your block will be triggered for the initial data and again whenever the data changes. In addition, for F\+I\+R\+Data\+Event\+Type\+Child\+Added, F\+I\+R\+Data\+Event\+Type\+Child\+Moved, and F\+I\+R\+Data\+Event\+Type\+Child\+Changed events, your block will be passed the key of the previous node by priority order.
+
+Use remove\+Observer\+With\+Handle\+: to stop receiving updates.
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+Type} & The type of event to listen for. \\
+\hline
+{\em block} & The block that should be called with initial data and updates. It is passed the data as a \hyperlink{interface_f_i_r_data_snapshot}{F\+I\+R\+Data\+Snapshot} and the previous child\textquotesingle{}s key. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A handle used to unregister this block later using remove\+Observer\+With\+Handle\+: 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{interface_f_i_r_database_reference_ab397f0954c585301aac6e1454508cecd}{F\+I\+R\+Database\+Reference}.
+
+\hypertarget{interface_f_i_r_database_query_a37b21064ed9c40c186725ea77ca6194e}{}\index{F\+I\+R\+Database\+Query@{F\+I\+R\+Database\+Query}!observe\+Event\+Type\+:and\+Previous\+Sibling\+Key\+With\+Block\+:with\+Cancel\+Block\+:@{observe\+Event\+Type\+:and\+Previous\+Sibling\+Key\+With\+Block\+:with\+Cancel\+Block\+:}}
+\index{observe\+Event\+Type\+:and\+Previous\+Sibling\+Key\+With\+Block\+:with\+Cancel\+Block\+:@{observe\+Event\+Type\+:and\+Previous\+Sibling\+Key\+With\+Block\+:with\+Cancel\+Block\+:}!F\+I\+R\+Database\+Query@{F\+I\+R\+Database\+Query}}
+\subsubsection[{observe\+Event\+Type\+:and\+Previous\+Sibling\+Key\+With\+Block\+:with\+Cancel\+Block\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (F\+I\+R\+Database\+Handle) observe\+Event\+Type\+: 
+\begin{DoxyParamCaption}
+\item[{(F\+I\+R\+Data\+Event\+Type)}]{event\+Type}
+\item[{andPreviousSiblingKeyWithBlock:(void($^\wedge$)({\bf F\+I\+R\+Data\+Snapshot} $\ast$snapshot, N\+S\+String $\ast$\+\_\+\+\_\+nullable prev\+Key))}]{block}
+\item[{withCancelBlock:(nullable void($^\wedge$)(N\+S\+Error $\ast$error))}]{cancel\+Block}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_database_query_a37b21064ed9c40c186725ea77ca6194e}
+observe\+Event\+Type\+:and\+Previous\+Sibling\+Key\+With\+Block\+: is used to listen for data changes at a particular location. This is the primary way to read data from the Firebase Database. Your block will be triggered for the initial data and again whenever the data changes. In addition, for F\+I\+R\+Data\+Event\+Type\+Child\+Added, F\+I\+R\+Data\+Event\+Type\+Child\+Moved, and F\+I\+R\+Data\+Event\+Type\+Child\+Changed events, your block will be passed the key of the previous node by priority order.
+
+The cancel\+Block will be called if you will no longer receive new events due to no longer having permission.
+
+Use remove\+Observer\+With\+Handle\+: to stop receiving updates.
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+Type} & The type of event to listen for. \\
+\hline
+{\em block} & The block that should be called with initial data and updates. It is passed the data as a \hyperlink{interface_f_i_r_data_snapshot}{F\+I\+R\+Data\+Snapshot} and the previous child\textquotesingle{}s key. \\
+\hline
+{\em cancel\+Block} & The block that should be called if this client no longer has permission to receive these events \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A handle used to unregister this block later using remove\+Observer\+With\+Handle\+: 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{interface_f_i_r_database_reference_aae2652117463c93b3d7cb887637bac05}{F\+I\+R\+Database\+Reference}.
+
+\hypertarget{interface_f_i_r_database_query_a6862c953406b45914cc0f1725aed26f9}{}\index{F\+I\+R\+Database\+Query@{F\+I\+R\+Database\+Query}!observe\+Event\+Type\+:with\+Block\+:@{observe\+Event\+Type\+:with\+Block\+:}}
+\index{observe\+Event\+Type\+:with\+Block\+:@{observe\+Event\+Type\+:with\+Block\+:}!F\+I\+R\+Database\+Query@{F\+I\+R\+Database\+Query}}
+\subsubsection[{observe\+Event\+Type\+:with\+Block\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (F\+I\+R\+Database\+Handle) observe\+Event\+Type\+: 
+\begin{DoxyParamCaption}
+\item[{(F\+I\+R\+Data\+Event\+Type)}]{event\+Type}
+\item[{withBlock:(void($^\wedge$)({\bf F\+I\+R\+Data\+Snapshot} $\ast$snapshot))}]{block}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_database_query_a6862c953406b45914cc0f1725aed26f9}
+observe\+Event\+Type\+:with\+Block\+: is used to listen for data changes at a particular location. This is the primary way to read data from the Firebase Database. Your block will be triggered for the initial data and again whenever the data changes.
+
+Use remove\+Observer\+With\+Handle\+: to stop receiving updates. 
+\begin{DoxyParams}{Parameters}
+{\em event\+Type} & The type of event to listen for. \\
+\hline
+{\em block} & The block that should be called with initial data and updates. It is passed the data as a \hyperlink{interface_f_i_r_data_snapshot}{F\+I\+R\+Data\+Snapshot}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A handle used to unregister this block later using remove\+Observer\+With\+Handle\+: 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{interface_f_i_r_database_reference_a92d618b443c649ba9f8c9d938a478c99}{F\+I\+R\+Database\+Reference}.
+
+\hypertarget{interface_f_i_r_database_query_a939d866e0e40c8d75135f35ac25487a3}{}\index{F\+I\+R\+Database\+Query@{F\+I\+R\+Database\+Query}!observe\+Event\+Type\+:with\+Block\+:with\+Cancel\+Block\+:@{observe\+Event\+Type\+:with\+Block\+:with\+Cancel\+Block\+:}}
+\index{observe\+Event\+Type\+:with\+Block\+:with\+Cancel\+Block\+:@{observe\+Event\+Type\+:with\+Block\+:with\+Cancel\+Block\+:}!F\+I\+R\+Database\+Query@{F\+I\+R\+Database\+Query}}
+\subsubsection[{observe\+Event\+Type\+:with\+Block\+:with\+Cancel\+Block\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (F\+I\+R\+Database\+Handle) observe\+Event\+Type\+: 
+\begin{DoxyParamCaption}
+\item[{(F\+I\+R\+Data\+Event\+Type)}]{event\+Type}
+\item[{withBlock:(void($^\wedge$)({\bf F\+I\+R\+Data\+Snapshot} $\ast$snapshot))}]{block}
+\item[{withCancelBlock:(nullable void($^\wedge$)(N\+S\+Error $\ast$error))}]{cancel\+Block}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_database_query_a939d866e0e40c8d75135f35ac25487a3}
+observe\+Event\+Type\+:with\+Block\+: is used to listen for data changes at a particular location. This is the primary way to read data from the Firebase Database. Your block will be triggered for the initial data and again whenever the data changes.
+
+The cancel\+Block will be called if you will no longer receive new events due to no longer having permission.
+
+Use remove\+Observer\+With\+Handle\+: to stop receiving updates.
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+Type} & The type of event to listen for. \\
+\hline
+{\em block} & The block that should be called with initial data and updates. It is passed the data as a \hyperlink{interface_f_i_r_data_snapshot}{F\+I\+R\+Data\+Snapshot}. \\
+\hline
+{\em cancel\+Block} & The block that should be called if this client no longer has permission to receive these events \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A handle used to unregister this block later using remove\+Observer\+With\+Handle\+: 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{interface_f_i_r_database_reference_a45302c74ef8e2646a30654288529cdc4}{F\+I\+R\+Database\+Reference}.
+
+\hypertarget{interface_f_i_r_database_query_ab874dc0b4bc703f245d69f88823f1912}{}\index{F\+I\+R\+Database\+Query@{F\+I\+R\+Database\+Query}!observe\+Single\+Event\+Of\+Type\+:and\+Previous\+Sibling\+Key\+With\+Block\+:@{observe\+Single\+Event\+Of\+Type\+:and\+Previous\+Sibling\+Key\+With\+Block\+:}}
+\index{observe\+Single\+Event\+Of\+Type\+:and\+Previous\+Sibling\+Key\+With\+Block\+:@{observe\+Single\+Event\+Of\+Type\+:and\+Previous\+Sibling\+Key\+With\+Block\+:}!F\+I\+R\+Database\+Query@{F\+I\+R\+Database\+Query}}
+\subsubsection[{observe\+Single\+Event\+Of\+Type\+:and\+Previous\+Sibling\+Key\+With\+Block\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) observe\+Single\+Event\+Of\+Type\+: 
+\begin{DoxyParamCaption}
+\item[{(F\+I\+R\+Data\+Event\+Type)}]{event\+Type}
+\item[{andPreviousSiblingKeyWithBlock:(void($^\wedge$)({\bf F\+I\+R\+Data\+Snapshot} $\ast$snapshot, N\+S\+String $\ast$\+\_\+\+\_\+nullable prev\+Key))}]{block}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_database_query_ab874dc0b4bc703f245d69f88823f1912}
+This is equivalent to observe\+Event\+Type\+:with\+Block\+:, except the block is immediately canceled after the initial data is returned. In addition, for F\+I\+R\+Data\+Event\+Type\+Child\+Added, F\+I\+R\+Data\+Event\+Type\+Child\+Moved, and F\+I\+R\+Data\+Event\+Type\+Child\+Changed events, your block will be passed the key of the previous node by priority order.
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+Type} & The type of event to listen for. \\
+\hline
+{\em block} & The block that should be called. It is passed the data as a \hyperlink{interface_f_i_r_data_snapshot}{F\+I\+R\+Data\+Snapshot} and the previous child\textquotesingle{}s key. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{interface_f_i_r_database_reference_adc5a74af8ee95772dd5952860f53510e}{F\+I\+R\+Database\+Reference}.
+
+\hypertarget{interface_f_i_r_database_query_aaf798cab75512cc021749f13abb5d467}{}\index{F\+I\+R\+Database\+Query@{F\+I\+R\+Database\+Query}!observe\+Single\+Event\+Of\+Type\+:and\+Previous\+Sibling\+Key\+With\+Block\+:with\+Cancel\+Block\+:@{observe\+Single\+Event\+Of\+Type\+:and\+Previous\+Sibling\+Key\+With\+Block\+:with\+Cancel\+Block\+:}}
+\index{observe\+Single\+Event\+Of\+Type\+:and\+Previous\+Sibling\+Key\+With\+Block\+:with\+Cancel\+Block\+:@{observe\+Single\+Event\+Of\+Type\+:and\+Previous\+Sibling\+Key\+With\+Block\+:with\+Cancel\+Block\+:}!F\+I\+R\+Database\+Query@{F\+I\+R\+Database\+Query}}
+\subsubsection[{observe\+Single\+Event\+Of\+Type\+:and\+Previous\+Sibling\+Key\+With\+Block\+:with\+Cancel\+Block\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) observe\+Single\+Event\+Of\+Type\+: 
+\begin{DoxyParamCaption}
+\item[{(F\+I\+R\+Data\+Event\+Type)}]{event\+Type}
+\item[{andPreviousSiblingKeyWithBlock:(void($^\wedge$)({\bf F\+I\+R\+Data\+Snapshot} $\ast$snapshot, N\+S\+String $\ast$\+\_\+\+\_\+nullable prev\+Key))}]{block}
+\item[{withCancelBlock:(nullable void($^\wedge$)(N\+S\+Error $\ast$error))}]{cancel\+Block}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_database_query_aaf798cab75512cc021749f13abb5d467}
+This is equivalent to observe\+Event\+Type\+:with\+Block\+:, except the block is immediately canceled after the initial data is returned. In addition, for F\+I\+R\+Data\+Event\+Type\+Child\+Added, F\+I\+R\+Data\+Event\+Type\+Child\+Moved, and F\+I\+R\+Data\+Event\+Type\+Child\+Changed events, your block will be passed the key of the previous node by priority order.
+
+The cancel\+Block will be called if you do not have permission to read data at this location.
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+Type} & The type of event to listen for. \\
+\hline
+{\em block} & The block that should be called. It is passed the data as a \hyperlink{interface_f_i_r_data_snapshot}{F\+I\+R\+Data\+Snapshot} and the previous child\textquotesingle{}s key. \\
+\hline
+{\em cancel\+Block} & The block that will be called if you don\textquotesingle{}t have permission to access this data \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{interface_f_i_r_database_reference_ac26f783cb6ec5b0f2c30032ef5624f62}{F\+I\+R\+Database\+Reference}.
+
+\hypertarget{interface_f_i_r_database_query_a403e05f65d5a4d597392e232247f9d6a}{}\index{F\+I\+R\+Database\+Query@{F\+I\+R\+Database\+Query}!observe\+Single\+Event\+Of\+Type\+:with\+Block\+:@{observe\+Single\+Event\+Of\+Type\+:with\+Block\+:}}
+\index{observe\+Single\+Event\+Of\+Type\+:with\+Block\+:@{observe\+Single\+Event\+Of\+Type\+:with\+Block\+:}!F\+I\+R\+Database\+Query@{F\+I\+R\+Database\+Query}}
+\subsubsection[{observe\+Single\+Event\+Of\+Type\+:with\+Block\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) observe\+Single\+Event\+Of\+Type\+: 
+\begin{DoxyParamCaption}
+\item[{(F\+I\+R\+Data\+Event\+Type)}]{event\+Type}
+\item[{withBlock:(void($^\wedge$)({\bf F\+I\+R\+Data\+Snapshot} $\ast$snapshot))}]{block}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_database_query_a403e05f65d5a4d597392e232247f9d6a}
+This is equivalent to observe\+Event\+Type\+:with\+Block\+:, except the block is immediately canceled after the initial data is returned.
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+Type} & The type of event to listen for. \\
+\hline
+{\em block} & The block that should be called. It is passed the data as a \hyperlink{interface_f_i_r_data_snapshot}{F\+I\+R\+Data\+Snapshot}. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{interface_f_i_r_database_reference_a514e9d816232fb3e49e003f858282911}{F\+I\+R\+Database\+Reference}.
+
+\hypertarget{interface_f_i_r_database_query_a8d2baf564e8b20350aeccc3ad9b600cd}{}\index{F\+I\+R\+Database\+Query@{F\+I\+R\+Database\+Query}!observe\+Single\+Event\+Of\+Type\+:with\+Block\+:with\+Cancel\+Block\+:@{observe\+Single\+Event\+Of\+Type\+:with\+Block\+:with\+Cancel\+Block\+:}}
+\index{observe\+Single\+Event\+Of\+Type\+:with\+Block\+:with\+Cancel\+Block\+:@{observe\+Single\+Event\+Of\+Type\+:with\+Block\+:with\+Cancel\+Block\+:}!F\+I\+R\+Database\+Query@{F\+I\+R\+Database\+Query}}
+\subsubsection[{observe\+Single\+Event\+Of\+Type\+:with\+Block\+:with\+Cancel\+Block\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) observe\+Single\+Event\+Of\+Type\+: 
+\begin{DoxyParamCaption}
+\item[{(F\+I\+R\+Data\+Event\+Type)}]{event\+Type}
+\item[{withBlock:(void($^\wedge$)({\bf F\+I\+R\+Data\+Snapshot} $\ast$snapshot))}]{block}
+\item[{withCancelBlock:(nullable void($^\wedge$)(N\+S\+Error $\ast$error))}]{cancel\+Block}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_database_query_a8d2baf564e8b20350aeccc3ad9b600cd}
+This is equivalent to observe\+Event\+Type\+:with\+Block\+:, except the block is immediately canceled after the initial data is returned.
+
+The cancel\+Block will be called if you do not have permission to read data at this location.
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+Type} & The type of event to listen for. \\
+\hline
+{\em block} & The block that should be called. It is passed the data as a \hyperlink{interface_f_i_r_data_snapshot}{F\+I\+R\+Data\+Snapshot}. \\
+\hline
+{\em cancel\+Block} & The block that will be called if you don\textquotesingle{}t have permission to access this data \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{interface_f_i_r_database_reference_a2c96e31b4abab73ceed369a04ed6d976}{F\+I\+R\+Database\+Reference}.
+
+\hypertarget{interface_f_i_r_database_query_ab8e9beccc9d62fdeb38b43f6874b4d5b}{}\index{F\+I\+R\+Database\+Query@{F\+I\+R\+Database\+Query}!query\+Ending\+At\+Value\+:@{query\+Ending\+At\+Value\+:}}
+\index{query\+Ending\+At\+Value\+:@{query\+Ending\+At\+Value\+:}!F\+I\+R\+Database\+Query@{F\+I\+R\+Database\+Query}}
+\subsubsection[{query\+Ending\+At\+Value\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf F\+I\+R\+Database\+Query} $\ast$) query\+Ending\+At\+Value\+: 
+\begin{DoxyParamCaption}
+\item[{(nullable id)}]{end\+Value}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_database_query_ab8e9beccc9d62fdeb38b43f6874b4d5b}
+query\+Ending\+At\+Value\+: is used to generate a reference to a limited view of the data at this location. The \hyperlink{interface_f_i_r_database_query}{F\+I\+R\+Database\+Query} instance returned by query\+Ending\+At\+Value\+: will respond to events at nodes with a value less than or equal to end\+Value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em end\+Value} & The upper bound, inclusive, for the value of data visible to the returned \hyperlink{interface_f_i_r_database_query}{F\+I\+R\+Database\+Query} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{interface_f_i_r_database_query}{F\+I\+R\+Database\+Query} instance, limited to data with value less than or equal to end\+Value 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{interface_f_i_r_database_reference_ae20021c3e54928fa5ec302d16f74bb7a}{F\+I\+R\+Database\+Reference}.
+
+\hypertarget{interface_f_i_r_database_query_a0fbc07c9e88066cc91b9f4a92e380de5}{}\index{F\+I\+R\+Database\+Query@{F\+I\+R\+Database\+Query}!query\+Ending\+At\+Value\+:child\+Key\+:@{query\+Ending\+At\+Value\+:child\+Key\+:}}
+\index{query\+Ending\+At\+Value\+:child\+Key\+:@{query\+Ending\+At\+Value\+:child\+Key\+:}!F\+I\+R\+Database\+Query@{F\+I\+R\+Database\+Query}}
+\subsubsection[{query\+Ending\+At\+Value\+:child\+Key\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf F\+I\+R\+Database\+Query} $\ast$) {\bf query\+Ending\+At\+Value\+:} 
+\begin{DoxyParamCaption}
+\item[{(nullable id)}]{end\+Value}
+\item[{childKey:(nullable N\+S\+String $\ast$)}]{child\+Key}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_database_query_a0fbc07c9e88066cc91b9f4a92e380de5}
+query\+Ending\+At\+Value\+:child\+Key\+: is used to generate a reference to a limited view of the data at this location. The \hyperlink{interface_f_i_r_database_query}{F\+I\+R\+Database\+Query} instance returned by query\+Ending\+At\+Value\+:child\+Key will respond to events at nodes with a value less than end\+Value, or equal to end\+Value and with a key less than or equal to child\+Key.
+
+
+\begin{DoxyParams}{Parameters}
+{\em end\+Value} & The upper bound, inclusive, for the value of data visible to the returned \hyperlink{interface_f_i_r_database_query}{F\+I\+R\+Database\+Query} \\
+\hline
+{\em child\+Key} & The upper bound, inclusive, for the key of nodes with value equal to end\+Value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{interface_f_i_r_database_query}{F\+I\+R\+Database\+Query} instance, limited to data with value less than or equal to end\+Value 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{interface_f_i_r_database_reference_a064e3322b6073d18338e2fa4647bd772}{F\+I\+R\+Database\+Reference}.
+
+\hypertarget{interface_f_i_r_database_query_a976e08ccfcdd4290900eaf6010d09b2d}{}\index{F\+I\+R\+Database\+Query@{F\+I\+R\+Database\+Query}!query\+Equal\+To\+Value\+:@{query\+Equal\+To\+Value\+:}}
+\index{query\+Equal\+To\+Value\+:@{query\+Equal\+To\+Value\+:}!F\+I\+R\+Database\+Query@{F\+I\+R\+Database\+Query}}
+\subsubsection[{query\+Equal\+To\+Value\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf F\+I\+R\+Database\+Query} $\ast$) query\+Equal\+To\+Value\+: 
+\begin{DoxyParamCaption}
+\item[{(nullable id)}]{value}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_database_query_a976e08ccfcdd4290900eaf6010d09b2d}
+query\+Equal\+To\+Value\+: is used to generate a reference to a limited view of the data at this location. The \hyperlink{interface_f_i_r_database_query}{F\+I\+R\+Database\+Query} instance returned by query\+Equal\+To\+Value\+: will respond to events at nodes with a value equal to the supplied argument.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value that the data returned by this \hyperlink{interface_f_i_r_database_query}{F\+I\+R\+Database\+Query} will have \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{interface_f_i_r_database_query}{F\+I\+R\+Database\+Query} instance, limited to data with the supplied value. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{interface_f_i_r_database_reference_ac6d6868c5e8f789630f57c02055ef160}{F\+I\+R\+Database\+Reference}.
+
+\hypertarget{interface_f_i_r_database_query_a157a0049e37c32f5da5a4d1d09f212e3}{}\index{F\+I\+R\+Database\+Query@{F\+I\+R\+Database\+Query}!query\+Equal\+To\+Value\+:child\+Key\+:@{query\+Equal\+To\+Value\+:child\+Key\+:}}
+\index{query\+Equal\+To\+Value\+:child\+Key\+:@{query\+Equal\+To\+Value\+:child\+Key\+:}!F\+I\+R\+Database\+Query@{F\+I\+R\+Database\+Query}}
+\subsubsection[{query\+Equal\+To\+Value\+:child\+Key\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf F\+I\+R\+Database\+Query} $\ast$) {\bf query\+Equal\+To\+Value\+:} 
+\begin{DoxyParamCaption}
+\item[{(nullable id)}]{value}
+\item[{childKey:(nullable N\+S\+String $\ast$)}]{child\+Key}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_database_query_a157a0049e37c32f5da5a4d1d09f212e3}
+query\+Equal\+To\+Value\+:child\+Key\+: is used to generate a reference to a limited view of the data at this location. The \hyperlink{interface_f_i_r_database_query}{F\+I\+R\+Database\+Query} instance returned by query\+Equal\+To\+Value\+:child\+Key will respond to events at nodes with a value equal to the supplied argument with a name equal to child\+Key. There will be at most one node that matches because child keys are unique.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value that the data returned by this \hyperlink{interface_f_i_r_database_query}{F\+I\+R\+Database\+Query} will have \\
+\hline
+{\em child\+Key} & The name of nodes with the right value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{interface_f_i_r_database_query}{F\+I\+R\+Database\+Query} instance, limited to data with the supplied value and the key. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{interface_f_i_r_database_reference_a7712559d840ce7c37c35daa185941ea6}{F\+I\+R\+Database\+Reference}.
+
+\hypertarget{interface_f_i_r_database_query_aaf2bd589708a3753b605d99176099dfa}{}\index{F\+I\+R\+Database\+Query@{F\+I\+R\+Database\+Query}!query\+Limited\+To\+First\+:@{query\+Limited\+To\+First\+:}}
+\index{query\+Limited\+To\+First\+:@{query\+Limited\+To\+First\+:}!F\+I\+R\+Database\+Query@{F\+I\+R\+Database\+Query}}
+\subsubsection[{query\+Limited\+To\+First\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf F\+I\+R\+Database\+Query} $\ast$) query\+Limited\+To\+First\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+U\+Integer)}]{limit}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_database_query_aaf2bd589708a3753b605d99176099dfa}
+query\+Limited\+To\+First\+: is used to generate a reference to a limited view of the data at this location. The \hyperlink{interface_f_i_r_database_query}{F\+I\+R\+Database\+Query} instance returned by query\+Limited\+To\+First\+: will respond to at most the first limit child nodes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em limit} & The upper bound, inclusive, for the number of child nodes to receive events for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{interface_f_i_r_database_query}{F\+I\+R\+Database\+Query} instance, limited to at most limit child nodes. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{interface_f_i_r_database_reference_a077454c877bb9474303a3b6ef82334fe}{F\+I\+R\+Database\+Reference}.
+
+\hypertarget{interface_f_i_r_database_query_a1b3e5a178d43ef71b85cd8e46838b81d}{}\index{F\+I\+R\+Database\+Query@{F\+I\+R\+Database\+Query}!query\+Limited\+To\+Last\+:@{query\+Limited\+To\+Last\+:}}
+\index{query\+Limited\+To\+Last\+:@{query\+Limited\+To\+Last\+:}!F\+I\+R\+Database\+Query@{F\+I\+R\+Database\+Query}}
+\subsubsection[{query\+Limited\+To\+Last\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf F\+I\+R\+Database\+Query} $\ast$) query\+Limited\+To\+Last\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+U\+Integer)}]{limit}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_database_query_a1b3e5a178d43ef71b85cd8e46838b81d}
+query\+Limited\+To\+Last\+: is used to generate a reference to a limited view of the data at this location. The \hyperlink{interface_f_i_r_database_query}{F\+I\+R\+Database\+Query} instance returned by query\+Limited\+To\+Last\+: will respond to at most the last limit child nodes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em limit} & The upper bound, inclusive, for the number of child nodes to receive events for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{interface_f_i_r_database_query}{F\+I\+R\+Database\+Query} instance, limited to at most limit child nodes. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{interface_f_i_r_database_reference_a88c088c33be888a2e1ffe1714525307a}{F\+I\+R\+Database\+Reference}.
+
+\hypertarget{interface_f_i_r_database_query_a5d089e583013c7cdcd653f974e2cba56}{}\index{F\+I\+R\+Database\+Query@{F\+I\+R\+Database\+Query}!query\+Ordered\+By\+Child\+:@{query\+Ordered\+By\+Child\+:}}
+\index{query\+Ordered\+By\+Child\+:@{query\+Ordered\+By\+Child\+:}!F\+I\+R\+Database\+Query@{F\+I\+R\+Database\+Query}}
+\subsubsection[{query\+Ordered\+By\+Child\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf F\+I\+R\+Database\+Query} $\ast$) query\+Ordered\+By\+Child\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{key}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_database_query_a5d089e583013c7cdcd653f974e2cba56}
+query\+Order\+By\+: is used to generate a reference to a view of the data that\textquotesingle{}s been sorted by the values of a particular child key. This method is intended to be used in combination with query\+Starting\+At\+Value\+:, query\+Ending\+At\+Value\+:, or query\+Equal\+To\+Value\+:.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The child key to use in ordering data visible to the returned \hyperlink{interface_f_i_r_database_query}{F\+I\+R\+Database\+Query} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{interface_f_i_r_database_query}{F\+I\+R\+Database\+Query} instance, ordered by the values of the specified child key. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{interface_f_i_r_database_reference_a784fc0edfe5f69db8fd44702507e1cc7}{F\+I\+R\+Database\+Reference}.
+
+\hypertarget{interface_f_i_r_database_query_ad77840264e0c925ed3045cb3f9dc08b9}{}\index{F\+I\+R\+Database\+Query@{F\+I\+R\+Database\+Query}!query\+Ordered\+By\+Key@{query\+Ordered\+By\+Key}}
+\index{query\+Ordered\+By\+Key@{query\+Ordered\+By\+Key}!F\+I\+R\+Database\+Query@{F\+I\+R\+Database\+Query}}
+\subsubsection[{query\+Ordered\+By\+Key}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf F\+I\+R\+Database\+Query} $\ast$) query\+Ordered\+By\+Key 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_database_query_ad77840264e0c925ed3045cb3f9dc08b9}
+query\+Ordered\+By\+Key\+: is used to generate a reference to a view of the data that\textquotesingle{}s been sorted by child key. This method is intended to be used in combination with query\+Starting\+At\+Value\+:, query\+Ending\+At\+Value\+:, or query\+Equal\+To\+Value\+:.
+
+\begin{DoxyReturn}{Returns}
+A \hyperlink{interface_f_i_r_database_query}{F\+I\+R\+Database\+Query} instance, ordered by child keys. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{interface_f_i_r_database_reference_a2c537bb6dbc613244d334730e7deb567}{F\+I\+R\+Database\+Reference}.
+
+\hypertarget{interface_f_i_r_database_query_a39a48a5a1634f3bcb7b9fc877de21358}{}\index{F\+I\+R\+Database\+Query@{F\+I\+R\+Database\+Query}!query\+Ordered\+By\+Priority@{query\+Ordered\+By\+Priority}}
+\index{query\+Ordered\+By\+Priority@{query\+Ordered\+By\+Priority}!F\+I\+R\+Database\+Query@{F\+I\+R\+Database\+Query}}
+\subsubsection[{query\+Ordered\+By\+Priority}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf F\+I\+R\+Database\+Query} $\ast$) query\+Ordered\+By\+Priority 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_database_query_a39a48a5a1634f3bcb7b9fc877de21358}
+query\+Ordered\+By\+Priority\+: is used to generate a reference to a view of the data that\textquotesingle{}s been sorted by child priority. This method is intended to be used in combination with query\+Starting\+At\+Value\+:, query\+Ending\+At\+Value\+:, or query\+Equal\+To\+Value\+:.
+
+\begin{DoxyReturn}{Returns}
+A \hyperlink{interface_f_i_r_database_query}{F\+I\+R\+Database\+Query} instance, ordered by child priorities. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{interface_f_i_r_database_reference_a61c7edfbdabbc143666bcbf8daf98baa}{F\+I\+R\+Database\+Reference}.
+
+\hypertarget{interface_f_i_r_database_query_a0e8cfe18720932f0c016c5b002518d85}{}\index{F\+I\+R\+Database\+Query@{F\+I\+R\+Database\+Query}!query\+Ordered\+By\+Value@{query\+Ordered\+By\+Value}}
+\index{query\+Ordered\+By\+Value@{query\+Ordered\+By\+Value}!F\+I\+R\+Database\+Query@{F\+I\+R\+Database\+Query}}
+\subsubsection[{query\+Ordered\+By\+Value}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf F\+I\+R\+Database\+Query} $\ast$) query\+Ordered\+By\+Value 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_database_query_a0e8cfe18720932f0c016c5b002518d85}
+query\+Ordered\+By\+Value\+: is used to generate a reference to a view of the data that\textquotesingle{}s been sorted by child value. This method is intended to be used in combination with query\+Starting\+At\+Value\+:, query\+Ending\+At\+Value\+:, or query\+Equal\+To\+Value\+:.
+
+\begin{DoxyReturn}{Returns}
+A \hyperlink{interface_f_i_r_database_query}{F\+I\+R\+Database\+Query} instance, ordered by child value. 
+\end{DoxyReturn}
+\hypertarget{interface_f_i_r_database_query_a43da151946ea4ba98dbe3053cb2692d3}{}\index{F\+I\+R\+Database\+Query@{F\+I\+R\+Database\+Query}!query\+Starting\+At\+Value\+:@{query\+Starting\+At\+Value\+:}}
+\index{query\+Starting\+At\+Value\+:@{query\+Starting\+At\+Value\+:}!F\+I\+R\+Database\+Query@{F\+I\+R\+Database\+Query}}
+\subsubsection[{query\+Starting\+At\+Value\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf F\+I\+R\+Database\+Query} $\ast$) query\+Starting\+At\+Value\+: 
+\begin{DoxyParamCaption}
+\item[{(nullable id)}]{start\+Value}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_database_query_a43da151946ea4ba98dbe3053cb2692d3}
+query\+Starting\+At\+Value\+: is used to generate a reference to a limited view of the data at this location. The \hyperlink{interface_f_i_r_database_query}{F\+I\+R\+Database\+Query} instance returned by query\+Starting\+At\+Value\+: will respond to events at nodes with a value greater than or equal to start\+Value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em start\+Value} & The lower bound, inclusive, for the value of data visible to the returned \hyperlink{interface_f_i_r_database_query}{F\+I\+R\+Database\+Query} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{interface_f_i_r_database_query}{F\+I\+R\+Database\+Query} instance, limited to data with value greater than or equal to start\+Value 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{interface_f_i_r_database_reference_a10944a1346139c99947c32b247d492d6}{F\+I\+R\+Database\+Reference}.
+
+\hypertarget{interface_f_i_r_database_query_a73645c8c244cb9aedd6c9d05b16ebf54}{}\index{F\+I\+R\+Database\+Query@{F\+I\+R\+Database\+Query}!query\+Starting\+At\+Value\+:child\+Key\+:@{query\+Starting\+At\+Value\+:child\+Key\+:}}
+\index{query\+Starting\+At\+Value\+:child\+Key\+:@{query\+Starting\+At\+Value\+:child\+Key\+:}!F\+I\+R\+Database\+Query@{F\+I\+R\+Database\+Query}}
+\subsubsection[{query\+Starting\+At\+Value\+:child\+Key\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf F\+I\+R\+Database\+Query} $\ast$) {\bf query\+Starting\+At\+Value\+:} 
+\begin{DoxyParamCaption}
+\item[{(nullable id)}]{start\+Value}
+\item[{childKey:(nullable N\+S\+String $\ast$)}]{child\+Key}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_database_query_a73645c8c244cb9aedd6c9d05b16ebf54}
+query\+Starting\+At\+Value\+:child\+Key\+: is used to generate a reference to a limited view of the data at this location. The \hyperlink{interface_f_i_r_database_query}{F\+I\+R\+Database\+Query} instance returned by query\+Starting\+At\+Value\+:child\+Key will respond to events at nodes with a value greater than start\+Value, or equal to start\+Value and with a key greater than or equal to child\+Key.
+
+
+\begin{DoxyParams}{Parameters}
+{\em start\+Value} & The lower bound, inclusive, for the value of data visible to the returned \hyperlink{interface_f_i_r_database_query}{F\+I\+R\+Database\+Query} \\
+\hline
+{\em child\+Key} & The lower bound, inclusive, for the key of nodes with value equal to start\+Value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{interface_f_i_r_database_query}{F\+I\+R\+Database\+Query} instance, limited to data with value greater than or equal to start\+Value 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{interface_f_i_r_database_reference_a5110d4aa70fc6ac0ff6ec385c398116c}{F\+I\+R\+Database\+Reference}.
+
+\hypertarget{interface_f_i_r_database_query_a650d750b8044b5e74162c35ea4896b6e}{}\index{F\+I\+R\+Database\+Query@{F\+I\+R\+Database\+Query}!remove\+All\+Observers@{remove\+All\+Observers}}
+\index{remove\+All\+Observers@{remove\+All\+Observers}!F\+I\+R\+Database\+Query@{F\+I\+R\+Database\+Query}}
+\subsubsection[{remove\+All\+Observers}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) remove\+All\+Observers 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_database_query_a650d750b8044b5e74162c35ea4896b6e}
+Detach all blocks previously attached to this Firebase Database location with observe\+Event\+Type\+:with\+Block\+: 
+
+Implemented in \hyperlink{interface_f_i_r_database_reference_af462cc690a2cd87354fdfb9a83fb38a8}{F\+I\+R\+Database\+Reference}.
+
+\hypertarget{interface_f_i_r_database_query_a1ddc91b4b35613bd5fe9f361fce0e4a3}{}\index{F\+I\+R\+Database\+Query@{F\+I\+R\+Database\+Query}!remove\+Observer\+With\+Handle\+:@{remove\+Observer\+With\+Handle\+:}}
+\index{remove\+Observer\+With\+Handle\+:@{remove\+Observer\+With\+Handle\+:}!F\+I\+R\+Database\+Query@{F\+I\+R\+Database\+Query}}
+\subsubsection[{remove\+Observer\+With\+Handle\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) remove\+Observer\+With\+Handle\+: 
+\begin{DoxyParamCaption}
+\item[{(F\+I\+R\+Database\+Handle)}]{handle}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_database_query_a1ddc91b4b35613bd5fe9f361fce0e4a3}
+Detach a block previously attached with observe\+Event\+Type\+:with\+Block\+:.
+
+
+\begin{DoxyParams}{Parameters}
+{\em handle} & The handle returned by the call to observe\+Event\+Type\+:with\+Block\+: which we are trying to remove. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{interface_f_i_r_database_reference_a3550fc030f427ed4a63996f2227af624}{F\+I\+R\+Database\+Reference}.
+
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_f_i_r_database_query_a36c154b73831083be721e36f3cb73b10}{}\index{F\+I\+R\+Database\+Query@{F\+I\+R\+Database\+Query}!ref@{ref}}
+\index{ref@{ref}!F\+I\+R\+Database\+Query@{F\+I\+R\+Database\+Query}}
+\subsubsection[{ref}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf F\+I\+R\+Database\+Reference}$\ast$) ref\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_f_i_r_database_query_a36c154b73831083be721e36f3cb73b10}
+Gets a \hyperlink{interface_f_i_r_database_reference}{F\+I\+R\+Database\+Reference} for the location of this query.
+
+\begin{DoxyReturn}{Returns}
+A \hyperlink{interface_f_i_r_database_reference}{F\+I\+R\+Database\+Reference} for the location of this query. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Frameworks/\+Firebase\+Database.\+framework/\+Headers/F\+I\+R\+Database\+Query.\+h\end{DoxyCompactItemize}

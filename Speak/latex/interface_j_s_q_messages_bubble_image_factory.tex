@@ -1,0 +1,101 @@
+\hypertarget{interface_j_s_q_messages_bubble_image_factory}{}\section{J\+S\+Q\+Messages\+Bubble\+Image\+Factory Class Reference}
+\label{interface_j_s_q_messages_bubble_image_factory}\index{J\+S\+Q\+Messages\+Bubble\+Image\+Factory@{J\+S\+Q\+Messages\+Bubble\+Image\+Factory}}
+
+
+{\ttfamily \#import $<$J\+S\+Q\+Messages\+Bubble\+Image\+Factory.\+h$>$}
+
+Inheritance diagram for J\+S\+Q\+Messages\+Bubble\+Image\+Factory\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_j_s_q_messages_bubble_image_factory}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) -\/ \hyperlink{interface_j_s_q_messages_bubble_image_factory_a0eaab6e319e38ff4b978a9e9fd437f33}{init}
+\item 
+(instancetype) -\/ \hyperlink{interface_j_s_q_messages_bubble_image_factory_abb1e5a23279319a1671730e248659431}{init\+With\+Bubble\+Image\+:cap\+Insets\+:}
+\item 
+(\hyperlink{interface_j_s_q_messages_bubble_image}{J\+S\+Q\+Messages\+Bubble\+Image} $\ast$) -\/ \hyperlink{interface_j_s_q_messages_bubble_image_factory_a1e19dc173f93d8114612e06f66b14c46}{outgoing\+Messages\+Bubble\+Image\+With\+Color\+:}
+\item 
+(\hyperlink{interface_j_s_q_messages_bubble_image}{J\+S\+Q\+Messages\+Bubble\+Image} $\ast$) -\/ \hyperlink{interface_j_s_q_messages_bubble_image_factory_a334d63b9cd2ac93799a88761017b9b0e}{incoming\+Messages\+Bubble\+Image\+With\+Color\+:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+{\ttfamily \hyperlink{interface_j_s_q_messages_bubble_image_factory}{J\+S\+Q\+Messages\+Bubble\+Image\+Factory}} is a factory that provides a means for creating and styling {\ttfamily \hyperlink{interface_j_s_q_messages_bubble_image}{J\+S\+Q\+Messages\+Bubble\+Image}} objects to be displayed in a {\ttfamily \hyperlink{interface_j_s_q_messages_collection_view_cell}{J\+S\+Q\+Messages\+Collection\+View\+Cell}} of a {\ttfamily \hyperlink{interface_j_s_q_messages_collection_view}{J\+S\+Q\+Messages\+Collection\+View}}. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_j_s_q_messages_bubble_image_factory_a334d63b9cd2ac93799a88761017b9b0e}{}\index{J\+S\+Q\+Messages\+Bubble\+Image\+Factory@{J\+S\+Q\+Messages\+Bubble\+Image\+Factory}!incoming\+Messages\+Bubble\+Image\+With\+Color\+:@{incoming\+Messages\+Bubble\+Image\+With\+Color\+:}}
+\index{incoming\+Messages\+Bubble\+Image\+With\+Color\+:@{incoming\+Messages\+Bubble\+Image\+With\+Color\+:}!J\+S\+Q\+Messages\+Bubble\+Image\+Factory@{J\+S\+Q\+Messages\+Bubble\+Image\+Factory}}
+\subsubsection[{incoming\+Messages\+Bubble\+Image\+With\+Color\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf J\+S\+Q\+Messages\+Bubble\+Image} $\ast$) incoming\+Messages\+Bubble\+Image\+With\+Color\+: 
+\begin{DoxyParamCaption}
+\item[{(U\+I\+Color $\ast$)}]{color}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_messages_bubble_image_factory_a334d63b9cd2ac93799a88761017b9b0e}
+Creates and returns a {\ttfamily \hyperlink{interface_j_s_q_messages_bubble_image}{J\+S\+Q\+Messages\+Bubble\+Image}} object with the specified color for {\itshape incoming} message image bubbles. The {\ttfamily message\+Bubble\+Image} property of the {\ttfamily \hyperlink{interface_j_s_q_messages_bubble_image}{J\+S\+Q\+Messages\+Bubble\+Image}} is configured with a flat bubble image, masked to the given color. The {\ttfamily message\+Bubble\+Highlighted\+Image} property is configured similarly, but with a darkened version of the given color.
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & The color of the bubble image in the image view. This value must not be {\ttfamily nil}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An initialized {\ttfamily \hyperlink{interface_j_s_q_messages_bubble_image}{J\+S\+Q\+Messages\+Bubble\+Image}} object if created successfully, {\ttfamily nil} otherwise. 
+\end{DoxyReturn}
+\hypertarget{interface_j_s_q_messages_bubble_image_factory_a0eaab6e319e38ff4b978a9e9fd437f33}{}\index{J\+S\+Q\+Messages\+Bubble\+Image\+Factory@{J\+S\+Q\+Messages\+Bubble\+Image\+Factory}!init@{init}}
+\index{init@{init}!J\+S\+Q\+Messages\+Bubble\+Image\+Factory@{J\+S\+Q\+Messages\+Bubble\+Image\+Factory}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (instancetype) init 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_messages_bubble_image_factory_a0eaab6e319e38ff4b978a9e9fd437f33}
+Creates and returns a new instance of {\ttfamily \hyperlink{interface_j_s_q_messages_bubble_image_factory}{J\+S\+Q\+Messages\+Bubble\+Image\+Factory}} that uses the default bubble image assets and cap insets.
+
+\begin{DoxyReturn}{Returns}
+An initialized {\ttfamily \hyperlink{interface_j_s_q_messages_bubble_image_factory}{J\+S\+Q\+Messages\+Bubble\+Image\+Factory}} object if created successfully, {\ttfamily nil} otherwise. 
+\end{DoxyReturn}
+\hypertarget{interface_j_s_q_messages_bubble_image_factory_abb1e5a23279319a1671730e248659431}{}\index{J\+S\+Q\+Messages\+Bubble\+Image\+Factory@{J\+S\+Q\+Messages\+Bubble\+Image\+Factory}!init\+With\+Bubble\+Image\+:cap\+Insets\+:@{init\+With\+Bubble\+Image\+:cap\+Insets\+:}}
+\index{init\+With\+Bubble\+Image\+:cap\+Insets\+:@{init\+With\+Bubble\+Image\+:cap\+Insets\+:}!J\+S\+Q\+Messages\+Bubble\+Image\+Factory@{J\+S\+Q\+Messages\+Bubble\+Image\+Factory}}
+\subsubsection[{init\+With\+Bubble\+Image\+:cap\+Insets\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (instancetype) init\+With\+Bubble\+Image\+: 
+\begin{DoxyParamCaption}
+\item[{(U\+I\+Image $\ast$)}]{bubble\+Image}
+\item[{capInsets:(U\+I\+Edge\+Insets)}]{cap\+Insets}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_messages_bubble_image_factory_abb1e5a23279319a1671730e248659431}
+Creates and returns a new instance of {\ttfamily \hyperlink{interface_j_s_q_messages_bubble_image_factory}{J\+S\+Q\+Messages\+Bubble\+Image\+Factory}} having the specified bubble\+Image and cap\+Insets. These values are used internally in the factory to produce {\ttfamily \hyperlink{interface_j_s_q_messages_bubble_image}{J\+S\+Q\+Messages\+Bubble\+Image}} objects.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bubble\+Image} & A template bubble image from which all images will be generated. The image should represent the {\itshape outgoing} message bubble image, which will be flipped horizontally for generating the corresponding {\itshape incoming} message bubble images. This value must not be {\ttfamily nil}.\\
+\hline
+{\em cap\+Insets} & The values to use for the cap insets that define the unstretchable regions of the image. Specify {\ttfamily U\+I\+Edge\+Insets\+Zero} to have the factory create insets that allow the image to stretch from its center point.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An initialized {\ttfamily \hyperlink{interface_j_s_q_messages_bubble_image_factory}{J\+S\+Q\+Messages\+Bubble\+Image\+Factory}} object if created successfully, {\ttfamily nil} otherwise. 
+\end{DoxyReturn}
+\hypertarget{interface_j_s_q_messages_bubble_image_factory_a1e19dc173f93d8114612e06f66b14c46}{}\index{J\+S\+Q\+Messages\+Bubble\+Image\+Factory@{J\+S\+Q\+Messages\+Bubble\+Image\+Factory}!outgoing\+Messages\+Bubble\+Image\+With\+Color\+:@{outgoing\+Messages\+Bubble\+Image\+With\+Color\+:}}
+\index{outgoing\+Messages\+Bubble\+Image\+With\+Color\+:@{outgoing\+Messages\+Bubble\+Image\+With\+Color\+:}!J\+S\+Q\+Messages\+Bubble\+Image\+Factory@{J\+S\+Q\+Messages\+Bubble\+Image\+Factory}}
+\subsubsection[{outgoing\+Messages\+Bubble\+Image\+With\+Color\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf J\+S\+Q\+Messages\+Bubble\+Image} $\ast$) outgoing\+Messages\+Bubble\+Image\+With\+Color\+: 
+\begin{DoxyParamCaption}
+\item[{(U\+I\+Color $\ast$)}]{color}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_messages_bubble_image_factory_a1e19dc173f93d8114612e06f66b14c46}
+Creates and returns a {\ttfamily \hyperlink{interface_j_s_q_messages_bubble_image}{J\+S\+Q\+Messages\+Bubble\+Image}} object with the specified color for {\itshape outgoing} message image bubbles. The {\ttfamily message\+Bubble\+Image} property of the {\ttfamily \hyperlink{interface_j_s_q_messages_bubble_image}{J\+S\+Q\+Messages\+Bubble\+Image}} is configured with a flat bubble image, masked to the given color. The {\ttfamily message\+Bubble\+Highlighted\+Image} property is configured similarly, but with a darkened version of the given color.
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & The color of the bubble image in the image view. This value must not be {\ttfamily nil}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An initialized {\ttfamily \hyperlink{interface_j_s_q_messages_bubble_image}{J\+S\+Q\+Messages\+Bubble\+Image}} object if created successfully, {\ttfamily nil} otherwise. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Vendors/\+J\+S\+Q\+Messages\+View\+Controller/\+Factories/J\+S\+Q\+Messages\+Bubble\+Image\+Factory.\+h\item 
+Vendors/\+J\+S\+Q\+Messages\+View\+Controller/\+Factories/J\+S\+Q\+Messages\+Bubble\+Image\+Factory.\+m\end{DoxyCompactItemize}

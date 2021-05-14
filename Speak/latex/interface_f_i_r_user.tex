@@ -1,0 +1,381 @@
+\hypertarget{interface_f_i_r_user}{}\section{F\+I\+R\+User Class Reference}
+\label{interface_f_i_r_user}\index{F\+I\+R\+User@{F\+I\+R\+User}}
+
+
+Represents a user.  
+
+
+
+
+{\ttfamily \#import $<$F\+I\+R\+User.\+h$>$}
+
+Inheritance diagram for F\+I\+R\+User\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_f_i_r_user}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_f_i_r_user_ae315671a0c11bffe3e9e2fdf283f1764}{}(nullable instancetype) -\/ {\bfseries N\+S\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}\label{interface_f_i_r_user_ae315671a0c11bffe3e9e2fdf283f1764}
+
+\item 
+(void) -\/ \hyperlink{interface_f_i_r_user_a4cec31ca7bbf11546ad76868505a39c3}{update\+Email\+:completion\+:}
+\begin{DoxyCompactList}\small\item\em Updates the email address for the user. On success, the cached user profile data is updated. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{interface_f_i_r_user_a2e9ca3593f5feade6434cd34570d6ae2}{update\+Password\+:completion\+:}
+\begin{DoxyCompactList}\small\item\em Updates the password for the user. On success, the cached user profile data is updated. \end{DoxyCompactList}\item 
+(\hyperlink{interface_f_i_r_user_profile_change_request}{F\+I\+R\+User\+Profile\+Change\+Request} $\ast$) -\/ \hyperlink{interface_f_i_r_user_a20f1b11b76c8f6fffe529f69b687b017}{profile\+Change\+Request}
+\begin{DoxyCompactList}\small\item\em Creates an object which may be used to change the user\textquotesingle{}s profile data. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{interface_f_i_r_user_ac9a4e0578dcbe4abee62143fa2b25f66}{reload\+With\+Completion\+:}
+\begin{DoxyCompactList}\small\item\em Reloads the user\textquotesingle{}s profile data from the server. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{interface_f_i_r_user_afa881b98220684503c5141afbb60e83d}{reauthenticate\+With\+Credential\+:completion\+:}
+\begin{DoxyCompactList}\small\item\em Renews the user\textquotesingle{}s authentication tokens by validating a fresh set of credentials supplied by the user. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{interface_f_i_r_user_af3f89404858e45b357e9075721c38cd5}{get\+Token\+With\+Completion\+:}
+\begin{DoxyCompactList}\small\item\em Retrieves the Firebase authentication token, possibly refreshing it if it has expired. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{interface_f_i_r_user_a792252ddc28e821bc042f1eeea3de332}{get\+Token\+Forcing\+Refresh\+:completion\+:}
+\begin{DoxyCompactList}\small\item\em Retrieves the Firebase authentication token, possibly refreshing it if it has expired. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{interface_f_i_r_user_a604393cf7db6df9d8a47407195fee8bb}{link\+With\+Credential\+:completion\+:}
+\begin{DoxyCompactList}\small\item\em Associates a user account from a third-\/party identity provider with this user. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{interface_f_i_r_user_a769797ae2a590332fcb2a69037ba521e}{unlink\+From\+Provider\+:completion\+:}
+\begin{DoxyCompactList}\small\item\em Disassociates a user account from a third-\/party identity provider with this user. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{interface_f_i_r_user_a95daab86e5a82885d95a3a27ddac81fb}{send\+Email\+Verification\+With\+Completion\+:}
+\begin{DoxyCompactList}\small\item\em Initiates email verification for the user. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{interface_f_i_r_user_a07c341d7bde3a87e50a2181ac77758ac}{delete\+With\+Completion\+:}
+\begin{DoxyCompactList}\small\item\em Deletes the user account (also signs out the user, if this was the current user). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_f_i_r_user_ad8c9b848ff3a3a5ef602d48879197363}{}B\+O\+O\+L \hyperlink{interface_f_i_r_user_ad8c9b848ff3a3a5ef602d48879197363}{anonymous}\label{interface_f_i_r_user_ad8c9b848ff3a3a5ef602d48879197363}
+
+\begin{DoxyCompactList}\small\item\em Indicates the user represents an anonymous user. \end{DoxyCompactList}\item 
+\hypertarget{interface_f_i_r_user_a5e8d5dcca548df938a4623f195f4ee24}{}B\+O\+O\+L \hyperlink{interface_f_i_r_user_a5e8d5dcca548df938a4623f195f4ee24}{email\+Verified}\label{interface_f_i_r_user_a5e8d5dcca548df938a4623f195f4ee24}
+
+\begin{DoxyCompactList}\small\item\em Indicates the email address associated with this user has been verified. \end{DoxyCompactList}\item 
+N\+S\+String $\ast$ \hyperlink{interface_f_i_r_user_a7773545eef6e78ee94d863301c55a4d5}{refresh\+Token}
+\begin{DoxyCompactList}\small\item\em A refresh token; useful for obtaining new access tokens independently. \end{DoxyCompactList}\item 
+N\+S\+Array$<$ id$<$ \hyperlink{protocol_f_i_r_user_info-p}{F\+I\+R\+User\+Info} $>$ $>$ $\ast$ \hyperlink{interface_f_i_r_user_abe650825963214d5f24891f7cbe0e395}{provider\+Data}
+\begin{DoxyCompactList}\small\item\em Profile data for each identity provider, if any. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents a user. 
+
+\begin{DoxyRemark}{Remarks}
+This class is thread-\/safe. 
+\end{DoxyRemark}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_f_i_r_user_a07c341d7bde3a87e50a2181ac77758ac}{}\index{F\+I\+R\+User@{F\+I\+R\+User}!delete\+With\+Completion\+:@{delete\+With\+Completion\+:}}
+\index{delete\+With\+Completion\+:@{delete\+With\+Completion\+:}!F\+I\+R\+User@{F\+I\+R\+User}}
+\subsubsection[{delete\+With\+Completion\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ delete\+With\+Completion\+: 
+\begin{DoxyParamCaption}
+\item[{(nullable {\bf F\+I\+R\+User\+Profile\+Change\+Callback})}]{completion}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_user_a07c341d7bde3a87e50a2181ac77758ac}
+
+
+Deletes the user account (also signs out the user, if this was the current user). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em completion} & Optionally; the block invoked when the request to delete the account is complete, or fails. Invoked asynchronously on the main thread in the future. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+Possible error codes\+:
+\begin{DoxyItemize}
+\item {\ttfamily F\+I\+R\+Auth\+Error\+Code\+Requires\+Recent\+Login} -\/ Updating email is a security sensitive operation that requires a recent login from the user. This error indicates the user has not signed in recently enough. To resolve, reauthenticate the user by invoking reauthenticate\+With\+Credential\+:completion\+: on \hyperlink{interface_f_i_r_user}{F\+I\+R\+User}.
+\item See {\ttfamily \hyperlink{interface_f_i_r_auth_errors}{F\+I\+R\+Auth\+Errors}} for a list of error codes that are common to all \hyperlink{interface_f_i_r_user}{F\+I\+R\+User} operations. 
+\end{DoxyItemize}
+\end{DoxyRemark}
+\hypertarget{interface_f_i_r_user_a792252ddc28e821bc042f1eeea3de332}{}\index{F\+I\+R\+User@{F\+I\+R\+User}!get\+Token\+Forcing\+Refresh\+:completion\+:@{get\+Token\+Forcing\+Refresh\+:completion\+:}}
+\index{get\+Token\+Forcing\+Refresh\+:completion\+:@{get\+Token\+Forcing\+Refresh\+:completion\+:}!F\+I\+R\+User@{F\+I\+R\+User}}
+\subsubsection[{get\+Token\+Forcing\+Refresh\+:completion\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ get\+Token\+Forcing\+Refresh\+: 
+\begin{DoxyParamCaption}
+\item[{(B\+O\+O\+L)}]{force\+Refresh}
+\item[{completion:(nullable F\+I\+R\+Auth\+Token\+Callback)}]{completion}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_user_a792252ddc28e821bc042f1eeea3de332}
+
+
+Retrieves the Firebase authentication token, possibly refreshing it if it has expired. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em force\+Refresh} & Forces a token refresh. Useful if the token becomes invalid for some reason other than an expiration. \\
+\hline
+{\em completion} & Optionally; the block invoked when the token is available. Invoked asynchronously on the main thread in the future. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+The authentication token will be refreshed (by making a network request) if it has expired, or if {\ttfamily force\+Refresh} is Y\+E\+S. 
+
+Possible error codes\+:
+\begin{DoxyItemize}
+\item See {\ttfamily \hyperlink{interface_f_i_r_auth_errors}{F\+I\+R\+Auth\+Errors}} for a list of error codes that are common to all A\+P\+I methods. 
+\end{DoxyItemize}
+\end{DoxyRemark}
+\hypertarget{interface_f_i_r_user_af3f89404858e45b357e9075721c38cd5}{}\index{F\+I\+R\+User@{F\+I\+R\+User}!get\+Token\+With\+Completion\+:@{get\+Token\+With\+Completion\+:}}
+\index{get\+Token\+With\+Completion\+:@{get\+Token\+With\+Completion\+:}!F\+I\+R\+User@{F\+I\+R\+User}}
+\subsubsection[{get\+Token\+With\+Completion\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ get\+Token\+With\+Completion\+: 
+\begin{DoxyParamCaption}
+\item[{(nullable F\+I\+R\+Auth\+Token\+Callback)}]{completion}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_user_af3f89404858e45b357e9075721c38cd5}
+
+
+Retrieves the Firebase authentication token, possibly refreshing it if it has expired. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em completion} & Optionally; the block invoked when the token is available. Invoked asynchronously on the main thread in the future. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+Possible error codes\+:
+\begin{DoxyItemize}
+\item See {\ttfamily \hyperlink{interface_f_i_r_auth_errors}{F\+I\+R\+Auth\+Errors}} for a list of error codes that are common to all A\+P\+I methods. 
+\end{DoxyItemize}
+\end{DoxyRemark}
+\hypertarget{interface_f_i_r_user_a604393cf7db6df9d8a47407195fee8bb}{}\index{F\+I\+R\+User@{F\+I\+R\+User}!link\+With\+Credential\+:completion\+:@{link\+With\+Credential\+:completion\+:}}
+\index{link\+With\+Credential\+:completion\+:@{link\+With\+Credential\+:completion\+:}!F\+I\+R\+User@{F\+I\+R\+User}}
+\subsubsection[{link\+With\+Credential\+:completion\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ link\+With\+Credential\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf F\+I\+R\+Auth\+Credential} $\ast$)}]{credential}
+\item[{completion:(nullable {\bf F\+I\+R\+Auth\+Result\+Callback})}]{completion}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_user_a604393cf7db6df9d8a47407195fee8bb}
+
+
+Associates a user account from a third-\/party identity provider with this user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em credential} & The credential for the identity provider. \\
+\hline
+{\em completion} & Optionally; the block invoked when the unlinking is complete, or fails. Invoked asynchronously on the main thread in the future. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+Possible error codes\+:
+\begin{DoxyItemize}
+\item {\ttfamily F\+I\+R\+Auth\+Error\+Code\+Provider\+Already\+Linked} -\/ Indicates an attempt to link a provider of a type already linked to this account.
+\item {\ttfamily F\+I\+R\+Auth\+Error\+Code\+Credential\+Already\+In\+Use} -\/ Indicates an attempt to link with a credential that has already been linked with a different Firebase account.
+\item {\ttfamily F\+I\+R\+Auth\+Error\+Code\+Operation\+Not\+Allowed} -\/ Indicates that accounts with the identity provider represented by the credential are not enabled. Enable them in the Auth section of the Firebase console.
+\item This method may also return error codes associated with update\+Email\+:completion\+: and update\+Password\+:completion\+: on \hyperlink{interface_f_i_r_user}{F\+I\+R\+User}.
+\item See {\ttfamily \hyperlink{interface_f_i_r_auth_errors}{F\+I\+R\+Auth\+Errors}} for a list of error codes that are common to all \hyperlink{interface_f_i_r_user}{F\+I\+R\+User} operations. 
+\end{DoxyItemize}
+\end{DoxyRemark}
+\hypertarget{interface_f_i_r_user_a20f1b11b76c8f6fffe529f69b687b017}{}\index{F\+I\+R\+User@{F\+I\+R\+User}!profile\+Change\+Request@{profile\+Change\+Request}}
+\index{profile\+Change\+Request@{profile\+Change\+Request}!F\+I\+R\+User@{F\+I\+R\+User}}
+\subsubsection[{profile\+Change\+Request}]{\setlength{\rightskip}{0pt plus 5cm}-\/ profile\+Change\+Request 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_user_a20f1b11b76c8f6fffe529f69b687b017}
+
+
+Creates an object which may be used to change the user\textquotesingle{}s profile data. 
+
+\begin{DoxyRemark}{Remarks}
+Set the properties of the returned object, then call {\ttfamily F\+I\+R\+User\+Profile\+Change\+Request.\+commit\+Changes\+With\+Callback\+:} to perform the updates atomically. 
+\end{DoxyRemark}
+\begin{DoxyReturn}{Returns}
+An object which may be used to change the user\textquotesingle{}s profile data atomically. 
+\end{DoxyReturn}
+\hypertarget{interface_f_i_r_user_afa881b98220684503c5141afbb60e83d}{}\index{F\+I\+R\+User@{F\+I\+R\+User}!reauthenticate\+With\+Credential\+:completion\+:@{reauthenticate\+With\+Credential\+:completion\+:}}
+\index{reauthenticate\+With\+Credential\+:completion\+:@{reauthenticate\+With\+Credential\+:completion\+:}!F\+I\+R\+User@{F\+I\+R\+User}}
+\subsubsection[{reauthenticate\+With\+Credential\+:completion\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ reauthenticate\+With\+Credential\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf F\+I\+R\+Auth\+Credential} $\ast$)}]{credential}
+\item[{completion:(nullable {\bf F\+I\+R\+User\+Profile\+Change\+Callback})}]{completion}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_user_afa881b98220684503c5141afbb60e83d}
+
+
+Renews the user\textquotesingle{}s authentication tokens by validating a fresh set of credentials supplied by the user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em credential} & A user-\/supplied credential, which will be validated by the server. This can be a successful third-\/party identity provider sign-\/in, or an email address and password. \\
+\hline
+{\em completion} & Optionally; the block invoked when the re-\/authentication operation has finished. Invoked asynchronously on the main thread in the future. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+If the user associated with the supplied credential is different from the current user, or if the validation of the supplied credentials fails; an error is returned and the current user remains signed in. 
+
+Possible error codes\+:
+\begin{DoxyItemize}
+\item {\ttfamily F\+I\+R\+Auth\+Error\+Code\+Invalid\+Credential} Indicates the supplied credential is invalid. This could happen if it has expired or it is malformed.
+\item {\ttfamily F\+I\+R\+Auth\+Error\+Code\+Operation\+Not\+Allowed} Indicates that accounts with the identity provider represented by the credential are not enabled. Enable them in the Auth section of the Firebase console.
+\item {\ttfamily F\+I\+R\+Auth\+Error\+Code\+Email\+Already\+In\+Use} Indicates the email asserted by the credential (e.\+g. the email in a Facebook access token) is already in use by an existing account, that cannot be authenticated with this method. Call fetch\+Providers\+For\+Email for this user’s email and then prompt them to sign in with any of the sign-\/in providers returned. This error will only be thrown if the “\+One account per email address” setting is enabled in the Firebase console, under Auth settings. -\/ Please note that the error code raised in this specific situation may not be the same on Web and Android.
+\item {\ttfamily F\+I\+R\+Auth\+Error\+Code\+User\+Disabled} Indicates the user\textquotesingle{}s account is disabled.
+\item {\ttfamily F\+I\+R\+Auth\+Error\+Code\+Wrong\+Password} Indicates the user attempted reauthentication with an incorrect password, if credential is of the type Email\+Password\+Auth\+Credential.
+\item {\ttfamily F\+I\+R\+Auth\+Error\+Code\+User\+Mismatch} Indicates that an attempt was made to reauthenticate with a user which is not the current user.
+\item See {\ttfamily \hyperlink{interface_f_i_r_auth_errors}{F\+I\+R\+Auth\+Errors}} for a list of error codes that are common to all A\+P\+I methods. 
+\end{DoxyItemize}
+\end{DoxyRemark}
+\hypertarget{interface_f_i_r_user_ac9a4e0578dcbe4abee62143fa2b25f66}{}\index{F\+I\+R\+User@{F\+I\+R\+User}!reload\+With\+Completion\+:@{reload\+With\+Completion\+:}}
+\index{reload\+With\+Completion\+:@{reload\+With\+Completion\+:}!F\+I\+R\+User@{F\+I\+R\+User}}
+\subsubsection[{reload\+With\+Completion\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ reload\+With\+Completion\+: 
+\begin{DoxyParamCaption}
+\item[{(nullable {\bf F\+I\+R\+User\+Profile\+Change\+Callback})}]{completion}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_user_ac9a4e0578dcbe4abee62143fa2b25f66}
+
+
+Reloads the user\textquotesingle{}s profile data from the server. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em completion} & Optionally; the block invoked when the reload has finished. Invoked asynchronously on the main thread in the future. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+May fail with a {\ttfamily F\+I\+R\+Auth\+Error\+Code\+Credential\+Too\+Old} error code. In this case you should call {\ttfamily \hyperlink{interface_f_i_r_user_afa881b98220684503c5141afbb60e83d}{reauthenticate\+With\+Credential\+:completion\+:}} before re-\/invoking {\ttfamily \hyperlink{interface_f_i_r_user_a4cec31ca7bbf11546ad76868505a39c3}{update\+Email\+:completion\+:}}. 
+
+Possible error codes\+:
+\begin{DoxyItemize}
+\item See {\ttfamily \hyperlink{interface_f_i_r_auth_errors}{F\+I\+R\+Auth\+Errors}} for a list of error codes that are common to all A\+P\+I methods. 
+\end{DoxyItemize}
+\end{DoxyRemark}
+\hypertarget{interface_f_i_r_user_a95daab86e5a82885d95a3a27ddac81fb}{}\index{F\+I\+R\+User@{F\+I\+R\+User}!send\+Email\+Verification\+With\+Completion\+:@{send\+Email\+Verification\+With\+Completion\+:}}
+\index{send\+Email\+Verification\+With\+Completion\+:@{send\+Email\+Verification\+With\+Completion\+:}!F\+I\+R\+User@{F\+I\+R\+User}}
+\subsubsection[{send\+Email\+Verification\+With\+Completion\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ send\+Email\+Verification\+With\+Completion\+: 
+\begin{DoxyParamCaption}
+\item[{(nullable {\bf F\+I\+R\+Send\+Email\+Verification\+Callback})}]{completion}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_user_a95daab86e5a82885d95a3a27ddac81fb}
+
+
+Initiates email verification for the user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em completion} & Optionally; the block invoked when the request to send an email verification is complete, or fails. Invoked asynchronously on the main thread in the future. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+Possible error codes\+:
+\begin{DoxyItemize}
+\item {\ttfamily F\+I\+R\+Auth\+Error\+Code\+User\+Not\+Found} -\/ Indicates the user account was not found.
+\item See {\ttfamily \hyperlink{interface_f_i_r_auth_errors}{F\+I\+R\+Auth\+Errors}} for a list of error codes that are common to all \hyperlink{interface_f_i_r_user}{F\+I\+R\+User} operations. 
+\end{DoxyItemize}
+\end{DoxyRemark}
+\hypertarget{interface_f_i_r_user_a769797ae2a590332fcb2a69037ba521e}{}\index{F\+I\+R\+User@{F\+I\+R\+User}!unlink\+From\+Provider\+:completion\+:@{unlink\+From\+Provider\+:completion\+:}}
+\index{unlink\+From\+Provider\+:completion\+:@{unlink\+From\+Provider\+:completion\+:}!F\+I\+R\+User@{F\+I\+R\+User}}
+\subsubsection[{unlink\+From\+Provider\+:completion\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ unlink\+From\+Provider\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{provider}
+\item[{completion:(nullable {\bf F\+I\+R\+Auth\+Result\+Callback})}]{completion}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_user_a769797ae2a590332fcb2a69037ba521e}
+
+
+Disassociates a user account from a third-\/party identity provider with this user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em provider} & The provider I\+D of the provider to unlink. \\
+\hline
+{\em completion} & Optionally; the block invoked when the unlinking is complete, or fails. Invoked asynchronously on the main thread in the future. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+Possible error codes\+:
+\begin{DoxyItemize}
+\item {\ttfamily F\+I\+R\+Auth\+Error\+Code\+No\+Such\+Provider} -\/ Indicates an attempt to unlink a provider that is not linked to the account.
+\item {\ttfamily F\+I\+R\+Auth\+Error\+Code\+Requires\+Recent\+Login} -\/ Updating email is a security sensitive operation that requires a recent login from the user. This error indicates the user has not signed in recently enough. To resolve, reauthenticate the user by invoking reauthenticate\+With\+Credential\+:completion\+: on \hyperlink{interface_f_i_r_user}{F\+I\+R\+User}.
+\item See {\ttfamily \hyperlink{interface_f_i_r_auth_errors}{F\+I\+R\+Auth\+Errors}} for a list of error codes that are common to all \hyperlink{interface_f_i_r_user}{F\+I\+R\+User} operations. 
+\end{DoxyItemize}
+\end{DoxyRemark}
+\hypertarget{interface_f_i_r_user_a4cec31ca7bbf11546ad76868505a39c3}{}\index{F\+I\+R\+User@{F\+I\+R\+User}!update\+Email\+:completion\+:@{update\+Email\+:completion\+:}}
+\index{update\+Email\+:completion\+:@{update\+Email\+:completion\+:}!F\+I\+R\+User@{F\+I\+R\+User}}
+\subsubsection[{update\+Email\+:completion\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ update\+Email\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{email}
+\item[{completion:(nullable {\bf F\+I\+R\+User\+Profile\+Change\+Callback})}]{completion}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_user_a4cec31ca7bbf11546ad76868505a39c3}
+
+
+Updates the email address for the user. On success, the cached user profile data is updated. 
+
+\begin{DoxyRemark}{Remarks}
+May fail if there is already an account with this email address that was created using email and password authentication. 
+\end{DoxyRemark}
+
+\begin{DoxyParams}{Parameters}
+{\em email} & The email address for the user. \\
+\hline
+{\em completion} & Optionally; the block invoked when the user profile change has finished. Invoked asynchronously on the main thread in the future. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+Possible error codes\+:
+\begin{DoxyItemize}
+\item {\ttfamily F\+I\+R\+Auth\+Error\+Code\+Email\+Already\+In\+Use} -\/ Indicates the email is already in use by another account.
+\item {\ttfamily F\+I\+R\+Auth\+Error\+Code\+Invalid\+Email} -\/ Indicates the email address is malformed.
+\item {\ttfamily F\+I\+R\+Auth\+Error\+Code\+Requires\+Recent\+Login} -\/ Updating a user’s email is a security sensitive operation that requires a recent login from the user. This error indicates the user has not signed in recently enough. To resolve, reauthenticate the user by invoking reauthenticate\+With\+Credential\+:completion\+: on \hyperlink{interface_f_i_r_user}{F\+I\+R\+User}.
+\item See {\ttfamily \hyperlink{interface_f_i_r_auth_errors}{F\+I\+R\+Auth\+Errors}} for a list of error codes that are common to all \hyperlink{interface_f_i_r_user}{F\+I\+R\+User} operations. 
+\end{DoxyItemize}
+\end{DoxyRemark}
+\hypertarget{interface_f_i_r_user_a2e9ca3593f5feade6434cd34570d6ae2}{}\index{F\+I\+R\+User@{F\+I\+R\+User}!update\+Password\+:completion\+:@{update\+Password\+:completion\+:}}
+\index{update\+Password\+:completion\+:@{update\+Password\+:completion\+:}!F\+I\+R\+User@{F\+I\+R\+User}}
+\subsubsection[{update\+Password\+:completion\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ update\+Password\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{password}
+\item[{completion:(nullable {\bf F\+I\+R\+User\+Profile\+Change\+Callback})}]{completion}
+\end{DoxyParamCaption}
+}\label{interface_f_i_r_user_a2e9ca3593f5feade6434cd34570d6ae2}
+
+
+Updates the password for the user. On success, the cached user profile data is updated. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em password} & The new password for the user. \\
+\hline
+{\em completion} & Optionally; the block invoked when the user profile change has finished. Invoked asynchronously on the main thread in the future. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+Possible error codes\+:
+\begin{DoxyItemize}
+\item {\ttfamily F\+I\+R\+Auth\+Error\+Code\+Operation\+Not\+Allowed} -\/ Indicates the administrator disabled sign in with the specified identity provider.
+\item {\ttfamily F\+I\+R\+Auth\+Error\+Code\+Requires\+Recent\+Login} -\/ Updating a user’s password is a security sensitive operation that requires a recent login from the user. This error indicates the user has not signed in recently enough. To resolve, reauthenticate the user by invoking reauthenticate\+With\+Credential\+:completion\+: on \hyperlink{interface_f_i_r_user}{F\+I\+R\+User}.
+\item {\ttfamily F\+I\+R\+Auth\+Error\+Code\+Weak\+Password} -\/ Indicates an attempt to set a password that is considered too weak. The N\+S\+Localized\+Failure\+Reason\+Error\+Key field in the N\+S\+Error.\+user\+Info dictionary object will contain more detailed explanation that can be shown to the user.
+\item See {\ttfamily \hyperlink{interface_f_i_r_auth_errors}{F\+I\+R\+Auth\+Errors}} for a list of error codes that are common to all \hyperlink{interface_f_i_r_user}{F\+I\+R\+User} operations. 
+\end{DoxyItemize}
+\end{DoxyRemark}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_f_i_r_user_abe650825963214d5f24891f7cbe0e395}{}\index{F\+I\+R\+User@{F\+I\+R\+User}!provider\+Data@{provider\+Data}}
+\index{provider\+Data@{provider\+Data}!F\+I\+R\+User@{F\+I\+R\+User}}
+\subsubsection[{provider\+Data}]{\setlength{\rightskip}{0pt plus 5cm}-\/ provider\+Data\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_f_i_r_user_abe650825963214d5f24891f7cbe0e395}
+
+
+Profile data for each identity provider, if any. 
+
+\begin{DoxyRemark}{Remarks}
+This data is cached on sign-\/in and updated when linking or unlinking. 
+\end{DoxyRemark}
+\hypertarget{interface_f_i_r_user_a7773545eef6e78ee94d863301c55a4d5}{}\index{F\+I\+R\+User@{F\+I\+R\+User}!refresh\+Token@{refresh\+Token}}
+\index{refresh\+Token@{refresh\+Token}!F\+I\+R\+User@{F\+I\+R\+User}}
+\subsubsection[{refresh\+Token}]{\setlength{\rightskip}{0pt plus 5cm}-\/ refresh\+Token\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_f_i_r_user_a7773545eef6e78ee94d863301c55a4d5}
+
+
+A refresh token; useful for obtaining new access tokens independently. 
+
+\begin{DoxyRemark}{Remarks}
+This property should only be used for advanced scenarios, and is not typically needed. 
+\end{DoxyRemark}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Frameworks/\+Firebase\+Auth.\+framework/\+Headers/\hyperlink{_f_i_r_user_8h}{F\+I\+R\+User.\+h}\end{DoxyCompactItemize}

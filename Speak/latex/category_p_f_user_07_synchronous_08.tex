@@ -1,0 +1,278 @@
+\hypertarget{category_p_f_user_07_synchronous_08}{}\section{P\+F\+User(Synchronous) Category Reference}
+\label{category_p_f_user_07_synchronous_08}\index{P\+F\+User(\+Synchronous)@{P\+F\+User(\+Synchronous)}}
+
+
+{\ttfamily \#import $<$P\+F\+User+\+Synchronous.\+h$>$}
+
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{category_p_f_user_07_synchronous_08_a61743931dba4d9a00bf20a5e942ae830}{P\+F\+\_\+\+S\+W\+I\+F\+T\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}
+\begin{DoxyCompactList}\small\item\em 
+
+ \end{DoxyCompactList}\item 
+(B\+O\+O\+L) -\/ \hyperlink{category_p_f_user_07_synchronous_08_a20cdf3d969a008fa99114dc26f0e092c}{sign\+Up\+:}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(nullable instancetype) + \hyperlink{category_p_f_user_07_synchronous_08_a06f636e0dff66c01a9f4d7f4fea2a0df}{log\+In\+With\+Username\+:password\+:}
+\begin{DoxyCompactList}\small\item\em 
+
+ \end{DoxyCompactList}\item 
+(nullable instancetype) + \hyperlink{category_p_f_user_07_synchronous_08_ab991742674c9423ba9c33c5e8f659b66}{log\+In\+With\+Username\+:password\+:error\+:}
+\item 
+(nullable instancetype) + \hyperlink{category_p_f_user_07_synchronous_08_a7f17b20a2be8a66cdcd8952630be3421}{become\+:}
+\begin{DoxyCompactList}\small\item\em 
+
+ \end{DoxyCompactList}\item 
+(nullable instancetype) + \hyperlink{category_p_f_user_07_synchronous_08_a870f7ba0bcd5b3b484388b6ca59e71c7}{become\+:error\+:}
+\item 
+(void) + \hyperlink{category_p_f_user_07_synchronous_08_af8cba49d3efea923f8d8ae7c3c03bf1a}{log\+Out}
+\begin{DoxyCompactList}\small\item\em 
+
+ \end{DoxyCompactList}\item 
+(B\+O\+O\+L) + \hyperlink{category_p_f_user_07_synchronous_08_a985f5e70663378c45ea743f4d4822e6e}{request\+Password\+Reset\+For\+Email\+:}
+\begin{DoxyCompactList}\small\item\em 
+
+ \end{DoxyCompactList}\item 
+(B\+O\+O\+L) + \hyperlink{category_p_f_user_07_synchronous_08_a642ae36845466ae5f9f2db9674a0ab36}{request\+Password\+Reset\+For\+Email\+:error\+:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Copyright (c) 2015-\/present, \hyperlink{interface_parse}{Parse}, L\+L\+C. All rights reserved.
+
+This source code is licensed under the B\+S\+D-\/style license found in the L\+I\+C\+E\+N\+S\+E file in the root directory of this source tree. An additional grant of patent rights can be found in the P\+A\+T\+E\+N\+T\+S file in the same directory. This category lists all methods of {\ttfamily P\+F\+User} class that are synchronous, but have asynchronous counterpart, Calling one of these synchronous methods could potentially block the current thread for a large amount of time, since it might be fetching from network or saving/loading data from disk. 
+
+\subsection{Method Documentation}
+\hypertarget{category_p_f_user_07_synchronous_08_a7f17b20a2be8a66cdcd8952630be3421}{}\index{P\+F\+User(\+Synchronous)@{P\+F\+User(\+Synchronous)}!become\+:@{become\+:}}
+\index{become\+:@{become\+:}!P\+F\+User(\+Synchronous)@{P\+F\+User(\+Synchronous)}}
+\subsubsection[{become\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (nullable instancetype) become\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{P\+F\+\_\+\+S\+W\+I\+F\+T\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}
+\end{DoxyParamCaption}
+}\label{category_p_f_user_07_synchronous_08_a7f17b20a2be8a66cdcd8952630be3421}
+
+
+
+
+ 
+
+
+
+
+
+Makes a {\itshape synchronous} request to become a user with the given session token.
+
+Returns an instance of the successfully logged in {\ttfamily P\+F\+User}. This also caches the user locally so that calls to {\ttfamily +current\+User} will use the latest logged in user.
+
+
+\begin{DoxyParams}{Parameters}
+{\em session\+Token} & The session token for the user.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns an instance of the {\ttfamily P\+F\+User} on success. If becoming a user fails due to incorrect token, it returns {\ttfamily nil}. 
+\end{DoxyReturn}
+\hypertarget{category_p_f_user_07_synchronous_08_a870f7ba0bcd5b3b484388b6ca59e71c7}{}\index{P\+F\+User(\+Synchronous)@{P\+F\+User(\+Synchronous)}!become\+:error\+:@{become\+:error\+:}}
+\index{become\+:error\+:@{become\+:error\+:}!P\+F\+User(\+Synchronous)@{P\+F\+User(\+Synchronous)}}
+\subsubsection[{become\+:error\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (nullable instancetype) {\bf become\+:} 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{session\+Token}
+\item[{error:(N\+S\+Error $\ast$$\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{category_p_f_user_07_synchronous_08_a870f7ba0bcd5b3b484388b6ca59e71c7}
+Makes a {\itshape synchronous} request to become a user with the given session token.
+
+Returns an instance of the successfully logged in {\ttfamily P\+F\+User}. This will also cache the user locally so that calls to {\ttfamily +current\+User} will use the latest logged in user.
+
+
+\begin{DoxyParams}{Parameters}
+{\em session\+Token} & The session token for the user. \\
+\hline
+{\em error} & The error object to set on error.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns an instance of the {\ttfamily P\+F\+User} on success. If becoming a user fails due to incorrect token, it returns {\ttfamily nil}. 
+\end{DoxyReturn}
+\hypertarget{category_p_f_user_07_synchronous_08_a06f636e0dff66c01a9f4d7f4fea2a0df}{}\index{P\+F\+User(\+Synchronous)@{P\+F\+User(\+Synchronous)}!log\+In\+With\+Username\+:password\+:@{log\+In\+With\+Username\+:password\+:}}
+\index{log\+In\+With\+Username\+:password\+:@{log\+In\+With\+Username\+:password\+:}!P\+F\+User(\+Synchronous)@{P\+F\+User(\+Synchronous)}}
+\subsubsection[{log\+In\+With\+Username\+:password\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (nullable instancetype) log\+In\+With\+Username\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{username}
+\item[{password:(N\+S\+String $\ast$)}]{P\+F\+\_\+\+S\+W\+I\+F\+T\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}
+\end{DoxyParamCaption}
+}\label{category_p_f_user_07_synchronous_08_a06f636e0dff66c01a9f4d7f4fea2a0df}
+
+
+
+
+ 
+
+
+
+
+
+Makes a {\itshape synchronous} request to login a user with specified credentials.
+
+Returns an instance of the successfully logged in {\ttfamily P\+F\+User}. This also caches the user locally so that calls to {\ttfamily +current\+User} will use the latest logged in user.
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & The username of the user. \\
+\hline
+{\em password} & The password of the user.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns an instance of the {\ttfamily P\+F\+User} on success. If login failed for either wrong password or wrong username, returns {\ttfamily nil}. 
+\end{DoxyReturn}
+\hypertarget{category_p_f_user_07_synchronous_08_ab991742674c9423ba9c33c5e8f659b66}{}\index{P\+F\+User(\+Synchronous)@{P\+F\+User(\+Synchronous)}!log\+In\+With\+Username\+:password\+:error\+:@{log\+In\+With\+Username\+:password\+:error\+:}}
+\index{log\+In\+With\+Username\+:password\+:error\+:@{log\+In\+With\+Username\+:password\+:error\+:}!P\+F\+User(\+Synchronous)@{P\+F\+User(\+Synchronous)}}
+\subsubsection[{log\+In\+With\+Username\+:password\+:error\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (nullable instancetype) log\+In\+With\+Username\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{username}
+\item[{password:(N\+S\+String $\ast$)}]{password}
+\item[{error:(N\+S\+Error $\ast$$\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{category_p_f_user_07_synchronous_08_ab991742674c9423ba9c33c5e8f659b66}
+Makes a {\itshape synchronous} request to login a user with specified credentials.
+
+Returns an instance of the successfully logged in {\ttfamily P\+F\+User}. This also caches the user locally so that calls to {\ttfamily +current\+User} will use the latest logged in user.
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & The username of the user. \\
+\hline
+{\em password} & The password of the user. \\
+\hline
+{\em error} & The error object to set on error.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns an instance of the {\ttfamily P\+F\+User} on success. If login failed for either wrong password or wrong username, returns {\ttfamily nil}. 
+\end{DoxyReturn}
+\hypertarget{category_p_f_user_07_synchronous_08_af8cba49d3efea923f8d8ae7c3c03bf1a}{}\index{P\+F\+User(\+Synchronous)@{P\+F\+User(\+Synchronous)}!log\+Out@{log\+Out}}
+\index{log\+Out@{log\+Out}!P\+F\+User(\+Synchronous)@{P\+F\+User(\+Synchronous)}}
+\subsubsection[{log\+Out}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) log\+Out 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{category_p_f_user_07_synchronous_08_af8cba49d3efea923f8d8ae7c3c03bf1a}
+
+
+
+
+ 
+
+
+
+
+
+Synchronously$\ast$ logs out the currently logged in user on disk. \hypertarget{category_p_f_user_07_synchronous_08_a61743931dba4d9a00bf20a5e942ae830}{}\index{P\+F\+User(\+Synchronous)@{P\+F\+User(\+Synchronous)}!P\+F\+\_\+\+S\+W\+I\+F\+T\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E@{P\+F\+\_\+\+S\+W\+I\+F\+T\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}}
+\index{P\+F\+\_\+\+S\+W\+I\+F\+T\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E@{P\+F\+\_\+\+S\+W\+I\+F\+T\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}!P\+F\+User(\+Synchronous)@{P\+F\+User(\+Synchronous)}}
+\subsubsection[{P\+F\+\_\+\+S\+W\+I\+F\+T\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) P\+F\+\_\+\+S\+W\+I\+F\+T\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{category_p_f_user_07_synchronous_08_a61743931dba4d9a00bf20a5e942ae830}
+
+
+
+
+ 
+
+
+
+
+
+Signs up the user {\itshape synchronously}.
+
+This will also enforce that the username isn\textquotesingle{}t already taken.
+
+\begin{DoxyWarning}{Warning}
+Make sure that password and username are set before calling this method.
+\end{DoxyWarning}
+\begin{DoxyReturn}{Returns}
+Returns {\ttfamily Y\+E\+S} if the sign up was successful, otherwise {\ttfamily N\+O}. 
+\end{DoxyReturn}
+\hypertarget{category_p_f_user_07_synchronous_08_a985f5e70663378c45ea743f4d4822e6e}{}\index{P\+F\+User(\+Synchronous)@{P\+F\+User(\+Synchronous)}!request\+Password\+Reset\+For\+Email\+:@{request\+Password\+Reset\+For\+Email\+:}}
+\index{request\+Password\+Reset\+For\+Email\+:@{request\+Password\+Reset\+For\+Email\+:}!P\+F\+User(\+Synchronous)@{P\+F\+User(\+Synchronous)}}
+\subsubsection[{request\+Password\+Reset\+For\+Email\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (B\+O\+O\+L) request\+Password\+Reset\+For\+Email\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{P\+F\+\_\+\+S\+W\+I\+F\+T\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+L\+E}
+\end{DoxyParamCaption}
+}\label{category_p_f_user_07_synchronous_08_a985f5e70663378c45ea743f4d4822e6e}
+
+
+
+
+ 
+
+
+
+
+
+Synchronously$\ast$ Send a password reset request for a specified email.
+
+If a user account exists with that email, an email will be sent to that address with instructions on how to reset their password.
+
+
+\begin{DoxyParams}{Parameters}
+{\em email} & Email of the account to send a reset password request.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns {\ttfamily Y\+E\+S} if the reset email request is successful. {\ttfamily N\+O} -\/ if no account was found for the email address. 
+\end{DoxyReturn}
+\hypertarget{category_p_f_user_07_synchronous_08_a642ae36845466ae5f9f2db9674a0ab36}{}\index{P\+F\+User(\+Synchronous)@{P\+F\+User(\+Synchronous)}!request\+Password\+Reset\+For\+Email\+:error\+:@{request\+Password\+Reset\+For\+Email\+:error\+:}}
+\index{request\+Password\+Reset\+For\+Email\+:error\+:@{request\+Password\+Reset\+For\+Email\+:error\+:}!P\+F\+User(\+Synchronous)@{P\+F\+User(\+Synchronous)}}
+\subsubsection[{request\+Password\+Reset\+For\+Email\+:error\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (B\+O\+O\+L) {\bf request\+Password\+Reset\+For\+Email\+:} 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{email}
+\item[{error:(N\+S\+Error $\ast$$\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{category_p_f_user_07_synchronous_08_a642ae36845466ae5f9f2db9674a0ab36}
+Synchronously$\ast$ send a password reset request for a specified email and sets an error object.
+
+If a user account exists with that email, an email will be sent to that address with instructions on how to reset their password.
+
+
+\begin{DoxyParams}{Parameters}
+{\em email} & Email of the account to send a reset password request. \\
+\hline
+{\em error} & Error object to set on error. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns {\ttfamily Y\+E\+S} if the reset email request is successful. {\ttfamily N\+O} -\/ if no account was found for the email address. 
+\end{DoxyReturn}
+\hypertarget{category_p_f_user_07_synchronous_08_a20cdf3d969a008fa99114dc26f0e092c}{}\index{P\+F\+User(\+Synchronous)@{P\+F\+User(\+Synchronous)}!sign\+Up\+:@{sign\+Up\+:}}
+\index{sign\+Up\+:@{sign\+Up\+:}!P\+F\+User(\+Synchronous)@{P\+F\+User(\+Synchronous)}}
+\subsubsection[{sign\+Up\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) sign\+Up\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Error $\ast$$\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{category_p_f_user_07_synchronous_08_a20cdf3d969a008fa99114dc26f0e092c}
+Signs up the user {\itshape synchronously}.
+
+This will also enforce that the username isn\textquotesingle{}t already taken.
+
+\begin{DoxyWarning}{Warning}
+Make sure that password and username are set before calling this method.
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em error} & Error object to set on error.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns whether the sign up was successful. 
+\end{DoxyReturn}
+
+
+The documentation for this category was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Frameworks/\+Parse.\+framework/\+Headers/P\+F\+User+\+Synchronous.\+h\end{DoxyCompactItemize}

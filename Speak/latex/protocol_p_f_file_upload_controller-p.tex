@@ -1,0 +1,60 @@
+\hypertarget{protocol_p_f_file_upload_controller-p}{}\section{$<$P\+F\+File\+Upload\+Controller$>$ Protocol Reference}
+\label{protocol_p_f_file_upload_controller-p}\index{$<$\+P\+F\+File\+Upload\+Controller$>$@{$<$\+P\+F\+File\+Upload\+Controller$>$}}
+
+
+{\ttfamily \#import $<$P\+F\+File\+Upload\+Controller.\+h$>$}
+
+Inheritance diagram for $<$P\+F\+File\+Upload\+Controller$>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{protocol_p_f_file_upload_controller-p}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{class_b_f_task}{B\+F\+Task}$<$ \hyperlink{interface_p_f_file_upload_result}{P\+F\+File\+Upload\+Result} $\ast$ $>$ $\ast$\+\_\+\+Nonnull) -\/ \hyperlink{protocol_p_f_file_upload_controller-p_ab5c5db7880b0b076ca28459ac51eac78}{upload\+Source\+File\+Path\+:file\+Name\+:mime\+Type\+:session\+Token\+:cancellation\+Token\+:progress\+Block\+:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A policy interface for overriding the default upload behavior of uploading a \hyperlink{interface_p_f_file}{P\+F\+File} to application\textquotesingle{}s parse server. Allows for direct uploads to other file storage providers. 
+
+\subsection{Method Documentation}
+\hypertarget{protocol_p_f_file_upload_controller-p_ab5c5db7880b0b076ca28459ac51eac78}{}\index{P\+F\+File\+Upload\+Controller-\/p@{P\+F\+File\+Upload\+Controller-\/p}!upload\+Source\+File\+Path\+:file\+Name\+:mime\+Type\+:session\+Token\+:cancellation\+Token\+:progress\+Block\+:@{upload\+Source\+File\+Path\+:file\+Name\+:mime\+Type\+:session\+Token\+:cancellation\+Token\+:progress\+Block\+:}}
+\index{upload\+Source\+File\+Path\+:file\+Name\+:mime\+Type\+:session\+Token\+:cancellation\+Token\+:progress\+Block\+:@{upload\+Source\+File\+Path\+:file\+Name\+:mime\+Type\+:session\+Token\+:cancellation\+Token\+:progress\+Block\+:}!P\+F\+File\+Upload\+Controller-\/p@{P\+F\+File\+Upload\+Controller-\/p}}
+\subsubsection[{upload\+Source\+File\+Path\+:file\+Name\+:mime\+Type\+:session\+Token\+:cancellation\+Token\+:progress\+Block\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf B\+F\+Task}$<${\bf P\+F\+File\+Upload\+Result} $\ast$$>$ $\ast$ \+\_\+\+Nonnull) upload\+Source\+File\+Path\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$\+\_\+\+Nonnull)}]{source\+File\+Path}
+\item[{fileName:(N\+S\+String $\ast$\+\_\+\+Nullable)}]{file\+Name}
+\item[{mimeType:(N\+S\+String $\ast$\+\_\+\+Nullable)}]{mime\+Type}
+\item[{sessionToken:(N\+S\+String $\ast$\+\_\+\+Nonnull)}]{session\+Token}
+\item[{cancellationToken:({\bf B\+F\+Cancellation\+Token} $\ast$\+\_\+\+Nonnull)}]{cancellation\+Token}
+\item[{progressBlock:(P\+F\+Progress\+Block \+\_\+\+Nonnull)}]{progress\+Block}
+\end{DoxyParamCaption}
+}\label{protocol_p_f_file_upload_controller-p_ab5c5db7880b0b076ca28459ac51eac78}
+Uploads a file asynchronously from file path for a given file state.
+
+
+\begin{DoxyParams}{Parameters}
+{\em source\+File\+Path} & Path to the file to upload. \\
+\hline
+{\em file\+Name} & The \hyperlink{interface_p_f_file}{P\+F\+File}\textquotesingle{}s file\+Name. \\
+\hline
+{\em mime\+Type} & The \hyperlink{interface_p_f_file}{P\+F\+File}\textquotesingle{}s mime type. \\
+\hline
+{\em session\+Token} & The current users\textquotesingle{}s session token. \\
+\hline
+{\em cancellation\+Token} & Cancellation token. \\
+\hline
+{\em progress\+Block} & Progress block to call (optional).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily \hyperlink{class_b_f_task}{B\+F\+Task}} with a success result set to {\ttfamily \hyperlink{interface_p_f_file_upload_result}{P\+F\+File\+Upload\+Result}} containing the url and name of the uploaded file. 
+\end{DoxyReturn}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Frameworks/\+Parse.\+framework/\+Headers/P\+F\+File\+Upload\+Controller.\+h\end{DoxyCompactItemize}

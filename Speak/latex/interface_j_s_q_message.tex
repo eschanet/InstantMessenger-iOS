@@ -1,0 +1,180 @@
+\hypertarget{interface_j_s_q_message}{}\section{J\+S\+Q\+Message Class Reference}
+\label{interface_j_s_q_message}\index{J\+S\+Q\+Message@{J\+S\+Q\+Message}}
+
+
+{\ttfamily \#import $<$J\+S\+Q\+Message.\+h$>$}
+
+Inheritance diagram for J\+S\+Q\+Message\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_j_s_q_message}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) -\/ \hyperlink{interface_j_s_q_message_a7e247dcaafa92be3bdc2998d204426a7}{init\+With\+Sender\+Id\+:sender\+Display\+Name\+:date\+:text\+:}
+\item 
+(instancetype) -\/ \hyperlink{interface_j_s_q_message_a1356c8de521c5e8ef056debd09f2737d}{init\+With\+Sender\+Id\+:sender\+Display\+Name\+:date\+:media\+:}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) + \hyperlink{interface_j_s_q_message_a823956135dbc7fba7683360d5097665b}{message\+With\+Sender\+Id\+:display\+Name\+:text\+:}
+\item 
+(instancetype) + \hyperlink{interface_j_s_q_message_af59d44af5bcc06473f95e9b6589407d9}{message\+With\+Sender\+Id\+:display\+Name\+:media\+:}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_j_s_q_message_a2319678d102c89d8d936de6123e8b2dd}{sender\+Id}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_j_s_q_message_ad5221a5e8e93cda57875efd26154cbcc}{sender\+Display\+Name}
+\item 
+N\+S\+Date $\ast$ \hyperlink{interface_j_s_q_message_a3c9d613ecf1f212e8e76f4582b8ef56b}{date}
+\item 
+B\+O\+O\+L \hyperlink{interface_j_s_q_message_a357e8c434071c3d189f1d82b6bc10dfa}{is\+Media\+Message}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_j_s_q_message_ab3d3b9aacf746c2c98bb4abe0944aa6d}{text}
+\item 
+id$<$ \hyperlink{protocol_j_s_q_message_media_data-p}{J\+S\+Q\+Message\+Media\+Data} $>$ \hyperlink{interface_j_s_q_message_af6afdd2a8e17b8513821b7d1d62e0181}{media}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \hyperlink{interface_j_s_q_message}{J\+S\+Q\+Message}} class is a concrete class for message model objects that represents a single user message. The message can be a text message or media message, depending on how it is initialized. It implements the {\ttfamily \hyperlink{protocol_j_s_q_message_data-p}{J\+S\+Q\+Message\+Data}} protocol and it contains the sender\+Id, sender\+Display\+Name, and the date that the message was sent. If initialized as a media message it also contains a media attachment, otherwise it contains the message text. 
+
+\subsection{Method Documentation}
+\hypertarget{interface_j_s_q_message_a1356c8de521c5e8ef056debd09f2737d}{}\index{J\+S\+Q\+Message@{J\+S\+Q\+Message}!init\+With\+Sender\+Id\+:sender\+Display\+Name\+:date\+:media\+:@{init\+With\+Sender\+Id\+:sender\+Display\+Name\+:date\+:media\+:}}
+\index{init\+With\+Sender\+Id\+:sender\+Display\+Name\+:date\+:media\+:@{init\+With\+Sender\+Id\+:sender\+Display\+Name\+:date\+:media\+:}!J\+S\+Q\+Message@{J\+S\+Q\+Message}}
+\subsubsection[{init\+With\+Sender\+Id\+:sender\+Display\+Name\+:date\+:media\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (instancetype) init\+With\+Sender\+Id\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{sender\+Id}
+\item[{senderDisplayName:(N\+S\+String $\ast$)}]{sender\+Display\+Name}
+\item[{date:(N\+S\+Date $\ast$)}]{date}
+\item[{media:(id$<${\bf J\+S\+Q\+Message\+Media\+Data}$>$)}]{media}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_message_a1356c8de521c5e8ef056debd09f2737d}
+Initializes and returns a message object having the given sender\+Id, display\+Name, date, and media.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender\+Id} & The unique identifier for the user who sent the message. This value must not be {\ttfamily nil}. \\
+\hline
+{\em sender\+Display\+Name} & The display name for the user who sent the message. This value must not be {\ttfamily nil}. \\
+\hline
+{\em date} & The date that the message was sent. This value must not be {\ttfamily nil}. \\
+\hline
+{\em media} & The media data for the message. This value must not be {\ttfamily nil}.\\
+\hline
+\end{DoxyParams}
+Initializing a {\ttfamily \hyperlink{interface_j_s_q_message}{J\+S\+Q\+Message}} with this method will set {\ttfamily is\+Media\+Message} to {\ttfamily Y\+E\+S}.
+
+\begin{DoxyReturn}{Returns}
+An initialized {\ttfamily \hyperlink{interface_j_s_q_message}{J\+S\+Q\+Message}} object if successful, {\ttfamily nil} otherwise. 
+\end{DoxyReturn}
+\hypertarget{interface_j_s_q_message_a7e247dcaafa92be3bdc2998d204426a7}{}\index{J\+S\+Q\+Message@{J\+S\+Q\+Message}!init\+With\+Sender\+Id\+:sender\+Display\+Name\+:date\+:text\+:@{init\+With\+Sender\+Id\+:sender\+Display\+Name\+:date\+:text\+:}}
+\index{init\+With\+Sender\+Id\+:sender\+Display\+Name\+:date\+:text\+:@{init\+With\+Sender\+Id\+:sender\+Display\+Name\+:date\+:text\+:}!J\+S\+Q\+Message@{J\+S\+Q\+Message}}
+\subsubsection[{init\+With\+Sender\+Id\+:sender\+Display\+Name\+:date\+:text\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (instancetype) init\+With\+Sender\+Id\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{sender\+Id}
+\item[{senderDisplayName:(N\+S\+String $\ast$)}]{sender\+Display\+Name}
+\item[{date:(N\+S\+Date $\ast$)}]{date}
+\item[{text:(N\+S\+String $\ast$)}]{text}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_message_a7e247dcaafa92be3bdc2998d204426a7}
+Initializes and returns a message object having the given sender\+Id, sender\+Display\+Name, date, and text.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender\+Id} & The unique identifier for the user who sent the message. This value must not be {\ttfamily nil}. \\
+\hline
+{\em sender\+Display\+Name} & The display name for the user who sent the message. This value must not be {\ttfamily nil}. \\
+\hline
+{\em date} & The date that the message was sent. This value must not be {\ttfamily nil}. \\
+\hline
+{\em text} & The body text of the message. This value must not be {\ttfamily nil}.\\
+\hline
+\end{DoxyParams}
+Initializing a {\ttfamily \hyperlink{interface_j_s_q_message}{J\+S\+Q\+Message}} with this method will set {\ttfamily is\+Media\+Message} to {\ttfamily N\+O}.
+
+\begin{DoxyReturn}{Returns}
+An initialized {\ttfamily \hyperlink{interface_j_s_q_message}{J\+S\+Q\+Message}} object if successful, {\ttfamily nil} otherwise. 
+\end{DoxyReturn}
+\hypertarget{interface_j_s_q_message_af59d44af5bcc06473f95e9b6589407d9}{}\index{J\+S\+Q\+Message@{J\+S\+Q\+Message}!message\+With\+Sender\+Id\+:display\+Name\+:media\+:@{message\+With\+Sender\+Id\+:display\+Name\+:media\+:}}
+\index{message\+With\+Sender\+Id\+:display\+Name\+:media\+:@{message\+With\+Sender\+Id\+:display\+Name\+:media\+:}!J\+S\+Q\+Message@{J\+S\+Q\+Message}}
+\subsubsection[{message\+With\+Sender\+Id\+:display\+Name\+:media\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (instancetype) message\+With\+Sender\+Id\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{sender\+Id}
+\item[{displayName:(N\+S\+String $\ast$)}]{display\+Name}
+\item[{media:(id$<${\bf J\+S\+Q\+Message\+Media\+Data}$>$)}]{media}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_message_af59d44af5bcc06473f95e9b6589407d9}
+Initializes and returns a message object having the given sender\+Id, display\+Name, media, and current system date.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender\+Id} & The unique identifier for the user who sent the message. This value must not be {\ttfamily nil}. \\
+\hline
+{\em display\+Name} & The display name for the user who sent the message. This value must not be {\ttfamily nil}. \\
+\hline
+{\em media} & The media data for the message. This value must not be {\ttfamily nil}.\\
+\hline
+\end{DoxyParams}
+Initializing a {\ttfamily \hyperlink{interface_j_s_q_message}{J\+S\+Q\+Message}} with this method will set {\ttfamily is\+Media\+Message} to {\ttfamily Y\+E\+S}.
+
+\begin{DoxyReturn}{Returns}
+An initialized {\ttfamily \hyperlink{interface_j_s_q_message}{J\+S\+Q\+Message}} object if successful, {\ttfamily nil} otherwise. 
+\end{DoxyReturn}
+\hypertarget{interface_j_s_q_message_a823956135dbc7fba7683360d5097665b}{}\index{J\+S\+Q\+Message@{J\+S\+Q\+Message}!message\+With\+Sender\+Id\+:display\+Name\+:text\+:@{message\+With\+Sender\+Id\+:display\+Name\+:text\+:}}
+\index{message\+With\+Sender\+Id\+:display\+Name\+:text\+:@{message\+With\+Sender\+Id\+:display\+Name\+:text\+:}!J\+S\+Q\+Message@{J\+S\+Q\+Message}}
+\subsubsection[{message\+With\+Sender\+Id\+:display\+Name\+:text\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (instancetype) message\+With\+Sender\+Id\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{sender\+Id}
+\item[{displayName:(N\+S\+String $\ast$)}]{display\+Name}
+\item[{text:(N\+S\+String $\ast$)}]{text}
+\end{DoxyParamCaption}
+}\label{interface_j_s_q_message_a823956135dbc7fba7683360d5097665b}
+Initializes and returns a message object having the given sender\+Id, display\+Name, text, and current system date.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender\+Id} & The unique identifier for the user who sent the message. This value must not be {\ttfamily nil}. \\
+\hline
+{\em display\+Name} & The display name for the user who sent the message. This value must not be {\ttfamily nil}. \\
+\hline
+{\em text} & The body text of the message. This value must not be {\ttfamily nil}.\\
+\hline
+\end{DoxyParams}
+Initializing a {\ttfamily \hyperlink{interface_j_s_q_message}{J\+S\+Q\+Message}} with this method will set {\ttfamily is\+Media\+Message} to {\ttfamily N\+O}.
+
+\begin{DoxyReturn}{Returns}
+An initialized {\ttfamily \hyperlink{interface_j_s_q_message}{J\+S\+Q\+Message}} object if successful, {\ttfamily nil} otherwise. 
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_j_s_q_message_a3c9d613ecf1f212e8e76f4582b8ef56b}{}\index{J\+S\+Q\+Message@{J\+S\+Q\+Message}!date@{date}}
+\index{date@{date}!J\+S\+Q\+Message@{J\+S\+Q\+Message}}
+\subsubsection[{date}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Date$\ast$) date\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_j_s_q_message_a3c9d613ecf1f212e8e76f4582b8ef56b}
+Returns the date that the message was sent. \hypertarget{interface_j_s_q_message_a357e8c434071c3d189f1d82b6bc10dfa}{}\index{J\+S\+Q\+Message@{J\+S\+Q\+Message}!is\+Media\+Message@{is\+Media\+Message}}
+\index{is\+Media\+Message@{is\+Media\+Message}!J\+S\+Q\+Message@{J\+S\+Q\+Message}}
+\subsubsection[{is\+Media\+Message}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) is\+Media\+Message\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_j_s_q_message_a357e8c434071c3d189f1d82b6bc10dfa}
+Returns a boolean value specifying whether or not the message contains media. If {\ttfamily N\+O}, the message contains text. If {\ttfamily Y\+E\+S}, the message contains media. The value of this property depends on how the object was initialized. \hypertarget{interface_j_s_q_message_af6afdd2a8e17b8513821b7d1d62e0181}{}\index{J\+S\+Q\+Message@{J\+S\+Q\+Message}!media@{media}}
+\index{media@{media}!J\+S\+Q\+Message@{J\+S\+Q\+Message}}
+\subsubsection[{media}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id$<${\bf J\+S\+Q\+Message\+Media\+Data}$>$) media\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_j_s_q_message_af6afdd2a8e17b8513821b7d1d62e0181}
+Returns the media item attachment of the message, or {\ttfamily nil} if the message is not a media message. That is, if {\ttfamily is\+Media\+Message} is equal to {\ttfamily N\+O} then this value will be {\ttfamily nil}. \hypertarget{interface_j_s_q_message_ad5221a5e8e93cda57875efd26154cbcc}{}\index{J\+S\+Q\+Message@{J\+S\+Q\+Message}!sender\+Display\+Name@{sender\+Display\+Name}}
+\index{sender\+Display\+Name@{sender\+Display\+Name}!J\+S\+Q\+Message@{J\+S\+Q\+Message}}
+\subsubsection[{sender\+Display\+Name}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) sender\+Display\+Name\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_j_s_q_message_ad5221a5e8e93cda57875efd26154cbcc}
+Returns the display name for the user who sent the message. This value does not have to be unique. \hypertarget{interface_j_s_q_message_a2319678d102c89d8d936de6123e8b2dd}{}\index{J\+S\+Q\+Message@{J\+S\+Q\+Message}!sender\+Id@{sender\+Id}}
+\index{sender\+Id@{sender\+Id}!J\+S\+Q\+Message@{J\+S\+Q\+Message}}
+\subsubsection[{sender\+Id}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) sender\+Id\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_j_s_q_message_a2319678d102c89d8d936de6123e8b2dd}
+Returns the string identifier that uniquely identifies the user who sent the message. \hypertarget{interface_j_s_q_message_ab3d3b9aacf746c2c98bb4abe0944aa6d}{}\index{J\+S\+Q\+Message@{J\+S\+Q\+Message}!text@{text}}
+\index{text@{text}!J\+S\+Q\+Message@{J\+S\+Q\+Message}}
+\subsubsection[{text}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) text\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_j_s_q_message_ab3d3b9aacf746c2c98bb4abe0944aa6d}
+Returns the body text of the message, or {\ttfamily nil} if the message is a media message. That is, if {\ttfamily is\+Media\+Message} is equal to {\ttfamily Y\+E\+S} then this value will be {\ttfamily nil}. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Vendors/\+J\+S\+Q\+Messages\+View\+Controller/\+Model/J\+S\+Q\+Message.\+h\item 
+Vendors/\+J\+S\+Q\+Messages\+View\+Controller/\+Model/J\+S\+Q\+Message.\+m\end{DoxyCompactItemize}

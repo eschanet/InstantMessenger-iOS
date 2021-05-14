@@ -1,0 +1,180 @@
+\hypertarget{category_p_f_user_07_deprecated_08}{}\section{P\+F\+User(Deprecated) Category Reference}
+\label{category_p_f_user_07_deprecated_08}\index{P\+F\+User(\+Deprecated)@{P\+F\+User(\+Deprecated)}}
+
+
+{\ttfamily \#import $<$P\+F\+User+\+Deprecated.\+h$>$}
+
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{category_p_f_user_07_deprecated_08_a02d96a7bd6d61e0a79fb020cacb9189f}{sign\+Up\+In\+Background\+With\+Target\+:selector\+:}
+\begin{DoxyCompactList}\small\item\em 
+
+ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) + \hyperlink{category_p_f_user_07_deprecated_08_af734a968312e3fa6bd6836770c84193f}{log\+In\+With\+Username\+In\+Background\+:password\+:target\+:selector\+:}
+\begin{DoxyCompactList}\small\item\em 
+
+ \end{DoxyCompactList}\item 
+(void) + \hyperlink{category_p_f_user_07_deprecated_08_a8078303b4f51781e429cd2482b003d73}{become\+In\+Background\+:target\+:selector\+:}
+\begin{DoxyCompactList}\small\item\em 
+
+ \end{DoxyCompactList}\item 
+(void) + \hyperlink{category_p_f_user_07_deprecated_08_a86775d2489953988c8e20838b26fb6d4}{request\+Password\+Reset\+For\+Email\+In\+Background\+:target\+:selector\+:}
+\begin{DoxyCompactList}\small\item\em 
+
+ \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Copyright (c) 2015-\/present, \hyperlink{interface_parse}{Parse}, L\+L\+C. All rights reserved.
+
+This source code is licensed under the B\+S\+D-\/style license found in the L\+I\+C\+E\+N\+S\+E file in the root directory of this source tree. An additional grant of patent rights can be found in the P\+A\+T\+E\+N\+T\+S file in the same directory. This category lists all methods of {\ttfamily P\+F\+User} that are deprecated and will be removed in the near future. 
+
+\subsection{Method Documentation}
+\hypertarget{category_p_f_user_07_deprecated_08_a8078303b4f51781e429cd2482b003d73}{}\index{P\+F\+User(\+Deprecated)@{P\+F\+User(\+Deprecated)}!become\+In\+Background\+:target\+:selector\+:@{become\+In\+Background\+:target\+:selector\+:}}
+\index{become\+In\+Background\+:target\+:selector\+:@{become\+In\+Background\+:target\+:selector\+:}!P\+F\+User(\+Deprecated)@{P\+F\+User(\+Deprecated)}}
+\subsubsection[{become\+In\+Background\+:target\+:selector\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) become\+In\+Background\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{session\+Token}
+\item[{target:(nullable id)}]{target}
+\item[{selector:(\char`\"{}Please use `P\+F\+User.+become\+In\+Background\+:block\+:` instead.\char`\"{})}]{P\+A\+R\+S\+E\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D}
+\end{DoxyParamCaption}
+}\label{category_p_f_user_07_deprecated_08_a8078303b4f51781e429cd2482b003d73}
+
+
+
+
+ 
+
+
+
+
+
+Makes an {\itshape asynchronous} request to become a user with the given session token.
+
+Returns an instance of the successfully logged in {\ttfamily P\+F\+User}. This also caches the user locally so that calls to {\ttfamily +current\+User} will use the latest logged in user.
+
+
+\begin{DoxyParams}{Parameters}
+{\em session\+Token} & The session token for the user. \\
+\hline
+{\em target} & Target object for the selector. \\
+\hline
+{\em selector} & The selector that will be called when the asynchrounous request is complete. It should have the following signature\+: {\ttfamily (void)callback\+With\+User\+:(\+P\+F\+User $\ast$)user error\+:(\+N\+S\+Error $\ast$)error}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000041}{Deprecated}]Please use {\ttfamily P\+F\+User.+become\+In\+Background\+:block\+:} instead. \end{DoxyRefDesc}
+\hypertarget{category_p_f_user_07_deprecated_08_af734a968312e3fa6bd6836770c84193f}{}\index{P\+F\+User(\+Deprecated)@{P\+F\+User(\+Deprecated)}!log\+In\+With\+Username\+In\+Background\+:password\+:target\+:selector\+:@{log\+In\+With\+Username\+In\+Background\+:password\+:target\+:selector\+:}}
+\index{log\+In\+With\+Username\+In\+Background\+:password\+:target\+:selector\+:@{log\+In\+With\+Username\+In\+Background\+:password\+:target\+:selector\+:}!P\+F\+User(\+Deprecated)@{P\+F\+User(\+Deprecated)}}
+\subsubsection[{log\+In\+With\+Username\+In\+Background\+:password\+:target\+:selector\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) log\+In\+With\+Username\+In\+Background\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{username}
+\item[{password:(N\+S\+String $\ast$)}]{password}
+\item[{target:(nullable id)}]{target}
+\item[{selector:(\char`\"{}Please use `P\+F\+User.+log\+In\+With\+Username\+In\+Background\+:password\+:block\+:` instead.\char`\"{})}]{P\+A\+R\+S\+E\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D}
+\end{DoxyParamCaption}
+}\label{category_p_f_user_07_deprecated_08_af734a968312e3fa6bd6836770c84193f}
+
+
+
+
+ 
+
+
+
+
+
+Makes an {\itshape asynchronous} request to login a user with specified credentials.
+
+Returns an instance of the successfully logged in {\ttfamily P\+F\+User}. This also caches the user locally so that calls to {\ttfamily +current\+User} will use the latest logged in user.
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & The username of the user. \\
+\hline
+{\em password} & The password of the user. \\
+\hline
+{\em target} & Target object for the selector. \\
+\hline
+{\em selector} & The selector that will be called when the asynchrounous request is complete. It should have the following signature\+: {\ttfamily (void)callback\+With\+User\+:(\+P\+F\+User $\ast$)user error\+:(\+N\+S\+Error $\ast$)error}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000040}{Deprecated}]Please use {\ttfamily P\+F\+User.+log\+In\+With\+Username\+In\+Background\+:password\+:block\+:} instead. \end{DoxyRefDesc}
+\hypertarget{category_p_f_user_07_deprecated_08_a86775d2489953988c8e20838b26fb6d4}{}\index{P\+F\+User(\+Deprecated)@{P\+F\+User(\+Deprecated)}!request\+Password\+Reset\+For\+Email\+In\+Background\+:target\+:selector\+:@{request\+Password\+Reset\+For\+Email\+In\+Background\+:target\+:selector\+:}}
+\index{request\+Password\+Reset\+For\+Email\+In\+Background\+:target\+:selector\+:@{request\+Password\+Reset\+For\+Email\+In\+Background\+:target\+:selector\+:}!P\+F\+User(\+Deprecated)@{P\+F\+User(\+Deprecated)}}
+\subsubsection[{request\+Password\+Reset\+For\+Email\+In\+Background\+:target\+:selector\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) request\+Password\+Reset\+For\+Email\+In\+Background\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{email}
+\item[{target:(nullable id)}]{target}
+\item[{selector:(\char`\"{}Please use `P\+F\+User.+request\+Password\+Reset\+For\+Email\+In\+Background\+:block\+:` instead.\char`\"{})}]{P\+A\+R\+S\+E\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D}
+\end{DoxyParamCaption}
+}\label{category_p_f_user_07_deprecated_08_a86775d2489953988c8e20838b26fb6d4}
+
+
+
+
+ 
+
+
+
+
+
+Send a password reset request {\itshape asynchronously} for a specified email and sets an error object.
+
+If a user account exists with that email, an email will be sent to that address with instructions on how to reset their password.
+
+
+\begin{DoxyParams}{Parameters}
+{\em email} & Email of the account to send a reset password request. \\
+\hline
+{\em target} & Target object for the selector. \\
+\hline
+{\em selector} & The selector that will be called when the asynchronous request is complete. It should have the following signature\+: {\ttfamily (void)callback\+With\+Result\+:(\+N\+S\+Number $\ast$)result error\+:(\+N\+S\+Error $\ast$)error}. {\ttfamily error} will be {\ttfamily nil} on success and set if there was an error. {\ttfamily \mbox{[}result bool\+Value\mbox{]}} will tell you whether the call succeeded or not.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000042}{Deprecated}]Please use {\ttfamily P\+F\+User.+request\+Password\+Reset\+For\+Email\+In\+Background\+:block\+:} instead. \end{DoxyRefDesc}
+\hypertarget{category_p_f_user_07_deprecated_08_a02d96a7bd6d61e0a79fb020cacb9189f}{}\index{P\+F\+User(\+Deprecated)@{P\+F\+User(\+Deprecated)}!sign\+Up\+In\+Background\+With\+Target\+:selector\+:@{sign\+Up\+In\+Background\+With\+Target\+:selector\+:}}
+\index{sign\+Up\+In\+Background\+With\+Target\+:selector\+:@{sign\+Up\+In\+Background\+With\+Target\+:selector\+:}!P\+F\+User(\+Deprecated)@{P\+F\+User(\+Deprecated)}}
+\subsubsection[{sign\+Up\+In\+Background\+With\+Target\+:selector\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) sign\+Up\+In\+Background\+With\+Target\+: 
+\begin{DoxyParamCaption}
+\item[{(nullable id)}]{target}
+\item[{selector:(\char`\"{}Please use `P\+F\+User.-\/sign\+Up\+In\+Background\+With\+Block\+:` instead.\char`\"{})}]{P\+A\+R\+S\+E\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D}
+\end{DoxyParamCaption}
+}\label{category_p_f_user_07_deprecated_08_a02d96a7bd6d61e0a79fb020cacb9189f}
+
+
+
+
+ 
+
+
+
+
+
+Signs up the user {\itshape asynchronously}.
+
+This will also enforce that the username isn\textquotesingle{}t already taken.
+
+\begin{DoxyWarning}{Warning}
+Make sure that password and username are set before calling this method.
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em target} & Target object for the selector. \\
+\hline
+{\em selector} & The selector that will be called when the asynchrounous request is complete. It should have the following signature\+: {\ttfamily (void)callback\+With\+Result\+:(\+N\+S\+Number $\ast$)result error\+:(\+N\+S\+Error $\ast$)error}. {\ttfamily error} will be {\ttfamily nil} on success and set if there was an error. {\ttfamily \mbox{[}result bool\+Value\mbox{]}} will tell you whether the call succeeded or not.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000039}{Deprecated}]Please use {\ttfamily P\+F\+User.-\/sign\+Up\+In\+Background\+With\+Block\+:} instead. \end{DoxyRefDesc}
+
+
+The documentation for this category was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Frameworks/\+Parse.\+framework/\+Headers/P\+F\+User+\+Deprecated.\+h\end{DoxyCompactItemize}

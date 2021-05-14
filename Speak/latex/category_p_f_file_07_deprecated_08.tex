@@ -1,0 +1,96 @@
+\hypertarget{category_p_f_file_07_deprecated_08}{}\section{P\+F\+File(Deprecated) Category Reference}
+\label{category_p_f_file_07_deprecated_08}\index{P\+F\+File(\+Deprecated)@{P\+F\+File(\+Deprecated)}}
+
+
+{\ttfamily \#import $<$P\+F\+File+\+Deprecated.\+h$>$}
+
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{category_p_f_file_07_deprecated_08_a47dde8e577621ac0baac216731d1c8a5}{save\+In\+Background\+With\+Target\+:selector\+:}
+\begin{DoxyCompactList}\small\item\em 
+
+ \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{category_p_f_file_07_deprecated_08_aca77cfbc8b945eb0c7f67301bb983d83}{get\+Data\+In\+Background\+With\+Target\+:selector\+:}
+\begin{DoxyCompactList}\small\item\em 
+
+ \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Copyright (c) 2015-\/present, \hyperlink{interface_parse}{Parse}, L\+L\+C. All rights reserved.
+
+This source code is licensed under the B\+S\+D-\/style license found in the L\+I\+C\+E\+N\+S\+E file in the root directory of this source tree. An additional grant of patent rights can be found in the P\+A\+T\+E\+N\+T\+S file in the same directory. This category lists all methods of {\ttfamily \hyperlink{interface_p_f_file}{P\+F\+File}} that are deprecated and will be removed in the near future. 
+
+\subsection{Method Documentation}
+\hypertarget{category_p_f_file_07_deprecated_08_aca77cfbc8b945eb0c7f67301bb983d83}{}\index{P\+F\+File(\+Deprecated)@{P\+F\+File(\+Deprecated)}!get\+Data\+In\+Background\+With\+Target\+:selector\+:@{get\+Data\+In\+Background\+With\+Target\+:selector\+:}}
+\index{get\+Data\+In\+Background\+With\+Target\+:selector\+:@{get\+Data\+In\+Background\+With\+Target\+:selector\+:}!P\+F\+File(\+Deprecated)@{P\+F\+File(\+Deprecated)}}
+\subsubsection[{get\+Data\+In\+Background\+With\+Target\+:selector\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) get\+Data\+In\+Background\+With\+Target\+: 
+\begin{DoxyParamCaption}
+\item[{(nullable id)}]{target}
+\item[{selector:(\char`\"{}Please use `P\+F\+File.-\/get\+Data\+In\+Background\+With\+Block\+:` instead.\char`\"{})}]{P\+A\+R\+S\+E\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D}
+\end{DoxyParamCaption}
+}\label{category_p_f_file_07_deprecated_08_aca77cfbc8b945eb0c7f67301bb983d83}
+
+
+
+
+ 
+
+
+
+
+
+Asynchronously$\ast$ gets the data from cache if available or fetches its contents from the network.
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & The object to call selector on. \\
+\hline
+{\em selector} & The selector to call. It should have the following signature\+: {\ttfamily (void)callback\+With\+Result\+:(\+N\+S\+Data $\ast$)result error\+:(\+N\+S\+Error $\ast$)error}. {\ttfamily error} will be {\ttfamily nil} on success and set if there was an error.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000017}{Deprecated}]Please use {\ttfamily \hyperlink{interface_p_f_file}{P\+F\+File}.-\/get\+Data\+In\+Background\+With\+Block\+:} instead. \end{DoxyRefDesc}
+
+
+Extends class \hyperlink{interface_p_f_file_aca77cfbc8b945eb0c7f67301bb983d83}{P\+F\+File}.
+
+\hypertarget{category_p_f_file_07_deprecated_08_a47dde8e577621ac0baac216731d1c8a5}{}\index{P\+F\+File(\+Deprecated)@{P\+F\+File(\+Deprecated)}!save\+In\+Background\+With\+Target\+:selector\+:@{save\+In\+Background\+With\+Target\+:selector\+:}}
+\index{save\+In\+Background\+With\+Target\+:selector\+:@{save\+In\+Background\+With\+Target\+:selector\+:}!P\+F\+File(\+Deprecated)@{P\+F\+File(\+Deprecated)}}
+\subsubsection[{save\+In\+Background\+With\+Target\+:selector\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) save\+In\+Background\+With\+Target\+: 
+\begin{DoxyParamCaption}
+\item[{(nullable id)}]{target}
+\item[{selector:(\char`\"{}Please use `P\+F\+File.-\/save\+In\+Background\+With\+Block\+:` instead.\char`\"{})}]{P\+A\+R\+S\+E\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D}
+\end{DoxyParamCaption}
+}\label{category_p_f_file_07_deprecated_08_a47dde8e577621ac0baac216731d1c8a5}
+
+
+
+
+ 
+
+
+
+
+
+Saves the file {\itshape asynchronously} and invokes the given selector on a target.
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & The object to call selector on. \\
+\hline
+{\em selector} & The selector to call. It should have the following signature\+: {\ttfamily (void)callback\+With\+Result\+:(\+N\+S\+Number $\ast$)result error\+:(\+N\+S\+Error $\ast$)error}. {\ttfamily error} will be {\ttfamily nil} on success and set if there was an error. {\ttfamily \mbox{[}result bool\+Value\mbox{]}} will tell you whether the call succeeded or not.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000016}{Deprecated}]Please use {\ttfamily \hyperlink{interface_p_f_file}{P\+F\+File}.-\/save\+In\+Background\+With\+Block\+:} instead. \end{DoxyRefDesc}
+
+
+Extends class \hyperlink{interface_p_f_file_a47dde8e577621ac0baac216731d1c8a5}{P\+F\+File}.
+
+
+
+The documentation for this category was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Frameworks/\+Parse.\+framework/\+Headers/P\+F\+File+\+Deprecated.\+h\end{DoxyCompactItemize}
