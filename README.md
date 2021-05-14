@@ -117,9 +117,9 @@ Create a new app on the developers page of Facebook (again, the name is your cho
 
 In the `Info.plist` file you have to change three things:
 
-• the 'FacebookAppID' value should match you APP ID you copied from the Facebook developers page  
-• the 'Facebook Display Name' value should match the display name you chose for your app on the Facebook developers page  
-• in the 'URL Types' key, you'll find an 'Item 0' with an 'URL Schemes' key. In this key, change the value for 'Item 0'  to match your custom url scheme. Normally, this is `fbYOUR_APP_ID`.
+* the 'FacebookAppID' value should match you APP ID you copied from the Facebook developers page  
+* the 'Facebook Display Name' value should match the display name you chose for your app on the Facebook developers page  
+* in the 'URL Types' key, you'll find an 'Item 0' with an 'URL Schemes' key. In this key, change the value for 'Item 0'  to match your custom url scheme. Normally, this is `fbYOUR_APP_ID`.
 
 ![](http://i.imgur.com/mqKTQAD.png?2)
 
@@ -283,21 +283,21 @@ As you may have already seen, this project depends on a certain number of other 
 
 Here is a quick list of the most important ones, mostly under MIT License, for those not having an open source license, a license has been bought by myself:
 
-• Basic Messenger: This whole project is based on [JSQMessagesViewController](https://github.com/jessesquires/JSQMessagesViewController) and JSQSystemSoundPlayer by Jesse Squires, as well as [NotificationChat](https://github.com/relatedcode/NotificationChat) by RelatedCode 
+* Basic Messenger: This whole project is based on [JSQMessagesViewController](https://github.com/jessesquires/JSQMessagesViewController) and JSQSystemSoundPlayer by Jesse Squires, as well as [NotificationChat](https://github.com/relatedcode/NotificationChat) by RelatedCode 
 
-• Spinning wheel: [MBProgressHUD](https://github.com/jdg/MBProgressHUD) by Jonathan George and [ProgressHUD](https://github.com/relatedcode/ProgressHUD) by RelatedCode
+* Spinning wheel: [MBProgressHUD](https://github.com/jdg/MBProgressHUD) by Jonathan George and [ProgressHUD](https://github.com/relatedcode/ProgressHUD) by RelatedCode
 
-• Audio recorder for the Messenger: [IQAudioRecorderController](https://github.com/hackiftekhar/IQAudioRecorderController) by Mohd Iftekhar Qurashi
+* Audio recorder for the Messenger: [IQAudioRecorderController](https://github.com/hackiftekhar/IQAudioRecorderController) by Mohd Iftekhar Qurashi
 
-• A Networking library: [AFNetworking](https://github.com/AFNetworking/AFNetworking) by AFNetworking
+* A Networking library: [AFNetworking](https://github.com/AFNetworking/AFNetworking) by AFNetworking
 
-• A stylish About view: [RFAboutView](https://github.com/fouquet/RFAboutView) by René Fouquet
+* A stylish About view: [RFAboutView](https://github.com/fouquet/RFAboutView) by René Fouquet
 
-• In-app-Webbrowser: [TOWebViewController](https://github.com/TimOliver/TOWebViewController) by Tom Oliver
+* In-app-Webbrowser: [TOWebViewController](https://github.com/TimOliver/TOWebViewController) by Tom Oliver
 
-• In-app-Notifications: [CRToast](https://github.com/cruffenach/CRToast) by Collin Ruffenach
+* In-app-Notifications: [CRToast](https://github.com/cruffenach/CRToast) by Collin Ruffenach
 
-• Badge view: [JSBadgeView](https://github.com/JaviSoto/JSBadgeView) by Javier Soto
+* Badge view: [JSBadgeView](https://github.com/JaviSoto/JSBadgeView) by Javier Soto
 
 These are the most important ones, and they have all done some incredible good work! I'd like to thank them all, and also the ones that have not been named here, but are listed in the project itself. Open sourcing source code to help other developers build better products is a great move. Thanks.
 
